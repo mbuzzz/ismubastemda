@@ -1235,7 +1235,7 @@ export default function Perangkat() {
 
             <div style={{ marginTop: '20px', fontSize: '11px' }}>
               <p style={{ marginBottom: '10px' }}>
-                Interval Kriteria digunakan untuk menentukan tingkat ketuntasan peserta didik dalam memahami materi esensial Pendidikan Agama Islam & Budi Pekerti:
+                Interval Kriteria digunakan untuk menentukan tingkat ketuntasan murid dalam memahami materi esensial Pendidikan Agama Islam & Budi Pekerti:
               </p>
 
               <table className="data-table">
@@ -1260,7 +1260,7 @@ export default function Perangkat() {
                   <tr style={{ background: '#E3F2FD' }}>
                     <td className="center"><strong>75% - 88%</strong></td>
                     <td>Sudah Mencapai Ketuntasan</td>
-                    <td>KBM tuntas, siswa melanjutkan ke materi berikutnya tanpa perbaikan.</td>
+                    <td>KBM tuntas, murid melanjutkan ke materi berikutnya tanpa perbaikan.</td>
                   </tr>
                   <tr style={{ background: '#C8E6C9' }}>
                     <td className="center"><strong>89% - 100%</strong></td>
@@ -1371,10 +1371,10 @@ export default function Perangkat() {
                       <em>"{activeMateri.capaian}"</em>
                     </p>
                     <div style={{ marginBottom: '10px', fontSize: '11px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                      <div><strong>Kompetensi Awal:</strong> Peserta didik memiliki pemahaman dasar tentang materi prasyarat sebelum memasuki topik ini.</div>
+                      <div><strong>Kompetensi Awal:</strong> Murid memiliki pemahaman dasar tentang materi prasyarat sebelum memasuki topik ini.</div>
                       <div><strong>Pendekatan:</strong> TPACK (Technological Pedagogical Content Knowledge) & Pembelajaran Berdiferensiasi.</div>
                       <div><strong>Model Pembelajaran:</strong> Discovery Learning / Problem-Based Learning.</div>
-                      <div><strong>Target Peserta Didik:</strong> Regular (30 Siswa) & Pencapaian Tinggi (Fast Learners).</div>
+                      <div><strong>Target Murid:</strong> Regular (30 Murid) & Pencapaian Tinggi (Fast Learners).</div>
                     </div>
                   </div>
                   <div>
@@ -1412,7 +1412,7 @@ export default function Perangkat() {
                       <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Tujuan Pembelajaran (TP):</strong>
                       <ul style={{ margin: '0', paddingLeft: '16px' }}>
                         {activeMateri.tp?.map((tp, idx) => (
-                          <li key={idx} style={{ marginBottom: '6px' }}>Siswa mampu <strong>{tp}</strong></li>
+                          <li key={idx} style={{ marginBottom: '6px' }}>Murid mampu <strong>{tp}</strong></li>
                         ))}
                       </ul>
                     </div>
@@ -1499,29 +1499,12 @@ export default function Perangkat() {
                             <div className="timeline-title" style={{ fontSize: '11.5px', marginBottom: '4px' }}>
                               <span>Kegiatan Inti ({schoolInfoData.jpPerMinggu * 45 - 30} Menit) - Diferensiasi & TPACK</span>
                             </div>
-                            <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px' }}>
-                              {isFirst ? (
-                                <>
-                                  <li><strong>Literasi & TPACK:</strong> {ppmDetails.langkahInti[0] || 'Siswa menyimak tayangan presentasi interaktif atau video pembelajaran.'}</li>
-                                  <li><strong>Identifikasi:</strong> {ppmDetails.langkahInti[1] || 'Siswa membedah konsep dasar bersama guru.'}</li>
-                                  <li>Guru memetakan kelompok belajar berdasarkan hasil asesmen diagnostik (Diferensiasi Proses).</li>
-                                  <li>Siswa mulai mengeksplorasi sumber belajar (buku teks/internet) untuk merumuskan konsep.</li>
-                                </>
-                              ) : isLast ? (
-                                <>
-                                  <li><strong>Verifikasi:</strong> {ppmDetails.langkahInti[ppmDetails.langkahInti.length - 2] || 'Siswa melakukan presentasi kelompok di depan kelas.'}</li>
-                                  <li><strong>Generalisasi:</strong> {ppmDetails.langkahInti[ppmDetails.langkahInti.length - 1] || 'Siswa menyimpulkan hasil diskusi kelompok.'}</li>
-                                  <li>Tanya jawab interaktif antarkelompok; guru memvalidasi dan meluruskan miskonsepsi.</li>
-                                  <li>Pelaksanaan Asesmen Sumatif (tes tertulis/unjuk kerja) untuk mengukur ketercapaian TP secara keseluruhan.</li>
-                                </>
-                              ) : (
-                                <>
-                                  <li><strong>Kolaborasi:</strong> {ppmDetails.langkahInti[2] || 'Siswa berdiskusi dalam kelompok secara kolaboratif memecahkan masalah LKPD.'}</li>
-                                  <li><strong>Analisis:</strong> {ppmDetails.langkahInti[3] || 'Guru melakukan pendampingan (scaffolding) pada kelompok yang memerlukan bantuan.'}</li>
-                                  <li>Siswa mengaitkan konsep yang dipelajari dengan studi kasus aktual di masyarakat.</li>
-                                  <li>Menyusun laporan atau bahan presentasi digital (infografis/PPT) secara berkelompok (Diferensiasi Produk).</li>
-                                </>
-                              )}
+                            <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px', lineHeight: '1.6' }}>
+                              <li style={{ marginBottom: '6px' }}>Murid mengamati pemaparan awal atau media pembelajaran terkait <strong>{targetTp.split(' ').slice(0, 5).join(' ')}...</strong> untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.</li>
+                              <li style={{ marginBottom: '6px' }}>Setelah memahami konsepnya, murid berkolaborasi dalam kelompok kecil untuk menggunakan informasi dan teori yang baru didapat guna menyelesaikan penugasan atau studi kasus baru pada LKPD.</li>
+                              <li style={{ marginBottom: '6px' }}>Dengan bimbingan guru (scaffolding), setiap kelompok membedah masalah tersebut menjadi bagian-bagian yang lebih terperinci, lalu menguraikan bagaimana setiap bagian saling terkait hingga menemukan inti persoalannya.</li>
+                              <li style={{ marginBottom: '6px' }}>Perwakilan kelompok mempresentasikan hasil diskusi. Pada tahap ini, antarkelompok saling menafsirkan data, melempar tanggapan kritis, dan menilai sejauh mana argumen yang disampaikan kelompok lain logis dan kuat.</li>
+                              <li>Pada sesi akhir kegiatan inti, guru dan murid menyatukan pemahaman untuk meluruskan miskonsepsi yang muncul. Murid kemudian merangkai seluruh poin diskusi menjadi sebuah kesimpulan utuh atau menyusunnya menjadi draf karya akhir yang aplikatif.</li>
                             </ul>
                           </div>
                         </div>
@@ -1542,7 +1525,7 @@ export default function Perangkat() {
                                 </>
                               ) : (
                                 <>
-                                  <li>Siswa dipandu membuat simpulan sementara dari kegiatan hari ini.</li>
+                                  <li>Murid dipandu membuat simpulan sementara dari kegiatan hari ini.</li>
                                   <li>Guru melakukan asesmen formatif lisan cepat untuk mengecek pemahaman.</li>
                                   <li>Menyampaikan tugas persiapan atau bacaan mandiri untuk pertemuan selanjutnya.</li>
                                   <li>Menutup majelis dengan doa dan salam.</li>
@@ -1693,7 +1676,7 @@ export default function Perangkat() {
                   {/* Refleksi KBM */}
                   <div style={{ borderTop: '1px dashed var(--border)', paddingTop: '10px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '15px', fontSize: '11px' }}>
                     <div style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '10px', borderRadius: '6px' }}>
-                      <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '4px' }}>📝 Refleksi Peserta Didik:</strong>
+                      <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '4px' }}>📝 Refleksi Murid:</strong>
                       <ul style={{ margin: '0', paddingLeft: '14px', color: '#555' }}>
                         <li>Apakah materi hari ini mendekatkan Anda secara moral kepada Sang Pencipta?</li>
                         <li>Tantangan apa yang paling membekas saat berdiskusi memecahkan masalah tadi?</li>
@@ -1702,7 +1685,7 @@ export default function Perangkat() {
                     <div style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '10px', borderRadius: '6px' }}>
                       <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '4px' }}>👨‍🏫 Refleksi Pendidik (Guru):</strong>
                       <ul style={{ margin: '0', paddingLeft: '14px', color: '#555' }}>
-                        <li>Apakah seluruh siswa aktif berkolaborasi dan memahami makna teologis materi?</li>
+                        <li>Apakah seluruh murid aktif berkolaborasi dan memahami makna teologis materi?</li>
                         <li>Apa perbaikan taktis yang perlu diterapkan pada pertemuan KBM berikutnya?</li>
                       </ul>
                     </div>
@@ -1747,7 +1730,7 @@ export default function Perangkat() {
                       <tr>
                         <td className="center">{mIdx * 2 + 1}</td>
                         <td>{m.tp[0] || <ArabicText text={m.judul} />}</td>
-                        <td>Disajikan potongan Q.S. al-Maidah/5: 48, peserta didik mampu mengidentifikasi hukum bacaan tajwid secara tepat.</td>
+                        <td>Disajikan potongan Q.S. al-Maidah/5: 48, murid mampu mengidentifikasi hukum bacaan tajwid secara tepat.</td>
                         <td className="center">L2 (C3)</td>
                         <td className="center">Pilihan Ganda</td>
                         <td className="center">1, 2, 3</td>
@@ -1755,7 +1738,7 @@ export default function Perangkat() {
                       <tr>
                         <td className="center">{mIdx * 2 + 2}</td>
                         <td>{m.tp[1] || <ArabicText text={m.judul} />}</td>
-                        <td>Peserta didik dapat menganalisis implementasi riil akhlak terpuji dalam bergotong royong di sekolah.</td>
+                        <td>Murid dapat menganalisis implementasi riil akhlak terpuji dalam bergotong royong di sekolah.</td>
                         <td className="center">L3 (C4)</td>
                         <td className="center">Uraian / Esai</td>
                         <td className="center">41, 42</td>

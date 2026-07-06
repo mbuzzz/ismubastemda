@@ -170,15 +170,15 @@ export const getDplForBab = (fase, bab, mapel = 'pai') => {
 };
 
 const defaultLangkahPendahuluan = [
-  "Guru mengucapkan salam Islami (Assalamu'alaikum Wr. Wb.), menunjuk ketua kelas memimpin doa, dan mengecek kehadiran siswa.",
+  "Guru mengucapkan salam Islami (Assalamu'alaikum Wr. Wb.), menunjuk ketua kelas memimpin doa, dan mengecek kehadiran murid.",
   "Melakukan ice breaking spiritual singkat (misal: tadabbur ayat atau kutipan mutiara Islam) untuk membangun suasana kelas yang kondusif.",
   "Guru menyampaikan apersepsi dengan mengaitkan materi sebelumnya dengan tema yang akan dipelajari.",
   "Menyampaikan tujuan pembelajaran, kompetensi yang akan dicapai, dan manfaat materi bagi kehidupan sehari-hari.",
-  "Memberikan pretest lisan singkat (3-5 pertanyaan) untuk mengukur pemahaman awal siswa."
+  "Memberikan pretest lisan singkat (3-5 pertanyaan) untuk mengukur pemahaman awal murid."
 ];
 
 const defaultLangkahInti = [
-  "Siswa dibagi dalam kelompok heterogen (4-5 orang) dan menerima LKPD yang relevan.",
+  "Murid dibagi dalam kelompok heterogen (4-5 orang) dan menerima LKPD yang relevan.",
   "Guru menayangkan video/powerpoint singkat yang memantik rasa ingin tahu tentang topik bahasan.",
   "Setiap kelompok mendiskusikan pertanyaan inti dalam LKPD dengan mengacu pada sumber belajar (buku teks, Al-Qur'an, artikel).",
   "Guru berkeliling memfasilitasi diskusi kelompok, memberikan scaffolding bagi kelompok yang mengalami kesulitan.",
@@ -187,9 +187,9 @@ const defaultLangkahInti = [
 ];
 
 const defaultLangkahPenutup = [
-  "Guru bersama siswa merangkum poin-poin esensial pembelajaran hari ini.",
-  "Siswa menuliskan refleksi singkat (jurnal belajar) tentang pemahaman baru yang diperoleh.",
-  "Guru memberikan umpan balik terhadap proses dan hasil belajar siswa.",
+  "Guru bersama murid merangkum poin-poin esensial pembelajaran hari ini.",
+  "Murid menuliskan refleksi singkat (jurnal belajar) tentang pemahaman baru yang diperoleh.",
+  "Guru memberikan umpan balik terhadap proses dan hasil belajar murid.",
   "Guru menyampaikan rencana pertemuan berikutnya dan memberikan tugas pengayaan mandiri.",
   "Menutup pembelajaran dengan doa kafaratul majelis dan salam."
 ];
@@ -227,17 +227,17 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
   ];
 
   const details = {
-    pemahamanBermakna: mapel === 'arab' ? "Bahasa Arab adalah kunci memahami sumber utama ajaran Islam (Al-Qur'an dan Hadis) serta jendela peradaban ilmu pengetahuan Islam." : mapel === 'kemuh' ? "Memahami persyarikatan Muhammadiyah membekali siswa dengan identitas moral, etos kemajuan, dan jiwa kepemimpinan kemasyarakatan." : "Ajaran Islam memberikan pedoman hidup komprehensif bagi pembentukan kepribadian muslim yang berakhlak mulia, tangguh, dan maslahat bagi sesama.",
+    pemahamanBermakna: mapel === 'arab' ? "Bahasa Arab adalah kunci memahami sumber utama ajaran Islam (Al-Qur'an dan Hadis) serta jendela peradaban ilmu pengetahuan Islam." : mapel === 'kemuh' ? "Memahami persyarikatan Muhammadiyah membekali murid dengan identitas moral, etos kemajuan, dan jiwa kepemimpinan kemasyarakatan." : "Ajaran Islam memberikan pedoman hidup komprehensif bagi pembentukan kepribadian muslim yang berakhlak mulia, tangguh, dan maslahat bagi sesama.",
     pertanyaanPemantik: defaultPp,
     saranaPrasarana: mapel === 'arab' ? defaultSaranaArab : mapel === 'kemuh' ? defaultSaranaKemuh : defaultSaranaPAI,
-    pengayaan: mapel === 'arab' ? "Bagi siswa yang telah mencapai KKTP diberikan tugas membaca teks Arab sederhana dan menerjemahkannya ke dalam Bahasa Indonesia." : mapel === 'kemuh' ? "Bagi siswa yang telah mencapai KKTP diberikan tugas membaca dokumen khittah perjuangan atau AD/ART Muhammadiyah secara mendalam." : "Bagi siswa yang telah mencapai Kriteria Ketercapaian Tujuan Pembelajaran (KKTP) diberikan tugas mandiri menganalisis studi kasus atau menulis artikel reflektif keagamaan tingkat lanjut.",
-    remedial: mapel === 'arab' ? "Bagi siswa yang belum memenuhi KKTP diberikan bimbingan perorangan, pengulangan mufradat, atau penugasan menulis ulang kosakata/kalimat yang belum dikuasai." : mapel === 'kemuh' ? "Bagi siswa yang belum memenuhi KKTP diberikan bimbingan khusus, pendampingan memahami bagan struktur organisasi, atau merangkum konsep dasar Ortom." : "Bagi siswa yang belum memenuhi KKTP diberikan bimbingan perorangan, tutor sebaya, atau penugasan terstruktur untuk mengulang konsep esensial yang belum dipahami.",
+    pengayaan: mapel === 'arab' ? "Bagi murid yang telah mencapai KKTP diberikan tugas membaca teks Arab sederhana dan menerjemahkannya ke dalam Bahasa Indonesia." : mapel === 'kemuh' ? "Bagi murid yang telah mencapai KKTP diberikan tugas membaca dokumen khittah perjuangan atau AD/ART Muhammadiyah secara mendalam." : "Bagi murid yang telah mencapai Kriteria Ketercapaian Tujuan Pembelajaran (KKTP) diberikan tugas mandiri menganalisis studi kasus atau menulis artikel reflektif keagamaan tingkat lanjut.",
+    remedial: mapel === 'arab' ? "Bagi murid yang belum memenuhi KKTP diberikan bimbingan perorangan, pengulangan mufradat, atau penugasan menulis ulang kosakata/kalimat yang belum dikuasai." : mapel === 'kemuh' ? "Bagi murid yang belum memenuhi KKTP diberikan bimbingan khusus, pendampingan memahami bagan struktur organisasi, atau merangkum konsep dasar Ortom." : "Bagi murid yang belum memenuhi KKTP diberikan bimbingan perorangan, tutor sebaya, atau penugasan terstruktur untuk mengulang konsep esensial yang belum dipahami.",
     langkahPendahuluan: [...defaultLangkahPendahuluan],
     langkahInti: [...defaultLangkahInti],
     langkahPenutup: [...defaultLangkahPenutup],
     lkpd: [...defaultLkpd],
-    asesmenDiagnostik: mapel === 'arab' ? "Mengajukan 3-5 pertanyaan lisan tentang kosakata/ungkapan Arab yang sudah dikenal siswa." : mapel === 'kemuh' ? "Tanya jawab pemantik lisan tentang pemahaman awal siswa mengenai kepemimpinan dan amal usaha Muhammadiyah." : "Tanya jawab pemantik lisan untuk menguji pemahaman dalil atau konsep awal keagamaan secara acak.",
-    asesmenFormatif: mapel === 'arab' ? "Observasi partisipasi siswa dalam percakapan, pengisian LKPD, dan ketepatan pelafalan mufradat." : mapel === 'kemuh' ? "Pengerjaan lembar kerja kelompok (LKPD), pengamatan adab dan akhlak kader, serta keaktifan simulasi berorganisasi." : "Pengerjaan lembar kerja kelompok (LKPD), pengamatan sikap berakhlak siswa, dan keaktifan berkolaborasi.",
+    asesmenDiagnostik: mapel === 'arab' ? "Mengajukan 3-5 pertanyaan lisan tentang kosakata/ungkapan Arab yang sudah dikenal murid." : mapel === 'kemuh' ? "Tanya jawab pemantik lisan tentang pemahaman awal murid mengenai kepemimpinan dan amal usaha Muhammadiyah." : "Tanya jawab pemantik lisan untuk menguji pemahaman dalil atau konsep awal keagamaan secara acak.",
+    asesmenFormatif: mapel === 'arab' ? "Observasi partisipasi murid dalam percakapan, pengisian LKPD, dan ketepatan pelafalan mufradat." : mapel === 'kemuh' ? "Pengerjaan lembar kerja kelompok (LKPD), pengamatan adab dan akhlak kader, serta keaktifan simulasi berorganisasi." : "Pengerjaan lembar kerja kelompok (LKPD), pengamatan sikap berakhlak murid, dan keaktifan berkolaborasi.",
     asesmenSumatif: mapel === 'arab' ? "Tes tulis kosakata/pola kalimat, unjuk kerja percakapan/dialog berpasangan, dan proyek membuat karangan sederhana." : mapel === 'kemuh' ? "Ujian tulis pilihan ganda/esai tentang sejarah dan ideologi Muhammadiyah, penilaian laporan tugas proyek Ortom." : "Ujian tulis esai/pilihan ganda di akhir bab, penilaian produk presentasi hasil diskusi kelompok."
   };
 
@@ -252,11 +252,11 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Sebutkan dampak nyata yang Anda rasakan ketika menolong teman yang sedang kesulitan!"
           ];
           details.langkahInti = [
-            "Siswa membaca QS. Al-Maidah (5): 48, Al-Baqarah (2): 195, dan Al-A'raf (7): 56 secara bergantian dengan tartil, guru membimbing tajwid.",
+            "Murid membaca QS. Al-Maidah (5): 48, Al-Baqarah (2): 195, dan Al-A'raf (7): 56 secara bergantian dengan tartil, guru membimbing tajwid.",
             "Guru menayangkan video inspiratif tentang tokoh yang sukses karena etos kerja dan kompetisi kebaikan.",
             "Kelompok berdiskusi: 'Apa bentuk fastabiqul khairat yang bisa dilakukan pelajar SMK?' dan menuliskan hasilnya di LKPD.",
             "Masing-masing kelompok mempresentasikan 3 aksi nyata kompetisi kebaikan yang akan mereka lakukan selama sepekan.",
-            "Siswa menulis target pribadi amal saleh harian (self-commitment sheet) untuk diamalkan di rumah dan sekolah."
+            "Murid menulis target pribadi amal saleh harian (self-commitment sheet) untuk diamalkan di rumah dan sekolah."
           ];
           details.lkpd = [
             "Bacalah QS. Al-Maidah (5): 48 dan terjemahkan ayat tersebut!",
@@ -273,8 +273,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Mengapa menyingkirkan duri di jalan dikategorikan sebagai salah satu cabang iman?"
           ];
           details.langkahInti = [
-            "Siswa membaca teks tentang klasifikasi 77 cabang iman (niat, lisan, perbuatan) dari buku teks.",
-            "Guru menyajikan diagram pohon iman, siswa mencocokkan setiap cabang dengan contoh nyata.",
+            "Murid membaca teks tentang klasifikasi 77 cabang iman (niat, lisan, perbuatan) dari buku teks.",
+            "Guru menyajikan diagram pohon iman, murid mencocokkan setiap cabang dengan contoh nyata.",
             "Diskusi kelompok: mengidentifikasi cabang iman mana yang sudah dan belum mereka praktikkan.",
             "Setiap kelompok membuat poster digital/visual tentang 'Pohon Iman' lengkap dengan cabang-cabangnya.",
             "Presentasi poster dan saling memberi apresiasi antarkelompok."
@@ -293,8 +293,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa bahaya su'udzan (prasangka buruk) terhadap kerukunan pertemanan di kelas?"
           ];
           details.langkahInti = [
-            "Siswa menyimak kisah nyata tentang dampak riya dan hasad terhadap kehidupan seseorang (studi kasus).",
-            "Guru membimbing siswa mengidentifikasi ciri-ciri penyakit hati dalam diri sendiri melalui lembar introspeksi.",
+            "Murid menyimak kisah nyata tentang dampak riya dan hasad terhadap kehidupan seseorang (studi kasus).",
+            "Guru membimbing murid mengidentifikasi ciri-ciri penyakit hati dalam diri sendiri melalui lembar introspeksi.",
             "Kelompok berdiskusi menyusun strategi menghindari foya-foya, riya', dan su'udzan di era digital.",
             "Bermain peran (role play): situasi di mana seseorang tergoda riya' dan cara menolaknya.",
             "Refleksi individu: menulis surat untuk diri sendiri tentang komitmen membersihkan hati."
@@ -313,7 +313,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa peran Hadis dalam memperjelas perintah ibadah yang bersifat global di Al-Qur'an?"
           ];
           details.langkahInti = [
-            "Siswa membaca dan mencermati dalil-dalil tentang kedudukan Al-Qur'an, Hadis, Ijma', dan Qiyas.",
+            "Murid membaca dan mencermati dalil-dalil tentang kedudukan Al-Qur'an, Hadis, Ijma', dan Qiyas.",
             "Guru memberikan studi kasus kontemporer (misal: hukum bitcoin, bayi tabung) untuk dianalisis.",
             "Diskusi kelompok: menentukan sumber hukum yang relevan untuk memecahkan kasus tersebut.",
             "Setiap kelompok mempresentasikan hasil ijtihad sederhana mereka terhadap kasus yang diberikan.",
@@ -333,7 +333,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Mengapa pemahaman sejarah penting dalam membangun masa depan peradaban umat?"
           ];
           details.langkahInti = [
-            "Siswa mencermati peta jalur masuk dan perkembangan Islam di Nusantara.",
+            "Murid mencermati peta jalur masuk dan perkembangan Islam di Nusantara.",
             "Setiap kelompok mendapat tugas menelusuri biografi satu tokoh penyebar Islam (Wali Songo, ulama, dll).",
             "Kelompok menyusun laporan infografis tentang strategi dakwah dan faktor keberhasilan tokoh tersebut.",
             "Presentasi infografis dan tanya jawab antar kelompok.",
@@ -353,11 +353,11 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa langkah nyata yang bisa kita lakukan untuk melindungi diri dari paparan konten negatif di dunia digital?"
           ];
           details.langkahInti = [
-            "Siswa membaca QS. Al-Isra' (17): 32 dan QS. An-Nur (24): 2-3 beserta tafsirnya.",
+            "Murid membaca QS. Al-Isra' (17): 32 dan QS. An-Nur (24): 2-3 beserta tafsirnya.",
             "Guru menayangkan data statistik dampak pergaulan bebas di kalangan remaja (narasi edukatif).",
             "Diskusi kelompok: menyusun strategi proteksi diri agar terhindar dari pergaulan bebas dan zina.",
             "Bermain peran: menolak ajakan teman untuk melakukan perilaku menyimpang dengan tegas dan santun.",
-            "Siswa membuat komitmen pribadi tertulis (safety commitment) untuk menjaga kehormatan diri."
+            "Murid membuat komitmen pribadi tertulis (safety commitment) untuk menjaga kehormatan diri."
           ];
           details.lkpd = [
             "Tuliskan QS. Al-Isra' (17): 32 beserta artinya dan jelaskan pesan utama ayat tersebut!",
@@ -373,8 +373,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa hikmah terbesar dari sikap disiplin memenuhi janji dalam dunia kerja?"
           ];
           details.langkahInti = [
-            "Siswa membaca hadis-hadis tentang kejujuran, syukur, dan memenuhi janji dari kitab hadis.",
-            "Guru memberikan skenario kasus: situasi di mana kejujuran diuji, siswa merespons dengan tindakan.",
+            "Murid membaca hadis-hadis tentang kejujuran, syukur, dan memenuhi janji dari kitab hadis.",
+            "Guru memberikan skenario kasus: situasi di mana kejujuran diuji, murid merespons dengan tindakan.",
             "Diskusi kelompok: menyusun '10 Kebiasaan Muslim Kaffah' yang mencerminkan cabang iman.",
             "Setiap kelompok mempresentasikan hasil dan menempelkan poster di mading kelas.",
             "Refleksi diri: mengisi lembar evaluasi praktik ibadah harian selama sepekan."
@@ -393,7 +393,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa dampak buruk dari kebiasaan berbohong terhadap kepercayaan orang lain kepada kita?"
           ];
           details.langkahInti = [
-            "Siswa membaca hadis riwayat Abu Dawud tentang larangan hasad dan dengki.",
+            "Murid membaca hadis riwayat Abu Dawud tentang larangan hasad dan dengki.",
             "Guru menampilkan video kisah tentang akibat buruk kesombongan dan kebohongan.",
             "Kelompok berdiskusi: membedakan antara percaya diri (tawadhu') dan sombong (takabbur).",
             "Bermain peran: melatih respons rendah hati ketika mendapat pujian atau prestasi.",
@@ -413,7 +413,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa konsekuensi sosial jika kepemilikan harta tidak dilindungi oleh hukum syariat?"
           ];
           details.langkahInti = [
-            "Siswa membaca dan memahami konsep Al-Kulliyatu Al-Khamsah dari buku teks.",
+            "Murid membaca dan memahami konsep Al-Kulliyatu Al-Khamsah dari buku teks.",
             "Guru memberikan 5 kartu kasus yang masing-masing melanggar salah satu prinsip dasar.",
             "Setiap kelompok menganalisis kartu kasus dan menentukan prinsip mana yang dilanggar.",
             "Presentasi hasil analisis dan diskusi kelas tentang relevansi prinsip ini di era modern.",
@@ -433,7 +433,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa keteladanan terbaik dari perjuangan para ulama dalam menjaga keutuhan NKRI?"
           ];
           details.langkahInti = [
-            "Siswa membaca biografi singkat 5 ulama Nusantara (Syekh Nawawi al-Bantani, KH. Hasyim Asy'ari, KH. Ahmad Dahlan, dll).",
+            "Murid membaca biografi singkat 5 ulama Nusantara (Syekh Nawawi al-Bantani, KH. Hasyim Asy'ari, KH. Ahmad Dahlan, dll).",
             "Setiap kelompok memilih satu tokoh untuk diteliti lebih dalam tentang karya dan perjuangannya.",
             "Kelompok menyusun video pendek/infografis tentang kontribusi tokoh tersebut bagi bangsa.",
             "Pameran karya digital: hasil penelitian dipresentasikan dan dipajang di media sosial kelas.",
@@ -457,8 +457,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apakah berpikir kritis dapat meningkatkan kualitas keimanan seseorang? Mengapa?"
           ];
           details.langkahInti = [
-            "Siswa membaca dan mentadabburi QS. Ali 'Imran (3): 190-191 secara tartil.",
-            "Guru menampilkan 5 berita kontroversial; siswa diminta memilah mana fakta dan mana hoaks.",
+            "Murid membaca dan mentadabburi QS. Ali 'Imran (3): 190-191 secara tartil.",
+            "Guru menampilkan 5 berita kontroversial; murid diminta memilah mana fakta dan mana hoaks.",
             "Diskusi kelompok: merumuskan langkah-langkah berpikir kritis menurut Islam.",
             "Debat santun: pro-kontra tentang isu aktual yang memerlukan analisis keagamaan.",
             "Refleksi: bagaimana berpikir kritis meningkatkan kualitas iman dan produktivitas belajar?"
@@ -477,10 +477,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa dampak sosial dari kebiasaan membicarakan aib orang lain di lingkungan sekolah?"
           ];
           details.langkahInti = [
-            "Siswa membaca hadis tentang tanda-tanda munafik dari Rasulullah SAW.",
+            "Murid membaca hadis tentang tanda-tanda munafik dari Rasulullah SAW.",
             "Guru memberikan studi kasus: seseorang yang pandai bicara tapi suka ingkar janji.",
             "Diskusi kelompok: menyusun 'Kode Etik Pelajar Muslim' yang mencakup jujur, syukur, dan menjaga lisan.",
-            "Bermain peran: situasi menutupi aib teman vs menyebarkan aib, siswa mendemonstrasikan keduanya.",
+            "Bermain peran: situasi menutupi aib teman vs menyebarkan aib, murid mendemonstrasikan keduanya.",
             "Refleksi: menulis jurnal harian selama sepekan tentang upaya menjaga lisan dari ghibah."
           ];
           details.lkpd = [
@@ -497,7 +497,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa dampak judi bagi kehancuran ekonomi keluarga dan kesehatan mental pelakunya?"
           ];
           details.langkahInti = [
-            "Siswa menyimak tayangan video dampak bullying dan tawuran dari perspektif korban.",
+            "Murid menyimak tayangan video dampak bullying dan tawuran dari perspektif korban.",
             "Guru memandu diskusi tentang akar masalah penyakit sosial di kalangan remaja.",
             "Kelompok membuat poster/komik anti-bullying dan anti-tawuran untuk kampanye sekolah.",
             "Setiap kelompok membacakan deklarasi 'Sekolah Damai' yang berisi komitmen bersama.",
@@ -517,11 +517,11 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana rancangan dakwah kreatif yang cocok untuk merangkul generasi muda zaman sekarang?"
           ];
           details.langkahInti = [
-            "Siswa membaca ketentuan syarat dan rukun khutbah, tablig, dan dakwah dari buku teks.",
+            "Murid membaca ketentuan syarat dan rukun khutbah, tablig, dan dakwah dari buku teks.",
             "Guru mendemonstrasikan contoh khutbah Jumat yang baik dan memenuhi rukun.",
             "Latihan praktik: setiap kelompok menyusun teks dakwah singkat (3 menit) tentang tema kekinian.",
             "Simulasi: perwakilan kelompok menyampaikan dakwah di depan kelas dengan mikrofon.",
-            "Peer evaluation: siswa saling memberi masukan konstruktif terhadap penampilan dakwah teman."
+            "Peer evaluation: murid saling memberi masukan konstruktif terhadap penampilan dakwah teman."
           ];
           details.lkpd = [
             "Sebutkan perbedaan antara khutbah, tablig, dan dakwah dari segi rukun dan ketentuannya!",
@@ -537,7 +537,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa pelajaran berharga dari ketangguhan mental para ulama Nusantara dalam menghadapi keterbatasan?"
           ];
           details.langkahInti = [
-            "Siswa membaca biografi Syekh Nawawi al-Bantani, KH. Bisri Mustofa, dan ulama Nusantara lainnya.",
+            "Murid membaca biografi Syekh Nawawi al-Bantani, KH. Bisri Mustofa, dan ulama Nusantara lainnya.",
             "Setiap kelompok meneliti karya tulis seorang ulama Nusantara dan relevansinya saat ini.",
             "Kelompok membuat resensi buku/karya ulama tersebut dalam bentuk infografis.",
             "Pameran infografis digital: dipresentasikan dan diunggah ke media sosial kelas.",
@@ -557,7 +557,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa peran moderasi beragama dalam menjaga persatuan NKRI?"
           ];
           details.langkahInti = [
-            "Siswa membaca QS. Yunus (10): 40-41 dan QS. Al-Maidah (5): 32 beserta tafsirnya.",
+            "Murid membaca QS. Yunus (10): 40-41 dan QS. Al-Maidah (5): 32 beserta tafsirnya.",
             "Guru menampilkan video tentang praktik toleransi di Indonesia (misal: gotong royong lintas agama).",
             "Diskusi kelompok: bagaimana menjadi muslim yang moderat (wasathiyah) di sekolah dan masyarakat.",
             "Bermain peran: simulasi dialog antaragama yang santun dan saling menghargai.",
@@ -577,7 +577,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana cara menjaga kehormatan diri (muru'ah) dalam pergaulan sehari-hari?"
           ];
           details.langkahInti = [
-            "Siswa membaca hadis-hadis tentang malu, ikhlas, dan zuhud dari kitab hadis.",
+            "Murid membaca hadis-hadis tentang malu, ikhlas, dan zuhud dari kitab hadis.",
             "Guru memberikan skenario dilema moral: antara popularitas di medsos vs menjaga muru'ah.",
             "Diskusi kelompok: merumuskan kiat-kiat menjaga keikhlasan dan muru'ah di era digital.",
             "Bermain peran: menolak tawaran materi dengan tetap menjaga harga diri.",
@@ -597,10 +597,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana cara memanfaatkan media sosial sebagai ladang dakwah kreatif?"
           ];
           details.langkahInti = [
-            "Siswa membaca artikel tentang etika bermedia sosial dalam perspektif Islam.",
-            "Guru menampilkan contoh unggahan medsos yang baik dan buruk; siswa membedakannya.",
+            "Murid membaca artikel tentang etika bermedia sosial dalam perspektif Islam.",
+            "Guru menampilkan contoh unggahan medsos yang baik dan buruk; murid membedakannya.",
             "Diskusi kelompok: menyusun '10 Etika Muslim dalam Bermedia Sosial'.",
-            "Praktik: setiap siswa membuat satu konten dakwah kreatif (poster/video pendek) untuk diunggah.",
+            "Praktik: setiap murid membuat satu konten dakwah kreatif (poster/video pendek) untuk diunggah.",
             "Refleksi: mengevaluasi jejak digital masing-masing dan merencanakan perbaikan."
           ];
           details.lkpd = [
@@ -617,7 +617,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana pembagian hak dan kewajiban suami istri secara adil sesuai syariat Islam?"
           ];
           details.langkahInti = [
-            "Siswa membaca bab pernikahan dari buku fikih, mencakup rukun, syarat, dan mahar.",
+            "Murid membaca bab pernikahan dari buku fikih, mencakup rukun, syarat, dan mahar.",
             "Guru menyajikan video dokumenter tentang pernikahan dini dan dampaknya.",
             "Diskusi kelompok: menyusun 'Checklist Kesiapan Menikah' dari segi fisik, mental, finansial, dan agama.",
             "Bermain peran: musyawarah keluarga dalam menyelesaikan konflik rumah tangga.",
@@ -634,10 +634,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           details.pertanyaanPemantik = [
             "Apa kontribusi terbesar ilmuwan muslim (seperti Ibnu Sina atau Al-Khawarizmi) bagi perkembangan sains modern?",
             "Faktor apa yang menyebabkan pudarnya kejayaan peradaban sains umat Islam di masa lalu?",
-            "Bagaimana cara kita membangkitkan kembali semangat inovasi dan penelitian ilmiah di kalangan siswa muslim?"
+            "Bagaimana cara kita membangkitkan kembali semangat inovasi dan penelitian ilmiah di kalangan murid muslim?"
           ];
           details.langkahInti = [
-            "Siswa membaca artikel tentang ilmuwan muslim di era keemasan Islam (Ibnu Sina, Al-Khawarizmi, Al-Zahrawi, dll).",
+            "Murid membaca artikel tentang ilmuwan muslim di era keemasan Islam (Ibnu Sina, Al-Khawarizmi, Al-Zahrawi, dll).",
             "Setiap kelompok meneliti satu tokoh ilmuwan muslim dan penemuannya.",
             "Kelompok membuat timeline infografis tentang kontribusi ilmuwan muslim bagi dunia.",
             "Presentasi dan diskusi: faktor kemajuan dan kemunduran peradaban Islam.",
@@ -664,11 +664,11 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa perbedaan cara perkenalan formal dan non-formal dalam Bahasa Arab?"
           ];
           details.langkahInti = [
-            "Siswa menyimak audio percakapan perkenalan (ta'aruf) dalam Bahasa Arab.",
-            "Guru mendemonstrasikan pelafalan ungkapan salam dan ta'aruf, siswa menirukan bersama-sama.",
-            "Latihan berpasangan: setiap siswa memperkenalkan diri menggunakan struktur kalimat yang benar.",
-            "Siswa menulis teks perkenalan diri (5-7 kalimat) dalam Bahasa Arab di buku tugas.",
-            "Simulasi: 3-4 siswa maju ke depan kelas mempraktikkan dialog perkenalan."
+            "Murid menyimak audio percakapan perkenalan (ta'aruf) dalam Bahasa Arab.",
+            "Guru mendemonstrasikan pelafalan ungkapan salam dan ta'aruf, murid menirukan bersama-sama.",
+            "Latihan berpasangan: setiap murid memperkenalkan diri menggunakan struktur kalimat yang benar.",
+            "Murid menulis teks perkenalan diri (5-7 kalimat) dalam Bahasa Arab di buku tugas.",
+            "Simulasi: 3-4 murid maju ke depan kelas mempraktikkan dialog perkenalan."
           ];
           details.lkpd = [
             "Tuliskan 3 ungkapan salam dalam Bahasa Arab beserta jawabannya!",
@@ -685,10 +685,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan pembagian isim isyarah: jarak dekat (هذا، هذه، هذان) dan jarak jauh (ذلك، تلك).",
-            "Siswa mengamati benda-benda di sekitar kelas dan menunjuknya menggunakan isim isyarah.",
-            "Latihan berpasangan: siswa A menunjuk benda, siswa B menyebutkan nama benda dengan isim isyarah.",
+            "Murid mengamati benda-benda di sekitar kelas dan menunjuknya menggunakan isim isyarah.",
+            "Latihan berpasangan: murid A menunjuk benda, murid B menyebutkan nama benda dengan isim isyarah.",
             "Membaca teks sederhana yang mengandung isim isyarah dan mengartikannya.",
-            "Kuis cepat: guru menunjuk gambar, siswa berebut menjawab dengan isim isyarah yang tepat."
+            "Kuis cepat: guru menunjuk gambar, murid berebut menjawab dengan isim isyarah yang tepat."
           ];
           details.lkpd = [
             "Sebutkan 4 macam isim isyarah beserta artinya dan contoh penggunaannya!",
@@ -705,8 +705,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan ciri-ciri isim mudzakkar dan muannats (ta' marbutah, lafaz khusus).",
-            "Siswa mengelompokkan 30 kosakata ke dalam tabel mudzakkar dan muannats.",
-            "Latihan lisan: guru menyebutkan kata, siswa menentukan jenisnya dengan cepat.",
+            "Murid mengelompokkan 30 kosakata ke dalam tabel mudzakkar dan muannats.",
+            "Latihan lisan: guru menyebutkan kata, murid menentukan jenisnya dengan cepat.",
             "Menyusun kalimat sederhana dengan memperhatikan kesesuaian jenis kata benda.",
             "Game edukasi: 'Gender Sort' - memilah kata mudzakkar dan muannats secara beregu."
           ];
@@ -725,9 +725,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru memperkenalkan 8 adawatul istifham (هل، أ، ما، من، أين، كم، كيف، متى).",
-            "Siswa menyimak contoh dialog tanya jawab menggunakan berbagai kata tanya.",
+            "Murid menyimak contoh dialog tanya jawab menggunakan berbagai kata tanya.",
             "Latihan berpasangan: membuat 5 pertanyaan dan jawaban menggunakan kata tanya berbeda.",
-            "Game: 'Wawancara Kilat' - siswa bergantian mewawancarai teman dengan 3 pertanyaan.",
+            "Game: 'Wawancara Kilat' - murid bergantian mewawancarai teman dengan 3 pertanyaan.",
             "Menulis karangan pendek tentang aktivitas sehari-hari yang mengandung kalimat tanya."
           ];
           details.lkpd = [
@@ -745,7 +745,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menyajikan tabel lengkap dhamir munfashil dan muttashil beserta contohnya.",
-            "Siswa menghafalkan dhamir secara berkelompok dengan metode gerakan (kinestetik).",
+            "Murid menghafalkan dhamir secara berkelompok dengan metode gerakan (kinestetik).",
             "Latihan: mengganti subjek dalam kalimat dengan dhamir yang sesuai.",
             "Membaca teks sederhana dan mengidentifikasi dhamir yang terkandung di dalamnya.",
             "Menyusun paragraf pendek tentang keluarga menggunakan dhamir yang tepat."
@@ -765,8 +765,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan ciri-ciri fi'il mudhari' (diawali huruf mudhara'ah: أ، ن، ي، ت).",
-            "Siswa melakukan tasrif fi'il mudhari' untuk kata kerja 'كتب' (menulis) dengan 14 dhamir.",
-            "Latihan lisan: guru menyebutkan kata kerja, siswa mengubah ke bentuk mudhari'.",
+            "Murid melakukan tasrif fi'il mudhari' untuk kata kerja 'كتب' (menulis) dengan 14 dhamir.",
+            "Latihan lisan: guru menyebutkan kata kerja, murid mengubah ke bentuk mudhari'.",
             "Membaca cerita pendek tentang rutinitas harian dan mengidentifikasi fi'il mudhari'.",
             "Menulis jurnal harian sederhana (3-4 aktivitas) menggunakan fi'il mudhari'."
           ];
@@ -785,7 +785,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menyajikan 17 huruf jar beserta makna dan contoh penggunaannya.",
-            "Siswa mengidentifikasi huruf jar dalam teks bacaan dan menjelaskan maknanya.",
+            "Murid mengidentifikasi huruf jar dalam teks bacaan dan menjelaskan maknanya.",
             "Latihan: menyusun frasa (syibhul jumlah) dengan berbagai huruf jar.",
             "Game: 'Preposition Bingo' - mencocokkan huruf jar dengan contoh kalimat.",
             "Menulis 5 kalimat lengkap yang mengandung huruf jar berbeda."
@@ -805,10 +805,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan struktur kepemilikan (idhafah) untuk al-milk.",
-            "Siswa berlatih menyebutkan kepemilikan benda menggunakan kosakata sekitar.",
+            "Murid berlatih menyebutkan kepemilikan benda menggunakan kosakata sekitar.",
             "Guru mengajarkan bilangan 1-10 dengan kaidah mudzakkar dan muannats.",
             "Latihan berpasangan: simulasi transaksi jual-beli di kantin menggunakan Bahasa Arab.",
-            "Bermain peran: 'Di Pasar' - siswa berperan sebagai penjual dan pembeli."
+            "Bermain peran: 'Di Pasar' - murid berperan sebagai penjual dan pembeli."
           ];
           details.lkpd = [
             "Buatlah 5 kalimat yang menyatakan kepemilikan dalam Bahasa Arab!",
@@ -829,7 +829,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan kaidah pembentukan mutsanna (menambah alif-nun atau ya-nun di akhir kata).",
-            "Siswa mengubah 15 isim mufrad menjadi bentuk mutsanna.",
+            "Murid mengubah 15 isim mufrad menjadi bentuk mutsanna.",
             "Latihan membaca teks yang mengandung isim mutsanna dan mengidentifikasinya.",
             "Menyusun kalimat sederhana menggunakan subjek dan objek bentuk mutsanna.",
             "Kuis: mencocokkan bentuk mufrad dengan bentuk mutsanna yang benar."
@@ -849,7 +849,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan pembentukan jamak mudzakkar salim (menambah waw-nun atau ya-nun).",
-            "Siswa mengidentifikasi isim-isim yang memenuhi syarat jamak mudzakkar salim.",
+            "Murid mengidentifikasi isim-isim yang memenuhi syarat jamak mudzakkar salim.",
             "Latihan mengubah 10 isim mufrad ke jamak mudzakkar salim.",
             "Membaca teks tentang profesi dan mengidentifikasi jamak mudzakkar salim.",
             "Menulis paragraf deskriptif tentang kelompok orang menggunakan jamak mudzakkar salim."
@@ -869,7 +869,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan kaidah jamak muannats salim (membuang ta' marbutah, menambah ات).",
-            "Siswa mengubah 10 isim muannats menjadi jamak muannats salim.",
+            "Murid mengubah 10 isim muannats menjadi jamak muannats salim.",
             "Membaca teks tentang aktivitas perempuan dan mengidentifikasi jamak muannats salim.",
             "Latihan: membuat kalimat dengan subjek jamak muannats salim.",
             "Game: 'Plural Race' - berlomba mengubah kata ke bentuk jamak muannats salim."
@@ -889,7 +889,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru memperkenalkan 5 pola jamak taksir yang paling umum (أفعال، فعال، فواعل، فعلان، افعلة).",
-            "Siswa menghafalkan 20 kosakata jamak taksir beserta bentuk mufradnya.",
+            "Murid menghafalkan 20 kosakata jamak taksir beserta bentuk mufradnya.",
             "Latihan mencocokkan: mufrad dengan jamak taksir yang tepat.",
             "Membaca teks berisi jamak taksir dan mengubahnya kembali ke bentuk mufrad.",
             "Menyusun kalimat menggunakan berbagai pola jamak taksir."
@@ -913,7 +913,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan pembagian huruf nafi (لم، لن، لا، ما) dan nahi (لا الناهية).",
-            "Siswa mengubah kalimat positif menjadi kalimat negatif menggunakan berbagai huruf nafi.",
+            "Murid mengubah kalimat positif menjadi kalimat negatif menggunakan berbagai huruf nafi.",
             "Latihan: membuat kalimat larangan menggunakan لا الناهية dengan fi'il mudhari'.",
             "Menyimak audio percakapan dan mengidentifikasi kalimat nafi dan nahi.",
             "Bermain peran: melarang teman melakukan sesuatu dengan santun menggunakan bahasa Arab."
@@ -933,7 +933,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan ciri fi'il madhi (fathah pada akhir kata) dan pembagiannya.",
-            "Siswa melakukan tasrif fi'il madhi untuk 5 kata kerja berbeda dengan 14 dhamir.",
+            "Murid melakukan tasrif fi'il madhi untuk 5 kata kerja berbeda dengan 14 dhamir.",
             "Latihan lisan: menceritakan kegiatan kemarin menggunakan fi'il madhi.",
             "Membaca cerita pendek tentang pengalaman liburan dan mengidentifikasi fi'il madhi.",
             "Menulis paragraf tentang pengalaman tak terlupakan menggunakan fi'il madhi."
@@ -953,10 +953,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru memperkenalkan bilangan 11-20 beserta kaidah mudzakkar dan muannats.",
-            "Siswa berlatih melafalkan bilangan 11-20 dengan intonasi yang benar.",
+            "Murid berlatih melafalkan bilangan 11-20 dengan intonasi yang benar.",
             "Latihan menghitung benda di sekitar kelas menggunakan bilangan 11-20.",
             "Menyelesaikan soal cerita sederhana yang melibatkan bilangan 11-20.",
-            "Game: 'Number Quiz' - siswa berebut menyebutkan bilangan Arab dengan cepat."
+            "Game: 'Number Quiz' - murid berebut menyebutkan bilangan Arab dengan cepat."
           ];
           details.lkpd = [
             "Tuliskan bilangan 11-20 dalam Bahasa Arab (mudzakkar dan muannats)!",
@@ -973,10 +973,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan kaidah na'at man'ut: kesesuaian dalam i'rab, jenis, dan jumlah.",
-            "Siswa mengidentifikasi pasangan sifat dan maushuf dalam teks bacaan.",
+            "Murid mengidentifikasi pasangan sifat dan maushuf dalam teks bacaan.",
             "Latihan: menambahkan sifat yang tepat pada maushuf yang diberikan.",
             "Menyusun paragraf deskriptif tentang lingkungan sekolah menggunakan sifat dan maushuf.",
-            "Game: 'Deskripsi Gambar' - siswa mendeskripsikan gambar menggunakan 3-4 sifat."
+            "Game: 'Deskripsi Gambar' - murid mendeskripsikan gambar menggunakan 3-4 sifat."
           ];
           details.lkpd = [
             "Jelaskan prinsip kesesuaian antara na'at (sifat) dan man'ut (maushuf)!",
@@ -999,7 +999,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan struktur jumlah ismiyah (mubtada' + khabar) dan jumlah fi'liyah (fi'il + fa'il).",
-            "Siswa mengklasifikasikan 10 kalimat ke dalam jumlah ismiyah atau fi'liyah.",
+            "Murid mengklasifikasikan 10 kalimat ke dalam jumlah ismiyah atau fi'liyah.",
             "Latihan mengonversi jumlah ismiyah menjadi fi'liyah dan sebaliknya.",
             "Membaca teks naratif dan mengidentifikasi jenis-jenis kalimat.",
             "Menulis paragraf yang mengandung campuran kedua jenis kalimat."
@@ -1019,7 +1019,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan posisi i'rab mubtada' (rafa') dan khabar (rafa').",
-            "Siswa mengidentifikasi mubtada' dan khabar dalam 10 kalimat.",
+            "Murid mengidentifikasi mubtada' dan khabar dalam 10 kalimat.",
             "Latihan: melengkapi kalimat dengan khabar yang sesuai dengan mubtada'.",
             "Mengenal jenis khabar: mufrad, jumlah, dan syibhul jumlah.",
             "Menyusun 5 jumlah ismiyah dengan variasi jenis khabar."
@@ -1039,7 +1039,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan struktur jumlah fi'liyah: fi'il + fa'il + maf'ul (jika ada).",
-            "Siswa mengidentifikasi fi'il dan fa'il dalam 10 kalimat.",
+            "Murid mengidentifikasi fi'il dan fa'il dalam 10 kalimat.",
             "Latihan: menentukan bentuk fi'il yang sesuai dengan fa'il-nya.",
             "Mengonversi jumlah ismiyah menjadi jumlah fi'liyah dengan fi'il yang tepat.",
             "Menulis paragraf tentang cita-cita menggunakan jumlah fi'liyah."
@@ -1059,7 +1059,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menjelaskan kaidah bilangan 20-99, 100, dan 1000 beserta ma'dud-nya.",
-            "Siswa berlatih membaca dan menulis bilangan besar dalam Bahasa Arab.",
+            "Murid berlatih membaca dan menulis bilangan besar dalam Bahasa Arab.",
             "Latihan: menyebutkan harga barang menggunakan bilangan puluhan/ratusan.",
             "Membaca teks berisi data statistik dan mengartikan bilangan di dalamnya.",
             "Proyek: menyusun laporan keuangan sederhana dalam Bahasa Arab."
@@ -1071,7 +1071,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           break;
         case 5: // Teks Fungsional
-          details.pemahamanBermakna = "Teks fungsional dalam Bahasa Arab (surat, pengumuman, artikel) membekali siswa keterampilan literasi nyata yang aplikatif.";
+          details.pemahamanBermakna = "Teks fungsional dalam Bahasa Arab (surat, pengumuman, artikel) membekali murid keterampilan literasi nyata yang aplikatif.";
           details.pertanyaanPemantik = [
             "Apa saja jenis teks fungsional dalam Bahasa Arab?",
             "Bagaimana struktur surat resmi dalam Bahasa Arab?",
@@ -1079,7 +1079,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menyajikan contoh-contoh teks fungsional: surat, pengumuman, artikel pendek.",
-            "Siswa membaca dan memahami isi teks fungsional, mencari makna kosakata baru.",
+            "Murid membaca dan memahami isi teks fungsional, mencari makna kosakata baru.",
             "Latihan: menjawab pertanyaan pemahaman berdasarkan teks yang dibaca.",
             "Proyek menulis: membuat surat resmi atau pengumuman dalam Bahasa Arab.",
             "Simulasi wawancara kerja sederhana menggunakan Bahasa Arab."
@@ -1103,8 +1103,8 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa karakteristik utama Perguruan Muhammadiyah dibandingkan sekolah lain?"
           ];
           details.langkahInti = [
-            "Siswa menyimak paparan guru mengenai sejarah berdirinya Perguruan Muhammadiyah.",
-            "Siswa berdiskusi kelompok mengidentifikasi ciri khas perguruan Muhammadiyah.",
+            "Murid menyimak paparan guru mengenai sejarah berdirinya Perguruan Muhammadiyah.",
+            "Murid berdiskusi kelompok mengidentifikasi ciri khas perguruan Muhammadiyah.",
             "Latihan: menuliskan peran Perguruan Muhammadiyah bagi kemajuan umat.",
             "Presentasi hasil kerja kelompok di depan kelas.",
             "Refleksi: bagaimana menjadi pelajar Muhammadiyah yang baik."
@@ -1123,9 +1123,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana cara mengamalkan butir janji tersebut di sekolah?"
           ];
           details.langkahInti = [
-            "Siswa melafalkan teks Janji Pelajar Muhammadiyah secara bersama-sama dipimpin oleh guru.",
-            "Siswa mengkaji makna filosofis dari setiap butir janji.",
-            "Siswa menulis studi kasus tentang pelanggaran janji dan cara mengatasinya.",
+            "Murid melafalkan teks Janji Pelajar Muhammadiyah secara bersama-sama dipimpin oleh guru.",
+            "Murid mengkaji makna filosofis dari setiap butir janji.",
+            "Murid menulis studi kasus tentang pelanggaran janji dan cara mengatasinya.",
             "Diskusi kelompok: merumuskan langkah konkret pengamalan janji di lingkungan sekolah.",
             "Komitmen bersama: menandatangani lembar janji pelajar Muhammadiyah."
           ];
@@ -1143,9 +1143,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Apa saja tantangan awal dakwah Muhammadiyah?"
           ];
           details.langkahInti = [
-            "Siswa menonton cuplikan film 'Sang Pencerah' atau membaca teks biografi KH Ahmad Dahlan.",
-            "Siswa mendiskusikan latar belakang sosial keagamaan berdirinya Muhammadiyah.",
-            "Siswa membuat lini masa (timeline) sejarah perkembangan Muhammadiyah.",
+            "Murid menonton cuplikan film 'Sang Pencerah' atau membaca teks biografi KH Ahmad Dahlan.",
+            "Murid mendiskusikan latar belakang sosial keagamaan berdirinya Muhammadiyah.",
+            "Murid membuat lini masa (timeline) sejarah perkembangan Muhammadiyah.",
             "Analisis kelompok: pengaruh teologi Surah Al-Ma'un terhadap berdirinya Muhammadiyah.",
             "Guru memberikan penguatan materi mengenai dakwah amar ma'ruf nahi munkar."
           ];
@@ -1164,10 +1164,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru menerangkan tiga pilar gerakan Muhammadiyah: Islam, Dakwah, Tajdid.",
-            "Siswa menganalisis konsep purifikasi (pemurnian) dan dinamisasi (pembaruan) ajaran Islam.",
+            "Murid menganalisis konsep purifikasi (pemurnian) dan dinamisasi (pembaruan) ajaran Islam.",
             "Kelompok berdiskusi mengenai contoh gerakan tajdid Muhammadiyah di bidang sosial-pendidikan.",
-            "Siswa merumuskan relevansi amar ma'ruf nahi munkar bagi kehidupan remaja.",
-            "Siswa mempresentasikan hasil diskusi kelompok."
+            "Murid merumuskan relevansi amar ma'ruf nahi munkar bagi kehidupan remaja.",
+            "Murid mempresentasikan hasil diskusi kelompok."
           ];
           details.lkpd = [
             "Uraikan pengertian tajdid dalam bidang akidah dan bidang kemasyarakatan!",
@@ -1183,11 +1183,11 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Bagaimana pengambilan keputusan dilakukan di Muhammadiyah?"
           ];
           details.langkahInti = [
-            "Siswa mengamati diagram struktur pimpinan Muhammadiyah (Pusat, Wilayah, Daerah, Cabang, Ranting).",
+            "Murid mengamati diagram struktur pimpinan Muhammadiyah (Pusat, Wilayah, Daerah, Cabang, Ranting).",
             "Guru menjelaskan fungsi pimpinan di masing-masing tingkat.",
-            "Siswa bermain peran (roleplay) pelaksanaan musyawarah ranting/cabang.",
-            "Siswa mendiskusikan pentingnya tertib organisasi dalam persyarikatan.",
-            "Siswa membuat bagan struktur pimpinan Muhammadiyah."
+            "Murid bermain peran (roleplay) pelaksanaan musyawarah ranting/cabang.",
+            "Murid mendiskusikan pentingnya tertib organisasi dalam persyarikatan.",
+            "Murid membuat bagan struktur pimpinan Muhammadiyah."
           ];
           details.lkpd = [
             "Gambarkan bagan struktur organisasi kepemimpinan Muhammadiyah dari Ranting hingga Pusat!",
@@ -1204,9 +1204,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           details.langkahInti = [
             "Guru memaparkan macam-macam Majelis (Dikdasmen, Tabligh, dll) dan Lembaga.",
-            "Siswa mendalami profil dan sejarah berdirinya Ortom Muhammadiyah (IPM, HW, Tapak Suci, dll).",
+            "Murid mendalami profil dan sejarah berdirinya Ortom Muhammadiyah (IPM, HW, Tapak Suci, dll).",
             "Kerja kelompok: membuat poster profil salah satu Ortom Muhammadiyah.",
-            "Siswa mempresentasikan lambang, motto, dan tujuan Ortom pilihan mereka.",
+            "Murid mempresentasikan lambang, motto, dan tujuan Ortom pilihan mereka.",
             "Refleksi: kontribusi Ortom terhadap pembentukan karakter kepemudaan."
           ];
           details.lkpd = [
@@ -1227,10 +1227,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
               "Siapa tokoh Muhammadiyah yang berperan dalam perumusan Pancasila?"
             ];
             details.langkahInti = [
-              "Siswa membaca teks periodisasi perjuangan Muhammadiyah.",
+              "Murid membaca teks periodisasi perjuangan Muhammadiyah.",
               "Diskusi kelompok: ketokohan KH Mas Mansur atau Ki Bagus Hadikusumo.",
-              "Siswa menganalisis perubahan fokus gerakan Muhammadiyah dari masa ke masa.",
-              "Siswa menyajikan peta konsep kepemimpinan Muhammadiyah pasca kemerdekaan.",
+              "Murid menganalisis perubahan fokus gerakan Muhammadiyah dari masa ke masa.",
+              "Murid menyajikan peta konsep kepemimpinan Muhammadiyah pasca kemerdekaan.",
               "Guru memberikan kesimpulan teologis perjuangan tokoh Muhammadiyah."
             ];
             details.lkpd = [
@@ -1248,10 +1248,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menceritakan sejarah perumusan MADM oleh Ki Bagus Hadikusumo dkk.",
-              "Siswa membaca 7 pokok pikiran MADM dengan saksama.",
-              "Siswa mendiskusikan esensi tauhid sebagai asas utama gerakan Muhammadiyah.",
-              "Siswa mempresentasikan hubungan MADM dengan cita-cita masyarakat Islam yang sebenar-benarnya.",
-              "Siswa menulis resume pokok pikiran MADM."
+              "Murid membaca 7 pokok pikiran MADM dengan saksama.",
+              "Murid mendiskusikan esensi tauhid sebagai asas utama gerakan Muhammadiyah.",
+              "Murid mempresentasikan hubungan MADM dengan cita-cita masyarakat Islam yang sebenar-benarnya.",
+              "Murid menulis resume pokok pikiran MADM."
             ];
             details.lkpd = [
               "Tuliskan latar belakang sejarah disusunnya Muqaddimah Anggaran Dasar Muhammadiyah (MADM)!",
@@ -1268,9 +1268,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menjelaskan latar belakang perumusan Kepribadian Muhammadiyah pada Muktamar ke-35.",
-              "Siswa menelaah 10 sifat Kepribadian Muhammadiyah satu per satu.",
-              "Siswa berdiskusi tentang bagaimana Muhammadiyah bersikap toleran tanpa mengorbankan prinsip aqidah.",
-              "Siswa mensimulasikan penyelesaian konflik sosial berdasarkan Kepribadian Muhammadiyah.",
+              "Murid menelaah 10 sifat Kepribadian Muhammadiyah satu per satu.",
+              "Murid berdiskusi tentang bagaimana Muhammadiyah bersikap toleran tanpa mengorbankan prinsip aqidah.",
+              "Murid mensimulasikan penyelesaian konflik sosial berdasarkan Kepribadian Muhammadiyah.",
               "Guru menyimpulkan sifat kepribadian sebagai pemandu etis pelajar."
             ];
             details.lkpd = [
@@ -1288,10 +1288,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru memaparkan sejarah penyusunan MKCHM pada Tanwir Ponorogo.",
-              "Siswa menganalisis rumusan akidah, ibadah, dan akhlak menurut MKCHM.",
-              "Siswa berdiskusi kelompok membedakan kelompok ajaran agama (ideologis, paham agama, bidang kemasyarakatan).",
-              "Siswa mempresentasikan konsep fungsi NKRI menurut MKCHM.",
-              "Siswa menulis laporan hasil diskusi."
+              "Murid menganalisis rumusan akidah, ibadah, dan akhlak menurut MKCHM.",
+              "Murid berdiskusi kelompok membedakan kelompok ajaran agama (ideologis, paham agama, bidang kemasyarakatan).",
+              "Murid mempresentasikan konsep fungsi NKRI menurut MKCHM.",
+              "Murid menulis laporan hasil diskusi."
             ];
             details.lkpd = [
               "Tuliskan pembagian kelompok rumusan isi MKCHM!",
@@ -1308,9 +1308,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menerangkan pengertian dan tujuan PHIWM.",
-              "Siswa mendiskusikan bab-bab dalam PHIWM: kehidupan pribadi, keluarga, bermasyarakat.",
-              "Siswa membuat naskah drama pendek tentang etika bertetangga islami.",
-              "Siswa menampilkan drama pendek di depan kelas.",
+              "Murid mendiskusikan bab-bab dalam PHIWM: kehidupan pribadi, keluarga, bermasyarakat.",
+              "Murid membuat naskah drama pendek tentang etika bertetangga islami.",
+              "Murid menampilkan drama pendek di depan kelas.",
               "Guru memberikan evaluasi akhlak dan adab sesuai PHIWM."
             ];
             details.lkpd = [
@@ -1331,9 +1331,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menjelaskan pengertian Khittah Perjuangan Muhammadiyah.",
-              "Siswa membandingkan Khittah Palembang (1956) dengan Khittah Denpasar (2002).",
+              "Murid membandingkan Khittah Palembang (1956) dengan Khittah Denpasar (2002).",
               "Diskusi kelompok: hubungan Muhammadiyah dengan politik praktis menurut Khittah Ujung Pandang.",
-              "Siswa mempresentasikan hasil analisis komparatif Khittah.",
+              "Murid mempresentasikan hasil analisis komparatif Khittah.",
               "Refleksi: pentingnya menjaga netralitas aktif persyarikatan."
             ];
             details.lkpd = [
@@ -1351,10 +1351,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menjelaskan hakikat kader dan tujuan perkaderan Muhammadiyah.",
-              "Siswa mengidentifikasi empat jalur perkaderan: keluarga, sekolah, Ortom, dan pengkajian.",
-              "Siswa merancang program kegiatan kaderisasi kreatif untuk tingkat ranting.",
+              "Murid mengidentifikasi empat jalur perkaderan: keluarga, sekolah, Ortom, dan pengkajian.",
+              "Murid merancang program kegiatan kaderisasi kreatif untuk tingkat ranting.",
               "Presentasi program kaderisasi oleh perwakilan kelompok.",
-              "Siswa menulis refleksi: 'Peranku sebagai kader masa depan Muhammadiyah'."
+              "Murid menulis refleksi: 'Peranku sebagai kader masa depan Muhammadiyah'."
             ];
             details.lkpd = [
               "Jelaskan profil kader ideal Muhammadiyah yang memiliki kompetensi spiritual dan intelektual!",
@@ -1370,9 +1370,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
               "Bagaimana Ortom Tapak Suci melakukan pembinaan kader pesilatnya?"
             ];
             details.langkahInti = [
-              "Siswa mempelajari panduan pengkaderan Ortom Muhammadiyah (IPM, HW, TS).",
-              "Siswa mendiskusikan pelaksanaan Taruna Melati (TM) IPM and Darul Arqam (DA) IMM.",
-              "Siswa menganalisis kurikulum perkaderan Hizbul Wathan di sekolah.",
+              "Murid mempelajari panduan pengkaderan Ortom Muhammadiyah (IPM, HW, TS).",
+              "Murid mendiskusikan pelaksanaan Taruna Melati (TM) IPM and Darul Arqam (DA) IMM.",
+              "Murid menganalisis kurikulum perkaderan Hizbul Wathan di sekolah.",
               "Simulasi pelaksanaan salah satu sesi materi perkaderan Ortom.",
               "Guru menyimpulkan karakteristik khusus perkaderan masing-masing Ortom."
             ];
@@ -1391,7 +1391,7 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru memaparkan peta pemikiran gerakan Islam kontemporer dan transnasional.",
-              "Siswa menganalisis artikel tentang pandangan moderasi beragama Muhammadiyah.",
+              "Murid menganalisis artikel tentang pandangan moderasi beragama Muhammadiyah.",
               "Diskusi kelompok: cara membentengi remaja dari pengaruh pemikiran ekstrem/radikal.",
               "Presentasi kelompok: 'Wasathiyah Islam cermin kepribadian Muhammadiyah'.",
               "Refleksi bersama mengenai pentingnya toleransi aktif."
@@ -1411,10 +1411,10 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             ];
             details.langkahInti = [
               "Guru menerangkan pemikiran Islam Berkemajuan hasil Muktamar ke-48.",
-              "Siswa mendiskusikan implementasi etos kemajuan dalam pendidikan dan sosial.",
+              "Murid mendiskusikan implementasi etos kemajuan dalam pendidikan dan sosial.",
               "Kelompok berdiskusi membuat program pemanfaatan AI/teknologi digital untuk dakwah sosial.",
               "Presentasi ide dakwah berkemajuan berbasis teknologi digital.",
-              "Siswa merumuskan komitmen belajar setinggi-tingginya demi peradaban Islam."
+              "Murid merumuskan komitmen belajar setinggi-tingginya demi peradaban Islam."
             ];
             details.lkpd = [
               "Jelaskan makna 'Islam Berkemajuan' menurut rumusan resmi persyarikatan Muhammadiyah!",

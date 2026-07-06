@@ -112,7 +112,7 @@ const Landing = () => {
           </p>
           <div className="hero-divider"></div>
           <p className="hero-description">
-            Mengintegrasikan perencanaan perangkat ajar dan media pembelajaran interaktif untuk guru dan siswa dalam rumpun Pendidikan Agama Islam, Kemuhammadiyahan, serta Bahasa Arab.
+            Mengintegrasikan perencanaan perangkat ajar dan media pembelajaran interaktif untuk guru dan murid dalam rumpun Pendidikan Agama Islam, Kemuhammadiyahan, serta Bahasa Arab.
           </p>
         </BentoTiltCard>
 
@@ -174,12 +174,12 @@ const Landing = () => {
           </div>
           <h2 className="bento-card-title">Materi Pembelajaran</h2>
           <p className="bento-card-desc">
-            Akses rangkuman bab, LKPD interaktif, dalil naqli terintegrasi, serta latihan mandiri siswa secara mobile-first.
+            Akses rangkuman bab, LKPD interaktif, dalil naqli terintegrasi, serta latihan mandiri murid secara mobile-first.
           </p>
           <ul className="materi-bullet-list">
             <li>Teks & Gambar Responsif</li>
             <li>Ringkasan esensial per bab</li>
-            <li>Fokus keaktifan siswa (LKPD)</li>
+            <li>Fokus keaktifan murid (LKPD)</li>
             <li>Optimasi akses mobile cepat</li>
           </ul>
           <div className="card-arrow-action">Eksplorasi Materi →</div>

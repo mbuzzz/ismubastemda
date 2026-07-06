@@ -13,7 +13,7 @@ const Tentang = () => {
         <h3 style={{ marginTop: '24px', color: 'var(--primary)', borderBottom: '2px solid var(--border)', paddingBottom: '8px' }}>Visi & Misi</h3>
         <p style={{ lineHeight: '1.6', color: '#444' }}>
           Mempermudah pendidik dalam merencanakan administrasi pembelajaran (Perangkat) sekaligus menyediakan bahan ajar interaktif (Materi) 
-          yang mudah diakses oleh peserta didik, selaras dengan Kurikulum Merdeka.
+          yang mudah diakses oleh murid, selaras dengan Kurikulum Merdeka.
         </p>
 
         <h3 style={{ marginTop: '24px', color: 'var(--primary)', borderBottom: '2px solid var(--border)', paddingBottom: '8px' }}>Fitur Utama</h3>

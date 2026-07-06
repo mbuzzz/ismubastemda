@@ -268,23 +268,14 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
 
       // Inti
       sections.push(createParagraph(`2. KEGIATAN INTI (${jpPerMinggu * 45 - 30} Menit)`, { bold: true, size: 20, after: 60 }));
-      const inti = ppm.langkahInti || [];
-      if (isFirst) {
-        sections.push(createParagraph(`• Literasi & TPACK: ${inti[0] || 'Siswa menyimak tayangan/video pembelajaran.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Identifikasi: ${inti[1] || 'Siswa membedah konsep dasar bersama guru.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Guru memetakan kelompok belajar berdasarkan hasil asesmen (Diferensiasi Proses).`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Siswa mengeksplorasi sumber belajar untuk merumuskan konsep.`, { size: 20, after: 80 }));
-      } else if (isLast) {
-        sections.push(createParagraph(`• Verifikasi: ${inti[inti.length - 2] || 'Siswa presentasi hasil kerja kelompok.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Generalisasi: ${inti[inti.length - 1] || 'Menyimpulkan hasil diskusi.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Tanya jawab interaktif antarkelompok; klarifikasi miskonsepsi.`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Pelaksanaan Asesmen Sumatif untuk mengukur ketercapaian TP.`, { size: 20, after: 80 }));
-      } else {
-        sections.push(createParagraph(`• Kolaborasi: ${inti[2] || 'Siswa berdiskusi memecahkan masalah LKPD.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Analisis: ${inti[3] || 'Guru melakukan pendampingan pada kelompok.'}`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Siswa mengaitkan konsep dengan studi kasus aktual.`, { size: 20, after: 40 }));
-        sections.push(createParagraph(`• Menyusun laporan/bahan presentasi berkelompok (Diferensiasi Produk).`, { size: 20, after: 80 }));
-      }
+      
+      const targetTpSnippet = targetTp.split(' ').slice(0, 5).join(' ');
+      
+      sections.push(createParagraph(`• Murid mengamati pemaparan awal atau media pembelajaran terkait ${targetTpSnippet}... untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.`, { size: 20, after: 40 }));
+      sections.push(createParagraph(`• Setelah memahami konsepnya, murid berkolaborasi dalam kelompok kecil untuk menggunakan informasi dan teori yang baru didapat guna menyelesaikan penugasan atau studi kasus baru pada LKPD.`, { size: 20, after: 40 }));
+      sections.push(createParagraph(`• Dengan bimbingan guru (scaffolding), setiap kelompok membedah masalah tersebut menjadi bagian-bagian yang lebih terperinci, lalu menguraikan bagaimana setiap bagian saling terkait hingga menemukan inti persoalannya.`, { size: 20, after: 40 }));
+      sections.push(createParagraph(`• Perwakilan kelompok mempresentasikan hasil diskusi. Pada tahap ini, antarkelompok saling menafsirkan data, melempar tanggapan kritis, dan menilai sejauh mana argumen yang disampaikan kelompok lain logis dan kuat.`, { size: 20, after: 40 }));
+      sections.push(createParagraph(`• Pada sesi akhir kegiatan inti, guru dan murid menyatukan pemahaman untuk meluruskan miskonsepsi yang muncul. Murid kemudian merangkai seluruh poin diskusi menjadi sebuah kesimpulan utuh atau menyusunnya menjadi draf karya akhir yang aplikatif.`, { size: 20, after: 80 }));
 
       // Penutup
       sections.push(createParagraph('3. PENUTUP (15 Menit)', { bold: true, size: 20, after: 60 }));
@@ -294,7 +285,7 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
         sections.push(createParagraph(`• Guru memberikan penguatan nilai Profil Pelajar Pancasila.`, { size: 20, after: 40 }));
         sections.push(createParagraph(`• ${ppm.langkahPenutup?.[4] || 'Menutup dengan doa.'}`, { size: 20, after: 120 }));
       } else {
-        sections.push(createParagraph(`• Siswa membuat simpulan sementara dari kegiatan hari ini.`, { size: 20, after: 40 }));
+        sections.push(createParagraph(`• Murid membuat simpulan sementara dari kegiatan hari ini.`, { size: 20, after: 40 }));
         sections.push(createParagraph(`• Guru melakukan asesmen formatif lisan cepat.`, { size: 20, after: 40 }));
         sections.push(createParagraph(`• Menyampaikan tugas mandiri untuk pertemuan selanjutnya.`, { size: 20, after: 40 }));
         sections.push(createParagraph(`• Menutup dengan doa dan salam.`, { size: 20, after: 120 }));
@@ -303,8 +294,8 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
 
     sections.push(new Paragraph({ spacing: { before: 100 } }));
 
-    // F. Bahan Bacaan Guru & Peserta Didik
-    sections.push(createParagraph('F. Bahan Bacaan Guru & Peserta Didik (Ringkasan Materi)', { bold: true, size: 22, after: 100 }));
+    // F. Bahan Bacaan Guru & Murid
+    sections.push(createParagraph('F. Bahan Bacaan Guru & Murid (Ringkasan Materi)', { bold: true, size: 22, after: 100 }));
     sections.push(createParagraph(`Materi esensial pada bab ini difokuskan pada pemahaman komprehensif terkait ${materi.judul}.`, { size: 20, after: 60 }));
     materi.tp.forEach((tp) => {
       sections.push(createParagraph(`• Konseptualisasi dan implementasi tentang: ${tp.split(' ').slice(2).join(' ')}`, { size: 20, after: 40 }));
@@ -324,18 +315,18 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
 
     // H. Asesmen
     sections.push(createParagraph('H. Rencana Asesmen', { bold: true, size: 22, after: 100 }));
-    sections.push(createParagraph(`Asesmen Diagnostik: ${ppm.asesmenDiagnostik || 'Tanya jawab awal untuk mengetahui pemahaman awal siswa'}`, { size: 20, after: 60 }));
+    sections.push(createParagraph(`Asesmen Diagnostik: ${ppm.asesmenDiagnostik || 'Tanya jawab awal untuk mengetahui pemahaman awal murid'}`, { size: 20, after: 60 }));
     sections.push(createParagraph(`Asesmen Formatif: ${ppm.asesmenFormatif || 'Observasi, LKPD, dan diskusi kelompok'}`, { size: 20, after: 60 }));
     sections.push(createParagraph(`Asesmen Sumatif: ${ppm.asesmenSumatif || 'Tes tertulis akhir bab, presentasi, dan proyek'}`, { size: 20, after: 200 }));
 
     // I. Remedial & Pengayaan
     sections.push(createParagraph('I. Remedial & Pengayaan', { bold: true, size: 22, after: 100 }));
-    sections.push(createParagraph(`Pengayaan: ${ppm.pengayaan || 'Bagi siswa yang telah tuntas diberikan tugas mandiri analisis studi kasus atau menulis artikel reflektif.'}`, { size: 20, after: 60 }));
-    sections.push(createParagraph(`Remedial: ${ppm.remedial || 'Bagi siswa yang belum tuntas diberikan bimbingan perorangan, tutor sebaya, atau penugasan terstruktur.'}`, { size: 20, after: 200 }));
+    sections.push(createParagraph(`Pengayaan: ${ppm.pengayaan || 'Bagi murid yang telah tuntas diberikan tugas mandiri analisis studi kasus atau menulis artikel reflektif.'}`, { size: 20, after: 60 }));
+    sections.push(createParagraph(`Remedial: ${ppm.remedial || 'Bagi murid yang belum tuntas diberikan bimbingan perorangan, tutor sebaya, atau penugasan terstruktur.'}`, { size: 20, after: 200 }));
 
     // J. Lampiran LKPD
     if (ppm.lkpd && ppm.lkpd.length > 0) {
-      sections.push(createParagraph('J. Lampiran: Lembar Kerja Peserta Didik (LKPD)', { bold: true, size: 22, after: 100 }));
+      sections.push(createParagraph('J. Lampiran: Lembar Kerja Murid (LKPD)', { bold: true, size: 22, after: 100 }));
       ppm.lkpd.forEach((q, idx) => {
         sections.push(createParagraph(`${idx + 1}. ${q}`, { size: 20, after: 60 }));
       });
