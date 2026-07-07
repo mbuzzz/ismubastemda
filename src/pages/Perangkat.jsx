@@ -1340,16 +1340,22 @@ export default function Perangkat() {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} className="no-print">
               <h2 className="page-title" style={{ margin: '0' }}>MODUL AJAR (PPM)</h2>
               <div style={{ fontSize: '11px', background: '#E3F2FD', padding: '6px', border: '1px solid #90CAF9', borderRadius: '4px' }}>
-                Pilih Bab PPM:
-                <select
-                  value={selectedPpmBab}
-                  onChange={(e) => setSelectedPpmBab(parseInt(e.target.value))}
-                  style={{ marginLeft: '6px', padding: '2px', fontWeight: 'bold' }}
-                >
-                  {materiList.map((m) => (
-                    <option key={m.bab} value={m.bab}>Bab {m.bab}: <ArabicText text={m.judul} /></option>
-                  ))}
-                </select>
+                {viewMode === 'single' ? (
+                  <>
+                    Pilih Bab PPM:
+                    <select
+                      value={selectedPpmBab}
+                      onChange={(e) => setSelectedPpmBab(parseInt(e.target.value))}
+                      style={{ marginLeft: '6px', padding: '2px', fontWeight: 'bold' }}
+                    >
+                      {materiList.map((m) => (
+                        <option key={m.bab} value={m.bab}>Bab {m.bab}: <ArabicText text={m.judul} /></option>
+                      ))}
+                    </select>
+                  </>
+                ) : (
+                  <strong>Menampilkan Otomatis: Bab {activeMateri.bab} (Seluruh Dokumen)</strong>
+                )}
               </div>
             </div>
             <div className="page-subtitle no-print">Perencanaan Pembelajaran Mendalam (PPM) {selectedMapel === 'arab' ? 'Bahasa Arab' : selectedMapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI'}</div>
