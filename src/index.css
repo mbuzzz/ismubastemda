@@ -814,6 +814,7 @@ body {
   .perangkat-wrapper {
     height: auto !important;
     overflow: visible !important;
+    display: block !important;
   }
 
   .sidebar, .toolbar, .no-print, .loading-overlay {
@@ -853,6 +854,18 @@ body {
     background: transparent !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    display: block !important;
+  }
+  
+  /* Fix page breaks failing inside Flexbox */
+  .modern-card, .modern-card-body {
+    display: block !important;
+  }
+  .modern-card-body > * {
+    margin-bottom: 12px !important;
+  }
+  .modern-card-body > *:last-child {
+    margin-bottom: 0 !important;
   }
   .a4-page:first-of-type {
     page-break-before: avoid !important;
