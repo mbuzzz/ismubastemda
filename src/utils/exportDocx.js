@@ -269,9 +269,7 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
       // Inti
       sections.push(createParagraph(`2. KEGIATAN INTI (${jpPerMinggu * 45 - 30} Menit)`, { bold: true, size: 20, after: 60 }));
       
-      const targetTpSnippet = targetTp.split(' ').slice(0, 5).join(' ');
-      
-      sections.push(createParagraph(`• Murid mengamati pemaparan awal atau media pembelajaran terkait ${targetTpSnippet}... untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.`, { size: 20, after: 40 }));
+      sections.push(createParagraph(`• Murid mengamati pemaparan awal atau media pembelajaran terkait capaian: ${targetTp}, untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.`, { size: 20, after: 40 }));
       sections.push(createParagraph(`• Setelah memahami konsepnya, murid berkolaborasi dalam kelompok kecil untuk menggunakan informasi dan teori yang baru didapat guna menyelesaikan penugasan atau studi kasus baru pada LKPD.`, { size: 20, after: 40 }));
       sections.push(createParagraph(`• Dengan bimbingan guru (scaffolding), setiap kelompok membedah masalah tersebut menjadi bagian-bagian yang lebih terperinci, lalu menguraikan bagaimana setiap bagian saling terkait hingga menemukan inti persoalannya.`, { size: 20, after: 40 }));
       sections.push(createParagraph(`• Perwakilan kelompok mempresentasikan hasil diskusi. Pada tahap ini, antarkelompok saling menafsirkan data, melempar tanggapan kritis, dan menilai sejauh mana argumen yang disampaikan kelompok lain logis dan kuat.`, { size: 20, after: 40 }));
