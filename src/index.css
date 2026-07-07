@@ -832,9 +832,10 @@ body {
   }
 
   .a4-page {
-    width: 210mm !important;
+    width: 100% !important;
+    min-height: auto !important;
     margin: 0 !important;
-    padding: 20mm 20mm !important;
+    padding: 0 !important;
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
@@ -858,11 +859,11 @@ body {
 
   @page {
     size: A4;
-    margin: 0;
+    margin: 15mm 15mm;
   }
 
   /* Prevent elements from breaking across pages */
-  tr, .modern-card, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, img {
+  tr, .modern-card, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, .prevent-break, img {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }

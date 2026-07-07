@@ -1176,7 +1176,7 @@ export default function Perangkat() {
 
             <div style={{ marginTop: '20px', fontSize: '11px' }}>
               {localMateriList.map((m, mIdx) => (
-                <div key={mIdx} style={{ border: '1px solid #333', padding: '10px', marginBottom: '15px', borderRadius: '4px' }}>
+                <div key={mIdx} className="prevent-break" style={{ border: '1px solid #333', padding: '10px', marginBottom: '15px', borderRadius: '4px' }}>
                   <div style={{ background: '#1976D2', color: 'white', padding: '6px', fontWeight: 'bold', borderRadius: '2px', marginBottom: '8px' }}>
                     ELEMEN: {m.elemen.toUpperCase()} (BAB {m.bab})
                   </div>
@@ -1306,7 +1306,7 @@ export default function Perangkat() {
               <h4 style={{ color: '#1976D2', marginTop: '20px', marginBottom: '8px' }}>
                 Aplikasi Rubrik Asesmen Bab Aktif:
               </h4>
-              <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '4px', background: '#F9FBE7' }}>
+              <div className="prevent-break" style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '4px', background: '#F9FBE7' }}>
                 <strong>Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} /></strong>
                 <ul style={{ margin: '8px 0 0 20px', padding: '0' }}>
                   {activeMateri.tp?.map((tp, tpIdx) => (
@@ -1802,7 +1802,7 @@ export default function Perangkat() {
             <div className="page-subtitle">Butir Pertanyaan Ujian & Kunci Jawaban Pembahasan</div>
 
             <div style={{ marginTop: '20px', fontSize: '11px' }}>
-              <div style={{ border: '2px solid #333', padding: '15px', borderRadius: '6px', marginBottom: '20px' }}>
+              <div className="prevent-break" style={{ border: '2px solid #333', padding: '15px', borderRadius: '6px', marginBottom: '20px' }}>
                 <div style={{ borderBottom: '1px solid #333', paddingBottom: '6px', marginBottom: '8px', display: 'flex', justifyContent: 'space-between', fontWeight: 'bold' }}>
                   <span>KARTU SOAL NOMOR: 01 (PILIHAN GANDA)</span>
                   <span>MATA PELAJARAN: PAI</span>
@@ -1824,7 +1824,7 @@ export default function Perangkat() {
                 </div>
               </div>
 
-              <div style={{ border: '2px solid #333', padding: '15px', borderRadius: '6px' }}>
+              <div className="prevent-break" style={{ border: '2px solid #333', padding: '15px', borderRadius: '6px' }}>
                 <div style={{ borderBottom: '1px solid #333', paddingBottom: '6px', marginBottom: '8px', display: 'flex', justifyContent: 'space-between', fontWeight: 'bold' }}>
                   <span>KARTU SOAL NOMOR: 02 (ESAI / URAIAN)</span>
                   <span>MATA PELAJARAN: PAI</span>
