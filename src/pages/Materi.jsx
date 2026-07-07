@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BookOpen, GraduationCap, ChevronRight, Library, ListChecks } from 'lucide-react';
+import { BookOpen, GraduationCap, ChevronRight, Library, Maximize, Minimize } from 'lucide-react';
 import { faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import MateriContent from '../components/materi/MateriContent';
 
@@ -11,9 +11,45 @@ const Materi = () => {
   const [kelas, setKelas] = useState(searchParams.get('kelas') || 'X');
   const [bab, setBab] = useState(parseInt(searchParams.get('bab') || '1'));
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Toggle Fullscreen Function
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.error(`Error attempting to enable fullscreen mode: ${err.message}`);
+      });
+      setIsFullscreen(true);
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+      setIsFullscreen(false);
+    }
+  };
+
+  // Sync fullscreen state with DOM changes (e.g., ESC key pressed)
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  // Update body class for fullscreen
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.classList.add('fullscreen-mode');
+    } else {
+      document.body.classList.remove('fullscreen-mode');
+    }
+    // Cleanup on unmount
+    return () => document.body.classList.remove('fullscreen-mode');
+  }, [isFullscreen]);
 
   // Update URL
-  React.useEffect(() => {
+  useEffect(() => {
     setSearchParams({ mapel, kelas, bab: bab.toString() }, { replace: true });
   }, [mapel, kelas, bab, setSearchParams]);
 
@@ -47,7 +83,7 @@ const Materi = () => {
         color: 'var(--text)', 
         borderRight: '1px solid #E2E8F0', 
         boxShadow: 'none',
-        display: 'flex',
+        display: isFullscreen ? 'none' : 'flex',
         flexDirection: 'column'
       }}>
         <div style={{ padding: '24px 20px', borderBottom: '1px solid #E2E8F0' }}>
@@ -253,39 +289,84 @@ const Materi = () => {
       </aside>
 
       {/* Main Content Area */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#F8FAFC' }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#F8FAFC', position: 'relative' }}>
         
-        {/* Mobile Toolbar */}
+        {/* Top Toolbar */}
         <div style={{ 
-          display: 'flex', 
+          display: isFullscreen ? 'none' : 'flex', 
           alignItems: 'center', 
+          justifyContent: 'space-between',
           padding: '10px 20px', 
           background: 'white', 
           borderBottom: '1px solid var(--border)',
           gap: '15px'
         }}>
-          <button 
-            className="md-hidden"
-            onClick={() => setIsSidebarOpen(true)}
-            style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: 'var(--primary)' }}
-          >
-            ☰
-          </button>
-          <div>
-            <h2 style={{ margin: 0, fontSize: '16px', color: 'var(--primary-dark)' }}>Materi Pembelajaran</h2>
-            <div style={{ fontSize: '11px', color: 'var(--text-light)' }}>
-              {mapel.toUpperCase()} • Kelas {kelas} • Bab {bab}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <button 
+              className="md-hidden"
+              onClick={() => setIsSidebarOpen(true)}
+              style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: 'var(--primary)' }}
+            >
+              ☰
+            </button>
+            <div>
+              <h2 style={{ margin: 0, fontSize: '16px', color: 'var(--primary-dark)' }}>Materi Pembelajaran</h2>
+              <div style={{ fontSize: '11px', color: 'var(--text-light)' }}>
+                {mapel.toUpperCase()} • Kelas {kelas} • Bab {bab}
+              </div>
             </div>
           </div>
+          
+          <button
+            onClick={toggleFullscreen}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '8px',
+              padding: '8px 16px', borderRadius: '8px',
+              background: '#E3F2FD', color: '#0D47A1',
+              border: '1px solid #BBDEFB',
+              fontSize: '12px', fontWeight: '700',
+              cursor: 'pointer', transition: 'all 0.2s',
+              boxShadow: '0 2px 5px rgba(13, 71, 161, 0.05)'
+            }}
+            onMouseOver={e => e.currentTarget.style.background = '#BBDEFB'}
+            onMouseOut={e => e.currentTarget.style.background = '#E3F2FD'}
+          >
+            <Maximize size={14} />
+            <span className="md-hidden-text" style={{ display: 'inline' }}>Mode Presentasi</span>
+          </button>
         </div>
 
         {/* Content Render */}
-        <div style={{ flex: 1, overflowY: 'auto', padding: '20px' }}>
-          <div style={{ maxWidth: '800px', margin: '0 auto', background: 'white', borderRadius: '12px', padding: '30px', boxShadow: 'var(--shadow)' }}>
+        <div style={{ flex: 1, overflowY: 'auto', padding: isFullscreen ? '40px' : '20px' }}>
+          <div style={{ maxWidth: isFullscreen ? '1000px' : '800px', margin: '0 auto', background: 'white', borderRadius: '12px', padding: isFullscreen ? '50px' : '30px', boxShadow: 'var(--shadow)', transition: 'all 0.3s' }}>
             <MateriContent mapel={mapel} kelas={kelas} bab={bab} materiData={activeMateri} />
           </div>
         </div>
 
+        {/* Floating Exit Fullscreen Button */}
+        {isFullscreen && (
+          <button
+            onClick={toggleFullscreen}
+            style={{
+              position: 'fixed',
+              bottom: '30px',
+              right: '30px',
+              display: 'flex', alignItems: 'center', gap: '8px',
+              padding: '12px 20px', borderRadius: '30px',
+              background: 'var(--primary-dark)', color: '#FFFFFF',
+              border: 'none',
+              fontSize: '13px', fontWeight: '700',
+              cursor: 'pointer', transition: 'all 0.3s',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
+              zIndex: 9999
+            }}
+            onMouseOver={e => e.currentTarget.style.transform = 'translateY(-3px)'}
+            onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+          >
+            <Minimize size={16} />
+            Keluar Presentasi
+          </button>
+        )}
       </div>
     </div>
   );
