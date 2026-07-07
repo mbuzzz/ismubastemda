@@ -871,12 +871,12 @@ body {
 
   @page {
     size: A4 portrait;
-    margin: 20mm;
+    margin: 20mm 15mm 20mm 30mm; /* Atas 20mm, Kanan 15mm, Bawah 20mm, Kiri (Jilid) 30mm */
   }
 
   @page landscape-page {
     size: A4 landscape;
-    margin: 15mm;
+    margin: 15mm 15mm 15mm 30mm; /* Ruang jilid 30mm di sebelah kiri */
   }
 
   .landscape-mode {
