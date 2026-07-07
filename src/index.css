@@ -862,7 +862,7 @@ body {
   }
 
   /* Prevent elements from breaking across pages */
-  tr, .modern-card, .metadata-card, .info-alert, .signature-block, .metadata-grid, img {
+  tr, .modern-card, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, img {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }

@@ -1175,7 +1175,7 @@ export default function Perangkat() {
             <div className="page-subtitle">Uraian Kompetensi dan Lingkup Materi Capaian Pembelajaran</div>
 
             <div style={{ marginTop: '20px', fontSize: '11px' }}>
-              {materiList.map((m, mIdx) => (
+              {localMateriList.map((m, mIdx) => (
                 <div key={mIdx} style={{ border: '1px solid #333', padding: '10px', marginBottom: '15px', borderRadius: '4px' }}>
                   <div style={{ background: '#1976D2', color: 'white', padding: '6px', fontWeight: 'bold', borderRadius: '2px', marginBottom: '8px' }}>
                     ELEMEN: {m.elemen.toUpperCase()} (BAB {m.bab})
@@ -1231,7 +1231,7 @@ export default function Perangkat() {
                   </tr>
                 </thead>
                 <tbody>
-                  {materiList.map((m, mIdx) => (
+                  {localMateriList.map((m, mIdx) => (
                     <React.Fragment key={mIdx}>
                       {m.tp?.map((t, tIdx) => (
                         <tr key={tIdx}>
