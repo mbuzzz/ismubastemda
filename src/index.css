@@ -888,9 +888,17 @@ body {
   }
 
   /* Prevent elements from breaking across pages */
-  tr, .modern-card, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, .prevent-break, img {
+  tr, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, .prevent-break, img, p, li {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+  }
+
+  /* Prevent headings from being orphaned at the bottom of a page */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 }
 
