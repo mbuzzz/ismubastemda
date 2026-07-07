@@ -184,16 +184,29 @@ export default function Perangkat() {
       schoolInfo.jpPerMinggu = schoolInfoData.jpPerMinggu;
       schoolInfo.mingguEfektif = schoolInfoData.mingguEfektif;
 
-      // Build per-bab PPM details map
-      const ppmMap = {};
-      const allMateri = dataToExport.semester[semester].materi;
-      allMateri.forEach(m => {
-        const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass);
-        details.dpl = getDplForBab(fase, m.bab, selectedMapel);
-        ppmMap[m.bab] = details;
-      });
-
-      await exportToDocx(dataToExport, semester, fileName, ppmMap);
+      if (viewMode === 'booklet' && specificBab === null) {
+        // Export BOTH semesters
+        for (const s of ['ganjil', 'genap']) {
+          let sFileName = `perangkat-${selectedMapel}-fase${fase}-${s}-${academicYear.replace('/', '-')}.docx`;
+          const sPpmMap = {};
+          dataToExport.semester[s].materi.forEach(m => {
+            const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass);
+            details.dpl = getDplForBab(fase, m.bab, selectedMapel);
+            sPpmMap[m.bab] = details;
+          });
+          await exportToDocx(dataToExport, s, sFileName, sPpmMap);
+        }
+      } else {
+        // Build per-bab PPM details map for selected semester
+        const ppmMap = {};
+        const allMateri = dataToExport.semester[semester].materi;
+        allMateri.forEach(m => {
+          const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass);
+          details.dpl = getDplForBab(fase, m.bab, selectedMapel);
+          ppmMap[m.bab] = details;
+        });
+        await exportToDocx(dataToExport, semester, fileName, ppmMap);
+      }
 
       // Restore
       Object.assign(schoolInfo, originalInfo);
@@ -342,7 +355,7 @@ export default function Perangkat() {
     switch (tabName) {
       case 'cover':
         return (
-          <div key="cover" className="a4-page" style={{ position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '20mm 15mm', border: '1px solid #E2E8F0' }}>
+          <div key="cover" className="a4-page cover-page" style={{ position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '20mm 15mm', border: '1px solid #E2E8F0' }}>
             {/* Elegant Islamic Star Geometric Watermark Background */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.04, pointerEvents: 'none', zIndex: 0 }}>
               <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -591,7 +604,7 @@ export default function Perangkat() {
 
       case 'judul':
         return (
-          <div key="judul" className="a4-page">
+          <div key="judul" className="a4-page cover-page">
             <div className="cover-border" style={{ borderColor: '#666', borderStyle: 'double' }}>
               <div style={{ textAlign: 'center', marginTop: '40px' }}>
                 <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>HALAMAN JUDUL</h2>
@@ -648,7 +661,7 @@ export default function Perangkat() {
 
       case 'identitas':
         return (
-          <div key="identitas" className="a4-page">
+          <div key="identitas" className="a4-page cover-page">
             <h2 className="page-title">IDENTITAS SATUAN PENDIDIKAN & GURU</h2>
             <div className="page-subtitle">Profil Resmi Satuan Pendidikan dan Administrasi Pelaksana Kurikulum</div>
 
