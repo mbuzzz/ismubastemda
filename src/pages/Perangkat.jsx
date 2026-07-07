@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { Maximize, Minimize } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
@@ -21,6 +22,38 @@ export default function Perangkat() {
   const [selectedPpmBab, setSelectedPpmBab] = useState(parseInt(searchParams.get('bab') || '1'));
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.error(`Error attempting to enable fullscreen mode: ${err.message}`);
+      });
+      setIsFullscreen(true);
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+      setIsFullscreen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.classList.add('fullscreen-mode');
+    } else {
+      document.body.classList.remove('fullscreen-mode');
+    }
+    return () => document.body.classList.remove('fullscreen-mode');
+  }, [isFullscreen]);
 
   useEffect(() => {
     setSearchParams({
@@ -1500,11 +1533,11 @@ export default function Perangkat() {
                               <span>Kegiatan Inti ({schoolInfoData.jpPerMinggu * 45 - 30} Menit) - Diferensiasi & TPACK</span>
                             </div>
                             <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px', lineHeight: '1.6' }}>
-                              <li style={{ marginBottom: '6px' }}>Murid mengamati pemaparan awal atau media pembelajaran terkait capaian <strong>{targetTp}</strong> untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.</li>
-                              <li style={{ marginBottom: '6px' }}>Setelah memahami konsepnya, murid berkolaborasi dalam kelompok kecil untuk menggunakan informasi dan teori yang baru didapat guna menyelesaikan penugasan atau studi kasus baru pada LKPD.</li>
-                              <li style={{ marginBottom: '6px' }}>Dengan bimbingan guru (scaffolding), setiap kelompok membedah masalah tersebut menjadi bagian-bagian yang lebih terperinci, lalu menguraikan bagaimana setiap bagian saling terkait hingga menemukan inti persoalannya.</li>
-                              <li style={{ marginBottom: '6px' }}>Perwakilan kelompok mempresentasikan hasil diskusi. Pada tahap ini, antarkelompok saling menafsirkan data, melempar tanggapan kritis, dan menilai sejauh mana argumen yang disampaikan kelompok lain logis dan kuat.</li>
-                              <li>Pada sesi akhir kegiatan inti, guru dan murid menyatukan pemahaman untuk meluruskan miskonsepsi yang muncul. Murid kemudian merangkai seluruh poin diskusi menjadi sebuah kesimpulan utuh atau menyusunnya menjadi draf karya akhir yang aplikatif.</li>
+                              {generateDynamicLangkahInti(targetTp, pertIdx).map((langkah, lIdx) => (
+                                <li key={lIdx} style={{ marginBottom: lIdx === 2 ? '0' : '8px' }}>
+                                  <strong style={{ color: 'var(--primary-dark)' }}>Tahap {lIdx + 1} ({lIdx === 0 ? 'Memahami' : lIdx === 1 ? 'Mengaplikasi' : 'Merefleksi'}):</strong> <span dangerouslySetInnerHTML={{__html: langkah.replace(targetTp, `<strong>${targetTp}</strong>`)}} />
+                                </li>
+                              ))}
                             </ul>
                           </div>
                         </div>
@@ -1821,7 +1854,7 @@ export default function Perangkat() {
     <div className="perangkat-wrapper" style={{ display: 'flex', width: '100%' }}>
       
       {/* Sidebar Navigation */}
-      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`} style={{ display: isFullscreen ? 'none' : 'block' }}>
         <div className="sidebar-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <div>
             <h2>Perangkat Pembelajaran ISMUBA</h2>
@@ -1937,7 +1970,7 @@ export default function Perangkat() {
       <main className="main-content" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         
         {/* Top Toolbar */}
-        <header className="toolbar" style={{ padding: '10px 20px', gap: '10px' }}>
+        <header className="toolbar" style={{ padding: '10px 20px', gap: '10px', display: isFullscreen ? 'none' : 'flex' }}>
           <div className="toolbar-left" style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1 }}>
             <button
               className="no-print"
@@ -2011,6 +2044,19 @@ export default function Perangkat() {
               }}
             >
               {isExporting ? 'Proses...' : 'Word'}
+            </button>
+            <button
+              onClick={toggleFullscreen}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px',
+                padding: '8px 14px', borderRadius: '8px', border: 'none',
+                background: '#E3F2FD', color: '#0D47A1',
+                fontSize: '11px', fontWeight: '700', cursor: 'pointer',
+                transition: 'all 0.15s'
+              }}
+            >
+              <Maximize size={14} />
+              <span className="md-hidden-text" style={{ display: 'inline' }}>Presentasi</span>
             </button>
           </div>
         </header>
@@ -2190,6 +2236,31 @@ export default function Perangkat() {
             </p>
           </div>
         </div>
+      )}
+
+      {/* Floating Exit Fullscreen Button */}
+      {isFullscreen && (
+        <button
+          onClick={toggleFullscreen}
+          style={{
+            position: 'fixed',
+            bottom: '30px',
+            right: '30px',
+            display: 'flex', alignItems: 'center', gap: '8px',
+            padding: '12px 20px', borderRadius: '30px',
+            background: 'var(--primary-dark)', color: '#FFFFFF',
+            border: 'none',
+            fontSize: '13px', fontWeight: '700',
+            cursor: 'pointer', transition: 'all 0.3s',
+            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
+            zIndex: 9999
+          }}
+          onMouseOver={e => e.currentTarget.style.transform = 'translateY(-3px)'}
+          onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+        >
+          <Minimize size={16} />
+          Keluar Presentasi
+        </button>
       )}
 
     </div>

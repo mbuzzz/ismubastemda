@@ -194,6 +194,81 @@ const defaultLangkahPenutup = [
   "Menutup pembelajaran dengan doa kafaratul majelis dan salam."
 ];
 
+export const generateDynamicLangkahInti = (targetTp, meetingIndex) => {
+  // Lowercase to check keywords
+  const tpLower = targetTp.toLowerCase();
+  const isPraktik = /membaca|menghafal|melafalkan|tajwid|menerjemahkan|hiwar|percakapan|menulis|menyalin/i.test(tpLower);
+
+  // Extract a meaningful snippet if TP is too long (optional, but requested to keep TP flow nice)
+  // We'll use the full TP but lowercase the first letter to fit naturally mid-sentence, 
+  // unless it starts with a proper noun or abbreviation (QS., KH., dll).
+  let tpText = targetTp.trim();
+  if (!/^(QS\.|KH\.|Muhammadiyah|Islam|Allah|Rasulullah)/i.test(tpText)) {
+    tpText = tpText.charAt(0).toLowerCase() + tpText.slice(1);
+  }
+
+  // Remove trailing period if exists
+  if (tpText.endsWith('.')) tpText = tpText.slice(0, -1);
+
+  let tahapan = [];
+
+  // Bank Variasi Teks
+  if (isPraktik) {
+    // Variasi Membaca/Menghafal/Praktik (C1-C6)
+    const varMemahami = [
+      `Murid menyimak demonstrasi bacaan atau pelafalan terkait ${tpText} untuk mengingat kembali makharijul huruf dan tajwid dasar, kemudian mempraktikkan ulang secara mandiri agar memahami kaidah bacaannya.`,
+      `Guru memberikan contoh pelafalan teks terkait ${tpText}. Murid mengidentifikasi pola bacaannya dan mencoba melafalkannya kembali dengan gaya mereka sendiri untuk memastikan pemahaman struktur teks.`,
+      `Murid melakukan pengamatan pada pedoman tajwid/makhraj dari ${tpText} untuk mengingat kembali aturan dasar, lalu secara mandiri menjabarkan ulang kaidah tersebut sebelum memulai praktik.`
+    ];
+    
+    const varMengaplikasi = [
+      `Murid berlatih secara berpasangan/berkelompok untuk mengaplikasikan kaidah bacaan pada ${tpText} secara tartil/lancar, lalu saling mengoreksi dan membedah letak kesalahan makhraj temannya.`,
+      `Dengan bimbingan guru, murid menggunakan pedoman tajwid/nahwu untuk membedah struktur kata/ayat pada ${tpText}, menguraikan hukum bacaan yang terkandung pada bagian-bagian kalimat tersebut.`,
+      `Kelompok murid menerapkan teori bacaan pada ${tpText} di situasi simulasi yang baru, memecah susunan ayat atau kalimat kompleks menjadi bagian-bagian yang mudah dianalisis kesesuaiannya.`
+    ];
+
+    const varMerefleksi = [
+      `Sesi diakhiri dengan unjuk kerja perwakilan murid membacakan ${tpText}. Kelompok lain mengevaluasi kelancaran bacaan, dilanjutkan dengan guru memberikan panduan akhir untuk perbaikan secara keseluruhan.`,
+      `Murid menyetorkan hafalan/bacaan terkait ${tpText} untuk dikritisi ketepatannya oleh forum. Melalui refleksi ini, mereka mampu merangkai catatan perbaikan (karya/resume bacaan) yang aplikatif.`,
+      `Melalui forum evaluasi bersama, murid menilai validitas makhraj dan intonasi antarkelompok. Setelah itu, mereka menyusun ringkasan utuh sebagai pembuktian penguasaan praktik ${tpText}.`
+    ];
+
+    tahapan = [
+      varMemahami[meetingIndex % varMemahami.length],
+      varMengaplikasi[meetingIndex % varMengaplikasi.length],
+      varMerefleksi[meetingIndex % varMerefleksi.length]
+    ];
+
+  } else {
+    // Variasi Teori/Analisis Konsep (C1-C6)
+    const varMemahami = [
+      `Murid mengamati pemaparan awal mengenai ${tpText} guna menggali informasi dasar, dilanjutkan dengan diskusi kelas agar mereka dapat mendeskripsikan ulang konsep tersebut dengan kata-kata sendiri.`,
+      `Guru menyajikan stimulus terkait ${tpText}. Murid kemudian mengidentifikasi informasi esensial dan menjabarkan pemahaman mereka secara lisan dengan penalaran mandiri.`,
+      `Berbekal literatur mengenai ${tpText}, murid melakukan pengamatan untuk mengingat kembali poin kunci materi dan merekonstruksi makna utamanya di bawah bimbingan guru.`
+    ];
+
+    const varMengaplikasi = [
+      `Pada tahap ini, murid bekerja dalam kelompok untuk menerapkan konsep ${tpText} ke dalam studi kasus LKPD, lalu membedah struktur masalah tersebut menjadi komponen yang lebih rinci.`,
+      `Murid menggunakan prinsip ${tpText} untuk menyelesaikan penugasan kolaboratif, serta menguraikan keterkaitan antar variabel dalam permasalahan kontekstual yang disajikan.`,
+      `Dengan scaffolding dari guru, kelompok murid mengaplikasikan teori ${tpText} pada situasi masalah yang baru, memecah informasi kompleks menjadi bagian-bagian yang lebih analitis.`
+    ];
+
+    const varMerefleksi = [
+      `Kegiatan ditutup dengan presentasi kelompok, di mana murid saling mengevaluasi temuan terkait ${tpText}, meluruskan miskonsepsi bersama guru, dan merumuskan kesimpulan akhir yang padu.`,
+      `Murid memaparkan hasil analisis ${tpText} untuk dikritisi secara logis oleh kelompok lain. Guru dan murid kemudian bersama-sama merangkai gagasan aplikatif sebagai bentuk refleksi.`,
+      `Melalui forum tanya jawab, murid menilai keakuratan argumen antarkelompok. Setelah itu, mereka menyusun draf karya atau ringkasan utuh sebagai pembuktian komprehensif atas penguasaan ${tpText}.`
+    ];
+
+    tahapan = [
+      varMemahami[meetingIndex % varMemahami.length],
+      varMengaplikasi[meetingIndex % varMengaplikasi.length],
+      varMerefleksi[meetingIndex % varMerefleksi.length]
+    ];
+  }
+
+  return tahapan;
+};
+
 export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
   const defaultSaranaPAI = [
     "LCD Projector, Laptop, dan Jaringan Internet (Wifi)",

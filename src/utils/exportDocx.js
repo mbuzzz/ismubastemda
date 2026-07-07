@@ -15,6 +15,7 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { schoolInfo } from '../data/curriculum';
+import { generateDynamicLangkahInti } from './perangkatUtils';
 
 const FONT = 'Plus Jakarta Sans';
 
@@ -269,11 +270,12 @@ export async function exportToDocx(faseData, semester = 'ganjil', filename = 'pe
       // Inti
       sections.push(createParagraph(`2. KEGIATAN INTI (${jpPerMinggu * 45 - 30} Menit)`, { bold: true, size: 20, after: 60 }));
       
-      sections.push(createParagraph(`• Murid mengamati pemaparan awal atau media pembelajaran terkait capaian: ${targetTp}, untuk mengingat kembali informasi dasar, lalu diajak berdiskusi interaktif agar mampu menjelaskan konsep utama tersebut dengan kata-kata mereka sendiri.`, { size: 20, after: 40 }));
-      sections.push(createParagraph(`• Setelah memahami konsepnya, murid berkolaborasi dalam kelompok kecil untuk menggunakan informasi dan teori yang baru didapat guna menyelesaikan penugasan atau studi kasus baru pada LKPD.`, { size: 20, after: 40 }));
-      sections.push(createParagraph(`• Dengan bimbingan guru (scaffolding), setiap kelompok membedah masalah tersebut menjadi bagian-bagian yang lebih terperinci, lalu menguraikan bagaimana setiap bagian saling terkait hingga menemukan inti persoalannya.`, { size: 20, after: 40 }));
-      sections.push(createParagraph(`• Perwakilan kelompok mempresentasikan hasil diskusi. Pada tahap ini, antarkelompok saling menafsirkan data, melempar tanggapan kritis, dan menilai sejauh mana argumen yang disampaikan kelompok lain logis dan kuat.`, { size: 20, after: 40 }));
-      sections.push(createParagraph(`• Pada sesi akhir kegiatan inti, guru dan murid menyatukan pemahaman untuk meluruskan miskonsepsi yang muncul. Murid kemudian merangkai seluruh poin diskusi menjadi sebuah kesimpulan utuh atau menyusunnya menjadi draf karya akhir yang aplikatif.`, { size: 20, after: 80 }));
+      const dinamisInti = generateDynamicLangkahInti(targetTp, pertIdx);
+      dinamisInti.forEach((langkah, lIdx) => {
+        const title = lIdx === 0 ? 'Memahami' : lIdx === 1 ? 'Mengaplikasi' : 'Merefleksi';
+        const isLastStep = lIdx === 2;
+        sections.push(createParagraph(`• Tahap ${lIdx + 1} (${title}): ${langkah}`, { size: 20, after: isLastStep ? 80 : 40 }));
+      });
 
       // Penutup
       sections.push(createParagraph('3. PENUTUP (15 Menit)', { bold: true, size: 20, after: 60 }));
