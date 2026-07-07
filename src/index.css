@@ -832,10 +832,9 @@ body {
   }
 
   .a4-page {
-    width: 100% !important;
-    min-height: auto !important;
+    width: 210mm !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 20mm 20mm !important;
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
@@ -859,7 +858,7 @@ body {
 
   @page {
     size: A4;
-    margin: 15mm 15mm;
+    margin: 0;
   }
 
   /* Prevent elements from breaking across pages */
