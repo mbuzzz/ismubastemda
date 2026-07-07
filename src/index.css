@@ -790,6 +790,11 @@ body {
   border: 1px solid var(--border);
 }
 
+.landscape-mode {
+  width: 297mm !important;
+  min-height: 210mm !important;
+}
+
 @media print {
   /* Hide UI elements */
   .sidebar, .toolbar, .settings-overlay, .desktop-navbar, .bottom-navbar {
@@ -839,6 +844,7 @@ body {
     border: none !important;
     border-radius: 0 !important;
     page-break-before: always !important;
+    break-before: page !important;
     overflow: visible !important;
     position: relative !important;
     box-sizing: border-box !important;
@@ -848,6 +854,7 @@ body {
   }
   .a4-page:first-of-type {
     page-break-before: avoid !important;
+    break-before: avoid !important;
   }
 
   /* Force background colors, gradients and shapes to print */
@@ -857,8 +864,20 @@ body {
   }
 
   @page {
-    size: A4;
+    size: A4 portrait;
     margin: 0;
+  }
+
+  @page landscape-page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  .landscape-mode {
+    page: landscape-page;
+    width: 297mm !important;
+    min-height: 210mm !important;
+    padding: 15mm 15mm !important;
   }
 
   /* Prevent elements from breaking across pages */

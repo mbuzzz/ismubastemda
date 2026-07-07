@@ -947,7 +947,7 @@ export default function Perangkat() {
         };
 
         return (
-          <div key="prota" className="a4-page" style={{ padding: '15mm 15mm' }}>
+          <div key="prota" className="a4-page landscape-mode" style={{ padding: '15mm 15mm' }}>
             <h2 className="page-title">PROGRAM TAHUNAN (PROTA)</h2>
             <div className="page-subtitle">Distribusi Alokasi JP Bulanan - Fase {fase} TA {schoolInfoData.tahunAjaran}</div>
 
@@ -1063,7 +1063,7 @@ export default function Perangkat() {
         const weeksArray = sem === 'ganjil' ? ganjilWeeksList : genapWeeksList;
         const scheduledMateri = getTeachingSchedule(localMateriList, weeksArray);
         return (
-          <div key="promes" className="a4-page" style={{ padding: '15mm 15mm' }}>
+          <div key="promes" className="a4-page landscape-mode" style={{ padding: '15mm 15mm' }}>
             <h2 className="page-title">PROGRAM SEMESTER (PROMES)</h2>
             <div className="page-subtitle">Distribusi KBM Pekanan - Semester {sem.toUpperCase()} TA {schoolInfoData.tahunAjaran}</div>
 
