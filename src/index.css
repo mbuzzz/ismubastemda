@@ -831,7 +831,7 @@ body {
   .main-content {
     margin: 0 !important;
     padding: 0 !important;
-    width: 210mm !important;
+    width: 100% !important;
     display: block !important;
     background: none !important;
   }
