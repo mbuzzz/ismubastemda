@@ -167,6 +167,12 @@ export const getDplForBab = (fase, bab, mapel = 'pai') => {
         ];
     }
   }
+
+  // Fallback default for Fase F or other unhandled cases
+  return [
+    { nama: dplNames.keimanan, deskripsi: "Lulusan memiliki integritas spiritual dan moralitas kokoh." },
+    { nama: dplNames.penalaran, deskripsi: "Lulusan mampu bernalar kritis dalam mendalami ajaran Islam." }
+  ];
 };
 
 const defaultLangkahPendahuluan = [

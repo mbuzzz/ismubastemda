@@ -4,7 +4,7 @@ import { Maximize, Minimize } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
-import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText } from '../utils/perangkatUtils';
+import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti } from '../utils/perangkatUtils';
 
 export default function Perangkat() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -13,7 +13,7 @@ export default function Perangkat() {
   const [selectedMapel, setSelectedMapel] = useState(searchParams.get('mapel') || 'pai'); // pai or arab
   const [fase, setFase] = useState(searchParams.get('fase') || 'E'); // E or F
   const [selectedClass, setSelectedClass] = useState(searchParams.get('kelas') || 'X'); // X for E, XI or XII for F
-  const [semester, setSemester] = useState(searchParams.get('semester') || 'ganjil'); // ganjil or genap
+  const [semester, setSemester] = useState((searchParams.get('semester') || 'ganjil').toLowerCase()); // ganjil or genap
   const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'cover'); // side nav active item
   const [viewMode, setViewMode] = useState(searchParams.get('view') || 'single'); // single page or booklet
   const [teacherName, setTeacherName] = useState('');
@@ -982,7 +982,7 @@ export default function Perangkat() {
                           <td className="center">{sm.bab}</td>
                           <td>
                             <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '8.5px' }}>
-                              {sm.tp.map((t, tIdx) => (
+                              {sm.tp?.map((t, tIdx) => (
                                 <li key={tIdx} style={{ marginBottom: '2px' }}>{t}</li>
                               ))}
                             </ul>
@@ -1107,7 +1107,7 @@ export default function Perangkat() {
                         <td className="center">{sm.bab}</td>
                         <td>
                           <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '8.5px' }}>
-                            {sm.tp.map((t, tIdx) => (
+                            {sm.tp?.map((t, tIdx) => (
                               <li key={tIdx} style={{ marginBottom: '2px' }}>{t}</li>
                             ))}
                           </ul>
@@ -1197,7 +1197,7 @@ export default function Perangkat() {
                         <td style={{ border: '1px solid #333', padding: '6px', fontWeight: 'bold', background: '#F9FBE7' }}>Tujuan Pembelajaran (TP)</td>
                         <td style={{ border: '1px solid #333', padding: '6px' }}>
                           <ul style={{ margin: '0', paddingLeft: '16px' }}>
-                            {m.tp.map((t, tIdx) => <li key={tIdx}>{t}</li>)}
+                            {m.tp?.map((t, tIdx) => <li key={tIdx}>{t}</li>)}
                           </ul>
                         </td>
                       </tr>
@@ -1233,7 +1233,7 @@ export default function Perangkat() {
                 <tbody>
                   {materiList.map((m, mIdx) => (
                     <React.Fragment key={mIdx}>
-                      {m.tp.map((t, tIdx) => (
+                      {m.tp?.map((t, tIdx) => (
                         <tr key={tIdx}>
                           {tIdx === 0 && (
                             <td rowSpan={m.tp.length} style={{ fontWeight: 'bold', background: '#E3F2FD' }}>
