@@ -665,48 +665,58 @@ export default function Perangkat() {
             <h2 className="page-title">IDENTITAS SATUAN PENDIDIKAN & GURU</h2>
             <div className="page-subtitle">Profil Resmi Satuan Pendidikan dan Administrasi Pelaksana Kurikulum</div>
 
-            <div style={{ marginTop: '20px' }}>
-              <h3 style={{ borderBottom: '2px solid #1976D2', color: '#1976D2', paddingBottom: '4px', marginBottom: '12px', fontSize: '11px', fontWeight: 'bold' }}>
-                A. PROFIL SATUAN PENDIDIKAN
-              </h3>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px', marginBottom: '20px' }}>
-                <tbody>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', width: '32%' }}>Nama Sekolah</td><td style={{ padding: '5px 0', width: '3%' }}>:</td><td style={{ padding: '5px 0', fontWeight: 'bold', color: '#0D47A1' }}>SMKS MUHAMMADIYAH 2 GENTENG</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Alamat Lengkap</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Jl. Hasanudin 103 Genteng</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Jalan</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Jl. Hasanudin</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Desa / Kelurahan</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Genteng Wetan</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Kecamatan</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Genteng</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Kabupaten / Kota</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Banyuwangi</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Provinsi</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Jawa Timur</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', paddingLeft: '15px' }}>- Kode Pos</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>68465</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>No. Telepon / HP / Fax</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>0333 846292</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>NPSN / Jenjang / Status</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>20525622 / SMK / Swasta</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Email Resmi</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0', color: '#1565C0' }}>smk_stm2_gtg@yahoo.co.id</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Website Resmi</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0', color: '#1565C0' }}>www.smkmuh2genteng.sch.id</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>SK & Tanggal Pendirian</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>0109/III.A/1.D/2000 (30 September 2002)</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>SK & Tgl Izin Operasional</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>P2T/1027/19.08/02/VIII/2019 (01 Agustus 2019)</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Status Kepemilikan & Tanah</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Yayasan / Milik Yayasan</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Luas Tanah / Status Bangunan</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>20.200 m² / Milik Yayasan</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Sumber & Daya Listrik</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>PLN & Diesel (175.000 VA)</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Mulai Operasional</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>1976</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Akreditasi Sekolah</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0', fontWeight: 'bold' }}>A</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Nama Kepala Sekolah</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>Tamyis Rosidi, S.Pd., M.Pd. (NBM. 1067597)</td></tr>
-                </tbody>
-              </table>
+            <div className="modern-card" style={{ marginTop: '20px' }}>
+              <div className="modern-card-header">
+                <h3 style={{ margin: 0, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <i className="fas fa-school" style={{ color: 'var(--primary)' }}></i> A. PROFIL SATUAN PENDIDIKAN
+                </h3>
+              </div>
+              <div className="modern-card-body">
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '11px' }}>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', width: '32%' }}>Nama Sekolah</td><td style={{ padding: '8px 4px', width: '3%' }}>:</td><td style={{ padding: '8px', fontWeight: 'bold', color: '#0D47A1' }}>SMKS MUHAMMADIYAH 2 GENTENG</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Alamat Lengkap</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Jl. Hasanudin 103 Genteng</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Jalan</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Jl. Hasanudin</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Desa / Kelurahan</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Genteng Wetan</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Kecamatan</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Genteng</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Kabupaten / Kota</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Banyuwangi</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Provinsi</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Jawa Timur</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', paddingLeft: '20px' }}>- Kode Pos</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>68465</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>No. Telepon / HP / Fax</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>0333 846292</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>NPSN / Jenjang / Status</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>20525622 / SMK / Swasta</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Email Resmi</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px', color: '#1565C0' }}>smk_stm2_gtg@yahoo.co.id</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Website Resmi</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px', color: '#1565C0' }}>www.smkmuh2genteng.sch.id</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>SK & Tanggal Pendirian</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>0109/III.A/1.D/2000 (30 September 2002)</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>SK & Tgl Izin Operasional</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>P2T/1027/19.08/02/VIII/2019 (01 Agustus 2019)</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Status Kepemilikan & Tanah</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Yayasan / Milik Yayasan</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Luas Tanah / Status Bangunan</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>20.200 m² / Milik Yayasan</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Sumber & Daya Listrik</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>PLN & Diesel (175.000 VA)</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Mulai Operasional</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>1976</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Akreditasi Sekolah</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px', fontWeight: 'bold', fontSize: '12px' }}>A</td></tr>
+                    <tr><td style={{ padding: '8px', fontWeight: 'bold' }}>Nama Kepala Sekolah</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>Tamyis Rosidi, S.Pd., M.Pd. (NBM. 1067597)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-              <h3 style={{ borderBottom: '2px solid #1976D2', color: '#1976D2', paddingBottom: '4px', marginBottom: '12px', fontSize: '11px', fontWeight: 'bold' }}>
-                B. ADMINISTRASI PELAKSANA KURIKULUM & GURU
-              </h3>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px' }}>
-                <tbody>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold', width: '32%' }}>Mata Pelajaran</td><td style={{ padding: '5px 0', width: '3%' }}>:</td><td style={{ padding: '5px 0', fontWeight: 'bold', color: '#0D47A1' }}>Pendidikan Agama Islam & Budi Pekerti</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Fase / Kelas</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>{fase} / {selectedClass}</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Tahun Pelajaran</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>{academicYear}</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Guru Pengampu</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>{teacherName || '........................................'} (NBM. {teacherNbm || '......................'})</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Waka Kurikulum</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>{schoolInfoData.wakaKurikulum} (NBM. {schoolInfoData.nbmWaka})</td></tr>
-                  <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '5px 0', fontWeight: 'bold' }}>Alokasi JP Akat</td><td style={{ padding: '5px 0' }}>:</td><td style={{ padding: '5px 0' }}>{schoolInfoData.mingguEfektif} Minggu Efektif ({schoolInfoData.mingguEfektif * schoolInfoData.jpPerMinggu} JP per Semester) / {schoolInfoData.jpPerMinggu} JP per Pekan</td></tr>
-                </tbody>
-              </table>
+            <div className="modern-card" style={{ marginTop: '20px' }}>
+              <div className="modern-card-header">
+                <h3 style={{ margin: 0, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <i className="fas fa-user-tie" style={{ color: 'var(--primary)' }}></i> B. ADMINISTRASI PELAKSANA KURIKULUM & GURU
+                </h3>
+              </div>
+              <div className="modern-card-body">
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '11px' }}>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold', width: '32%' }}>Mata Pelajaran</td><td style={{ padding: '8px 4px', width: '3%' }}>:</td><td style={{ padding: '8px', fontWeight: 'bold', color: '#0D47A1' }}>{selectedMapel || 'Mata Pelajaran Belum Dipilih'}</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Fase / Kelas</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>{fase} / {selectedClass}</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Tahun Pelajaran</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>{academicYear}</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Guru Pengampu</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>{teacherName || '........................................'} (NBM. {teacherNbm || '......................'})</td></tr>
+                    <tr style={{ borderBottom: '1px solid #E0E0E0' }}><td style={{ padding: '8px', fontWeight: 'bold' }}>Waka Kurikulum</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>{schoolInfoData.wakaKurikulum} (NBM. {schoolInfoData.nbmWaka})</td></tr>
+                    <tr><td style={{ padding: '8px', fontWeight: 'bold' }}>Alokasi JP & Waktu</td><td style={{ padding: '8px 4px' }}>:</td><td style={{ padding: '8px' }}>{schoolInfoData.mingguEfektif} Minggu Efektif ({schoolInfoData.mingguEfektif * schoolInfoData.jpPerMinggu} JP/Sem) - {schoolInfoData.jpPerMinggu} JP/Pekan</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
