@@ -1,38 +1,108 @@
 // src/data/raw_materi/dataArab.js
 export const dataArab = {
   X: {
-    1: { // Salam dan Ta'aruf
-      ringkasan: "Perkenalan (Ta'aruf) merupakan langkah awal komunikasi. Penguasaan kosakata sapaan dasar dan kata ganti (dhamir) mutlak diperlukan untuk merajut komunikasi yang santun.",
+    1: { // البيت (Rumah)
+      ringkasan: "Materi البيت membekali murid dengan kosakata, dialog, dan narasi tentang rumah serta lingkungan sekitar. Fokus kaidah: اسم الإشارة (kata tunjuk) dan أحرف الجر (huruf jar) untuk menunjuk letak ruangan dan benda di rumah.",
       sections: [
         {
-          title: "A. Al-Mufradat (Kosakata Inti)",
-          content: "Berikut adalah kosakata (mufradat) dasar dalam perkenalan:\n- السَّلَامُ عَلَيْكُمْ (Assalamu'alaikum) = Keselamatan atas kamu.\n- صَبَاحُ الْخَيْرِ (Shabahul khair) = Selamat pagi.\n- مَسَاءُ الْخَيْرِ (Masaa-ul khair) = Selamat sore.\n- أَهْلًا وَسَهْلًا (Ahlan wa sahlan) = Selamat datang.\n- اِسْمِي... (Ismi...) = Nama saya...\n- كَيْفَ حَالُكَ؟ (Kaifa haluka?) = Bagaimana kabarmu (untuk laki-laki)?\n- مِنْ أَيْنَ أَنْتَ؟ (Min ayna anta?) = Dari mana asalmu?\n- أَنَا مِنْ... (Ana min...) = Saya berasal dari..."
+          title: "A. Al-Mufradat (Kosakata Inti) — البيت",
+          content: "Kosakata dasar tentang rumah dan isinya:\n- الْبَيْتُ (al-baitu) = rumah\n- الْغُرْفَةُ (al-ghurfatu) = kamar\n- غُرْفَةُ النَّوْمِ (ghurfatu an-naumi) = kamar tidur\n- غُرْفَةُ الْجُلُوْسِ (ghurfatu al-juluusi) = ruang tamu\n- الْمَطْبَخُ (al-mathbakhu) = dapur\n- الْحَمَّامُ (al-hammaamu) = kamar mandi\n- الْبَابُ (al-baabu) = pintu\n- النَّافِذَةُ (an-naafidzatu) = jendela\n- الْمِفْتَاحُ (al-miftaahu) = kunci\n- الْمِنْضَدَةُ (al-mindhadatu) = meja\n- الْكُرْسِيُّ (al-kursiyyu) = kursi\n- السَّرِيْرُ (as-sariiru) = tempat tidur\n- الْمِصْبَاحُ (al-mishbaahu) = lampu\n- فِيْ (fii) = di dalam\n- عَلَى (alaa) = di atas\n- تَحْتَ (tahta) = di bawah\n- أَمَامَ (amaama) = di depan\n- خَلْفَ (khalfa) = di belakang\n- بَيْنَ (baina) = di antara\n- هٰذَا / هٰذِهِ (hadzaa / hadzihi) = ini (lk/pr)\n- ذٰلِكَ / تِلْكَ (dzalika / tilka) = itu (lk/pr)"
         },
         {
-          title: "B. Al-Hiwar (Percakapan Ta'aruf)",
-          content: "Ahmad : السَّلَامُ عَلَيْكُمْ\nAli   : وَعَلَيْكُمُ السَّلَامُ\nAhmad : صَبَاحُ الْخَيْرِ، اِسْمِي أَحْمَد. مَا اسْمُكَ؟ (Selamat pagi, nama saya Ahmad. Siapa namamu?)\nAli   : صَبَاحُ النُّوْرِ، اِسْمِي عَلِيّ. (Selamat pagi, nama saya Ali.)\nAhmad : كَيْفَ حَالُكَ يَا عَلِيّ؟ (Bagaimana kabarmu wahai Ali?)\nAli   : بِخَيْرٍ وَالْحَمْدُ للهِ، وَكَيْفَ حَالُكَ أَنْتَ؟ (Baik, Alhamdulillah, dan bagaimana kabarmu?)\nAhmad : بِخَيْرٍ وَالْحَمْدُ للهِ. مِنْ أَيْنَ أَنْتَ؟ (Baik, Alhamdulillah. Dari mana asalmu?)\nAli   : أَنَا مِنْ بَانْيُووَانْجِي، وَأَنْتَ؟ (Saya dari Banyuwangi, dan kamu?)\nAhmad : أَنَا مِنْ جَاكَرْتَا. أَهْلًا وَسَهْلًا يَا عَلِيّ. (Saya dari Jakarta. Selamat datang wahai Ali.)\nAli   : أَهْلًا بِكَ يَا أَحْمَد. (Selamat datang juga wahai Ahmad.)\n\nDalam kaidah tata bahasa Arab, penggunaan dhamir (kata ganti) harus disesuaikan dengan jenis kelamin lawan bicara (Mudzakkar atau Muannats). Jika lawan bicara adalah perempuan, maka 'Haluka' berubah menjadi 'Haluki', dan 'Anta' menjadi 'Anti'."
+          title: "B. Al-Hiwar (Dialog) — فِي الْبَيْتِ",
+          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا عَلِيّ\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ يَا أَحْمَد. كَيْفَ حَالُكَ؟\nأَحْمَد : بِخَيْرٍ، الْحَمْدُ للهِ. هٰذَا بَيْتِيْ.\nعَلِيّ : مَا شَاءَ اللهُ، بَيْتٌ جَمِيْلٌ. أَيْنَ غُرْفَةُ الْجُلُوْسِ؟\nأَحْمَد : غُرْفَةُ الْجُلُوْسِ أَمَامَ الْبَابِ. هٰذِهِ غُرْفَةُ الْجُلُوْسِ.\nعَلِيّ : وَأَيْنَ الْمَطْبَخُ؟\nأَحْمَد : الْمَطْبَخُ خَلْفَ غُرْفَةِ الْجُلُوْسِ. وَالْحَمَّامُ بَيْنَ غُرْفَةِ النَّوْمِ وَالْمَطْبَخِ.\nعَلِيّ : هٰذَا كُرْسِيٌّ كَبِيْرٌ. أَيْنَ الْمِنْضَدَةُ؟\nأَحْمَد : الْمِنْضَدَةُ عَلَى يَمِيْنِ الْكُرْسِيِّ. وَالْمِصْبَاحُ فَوْقَ الْمِنْضَدَةِ.\n\nTerjemahan singkat: Ahmad menyambut Ali di rumahnya, menunjukkan ruang tamu, dapur, kamar mandi, kursi, meja, dan lampu dengan kata tunjuk serta keterangan tempat."
+        },
+        {
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — بَيْتِيْ",
+          content: "هٰذَا بَيْتِيْ. بَيْتِيْ صَغِيْرٌ وَجَمِيْلٌ. فِيْ بَيْتِيْ غُرْفَةُ جُلُوْسٍ وَغُرْفَتَا نَوْمٍ وَمَطْبَخٌ وَحَمَّامٌ. غُرْفَةُ الْجُلُوْسِ أَمَامَ الْبَابِ. فِيْ غُرْفَةِ الْجُلُوْسِ مِنْضَدَةٌ وَكُرْسِيَّانِ وَمِصْبَاحٌ. الْمِصْبَاحُ عَلَى الْمِنْضَدَةِ. غُرْفَةُ النَّوْمِ خَلْفَ غُرْفَةِ الْجُلُوْسِ. فِيْ غُرْفَةِ النَّوْمِ سَرِيْرٌ وَنَافِذَةٌ. أَنَا أُحِبُّ بَيْتِيْ.\n\nArti: Ini rumahku. Rumahku kecil dan indah. Di rumahku ada ruang tamu, dua kamar tidur, dapur, dan kamar mandi. Ruang tamu di depan pintu. Di ruang tamu ada meja, dua kursi, dan lampu. Lampu di atas meja. Kamar tidur di belakang ruang tamu. Di kamar tidur ada tempat tidur dan jendela. Aku menyukai rumahku."
+        },
+        {
+          title: "D. Al-Qawa'id (Kaidah) — اسم الإشارة و أحرف الجر",
+          content: "1. اسم الإشارة (Isim Isyarah / Kata Tunjuk)\n- Jarak dekat: هٰذَا (mudzakkar mufrad), هٰذِهِ (muannats mufrad)\n- Jarak jauh: ذٰلِكَ (mudzakkar), تِلْكَ (muannats)\nContoh: هٰذَا بَابٌ (Ini pintu). هٰذِهِ نَافِذَةٌ (Ini jendela). ذٰلِكَ سَرِيْرٌ (Itu tempat tidur). تِلْكَ غُرْفَةٌ (Itu kamar).\n\n2. أحرف الجر (Huruf Jar) yang sering dipakai di topik rumah:\n- فِيْ (di dalam), عَلَى (di atas), تَحْتَ (di bawah), أَمَامَ (di depan), خَلْفَ (di belakang), بَيْنَ (di antara), إِلَى (ke), مِنْ (dari)\nCatatan: isim setelah huruf jar berharakat kasrah (majrur), contoh: فِي الْبَيْتِ، عَلَى الْمِنْضَدَةِ.\n\nLatihan cepat: ubah 'Ini kursi di depan meja' → هٰذَا كُرْسِيٌّ أَمَامَ الْمِنْضَدَةِ."
         }
       ],
       rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in.",
-        "Kamus Al-Munawwir Arab-Indonesia."
+        "Buku Al-'Arabiyyah Li an-Nasyi'in / Al-'Arabiyyah Baina Yadaik (materi al-bait).",
+        "Kamus Al-Munawwir Arab-Indonesia.",
+        "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
       ]
     },
-    2: { // Isim Isyarah
-      ringkasan: "Isim Isyarah adalah kata tunjuk yang digunakan untuk menunjukkan letak suatu benda atau seseorang, baik dari jarak dekat maupun jauh.",
+    2: { // التعارف (Perkenalan)
+      ringkasan: "Materi التعارف melatih murid berkenalan, menyapa, dan berinteraksi santun. Fokus kaidah: الضمير المنفصل (kata ganti terpisah) dan الضمير المتصل (kata ganti tersambung) dalam dialog perkenalan.",
       sections: [
         {
-          title: "A. Isim Isyarah Jarak Dekat (Lil-Qarib)",
-          content: "Kata tunjuk jarak dekat dalam bahasa Indonesia berarti 'Ini'. Dalam bahasa Arab, kata ini dibedakan berdasarkan jenis kelamin benda (Mudzakkar/Maskulin dan Muannats/Feminim):\n1. **هٰذَا (Hadza)** : Digunakan untuk benda atau orang Mudzakkar (tunggal/mufrad).\n   Contoh: هٰذَا كِتَابٌ (Ini adalah buku) / هٰذَا أَحْمَد (Ini adalah Ahmad).\n2. **هٰذِهِ (Hadzihi)** : Digunakan untuk benda atau orang Muannats (tunggal/mufrad), biasanya benda yang berakhiran ta' marbutah (ة).\n   Contoh: هٰذِهِ مَدْرَسَةٌ (Ini adalah sekolah) / هٰذِهِ فَاطِمَة (Ini adalah Fatimah)."
+          title: "A. Al-Mufradat (Kosakata Inti) — التعارف",
+          content: "Kosakata dan ungkapan perkenalan:\n- التَّعَارُفُ (at-ta'aaruf) = perkenalan\n- اِسْمِيْ... (ismii...) = namaku...\n- مَا اسْمُكَ؟ / مَا اسْمُكِ؟ (maa ismuka / ismuki) = siapa namamu (lk/pr)?\n- أَنَا (ana) = saya\n- أَنْتَ / أَنْتِ (anta / anti) = kamu (lk/pr)\n- هُوَ / هِيَ (huwa / hiya) = dia (lk/pr)\n- نَحْنُ (nahnu) = kami/kita\n- مِنْ أَيْنَ أَنْتَ؟ (min ayna anta) = dari mana asalmu?\n- أَنَا مِنْ... (ana min...) = saya dari...\n- كَيْفَ حَالُكَ؟ (kaifa haaluka) = bagaimana kabarmu?\n- بِخَيْرٍ، الْحَمْدُ للهِ (bi khairin, alhamdulillah) = baik, alhamdulillah\n- طَالِبٌ / طَالِبَةٌ (thaalib / thaalibah) = murid laki-laki / perempuan\n- صَدِيْقِيْ / صَدِيْقَتِيْ (shadiiqii / shadiiqatii) = temanku (lk/pr)\n- عُمْرِيْ... سَنَةً (umrii... sanatan) = umurku... tahun\n- أَهْلًا وَسَهْلًا (ahlan wa sahlan) = selamat datang"
         },
         {
-          title: "B. Isim Isyarah Jarak Jauh (Lil-Ba'id)",
-          content: "Kata tunjuk jarak jauh berarti 'Itu'. Sama seperti jarak dekat, ia juga dibedakan menjadi dua:\n1. **ذٰلِكَ (Dzalika)** : Digunakan untuk benda/orang Mudzakkar.\n   Contoh: ذٰلِكَ قَلَمٌ (Itu adalah pulpen).\n2. **تِلْكَ (Tilka)** : Digunakan untuk benda/orang Muannats.\n   Contoh: تِلْكَ سَبُّوْرَةٌ (Itu adalah papan tulis).\n\nPenguasaan Isim Isyarah sangat esensial karena ia akan selalu menjadi unsur penting dalam menyusun Jumlah Ismiyah (Kalimat Nominal)."
+          title: "B. Al-Hiwar (Dialog) — التَّعَارُفُ فِي الْمَدْرَسَةِ",
+          content: "فَاطِمَة : السَّلَامُ عَلَيْكُمْ\nزَّيْنَب : وَعَلَيْكُمُ السَّلَامُ وَرَحْمَةُ اللهِ\nفَاطِمَة : مَا اسْمُكِ يَا أُخْتِيْ؟\nزَيْـنَب : اِسْمِيْ زَيْنَب. وَمَا اسْمُكِ أَنْتِ؟\nفَاطِمَة : اِسْمِيْ فَاطِمَة. مِنْ أَيْنَ أَنْتِ؟\nزَيْـنَب : أَنَا مِنْ بَانْيُوْوَانْجِيْ. وَأَنْتِ؟\nفَاطِمَة : أَنَا مِنْ جِنْتِيْنْغ. أَنَا طَالِبَةٌ فِي الْمَدْرَسَةِ الثَّانَوِيَّةِ.\nزَيْـنَب : وَأَنَا أَيْضًا طَالِبَةٌ. هٰذِهِ صَدِيْقَتِيْ، اِسْمُهَا مَرْيَم.\nفَاطِمَة : أَهْلًا وَسَهْلًا يَا مَرْيَم. كَيْفَ حَالُكِ؟\nمَرْيَم : بِخَيْرٍ، الْحَمْدُ للهِ. تَشَرَّفْنَا.\n\nPerhatikan dhamir: اِسْمِيْ (ـيْ muttashil), اِسْمُكِ (ـكِ), اِسْمُهَا (ـهَا), أَنَا / أَنْتِ / هِيَ (munfashil)."
+        },
+        {
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — تَعَارُفِيْ",
+          content: "اِسْمِيْ أَحْمَد. أَنَا طَالِبٌ فِي الْفَصْلِ الْعَاشِرِ. عُمْرِيْ سِتَّةَ عَشَرَ سَنَةً. أَنَا مِنْ جِنْتِيْنْغ، بَانْيُوْوَانْجِيْ. هٰذَا صَدِيْقِيْ. اِسْمُهُ عَلِيّ. هُوَ طَالِبٌ مُجْتَهِدٌ. نَحْنُ نَتَعَلَّمُ اللُّغَةَ الْعَرَبِيَّةَ مَعًا. مُدَرِّسُنَا اِسْمُهُ الْأُسْتَاذُ يُوْسُف. هُوَ يُعَلِّمُنَا كُلَّ يَوْمٍ.\n\nArti: Namaku Ahmad. Aku murid kelas sepuluh. Umurku enam belas tahun. Aku dari Genteng, Banyuwangi. Ini temanku. Namanya Ali. Dia murid yang rajin. Kami belajar bahasa Arab bersama. Guru kami bernama Ustadz Yusuf. Beliau mengajar kami setiap hari."
+        },
+        {
+          title: "D. Al-Qawa'id (Kaidah) — الضمير المنفصل والمتصل",
+          content: "1. الضمير المنفصل (Dhamir Munfashil) — berdiri sendiri:\n- أَنَا (saya), نَحْنُ (kami)\n- أَنْتَ / أَنْتِ / أَنْتُمَا / أَنْتُمْ / أَنْتُنَّ\n- هُوَ / هِيَ / هُمَا / هُمْ / هُنَّ\nContoh: أَنَا طَالِبٌ. هِيَ طَالِبَةٌ. نَحْنُ أَصْدِقَاءُ.\n\n2. الضمير المتصل (Dhamir Muttashil) — menempel pada isim/fi'il:\n- ـيْ (milikku): كِتَابِيْ، بَيْتِيْ، اِسْمِيْ\n- ـكَ / ـكِ (milikmu lk/pr): كِتَابُكَ، اِسْمُكِ\n- ـهُ / ـهَا (miliknya lk/pr): كِتَابُهُ، صَدِيْقَتُهَا\n- ـنَا (milik kami): مَدْرَسَتُنَا، مُدَرِّسُنَا\n\nKeterkaitan dengan maharat: menyimak dhamir dalam dialog, berbicara dengan dhamir yang sesuai gender, membaca teks ta'aruf, dan menulis perkenalan diri 5–7 kalimat."
         }
       ],
       rujukan: [
-        "Buku Qawaidul Lughah Al-'Arabiyyah (Tata Bahasa Arab Dasar).",
-        "Kitab Al-Ajurrumiyyah (Kaidah Nahwu)."
+        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab at-ta'aruf).",
+        "Kamus Al-Munawwir Arab-Indonesia.",
+        "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
+      ]
+    },
+    3: { // المكتبة (Perpustakaan)
+      ringkasan: "Materi المكتبة mengajak murid berbahasa Arab di konteks perpustakaan: meminjam buku, menunjuk koleksi, dan mendeskripsikan jumlah. Fokus kaidah: المفرد، المثنى، الجمع (tunggal, dual, jamak).",
+      sections: [
+        {
+          title: "A. Al-Mufradat (Kosakata Inti) — المكتبة",
+          content: "Kosakata perpustakaan dan bilangan kata:\n- الْمَكْتَبَةُ (al-maktabatu) = perpustakaan\n- الْكِتَابُ (al-kitaabu) = buku\n- الْمَجَلَّةُ (al-majallatu) = majalah\n- الْقِصَّةُ (al-qishshatu) = cerita/kisah\n- الْقَامُوْسُ (al-qaamuusu) = kamus\n- الرَّفُّ (ar-raffu) = rak buku\n- اَلْبِطَاقَةُ (al-bithaaqatu) = kartu (anggota/peminjaman)\n- أَسْتَعِيْرُ (asta'iiru) = saya meminjam\n- أُعِيْدُ (u'iidu) = saya mengembalikan\n- أَقْرَأُ (aqra'u) = saya membaca\n- هَادِئٌ (haadi'un) = tenang/sunyi\n- مُفِيْدٌ (mufiidun) = bermanfaat\n- كِتَابٌ / كِتَابَانِ / كُتُبٌ (satu buku / dua buku / buku-buku)\n- مَجَلَّةٌ / مَجَلَّتَانِ / مَجَلَّاتٌ\n- طَالِبٌ / طَالِبَانِ / طُلَّابٌ / طَالِبُوْنَ"
+        },
+        {
+          title: "B. Al-Hiwar (Dialog) — فِي الْمَكْتَبَةِ",
+          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا أُسْتَاذُ\nأَمِيْنُ الْمَكْتَبَةِ : وَعَلَيْكُمُ السَّلَامُ. أَهْلًا بِكَ فِي الْمَكْتَبَةِ.\nأَحْمَد : أُرِيْدُ أَنْ أَسْتَعِيْرَ كِتَابَيْنِ مِنَ اللُّغَةِ الْعَرَبِيَّةِ.\nأَمِيْنُ الْمَكْتَبَةِ : تَفَضَّلْ. هٰذَانِ كِتَابَانِ مُفِيْدَانِ. وَهُنَاكَ كُتُبٌ كَثِيْرَةٌ عَلَى الرَّفِّ.\nأَحْمَد : شُكْرًا. هَلْ يَجُوْزُ أَنْ أَقْرَأَ الْمَجَلَّاتِ هُنَا؟\nأَمِيْنُ الْمَكْتَبَةِ : نَعَمْ، وَلٰكِنَّ الْمَكْتَبَةَ هَادِئَةٌ. اِقْرَأْ بِصَوْتٍ مُنْخَفِضٍ.\nأَحْمَد : حَسَنًا. سَأُعِيْدُ الْكِتَابَيْنِ بَعْدَ أُسْبُوْعٍ.\nأَمِيْنُ الْمَكْتَبَةِ : جَيِّدٌ. هٰذِهِ بِطَاقَةُ الْاِسْتِعَارَةِ.\n\nPerhatikan bentuk: كِتَابَيْنِ (mutsanna nashab/jar), كُتُبٌ (jamak taksir), الْمَجَلَّاتِ (jamak muannats)."
+        },
+        {
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَكْتَبَةُ الْمَدْرَسَةِ",
+          content: "فِيْ مَدْرَسَتِنَا مَكْتَبَةٌ كَبِيْرَةٌ. فِي الْمَكْتَبَةِ كُتُبٌ كَثِيْرَةٌ وَمَجَلَّاتٌ وَقَوَامِيْسُ. عَلَى الرَّفِّ الْأَوَّلِ كِتَابَانِ عَنِ التَّارِيْخِ. وَعَلَى الرَّفِّ الثَّانِيْ قِصَصٌ جَمِيْلَةٌ. الطُّلَّابُ يَقْرَءُوْنَ فِي الْمَكْتَبَةِ كُلَّ يَوْمٍ. الْمَكْتَبَةُ هَادِئَةٌ وَنَظِيْفَةٌ. أَنَا أُحِبُّ أَنْ أَسْتَعِيْرَ كِتَابًا كُلَّ أُسْبُوْعٍ.\n\nArti: Di sekolah kami ada perpustakaan besar. Di perpustakaan banyak buku, majalah, dan kamus. Di rak pertama ada dua buku tentang sejarah. Di rak kedua ada cerita-cerita indah. Para murid membaca di perpustakaan setiap hari. Perpustakaan tenang dan bersih. Aku senang meminjam satu buku setiap minggu."
+        },
+        {
+          title: "D. Al-Qawa'id (Kaidah) — المفرد، المثنى، الجمع",
+          content: "1. الْمُفْرَدُ (Mufrad / Tunggal): menunjukkan satu.\nContoh: كِتَابٌ، مَكْتَبَةٌ، طَالِبٌ.\n\n2. الْمُثَنَّى (Mutsanna / Dual): menunjukkan dua.\n- Rafa': + انِ → كِتَابَانِ، طَالِبَانِ\n- Nashab/Jar: + يْنِ → كِتَابَيْنِ، طَالِبَيْنِ\nContoh: هٰذَانِ كِتَابَانِ. أَسْتَعِيْرُ كِتَابَيْنِ.\n\n3. الْجَمْعُ (Jamak / Lebih dari dua):\n- Jamak Mudzakkar Salim: مُسْلِمُوْنَ / مُسْلِمِيْنَ (sering untuk orang)\n- Jamak Muannats Salim: مَجَلَّاتٌ، طَالِبَاتٌ\n- Jamak Taksir (pecah): كِتَابٌ → كُتُبٌ؛ طَالِبٌ → طُلَّابٌ\n\nPenerapan maharat: menyimak jumlah benda di perpustakaan, berbicara saat meminjam (satu/dua/banyak), membaca teks, menyusun kalimat berurutan tentang kunjungan ke perpustakaan."
+        }
+      ],
+      rujukan: [
+        "Buku Qawaidul Lughah Al-'Arabiyyah (bab mufrad, mutsanna, jamak).",
+        "Kamus Al-Munawwir Arab-Indonesia.",
+        "Capaian Pembelajaran Bahasa Arab Fase E — topik المكتبة."
+      ]
+    },
+    4: { // المدرسة (Sekolah)
+      ringkasan: "Materi المدرسة menutup semester ganjil dengan konteks sekolah: ruang kelas, guru, murid, dan aktivitas belajar. Kaidah digabung: اسم الإشارة، الضمائر، المفرد-المثنى-الجمع، dan أحرف الجر dalam komunikasi di sekolah.",
+      sections: [
+        {
+          title: "A. Al-Mufradat (Kosakata Inti) — المدرسة",
+          content: "Kosakata lingkungan sekolah:\n- الْمَدْرَسَةُ (al-madrasatu) = sekolah\n- الْفَصْلُ / الْقِسْمُ (al-fashlu) = kelas\n- الْمُدَرِّسُ / الْمُدَرِّسَةُ = guru (lk/pr)\n- الطَّالِبُ / الطَّالِبَةُ = murid (lk/pr)\n- السَّبُّوْرَةُ (as-sabbuuratu) = papan tulis\n- الْقَلَمُ (al-qalamu) = pena\n- الْكُرَّاسَةُ (al-kurraasatu) = buku tulis\n- الْحَقِيْبَةُ (al-haqiibatu) = tas\n- الْحِصَّةُ (al-hishshatu) = jam pelajaran\n- الْاِسْتِرَاحَةُ (al-istiraahatu) = istirahat\n- الْمَلْعَبُ (al-mal'abu) = lapangan\n- الْمَقْصَفُ (al-maqshafu) = kantin\n- يَدْرُسُ / تَدْرُسُ = belajar (lk/pr)\n- يُدَرِّسُ = mengajar\n- إِلَى الْمَدْرَسَةِ = ke sekolah\n- فِي الْفَصْلِ = di kelas\n- مَعَ الصَّدِيْقِ = bersama teman"
+        },
+        {
+          title: "B. Al-Hiwar (Dialog) — فِي الْمَدْرَسَةِ",
+          content: "عَلِيّ : السَّلَامُ عَلَيْكُمْ يَا أَحْمَد\nأَحْمَد : وَعَلَيْكُمُ السَّلَامُ. أَيْنَ تَذْهَبُ؟\nعَلِيّ : أَنَا أَذْهَبُ إِلَى الْمَدْرَسَةِ. هَلْ مَعَكَ كُرَّاسَةُ اللُّغَةِ الْعَرَبِيَّةِ؟\nأَحْمَد : نَعَمْ، هٰذِهِ كُرَّاسَتِيْ. وَهٰذَا قَلَمِيْ.\nعَلِيّ : شُكْرًا. مَتَى حِصَّةُ اللُّغَةِ الْعَرَبِيَّةِ؟\nأَحْمَد : بَعْدَ الْاِسْتِرَاحَةِ. الْأُسْتَاذُ يُوْسُفُ يُدَرِّسُنَا الْيَوْمَ.\nعَلِيّ : جَيِّدٌ. بَعْدَ الدَّرْسِ نَذْهَبُ إِلَى الْمَلْعَبِ أَمْ إِلَى الْمَقْصَفِ؟\nأَحْمَد : نَذْهَبُ إِلَى الْمَقْصَفِ مَعَ الْأَصْدِقَاءِ.\nعَلِيّ : حَسَنًا. هَيَّا نَدْخُلُ الْفَصْلَ. السَّبُّوْرَةُ أَمَامَ الْكُرَاسِيِّ.\n\nDialog ini memadukan isim isyarah (هٰذَا/هٰذِهِ), dhamir muttashil (كُرَّاسَتِيْ، قَلَمِيْ، يُدَرِّسُنَا), jamak (الْأَصْدِقَاءِ), dan huruf jar (إِلَى، فِيْ، مَعَ، بَعْدَ، أَمَامَ)."
+        },
+        {
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَدْرَسَتِيْ",
+          content: "مَدْرَسَتِيْ اِسْمُهَا الْمَدْرَسَةُ الثَّانَوِيَّةُ الْمُحَمَّدِيَّةُ. هِيَ مَدْرَسَةٌ جَمِيْلَةٌ وَنَظِيْفَةٌ. أَذْهَبُ إِلَى الْمَدْرَسَةِ كُلَّ يَوْمٍ مَعَ صَدِيْقِيْ. فِيْ مَدْرَسَتِيْ فُصُوْلٌ كَثِيْرَةٌ وَمَكْتَبَةٌ وَمَلْعَبٌ وَمَقْصَفٌ. فِي الْفَصْلِ سَبُّوْرَةٌ وَمَكَاتِبُ وَكُرَاسِيُّ. الْمُدَرِّسُوْنَ يُعَلِّمُوْنَنَا بِجِدٍّ. نَحْنُ نَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ وَالْعُلُوْمَ الْأُخْرَى. أَنَا أُحِبُّ مَدْرَسَتِيْ.\n\nArti: Sekolahku bernama sekolah menengah Muhammadiyah. Ia sekolah yang indah dan bersih. Aku pergi ke sekolah setiap hari bersama temanku. Di sekolahku banyak kelas, perpustakaan, lapangan, dan kantin. Di kelas ada papan tulis, meja-meja, dan kursi-kursi. Para guru mengajar kami dengan sungguh-sungguh. Kami belajar bahasa Arab dan ilmu-ilmu lain. Aku menyukai sekolahku."
+        },
+        {
+          title: "D. Al-Qawa'id (Kaidah Terpadu) — Review Semester Ganjil",
+          content: "Ringkasan kaidah yang dipadukan pada topik المدرسة:\n\n1. اسم الإشارة: هٰذَا قَلَمٌ، هٰذِهِ سَبُّوْرَةٌ، ذٰلِكَ مَلْعَبٌ، تِلْكَ مَكْتَبَةٌ.\n2. الضمير المنفصل: أَنَا طَالِبٌ، هُوَ مُدَرِّسٌ، نَحْنُ طُلَّابٌ.\n3. الضمير المتصل: مَدْرَسَتِيْ، صَدِيْقِيْ، كِتَابُكَ، مُدَرِّسُنَا.\n4. المفرد – المثنى – الجمع: طَالِبٌ / طَالِبَانِ / طُلَّابٌ؛ كِتَابٌ / كِتَابَانِ / كُتُبٌ.\n5. أحرف الجر: إِلَى الْمَدْرَسَةِ، فِي الْفَصْلِ، عَلَى الْمَكْتَبِ، مَعَ الصَّدِيْقِ، مِنَ الْبَيْتِ.\n\nTugas unjuk kerja terpadu: tulis dan presentasikan monolog singkat (8–10 kalimat) tentang sekolahmu dengan minimal satu contoh dari setiap kaidah di atas."
+        }
+      ],
+      rujukan: [
+        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-madrasah).",
+        "Kamus Al-Munawwir Arab-Indonesia.",
+        "Capaian Pembelajaran Bahasa Arab Fase E Semester Ganjil."
       ]
     }
   },
@@ -87,7 +157,7 @@ export const dataArab = {
       ],
       rujukan: [
         "Kitab Nahwu Wadhih, Ali Al-Jarim dan Musthafa Amin.",
-        "Qawaid Al-Lughah Al-Arabiyyah untuk Tingkat Lanjut."
+        "Qawaid Al-Lughah Al-'Arabiyyah untuk Tingkat Lanjut."
       ]
     }
   }

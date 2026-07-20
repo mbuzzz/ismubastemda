@@ -949,84 +949,84 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = nu
     const f = fase; // E, F11, or F12
     if (f === 'E') {
       switch (bab) {
-        case 1: // Salam dan Ta'aruf
-          details.pemahamanBermakna = "Kemampuan memperkenalkan diri dalam Bahasa Arab membuka peluang komunikasi lintas budaya dan mempererat ukhuwah Islamiyah.";
+        case 1: // البيت (Rumah)
+          details.pemahamanBermakna = "Menguasai kosakata dan dialog tentang البيت membantu murid mendeskripsikan lingkungan rumah serta menunjuk letak benda dengan kaidah اسم الإشارة dan أحرف الجر secara tepat.";
           details.pertanyaanPemantik = [
-            "Mengapa penting belajar Bahasa Arab di era globalisasi?",
-            "Ungkapan salam apa saja yang sudah kalian ketahui dalam Bahasa Arab?",
-            "Apa perbedaan cara perkenalan formal dan non-formal dalam Bahasa Arab?"
+            "Apa saja ruangan yang ada di rumahmu dan bagaimana menyebutnya dalam Bahasa Arab?",
+            "Bagaimana cara menunjuk benda dekat dan jauh di rumah menggunakan هٰذَا / هٰذِهِ / ذٰلِكَ / تِلْكَ?",
+            "Huruf jar apa yang dipakai untuk mengatakan 'di atas meja' atau 'di depan pintu'?"
           ];
           details.langkahInti = [
-            "Murid menyimak audio percakapan perkenalan (ta'aruf) dalam Bahasa Arab.",
-            "Guru mendemonstrasikan pelafalan ungkapan salam dan ta'aruf, murid menirukan bersama-sama.",
-            "Latihan berpasangan: setiap murid memperkenalkan diri menggunakan struktur kalimat yang benar.",
-            "Murid menulis teks perkenalan diri (5-7 kalimat) dalam Bahasa Arab di buku tugas.",
-            "Simulasi: 3-4 murid maju ke depan kelas mempraktikkan dialog perkenalan."
+            "Menyimak: murid mengidentifikasi bunyi kata dan dialog tentang البيت dari audio/bacaan guru (TP 1.1.1–1.1.3).",
+            "Melafalkan: guru memodelkan mufradat ruangan dan benda rumah; murid menirukan bersama lalu berpasangan (TP 1.1.2).",
+            "Menerapkan kaidah: praktik menunjuk benda di kelas/gambar rumah dengan اسم الإشارة dan أحرف الجر (فِيْ، عَلَى، أَمَامَ، خَلْفَ) (TP 1.1.4).",
+            "Berbicara & membaca: role-play dialog فِي الْبَيْتِ dan membaca nyaring teks بَيْتِيْ (TP 1.1.5, 1.1.8).",
+            "Menulis: menghubungkan kata menjadi 5–7 kalimat sederhana mendeskripsikan rumah masing-masing (TP 1.1.11)."
           ];
           details.lkpd = [
-            "Tuliskan 3 ungkapan salam dalam Bahasa Arab beserta jawabannya!",
-            "Buatlah dialog perkenalan singkat (minimal 4 kalimat) antara dua orang!",
-            "Perkenalkan dirimu dalam Bahasa Arab: nama, asal sekolah, hobi, dan cita-cita!"
+            "Tuliskan 10 mufradat tentang البيت beserta artinya!",
+            "Buat 5 kalimat menggunakan isim isyarah + huruf jar (contoh: الْمِصْبَاحُ عَلَى الْمِنْضَدَةِ)!",
+            "Tuliskan dialog singkat (minimal 6 baris) tentang menunjukkan ruangan di rumah!"
           ];
           break;
-        case 2: // Isim Isyarah
-          details.pemahamanBermakna = "Kata tunjuk (isim isyarah) adalah alat penting untuk menunjuk benda atau orang dalam komunikasi Bahasa Arab secara tepat.";
+        case 2: // التعارف (Perkenalan)
+          details.pemahamanBermakna = "Kemampuan berkenalan (التعارف) dengan dhamir yang tepat membuka komunikasi santun, mempererat ukhuwah, dan melatih penggunaan الضمير المنفصل والمتصل dalam interaksi nyata.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan penggunaan 'هذا' dan 'ذلك' dalam Bahasa Arab?",
-            "Bagaimana cara menunjuk benda yang dekat dan jauh dalam Bahasa Arab?",
-            "Mengapa penting menguasai kata tunjuk dalam mempelajari Bahasa Arab?"
+            "Ungkapan apa yang kamu gunakan saat berkenalan dengan teman baru di sekolah?",
+            "Apa perbedaan أَنَا، أَنْتَ، هُوَ dengan اِسْمِيْ، اِسْمُكَ، اِسْمُهُ?",
+            "Bagaimana cara menyesuaikan dhamir saat lawan bicara laki-laki atau perempuan?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan pembagian isim isyarah: jarak dekat (هذا، هذه، هذان) dan jarak jauh (ذلك، تلك).",
-            "Murid mengamati benda-benda di sekitar kelas dan menunjuknya menggunakan isim isyarah.",
-            "Latihan berpasangan: murid A menunjuk benda, murid B menyebutkan nama benda dengan isim isyarah.",
-            "Membaca teks sederhana yang mengandung isim isyarah dan mengartikannya.",
-            "Kuis cepat: guru menunjuk gambar, murid berebut menjawab dengan isim isyarah yang tepat."
+            "Menyimak & memahami: murid menyimak dialog التَّعَارُفُ dan mengidentifikasi dhamir yang muncul (TP 1.1.3, 1.1.7).",
+            "Berbicara: latihan berpasangan memperkenalkan diri (nama, asal, status murid) dengan dhamir yang sesuai gender (TP 1.1.5–1.1.6).",
+            "Membangun interaksi: simulasi 'lingkaran ta'aruf' — setiap murid berkenalan dengan 3 teman berbeda (TP 1.1.6).",
+            "Membaca: membaca nyaring teks تَعَارُفِيْ dan menjawab pertanyaan pemahaman (TP 1.1.9).",
+            "Menulis: memaparkan kalimat perkenalan diri 5–7 baris memakai dhamir munfashil dan muttashil (TP 1.1.12, 1.1.14)."
           ];
           details.lkpd = [
-            "Sebutkan 4 macam isim isyarah beserta artinya dan contoh penggunaannya!",
-            "Buatlah 5 kalimat sederhana menggunakan isim isyarah jarak dekat!",
-            "Tunjukkan 5 benda di kelasmu menggunakan isim isyarah yang tepat!"
+            "Tuliskan tabel dhamir munfashil (minimal 8) dan 4 contoh dhamir muttashil (ـيْ، ـكَ، ـهُ، ـنَا)!",
+            "Buat dialog perkenalan minimal 8 baris antara dua murid (perhatikan dhamir lk/pr)!",
+            "Tulis monolog perkenalan diri: nama, umur, asal, sekolah, dan satu orang teman!"
           ];
           break;
-        case 3: // Mudzakkar dan Muannats
-          details.pemahamanBermakna = "Pemahaman tentang jenis kata mudzakkar (laki-laki) dan muannats (perempuan) adalah fondasi tata bahasa Arab yang krusial.";
+        case 3: // المكتبة (Perpustakaan)
+          details.pemahamanBermakna = "Berbahasa Arab di perpustakaan melatih adab literasi sekaligus ketepatan bentuk المفرد، المثنى، dan الجمع saat menyebut jumlah buku dan koleksi.";
           details.pertanyaanPemantik = [
-            "Apa ciri khas kata benda perempuan (muannats) dalam Bahasa Arab?",
-            "Mengapa Bahasa Arab membedakan jenis kelamin pada kata benda?",
-            "Bagaimana cara mengubah kata mudzakkar menjadi muannats?"
+            "Apa saja yang biasa kamu lakukan di perpustakaan sekolah?",
+            "Bagaimana membedakan 'satu buku', 'dua buku', dan 'banyak buku' dalam Bahasa Arab?",
+            "Mengapa bentuk kata berubah saat jumlah benda berubah?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan ciri-ciri isim mudzakkar dan muannats (ta' marbutah, lafaz khusus).",
-            "Murid mengelompokkan 30 kosakata ke dalam tabel mudzakkar dan muannats.",
-            "Latihan lisan: guru menyebutkan kata, murid menentukan jenisnya dengan cepat.",
-            "Menyusun kalimat sederhana dengan memperhatikan kesesuaian jenis kata benda.",
-            "Game edukasi: 'Gender Sort' - memilah kata mudzakkar dan muannats secara beregu."
+            "Menyimak: mengidentifikasi mufradat dan bunyi kata tentang المكتبة dari dialog guru/audio (TP 1.1.1, 1.1.3).",
+            "Kaidah: guru memandu pembentukan mufrad–mutsanna–jamak pada kosakata كِتَاب، مَجَلَّة، طَالِب (TP 1.1.10).",
+            "Berbicara: role-play meminjam dan mengembalikan buku di perpustakaan (TP 1.1.5).",
+            "Membaca: membaca nyaring teks مَكْتَبَةُ الْمَدْرَسَةِ dan menandai bentuk mufrad/mutsanna/jamak (TP 1.1.8–1.1.9).",
+            "Menulis: menyusun urutan kata acak menjadi kalimat benar tentang kunjungan ke perpustakaan (TP 1.1.13)."
           ];
           details.lkpd = [
-            "Sebutkan 5 ciri isim muannats beserta contohnya!",
-            "Buatlah 10 pasang kata mudzakkar-muannats (contoh: طالب - طالبة)!",
-            "Tulislah 5 kalimat yang mengandung isim mudzakkar dan 5 kalimat mengandung isim muannats!"
+            "Ubah 8 kata mufrad menjadi mutsanna (rafa' & nashab/jar) dan jamak!",
+            "Buat dialog singkat di perpustakaan (minimal 6 baris) yang memuat kata bilangan dua/banyak!",
+            "Susun 5 kalimat acak yang diberikan guru menjadi kalimat benar tentang المكتبة!"
           ];
           break;
-        case 4: // Istifham
-          details.pemahamanBermakna = "Kata tanya (adawatul istifham) memungkinkan kita menggali informasi dan berkomunikasi dua arah secara efektif dalam Bahasa Arab.";
+        case 4: // المدرسة (Sekolah)
+          details.pemahamanBermakna = "Topik المدرسة mengintegrasikan seluruh kaidah semester ganjil agar murid mampu berkomunikasi tentang lingkungan sekolah secara lisan dan tulisan dengan struktur gramatikal yang tepat.";
           details.pertanyaanPemantik = [
-            "Apa saja kata tanya dalam Bahasa Arab yang sudah kalian ketahui?",
-            "Mengapa kata tanya penting dalam komunikasi sehari-hari?",
-            "Apa perbedaan penggunaan 'هل' dan 'أ' dalam kalimat tanya?"
+            "Bagaimana kamu mendeskripsikan sekolahmu dalam beberapa kalimat Bahasa Arab?",
+            "Kaidah apa saja (isim isyarah, dhamir, mufrad-mutsanna-jamak, huruf jar) yang sudah kamu kuasai semester ini?",
+            "Di mana letak perpustakaan, lapangan, dan kantin di sekolahmu (gunakan huruf jar)?"
           ];
           details.langkahInti = [
-            "Guru memperkenalkan 8 adawatul istifham (هل، أ، ما، من، أين، كم، كيف، متى).",
-            "Murid menyimak contoh dialog tanya jawab menggunakan berbagai kata tanya.",
-            "Latihan berpasangan: membuat 5 pertanyaan dan jawaban menggunakan kata tanya berbeda.",
-            "Game: 'Wawancara Kilat' - murid bergantian mewawancarai teman dengan 3 pertanyaan.",
-            "Menulis karangan pendek tentang aktivitas sehari-hari yang mengandung kalimat tanya."
+            "Menyimak & memahami: menyimak dialog فِي الْمَدْرَسَةِ dan menandai kaidah yang muncul (TP 1.1.3, 1.1.7).",
+            "Berbicara: interaksi berpasangan tentang jadwal, kelas, dan fasilitas sekolah (TP 1.1.5–1.1.6).",
+            "Membaca nyaring: teks مَدْرَسَتِيْ dengan intonasi dan pemahaman isi (TP 1.1.8).",
+            "Review kaidah terpadu: peta konsep اسم الإشارة، الضمائر، المفرد-المثنى-الجمع، أحرف الجر pada konteks sekolah (TP 1.1.7, 1.1.14).",
+            "Menulis & unjuk kerja: monolog 8–10 kalimat tentang sekolah + presentasi singkat (TP 1.1.11, 1.1.14)."
           ];
           details.lkpd = [
-            "Sebutkan 8 adawatul istifham beserta fungsi dan contohnya!",
-            "Buatlah 5 kalimat tanya dalam Bahasa Arab menggunakan kata tanya yang berbeda!",
-            "Wawancarai teman sebangkumu (3 pertanyaan) dan tuliskan jawabannya dalam Bahasa Arab!"
+            "Tuliskan 12 mufradat sekolah beserta 4 kalimat memakai huruf jar berbeda!",
+            "Buat dialog di sekolah minimal 8 baris yang memuat isim isyarah dan dhamir!",
+            "Tulis monolog 'مَدْرَسَتِيْ' (8–10 kalimat) yang memuat minimal satu contoh tiap kaidah semester ganjil!"
           ];
           break;
         case 5: // Dhomir

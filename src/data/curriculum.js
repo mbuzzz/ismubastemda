@@ -462,55 +462,71 @@ export const faseEArab = {
       materi: [
         {
           bab: 1,
-          judul: "Salam dan Ta'aruf (التحية والتعارف)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 12,
-          minggu: 4,
+          judul: "البيت (Rumah)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 10,
+          minggu: 5,
           tp: [
-            "Memahami dan melafalkan ungkapan salam dan perkenalan dalam bahasa Arab.",
-            "Mendemonstrasikan percakapan sederhana tentang perkenalan diri.",
-            "Menerapkan adab bertegur sapa sesuai budaya Islam."
+            "1.1.1 Mengidentifikasi bunyi kata tentang البيت.",
+            "1.1.2 Melafalkan ulang kata yang diperdengarkan tentang البيت.",
+            "1.1.3 Memahami teks dialog atau narasi tentang البيت.",
+            "1.1.4 Menggunakan kaidah اسم الإشارة dan أحرف الجر untuk menilai informasi yang didengar tentang البيت.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang البيت.",
+            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang البيت.",
+            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang البيت."
           ],
-          capaian: "Murid mampu memahami dan menggunakan ungkapan salam, perkenalan, kata tunjuk, bentuk kata benda laki-laki dan perempuan, serta kalimat tanya sederhana dalam komunikasi lisan maupun tulisan sesuai kaidah bahasa Arab dasar."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
         },
         {
           bab: 2,
-          judul: "Isim Isyarah (اسم الإشارة)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 9,
-          minggu: 3,
+          judul: "التعارف (Perkenalan)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 8,
+          minggu: 4,
           tp: [
-            "Menganalisis penggunaan kata tunjuk (Isim Isyarah) jarak dekat dan jauh.",
-            "Menyusun kalimat sederhana menggunakan kata tunjuk yang tepat.",
-            "Membaca teks sederhana yang memuat Isim Isyarah dengan intonasi yang benar."
+            "1.1.3 Memahami teks dialog atau narasi tentang التعارف.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang التعارف.",
+            "1.1.6 Membangun interaksi menggunakan Bahasa Arab tentang التعارف.",
+            "1.1.7 Menggunakan susunan gramatikal (الضمير المنفصل والمتصل) sebagai alat komunikasi tentang التعارف.",
+            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang التعارف.",
+            "1.1.12 Memaparkan kalimat sederhana tentang التعارف.",
+            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang التعارف."
           ],
-          capaian: "Murid mampu memahami dan menggunakan ungkapan salam, perkenalan, kata tunjuk, bentuk kata benda laki-laki dan perempuan, serta kalimat tanya sederhana dalam komunikasi lisan maupun tulisan sesuai kaidah bahasa Arab dasar."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
         },
         {
           bab: 3,
-          judul: "Mudzakkar dan Muannats (المذكر والمؤنث)",
-          elemen: "Tata Bahasa",
-          alokasi: 9,
-          minggu: 3,
+          judul: "المكتبة (Perpustakaan)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 8,
+          minggu: 4,
           tp: [
-            "Membedakan bentuk kata benda laki-laki (Mudzakkar) dan perempuan (Muannats).",
-            "Mengklasifikasikan kosa kata (mufradat) ke dalam kelompok Mudzakkar dan Muannats.",
-            "Menulis kalimat dasar dengan memperhatikan kesesuaian jenis kata benda."
+            "1.1.1 Mengidentifikasi bunyi kata tentang المكتبة.",
+            "1.1.3 Memahami teks dialog atau narasi tentang المكتبة.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang المكتبة.",
+            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang المكتبة.",
+            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang المكتبة.",
+            "1.1.10 Menggunakan kaidah المفرد، المثنى، الجمع untuk memahami teks tertulis tentang المكتبة.",
+            "1.1.13 Membuat urutan kata menjadi kalimat sederhana tentang المكتبة."
           ],
-          capaian: "Murid mampu memahami dan menggunakan ungkapan salam, perkenalan, kata tunjuk, bentuk kata benda laki-laki dan perempuan, serta kalimat tanya sederhana dalam komunikasi lisan maupun tulisan sesuai kaidah bahasa Arab dasar."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
         },
         {
           bab: 4,
-          judul: "Istifham (الاستفهام)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 12,
-          minggu: 4,
+          judul: "المدرسة (Sekolah)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 10,
+          minggu: 5,
           tp: [
-            "Mengidentifikasi berbagai macam kata tanya (Adawatul Istifham).",
-            "Membuat pertanyaan dan jawaban sederhana menggunakan kata tanya yang sesuai.",
-            "Mempraktikkan dialog tanya jawab mengenai aktivitas sehari-hari."
+            "1.1.3 Memahami teks dialog atau narasi tentang المدرسة.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang المدرسة.",
+            "1.1.6 Membangun interaksi menggunakan Bahasa Arab tentang المدرسة.",
+            "1.1.7 Menggunakan susunan gramatikal (أحرف الجر dan kaidah semester ganjil) sebagai alat komunikasi tentang المدرسة.",
+            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang المدرسة.",
+            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang المدرسة.",
+            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang المدرسة."
           ],
-          capaian: "Murid mampu memahami dan menggunakan ungkapan salam, perkenalan, kata tunjuk, bentuk kata benda laki-laki dan perempuan, serta kalimat tanya sederhana dalam komunikasi lisan maupun tulisan sesuai kaidah bahasa Arab dasar."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
         }
       ]
     },
