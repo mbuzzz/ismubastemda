@@ -67,6 +67,22 @@ export default function Perangkat() {
     }, { replace: true });
   }, [selectedMapel, fase, selectedClass, semester, activeTab, viewMode, selectedPpmBab, setSearchParams]);
 
+  // Pastikan bab PPM selalu valid untuk mapel/kelas/semester aktif (hindari blank di mode satu halaman)
+  useEffect(() => {
+    const list =
+      (selectedMapel === 'arab'
+        ? (selectedClass === 'X' ? faseEArab : selectedClass === 'XI' ? faseF11Arab : faseF12Arab)
+        : selectedMapel === 'kemuh'
+          ? (selectedClass === 'X' ? faseE_kemuh : selectedClass === 'XI' ? faseF11_kemuh : faseF12_kemuh)
+          : (selectedClass === 'X' ? faseE : selectedClass === 'XI' ? faseF11 : faseF12)
+      ).semester[semester].materi;
+
+    if (!list?.length) return;
+    if (!list.some((m) => m.bab === selectedPpmBab)) {
+      setSelectedPpmBab(list[0].bab);
+    }
+  }, [selectedMapel, selectedClass, semester, fase, selectedPpmBab]);
+
   // Load correct fase data based on selected Class
   const getActiveFaseData = () => {
     if (selectedMapel === 'arab') {
@@ -190,7 +206,7 @@ export default function Perangkat() {
           let sFileName = `perangkat-${selectedMapel}-fase${fase}-${s}-${academicYear.replace('/', '-')}.docx`;
           const sPpmMap = {};
           dataToExport.semester[s].materi.forEach(m => {
-            const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass);
+            const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass, m);
             details.dpl = getDplForBab(fase, m.bab, selectedMapel);
             sPpmMap[m.bab] = details;
           });
@@ -201,7 +217,7 @@ export default function Perangkat() {
         const ppmMap = {};
         const allMateri = dataToExport.semester[semester].materi;
         allMateri.forEach(m => {
-          const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass);
+          const details = getPpmDetails(fase, m.bab, selectedMapel, selectedClass, m);
           details.dpl = getDplForBab(fase, m.bab, selectedMapel);
           ppmMap[m.bab] = details;
         });
@@ -228,6 +244,7 @@ export default function Perangkat() {
     { id: 'prota', label: 'PROGRAM TAHUNAN' },
     { id: 'promes', label: 'PROGRAM SEMESTER' },
     { id: 'analisis-cp', label: 'ANALISA CAPAIAN PEMBELAJARAN' },
+    { id: 'cp-tp-pp', label: 'ANALISIS CP & TP (VERSI PP)' },
     { id: 'atp', label: 'ALUR TUJUAN PEMBELAJARAN' },
     { id: 'kktp', label: 'KRITERIA KETERCAPAIAN TP' },
     { id: 'modul', label: 'MODUL AJAR (PPM)' },
@@ -355,7 +372,7 @@ export default function Perangkat() {
     switch (tabName) {
       case 'cover':
         return (
-          <div key="cover" className="a4-page cover-page" style={{ position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '20mm 15mm', border: '1px solid #E2E8F0' }}>
+          <div key="cover" className="a4-page cover-page a4-cover" style={{ position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '18mm 14mm', border: '1px solid #E2E8F0' }}>
             {/* Elegant Islamic Star Geometric Watermark Background */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.04, pointerEvents: 'none', zIndex: 0 }}>
               <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -817,6 +834,10 @@ export default function Perangkat() {
                     <span>12. ANALISA CAPAIAN PEMBELAJARAN (CP) GENAP</span>
                     <span>Seksi 12</span>
                   </div>
+                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc', fontWeight: 'bold', color: '#E65100' }}>
+                    <span>12b. ANALISIS CP &amp; TP (VERSI PP) — BUKU TEKS TERBARU</span>
+                    <span>Seksi 12b</span>
+                  </div>
                   <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
                     <span>13. ALUR TUJUAN PEMBELAJARAN (ATP) GENAP</span>
                     <span>Seksi 13</span>
@@ -974,16 +995,16 @@ export default function Perangkat() {
             <h2 className="page-title">PROGRAM TAHUNAN (PROTA)</h2>
             <div className="page-subtitle">Distribusi Alokasi JP Bulanan - Fase {fase} TA {schoolInfoData.tahunAjaran}</div>
 
-            <div style={{ marginTop: '20px', overflowX: 'auto' }}>
-              <table className="data-table" style={{ fontSize: '9px', width: '100%' }}>
+            <div className="table-print-wrap" style={{ marginTop: '20px', overflowX: 'auto' }}>
+              <table className="data-table" style={{ fontSize: '9px', width: '100%', tableLayout: 'fixed' }}>
                 <thead>
                   <tr>
-                    <th style={{ width: '4%' }}>Sem</th>
-                    <th style={{ width: '4%' }}>Bab</th>
-                    <th style={{ width: '40%' }}>Tujuan Pembelajaran (TP)</th>
+                    <th style={{ width: '5%' }}>Sem</th>
+                    <th style={{ width: '5%' }}>Bab</th>
+                    <th style={{ width: showAll ? '28%' : '36%' }}>Tujuan Pembelajaran (TP)</th>
                     <th style={{ width: '8%' }}>Alokasi (JP)</th>
                     {monthsList.map((m, idx) => (
-                      <th key={idx} style={{ minWidth: '35px' }}>{m}</th>
+                      <th key={idx} style={{ width: showAll ? `${54 / monthsList.length}%` : `${46 / monthsList.length}%`, wordBreak: 'break-word' }}>{m.substring(0, 3)}</th>
                     ))}
                   </tr>
                 </thead>
@@ -1090,36 +1111,36 @@ export default function Perangkat() {
             <h2 className="page-title">PROGRAM SEMESTER (PROMES)</h2>
             <div className="page-subtitle">Distribusi KBM Pekanan - Semester {sem.toUpperCase()} TA {schoolInfoData.tahunAjaran}</div>
 
-            <div style={{ marginTop: '15px', overflowX: 'auto' }}>
-              <table className="data-table" style={{ fontSize: '9px', width: '100%' }}>
+            <div className="table-print-wrap promes-table-wrap" style={{ marginTop: '15px', overflowX: 'auto' }}>
+              <table className="data-table promes-table" style={{ fontSize: '8px', width: '100%', tableLayout: 'fixed' }}>
                 <thead>
                   <tr>
                     <th rowSpan="2" style={{ width: '4%' }}>Bab</th>
-                    <th rowSpan="2" style={{ width: '40%' }}>Tujuan Pembelajaran (TP)</th>
-                    <th rowSpan="2" style={{ width: '8%' }}>Alokasi (JP)</th>
+                    <th rowSpan="2" style={{ width: '28%' }}>Tujuan Pembelajaran (TP)</th>
+                    <th rowSpan="2" style={{ width: '6%' }}>JP</th>
                     {sem === 'ganjil' ? (
                       <>
-                        <th colSpan="4">Juli</th>
-                        <th colSpan="4">Agustus</th>
-                        <th colSpan="4">September</th>
-                        <th colSpan="4">Oktober</th>
-                        <th colSpan="4">November</th>
-                        <th colSpan="4">Desember</th>
+                        <th colSpan="4">Jul</th>
+                        <th colSpan="4">Agu</th>
+                        <th colSpan="4">Sep</th>
+                        <th colSpan="4">Okt</th>
+                        <th colSpan="4">Nov</th>
+                        <th colSpan="4">Des</th>
                       </>
                     ) : (
                       <>
-                        <th colSpan="4">Januari</th>
-                        <th colSpan="4">Februari</th>
-                        <th colSpan="4">Maret</th>
-                        <th colSpan="4">April</th>
+                        <th colSpan="4">Jan</th>
+                        <th colSpan="4">Feb</th>
+                        <th colSpan="4">Mar</th>
+                        <th colSpan="4">Apr</th>
                         <th colSpan="4">Mei</th>
-                        <th colSpan="4">Juni</th>
+                        <th colSpan="4">Jun</th>
                       </>
                     )}
                   </tr>
                   <tr>
                     {Array.from({ length: 24 }).map((_, idx) => (
-                      <th key={idx} style={{ padding: '2px', minWidth: '12px' }}>{idx % 4 + 1}</th>
+                      <th key={idx} style={{ padding: '1px', fontSize: '7px', width: `${62 / 24}%` }}>{idx % 4 + 1}</th>
                     ))}
                   </tr>
                 </thead>
@@ -1201,7 +1222,7 @@ export default function Perangkat() {
               {localMateriList.map((m, mIdx) => (
                 <div key={mIdx} className="prevent-break" style={{ border: '1px solid #333', padding: '10px', marginBottom: '15px', borderRadius: '4px' }}>
                   <div style={{ background: '#1976D2', color: 'white', padding: '6px', fontWeight: 'bold', borderRadius: '2px', marginBottom: '8px' }}>
-                    ELEMEN: {m.elemen.toUpperCase()} (BAB {m.bab})
+                    ELEMEN: {(m.elemen || '-').toUpperCase()} (BAB {m.bab})
                   </div>
                   <p style={{ margin: '6px 0', lineHeight: '1.5', background: '#F5F5F5', padding: '8px', borderLeft: '3px solid #1976D2' }}>
                     <strong>Teks CP:</strong> <em>"{m.capaian}"</em>
@@ -1220,7 +1241,7 @@ export default function Perangkat() {
                         <td style={{ border: '1px solid #333', padding: '6px', fontWeight: 'bold', background: '#F9FBE7' }}>Tujuan Pembelajaran (TP)</td>
                         <td style={{ border: '1px solid #333', padding: '6px' }}>
                           <ul style={{ margin: '0', paddingLeft: '16px' }}>
-                            {m.tp?.map((t, tIdx) => <li key={tIdx}>{t}</li>)}
+                            {(m.tp || []).map((t, tIdx) => <li key={tIdx}>{t}</li>)}
                           </ul>
                         </td>
                       </tr>
@@ -1235,6 +1256,116 @@ export default function Perangkat() {
             </div>
           </div>
         );
+
+      case 'cp-tp-pp': {
+        // Halaman khusus pemetaan CP–TP Versi PP (buku teks terbaru)
+        // Default fokusankan data semester aktif; untuk PAI XI gunakan genap Versi PP sebagai rujukan utama
+        const isPaiXi = selectedMapel === 'pai' && selectedClass === 'XI';
+        const sourceSemKey = isPaiXi ? 'genap' : sem;
+        const sourceSem = activeFaseData.semester[sourceSemKey] || semData;
+        const sourceMateri = sourceSem.materi || [];
+        const totalJp = sourceMateri.reduce((acc, m) => acc + (m.alokasi || 0), 0);
+        const totalTm = sourceMateri.reduce((acc, m) => acc + (m.minggu || 0), 0);
+        const isVersiPp = sourceSem.versiKurikulum === 'PP' || isPaiXi;
+
+        return (
+          <div key="cp-tp-pp" className="a4-page" style={{ padding: '12mm 12mm' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px', marginBottom: '8px' }}>
+              <div>
+                <h2 className="page-title" style={{ marginBottom: '6px', textAlign: 'left' }}>ANALISIS CP DAN TP</h2>
+                <div style={{ fontSize: '12px', fontWeight: 700, color: '#0D47A1' }}>
+                  {selectedMapel === 'pai' ? 'PAI & Budi Pekerti' : schoolInfoData.mapel} · Kelas {selectedClass} · Semester {sourceSem.nama || sourceSemKey.toUpperCase()}
+                </div>
+              </div>
+              {isVersiPp && (
+                <span style={{
+                  background: 'linear-gradient(135deg, #FF8F00, #FFB300)',
+                  color: '#1A237E',
+                  fontSize: '10px',
+                  fontWeight: 800,
+                  padding: '6px 12px',
+                  borderRadius: '20px',
+                  letterSpacing: '0.4px',
+                  whiteSpace: 'nowrap'
+                }}>
+                  VERSI PP · BUKU TEKS TERBARU
+                </span>
+              )}
+            </div>
+
+            <p style={{ fontSize: '11px', color: '#475569', lineHeight: 1.55, margin: '10px 0 14px', textAlign: 'justify' }}>
+              Dokumen ini berisi pemetaan <strong>Capaian Pembelajaran (CP)</strong> dan <strong>Tujuan Pembelajaran (TP)</strong>
+              {isPaiXi
+                ? ' yang telah disesuaikan dengan daftar isi buku teks terbaru untuk Kelas XI Semester Genap'
+                : ` untuk ${schoolInfoData.mapel} Kelas ${selectedClass} Semester ${sourceSem.nama || sourceSemKey}`}
+              . Durasi acuan: <strong>{totalTm} Pertemuan (TM) × {schoolInfoData.jpPerMinggu || 3} JP = {totalJp} JP</strong>.
+            </p>
+
+            <div className="table-print-wrap" style={{ overflowX: 'auto' }}>
+              <table className="data-table" style={{ fontSize: '9.5px', width: '100%', tableLayout: 'fixed' }}>
+                <thead>
+                  <tr>
+                    <th style={{ width: '7%' }}>Bab</th>
+                    <th style={{ width: '22%' }}>Topik / Judul Bab<br /><span style={{ fontWeight: 500, fontSize: '8px' }}>(Buku Terbaru)</span></th>
+                    <th style={{ width: '14%' }}>Elemen</th>
+                    <th style={{ width: '42%' }}>Tujuan Pembelajaran (TP) Hasil Penyesuaian</th>
+                    <th style={{ width: '15%' }}>Alokasi<br />Waktu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sourceMateri.map((m) => (
+                    <tr key={m.bab}>
+                      <td className="center" style={{ fontWeight: 800, fontSize: '12px', color: '#0D47A1' }}>{m.bab}</td>
+                      <td style={{ fontWeight: 700, color: '#1E293B', lineHeight: 1.4 }}>
+                        <ArabicText text={m.judul} />
+                      </td>
+                      <td className="center" style={{ fontSize: '9px' }}>{m.elemen}</td>
+                      <td style={{ lineHeight: 1.45 }}>
+                        <ol style={{ margin: 0, paddingLeft: '16px' }}>
+                          {(m.tp || []).map((t, i) => (
+                            <li key={i} style={{ marginBottom: '4px' }}>{t}</li>
+                          ))}
+                        </ol>
+                        <div style={{ marginTop: '6px', fontSize: '8.5px', color: '#64748B', fontStyle: 'italic', borderTop: '1px dashed #E2E8F0', paddingTop: '4px' }}>
+                          <strong>CP:</strong> {m.capaian}
+                        </div>
+                      </td>
+                      <td className="center" style={{ fontWeight: 700 }}>
+                        {m.minggu} TM<br />({m.alokasi} JP)
+                      </td>
+                    </tr>
+                  ))}
+                  <tr style={{ background: '#E3F2FD', fontWeight: 800 }}>
+                    <td colSpan={4} style={{ textAlign: 'right', paddingRight: '12px' }}>
+                      TOTAL ALOKASI SEMESTER {String(sourceSem.nama || sourceSemKey).toUpperCase()}
+                    </td>
+                    <td className="center">{totalTm} TM<br />({totalJp} JP)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style={{
+              marginTop: '14px',
+              background: '#FFF8E1',
+              border: '1px solid #FFE082',
+              borderLeft: '4px solid #FFB300',
+              borderRadius: '8px',
+              padding: '10px 12px',
+              fontSize: '10px',
+              color: '#5D4037',
+              lineHeight: 1.5
+            }}>
+              <strong>Catatan Versi PP:</strong> Pemetaan ini menjadi acuan penyusunan ATP, KKTP, Modul Ajar (PPM), kisi-kisi, dan kartu soal.
+              Modul Ajar pada menu <em>MODUL AJAR (PPM)</em> otomatis mengikuti TP di atas (termasuk LKPD yang selaras inti pembelajaran).
+            </div>
+
+            <div style={{ marginTop: '28px' }}>
+              <SignatureBlock semOverride={sourceSemKey} />
+            </div>
+          </div>
+        );
+      }
 
       case 'atp':
         return (
@@ -1356,7 +1487,22 @@ export default function Perangkat() {
           ? (localMateriList.find(m => m.bab === specificBab) || localMateriList[0])
           : (localMateriList.find(m => m.bab === selectedPpmBab) || localMateriList[0]);
 
-        const ppmDetails = getPpmDetails(fase, activeMateri.bab, selectedMapel, selectedClass);
+        if (!activeMateri || !activeMateri.bab) {
+          return (
+            <div key="modul-empty" className="a4-page" style={{ padding: '20mm' }}>
+              <h2 className="page-title">MODUL AJAR (PPM)</h2>
+              <p style={{ marginTop: '20px', color: '#64748B' }}>
+                Materi untuk semester ini belum tersedia. Silakan ganti semester atau mapel.
+              </p>
+            </div>
+          );
+        }
+
+        const materiTp = Array.isArray(activeMateri.tp) ? activeMateri.tp : [];
+        const totalPertemuan = Math.max(1, Number(activeMateri.minggu) || 1);
+        const ppmDetails = getPpmDetails(fase, activeMateri.bab, selectedMapel, selectedClass, activeMateri);
+        const lkpdTasks = Array.isArray(ppmDetails.lkpd) ? ppmDetails.lkpd : [];
+        const lkpdPetunjuk = Array.isArray(ppmDetails.lkpdPetunjuk) ? ppmDetails.lkpdPetunjuk : [];
 
         return (
           <div key={`modul-${activeMateri.bab}`} className="a4-page" style={{ padding: '15mm 15mm' }}>
@@ -1442,7 +1588,7 @@ export default function Perangkat() {
                   <div>
                     <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px', fontSize: '11px' }}>Sarana & Prasarana:</strong>
                     <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '11px' }}>
-                      {ppmDetails.saranaPrasarana.map((s, sIdx) => (
+                      {(ppmDetails.saranaPrasarana || []).map((s, sIdx) => (
                         <li key={sIdx} style={{ marginBottom: '3px' }}>{s}</li>
                       ))}
                     </ul>
@@ -1473,7 +1619,7 @@ export default function Perangkat() {
                     <div>
                       <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Tujuan Pembelajaran (TP):</strong>
                       <ul style={{ margin: '0', paddingLeft: '16px' }}>
-                        {activeMateri.tp?.map((tp, idx) => (
+                        {materiTp.map((tp, idx) => (
                           <li key={idx} style={{ marginBottom: '6px' }}>Murid mampu <strong>{tp}</strong></li>
                         ))}
                       </ul>
@@ -1494,7 +1640,7 @@ export default function Perangkat() {
                   <div style={{ borderTop: '1px dashed var(--border)', paddingTop: '10px' }}>
                     <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px', fontSize: '11px' }}>❓ Pertanyaan Pemantik (Arousing Questions):</strong>
                     <ol style={{ margin: '0', paddingLeft: '16px', fontSize: '11px', lineHeight: '1.5' }}>
-                      {ppmDetails.pertanyaanPemantik.map((q, qIdx) => (
+                      {(ppmDetails.pertanyaanPemantik || []).map((q, qIdx) => (
                         <li key={qIdx} style={{ marginBottom: '3px', fontWeight: '500' }}>{q}</li>
                       ))}
                     </ol>
@@ -1508,16 +1654,20 @@ export default function Perangkat() {
               {/* SECTION 4: Langkah-Langkah Pembelajaran (Per Pertemuan) */}
               <div style={{ textAlign: 'center', margin: '15px 0 10px 0' }}>
                 <h3 style={{ fontSize: '13px', fontWeight: '800', color: 'var(--primary-dark)' }}>IV. LANGKAH-LANGKAH KEGIATAN PEMBELAJARAN (PER PERTEMUAN)</h3>
-                <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>Total {activeMateri.minggu} Pertemuan ({activeMateri.alokasi} JP × 45 Menit) - Pendekatan TPACK & Diferensiasi</p>
+                <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>Total {totalPertemuan} Pertemuan ({activeMateri.alokasi} JP × 45 Menit) - Pendekatan TPACK & Diferensiasi</p>
               </div>
 
-              {Array.from({ length: activeMateri.minggu }).map((_, pertIdx) => {
-                const targetTp = activeMateri.tp[pertIdx] || activeMateri.tp[activeMateri.tp.length - 1];
+              {Array.from({ length: totalPertemuan }).map((_, pertIdx) => {
+                const targetTp = materiTp[pertIdx] || materiTp[materiTp.length - 1] || activeMateri.judul || 'materi pembelajaran';
                 const isFirst = pertIdx === 0;
-                const isLast = pertIdx === activeMateri.minggu - 1;
+                const isLast = pertIdx === totalPertemuan - 1;
                 
                 return (
-                  <div key={pertIdx} className="modern-card" style={{ borderLeftColor: isLast ? 'var(--secondary)' : 'var(--primary)' }}>
+                  <div
+                    key={pertIdx}
+                    className="modern-card print-keep-together"
+                    style={{ borderLeftColor: isLast ? 'var(--secondary)' : 'var(--primary)' }}
+                  >
                     <div className="modern-card-header">
                       <span>Pertemuan {pertIdx + 1} ({schoolInfoData.jpPerMinggu} JP × 45 Menit)</span>
                       <span className="pill-badge active" style={{ background: isLast ? '#FFE082' : '#E3F2FD', color: isLast ? '#E65100' : '#0D47A1' }}>
@@ -1539,9 +1689,9 @@ export default function Perangkat() {
                             <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px' }}>
                               {isFirst ? (
                                 <>
-                                  <li>{ppmDetails.langkahPendahuluan[0]}</li>
-                                  <li>{ppmDetails.langkahPendahuluan[1]}</li>
-                                  <li>Menyampaikan pertanyaan pemantik: <em>{ppmDetails.pertanyaanPemantik[0]}</em></li>
+                                  <li>{ppmDetails.langkahPendahuluan?.[0]}</li>
+                                  <li>{ppmDetails.langkahPendahuluan?.[1]}</li>
+                                  <li>Menyampaikan pertanyaan pemantik: <em>{ppmDetails.pertanyaanPemantik?.[0]}</em></li>
                                   <li>Melakukan asesmen awal (diagnostik kognitif/non-kognitif) terkait materi bab.</li>
                                 </>
                               ) : (
@@ -1580,10 +1730,10 @@ export default function Perangkat() {
                             <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px' }}>
                               {isLast ? (
                                 <>
-                                  <li>{ppmDetails.langkahPenutup[0]}</li>
-                                  <li>{ppmDetails.langkahPenutup[1]}</li>
+                                  <li>{ppmDetails.langkahPenutup?.[0]}</li>
+                                  <li>{ppmDetails.langkahPenutup?.[1]}</li>
                                   <li>Guru memberikan penguatan nilai-nilai Profil Pelajar Pancasila dan pesan moral.</li>
-                                  <li>{ppmDetails.langkahPenutup[4]}</li>
+                                  <li>{ppmDetails.langkahPenutup?.[4]}</li>
                                 </>
                               ) : (
                                 <>
@@ -1647,7 +1797,7 @@ export default function Perangkat() {
               {/* SECTION 6: Bahan Bacaan */}
               <div className="modern-card">
                 <div className="modern-card-header">
-                  <span>V. BAHAN BACAAN GURU & PESERTA DIDIK</span>
+                  <span>V. BAHAN BACAAN GURU & MURID</span>
                   <span className="pill-badge active">Ringkasan Materi</span>
                 </div>
                 <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -1657,8 +1807,10 @@ export default function Perangkat() {
                   <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px dashed #CBD5E1', fontSize: '11px' }}>
                     <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Poin-poin Utama Materi:</strong>
                     <ul style={{ margin: 0, paddingLeft: '16px' }}>
-                      {activeMateri.tp?.map((tp, idx) => (
-                        <li key={idx} style={{ marginBottom: '4px' }}>Konseptualisasi dan implementasi tentang: {tp.split(' ').slice(2).join(' ')}</li>
+                      {materiTp.map((tp, idx) => (
+                        <li key={idx} style={{ marginBottom: '4px' }}>
+                          <strong>TP {idx + 1}:</strong> {tp}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -1668,36 +1820,93 @@ export default function Perangkat() {
                 </div>
               </div>
 
-              {/* SECTION 7: Lampiran LKPD - Premium, Tableless Layout! */}
+              {/* SECTION 7: Lampiran LKPD — selaras TP / inti pembelajaran */}
               <div style={{ textAlign: 'center', margin: '15px 0 10px 0' }}>
-                <h3 style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary-dark)', textTransform: 'uppercase' }}>LAMPIRAN 1: LEMBAR KERJA PESERTA DIDIK (LKPD)</h3>
-                <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>"Membedah Hikmah Teologis & Implementasi Nyata Syariat"</p>
+                <h3 style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary-dark)', textTransform: 'uppercase' }}>LAMPIRAN 1: LEMBAR KERJA MURID (LKPD)</h3>
+                <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>
+                  Berbasis Tujuan Pembelajaran — Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} />
+                </p>
               </div>
 
-              <div style={{ background: 'linear-gradient(135deg, #F8FAFC, #EDF2F7)', border: '1px solid var(--border)', padding: '16px', borderRadius: '8px', marginBottom: '20px' }}>
+              <div style={{ background: 'linear-gradient(135deg, #F8FAFC, #EDF2F7)', border: '1px solid var(--border)', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', fontSize: '11px' }}>
                   <div><strong>Nama Kelompok:</strong> ................................................................</div>
                   <div><strong>Fase / Kelas:</strong> {fase} / {selectedClass}</div>
                   <div><strong>Anggota Kelompok:</strong> 1. .................... 2. .................... 3. ....................</div>
-                  <div><strong>Bab / Elemen:</strong> Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} /> ({activeMateri.elemen})</div>
+                  <div><strong>Bab / Elemen:</strong> Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} /> ({activeMateri.elemen || '-'})</div>
+                  <div style={{ gridColumn: 'span 2' }}><strong>Alokasi:</strong> {activeMateri.alokasi} JP · {totalPertemuan} pertemuan · Mapel: {schoolInfoData.mapel}</div>
+                </div>
+              </div>
+
+              {/* Target TP yang diukur LKPD */}
+              <div className="modern-card" style={{ borderLeftColor: 'var(--secondary)' }}>
+                <div className="modern-card-header">
+                  <span>TARGET INTI PEMBELAJARAN (TP) YANG DIUKUR</span>
+                  <span className="pill-badge active">{materiTp.length} TP</span>
+                </div>
+                <div className="modern-card-body">
+                  <ol style={{ margin: 0, paddingLeft: '18px', fontSize: '11px', lineHeight: '1.6' }}>
+                    {materiTp.map((tp, idx) => (
+                      <li key={idx} style={{ marginBottom: '6px' }}><strong>TP {idx + 1}.</strong> {tp}</li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
+
+              {/* Petunjuk pengerjaan */}
+              <div className="modern-card">
+                <div className="modern-card-header">
+                  <span>PETUNJUK PENGERJAAN</span>
+                  <span className="pill-badge">Wajib dibaca</span>
+                </div>
+                <div className="modern-card-body">
+                  <ol style={{ margin: 0, paddingLeft: '18px', fontSize: '11px', lineHeight: '1.6' }}>
+                    {lkpdPetunjuk.map((p, i) => (
+                      <li key={i} style={{ marginBottom: '4px' }}>{p}</li>
+                    ))}
+                  </ol>
                 </div>
               </div>
 
               <div className="modern-card">
                 <div className="modern-card-header">
-                  <span>SOAL / TUGAS LKPD</span>
-                  <span className="pill-badge">Petunjuk KBM</span>
+                  <span>KEGIATAN & TUGAS LKPD (SESUAI INTI PEMBELAJARAN)</span>
+                  <span className="pill-badge active">{lkpdTasks.length} butir</span>
                 </div>
-                <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <ol style={{ fontSize: '11px', paddingLeft: '18px', lineHeight: '1.8' }}>
-                    {ppmDetails.lkpd.map((q, i) => (
-                      <li key={i} style={{ marginBottom: '8px' }}><strong>{q}</strong></li>
-                    ))}
-                  </ol>
-                  <div style={{ marginTop: '12px', borderTop: '1px dashed var(--border)', paddingTop: '12px' }}>
-                    <strong style={{ color: 'var(--primary)', fontSize: '11px' }}>Kesimpulan Analisis Kelompok:</strong>
-                    <div style={{ border: '1px dashed var(--border)', height: '40px', background: '#FAFAFA', borderRadius: '4px', marginTop: '4px', padding: '6px', color: '#888' }}>
-                      Tuliskan poin kesimpulan kelompok di sini...
+                <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                  {lkpdTasks.map((q, i) => (
+                    <div key={i} className="print-keep-together" style={{ border: '1px solid #E2E8F0', borderRadius: '8px', padding: '12px', background: i % 2 === 0 ? '#FFFFFF' : '#F8FAFC' }}>
+                      <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                        <span style={{
+                          flexShrink: 0,
+                          width: '24px', height: '24px', borderRadius: '50%',
+                          background: '#0D47A1', color: '#fff',
+                          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                          fontSize: '11px', fontWeight: 800
+                        }}>{i + 1}</span>
+                        <div style={{ flex: 1 }}>
+                          <p style={{ margin: 0, fontSize: '11px', lineHeight: '1.55', fontWeight: 600, color: '#1E293B' }}>{q}</p>
+                          <div style={{
+                            marginTop: '8px',
+                            border: '1px dashed #CBD5E1',
+                            borderRadius: '4px',
+                            minHeight: '36px',
+                            background: '#FAFAFA',
+                            padding: '6px 8px',
+                            fontSize: '10px',
+                            color: '#94A3B8'
+                          }}>
+                            Ruang jawaban / catatan kelompok...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+
+                  <div style={{ marginTop: '4px', borderTop: '1px dashed var(--border)', paddingTop: '12px' }}>
+                    <strong style={{ color: 'var(--primary)', fontSize: '11px' }}>Catatan Presentasi & Feedback Guru:</strong>
+                    <div style={{ border: '1px dashed var(--border)', height: '48px', background: '#FAFAFA', borderRadius: '4px', marginTop: '4px', padding: '6px', color: '#888', fontSize: '10px' }}>
+                      Poin umpan balik, skor proses, dan tindak lanjut...
                     </div>
                   </div>
                 </div>
@@ -2091,7 +2300,7 @@ export default function Perangkat() {
         </header>
 
         {/* Document Render Area */}
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', overflowY: 'auto', padding: '0 20px 20px' }}>
+        <div className="document-scroll-area">
           
           {/* Settings & Input Section */}
           <section className="no-print" style={{ background: '#FFF', borderRadius: '12px', border: '1px solid #E2E8F0', margin: '20px 0', overflow: 'hidden', width: '100%', maxWidth: '850px', flexShrink: 0 }}>
@@ -2179,10 +2388,27 @@ export default function Perangkat() {
           </section>
           {viewMode === 'single' ? (
             <div id="single-container">
-              {renderPage(activeTab, 0)}
+              {(() => {
+                try {
+                  return renderPage(activeTab, 0);
+                } catch (err) {
+                  console.error('Gagal merender halaman:', err);
+                  return (
+                    <div className="a4-page" style={{ padding: '24px' }}>
+                      <h2 className="page-title">Terjadi Kesalahan Tampilan</h2>
+                      <p style={{ marginTop: '12px', fontSize: '13px', color: '#64748B' }}>
+                        Halaman <strong>{activeTab}</strong> gagal ditampilkan. Coba ganti menu lain, lalu kembali ke halaman ini.
+                      </p>
+                      <pre style={{ marginTop: '16px', fontSize: '11px', background: '#FEF2F2', color: '#991B1B', padding: '12px', borderRadius: '8px', whiteSpace: 'pre-wrap' }}>
+                        {String(err?.message || err)}
+                      </pre>
+                    </div>
+                  );
+                }
+              })()}
             </div>
           ) : (
-            <div id="booklet-container" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+            <div id="booklet-container" className="booklet-container" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
               {/* Cover, Judul, Identitas, Daftar Isi */}
               {renderPage('cover', 'cover')}
               {renderPage('judul', 'judul')}
@@ -2212,6 +2438,7 @@ export default function Perangkat() {
               {renderPage('pekan-efektif', 'pekan-efektif-genap', null, 'genap')}
               {renderPage('promes', 'promes-genap', null, 'genap')}
               {renderPage('analisis-cp', 'analisis-cp-genap', null, 'genap')}
+              {renderPage('cp-tp-pp', 'cp-tp-pp-genap', null, 'genap')}
               {renderPage('atp', 'atp-genap', null, 'genap')}
               {renderPage('kktp', 'kktp-genap', null, 'genap')}
               {activeFaseData.semester.genap.materi.map((m, mIdx) => 
@@ -2255,8 +2482,11 @@ export default function Perangkat() {
                 <li style={{ marginBottom: '4px' }}>
                   Wajib **centang/aktifkan "Grafik latar belakang" (Background graphics)** agar warna premium, logo, dan background SVG tampil.
                 </li>
+                <li style={{ marginBottom: '4px' }}>
+                  Atur Ukuran Kertas ke <strong>A4</strong>, margin <strong>Default</strong> atau minimal, dan hilangkan centang "Header & Footer".
+                </li>
                 <li>
-                  Atur Ukuran Kertas ke **A4** dan hilangkan centang "Header & Footer".
+                  Matikan opsi "Fit to page / Sesuaikan" jika ada, agar skala tetap 100% dan konten tidak terpotong.
                 </li>
               </ul>
             </div>

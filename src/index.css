@@ -780,7 +780,8 @@ body {
 .a4-page {
   width: 210mm;
   min-height: 297mm;
-  padding: 20mm 20mm;
+  height: auto;
+  padding: 15mm 16mm;
   margin: 30px auto;
   background: white;
   box-shadow: var(--shadow);
@@ -788,6 +789,25 @@ body {
   page-break-after: always;
   border-radius: var(--radius);
   border: 1px solid var(--border);
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+/* Document scroll area (screen preview) */
+.document-scroll-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+
+/* Paper size for browser print / Save as PDF */
+@page {
+  size: A4 portrait;
+  margin: 10mm 12mm;
 }
 
 .landscape-mode {
@@ -796,58 +816,83 @@ body {
 }
 
 @media print {
-  /* Hide UI elements */
-  .sidebar, .toolbar, .settings-overlay, .desktop-navbar, .bottom-navbar {
-    display: none !important;
-  }
-  
-  #booklet-container, #single-container {
-    display: block !important;
-    width: 100% !important;
-  }
-  
-  .main-content-area {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  .perangkat-wrapper {
+  /* Reset root so nothing clips multi-page content */
+  html, body {
+    width: auto !important;
     height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     overflow: visible !important;
     display: block !important;
+    background: #ffffff !important;
   }
 
-  .sidebar, .toolbar, .no-print, .loading-overlay {
+  /* Hide all UI chrome */
+  .sidebar,
+  .sidebar-overlay,
+  .toolbar,
+  .settings-overlay,
+  .desktop-navbar,
+  .bottom-navbar,
+  .no-print,
+  .loading-overlay {
     display: none !important;
   }
 
-  .app-container {
+  /* Unwrap layout shells so content can flow across pages */
+  .app-container,
+  .main-content-area,
+  .perangkat-wrapper,
+  .main-content,
+  .document-scroll-area,
+  #booklet-container,
+  #single-container,
+  .booklet-container {
     display: block !important;
-    min-height: auto !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
     margin: 0 !important;
     padding: 0 !important;
-    background: none !important;
+    gap: 0 !important;
+    overflow: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    flex: none !important;
+    transform: none !important;
+    filter: none !important;
   }
 
-  .main-content {
-    margin: 0 !important;
+  .main-content-area.desktop-padding,
+  .main-content-area.mobile-padding {
     padding: 0 !important;
     width: 100% !important;
     display: block !important;
     background: none !important;
   }
 
+  /* Each logical document starts on a new sheet; content may span multiple sheets */
   .a4-page {
     width: 100% !important;
-    min-height: auto !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
     height: auto !important;
     margin: 0 !important;
+    /* Margins handled by @page so multi-page sections keep consistent insets */
     padding: 0 !important;
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
     page-break-before: always !important;
     break-before: page !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
     overflow: visible !important;
     position: relative !important;
     box-sizing: border-box !important;
@@ -856,7 +901,7 @@ body {
     print-color-adjust: exact !important;
     display: block !important;
   }
-  
+
   /* Fix page breaks failing inside Flexbox */
   .modern-card, .modern-card-body {
     display: block !important;
@@ -867,29 +912,170 @@ body {
   .modern-card-body > *:last-child {
     margin-bottom: 0 !important;
   }
+
   .a4-page:first-of-type {
     page-break-before: avoid !important;
     break-before: avoid !important;
   }
+
   .cover-page {
-    height: 257mm !important; /* 297mm - 40mm top/bottom margin */
+    height: 257mm !important;
     padding: 0 !important;
   }
 
+  /* Cover fills one sheet nicely in print */
+  .a4-page.a4-cover {
+    min-height: 277mm !important;
+    overflow: hidden !important;
+  }
+
+  /* Avoid awkward splits for compact blocks (NOT whole long cards) */
+  .signature-section,
+  .signature-block,
+  .metadata-card,
+  .timeline-item,
+  .rubrik-item,
+  .pill-badge,
+  tr,
+  thead,
+  h2.page-title,
+  h3,
+  .prevent-break,
+  .info-alert,
+  img,
+  p,
+  li {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Prefer keeping section headers with following content */
+  h1, h2, h3, h4, h5, h6, .modern-card-header, .page-title, .page-subtitle {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Tables: allow row-level avoid, keep headers repeating */
+  .data-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    font-size: 9.5px !important;
+    table-layout: fixed !important;
+    word-wrap: break-word !important;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 4px 5px !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Dense weekly grids (PROMES/PROTA) */
+  .promes-table,
+  .table-print-wrap .data-table {
+    font-size: 7.5px !important;
+  }
+
+  .promes-table th,
+  .promes-table td {
+    padding: 2px 1px !important;
+    font-size: 7px !important;
+  }
+
+  .table-print-wrap {
+    overflow: visible !important;
+    width: 100% !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tfoot {
+    display: table-footer-group !important;
+  }
+
+  /* Cards / timeline: allow natural page flow for long modul ajar */
+  .modern-card {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    box-shadow: none !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Keep each pertemuan / compact card on one sheet when it fits */
+  .print-keep-together {
+    page-break-inside: avoid !important;
+    break-inside: avoid-page !important;
+  }
+
+  .timeline {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  /* Horizontal scroll wrappers must not clip when printing */
+  [style*="overflow"],
+  [style*="overflowX"],
+  [style*="overflow-x"] {
+    overflow: visible !important;
+    overflow-x: visible !important;
+  }
+
+  /* Prevent wide content from overflowing page edges */
+  img, svg, table, .modern-card, .metadata-grid, .rubrik-grid {
+    max-width: 100% !important;
+  }
+
+  img {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Tighter print typography for dense admin tables */
+  .page-title {
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .page-subtitle {
+    font-size: 11px !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Grid layouts stay printable */
+  .metadata-grid,
+  .rubrik-grid {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
   /* Force background colors, gradients and shapes to print */
-  * {
+  *,
+  *::before,
+  *::after {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
+  /* Portrait with binding margin (left 30mm) */
   @page {
     size: A4 portrait;
-    margin: 20mm 15mm 20mm 30mm; /* Atas 20mm, Kanan 15mm, Bawah 20mm, Kiri (Jilid) 30mm */
+    margin: 20mm 15mm 20mm 30mm;
   }
 
   @page landscape-page {
     size: A4 landscape;
-    margin: 15mm 15mm 15mm 30mm; /* Ruang jilid 30mm di sebelah kiri */
+    margin: 15mm 15mm 15mm 30mm;
   }
 
   .landscape-mode {
@@ -900,18 +1086,9 @@ body {
     padding: 0 !important;
   }
 
-  /* Prevent elements from breaking across pages */
-  tr, .metadata-card, .info-alert, .signature-block, .signature-section, .metadata-grid, .prevent-break, img, p, li {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-  }
-
-  /* Prevent headings from being orphaned at the bottom of a page */
-  h1, h2, h3, h4, h5, h6 {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-    page-break-after: avoid !important;
-    break-after: avoid !important;
+  /* Hide floating fullscreen exit button if present */
+  body.fullscreen-mode .perangkat-wrapper {
+    height: auto !important;
   }
 }
 
@@ -1167,7 +1344,7 @@ body {
   margin: 20px 0;
   background: white;
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
@@ -1425,6 +1602,24 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 12px;
   margin: 16px 0;
+}
+
+@media print {
+  .rubrik-grid {
+    gap: 6px !important;
+  }
+
+  .rubrik-item {
+    padding: 8px 4px !important;
+  }
+
+  .rubrik-percentage {
+    font-size: 14px !important;
+  }
+
+  .rubrik-label {
+    font-size: 8.5px !important;
+  }
 }
 
 .rubrik-item {

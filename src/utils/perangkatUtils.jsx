@@ -130,35 +130,37 @@ export const getDplForBab = (fase, bab, mapel = 'pai') => {
           { nama: dplNames.kemandirian, deskripsi: "Lulusan memiliki ketangguhan belajar yang tinggi, disiplin mengatur prioritas, dan bertanggung jawab penuh atas masa depannya." },
           { nama: dplNames.penalaran, deskripsi: "Lulusan mampu menelaah biografi, karya ilmiah, dan kegigihan ulama sejarah sebagai sumber inspirasi intelektual." }
         ];
-      case 6: // Toleransi & Kerukunan
+      case 6: // Mencintai IPTEK (Q.S. al-Alaq & ar-Rahman) — Versi PP
         return [
-          { nama: dplNames.kewargaan, deskripsi: "Lulusan menjunjung tinggi toleransi (tasamuh) antarumat beragama, peduli sosial, dan berperan aktif memelihara kerukunan hidup bermasyarakat." },
-          { nama: dplNames.kolaborasi, deskripsi: "Lulusan mampu bekerja sama secara sinergis lintas kelompok, menghargai perbedaan, dan meredam gesekan sosial demi kepentingan bersama." },
-          { nama: dplNames.penalaran, deskripsi: "Lulusan mampu mengidentifikasi dan memecahkan potensi konflik keagamaan secara objektif berdasarkan dalil QS. Yunus/10: 40-41." }
+          { nama: dplNames.penalaran, deskripsi: "Lulusan mampu menelaah perintah Iqra' (Q.S. al-Alaq/96: 1-5) dan isyarat iptek (Q.S. ar-Rahman/55: 33) secara analitis untuk mengembangkan wawasan keilmuan." },
+          { nama: dplNames.keimanan, deskripsi: "Lulusan memperkuat iman melalui tadabbur ciptaan Allah dan semangat menuntut ilmu sebagai ibadah." },
+          { nama: dplNames.kreativitas, deskripsi: "Lulusan termotivasi mengembangkan inovasi iptek yang maslahat sebagai Pelajar Muhammadiyah yang mencintai ilmu." },
+          { nama: dplNames.kemandirian, deskripsi: "Lulusan disiplin belajar mandiri dan proaktif memanfaatkan teknologi untuk kebaikan." }
         ];
-      case 7: // Muru'ah, Ikhlas, Malu, Zuhud
+      case 7: // Muru'ah, Ikhlas, Malu, Zuhud — Versi PP
         return [
           { nama: dplNames.keimanan, deskripsi: "Lulusan mempraktikkan keimanan yang ikhlas, memiliki rasa malu (haya') dalam berbuat maksiat, serta senantiasa menjaga kehormatan diri (muru'ah)." },
-          { nama: dplNames.kemandirian, deskripsi: "Lulusan tangguh dalam mengendalikan nafsu dan nafsu duniawi (zuhud), bertanggung jawab penuh atas keputusan moral pribadinya." },
-          { nama: dplNames.kesehatan, deskripsi: "Lulusan mengelola stres duniawi dan mencapai kebahagiaan mental (mental well-being) melalui rasa syukur, keikhlasan, dan kepasrahan yang produktif." }
+          { nama: dplNames.kemandirian, deskripsi: "Lulusan tangguh dalam mengendalikan nafsu duniawi (zuhud) dan bertanggung jawab penuh atas keputusan moral pribadinya." },
+          { nama: dplNames.kesehatan, deskripsi: "Lulusan mengelola stres duniawi dan mencapai kesejahteraan mental melalui ketulusan hati, rasa malu, dan sikap qana'ah." }
         ];
-      case 8: // Adab Bermedsos
+      case 8: // Anti Khamr & Narkoba — Versi PP
         return [
-          { nama: dplNames.komunikasi, deskripsi: "Lulusan mampu menyebarkan pesan kebaikan secara efektif di media sosial dengan bahasa yang santun, informatif, dan menyesuaikan dengan audiens." },
-          { nama: dplNames.kewargaan, deskripsi: "Lulusan menaati aturan etika dan hukum siber, menolak penyebaran berita bohong (hoax), serta menjaga persatuan bangsa di dunia maya." },
-          { nama: dplNames.penalaran, deskripsi: "Lulusan cerdas memilah informasi, membedakan fakta dari opini/fitnah, dan menilai validitas berita yang beredar sebelum membagikannya." }
+          { nama: dplNames.keimanan, deskripsi: "Lulusan menjauhi khamr dan narkoba sebagai bentuk ketaatan syariat demi menjaga agama, akal, dan jiwa." },
+          { nama: dplNames.kesehatan, deskripsi: "Lulusan memahami bahaya minuman keras dan narkoba bagi kesehatan akal, jiwa, dan raga serta memilih gaya hidup sehat." },
+          { nama: dplNames.kewargaan, deskripsi: "Lulusan berkomitmen sebagai generasi muda anti narkoba yang taat hukum agama dan hukum positif negara." },
+          { nama: dplNames.kolaborasi, deskripsi: "Lulusan aktif mengampanyekan gerakan anti minuman keras dan narkoba di lingkungan sekolah." }
         ];
-      case 9: // Ketentuan Pernikahan
+      case 9: // Ekonomi Islam (Asuransi, Bank, Koperasi Syariah) — Versi PP
         return [
-          { nama: dplNames.keimanan, deskripsi: "Lulusan menghargai sakralnya ikatan pernikahan dalam Islam sebagai bentuk ketaatan ibadah yang berintegritas tinggi." },
-          { nama: dplNames.kewargaan, deskripsi: "Lulusan memahami tanggung jawab hukum, sosial, dan agama dalam membangun keluarga sakinah yang harmonis." },
-          { nama: dplNames.kolaborasi, deskripsi: "Lulusan memiliki pemahaman pentingnya komunikasi dua arah, saling melengkapi peran, dan meredam konflik keluarga secara damai." }
+          { nama: dplNames.penalaran, deskripsi: "Lulusan menganalisis prinsip dan operasional asuransi syariah, bank syariah, serta koperasi syariah secara logis." },
+          { nama: dplNames.kemandirian, deskripsi: "Lulusan memiliki kesadaran finansial yang berintegritas dengan memilih produk ekonomi syariah." },
+          { nama: dplNames.kewargaan, deskripsi: "Lulusan menumbuhkan kebanggaan terhadap sistem ekonomi Islam yang berkeadilan dan bermaslahat bagi masyarakat." }
         ];
-      case 10: // Peradaban Islam
+      case 10: // Kebangkitan Islam Modern — Versi PP
         return [
-          { nama: dplNames.penalaran, deskripsi: "Lulusan menganalisis secara logis dan analitis faktor kunci kemajuan peradaban sains umat Islam di masa kejayaan." },
-          { nama: dplNames.kreativitas, deskripsi: "Lulusan termotivasi mengembangkan ide orisinal untuk menciptakan riset ilmiah atau karya inovatif demi kemajuan ilmu pengetahuan." },
-          { nama: dplNames.kewargaan, deskripsi: "Lulusan berkontribusi positif bagi peradaban dunia dengan semangat kebangsaan dan nilai-nilai kemanusiaan universal." }
+          { nama: dplNames.penalaran, deskripsi: "Lulusan menelaah pemikiran dan gerakan pembaruan tokoh Islam modern (al-Afghani, Abduh, Rasyid Ridha, K.H. Ahmad Dahlan) secara kritis." },
+          { nama: dplNames.kewargaan, deskripsi: "Lulusan meneladani semangat kebangkitan Islam untuk berkontribusi memajukan bangsa dan umat." },
+          { nama: dplNames.kreativitas, deskripsi: "Lulusan terinspirasi mengembangkan inovasi dakwah dan pendidikan berlandaskan semangat tajdid para pembaru." }
         ];
       default:
         return [
@@ -200,7 +202,70 @@ const defaultLangkahPenutup = [
   "Menutup pembelajaran dengan doa kafaratul majelis dan salam."
 ];
 
-export const generateDynamicLangkahInti = (targetTp, meetingIndex) => {
+/**
+ * Bangun daftar tugas LKPD lengkap yang selaras dengan TP (inti pembelajaran).
+ * customLkpd dari bank per-bab digabung tanpa duplikasi.
+ */
+export const buildLkpdFromMateri = (materi = {}, mapel = 'pai', customLkpd = []) => {
+  const judul = (materi.judul || 'materi pembelajaran').trim();
+  const elemen = (materi.elemen || '').trim();
+  const tps = Array.isArray(materi.tp) ? materi.tp.filter(Boolean) : [];
+  const tasks = [];
+
+  const labelMapel =
+    mapel === 'arab' ? 'Bahasa Arab' : mapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI dan Budi Pekerti';
+
+  tasks.push(
+    `Orientasi Materi: Tuliskan 3 konsep kunci dari materi "${judul}"${elemen ? ` (Elemen: ${elemen})` : ''} yang paling esensial bagi pelajar SMK, lalu jelaskan mengapa ketiganya penting!`
+  );
+
+  tps.forEach((tp, i) => {
+    const n = i + 1;
+    const cleanTp = String(tp).trim().replace(/\.$/, '');
+    if (i === 0) {
+      tasks.push(
+        `Kegiatan ${n} — Memahami (TP ${n}): ${cleanTp}. Uraikan pemahaman kelompok dengan bahasa sendiri, lengkapi minimal 1 dalil/contoh pendukung yang relevan dengan ${labelMapel}!`
+      );
+    } else if (i === tps.length - 1) {
+      tasks.push(
+        `Kegiatan ${n} — Menerapkan & Merefleksi (TP ${n}): ${cleanTp}. Susun rencana aksi nyata minimal 3 langkah agar TP ini terwujud di sekolah/rumah dalam 1 pekan, lengkap dengan indikator keberhasilan!`
+      );
+    } else {
+      tasks.push(
+        `Kegiatan ${n} — Menganalisis (TP ${n}): ${cleanTp}. Analisis satu studi kasus kontekstual (sekolah/masyarakat/digital). Tuliskan: (a) inti masalah, (b) sebab-akibat, (c) solusi sesuai nilai materi!`
+      );
+    }
+  });
+
+  (customLkpd || []).forEach((q) => {
+    if (!q || typeof q !== 'string') return;
+    const snippet = q.slice(0, 48).toLowerCase();
+    const already = tasks.some((t) => t.toLowerCase().includes(snippet));
+    if (!already) tasks.push(q);
+  });
+
+  tasks.push(
+    `Sintesis Kelompok: Susun kesimpulan utuh (5–7 kalimat) yang menghubungkan seluruh Tujuan Pembelajaran bab "${judul}" dengan perilaku sehari-hari murid SMK!`
+  );
+  tasks.push(
+    `Produk Presentasi: Buat ringkasan visual (mind map / poster / 3–5 slide) berisi alur: konsep inti → dalil/landasan → contoh nyata → aksi tindak lanjut dari materi "${judul}"!`
+  );
+  tasks.push(
+    `Refleksi Individu: Apa 1 kebiasaan baru yang akan Anda ubah setelah mempelajari materi ini? Tuliskan alasan teologis/moralnya dan cara mengukurnya selama seminggu!`
+  );
+
+  return tasks;
+};
+
+export const generateDynamicLangkahInti = (targetTp, meetingIndex = 0) => {
+  if (!targetTp || typeof targetTp !== 'string') {
+    return [
+      'Murid mengamati pemaparan materi inti dan mencatat poin-poin penting secara mandiri.',
+      'Murid berdiskusi kelompok menyelesaikan LKPD terkait materi pertemuan hari ini.',
+      'Murid mempresentasikan hasil diskusi, saling memberi umpan balik, dan merumuskan kesimpulan bersama.',
+    ];
+  }
+
   // Lowercase to check keywords
   const tpLower = targetTp.toLowerCase();
   const isPraktik = /membaca|menghafal|melafalkan|tajwid|menerjemahkan|hiwar|percakapan|menulis|menyalin/i.test(tpLower);
@@ -275,7 +340,7 @@ export const generateDynamicLangkahInti = (targetTp, meetingIndex) => {
   return tahapan;
 };
 
-export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
+export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = null) => {
   const defaultSaranaPAI = [
     "LCD Projector, Laptop, dan Jaringan Internet (Wifi)",
     "Buku Ajar PAI & Budi Pekerti Kurikulum Merdeka Kelas " + (fase === 'E' ? 'X' : fase === 'F' ? 'XI/XII' : ''),
@@ -527,6 +592,150 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
           ];
           break;
       }
+    } else if (kelas === 'XII') {
+      // Fase F — Kelas XII (materi berbeda dari XI)
+      switch (bab) {
+        case 1: // Sabar dan Tabah
+          details.pemahamanBermakna = "Sabar dan tabah adalah kekuatan batin yang menuntun muslim tetap istiqamah saat menghadapi ujian, musibah, dan tekanan kehidupan modern.";
+          details.pertanyaanPemantik = [
+            "Apa perbedaan sabar dalam ketaatan, sabar dalam musibah, dan sabar menahan maksiat?",
+            "Bagaimana QS. Al-Baqarah/2: 155-157 membingkai cara muslim menyikapi ujian?",
+            "Mengapa husnudzan kepada Allah menjadi kunci ketabahan?"
+          ];
+          details.langkahInti = [
+            "Murid membaca dan menghafal QS. Al-Baqarah/2: 155-157 beserta artinya dengan tartil.",
+            "Guru memandu tadabbur ayat: bentuk ujian, respons ideal, dan balasan bagi orang sabar.",
+            "Kelompok menganalisis studi kasus ujian pelajar SMK (gagal ujian, ekonomi, tekanan sosial).",
+            "Setiap kelompok merumuskan strategi sabar-tawakal yang aplikatif di sekolah dan rumah.",
+            "Refleksi individu: menulis komitmen menyikapi ujian tanpa mengeluh destruktif."
+          ];
+          details.lkpd = [
+            "Tuliskan QS. Al-Baqarah/2: 155-157 beserta arti dan pesan utamanya!",
+            "Jelaskan 3 macam sabar beserta contoh nyata di lingkungan pelajar SMK!",
+            "Buatlah rencana pribadi menghadapi 1 ujian yang sedang/pernah Anda alami dengan langkah sabar, tawakal, dan husnudzan!"
+          ];
+          break;
+        case 2: // Iman, Islam, Ihsan
+          details.pemahamanBermakna = "Iman, Islam, dan ihsan adalah satu kesatuan berjenjang yang membentuk muslim berintegritas: yakin di hati, taat dalam amal, dan beribadah seolah melihat Allah.";
+          details.pertanyaanPemantik = [
+            "Bagaimana hubungan integratif antara iman, Islam, dan ihsan?",
+            "Mengapa ihsan disebut tingkatan tertinggi dalam beragama?",
+            "Bagaimana membiasakan muraqabah (merasa diawasi Allah) di era digital?"
+          ];
+          details.langkahInti = [
+            "Murid mengkaji hadis Jibril tentang iman, Islam, dan ihsan.",
+            "Guru memandu pemetaan: rukun iman, rukun Islam, dan makna ihsan.",
+            "Diskusi kelompok: indikator ihsan dalam ibadah, belajar, dan bermedsos.",
+            "Presentasi diagram hubungan iman–Islam–ihsan beserta contoh perilaku.",
+            "Refleksi: satu amalan harian untuk menumbuhkan ihsan."
+          ];
+          details.lkpd = [
+            "Jelaskan definisi iman, Islam, dan ihsan beserta dalil ringkasnya!",
+            "Buat peta konsep keterkaitan ketiga konsep tersebut dengan contoh perilaku pelajar!",
+            "Rancang 5 indikator ihsan yang dapat dipraktikkan di bengkel/kelas SMK Anda!"
+          ];
+          break;
+        case 3: // Munafik, Keras Hati, Keras Kepala
+          details.pemahamanBermakna = "Munafik, keras hati, dan keras kepala merusak integritas moral; jujur, terbuka, dan rendah hati adalah penawarnya.";
+          details.pertanyaanPemantik = [
+            "Apa tanda-tanda nifaq menurut Al-Qur'an dan Hadis?",
+            "Bagaimana membedakan keteguhan prinsip dengan sikap keras kepala?",
+            "Mengapa kejujuran menjadi obat utama sifat munafik?"
+          ];
+          details.langkahInti = [
+            "Murid mengidentifikasi tanda munafik, keras hati, dan keras kepala dari teks dalil.",
+            "Analisis kasus: perilaku munafik di sekolah (bohong, khianat janji, riya).",
+            "Role play menolak ajakan bohong/manipulasi secara tegas dan santun.",
+            "Kelompok menyusun strategi pembiasaan jujur dan terbuka terhadap kebenaran.",
+            "Komitmen anti-nifaq tertulis per individu."
+          ];
+          details.lkpd = [
+            "Sebutkan minimal 3 tanda orang munafik beserta dalilnya!",
+            "Analisis satu kasus keras kepala di kelas: dampak dan solusinya!",
+            "Buat 5 janji perilaku jujur yang akan Anda jaga selama sebulan!"
+          ];
+          break;
+        case 4: // Ijtihad
+          details.pemahamanBermakna = "Ijtihad adalah instrumen dinamis syariat agar hukum Islam tetap relevan menjawab persoalan kontemporer tanpa meninggalkan dalil.";
+          details.pertanyaanPemantik = [
+            "Apa syarat seseorang melakukan ijtihad?",
+            "Bagaimana ijtihad berbeda dari opini bebas tanpa dalil?",
+            "Berikan contoh masalah modern yang memerlukan ijtihad!"
+          ];
+          details.langkahInti = [
+            "Murid mengkaji pengertian, kedudukan, dan metode ijtihad.",
+            "Guru menyajikan kasus kontemporer (teknologi, biotek, ekonomi digital).",
+            "Kelompok menganalisis kasus dengan kerangka Al-Qur'an–Hadis–kaidah fikih sederhana.",
+            "Presentasi hasil penalaran dan apresiasi adab berbeda pendapat.",
+            "Penguatan: adab menghargai ulama dan keragaman pendapat syar'i."
+          ];
+          details.lkpd = [
+            "Jelaskan pengertian, syarat, dan metode ijtihad!",
+            "Analisis 1 masalah kontemporer menggunakan kerangka sumber hukum Islam!",
+            "Mengapa perbedaan hasil ijtihad harus disikapi dengan adab ilmiah?"
+          ];
+          break;
+        case 5: // Cinta Tanah Air & Moderasi
+          details.pemahamanBermakna = "Cinta tanah air dan moderasi beragama (wasathiyah) adalah wujud keimanan yang menjaga keutuhan bangsa tanpa mengorbankan prinsip syariat.";
+          details.pertanyaanPemantik = [
+            "Bagaimana dalil keagamaan mendukung semangat kebangsaan?",
+            "Apa ciri sikap wasathiyah dalam kehidupan sehari-hari?",
+            "Bagaimana menolak ekstremisme tanpa memusuhi perbedaan?"
+          ];
+          details.langkahInti = [
+            "Murid membaca dalil terkait menjaga kehidupan dan kerukunan.",
+            "Diskusi: praktik moderasi di sekolah multikultural.",
+            "Proyek mini: kampanye digital cinta tanah air berlandaskan nilai Islam.",
+            "Presentasi kampanye dan umpan balik kelas.",
+            "Refleksi: kontribusi pelajar SMK bagi keutuhan NKRI."
+          ];
+          details.lkpd = [
+            "Jelaskan hubungan cinta tanah air dengan ajaran Islam!",
+            "Sebutkan 5 indikator moderasi beragama yang dapat dipraktikkan pelajar!",
+            "Rancang 1 aksi kelas untuk memperkuat toleransi dan semangat kebangsaan!"
+          ];
+          break;
+        case 6: // Mawaris
+          details.pemahamanBermakna = "Hukum waris Islam menjamin keadilan distribusi harta, melindungi hak ahli waris, dan mencegah konflik keluarga.";
+          details.pertanyaanPemantik = [
+            "Siapa saja yang termasuk ahli waris?",
+            "Mengapa pembagian waris diatur secara rinci dalam syariat?",
+            "Bagaimana sikap adil diterapkan saat terjadi sengketa waris?"
+          ];
+          details.langkahInti = [
+            "Murid mengkaji rukun, syarat, dan golongan ahli waris.",
+            "Latihan soal pembagian waris sederhana (kasus keluarga).",
+            "Analisis etika: wasiat, hibah, dan adab menyelesaikan sengketa.",
+            "Simulasi musyawarah keluarga tentang pembagian waris yang adil.",
+            "Refleksi: nilai kejujuran dan tanggung jawab dalam harta."
+          ];
+          details.lkpd = [
+            "Jelaskan rukun, syarat, dan macam ahli waris dalam Islam!",
+            "Hitung pembagian waris pada 1 kasus sederhana yang diberikan guru!",
+            "Tuliskan 3 adab muslim saat menghadapi urusan warisan!"
+          ];
+          break;
+        case 7: // Ormas Islam
+          details.pemahamanBermakna = "Ormas Islam berperan membangun peradaban, pendidikan, dan kemerdekaan bangsa; partisipasi aktif pelajar adalah investasi masa depan umat.";
+          details.pertanyaanPemantik = [
+            "Apa peran ormas Islam dalam sejarah kemerdekaan Indonesia?",
+            "Bagaimana Muhammadiyah dan NU berkontribusi di bidang pendidikan?",
+            "Mengapa pelajar perlu mengenal ormas Islam?"
+          ];
+          details.langkahInti = [
+            "Murid menelaah sejarah berdirinya ormas Islam utama di Indonesia.",
+            "Kelompok membandingkan fokus gerakan 2–3 ormas (pendidikan, sosial, dakwah).",
+            "Proyek: infografis kontribusi ormas bagi bangsa.",
+            "Presentasi dan diskusi peluang kaderisasi pelajar.",
+            "Refleksi: bentuk partisipasi sosial keagamaan yang realistis bagi murid SMK."
+          ];
+          details.lkpd = [
+            "Jelaskan sejarah singkat dan peran 2 ormas Islam di Indonesia!",
+            "Analisis kontribusi ormas Islam dalam pendidikan dan kemerdekaan!",
+            "Rancang 1 kegiatan kepedulian sosial yang terinspirasi dari semangat ormas Islam!"
+          ];
+          break;
+      }
     } else {
       // Fase F (Kelas XI)
       switch (bab) {
@@ -630,104 +839,107 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
             "Buatlah resensi singkat salah satu kitab karya ulama Nusantara yang kamu ketahui!"
           ];
           break;
-        case 6: // Toleransi & Kerukunan
-          details.pemahamanBermakna = "Kerukunan dan toleransi adalah fondasi perdamaian. Memelihara kehidupan manusia merupakan kewajiban luhur setiap muslim.";
+        case 6: // Mencintai IPTEK — Versi PP
+          details.pemahamanBermakna = "Perintah Iqra' dan isyarat menjelajah langit-bumi dalam Al-Qur'an menuntut muslim mencintai ilmu pengetahuan dan teknologi sebagai ibadah serta jalan kemajuan umat.";
           details.pertanyaanPemantik = [
-            "Bagaimana sikap kita ketika menghadapi perbedaan keyakinan atau cara ibadah di lingkungan sekitar?",
-            "Mengapa Islam melarang keras segala bentuk kekerasan atau penganiayaan terhadap nyawa manusia?",
-            "Apa peran moderasi beragama dalam menjaga persatuan NKRI?"
+            "Mengapa wahyu pertama yang turun adalah perintah membaca (Iqra'), bukan perintah ibadah ritual lain?",
+            "Bagaimana Q.S. ar-Rahman/55: 33 memberi isyarat pengembangan iptek bagi umat manusia?",
+            "Sebagai Pelajar Muhammadiyah, bagaimana cara mencintai iptek tanpa meninggalkan adab dan akhlak?"
           ];
           details.langkahInti = [
-            "Murid membaca QS. Yunus (10): 40-41 dan QS. Al-Maidah (5): 32 beserta tafsirnya.",
-            "Guru menampilkan video tentang praktik toleransi di Indonesia (misal: gotong royong lintas agama).",
-            "Diskusi kelompok: bagaimana menjadi muslim yang moderat (wasathiyah) di sekolah dan masyarakat.",
-            "Bermain peran: simulasi dialog antaragama yang santun dan saling menghargai.",
-            "Refleksi: menulis komitmen pribadi untuk menjaga kerukunan di lingkungan tempat tinggal."
+            "Murid membaca, menerjemahkan, dan mentadabburi Q.S. al-Alaq/96: 1-5 serta Q.S. ar-Rahman/55: 33 dengan tartil.",
+            "Guru memandu analisis makna Iqra' sebagai landasan etos keilmuan dan inovasi teknologi.",
+            "Kelompok menelaah H.R. Abu Syaikh tentang berpikir mendalam terhadap ciptaan Allah dan kaitannya dengan iptek.",
+            "Diskusi: rancang aksi nyata pelajar SMK yang mencintai iptek secara Islami (proyek mini/riset sederhana).",
+            "Presentasi hasil dan komitmen pribadi menjadi Pelajar Muhammadiyah pencinta ilmu."
           ];
           details.lkpd = [
-            "Jelaskan pesan QS. Al-Maidah (5): 32 tentang memelihara kehidupan manusia!",
-            "Beri 3 contoh sikap toleransi yang bisa diterapkan di lingkungan sekolah!",
-            "Apa yang dimaksud dengan moderasi beragama (wasathiyah) dan bagaimana implementasinya?"
+            "Tuliskan terjemah dan pesan utama Q.S. al-Alaq/96: 1-5 tentang perintah Iqra'!",
+            "Analisis isyarat iptek dalam Q.S. ar-Rahman/55: 33 dan relevansinya bagi pelajar SMK!",
+            "Jelaskan kaitan H.R. Abu Syaikh tentang merenungi ciptaan Allah dengan semangat menuntut ilmu!",
+            "Buatlah rencana aksi 1 pekan: 3 kebiasaan belajar/iptek yang mencerminkan Pelajar Muhammadiyah!"
           ];
           break;
-        case 7: // Muru'ah, Ikhlas, Malu, Zuhud
-          details.pemahamanBermakna = "Menjaga harga diri (muru'ah), keikhlasan, rasa malu dari perbuatan maksiat, dan menyikapi dunia secara proporsional (zuhud) membentuk ketenangan batin sejati.";
+        case 7: // Muru'ah, Ikhlas, Malu, Zuhud — Versi PP
+          details.pemahamanBermakna = "Menjaga harga diri (muru'ah), keikhlasan, rasa malu dari maksiat, dan menyikapi dunia secara proporsional (zuhud) memperkuat keimanan serta membentuk karakter pelajar berakhlak mulia.";
           details.pertanyaanPemantik = [
-            "Bagaimana konsep zuhud yang benar di era modern yang penuh dengan budaya konsumerisme?",
-            "Mengapa rasa malu (haya') dikategorikan sebagai mahkota akhlak seorang muslim?",
-            "Bagaimana cara menjaga kehormatan diri (muru'ah) dalam pergaulan sehari-hari?"
+            "Bagaimana konsep zuhud yang benar di era modern yang penuh budaya konsumerisme?",
+            "Mengapa rasa malu (haya') disebut mahkota akhlak seorang muslim?",
+            "Bagaimana menjaga kehormatan diri (muru'ah) dalam pergaulan dan media digital?"
           ];
           details.langkahInti = [
-            "Murid membaca hadis-hadis tentang malu, ikhlas, dan zuhud dari kitab hadis.",
-            "Guru memberikan skenario dilema moral: antara popularitas di medsos vs menjaga muru'ah.",
-            "Diskusi kelompok: merumuskan kiat-kiat menjaga keikhlasan dan muru'ah di era digital.",
-            "Bermain peran: menolak tawaran materi dengan tetap menjaga harga diri.",
-            "Refleksi: mengisi lembar evaluasi tingkat keikhlasan dalam beramal selama sepekan."
+            "Murid mengkaji definisi, dalil, dan urgensi muru'ah, ikhlas, haya', serta zuhud.",
+            "Guru menyajikan dilema moral: popularitas di medsos vs menjaga muru'ah dan keikhlasan.",
+            "Diskusi kelompok: ciri-ciri dan strategi menerapkan keempat sifat dalam kehidupan pelajar.",
+            "Role play: menolak tawaran yang merendahkan harga diri dengan tetap santun.",
+            "Refleksi: lembar evaluasi pengendalian diri dan komitmen berakhlak mulia selama sepekan."
           ];
           details.lkpd = [
-            "Jelaskan pengertian muru'ah, ikhlas, haya' (malu), dan zuhud beserta dalilnya!",
-            "Bagaimana cara menumbuhkan sifat malu dalam pergaulan di era modern?",
-            "Buatlah 5 contoh perilaku zuhud yang relevan untuk seorang pelajar SMK!"
+            "Jelaskan definisi muru'ah beserta dalil dan pentingnya menjaga kehormatan diri!",
+            "Identifikasi ciri-ciri ikhlas, haya' (malu), dan zuhud; berikan contoh nyata di sekolah!",
+            "Susun 5 komitmen perilaku yang mencerminkan pengendalian diri dan ketulusan hati pelajar beriman!"
           ];
           break;
-        case 8: // Adab Bermedsos
-          details.pemahamanBermakna = "Media sosial adalah sarana komunikasi yang harus dimanfaatkan dengan adab mulia, menyebarkan kebaikan, menghindari hoaks, serta tabayyun atas segala informasi.";
+        case 8: // Anti Khamr & Narkoba — Versi PP
+          details.pemahamanBermakna = "Menjauhi minuman keras dan narkoba adalah perlindungan terhadap agama, akal, jiwa, dan masa depan bangsa; generasi muda wajib menjadi garda anti narkoba.";
           details.pertanyaanPemantik = [
-            "Mengapa tabayyun (klarifikasi) sangat krusial dilakukan sebelum membagikan suatu berita di media sosial?",
-            "Apa bahaya menyebarkan ujaran kebencian (hate speech) menurut timbangan hukum Islam?",
-            "Bagaimana cara memanfaatkan media sosial sebagai ladang dakwah kreatif?"
+            "Apa pengertian khamr dan narkoba, serta mengapa keduanya diharamkan?",
+            "Bagaimana dalil Al-Qur'an/Hadis sejalan dengan hukum positif negara terkait narkoba?",
+            "Sebagai Pelajar Muhammadiyah, aksi nyata apa yang bisa dilakukan untuk lingkungan bebas narkoba?"
           ];
           details.langkahInti = [
-            "Murid membaca artikel tentang etika bermedia sosial dalam perspektif Islam.",
-            "Guru menampilkan contoh unggahan medsos yang baik dan buruk; murid membedakannya.",
-            "Diskusi kelompok: menyusun '10 Etika Muslim dalam Bermedia Sosial'.",
-            "Praktik: setiap murid membuat satu konten dakwah kreatif (poster/video pendek) untuk diunggah.",
-            "Refleksi: mengevaluasi jejak digital masing-masing dan merencanakan perbaikan."
+            "Murid mengkaji pengertian khamr dan narkoba serta klasifikasi zat adiktif secara ringkas.",
+            "Analisis dalil larangan dari Al-Qur'an dan Hadis serta keterkaitannya dengan UU/hukum positif.",
+            "Menelaah bahaya nyata bagi kesehatan akal, jiwa, dan raga (data/studi kasus edukatif).",
+            "Kelompok merancang kampanye anti minuman keras dan narkoba di sekolah (poster/sumpah pelajar).",
+            "Komitmen aksi nyata: deklarasi Pelajar Muhammadiyah anti narkoba."
           ];
           details.lkpd = [
-            "Jelaskan langkah-langkah tabayyun sebelum membagikan berita di media sosial!",
-            "Sebutkan 3 dampak negatif ujaran kebencian (hate speech) di dunia maya!",
-            "Buatlah satu konten dakwah kreatif (minimal 3 paragraf) tentang adab bermedia sosial!"
+            "Jelaskan pengertian minuman keras (khamr) dan narkoba beserta contohnya!",
+            "Analisis 2 dalil larangan khamr/narkoba dan kaitannya dengan hukum positif di Indonesia!",
+            "Uraikan bahaya minuman keras dan narkoba bagi akal, jiwa, dan raga!",
+            "Buatlah komitmen dan 3 aksi nyata sebagai Pelajar Muhammadiyah anti minuman keras dan narkoba!"
           ];
           break;
-        case 9: // Ketentuan Pernikahan
-          details.pemahamanBermakna = "Pernikahan dalam Islam adalah ikatan suci (mitsaqan ghalizhan) untuk mewujudkan ketenteraman keluarga yang sakinah, mawaddah, wa rahmah.";
+        case 9: // Ekonomi Islam — Versi PP
+          details.pemahamanBermakna = "Ekonomi Islam (asuransi, bank, dan koperasi syariah) menghadirkan keberkahan dan kemaslahatan melalui prinsip keadilan, tolong-menolong, dan bebas riba.";
           details.pertanyaanPemantik = [
-            "Apa saja persiapan mental dan keagamaan yang wajib dilakukan remaja sebelum memutuskan menikah?",
-            "Mengapa komunikasi dua arah yang harmonis sangat penting bagi keutuhan rumah tangga?",
-            "Bagaimana pembagian hak dan kewajiban suami istri secara adil sesuai syariat Islam?"
+            "Apa perbedaan mendasar asuransi syariah dengan asuransi konvensional?",
+            "Bagaimana bank syariah menjalankan fungsi intermediasi tanpa riba?",
+            "Mengapa koperasi syariah menekankan asas gotong royong?"
           ];
           details.langkahInti = [
-            "Murid membaca bab pernikahan dari buku fikih, mencakup rukun, syarat, dan mahar.",
-            "Guru menyajikan video dokumenter tentang pernikahan dini dan dampaknya.",
-            "Diskusi kelompok: menyusun 'Checklist Kesiapan Menikah' dari segi fisik, mental, finansial, dan agama.",
-            "Bermain peran: musyawarah keluarga dalam menyelesaikan konflik rumah tangga.",
-            "Refleksi: menulis gambaran keluarga idaman versi masing-masing."
+            "Murid mengkaji pengertian, prinsip, dan implementasi asuransi syariah.",
+            "Analisis ketentuan, fungsi, dan operasional bank syariah dalam perekonomian.",
+            "Memahami konsep, pengelolaan, dan asas gotong royong koperasi syariah.",
+            "Studi kasus: membandingkan produk syariah vs konvensional secara sederhana.",
+            "Refleksi: komitmen mencintai dan menggunakan produk ekonomi syariah."
           ];
           details.lkpd = [
-            "Sebutkan rukun dan syarat pernikahan dalam Islam beserta dalilnya!",
-            "Jelaskan hak dan kewajiban suami istri menurut syariat Islam!",
-            "Apa yang dimaksud dengan keluarga sakinah, mawaddah, wa rahmah? Bagaimana mewujudkannya?"
+            "Jelaskan pengertian, prinsip, dan contoh implementasi asuransi syariah!",
+            "Analisis ketentuan, fungsi, dan operasional bank syariah dalam perekonomian!",
+            "Uraikan konsep, pengelolaan, dan asas gotong royong dalam koperasi syariah!",
+            "Tuliskan alasan dan rencana pribadi untuk lebih memilih produk ekonomi syariah!"
           ];
           break;
-        case 10: // Peradaban Islam
-          details.pemahamanBermakna = "Mempelajari masa kejayaan Islam membangkitkan motivasi riset ilmiah, inovasi sains, dan etos keilmuan yang tinggi untuk kemaslahatan dunia.";
+        case 10: // Kebangkitan Islam Modern — Versi PP
+          details.pemahamanBermakna = "Kebangkitan Islam modern melalui pemikiran dan gerakan para pembaru menumbuhkan semangat tajdid, pendidikan, dan inovasi untuk memajukan peradaban umat.";
           details.pertanyaanPemantik = [
-            "Apa kontribusi terbesar ilmuwan muslim (seperti Ibnu Sina atau Al-Khawarizmi) bagi perkembangan sains modern?",
-            "Faktor apa yang menyebabkan pudarnya kejayaan peradaban sains umat Islam di masa lalu?",
-            "Bagaimana cara kita membangkitkan kembali semangat inovasi dan penelitian ilmiah di kalangan murid muslim?"
+            "Apa sumbangsih pemikiran Jamaludin al-Afghani, Muhammad Abduh, dan Rasyid Ridha bagi kebangkitan umat?",
+            "Bagaimana K.H. Ahmad Dahlan menerjemahkan semangat pembaruan ke dalam amal usaha pendidikan?",
+            "Faktor apa yang memicu kebangkitan Islam di masa modern?"
           ];
           details.langkahInti = [
-            "Murid membaca artikel tentang ilmuwan muslim di era keemasan Islam (Ibnu Sina, Al-Khawarizmi, Al-Zahrawi, dll).",
-            "Setiap kelompok meneliti satu tokoh ilmuwan muslim dan penemuannya.",
-            "Kelompok membuat timeline infografis tentang kontribusi ilmuwan muslim bagi dunia.",
-            "Presentasi dan diskusi: faktor kemajuan dan kemunduran peradaban Islam.",
-            "Refleksi: bagaimana menjadi muslim yang berkontribusi bagi peradaban melalui keahlian SMK masing-masing."
+            "Murid menelaah biografi dan pemikiran Jamaludin al-Afghani, Muhammad Abduh, Rasyid Ridha, dan K.H. Ahmad Dahlan.",
+            "Kelompok menganalisis faktor pemicu kebangkitan dan pembaruan peradaban Islam modern.",
+            "Membandingkan strategi pembaruan masing-masing tokoh dan relevansinya hari ini.",
+            "Proyek: infografis keteladanan tokoh pembaru untuk pelajar SMK.",
+            "Refleksi: meneladani kegigihan, semangat juang, dan inovasi para ulama pembaru."
           ];
           details.lkpd = [
-            "Sebutkan 5 ilmuwan muslim beserta bidang dan penemuannya!",
-            "Apa faktor utama penyebab kemunduran peradaban Islam menurut para sejarawan?",
-            "Jika kamu hidup di era keemasan Islam, bidang ilmu apa yang ingin kamu tekuni? Mengapa?"
+            "Telaah singkat riwayat, pemikiran, dan gerakan 4 tokoh: al-Afghani, Abduh, Rasyid Ridha, dan K.H. Ahmad Dahlan!",
+            "Analisis faktor-faktor pemicu kebangkitan dan pembaruan peradaban Islam modern!",
+            "Tuliskan 3 keteladanan praktis dari para pembaru yang dapat Anda terapkan sebagai pelajar SMK!"
           ];
           break;
       }
@@ -1507,6 +1719,23 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X') => {
       }
     }
   }
+
+  // Selalu lengkapi LKPD agar selaras TP / inti pembelajaran materi aktif
+  details.lkpd = buildLkpdFromMateri(
+    materi || { bab, judul: '', elemen: '', tp: [] },
+    mapel,
+    Array.isArray(details.lkpd) ? details.lkpd : []
+  );
+
+  // Petunjuk pengerjaan LKPD (dipakai di UI modul)
+  details.lkpdPetunjuk = [
+    'Kerjakan secara berkelompok (3–4 murid) kecuali bagian Refleksi Individu.',
+    'Baca seluruh Tujuan Pembelajaran (TP) bab ini sebelum menjawab.',
+    'Setiap jawaban harus memuat: argumen, dalil/landasan (jika relevan), dan contoh nyata.',
+    'Gunakan bahasa santun, jujur, dan dapat dipertanggungjawabkan.',
+    'Siapkan produk visual ringkas untuk presentasi kelas (maks. 5 menit).',
+  ];
+
   return details;
 };
 

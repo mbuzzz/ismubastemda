@@ -16,12 +16,12 @@ filesToProcess.forEach(filePath => {
   if (fs.existsSync(fullPath)) {
     let content = fs.readFileSync(fullPath, 'utf8');
     
-    // Replace "Peserta didik" -> "Murid"
-    content = content.replace(/Peserta didik/g, 'Murid');
-    // Replace "peserta didik" -> "murid"
-    content = content.replace(/peserta didik/g, 'murid');
-    // Replace "Peserta Didik" -> "Murid"
-    content = content.replace(/Peserta Didik/g, 'Murid');
+    // Replace "Murid" -> "Murid"
+    content = content.replace(/Murid/g, 'Murid');
+    // Replace "murid" -> "murid"
+    content = content.replace(/murid/g, 'murid');
+    // Replace "Murid" -> "Murid"
+    content = content.replace(/Murid/g, 'Murid');
     
     // Replace "Siswa" -> "Murid"
     content = content.replace(/\bSiswa\b/g, 'Murid');
