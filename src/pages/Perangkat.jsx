@@ -220,10 +220,10 @@ export default function Perangkat() {
     setSelectedPpmBab(initialBab);
   };
 
-  // Compile Teacher info
+  // Compile Teacher info (mingguEfektif di-override setelah helper kalender di bawah)
+  const baseSchoolInfo = selectedMapel === 'arab' ? schoolInfoArab : selectedMapel === 'kemuh' ? schoolInfoKemuh : schoolInfoPAI;
   const schoolInfoData = {
-    ...(selectedMapel === 'arab' ? schoolInfoArab : selectedMapel === 'kemuh' ? schoolInfoKemuh : schoolInfoPAI),
-    
+    ...baseSchoolInfo,
     namaGuru: teacherName.trim() || '........................................',
     nbmGuru: teacherNbm.trim() || '......................',
     tahunAjaran: academicYear,
@@ -344,63 +344,90 @@ export default function Perangkat() {
 
 
 
-  const ganjilWeeksList = [
-    { status: 'empty', label: '' },
-    { status: 'non-efektif', label: 'MPLS' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'non-efektif', label: 'HUT' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'non-efektif', label: 'STS' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'non-efektif', label: 'PAS' },
-    { status: 'empty', label: 'L' }
-  ];
+  // Status peekan untuk grid Prota/Promes (6 bulan × 4 peekan = 24 kolom)
+  const W_E = { status: 'efektif', label: '' };
+  const W_EMPTY = (label = '') => ({ status: 'empty', label });
+  const W_NON = (label) => ({ status: 'non-efektif', label });
+  const W_PKL = { status: 'pkl', label: 'PKL' };
+
+  /**
+   * Semester Ganjil per kelas (Kalender TA 2026/2027):
+   * - Kelas X: MPLS Juli minggu ke-3, KBM mulai minggu ke-4
+   * - Kelas XI: tidak MPLS, KBM mulai Juli minggu ke-2
+   * - Kelas XII: semester ganjil = PKL (bukan KBM mapel di sekolah)
+   */
+  const getGanjilWeeksList = (kelas = selectedClass) => {
+    // Indeks 4–23: Agustus–Desember (berlaku X & XI)
+    const afterJuly = [
+      W_E, W_E, W_NON('HUT'), W_E,           // Agustus
+      W_E, W_E, W_NON('STS'), W_E,           // September
+      W_E, W_E, W_E, W_E,                   // Oktober
+      W_E, W_E, W_E, W_E,                   // November
+      W_E, W_E, W_NON('PAS'), W_EMPTY('L'), // Desember
+    ];
+
+    if (kelas === 'XII') {
+      // Juli W1 libur; W2 pembekalan/pelepasan PKL; W3–Des: PKL; peekan rapor di akhir
+      return [
+        W_EMPTY(),
+        W_NON('BEKAL'),
+        W_PKL, W_PKL,                       // Juli W3–W4
+        W_PKL, W_PKL, W_PKL, W_PKL,         // Agustus
+        W_PKL, W_PKL, W_PKL, W_PKL,         // September
+        W_PKL, W_PKL, W_PKL, W_PKL,         // Oktober
+        W_PKL, W_PKL, W_PKL, W_PKL,         // November
+        W_PKL, W_PKL, W_NON('PAS'), W_EMPTY('L'), // Desember
+      ];
+    }
+
+    if (kelas === 'XI') {
+      // Tidak MPLS — KBM mulai Juli minggu ke-2
+      return [
+        W_EMPTY(),                          // Juli W1 (libur kenaikan)
+        W_E, W_E, W_E,                      // Juli W2–W4 KBM
+        ...afterJuly,
+      ];
+    }
+
+    // Kelas X — MPLS Juli minggu ke-3, KBM mulai minggu ke-4
+    return [
+      W_EMPTY(),                            // Juli W1 (libur kenaikan)
+      W_EMPTY(),                            // Juli W2 (belum KBM)
+      W_NON('MPLS'),                        // Juli W3 MPLS
+      W_E,                                  // Juli W4 mulai pembelajaran
+      ...afterJuly,
+    ];
+  };
 
   const genapWeeksList = [
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'non-efektif', label: 'LPP' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'empty', label: '' },
-    { status: 'non-efektif', label: 'LHR' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'empty', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'efektif', label: '' },
-    { status: 'non-efektif', label: 'PAT' },
-    { status: 'empty', label: 'L' }
+    W_E, W_E, W_E, W_E,
+    W_NON('LPP'),
+    W_E, W_E,
+    W_EMPTY(),
+    W_NON('LHR'),
+    W_E, W_E,
+    W_EMPTY(),
+    W_E, W_E, W_E, W_E,
+    W_E, W_E, W_E, W_E,
+    W_E, W_E,
+    W_NON('PAT'),
+    W_EMPTY('L'),
   ];
+
+  const countWeeksByStatus = (weeksArray, status) =>
+    weeksArray.filter((w) => w.status === status).length;
+
+  const getWeeksArrayFor = (sem, kelas = selectedClass) =>
+    sem === 'genap' ? genapWeeksList : getGanjilWeeksList(kelas);
+
+  const getMingguEfektifFor = (sem, kelas = selectedClass) => {
+    if (kelas === 'XII' && sem === 'ganjil') return 0; // PKL, bukan KBM efektif mapel
+    return countWeeksByStatus(getWeeksArrayFor(sem, kelas), 'efektif');
+  };
 
   const getTeachingSchedule = (materiList, weeksArray) => {
     let currentEfektifIndex = 0;
-    return materiList.map((m) => {
+    return (materiList || []).map((m) => {
       const taughtWeeks = m.minggu;
       const schedule = [];
       for (let i = 0; i < taughtWeeks; i++) {
@@ -418,6 +445,12 @@ export default function Perangkat() {
       };
     });
   };
+
+  // Alias dinamis (kompatibel pemanggilan lama di render)
+  const ganjilWeeksList = getGanjilWeeksList(selectedClass);
+
+  // Override minggu efektif sesuai kelas & semester (X MPLS, XI tanpa MPLS, XII ganjil PKL)
+  schoolInfoData.mingguEfektif = getMingguEfektifFor(safeSemester, selectedClass);
 
   // Signature Block Component
   const SignatureBlock = ({ semOverride = null }) => {
@@ -956,15 +989,85 @@ export default function Perangkat() {
         );
       }
 
-      case 'pekan-efektif':
+      case 'pekan-efektif': {
+        const weeksForRpe = getWeeksArrayFor(sem, selectedClass);
+        const mingguEfektifRpe = getMingguEfektifFor(sem, selectedClass);
+        const isXiiPkl = selectedClass === 'XII' && sem === 'ganjil';
+        const totalJpMateri = localMateriList.reduce((acc, m) => acc + (m.alokasi || 0), 0);
+
+        // Rincian per bulan (4 kolom/bulan; peeks empty di ujung tidak dihitung "terjadi")
+        const monthNamesGanjil = ['Juli 2026', 'Agustus 2026', 'September 2026', 'Oktober 2026', 'November 2026', 'Desember 2026'];
+        const monthNamesGenap = ['Januari 2027', 'Februari 2027', 'Maret 2027', 'April 2027', 'Mei 2027', 'Juni 2027'];
+        const monthNames = sem === 'ganjil' ? monthNamesGanjil : monthNamesGenap;
+        const monthRows = monthNames.map((name, mi) => {
+          const slice = weeksForRpe.slice(mi * 4, mi * 4 + 4);
+          const terjadi = slice.filter((w) => w.status !== 'empty').length;
+          const efektif = slice.filter((w) => w.status === 'efektif').length;
+          const pkl = slice.filter((w) => w.status === 'pkl').length;
+          const tidakEfektif = slice.filter((w) => w.status === 'non-efektif' || w.status === 'pkl').length;
+          return { name, terjadi, tidakEfektif, efektif, pkl };
+        });
+        const sumTerjadi = monthRows.reduce((a, r) => a + r.terjadi, 0);
+        const sumTidak = monthRows.reduce((a, r) => a + r.tidakEfektif, 0);
+        const sumEfektif = monthRows.reduce((a, r) => a + r.efektif, 0);
+
+        const nonEfektifItems = (() => {
+          if (sem === 'genap') {
+            return [
+              { nama: 'Kegiatan Permulaan Puasa / Penguatan Karakter', peKan: 1 },
+              { nama: 'Penilaian Sumatif Tengah Semester (STS) & Libur Idul Fitri', peKan: 1 },
+              { nama: 'Penilaian Sumatif Akhir Semester (PAT/SAS) & Rapor', peKan: 1 },
+            ];
+          }
+          if (isXiiPkl) {
+            return [
+              { nama: 'Pembekalan dan Pelepasan Praktik Kerja Lapangan (PKL)', peKan: 1 },
+              { nama: 'Praktik Kerja Lapangan (PKL) — Semester Ganjil Kelas XII', peKan: countWeeksByStatus(weeksForRpe, 'pkl') },
+              { nama: 'Penilaian Sumatif Akhir Semester (PAS/SAS) & Rapor', peKan: 1 },
+            ];
+          }
+          if (selectedClass === 'X') {
+            return [
+              { nama: 'Masa Pengenalan Lingkungan Sekolah (MPLS) — Juli minggu ke-3', peKan: 1 },
+              { nama: 'Peringatan Hari Kemerdekaan RI & Maulid Nabi', peKan: 1 },
+              { nama: 'Penilaian Sumatif Tengah Semester (STS)', peKan: 1 },
+              { nama: 'Penilaian Sumatif Akhir Semester (PAS/SAS) & Rapor', peKan: 1 },
+            ];
+          }
+          // Kelas XI: tanpa MPLS
+          return [
+            { nama: 'Peringatan Hari Kemerdekaan RI & Maulid Nabi', peKan: 1 },
+            { nama: 'Penilaian Sumatif Tengah Semester (STS)', peKan: 1 },
+            { nama: 'Penilaian Sumatif Akhir Semester (PAS/SAS) & Rapor', peKan: 1 },
+          ];
+        })();
+        const totalNonItems = nonEfektifItems.reduce((a, it) => a + it.peKan, 0);
+
         return (
           <div key="pekan-efektif" className="a4-page">
             <h2 className="page-title">RINCIAN PEKAN EFEKTIF</h2>
-            <div className="page-subtitle">Analisa Distribusi Alokasi Pekan Efektif - Semester {sem.toUpperCase()} TA 2026/2027</div>
+            <div className="page-subtitle">
+              Analisa Distribusi Alokasi Pekan Efektif - Kelas {selectedClass} · Semester {sem.toUpperCase()} TA 2026/2027
+            </div>
 
-            <div style={{ marginTop: '20px', fontSize: '12px' }}>
+            <div style={{ marginTop: '12px', fontSize: '11px', background: '#FFF8E1', border: '1px solid #FFB300', borderRadius: '4px', padding: '8px 10px', lineHeight: 1.6 }}>
+              {selectedClass === 'X' && sem === 'ganjil' && (
+                <p><strong>Kelas X:</strong> MPLS pada <strong>Juli minggu ke-3</strong>; pembelajaran (KBM) dimulai <strong>Juli minggu ke-4</strong>.</p>
+              )}
+              {selectedClass === 'XI' && sem === 'ganjil' && (
+                <p><strong>Kelas XI:</strong> tidak mengikuti MPLS; pembelajaran dimulai dari <strong>Juli minggu ke-2</strong>.</p>
+              )}
+              {isXiiPkl && (
+                <p><strong>Kelas XII:</strong> Semester Ganjil dialokasikan untuk <strong>Praktik Kerja Lapangan (PKL)</strong> — tidak ada KBM mapel di sekolah.</p>
+              )}
+              {sem === 'genap' && (
+                <p>Semester Genap: alokasi peeks efektif mengikuti kalender akademik sekolah (berlaku semua kelas).</p>
+              )}
+            </div>
+
+            <div style={{ marginTop: '16px', fontSize: '12px' }}>
               <h3 style={{ borderBottom: '2px solid #1976D2', color: '#1976D2', paddingBottom: '4px', marginBottom: '10px' }}>
-                I. Perhitungan Pekan (Semester {sem === 'ganjil' ? 'Ganjil' : 'Genap'})
+                I. Perhitungan Pekan (Semester {sem === 'ganjil' ? 'Ganjil' : 'Genap'} · Kelas {selectedClass})
               </h3>
               <table className="data-table">
                 <thead>
@@ -972,47 +1075,31 @@ export default function Perangkat() {
                     <th>No</th>
                     <th>Nama Bulan</th>
                     <th>Jumlah Pekan Terjadi</th>
-                    <th>Jumlah Pekan Tidak Efektif</th>
-                    <th>Jumlah Pekan Efektif</th>
+                    <th>Jumlah Pekan Tidak Efektif{isXiiPkl ? ' / PKL' : ''}</th>
+                    <th>Jumlah Pekan Efektif (KBM)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {sem === 'ganjil' ? (
-                    <>
-                      <tr><td className="center">1</td><td>Juli 2026</td><td className="center">3</td><td className="center">1</td><td className="center">2</td></tr>
-                      <tr><td className="center">2</td><td>Agustus 2026</td><td className="center">4</td><td className="center">1</td><td className="center">3</td></tr>
-                      <tr><td className="center">3</td><td>September 2026</td><td className="center">4</td><td className="center">1</td><td className="center">3</td></tr>
-                      <tr><td className="center">4</td><td>Oktober 2026</td><td className="center">4</td><td className="center">0</td><td className="center">4</td></tr>
-                      <tr><td className="center">5</td><td>November 2026</td><td className="center">4</td><td className="center">0</td><td className="center">4</td></tr>
-                      <tr><td className="center">6</td><td>Desember 2026</td><td className="center">3</td><td className="center">1</td><td className="center">2</td></tr>
-                      <tr style={{ fontWeight: 'bold', background: '#E3F2FD' }}>
-                        <td colSpan="2" className="center">JUMLAH</td>
-                        <td className="center">22</td>
-                        <td className="center">4</td>
-                        <td className="center">18</td>
-                      </tr>
-                    </>
-                  ) : (
-                    <>
-                      <tr><td className="center">1</td><td>Januari 2027</td><td className="center">4</td><td className="center">0</td><td className="center">4</td></tr>
-                      <tr><td className="center">2</td><td>Februari 2027</td><td className="center">3</td><td className="center">1</td><td className="center">2</td></tr>
-                      <tr><td className="center">3</td><td>Maret 2027</td><td className="center">3</td><td className="center">1</td><td className="center">2</td></tr>
-                      <tr><td className="center">4</td><td>April 2027</td><td className="center">4</td><td className="center">0</td><td className="center">4</td></tr>
-                      <tr><td className="center">5</td><td>Mei 2027</td><td className="center">4</td><td className="center">0</td><td className="center">4</td></tr>
-                      <tr><td className="center">6</td><td>Juni 2027</td><td className="center">3</td><td className="center">1</td><td className="center">2</td></tr>
-                      <tr style={{ fontWeight: 'bold', background: '#E3F2FD' }}>
-                        <td colSpan="2" className="center">JUMLAH</td>
-                        <td className="center">21</td>
-                        <td className="center">3</td>
-                        <td className="center">18</td>
-                      </tr>
-                    </>
-                  )}
+                  {monthRows.map((r, idx) => (
+                    <tr key={r.name}>
+                      <td className="center">{idx + 1}</td>
+                      <td>{r.name}</td>
+                      <td className="center">{r.terjadi}</td>
+                      <td className="center">{r.tidakEfektif}</td>
+                      <td className="center">{r.efektif}</td>
+                    </tr>
+                  ))}
+                  <tr style={{ fontWeight: 'bold', background: '#E3F2FD' }}>
+                    <td colSpan="2" className="center">JUMLAH</td>
+                    <td className="center">{sumTerjadi}</td>
+                    <td className="center">{sumTidak}</td>
+                    <td className="center">{sumEfektif}</td>
+                  </tr>
                 </tbody>
               </table>
 
               <h3 style={{ borderBottom: '2px solid #1976D2', color: '#1976D2', paddingBottom: '4px', margin: '20px 0 10px 0' }}>
-                II. Analisa Pekan Tidak Efektif
+                II. Analisa Pekan Tidak Efektif{isXiiPkl ? ' & PKL' : ''}
               </h3>
               <table className="data-table">
                 <thead>
@@ -1023,28 +1110,17 @@ export default function Perangkat() {
                   </tr>
                 </thead>
                 <tbody>
-                  {sem === 'ganjil' ? (
-                    <>
-                      <tr><td className="center">1</td><td>Masa Pengenalan Lingkungan Sekolah (MPLS)</td><td className="center">1 Pekan</td></tr>
-                      <tr><td className="center">2</td><td>Peringatan Hari Kemerdekaan RI & Maulid Nabi</td><td className="center">1 Pekan</td></tr>
-                      <tr><td className="center">3</td><td>Penilaian Sumatif Tengah Semester (STS)</td><td className="center">1 Pekan</td></tr>
-                      <tr><td className="center">4</td><td>Penilaian Sumatif Akhir Semester (PAS/SAS) & Rapor</td><td className="center">1 Pekan</td></tr>
-                      <tr style={{ fontWeight: 'bold', background: '#FFEBEE' }}>
-                        <td colSpan="2" className="center">TOTAL HARI / PEKAN TIDAK EFEKTIF</td>
-                        <td className="center">4 Pekan</td>
-                      </tr>
-                    </>
-                  ) : (
-                    <>
-                      <tr><td className="center">1</td><td>Kegiatan Permulaan Puasa / Penguatan Karakter</td><td className="center">1 Pekan</td></tr>
-                      <tr><td className="center">2</td><td>Penilaian Sumatif Tengah Semester (STS) & Libur Idul Fitri</td><td className="center">1 Pekan</td></tr>
-                      <tr><td className="center">3</td><td>Penilaian Sumatif Akhir Semester (PAT/SAS) & Rapor</td><td className="center">1 Pekan</td></tr>
-                      <tr style={{ fontWeight: 'bold', background: '#FFEBEE' }}>
-                        <td colSpan="2" className="center">TOTAL HARI / PEKAN TIDAK EFEKTIF</td>
-                        <td className="center">3 Pekan</td>
-                      </tr>
-                    </>
-                  )}
+                  {nonEfektifItems.map((it, idx) => (
+                    <tr key={it.nama}>
+                      <td className="center">{idx + 1}</td>
+                      <td>{it.nama}</td>
+                      <td className="center">{it.peKan} Pekan</td>
+                    </tr>
+                  ))}
+                  <tr style={{ fontWeight: 'bold', background: '#FFEBEE' }}>
+                    <td colSpan="2" className="center">TOTAL PEKAN TIDAK EFEKTIF{isXiiPkl ? ' / PKL' : ''}</td>
+                    <td className="center">{totalNonItems} Pekan</td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -1052,13 +1128,24 @@ export default function Perangkat() {
                 III. Kesimpulan Perhitungan Jam Pelajaran (JP)
               </h3>
               <div style={{ background: '#E3F2FD', padding: '12px', border: '1px solid #1976D2', borderRadius: '4px', lineHeight: '1.8' }}>
-                <p>1. Pekan Efektif Riil = Total Pekan - Pekan Tidak Efektif = {sem === 'ganjil' ? '22 - 4' : '21 - 3'} = <strong>{schoolInfoData.mingguEfektif} Pekan</strong></p>
-                <p>2. Jam Pelajaran Efektif = {schoolInfoData.mingguEfektif} Pekan × {schoolInfoData.jpPerMinggu} JP / Pekan = <strong>{schoolInfoData.mingguEfektif * schoolInfoData.jpPerMinggu} Jam Pelajaran (JP)</strong></p>
-                <p>3. Penggunaan JP = {localMateriList.reduce((acc, m) => acc + m.alokasi, 0)} JP untuk Tatap Muka KBM + {schoolInfoData.mingguEfektif * schoolInfoData.jpPerMinggu - localMateriList.reduce((acc, m) => acc + m.alokasi, 0)} JP untuk STS/SAS & Cadangan Pembelajaran</p>
+                {isXiiPkl ? (
+                  <>
+                    <p>1. Semester Ganjil Kelas XII difokuskan pada <strong>Praktik Kerja Lapangan (PKL)</strong>.</p>
+                    <p>2. Pekan Efektif KBM mapel di sekolah = <strong>0 Pekan</strong> (materi mapel diprogramkan pada Semester Genap setelah PKL).</p>
+                    <p>3. Alokasi perangkat mapel pada semester ini bersifat administratif/penguatan (bukan distribusi KBM reguler).</p>
+                  </>
+                ) : (
+                  <>
+                    <p>1. Pekan Efektif KBM = <strong>{mingguEfektifRpe} Pekan</strong> (Kelas {selectedClass}, Semester {sem === 'ganjil' ? 'Ganjil' : 'Genap'}).</p>
+                    <p>2. Jam Pelajaran Efektif = {mingguEfektifRpe} Pekan × {schoolInfoData.jpPerMinggu} JP / Pekan = <strong>{mingguEfektifRpe * schoolInfoData.jpPerMinggu} Jam Pelajaran (JP)</strong></p>
+                    <p>3. Penggunaan JP materi = {totalJpMateri} JP untuk Tatap Muka KBM + {Math.max(0, mingguEfektifRpe * schoolInfoData.jpPerMinggu - totalJpMateri)} JP cadangan / penguatan (STS/SAS di luar peeks efektif KBM).</p>
+                  </>
+                )}
               </div>
             </div>
           </div>
         );
+      }
 
       case 'prota': {
         const showAll = viewMode === 'booklet';
@@ -1070,7 +1157,7 @@ export default function Perangkat() {
             
         const jpPerMinggu = schoolInfoData.jpPerMinggu;
         
-        const getMonthlyJP = (sm, isGenap) => {
+        const getMonthlyJP = (sm) => {
           const jpPerMonth = Array(6).fill(0);
           sm.schedule.forEach(wIdx => {
             const mIdx = Math.floor(wIdx / 4); // 4 weeks per month
@@ -1081,12 +1168,137 @@ export default function Perangkat() {
           return jpPerMonth;
         };
 
+        const getPklMonthlyMarks = (weeksArray) => {
+          const marks = Array(6).fill(false);
+          weeksArray.forEach((w, wIdx) => {
+            if (w.status === 'pkl' || w.label === 'BEKAL') {
+              const mIdx = Math.floor(wIdx / 4);
+              if (mIdx >= 0 && mIdx < 6) marks[mIdx] = true;
+            }
+          });
+          return marks;
+        };
+
+        const renderSemesterRows = (semData, isGenap, rowKeyPrefix) => {
+          const weeksArray = isGenap ? genapWeeksList : getGanjilWeeksList(selectedClass);
+          const isPklSemester = selectedClass === 'XII' && !isGenap;
+
+          if (isPklSemester) {
+            const pklMarks = getPklMonthlyMarks(weeksArray);
+            return [
+              <tr key={`${rowKeyPrefix}-pkl`}>
+                <td className="center" style={{ fontWeight: 'bold', verticalAlign: 'middle', background: '#FFF3E0' }}>
+                  {semData.nama}
+                </td>
+                <td className="center">PKL</td>
+                <td>
+                  <strong>Praktik Kerja Lapangan (PKL)</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: '16px', fontSize: '8.5px' }}>
+                    <li>Kelas XII Semester Ganjil mengikuti program PKL sesuai kalender sekolah.</li>
+                    <li>Juli minggu ke-2: pembekalan & pelepasan PKL; peeks berikutnya hingga PAS: pelaksanaan PKL.</li>
+                    <li>KBM mapel di sekolah diprogramkan pada Semester Genap.</li>
+                  </ul>
+                </td>
+                <td className="center" style={{ fontWeight: 'bold' }}>-</td>
+                {monthsList.map((m, mColIdx) => {
+                  let active = false;
+                  if (showAll) {
+                    if (mColIdx < 6) active = pklMarks[mColIdx];
+                  } else {
+                    active = pklMarks[mColIdx];
+                  }
+                  return (
+                    <td key={mColIdx} className="center" style={{ background: active ? '#FFE0B2' : '', fontWeight: active ? 'bold' : '', fontSize: '8px' }}>
+                      {active ? 'PKL' : ''}
+                    </td>
+                  );
+                })}
+              </tr>,
+            ];
+          }
+
+          const scheduledMateri = getTeachingSchedule(semData.materi, weeksArray);
+          return scheduledMateri.map((sm, idx) => {
+            const monthlyJp = getMonthlyJP(sm);
+            return (
+              <tr key={`${rowKeyPrefix}-${idx}`}>
+                {idx === 0 && (
+                  <td rowSpan={semData.materi.length} className="center" style={{ fontWeight: 'bold', verticalAlign: 'middle', background: '#F5F5F5' }}>
+                    {semData.nama}
+                  </td>
+                )}
+                <td className="center">{sm.bab}</td>
+                <td>
+                  <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '8.5px' }}>
+                    {sm.tp?.map((t, tIdx) => (
+                      <li key={tIdx} style={{ marginBottom: '2px' }}>{t}</li>
+                    ))}
+                  </ul>
+                </td>
+                <td className="center" style={{ fontWeight: 'bold' }}>{sm.alokasi} JP</td>
+                {monthsList.map((m, mColIdx) => {
+                  let jpVal = 0;
+                  if (showAll) {
+                    if (isGenap) {
+                      if (mColIdx >= 6) jpVal = monthlyJp[mColIdx - 6];
+                    } else if (mColIdx < 6) {
+                      jpVal = monthlyJp[mColIdx];
+                    }
+                  } else {
+                    jpVal = monthlyJp[mColIdx];
+                  }
+                  return (
+                    <td key={mColIdx} className="center" style={{ background: jpVal > 0 ? '#BBDEFB' : '', fontWeight: jpVal > 0 ? 'bold' : '' }}>
+                      {jpVal > 0 ? `${jpVal} JP` : ''}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          });
+        };
+
+        const semesterBlocks = viewMode === 'single'
+          ? [{ data: activeFaseData.semester[sem], isGenap: sem === 'genap', key: sem }]
+          : [
+              { data: activeFaseData.semester.ganjil, isGenap: false, key: 'ganjil' },
+              { data: activeFaseData.semester.genap, isGenap: true, key: 'genap' },
+            ];
+
+        const totalJpDisplay = (() => {
+          if (viewMode === 'single') {
+            if (selectedClass === 'XII' && sem === 'ganjil') return 'PKL';
+            return `${activeFaseData.semester[sem].materi.reduce((acc, m) => acc + m.alokasi, 0)} JP`;
+          }
+          const genapJp = activeFaseData.semester.genap.materi.reduce((acc, m) => acc + m.alokasi, 0);
+          if (selectedClass === 'XII') return `PKL + ${genapJp} JP`;
+          const ganjilJp = activeFaseData.semester.ganjil.materi.reduce((acc, m) => acc + m.alokasi, 0);
+          return `${ganjilJp + genapJp} JP`;
+        })();
+
         return (
           <div key="prota" className="a4-page landscape-mode" style={{ padding: '15mm 15mm' }}>
             <h2 className="page-title">PROGRAM TAHUNAN (PROTA)</h2>
-            <div className="page-subtitle">Distribusi Alokasi JP Bulanan - Fase {fase} TA {schoolInfoData.tahunAjaran}</div>
+            <div className="page-subtitle">
+              Distribusi Alokasi JP Bulanan - Kelas {selectedClass} · Fase {fase} TA {schoolInfoData.tahunAjaran}
+            </div>
+            {selectedClass === 'X' && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                Catatan Kelas X: MPLS Juli minggu ke-3; KBM dimulai Juli minggu ke-4.
+              </p>
+            )}
+            {selectedClass === 'XI' && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                Catatan Kelas XI: tanpa MPLS; KBM dimulai Juli minggu ke-2.
+              </p>
+            )}
+            {selectedClass === 'XII' && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                Catatan Kelas XII: Semester Ganjil = PKL; KBM mapel pada Semester Genap.
+              </p>
+            )}
 
-            <div className="table-print-wrap" style={{ marginTop: '20px', overflowX: 'auto' }}>
+            <div className="table-print-wrap" style={{ marginTop: '12px', overflowX: 'auto' }}>
               <table className="data-table" style={{ fontSize: '9px', width: '100%', tableLayout: 'fixed' }}>
                 <thead>
                   <tr>
@@ -1100,85 +1312,45 @@ export default function Perangkat() {
                   </tr>
                 </thead>
                 <tbody>
-                  {(viewMode === 'single' ? [activeFaseData.semester[sem]] : [activeFaseData.semester.ganjil, activeFaseData.semester.genap]).map((semData, semIdx) => {
-                    const isGenap = viewMode === 'single' ? sem === 'genap' : semIdx === 1;
-                    const weeksArray = isGenap ? genapWeeksList : ganjilWeeksList;
-                    const scheduledMateri = getTeachingSchedule(semData.materi, weeksArray);
-                    
-                    return scheduledMateri.map((sm, idx) => {
-                      const monthlyJp = getMonthlyJP(sm, isGenap);
-                      return (
-                        <tr key={`${semData.nama}-${idx}`}>
-                          {idx === 0 && (
-                            <td rowSpan={semData.materi.length} className="center" style={{ fontWeight: 'bold', verticalAlign: 'middle', background: '#F5F5F5' }}>
-                              {semData.nama}
-                            </td>
-                          )}
-                          <td className="center">{sm.bab}</td>
-                          <td>
-                            <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '8.5px' }}>
-                              {sm.tp?.map((t, tIdx) => (
-                                <li key={tIdx} style={{ marginBottom: '2px' }}>{t}</li>
-                              ))}
-                            </ul>
-                          </td>
-                          <td className="center" style={{ fontWeight: 'bold' }}>{sm.alokasi} JP</td>
-                          {monthsList.map((m, mColIdx) => {
-                            let jpVal = 0;
-                            if (showAll) {
-                              if (isGenap) {
-                                if (mColIdx >= 6) jpVal = monthlyJp[mColIdx - 6];
-                              } else {
-                                if (mColIdx < 6) jpVal = monthlyJp[mColIdx];
-                              }
-                            } else {
-                              jpVal = monthlyJp[mColIdx];
-                            }
-                            return (
-                              <td key={mColIdx} className="center" style={{ background: jpVal > 0 ? '#BBDEFB' : '', fontWeight: jpVal > 0 ? 'bold' : '' }}>
-                                {jpVal > 0 ? `${jpVal} JP` : ''}
-                              </td>
-                            );
-                          })}
-                        </tr>
-                      );
-                    });
-                  })}
+                  {semesterBlocks.flatMap((block) => renderSemesterRows(block.data, block.isGenap, block.key))}
                   {/* Total Row */}
                   <tr style={{ background: '#E3F2FD', fontWeight: 'bold' }}>
-                    <td colSpan="4" style={{ textAlign: 'right', paddingRight: '15px' }}>
-                      TOTAL JAM PELAJARAN {viewMode === 'single' ? `SEMESTER ${sem.toUpperCase()}` : 'KBM EFEKTIF PER TAHUN'}
+                    <td colSpan="3" style={{ textAlign: 'right', paddingRight: '15px' }}>
+                      TOTAL {viewMode === 'single' ? `SEMESTER ${sem.toUpperCase()}` : 'PROGRAM TAHUNAN'}
                     </td>
-                    <td className="center">
-                      {(viewMode === 'single'
-                        ? activeFaseData.semester[sem].materi.reduce((acc, m) => acc + m.alokasi, 0)
-                        : activeFaseData.semester.ganjil.materi.reduce((acc, m) => acc + m.alokasi, 0) +
-                          activeFaseData.semester.genap.materi.reduce((acc, m) => acc + m.alokasi, 0))} JP
-                    </td>
+                    <td className="center">{totalJpDisplay}</td>
                     {monthsList.map((m, mColIdx) => {
                       let colSum = 0;
+                      let colPkl = false;
                       if (viewMode === 'single') {
-                        const weeksArray = sem === 'genap' ? genapWeeksList : ganjilWeeksList;
-                        const scheduled = getTeachingSchedule(activeFaseData.semester[sem].materi, weeksArray);
-                        scheduled.forEach(sm => {
-                          const monthlyJp = getMonthlyJP(sm, sem === 'genap');
-                          colSum += monthlyJp[mColIdx];
-                        });
+                        if (selectedClass === 'XII' && sem === 'ganjil') {
+                          const marks = getPklMonthlyMarks(getGanjilWeeksList('XII'));
+                          colPkl = marks[mColIdx];
+                        } else {
+                          const weeksArray = getWeeksArrayFor(sem, selectedClass);
+                          const scheduled = getTeachingSchedule(activeFaseData.semester[sem].materi, weeksArray);
+                          scheduled.forEach((sm) => {
+                            colSum += getMonthlyJP(sm)[mColIdx];
+                          });
+                        }
                       } else {
-                        const scheduledGanjil = getTeachingSchedule(activeFaseData.semester.ganjil.materi, ganjilWeeksList);
-                        scheduledGanjil.forEach(sm => {
-                          const monthlyJp = getMonthlyJP(sm, false);
-                          if (mColIdx < 6) colSum += monthlyJp[mColIdx];
-                        });
+                        if (selectedClass === 'XII') {
+                          const marks = getPklMonthlyMarks(getGanjilWeeksList('XII'));
+                          if (mColIdx < 6) colPkl = marks[mColIdx];
+                        } else {
+                          const scheduledGanjil = getTeachingSchedule(activeFaseData.semester.ganjil.materi, getGanjilWeeksList(selectedClass));
+                          scheduledGanjil.forEach((sm) => {
+                            if (mColIdx < 6) colSum += getMonthlyJP(sm)[mColIdx];
+                          });
+                        }
                         const scheduledGenap = getTeachingSchedule(activeFaseData.semester.genap.materi, genapWeeksList);
-                        scheduledGenap.forEach(sm => {
-                          const monthlyJp = getMonthlyJP(sm, true);
-                          if (mColIdx >= 6) colSum += monthlyJp[mColIdx - 6];
+                        scheduledGenap.forEach((sm) => {
+                          if (mColIdx >= 6) colSum += getMonthlyJP(sm)[mColIdx - 6];
                         });
                       }
                       return (
-                        <td key={mColIdx} className="center" style={{ background: '#E3F2FD', fontWeight: 'bold' }}>
-                          {colSum > 0 ? `${colSum} JP` : ''}
+                        <td key={mColIdx} className="center" style={{ background: colPkl ? '#FFE0B2' : '#E3F2FD', fontWeight: 'bold', fontSize: '8px' }}>
+                          {colPkl ? 'PKL' : (colSum > 0 ? `${colSum} JP` : '')}
                         </td>
                       );
                     })}
@@ -1195,14 +1367,59 @@ export default function Perangkat() {
       }
 
       case 'promes': {
-        const weeksArray = sem === 'ganjil' ? ganjilWeeksList : genapWeeksList;
+        const weeksArray = getWeeksArrayFor(sem, selectedClass);
         const scheduledMateri = getTeachingSchedule(localMateriList, weeksArray);
+        const isXiiPklPromes = selectedClass === 'XII' && sem === 'ganjil';
+
+        const cellMeta = (w, opts = {}) => {
+          const { willTeach = false, forcePas = false, forceLibur = false } = opts;
+          let text = '';
+          let bg = '';
+          if (forcePas && (w.label === 'PAS' || w.label === 'PAT')) {
+            text = schoolInfoData.jpPerMinggu;
+            bg = '#FFCDD2';
+          } else if (forceLibur && w.label === 'L') {
+            text = 'L';
+            bg = '#FFE082';
+          } else if (willTeach) {
+            text = schoolInfoData.jpPerMinggu;
+            bg = '#BBDEFB';
+          } else if (w.status === 'pkl') {
+            text = 'PKL';
+            bg = '#FFE0B2';
+          } else if (w.status === 'non-efektif') {
+            text = w.label;
+            bg = w.label === 'MPLS' || w.label === 'BEKAL' ? '#FFCCBC' : '#FFCDD2';
+          } else if (w.status === 'empty' && w.label) {
+            text = w.label;
+            bg = '#FFE082';
+          }
+          return { text, bg };
+        };
+
         return (
           <div key="promes" className="a4-page landscape-mode" style={{ padding: '15mm 15mm' }}>
             <h2 className="page-title">PROGRAM SEMESTER (PROMES)</h2>
-            <div className="page-subtitle">Distribusi KBM Pekanan - Semester {sem.toUpperCase()} TA {schoolInfoData.tahunAjaran}</div>
+            <div className="page-subtitle">
+              Distribusi KBM Pekanan - Kelas {selectedClass} · Semester {sem.toUpperCase()} TA {schoolInfoData.tahunAjaran}
+            </div>
+            {selectedClass === 'X' && sem === 'ganjil' && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                MPLS di Juli minggu ke-3 (oranye muda); KBM mulai Juli minggu ke-4.
+              </p>
+            )}
+            {selectedClass === 'XI' && sem === 'ganjil' && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                Tanpa MPLS; KBM mulai Juli minggu ke-2.
+              </p>
+            )}
+            {isXiiPklPromes && (
+              <p style={{ fontSize: '9px', marginTop: '6px', color: '#555' }}>
+                Semester Ganjil Kelas XII = PKL (bukan distribusi KBM mapel).
+              </p>
+            )}
 
-            <div className="table-print-wrap promes-table-wrap" style={{ marginTop: '15px', overflowX: 'auto' }}>
+            <div className="table-print-wrap promes-table-wrap" style={{ marginTop: '12px', overflowX: 'auto' }}>
               <table className="data-table promes-table" style={{ fontSize: '8px', width: '100%', tableLayout: 'fixed' }}>
                 <thead>
                   <tr>
@@ -1236,8 +1453,29 @@ export default function Perangkat() {
                   </tr>
                 </thead>
                 <tbody>
-                  {scheduledMateri.map((sm, mIdx) => {
-                    return (
+                  {isXiiPklPromes ? (
+                    <tr>
+                      <td className="center">PKL</td>
+                      <td>
+                        <strong>Praktik Kerja Lapangan (PKL)</strong>
+                        <ul style={{ margin: '4px 0 0', paddingLeft: '16px', fontSize: '8.5px' }}>
+                          <li>Pembekalan & pelepasan PKL (Juli minggu ke-2).</li>
+                          <li>Pelaksanaan PKL di dunia kerja hingga peeks menjelang PAS.</li>
+                          <li>KBM mapel dilanjutkan pada Semester Genap.</li>
+                        </ul>
+                      </td>
+                      <td className="center" style={{ fontWeight: 'bold' }}>-</td>
+                      {weeksArray.map((w, wIdx) => {
+                        const { text, bg } = cellMeta(w);
+                        return (
+                          <td key={wIdx} className="center" style={{ background: bg, fontWeight: 'bold', fontSize: '7px' }}>
+                            {text}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ) : (
+                    scheduledMateri.map((sm, mIdx) => (
                       <tr key={mIdx}>
                         <td className="center">{sm.bab}</td>
                         <td>
@@ -1250,37 +1488,29 @@ export default function Perangkat() {
                         <td className="center" style={{ fontWeight: 'bold' }}>{sm.alokasi} JP</td>
                         {weeksArray.map((w, wIdx) => {
                           const willTeach = sm.schedule.includes(wIdx);
-                          let text = '';
-                          let bg = '';
-                          if (willTeach) {
-                            text = schoolInfoData.jpPerMinggu;
-                            bg = '#BBDEFB';
-                          } else if (w.status === 'non-efektif') {
-                            text = w.label;
-                            bg = '#FFCDD2';
-                          } else if (w.status === 'empty' && w.label) {
-                            text = w.label;
-                            bg = '#FFE082';
-                          }
+                          const { text, bg } = cellMeta(w, { willTeach });
                           return (
-                            <td key={wIdx} className="center" style={{ background: bg, fontWeight: 'bold' }}>
+                            <td key={wIdx} className="center" style={{ background: bg, fontWeight: 'bold', fontSize: '7px' }}>
                               {text}
                             </td>
                           );
                         })}
                       </tr>
-                    );
-                  })}
+                    ))
+                  )}
                   {/* Exam weeks */}
                   <tr style={{ background: '#FFCDD2', fontWeight: 'bold' }}>
                     <td className="center">-</td>
                     <td>Penilaian Sumatif Akhir Semester ({sem === 'ganjil' ? 'PAS' : 'PAT'})</td>
-                    <td className="center">{schoolInfoData.jpPerMinggu} JP</td>
-                    {weeksArray.map((w, wIdx) => (
-                      <td key={wIdx} className="center" style={{ background: w.label === 'PAS' || w.label === 'PAT' ? '#FFCDD2' : '' }}>
-                        {w.label === 'PAS' || w.label === 'PAT' ? schoolInfoData.jpPerMinggu : ''}
-                      </td>
-                    ))}
+                    <td className="center">{isXiiPklPromes ? '-' : `${schoolInfoData.jpPerMinggu} JP`}</td>
+                    {weeksArray.map((w, wIdx) => {
+                      const { text, bg } = cellMeta(w, { forcePas: true });
+                      return (
+                        <td key={wIdx} className="center" style={{ background: w.label === 'PAS' || w.label === 'PAT' ? '#FFCDD2' : bg }}>
+                          {w.label === 'PAS' || w.label === 'PAT' ? (isXiiPklPromes ? 'PAS' : text) : ''}
+                        </td>
+                      );
+                    })}
                   </tr>
                   <tr style={{ background: '#FFE082', fontWeight: 'bold' }}>
                     <td className="center">-</td>
