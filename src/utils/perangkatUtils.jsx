@@ -1029,358 +1029,252 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = nu
             "Tulis monolog 'مَدْرَسَتِيْ' (8–10 kalimat) yang memuat minimal satu contoh tiap kaidah semester ganjil!"
           ];
           break;
-        case 5: // Dhomir
-          details.pemahamanBermakna = "Kata ganti (dhamir) adalah inti dari struktur kalimat Bahasa Arab yang menghubungkan subjek dengan predikat.";
+        case 5: // المقصف (Kantin)
+          details.pemahamanBermakna = "Berbahasa Arab di kantin (المقصف) melatih transaksi sederhana sekaligus ketepatan ظرف المكان saat menyebutkan letak makanan, meja, dan antrian.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan antara dhamir munfashil dan dhamir muttashil?",
-            "Berapa jumlah kata ganti dalam Bahasa Arab?",
-            "Mengapa penggunaan dhamir harus sesuai dengan jenis dan jumlah?"
+            "Apa saja yang biasa kamu beli di kantin sekolah?",
+            "Bagaimana mengatakan 'di depan kasir' atau 'di atas meja' dalam Bahasa Arab?",
+            "Mengapa keterangan tempat penting saat berdialog di kantin?"
           ];
           details.langkahInti = [
-            "Guru menyajikan tabel lengkap dhamir munfashil dan muttashil beserta contohnya.",
-            "Murid menghafalkan dhamir secara berkelompok dengan metode gerakan (kinestetik).",
-            "Latihan: mengganti subjek dalam kalimat dengan dhamir yang sesuai.",
-            "Membaca teks sederhana dan mengidentifikasi dhamir yang terkandung di dalamnya.",
-            "Menyusun paragraf pendek tentang keluarga menggunakan dhamir yang tepat."
+            "Menyimak: mengidentifikasi bunyi kata dan dialog tentang المقصف dari audio/bacaan guru (TP 1.2.1–1.2.3).",
+            "Melafalkan: menirukan mufradat makanan, minuman, dan ungkapan transaksi berpasangan (TP 1.2.2).",
+            "Kaidah ظرف المكان: praktik menunjuk letak di kantin (أَمَامَ، خَلْفَ، عَلَى، فِيْ، بَيْنَ) (TP 1.2.4).",
+            "Berbicara & membaca: role-play jual-beli di kantin dan membaca nyaring teks فِي الْمَقْصَفِ (TP 1.2.5, 1.2.8).",
+            "Menulis: menghubungkan kata menjadi 5–7 kalimat tentang pengalaman di kantin (TP 1.2.11)."
           ];
           details.lkpd = [
-            "Tuliskan 14 dhamir (kata ganti) dalam Bahasa Arab beserta artinya!",
-            "Ubahlah kalimat 'ذهب أحمد إلى المدرسة' dengan mengganti subjeknya dengan berbagai dhamir!",
-            "Buatlah 5 kalimat menggunakan dhamir munfashil dan 5 kalimat menggunakan dhamir muttashil!"
+            "Tuliskan 12 mufradat kantin beserta artinya!",
+            "Buat 5 kalimat memakai ظرف المكان berbeda dalam konteks kantin!",
+            "Tulis dialog transaksi di kantin minimal 8 baris (pembeli–penjual)!"
           ];
           break;
-        case 6: // Fi'il Mudhari'
-          details.pemahamanBermakna = "Fi'il mudhari' (kata kerja sekarang/akan datang) adalah bentuk kata kerja paling fleksibel yang dapat diubah sesuai waktu dan subjek.";
+        case 6: // الأسرة (Keluarga)
+          details.pemahamanBermakna = "Topik الأسرة melatih murid memperkenalkan anggota keluarga dan menyusun jumlah ismiyah (مبتدأ وخبر) yang rapi, santun, dan bermakna.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan fi'il madhi dan fi'il mudhari'?",
-            "Apa ciri-ciri fi'il mudhari' yang membedakannya dengan kata kerja lain?",
-            "Bagaimana cara mengubah fi'il mudhari' sesuai dengan pelakunya (dhamir)?"
+            "Siapa saja anggota keluargamu dan bagaimana menyebutnya dalam Bahasa Arab?",
+            "Apa perbedaan struktur 'أَبِيْ طَبِيْبٌ' dan 'هُنَاكَ أُسْرَةٌ كَبِيْرَةٌ'?",
+            "Bagaimana cara memaparkan pekerjaan atau sifat anggota keluarga secara sederhana?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan ciri-ciri fi'il mudhari' (diawali huruf mudhara'ah: أ، ن، ي، ت).",
-            "Murid melakukan tasrif fi'il mudhari' untuk kata kerja 'كتب' (menulis) dengan 14 dhamir.",
-            "Latihan lisan: guru menyebutkan kata kerja, murid mengubah ke bentuk mudhari'.",
-            "Membaca cerita pendek tentang rutinitas harian dan mengidentifikasi fi'il mudhari'.",
-            "Menulis jurnal harian sederhana (3-4 aktivitas) menggunakan fi'il mudhari'."
+            "Menyimak & memahami: menyimak dialog/narasi tentang الأسرة dan menandai mubtada'–khabar (TP 1.2.3, 1.2.7).",
+            "Berbicara: berpasangan memperkenalkan anggota keluarga (nama, hubungan, sifat/pekerjaan) (TP 1.2.5–1.2.6).",
+            "Kaidah مبتدأ وخبر: menyusun kalimat nominal tentang foto keluarga (TP 1.2.7).",
+            "Membaca: membaca nyaring teks أُسْرَتِيْ dan menjawab pertanyaan pemahaman (TP 1.2.9).",
+            "Menulis: memaparkan gagasan 6–8 kalimat tentang keluargaku (TP 1.2.12, 1.2.14)."
           ];
           details.lkpd = [
-            "Apa ciri-ciri fi'il mudhari'? Sebutkan huruf mudhara'ah!",
-            "Lakukan tasrif fi'il mudhari' untuk kata 'يكتب' (menulis) lengkap dengan dhamirnya!",
-            "Buatlah 5 kalimat tentang aktivitas sehari-hari menggunakan fi'il mudhari'!"
+            "Tuliskan 10 kosakata anggota keluarga + 5 kalimat mubtada'–khabar!",
+            "Buat dialog singkat memperkenalkan keluarga kepada teman baru (minimal 8 baris)!",
+            "Tulis monolog 'أُسْرَتِيْ' (6–8 kalimat) dengan struktur jumlah ismiyah yang benar!"
           ];
           break;
-        case 7: // Huruf Jar
-          details.pemahamanBermakna = "Huruf jar adalah kata depan yang mengubah harakat akhir kata benda (isim) dan memberikan makna spasial/temporal dalam kalimat.";
+        case 7: // الوقت (Waktu)
+          details.pemahamanBermakna = "Menguasai ungkapan الوقت dan ظرف الزمان membantu murid menceritakan jadwal harian, jam pelajaran, dan aktivitas tepat waktu dalam Bahasa Arab.";
           details.pertanyaanPemantik = [
-            "Apa yang terjadi pada harakat isim setelah huruf jar?",
-            "Sebutkan huruf jar apa saja yang kalian ketahui!",
-            "Mengapa huruf jar penting dalam memahami struktur kalimat Bahasa Arab?"
+            "Jam berapa kamu biasanya bangun, belajar, dan tidur?",
+            "Apa saja contoh ظرف الزمان yang sudah kamu ketahui (اليوم، غدا، صباحا)?",
+            "Bagaimana menyusun kalimat tentang jadwal harian secara runtut?"
           ];
           details.langkahInti = [
-            "Guru menyajikan 17 huruf jar beserta makna dan contoh penggunaannya.",
-            "Murid mengidentifikasi huruf jar dalam teks bacaan dan menjelaskan maknanya.",
-            "Latihan: menyusun frasa (syibhul jumlah) dengan berbagai huruf jar.",
-            "Game: 'Preposition Bingo' - mencocokkan huruf jar dengan contoh kalimat.",
-            "Menulis 5 kalimat lengkap yang mengandung huruf jar berbeda."
+            "Menyimak: mengidentifikasi bunyi kata jam, hari, dan keterangan waktu dari dialog (TP 1.2.1, 1.2.3).",
+            "Kaidah ظرف الزمان: memetakan السَّاعَةُ، الْيَوْمَ، غَدًا، صَبَاحًا، مَسَاءً, dll. (TP 1.2.4, 1.2.10).",
+            "Berbicara: menceritakan jadwal harian berpasangan dengan keterangan waktu (TP 1.2.5).",
+            "Membaca nyaring: teks يَوْمِيْ dan menandai zharf az-zaman (TP 1.2.8).",
+            "Menulis: menyusun urutan kata acak menjadi kalimat sempurna tentang waktu/jadwal (TP 1.2.13)."
           ];
           details.lkpd = [
-            "Sebutkan 10 huruf jar beserta artinya masing-masing!",
-            "Buatlah 5 contoh syibhul jumlah (frasa kata depan) menggunakan huruf jar yang berbeda!",
-            "Tentukan huruf jar dalam kalimat berikut dan jelaskan artinya: 'ذهبتُ إلى المدرسةِ بالحافلةِ'!"
+            "Tuliskan jam 1–12 dalam Bahasa Arab dan 8 contoh ظرف الزمان!",
+            "Buat dialog tanya-jawab tentang jadwal harian minimal 6 baris!",
+            "Susun 5 kalimat acak menjadi kalimat benar tentang aktivitas dan waktunya!"
           ];
           break;
-        case 8: // Al-Milk dan Adad 1-10
-          details.pemahamanBermakna = "Ungkapan kepemilikan dan bilangan adalah keterampilan komunikatif esensial untuk transaksi dan interaksi sehari-hari dalam Bahasa Arab.";
+        case 8: // أحمد دحلان (Ahmad Dahlan)
+          details.pemahamanBermakna = "Menceritakan keteladanan أحمد دحلان dalam Bahasa Arab memadukan maharat berbahasa dengan nilai ISMUBA; kaidah خبر مقدم memperkuat penekanan makna dalam narasi.";
           details.pertanyaanPemantik = [
-            "Bagaimana cara menyatakan kepemilikan benda dalam Bahasa Arab?",
-            "Apa perbedaan bilangan 1-2 dengan 3-10 dalam kaidah Bahasa Arab?",
-            "Bagaimana cara menghitung benda menggunakan Bahasa Arab?"
+            "Siapa K.H. Ahmad Dahlan dan mengapa beliau penting bagi pelajar Muhammadiyah?",
+            "Bagaimana menyusun kalimat yang menekankan tempat/sifat terlebih dahulu (khabar muqaddam)?",
+            "Nilai keteladanan apa dari Ahmad Dahlan yang ingin kamu praktikkan di sekolah?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan struktur kepemilikan (idhafah) untuk al-milk.",
-            "Murid berlatih menyebutkan kepemilikan benda menggunakan kosakata sekitar.",
-            "Guru mengajarkan bilangan 1-10 dengan kaidah mudzakkar dan muannats.",
-            "Latihan berpasangan: simulasi transaksi jual-beli di kantin menggunakan Bahasa Arab.",
-            "Bermain peran: 'Di Pasar' - murid berperan sebagai penjual dan pembeli."
+            "Menyimak & memahami: menyimak biografi singkat أحمد دحلان berbahasa Arab sederhana (TP 1.2.3).",
+            "Kaidah terpadu: review ظرف الزمان/المكان dan praktik مبتدأ وخبر مقدم pada kalimat tentang tokoh (TP 1.2.7, 1.2.10).",
+            "Berbicara: diskusi/interaksi tentang keteladanan dan kontribusi pendidikan (TP 1.2.5–1.2.6).",
+            "Membaca nyaring: teks أَحْمَدُ دَحْلَانُ dengan pemahaman isi (TP 1.2.8).",
+            "Menulis & unjuk kerja: monolog 8–10 kalimat + presentasi singkat keteladanan (TP 1.2.11, 1.2.14)."
           ];
           details.lkpd = [
-            "Buatlah 5 kalimat yang menyatakan kepemilikan dalam Bahasa Arab!",
-            "Tuliskan bilangan 1-10 dalam Bahasa Arab (mudzakkar dan muannats)!",
-            "Buatlah dialog transaksi sederhana (jual-beli) menggunakan angka dan ungkapan kepemilikan!"
+            "Tuliskan 10 mufradat terkait biografi/keteladanan + 4 kalimat خبر مقدم!",
+            "Buat dialog singkat tentang keteladanan Ahmad Dahlan (minimal 6 baris)!",
+            "Tulis monolog 'أَحْمَدُ دَحْلَانُ' (8–10 kalimat) memuat zharf dan mubtada'–khabar/khabar muqaddam!"
           ];
           break;
       }
-    } else if (f === 'F' && bab <= 4) {
-      // Fase F Kelas XI (bab 1-4 = ganjil)
+    } else if (kelas === 'XI') {
+      // Fase F Kelas XI — 4 maharat, 2 materi/semester
       switch (bab) {
-        case 1: // Mufrad dan Mutsanna
-          details.pemahamanBermakna = "Perubahan bentuk kata dari tunggal (mufrad) ke ganda (mutsanna) menunjukkan ketelitian struktur morfologi Bahasa Arab.";
+        case 1: // المهنة (Profesi)
+          details.pemahamanBermakna = "Menguasai kosakata dan dialog tentang المهنة membekali murid untuk menjelaskan cita-cita, pekerjaan keluarga, dan peran sosial dalam Bahasa Arab.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan isim mufrad dan isim mutsanna?",
-            "Bagaimana cara mengubah isim mufrad menjadi mutsanna?",
-            "Apa tanda i'rab isim mutsanna dalam keadaan rafa', nashab, dan jar?"
+            "Profesi apa yang ingin kamu tekuni setelah lulus SMK?",
+            "Bagaimana menyebutkan pekerjaan ayah/ibu dalam Bahasa Arab?",
+            "Mengapa penting mampu memperkenalkan profesi dalam komunikasi global?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan kaidah pembentukan mutsanna (menambah alif-nun atau ya-nun di akhir kata).",
-            "Murid mengubah 15 isim mufrad menjadi bentuk mutsanna.",
-            "Latihan membaca teks yang mengandung isim mutsanna dan mengidentifikasinya.",
-            "Menyusun kalimat sederhana menggunakan subjek dan objek bentuk mutsanna.",
-            "Kuis: mencocokkan bentuk mufrad dengan bentuk mutsanna yang benar."
+            "Menyimak: mengidentifikasi bunyi kata dan dialog tentang profesi (TP 2.1.1–2.1.3).",
+            "Melafalkan: menirukan mufradat profesi dan ungkapan 'أُرِيْدُ أَنْ أَكُوْنَ...' berpasangan (TP 2.1.2).",
+            "Berbicara: wawancara mini tentang cita-cita dan alasan memilih profesi (TP 2.1.5–2.1.6).",
+            "Membaca nyaring: teks tentang profesi dan menjawab pertanyaan pemahaman (TP 2.1.8).",
+            "Menulis: menyusun 6–8 kalimat tentang profesi impian dengan struktur gramatikal tepat (TP 2.1.11, 2.1.14)."
           ];
           details.lkpd = [
-            "Jelaskan kaidah pembentukan isim mutsanna beserta contohnya!",
-            "Ubahlah 10 isim mufrad berikut menjadi bentuk mutsanna!",
-            "Buatlah 5 kalimat menggunakan isim mutsanna dalam berbagai posisi (fa'il, maf'ul, majrur)!"
+            "Tuliskan 12 nama profesi dalam Bahasa Arab beserta artinya!",
+            "Buat dialog singkat tentang cita-cita profesi (minimal 8 baris)!",
+            "Tulis monolog 'مِهْنَتِي الْمُسْتَقْبَلِيَّةُ' (6–8 kalimat)!"
           ];
           break;
-        case 2: // Jamak Mudzakkar Salim
-          details.pemahamanBermakna = "Jamak mudzakkar salim adalah pola jamak beraturan untuk kata benda laki-laki yang menunjukkan jumlah lebih dari dua.";
+        case 2: // أدوات المواصلات (Alat Transportasi)
+          details.pemahamanBermakna = "Topik أدوات المواصلات melatih murid mendeskripsikan cara bepergian, membandingkan moda transportasi, dan berinteraksi dalam konteks perjalanan.";
           details.pertanyaanPemantik = [
-            "Apa syarat isim yang bisa dijamakkan dengan jamak mudzakkar salim?",
-            "Apa perbedaan jamak mudzakkar salim dengan mutsanna?",
-            "Bagaimana perubahan i'rab jamak mudzakkar salim dalam kalimat?"
+            "Dengan apa kamu biasanya pergi ke sekolah?",
+            "Apa kelebihan dan kekurangan transportasi umum di daerahmu?",
+            "Bagaimana menanyakan arah atau jenis kendaraan dalam Bahasa Arab?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan pembentukan jamak mudzakkar salim (menambah waw-nun atau ya-nun).",
-            "Murid mengidentifikasi isim-isim yang memenuhi syarat jamak mudzakkar salim.",
-            "Latihan mengubah 10 isim mufrad ke jamak mudzakkar salim.",
-            "Membaca teks tentang profesi dan mengidentifikasi jamak mudzakkar salim.",
-            "Menulis paragraf deskriptif tentang kelompok orang menggunakan jamak mudzakkar salim."
+            "Menyimak: mengidentifikasi kosakata transportasi dari dialog/audio (TP 2.1.1, 2.1.3).",
+            "Berbicara: role-play bertanya-jawab tentang moda transportasi ke suatu tempat (TP 2.1.5–2.1.6).",
+            "Kaidah komunikatif: menyusun kalimat lokasi/cara pergi dengan gramatikal tepat (TP 2.1.7).",
+            "Membaca: membaca nyaring teks tentang perjalanan dan memahami isi (TP 2.1.8–2.1.9).",
+            "Menulis: memaparkan dan menyusun urutan kata menjadi kalimat tentang transportasi (TP 2.1.12–2.1.13)."
           ];
           details.lkpd = [
-            "Sebutkan syarat-syarat isim yang bisa dibentuk menjadi jamak mudzakkar salim!",
-            "Ubahlah 10 isim berikut ke bentuk jamak mudzakkar salim (contoh: مسلم - مسلمون)!",
-            "Buatlah 5 kalimat dengan subjek jamak mudzakkar salim dalam berbagai keadaan i'rab!"
+            "Tuliskan 12 kosakata alat transportasi + 5 kalimat 'أَذْهَبُ بِ...'!",
+            "Buat dialog di terminal/halte minimal 8 baris!",
+            "Susun 5 kalimat acak menjadi kalimat benar tentang perjalanan!"
           ];
           break;
-        case 3: // Jamak Muannats Salim
-          details.pemahamanBermakna = "Jamak muannats salim adalah pola jamak untuk kata benda perempuan yang ditandai dengan tambahan huruf alif dan ta'.";
+        case 3: // يوم العيد (Hari Raya)
+          details.pemahamanBermakna = "Materi يوم العيد menghubungkan keterampilan berbahasa Arab dengan pengalaman keagamaan dan budaya: ucapan, silaturahmi, dan aktivitas hari raya.";
           details.pertanyaanPemantik = [
-            "Apa ciri-ciri isim muannats yang bisa dijamak muannats salim?",
-            "Apa perbedaan jamak muannats salim dengan jamak mudzakkar salim?",
-            "Bagaimana i'rab jamak muannats salim?"
+            "Apa saja yang biasanya kamu lakukan pada hari raya?",
+            "Bagaimana mengucapkan selamat hari raya dalam Bahasa Arab?",
+            "Nilai apa yang ingin kamu jaga saat merayakan hari raya bersama keluarga?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan kaidah jamak muannats salim (membuang ta' marbutah, menambah ات).",
-            "Murid mengubah 10 isim muannats menjadi jamak muannats salim.",
-            "Membaca teks tentang aktivitas perempuan dan mengidentifikasi jamak muannats salim.",
-            "Latihan: membuat kalimat dengan subjek jamak muannats salim.",
-            "Game: 'Plural Race' - berlomba mengubah kata ke bentuk jamak muannats salim."
+            "Menyimak: mengidentifikasi bunyi kata dan dialog hari raya (TP 2.2.1–2.2.3).",
+            "Melafalkan: praktik ungkapan selamat dan balasannya (TP 2.2.2).",
+            "Berbicara: role-play silaturahmi dan bercerita pengalaman Idulfitri/Iduladha (TP 2.2.5–2.2.6).",
+            "Membaca nyaring: teks narasi hari raya dan memahami isi (TP 2.2.8).",
+            "Menulis: 6–8 kalimat tentang pengalaman hari raya di keluarga (TP 2.2.11, 2.2.14)."
           ];
           details.lkpd = [
-            "Bagaimana cara membentuk jamak muannats salim? Berikan 5 contoh!",
-            "Ubahlah 10 isim muannats berikut ke jamak muannats salim!",
-            "Buatlah 5 kalimat dengan subjek jamak muannats salim lengkap dengan harakat!"
+            "Tuliskan 10 mufradat hari raya + 4 ungkapan ucapan selamat!",
+            "Buat dialog silaturahmi minimal 8 baris!",
+            "Tulis monolog 'يَوْمُ الْعِيْدِ فِي أُسْرَتِيْ' (6–8 kalimat)!"
           ];
           break;
-        case 4: // Jamak Taksir
-          details.pemahamanBermakna = "Jamak taksir adalah pola jamak tidak beraturan yang menunjukkan kekayaan dan fleksibilitas morfologi Bahasa Arab.";
+        case 4: // في السوق (Di Pasar)
+          details.pemahamanBermakna = "Dialog في السوق melatih komunikasi fungsional: menawar, menyebutkan harga, dan memaparkan barang dagangan secara santun dan efektif.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan jamak taksir dengan jamak salim?",
-            "Mengapa jamak taksir disebut 'jamak pecah'?",
-            "Ada berapa pola jamak taksir dalam Bahasa Arab?"
+            "Apa yang biasa kamu beli di pasar atau toko?",
+            "Bagaimana cara menawar harga dengan sopan dalam Bahasa Arab?",
+            "Mengapa keterampilan berdialog di pasar berguna di dunia kerja?"
           ];
           details.langkahInti = [
-            "Guru memperkenalkan 5 pola jamak taksir yang paling umum (أفعال، فعال، فواعل، فعلان، افعلة).",
-            "Murid menghafalkan 20 kosakata jamak taksir beserta bentuk mufradnya.",
-            "Latihan mencocokkan: mufrad dengan jamak taksir yang tepat.",
-            "Membaca teks berisi jamak taksir dan mengubahnya kembali ke bentuk mufrad.",
-            "Menyusun kalimat menggunakan berbagai pola jamak taksir."
+            "Menyimak: mengidentifikasi kosakata pasar dan dialog jual-beli (TP 2.2.1, 2.2.3).",
+            "Berbicara: simulasi penjual–pembeli (menanya harga, menawar, membayar) (TP 2.2.5–2.2.6).",
+            "Kaidah: menilai dan memakai struktur kalimat transaksi yang tepat (TP 2.2.7, 2.2.10).",
+            "Membaca: teks di pasar dan menjawab pertanyaan pemahaman (TP 2.2.8–2.2.9).",
+            "Menulis: memaparkan gagasan dan menyusun urutan kata tentang belanja (TP 2.2.12–2.2.13)."
           ];
           details.lkpd = [
-            "Sebutkan 5 pola jamak taksir beserta masing-masing 2 contoh!",
-            "Tuliskan 10 pasang kata mufrad dan jamak taksirnya (contoh: كتاب - كتب)!",
-            "Buatlah 5 kalimat mengandung jamak taksir dan tentukan pola jamaknya!"
-          ];
-          break;
-      }
-    } else if (f === 'F' && bab >= 5 && bab <= 8) {
-      // Fase F Kelas XI (bab 5-8 = genap)
-      switch (bab) {
-        case 5: // Nafi dan Nahi
-          details.pemahamanBermakna = "Kalimat negatif (nafi) dan larangan (nahi) adalah struktur penting untuk menyampaikan penolakan, larangan, dan sangkalan santun dalam Bahasa Arab.";
-          details.pertanyaanPemantik = [
-            "Apa perbedaan antara nafi dan nahi dalam Bahasa Arab?",
-            "Huruf apa saja yang digunakan untuk menafikan kalimat?",
-            "Bagaimana cara melarang seseorang secara santun dalam Bahasa Arab?"
-          ];
-          details.langkahInti = [
-            "Guru menjelaskan pembagian huruf nafi (لم، لن، لا، ما) dan nahi (لا الناهية).",
-            "Murid mengubah kalimat positif menjadi kalimat negatif menggunakan berbagai huruf nafi.",
-            "Latihan: membuat kalimat larangan menggunakan لا الناهية dengan fi'il mudhari'.",
-            "Menyimak audio percakapan dan mengidentifikasi kalimat nafi dan nahi.",
-            "Bermain peran: melarang teman melakukan sesuatu dengan santun menggunakan bahasa Arab."
-          ];
-          details.lkpd = [
-            "Sebutkan 4 huruf nafi beserta fungsinya dalam kalimat!",
-            "Ubahlah 5 kalimat positif berikut menjadi kalimat negatif!",
-            "Buatlah 3 kalimat larangan (nahi) menggunakan لا الناهية beserta artinya!"
-          ];
-          break;
-        case 6: // Fi'il Madhi
-          details.pemahamanBermakna = "Fi'il madhi (kata kerja lampau) digunakan untuk menceritakan peristiwa masa lalu dan menjadi dasar pembentukan kata kerja lainnya.";
-          details.pertanyaanPemantik = [
-            "Apa ciri-ciri fi'il madhi yang membedakannya dengan fi'il mudhari'?",
-            "Bagaimana cara men-tasrif fi'il madhi sesuai dhamir?",
-            "Mengapa fi'il madhi selalu dalam bentuk terbuka (fathah)?"
-          ];
-          details.langkahInti = [
-            "Guru menjelaskan ciri fi'il madhi (fathah pada akhir kata) dan pembagiannya.",
-            "Murid melakukan tasrif fi'il madhi untuk 5 kata kerja berbeda dengan 14 dhamir.",
-            "Latihan lisan: menceritakan kegiatan kemarin menggunakan fi'il madhi.",
-            "Membaca cerita pendek tentang pengalaman liburan dan mengidentifikasi fi'il madhi.",
-            "Menulis paragraf tentang pengalaman tak terlupakan menggunakan fi'il madhi."
-          ];
-          details.lkpd = [
-            "Apa ciri-ciri fi'il madhi? Lakukan tasrif fi'il 'ذهب' dengan 14 dhamir!",
-            "Buatlah 5 kalimat tentang kegiatan yang kamu lakukan kemarin menggunakan fi'il madhi!",
-            "Tulislah sebuah paragraf (minimal 5 kalimat) tentang liburanmu menggunakan fi'il madhi!"
-          ];
-          break;
-        case 7: // Adad 11-20
-          details.pemahamanBermakna = "Sistem bilangan belasan dalam Bahasa Arab memiliki kaidah tersendiri yang membedakannya dengan bilangan 1-10 maupun puluhan.";
-          details.pertanyaanPemantik = [
-            "Apa perbedaan kaidah adad 11-20 dengan adad 1-10?",
-            "Mengapa ma'dud (benda yang dihitung) untuk 11-20 selalu dalam bentuk mufrad?",
-            "Bagaimana cara membaca bilangan 11-20 dalam Bahasa Arab?"
-          ];
-          details.langkahInti = [
-            "Guru memperkenalkan bilangan 11-20 beserta kaidah mudzakkar dan muannats.",
-            "Murid berlatih melafalkan bilangan 11-20 dengan intonasi yang benar.",
-            "Latihan menghitung benda di sekitar kelas menggunakan bilangan 11-20.",
-            "Menyelesaikan soal cerita sederhana yang melibatkan bilangan 11-20.",
-            "Game: 'Number Quiz' - murid berebut menyebutkan bilangan Arab dengan cepat."
-          ];
-          details.lkpd = [
-            "Tuliskan bilangan 11-20 dalam Bahasa Arab (mudzakkar dan muannats)!",
-            "Buatlah 5 kalimat yang mengandung bilangan 11-20 beserta ma'dud-nya!",
-            "Selesaikan soal berikut: ثمن الكتاب ١٥ ريالاً dan ثمن القلم ١٢ ريالاً. Berapa total harga keduanya?"
-          ];
-          break;
-        case 8: // Sifat dan Maushuf
-          details.pemahamanBermakna = "Susunan sifat (na'at) dan benda yang disifati (man'ut) harus selaras dalam i'rab, jenis, dan jumlah — inilah keindahan struktur Bahasa Arab.";
-          details.pertanyaanPemantik = [
-            "Apa prinsip utama dalam menyusun sifat dan maushuf?",
-            "Mengapa sifat harus mengikuti maushuf dalam jenis dan jumlah?",
-            "Apa perbedaan na'at haqiqi dan na'at sababi?"
-          ];
-          details.langkahInti = [
-            "Guru menjelaskan kaidah na'at man'ut: kesesuaian dalam i'rab, jenis, dan jumlah.",
-            "Murid mengidentifikasi pasangan sifat dan maushuf dalam teks bacaan.",
-            "Latihan: menambahkan sifat yang tepat pada maushuf yang diberikan.",
-            "Menyusun paragraf deskriptif tentang lingkungan sekolah menggunakan sifat dan maushuf.",
-            "Game: 'Deskripsi Gambar' - murid mendeskripsikan gambar menggunakan 3-4 sifat."
-          ];
-          details.lkpd = [
-            "Jelaskan prinsip kesesuaian antara na'at (sifat) dan man'ut (maushuf)!",
-            "Buatlah 5 pasangan sifat dan maushuf dalam kalimat sempurna!",
-            "Deskripsikan ruang kelasmu dalam 5 kalimat menggunakan susunan sifat dan maushuf!"
+            "Tuliskan 12 mufradat pasar/barang + 5 kalimat harga!",
+            "Buat dialog jual-beli minimal 10 baris (ada tawar-menawar)!",
+            "Susun 5 kalimat acak menjadi dialog singkat di pasar!"
           ];
           break;
       }
-    } else if (f === 'F' && bab === 9) {
-      // Tidak ada di Arabic - fallback
     } else if (kelas === 'XII') {
       // Fase F Kelas XII Bahasa Arab
       switch (bab) {
-        case 1: // Jumlah Ismiyah/Fi'liyah
-          details.pemahamanBermakna = "Pembedaan kalimat nominal (jumlah ismiyah) dan verbal (jumlah fi'liyah) adalah fondasi analisis sintaksis Bahasa Arab.";
+        case 1: // العطلة (Liburan)
+          details.pemahamanBermakna = "Topik العطلة melatih murid menceritakan rencana dan pengalaman liburan, destinasinya, serta kesan perjalanan dalam Bahasa Arab.";
           details.pertanyaanPemantik = [
-            "Apa perbedaan utama antara jumlah ismiyah dan jumlah fi'liyah?",
-            "Dengan kata apa jumlah ismiyah dimulai? Dan jumlah fi'liyah?",
-            "Mengapa penting membedakan kedua jenis kalimat ini?"
+            "Ke mana kamu ingin berlibur dan mengapa?",
+            "Apa perbedaan menceritakan rencana liburan dan pengalaman liburan yang sudah lewat?",
+            "Kegiatan apa yang paling berkesan saat liburan sekolah?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan struktur jumlah ismiyah (mubtada' + khabar) dan jumlah fi'liyah (fi'il + fa'il).",
-            "Murid mengklasifikasikan 10 kalimat ke dalam jumlah ismiyah atau fi'liyah.",
-            "Latihan mengonversi jumlah ismiyah menjadi fi'liyah dan sebaliknya.",
-            "Membaca teks naratif dan mengidentifikasi jenis-jenis kalimat.",
-            "Menulis paragraf yang mengandung campuran kedua jenis kalimat."
+            "Menyimak: mengidentifikasi kosakata dan dialog liburan (TP 3.1.1–3.1.3).",
+            "Melafalkan: menirukan ungkapan rencana dan kesan liburan (TP 3.1.2).",
+            "Berbicara: berpasangan berbagi rencana/pengalaman liburan (TP 3.1.5–3.1.6).",
+            "Membaca nyaring: teks narasi liburan dan pemahaman isi (TP 3.1.8).",
+            "Menulis: monolog 8–10 kalimat tentang liburan impian/pengalaman (TP 3.1.11, 3.1.14)."
           ];
           details.lkpd = [
-            "Jelaskan pengertian jumlah ismiyah dan jumlah fi'liyah beserta contohnya!",
-            "Ubahlah 3 jumlah ismiyah berikut menjadi jumlah fi'liyah!",
-            "Buatlah 5 jumlah ismiyah dan 5 jumlah fi'liyah tentang tema pendidikan!"
+            "Tuliskan 12 mufradat liburan/tempat wisata beserta artinya!",
+            "Buat dialog rencana liburan minimal 8 baris!",
+            "Tulis monolog 'عُطْلَتِيْ' (8–10 kalimat)!"
           ];
           break;
-        case 2: // Mubtada' dan Khabar
-          details.pemahamanBermakna = "Mubtada' (subjek) dan khabar (predikat) adalah dua pilar utama jumlah ismiyah yang harus selaras dalam i'rab dan jenis.";
+        case 2: // في المطار (Di Bandara)
+          details.pemahamanBermakna = "Komunikasi في المطار membekali murid dengan bahasa fungsional perjalanan: check-in, boarding, menanyakan gerbang, dan bagasi.";
           details.pertanyaanPemantik = [
-            "Apa hukum i'rab mubtada' dan khabar?",
-            "Bagaimana kesesuaian mubtada' dan khabar dari segi jenis dan jumlah?",
-            "Apa saja jenis-jenis khabar dalam jumlah ismiyah?"
+            "Pernahkah kamu ke bandara? Apa saja yang kamu lihat di sana?",
+            "Informasi apa yang penting saat berada di bandara?",
+            "Bagaimana menanyakan jadwal penerbangan atau gerbang dalam Bahasa Arab?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan posisi i'rab mubtada' (rafa') dan khabar (rafa').",
-            "Murid mengidentifikasi mubtada' dan khabar dalam 10 kalimat.",
-            "Latihan: melengkapi kalimat dengan khabar yang sesuai dengan mubtada'.",
-            "Mengenal jenis khabar: mufrad, jumlah, dan syibhul jumlah.",
-            "Menyusun 5 jumlah ismiyah dengan variasi jenis khabar."
+            "Menyimak: dialog petugas–penumpang di bandara (TP 3.1.1, 3.1.3).",
+            "Berbicara: role-play check-in dan menanyakan informasi penerbangan (TP 3.1.5–3.1.6).",
+            "Kaidah komunikatif: menyusun kalimat permintaan informasi dengan tepat (TP 3.1.7, 3.1.10).",
+            "Membaca: teks/pengumuman sederhana di bandara (TP 3.1.8–3.1.9).",
+            "Menulis: memaparkan dan menyusun kalimat tentang perjalanan udara (TP 3.1.12–3.1.13)."
           ];
           details.lkpd = [
-            "Apa yang dimaksud dengan mubtada' dan khabar? Jelaskan dengan contoh!",
-            "Tentukan mubtada' dan khabar dalam 5 kalimat berikut!",
-            "Buatlah 3 jumlah ismiyah dengan khabar mufrad, 3 dengan khabar jumlah, dan 3 dengan khabar syibhul jumlah!"
+            "Tuliskan 12 mufradat bandara + 5 kalimat tanya-jawab di bandara!",
+            "Buat dialog check-in minimal 10 baris!",
+            "Susun 5 kalimat acak menjadi prosedur singkat di bandara!"
           ];
           break;
-        case 3: // Fi'il dan Fa'il
-          details.pemahamanBermakna = "Fi'il (kata kerja) dan fa'il (subjek pelaku) adalah inti jumlah fi'liyah yang harus selaras dalam jenis dan jumlah.";
+        case 3: // في محطة القطار (Di Stasiun Kereta Api)
+          details.pemahamanBermakna = "Dialog di stasiun kereta api melatih literasi perjalanan darat: tiket, jalur, jadwal, dan interaksi dengan petugas/penumpang.";
           details.pertanyaanPemantik = [
-            "Apa hukum i'rab fa'il dalam jumlah fi'liyah?",
-            "Mengapa fi'il harus dalam bentuk mufrad meskipun fa'il-nya mutsanna atau jamak?",
-            "Apa perbedaan fa'il dan na'ibul fa'il?"
+            "Apa perbedaan pengalaman di stasiun kereta dengan di bandara?",
+            "Informasi apa yang perlu dicek sebelum naik kereta?",
+            "Bagaimana membeli tiket atau menanyakan jalur dalam Bahasa Arab?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan struktur jumlah fi'liyah: fi'il + fa'il + maf'ul (jika ada).",
-            "Murid mengidentifikasi fi'il dan fa'il dalam 10 kalimat.",
-            "Latihan: menentukan bentuk fi'il yang sesuai dengan fa'il-nya.",
-            "Mengonversi jumlah ismiyah menjadi jumlah fi'liyah dengan fi'il yang tepat.",
-            "Menulis paragraf tentang cita-cita menggunakan jumlah fi'liyah."
+            "Menyimak: dialog di loket tiket dan di peron (TP 3.2.1–3.2.3).",
+            "Melafalkan: mufradat stasiun dan ungkapan permintaan tiket (TP 3.2.2).",
+            "Berbicara: role-play membeli tiket dan menanyakan jadwal (TP 3.2.5–3.2.6).",
+            "Membaca nyaring: teks/narasi di stasiun (TP 3.2.8).",
+            "Menulis: 6–8 kalimat tentang perjalanan dengan kereta (TP 3.2.11, 3.2.14)."
           ];
           details.lkpd = [
-            "Jelaskan pengertian fi'il dan fa'il beserta hukum i'rabnya!",
-            "Tentukan fi'il dan fa'il dalam 5 kalimat berikut! Lengkapi dengan analisis jenis dan bilangannya!",
-            "Buatlah 5 jumlah fi'liyah dengan variasi fa'il (mufrad, mutsanna, jamak)!"
+            "Tuliskan 12 mufradat stasiun kereta + 5 kalimat jadwal/tiket!",
+            "Buat dialog di loket tiket minimal 8 baris!",
+            "Tulis monolog singkat 'رِحْلَةٌ بِالْقِطَارِ' (6–8 kalimat)!"
           ];
           break;
-        case 4: // Ma'dud 20 ke atas
-          details.pemahamanBermakna = "Bilangan puluhan, ratusan, dan ribuan dalam Bahasa Arab memiliki kaidah tersendiri yang mencerminkan logika numerik yang sistematis.";
+        case 4: // رؤساء إندونيسيا (Para Presiden Indonesia)
+          details.pemahamanBermakna = "Membahas رؤساء إندونيسيا dalam Bahasa Arab mengintegrasikan literasi kebangsaan, sejarah singkat tokoh, dan keterampilan memaparkan biografi sederhana.";
           details.pertanyaanPemantik = [
-            "Bagaimana cara menyebutkan bilangan puluhan dalam Bahasa Arab?",
-            "Apa kaidah ma'dud untuk bilangan 20 ke atas?",
-            "Apa perbedaan antara bilangan 20-99 dengan 100 ke atas?"
+            "Siapa presiden Indonesia yang paling kamu kenal dan mengapa?",
+            "Apa yang dapat diteladani dari kepemimpinan para presiden?",
+            "Bagaimana menyusun biografi singkat tokoh dalam Bahasa Arab?"
           ];
           details.langkahInti = [
-            "Guru menjelaskan kaidah bilangan 20-99, 100, dan 1000 beserta ma'dud-nya.",
-            "Murid berlatih membaca dan menulis bilangan besar dalam Bahasa Arab.",
-            "Latihan: menyebutkan harga barang menggunakan bilangan puluhan/ratusan.",
-            "Membaca teks berisi data statistik dan mengartikan bilangan di dalamnya.",
-            "Proyek: menyusun laporan keuangan sederhana dalam Bahasa Arab."
+            "Menyimak: teks/audio biografi singkat para presiden (TP 3.2.1, 3.2.3).",
+            "Berbicara: presentasi mini 1 tokoh + tanya jawab kelas (TP 3.2.5–3.2.6).",
+            "Kaidah: menyusun kalimat biografi (lahir, menjabat, jasa) dengan gramatikal tepat (TP 3.2.7, 3.2.10).",
+            "Membaca: teks tentang tokoh bangsa dan pemahaman mendalam (TP 3.2.8–3.2.9).",
+            "Menulis: memaparkan gagasan dan menyusun kalimat runtut tentang 1–2 presiden (TP 3.2.12–3.2.13)."
           ];
           details.lkpd = [
-            "Jelaskan kaidah bilangan 20-99 dalam Bahasa Arab beserta contoh ma'dud-nya!",
-            "Tuliskan bilangan berikut dalam Bahasa Arab: 25, 47, 103, 250, 2025!",
-            "Buatlah 5 kalimat yang mengandung bilangan di atas 20 (variasi puluhan, ratusan, ribuan)!"
-          ];
-          break;
-        case 5: // Teks Fungsional
-          details.pemahamanBermakna = "Teks fungsional dalam Bahasa Arab (surat, pengumuman, artikel) membekali murid keterampilan literasi nyata yang aplikatif.";
-          details.pertanyaanPemantik = [
-            "Apa saja jenis teks fungsional dalam Bahasa Arab?",
-            "Bagaimana struktur surat resmi dalam Bahasa Arab?",
-            "Apa perbedaan bahasa formal dan informal dalam teks Bahasa Arab?"
-          ];
-          details.langkahInti = [
-            "Guru menyajikan contoh-contoh teks fungsional: surat, pengumuman, artikel pendek.",
-            "Murid membaca dan memahami isi teks fungsional, mencari makna kosakata baru.",
-            "Latihan: menjawab pertanyaan pemahaman berdasarkan teks yang dibaca.",
-            "Proyek menulis: membuat surat resmi atau pengumuman dalam Bahasa Arab.",
-            "Simulasi wawancara kerja sederhana menggunakan Bahasa Arab."
-          ];
-          details.lkpd = [
-            "Bacalah teks pengumuman berikut dan jawablah 5 pertanyaannya!",
-            "Buatlah sebuah surat undangan resmi dalam Bahasa Arab (tema bebas)!",
-            "Tulislah karangan pendek (10-15 kalimat) tentang 'Cita-citaku' dalam Bahasa Arab!"
+            "Tuliskan 10 mufradat biografi/kepemimpinan + 4 kalimat tentang 1 presiden!",
+            "Buat dialog singkat tentang keteladanan tokoh bangsa (minimal 6 baris)!",
+            "Tulis monolog biografi singkat 1 presiden Indonesia (8–10 kalimat)!"
           ];
           break;
       }

@@ -536,55 +536,71 @@ export const faseEArab = {
       materi: [
         {
           bab: 5,
-          judul: "Dhomir (الضمائر)",
-          elemen: "Tata Bahasa",
-          alokasi: 9,
-          minggu: 3,
+          judul: "المقصف (Kantin)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 10,
+          minggu: 5,
           tp: [
-            "Menjelaskan pengertian dan pembagian kata ganti (Dhomir).",
-            "Menggunakan Dhomir Munfashil (terpisah) dan Muttashil (tersambung) dalam kalimat.",
-            "Menerjemahkan kalimat pendek yang mengandung kata ganti."
+            "1.2.1 Mengidentifikasi bunyi kata tentang المقصف.",
+            "1.2.2 Melafalkan ulang kata yang diperdengarkan tentang المقصف.",
+            "1.2.3 Memahami teks dialog atau narasi tentang المقصف.",
+            "1.2.4 Menggunakan kaidah ظرف المكان untuk menilai informasi yang didengar tentang المقصف.",
+            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang المقصف.",
+            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang المقصف.",
+            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang المقصف."
           ],
-          capaian: "Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
         },
         {
           bab: 6,
-          judul: "Fi'il Mudhari' (الفعل المضارع)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 9,
-          minggu: 3,
+          judul: "الأسرة (Keluarga)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 8,
+          minggu: 4,
           tp: [
-            "Mengenali ciri-ciri dan fungsi kata kerja masa kini/akan datang (Fi'il Mudhari').",
-            "Mentasrifkan (mengubah bentuk) Fi'il Mudhari' sesuai dengan pelaku (Dhomir).",
-            "Menulis cerita singkat tentang rutinitas sehari-hari menggunakan Fi'il Mudhari'."
+            "1.2.3 Memahami teks dialog atau narasi tentang الأسرة.",
+            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang الأسرة.",
+            "1.2.6 Membangun interaksi secara lisan mengenai الأسرة.",
+            "1.2.7 Menggunakan susunan مبتدأ وخبر sebagai alat komunikasi tentang الأسرة.",
+            "1.2.9 Memahami teks tertulis dialog maupun narasi tentang الأسرة.",
+            "1.2.12 Memaparkan gagasan pada kalimat sederhana tentang الأسرة.",
+            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang الأسرة."
           ],
-          capaian: "Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
         },
         {
           bab: 7,
-          judul: "Huruf Jar (حروف الجر)",
-          elemen: "Tata Bahasa",
-          alokasi: 9,
-          minggu: 3,
+          judul: "الوقت (Waktu)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 8,
+          minggu: 4,
           tp: [
-            "Mengidentifikasi macam-macam Huruf Jar dan fungsinya.",
-            "Memahami perubahan harakat akhir kata benda (Isim) setelah Huruf Jar.",
-            "Membentuk frasa kata depan (Syibhul Jumlah) yang bermakna sempurna."
+            "1.2.1 Mengidentifikasi bunyi kata tentang الوقت.",
+            "1.2.3 Memahami teks dialog atau narasi tentang الوقت.",
+            "1.2.4 Menggunakan kaidah ظرف الزمان untuk menilai informasi yang didengar.",
+            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang الوقت.",
+            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang الوقت.",
+            "1.2.10 Menggunakan gramatikal untuk memahami teks tertulis maupun tersirat tentang الوقت.",
+            "1.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang الوقت."
           ],
-          capaian: "Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
         },
         {
           bab: 8,
-          judul: "Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 12,
-          minggu: 4,
+          judul: "أحمد دحلان (Ahmad Dahlan)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 10,
+          minggu: 5,
           tp: [
-            "Mengekspresikan ungkapan kepemilikan (Al-Milk) benda dalam bahasa Arab.",
-            "Melafalkan angka 1 sampai 10 (Adad) beserta benda yang dihitung (Ma'dud).",
-            "Mempraktikkan transaksi sederhana (seperti di kantin) menggunakan angka dan kepemilikan."
+            "1.2.3 Memahami teks dialog atau narasi tentang أحمد دحلان.",
+            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang أحمد دحلان.",
+            "1.2.6 Membangun interaksi secara lisan mengenai keteladanan أحمد دحلان.",
+            "1.2.7 Menggunakan susunan مبتدأ وخبر مقدم serta kaidah semester genap sebagai alat komunikasi.",
+            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang أحمد دحلان.",
+            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang أحمد دحلان.",
+            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang أحمد دحلان."
           ],
-          capaian: "Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
         }
       ]
     }
@@ -602,55 +618,41 @@ export const faseF11Arab = {
       materi: [
         {
           bab: 1,
-          judul: "Mufrad dan Mutsanna (المفرد والمثنى)",
-          elemen: "Tata Bahasa",
-          alokasi: 9,
-          minggu: 3,
+          judul: "المهنة (Profesi)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Menjelaskan konsep kata benda tunggal (Mufrad) dan ganda (Mutsanna).",
-            "Mengubah Isim Mufrad menjadi Mutsanna dengan kaidah yang benar.",
-            "Menyusun kalimat sederhana menggunakan kata benda bentuk tunggal dan ganda."
+            "2.1.1 Mengidentifikasi bunyi kata tentang profesi dengan susunan gramatikal yang sesuai.",
+            "2.1.2 Melafalkan ulang kata yang diperdengarkan tentang profesi.",
+            "2.1.3 Memahami teks dialog atau narasi terkait profesi.",
+            "2.1.4 Menggunakan gramatikal untuk menilai informasi yang didengar tentang profesi.",
+            "2.1.5 Berkomunikasi dengan Bahasa Arab mengenai profesi.",
+            "2.1.6 Membangun interaksi lisan mengenai topik profesi.",
+            "2.1.8 Membaca dengan nyaring teks dialog dan narasi terkait profesi.",
+            "2.1.11 Menghubungkan kata pada kalimat sederhana tentang profesi.",
+            "2.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan tentang profesi secara tertulis dan lisan."
           ],
-          capaian: "Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial dan profesional (المهنة dan أدوات المواصلات) dengan menggunakan susunan gramatikal yang tepat."
         },
         {
           bab: 2,
-          judul: "Jamak Mudzakkar Salim (جمع المذكر السالم)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 9,
-          minggu: 3,
+          judul: "أدوات المواصلات (Alat Transportasi)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Mengidentifikasi bentuk Jamak Mudzakkar Salim dan syarat-syaratnya.",
-            "Menelaah perubahan harakat (I'rab) pada Jamak Mudzakkar Salim dalam kalimat.",
-            "Menulis teks deskriptif singkat tentang profesi menggunakan bentuk jamak."
+            "2.1.1 Mengidentifikasi bunyi kata tentang alat transportasi dengan susunan gramatikal yang sesuai.",
+            "2.1.3 Memahami teks dialog atau narasi terkait alat transportasi.",
+            "2.1.5 Berkomunikasi dengan Bahasa Arab mengenai alat transportasi.",
+            "2.1.6 Membangun interaksi lisan mengenai topik alat transportasi.",
+            "2.1.7 Menggunakan susunan gramatikal sebagai alat komunikasi global tentang transportasi.",
+            "2.1.8 Membaca dengan nyaring teks dialog dan narasi terkait alat transportasi.",
+            "2.1.9 Memahami teks tertulis dialog maupun narasi tentang alat transportasi secara mendalam.",
+            "2.1.12 Memaparkan gagasan pada kalimat sederhana tentang alat transportasi.",
+            "2.1.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang alat transportasi."
           ],
-          capaian: "Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab."
-        },
-        {
-          bab: 3,
-          judul: "Jamak Muannats Salim (جمع المؤنث السالم)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 9,
-          minggu: 3,
-          tp: [
-            "Menganalisis pembentukan Jamak Muannats Salim dari Isim Mufrad Muannats.",
-            "Menggunakan Jamak Muannats Salim secara lisan dalam konteks percakapan di sekolah.",
-            "Menerjemahkan kalimat bahasa Indonesia yang mengandung jamak perempuan ke bahasa Arab."
-          ],
-          capaian: "Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab."
-        },
-        {
-          bab: 4,
-          judul: "Jamak Taksir (جمع التكسير)",
-          elemen: "Tata Bahasa",
-          alokasi: 12,
-          minggu: 4,
-          tp: [
-            "Memahami konsep Jamak Taksir (jamak tidak beraturan).",
-            "Menghafal kosakata umum yang termasuk dalam kategori Jamak Taksir.",
-            "Menyusun kalimat komprehensif yang melibatkan berbagai jenis kata benda majemuk."
-          ],
-          capaian: "Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial dan profesional (المهنة dan أدوات المواصلات) dengan menggunakan susunan gramatikal yang tepat."
         }
       ]
     },
@@ -659,56 +661,43 @@ export const faseF11Arab = {
       nomor: 2,
       materi: [
         {
-          bab: 5,
-          judul: "Nafi dan Nahi (النفى والنهي)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 9,
-          minggu: 3,
+          bab: 3,
+          judul: "يوم العيد (Hari Raya)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Membedakan penggunaan huruf Nafi (negasi) dan huruf Nahi (larangan).",
-            "Mempraktikkan ungkapan larangan dan penolakan yang santun dalam bahasa Arab.",
-            "Mengidentifikasi kalimat negatif dan larangan dari sebuah percakapan audio."
+            "2.2.1 Mengidentifikasi bunyi kata tentang hari raya dengan susunan gramatikal yang sesuai.",
+            "2.2.2 Melafalkan ulang kata yang diperdengarkan tentang hari raya.",
+            "2.2.3 Memahami teks dialog atau narasi terkait hari raya.",
+            "2.2.4 Menggunakan gramatikal untuk menilai informasi yang didengar tentang hari raya.",
+            "2.2.5 Berkomunikasi dengan Bahasa Arab mengenai hari raya.",
+            "2.2.6 Membangun interaksi lisan mengenai topik hari raya.",
+            "2.2.8 Membaca dengan nyaring teks dialog dan narasi terkait hari raya.",
+            "2.2.11 Menghubungkan kata pada kalimat sederhana tentang hari raya.",
+            "2.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan tentang hari raya secara tertulis dan lisan."
           ],
-          capaian: "Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial (يوم العيد dan في السوق) dengan menggunakan susunan gramatikal yang tepat."
         },
         {
-          bab: 6,
-          judul: "Fi'il Madhi (الفعل الماضي)",
-          elemen: "Tata Bahasa",
-          alokasi: 9,
-          minggu: 3,
+          bab: 4,
+          judul: "في السوق (Di Pasar)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Menganalisis kata kerja bentuk lampau (Fi'il Madhi) beserta ciri-cirinya.",
-            "Melakukan tasrif (konjugasi) Fi'il Madhi berdasarkan kata ganti pelakunya.",
-            "Menceritakan pengalaman atau peristiwa masa lalu menggunakan bahasa Arab sederhana."
+            "2.2.1 Mengidentifikasi bunyi kata tentang pasar dengan susunan gramatikal yang sesuai.",
+            "2.2.3 Memahami teks dialog atau narasi terkait pasar.",
+            "2.2.5 Berkomunikasi dengan Bahasa Arab mengenai pasar.",
+            "2.2.6 Membangun interaksi lisan mengenai topik di pasar.",
+            "2.2.7 Menggunakan susunan gramatikal sebagai alat komunikasi global tentang transaksi di pasar.",
+            "2.2.8 Membaca dengan nyaring teks dialog dan narasi terkait pasar.",
+            "2.2.9 Memahami teks tertulis dialog maupun narasi tentang pasar secara mendalam.",
+            "2.2.10 Menggunakan gramatikal untuk memahami teks tertulis maupun tersirat tentang pasar.",
+            "2.2.12 Memaparkan gagasan pada kalimat sederhana tentang pasar.",
+            "2.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang pasar."
           ],
-          capaian: "Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan."
-        },
-        {
-          bab: 7,
-          judul: "Adad 11–20 (العدد ١١-٢٠)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 9,
-          minggu: 3,
-          tp: [
-            "Membaca dan menulis bilangan belasan (11-20) dalam bahasa Arab.",
-            "Memahami kaidah hubungan antara bilangan belasan (Adad) dan benda yang dihitung (Ma'dud).",
-            "Menyelesaikan soal-soal berhitung sederhana menggunakan Adad 11-20."
-          ],
-          capaian: "Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan."
-        },
-        {
-          bab: 8,
-          judul: "Sifat dan Maushuf (الصفة والموصوف)",
-          elemen: "Tata Bahasa",
-          alokasi: 12,
-          minggu: 4,
-          tp: [
-            "Menjelaskan pengertian kata sifat (Na'at/Sifat) dan benda yang disifati (Man'ut/Maushuf).",
-            "Menerapkan prinsip kesesuaian (I'rab, jenis, dan jumlah) antara sifat dan maushuf.",
-            "Menyusun paragraf deskriptif tentang lingkungan sekolah menggunakan susunan sifat dan maushuf."
-          ],
-          capaian: "Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial (يوم العيد dan في السوق) dengan menggunakan susunan gramatikal yang tepat."
         }
       ]
     }
@@ -726,42 +715,42 @@ export const faseF12Arab = {
       materi: [
         {
           bab: 1,
-          judul: "Jumlah Ismiyah dan Fi'liyah (الجملة الاسمية والفعلية)",
-          elemen: "Tata Bahasa",
-          alokasi: 12,
-          minggu: 4,
+          judul: "العطلة (Liburan)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Membedakan karakteristik kalimat nominal (Jumlah Ismiyah) dan kalimat verbal (Jumlah Fi'liyah).",
-            "Mengonversi kalimat nominal menjadi kalimat verbal dan sebaliknya.",
-            "Membaca dan menganalisis teks berbahasa Arab untuk mengidentifikasi struktur kalimat."
+            "3.1.1 Mengidentifikasi bunyi kata tentang liburan dengan susunan gramatikal yang sesuai.",
+            "3.1.2 Melafalkan ulang kata yang diperdengarkan tentang liburan.",
+            "3.1.3 Memahami teks dialog atau narasi terkait liburan.",
+            "3.1.4 Menggunakan gramatikal untuk menilai informasi yang didengar tentang liburan.",
+            "3.1.5 Berkomunikasi dengan Bahasa Arab mengenai liburan.",
+            "3.1.6 Membangun interaksi lisan mengenai topik liburan.",
+            "3.1.8 Membaca dengan nyaring teks dialog dan narasi terkait liburan.",
+            "3.1.11 Menghubungkan kata pada kalimat sederhana tentang liburan.",
+            "3.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan tentang liburan secara tertulis dan lisan."
           ],
-          capaian: "Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial (العطلة dan في المطار) dengan menggunakan susunan gramatikal yang tepat."
         },
         {
           bab: 2,
-          judul: "Mubtada' dan Khabar (المبتدأ والخبر)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 12,
-          minggu: 4,
+          judul: "في المطار (Di Bandara)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Mengidentifikasi unsur subjek (Mubtada') dan predikat (Khabar) dalam Jumlah Ismiyah.",
-            "Menelaah kesesuaian antara Mubtada' dan Khabar dari segi jenis (Mudzakkar/Muannats) dan jumlah (Mufrad/Mutsanna/Jamak).",
-            "Menulis opini singkat terkait isu-isu pendidikan dengan struktur Mubtada' dan Khabar."
+            "3.1.1 Mengidentifikasi bunyi kata tentang bandara dengan susunan gramatikal yang sesuai.",
+            "3.1.3 Memahami teks dialog atau narasi terkait bandara.",
+            "3.1.5 Berkomunikasi dengan Bahasa Arab mengenai bandara.",
+            "3.1.6 Membangun interaksi lisan mengenai topik di bandara.",
+            "3.1.7 Menggunakan susunan gramatikal sebagai alat komunikasi global tentang perjalanan udara.",
+            "3.1.8 Membaca dengan nyaring teks dialog dan narasi terkait bandara.",
+            "3.1.9 Memahami teks tertulis dialog maupun narasi tentang bandara secara mendalam.",
+            "3.1.10 Menggunakan gramatikal untuk memahami teks tertulis maupun tersirat tentang bandara.",
+            "3.1.12 Memaparkan gagasan pada kalimat sederhana tentang bandara.",
+            "3.1.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang bandara."
           ],
-          capaian: "Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab."
-        },
-        {
-          bab: 3,
-          judul: "Fi'il dan Fa'il (الفعل والفاعل)",
-          elemen: "Menyimak dan Berbicara",
-          alokasi: 12,
-          minggu: 4,
-          tp: [
-            "Menganalisis unsur kata kerja (Fi'il) dan subjek/pelaku (Fa'il) dalam Jumlah Fi'liyah.",
-            "Memahami hukum-hukum tata bahasa terkait peletakan Fa'il setelah Fi'il.",
-            "Berbicara mengenai cita-cita dan rencana masa depan dengan memperhatikan posisi Fi'il dan Fa'il."
-          ],
-          capaian: "Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial (العطلة dan في المطار) dengan menggunakan susunan gramatikal yang tepat."
         }
       ]
     },
@@ -770,30 +759,43 @@ export const faseF12Arab = {
       nomor: 2,
       materi: [
         {
-          bab: 4,
-          judul: "Ma'dud 20 ke atas (المعدود ٢٠ فما فوق)",
-          elemen: "Membaca dan Menulis",
-          alokasi: 12,
-          minggu: 4,
+          bab: 3,
+          judul: "في محطة القطار (Di Stasiun Kereta Api)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Mempelajari kaidah pembentukan bilangan puluhan, ratusan, dan ribuan (20 ke atas).",
-            "Menerapkan hukum I'rab pada benda yang dihitung (Ma'dud) untuk bilangan besar.",
-            "Menyusun teks yang melibatkan statistik atau jumlah barang dalam konteks perniagaan/bisnis."
+            "3.2.1 Mengidentifikasi bunyi kata tentang stasiun kereta api dengan susunan gramatikal yang sesuai.",
+            "3.2.2 Melafalkan ulang kata yang diperdengarkan tentang stasiun kereta api.",
+            "3.2.3 Memahami teks dialog atau narasi terkait stasiun kereta api.",
+            "3.2.4 Menggunakan gramatikal untuk menilai informasi yang didengar.",
+            "3.2.5 Berkomunikasi dengan Bahasa Arab mengenai stasiun kereta api.",
+            "3.2.6 Membangun interaksi lisan mengenai topik di stasiun kereta api.",
+            "3.2.8 Membaca dengan nyaring teks dialog dan narasi terkait stasiun kereta api.",
+            "3.2.11 Menghubungkan kata pada kalimat sederhana tentang stasiun kereta api.",
+            "3.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan."
           ],
-          capaian: "Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial dan kewargaan (في محطة القطار dan رؤساء إندونيسيا) dengan menggunakan susunan gramatikal yang tepat."
         },
         {
-          bab: 5,
-          judul: "Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة)",
-          elemen: "Membaca dan Berbicara",
-          alokasi: 15,
-          minggu: 5,
+          bab: 4,
+          judul: "رؤساء إندونيسيا (Para Presiden Indonesia)",
+          elemen: "Menyimak, Berbicara, Membaca, Menulis",
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "Membaca dan memahami berbagai teks fungsional (seperti surat resmi, pengumuman, dan artikel pendek) berbahasa Arab.",
-            "Melakukan simulasi wawancara kerja menggunakan bahasa Arab dasar.",
-            "Menyimpulkan pesan moral dari berbagai kisah berbahasa Arab."
+            "3.2.1 Mengidentifikasi bunyi kata tentang presiden Indonesia dengan susunan gramatikal yang sesuai.",
+            "3.2.3 Memahami teks dialog atau narasi terkait presiden Indonesia.",
+            "3.2.5 Berkomunikasi dengan Bahasa Arab mengenai topik para presiden Indonesia.",
+            "3.2.6 Membangun interaksi lisan mengenai tokoh dan sejarah kepemimpinan.",
+            "3.2.7 Menggunakan susunan gramatikal sebagai alat komunikasi global.",
+            "3.2.8 Membaca dengan nyaring teks dialog dan narasi terkait presiden Indonesia.",
+            "3.2.9 Memahami teks tertulis dialog maupun narasi secara mendalam.",
+            "3.2.10 Menggunakan gramatikal untuk memahami teks tertulis maupun tersirat.",
+            "3.2.12 Memaparkan gagasan pada kalimat sederhana tentang tokoh bangsa.",
+            "3.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang para presiden Indonesia."
           ],
-          capaian: "Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab."
+          capaian: "Murid mampu memahami, merespons, dan memproduksi teks lisan serta tulisan mengenai topik sosial dan kewargaan (في محطة القطار dan رؤساء إندونيسيا) dengan menggunakan susunan gramatikal yang tepat."
         }
       ]
     }

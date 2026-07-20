@@ -3,19 +3,27 @@ export const detailedMateri = {
   pai: {
     X: {
       1: {
-        "ringkasan": "Fastabiqul Khairat merupakan etos kerja spiritual yang menuntut murid untuk berlomba dan berinisiatif paling awal dalam menebarkan kebaikan, berlandaskan petunjuk penyempurna dalam Al-Qur'an.",
+        "ringkasan": "Fastabiqul Khairat adalah etos spiritual untuk berlomba dalam kebaikan: proaktif, produktif, dan bermanfaat bagi sesama berdasarkan QS. Al-Ma'idah: 48 dan hadis-hadis etos amal.",
         "sections": [
                 {
                         "title": "A. Kajian QS. Al-Ma'idah Ayat 48 tentang Fastabiqul Khairat",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam surah Al-Ma'idah ayat 48, Allah SWT menjelaskan bahwa Al-Qur'an diturunkan dengan membawa kebenaran paripurna yang membenarkan kitab-kitab suci sebelumnya sekaligus menjadi batu ujian (Muhaimin) terhadapnya. \n\nHal menarik dari ayat ini adalah penegasan Allah bahwa keragaman umat manusia merupakan sunnatullah (ketetapan Ilahi). Seandainya Allah menghendaki, niscaya manusia dijadikan satu umat saja. Namun, keberagaman tersebut sengaja diciptakan sebagai ujian (ibtila') agar manusia saling berpacu dan berlomba dalam melakukan kebaikan (Fastabiqul Khairat). Pada akhirnya, seluruh umat manusia akan dikembalikan kepada Allah untuk dimintai pertanggungjawaban.</p>",
-                        "dalil": "وَأَنْزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِمَا بَيْنَ يَدَيْهِ مِنَ الْكِتَابِ وَمُهَيْمِنًا عَلَيْهِ ۖ فَاحْكُمْ بَيْنَهُمْ بِمَا أَنْزَلَ اللَّهُ ۖ وَلَا تَتَّبِعْ أَهْوَاءَهُمْ عَمَّا جَاءَكَ مِنَ الْحَقِّ ۚ لِكُلٍّ جَعَلْنَا مِنْكُمْ شِرْعَةً وَمِنْهَاجًا ۚ وَلَوْ شَاءَ اللَّهُ لَجَعَلَكُمْ أُمَّةً وَاحِدَةً وَلَٰكِنْ لِيَبْلُوَكُمْ فِي مَا آتَاكُمْ ۖ فَاسْتَبِقُوا الْخَيْرَاتِ ۚ إِلَى اللَّهِ مَرْجِعُكُمْ جَمِيعًا فَيُنَبِّئُكُمْ بِمَا كُنْتُمْ فِيهِ تَخْتَلِفُونَ",
-                        "arti": "Dan Kami telah menurunkan Kitab (Al-Qur'an) kepadamu (Muhammad) dengan membawa kebenaran, yang membenarkan kitab-kitab yang diturunkan sebelumnya dan menjaganya, maka putuskanlah perkara mereka menurut apa yang diturunkan Allah dan janganlah engkau mengikuti keinginan mereka dengan meninggalkan kebenaran yang telah datang kepadamu. Untuk setiap umat di antara kamu, Kami berikan aturan dan jalan yang terang. Kalau Allah menghendaki, niscaya kamu dijadikan-Nya satu umat (saja), tetapi Allah hendak menguji kamu terhadap karunia yang telah diberikan-Nya kepadamu, maka berlomba-lombalah berbuat kebajikan. Hanya kepada Allah kamu semua kembali, lalu diberitahukan-Nya kepadamu terhadap apa yang dahulu kamu perselisihkan.",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam surah Al-Ma'idah ayat 48, Allah SWT menjelaskan bahwa Al-Qur'an diturunkan dengan membawa kebenaran paripurna yang membenarkan kitab-kitab suci sebelumnya sekaligus menjadi batu ujian (Muhaimin) terhadapnya.\n\nHal menarik dari ayat ini adalah penegasan Allah bahwa keragaman umat manusia merupakan sunnatullah. Seandainya Allah menghendaki, niscaya manusia dijadikan satu umat saja. Namun keberagaman sengaja dijadikan ujian agar manusia saling berlomba dalam kebaikan (Fastabiqul Khairat). Pada akhirnya seluruh manusia dikembalikan kepada Allah untuk dimintai pertanggungjawaban.\n\nBagi pelajar SMK, fastabiqul khairat terwujud dalam: etos belajar unggul, kejujuran praktik kerja, menolong teman yang kesulitan, menjaga kebersihan bengkel/kelas, dan berinovasi untuk kemaslahatan.</p>",
+                        "dalil": "وَأَنْزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِمَا بَيْنَ يَدَيْهِ مِنَ الْكِتَابِ وَمُهَيْمِنًا عَلَيْهِ ۖ ... فَاسْتَبِقُوا الْخَيْرَاتِ ۚ إِلَى اللَّهِ مَرْجِعُكُمْ جَمِيعًا",
+                        "arti": "Dan Kami telah menurunkan Kitab (Al-Qur'an) kepadamu (Muhammad) dengan membawa kebenaran... maka berlomba-lombalah berbuat kebajikan. Hanya kepada Allah kamu semua kembali... (QS. Al-Ma'idah: 48)",
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Tinjauan Tafsir At-Tanwir dan Tafsir Al-Azhar",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam pandangan **Tafsir At-Tanwir** (Majelis Tarjih Muhammadiyah), konsep Fastabiqul Khairat menegaskan bahwa umat Islam tidak boleh pasif atau reaktif, melainkan harus proaktif (mengambil inisiatif pertama) dalam rekayasa sosial dan pembangunan peradaban. Kebaikan (Khairat) di sini bermakna luas, tidak hanya ibadah mahdhah di masjid, tetapi inovasi sains, pengentasan kemiskinan, dan penegakan keadilan sosial.\n\nSementara itu, Buya Hamka dalam **Tafsir Al-Azhar** memberikan penekanan yang tajam bahwa perselisihan teologis di dunia ini biarlah menjadi hak Allah untuk memutuskannya di akhirat (إِلَى اللَّهِ مَرْجِعُكُمْ جَمِيعًا). Tugas manusia saat hidup di dunia bukanlah saling mengkafirkan atau berdebat tanpa ujung, melainkan berlomba secara produktif siapa yang paling banyak memberikan manfaat nyata bagi sesama manusia.</p>",
+                        "title": "B. Tafsir At-Tanwir, Al-Azhar, dan Ayat Pendukung",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam **Tafsir At-Tanwir**, Fastabiqul Khairat menegaskan umat Islam tidak boleh pasif, melainkan proaktif dalam rekayasa sosial dan pembangunan peradaban. Khairat mencakup ibadah mahdhah, inovasi sains, pengentasan kemiskinan, dan penegakan keadilan.\n\n**Buya Hamka** dalam Tafsir Al-Azhar menekankan bahwa perselisihan teologis diserahkan kepada Allah; tugas manusia di dunia adalah berlomba memberi manfaat nyata.\n\nAyat pendukung: QS. Al-Baqarah: 195 (berinfak dan jangan mencampakkan diri ke kebinasaan) serta QS. Al-A'raf: 56 (jangan membuat kerusakan di bumi setelah diperbaiki). Hadis riwayat Bukhari-Muslim: 'Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia.'</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Aplikasi Praktis bagi Murid SMK",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. **Di sekolah:** datang tepat waktu, membantu teman yang tertinggal materi, menjaga alat praktik, menjadi ketua kelompok yang adil.\n2. **Di rumah:** membantu orang tua tanpa diminta, menjaga adab digital, shalat berjamaah.\n3. **Di masyarakat:** ikut bakti sosial, menolong tetangga, menjaga lingkungan.\n4. **Target harian:** pilih 1 amal kebaikan proaktif setiap hari selama seminggu, catat, dan refleksi dampaknya.\n\nIndikator keberhasilan: murid mampu membaca ayat dengan tartil, menjelaskan makna fastabiqul khairat, dan menyusun rencana aksi kebaikan yang terukur.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -23,25 +31,34 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
-                "Al-Qur'an dan Terjemahannya, Kemenag RI."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       2: {
-        "ringkasan": "Iman bukanlah entitas tunggal yang kaku, melainkan sebuah pohon kebaikan yang rindang dengan 77 cabang (Syu'abul Iman), di mana setiap cabang saling melengkapi struktur integritas seorang muslim.",
+        "ringkasan": "Syu'abul Iman (cabang-cabang iman) mengajarkan bahwa iman adalah pohon kebaikan dengan puluhan cabang: keyakinan hati, ikrar lisan, dan amal perbuatan.",
         "sections": [
                 {
                         "title": "A. Pengertian dan Dimensi Syu'abul Iman",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Syu'abul Iman (Cabang-cabang Iman) didasarkan pada hadis sahih riwayat Imam Bukhari dan Muslim dari sahabat Abu Hurairah r.a. bahwa Rasulullah SAW bersabda: *\"Iman itu memiliki tujuh puluh lebih cabang. Cabang yang paling tinggi adalah ucapan Laa ilaaha illallah, dan yang paling rendah adalah menyingkirkan gangguan dari jalan. Dan rasa malu adalah salah satu cabang dari iman.\"*\n\nPara ulama seperti Imam Al-Baihaqi membaginya ke dalam tiga dimensi utama (Trilogi Iman):\n1. **Ma'rifatun bil Qalbi** (Ketetapan Hati): Mencakup keikhlasan, tawakkal, sabar, cinta kepada Allah dan Rasul-Nya, serta terbebas dari riya' dan hasad.\n2. **Iqrarun bil Lisan** (Ikrar Lisan): Membaca Al-Qur'an, menuntut ilmu, berdzikir, menjaga lisan dari fitnah, ghibah, dan dusta.\n3. **'Amalun bil Arkan** (Perbuatan Fisik/Sosial): Mendirikan shalat, menunaikan zakat, memuliakan tamu, hingga hal-hal yang bersifat kemasyarakatan seperti menjaga kelestarian lingkungan (menyingkirkan gangguan dari jalan).</p>",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Syu'abul Iman didasarkan pada hadis sahih riwayat Bukhari dan Muslim dari Abu Hurairah r.a.: iman memiliki tujuh puluh lebih cabang; yang tertinggi adalah Laa ilaaha illallah, yang terendah menyingkirkan gangguan dari jalan; dan malu adalah cabang iman.\n\nKlasifikasi ulama (Al-Baihaqi dkk):\n1. **Ma'rifatun bil Qalbi** — ketetapan hati: ikhlas, tawakkal, sabar, cinta kepada Allah dan Rasul, terbebas riya' dan hasad.\n2. **Iqrarun bil Lisan** — ikrar lisan: tilawah, ilmu, zikir, menjaga lisan dari fitnah/ghibah/dusta.\n3. **'Amalun bil Arkan** — perbuatan: shalat, zakat, memuliakan tamu, hingga menjaga lingkungan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Implementasi dalam Tinjauan Ibnu Katsir",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam **Tafsir Ibnu Katsir**, saat menjelaskan ayat-ayat tentang iman, ditegaskan bahwa iman dapat bertambah karena ketaatan dan berkurang karena kemaksiatan (*Yazidu bit-tha'ah wa yanqusu bil ma'shiyah*). Apabila seorang murid mengabaikan satu cabang iman, misalnya tidak menjaga lisannya di media sosial (dusta/hoaks), maka secara hakikat kualitas pohon imannya sedang keropos. Mempraktikkan syu'abul iman secara kaffah (menyeluruh) adalah satu-satunya jaminan terbentuknya karakter unggul yang tangguh dari gempuran demoralisasi era digital.</p>",
+                        "title": "B. Iman Bertambah dan Berkurang",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam tinjauan tafsir (Ibnu Katsir dll.), iman yazidu bit-tha'ah wa yanqusu bil ma'shiyah: bertambah karena ketaatan, berkurang karena kemaksiatan. Mengabaikan cabang iman (misalnya lisan di media sosial yang menyakiti) membuat kualitas iman keropos.\n\nBagi pelajar: jujur saat ujian, malu berbuat curang, membersihkan kelas, menghormati guru, dan menolong teman adalah cabang iman yang hidup.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Peta Implementasi di Kehidupan Murid",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buat 'pohon iman' pribadi:\n- Akar: syahadat & tauhid\n- Batang: shalat, jujur, disiplin\n- Cabang: menjaga lisan, malu berbuat buruk, peduli lingkungan, etos belajar\n- Buah: ketenangan hati, kepercayaan orang lain, prestasi yang berkah\n\nTugas: pilih 3 cabang yang lemah, tulis rencana perbaikan 7 hari, evaluasi di akhir pekan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -49,25 +66,36 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
                 "Kitab Mukhtashar Syu'abul Iman, Imam Al-Baihaqi.",
-                "Tafsir Ibnu Katsir, Penjelasan Ayat-Ayat Aqidah.",
                 "Shahih Al-Bukhari & Muslim."
         ]
 },
       3: {
-        "ringkasan": "Kemaksiatan batin (penyakit hati) seperti Foya-foya (Israf), Riya', Sum'ah, dan Prasangka Buruk (Su'udzan) adalah perusak amal kebaikan senyap yang menghancurkan kedamaian psikologis.",
+        "ringkasan": "Penyakit hati (israf/foya-foya, riya', sum'ah, su'udzan) merusak amal secara senyap dan merusak kesehatan mental-sosial; obatnya qana'ah, ikhlas, dan husnudzan.",
         "sections": [
                 {
-                        "title": "A. Bahaya Israf, Riya', dan Sum'ah",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Penyakit hati merupakan noda hitam yang mengotori kejernihan kalbu (qalb). \n- **Israf dan Tabdzir** (Berfoya-foya): Allah sangat membenci perilaku konsumtif dan boros. Dalam QS. Al-Isra: 27, Allah menyebut para pemboros sebagai 'saudara-saudara setan'. Dalam konteks pelajar modern, gaya hidup hedonis (memaksakan diri membeli barang *branded* hanya untuk eksistensi) adalah bentuk tabdzir yang merusak stabilitas ekonomi keluarga dan mentalitas diri.\n- **Riya' dan Sum'ah**: Riya' adalah melakukan ibadah atau kebaikan semata-mata agar **dilihat** oleh manusia (pencitraan). Sedangkan Sum'ah adalah beramal agar **didengar** (dibicarakan kehebatannya) oleh orang lain. Rasulullah SAW menyebut riya' sebagai *syirik asghar* (syirik kecil) karena secara diam-diam seseorang telah mensekutukan niatnya dari Allah kepada penilaian manusia.</p>",
+                        "title": "A. Israf, Riya', dan Sum'ah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>**Israf/Tabdzir** (berfoya-foya): boros dan hedonis. QS. Al-Isra': 27 menyebut pemboros saudara setan. Contoh pelajar: memaksakan gaya hidup branded demi eksistensi, menghamburkan uang jajan.\n\n**Riya'**: beramal agar dilihat orang (pencitraan). **Sum'ah**: beramal agar didengar/dibicarakan. Rasulullah menyebut riya' syirik asghar karena mensekutukan niat.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Pandangan Tafsir Al-Azhar tentang Su'udzan",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Terkait **Su'udzan** (Prasangka Buruk) dan Tajassus (Mencari-cari kesalahan orang lain), Buya Hamka dalam **Tafsir Al-Azhar** (saat menafsirkan QS. Al-Hujurat: 12) memperingatkan dengan tegas. Beliau mengibaratkan su'udzan sebagai racun sosiologis yang akan melahirkan ghibah (menggunjing), dan ghibah disamakan dengan memakan bangkai saudara sendiri. Masyarakat atau kelas yang dipenuhi dengan prasangka buruk tidak akan pernah bisa maju karena energinya habis untuk saling curiga dan meruntuhkan kredibilitas satu sama lain. Obat utamanya adalah Tabayyun (klarifikasi) dan Husnudzan (berbaik sangka).</p>",
+                        "title": "B. Su'udzan dan Bahaya Sosialnya",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>QS. Al-Hujurat: 12 melarang banyak prasangka; sebagian prasangka adalah dosa. Buya Hamka (Tafsir Al-Azhar) mengibaratkan su'udzan sebagai racun yang melahirkan ghibah; ghibah bagai memakan bangkai saudara sendiri.\n\nObat: tabayyun (klarifikasi), husnudzan, menahan komentar negatif di media sosial, dan sibuk memperbaiki diri.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Latihan Kebersihan Hati",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Audit niat sebelum berbuat baik: 'untuk siapa ini?'\n2. Batasi unggahan yang memamerkan ibadah/prestasi demi validasi.\n3. Latihan husnudzan: tulis 3 interpretasi baik sebelum menuduh.\n4. Latihan qana'ah: syukuri 5 nikmat harian.\n5. Minta maaf bila pernah men-judge teman tanpa bukti.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -75,24 +103,35 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA (Tafsir Surat Al-Hujurat).",
-                "Kitab Ihya Ulumuddin, Imam Al-Ghazali (Bab Ajaib al-Qalb)."
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
+                "Ihya Ulumuddin, Imam Al-Ghazali (Bab Ajaib al-Qalb)."
         ]
 },
       4: {
-        "ringkasan": "Dalam menetapkan syariat, Islam memiliki struktur hierarkis yang teratur mulai dari wahyu absolut (Al-Qur'an dan Sunnah) hingga rasionalitas ijtihadiyah (Ijma' dan Qiyas).",
+        "ringkasan": "Sumber hukum Islam berhierarki: Al-Qur'an, Sunnah, Ijma', dan Qiyas; ijtihad menjaga syariat tetap relevan di setiap zaman.",
         "sections": [
                 {
-                        "title": "A. Hierarki Sumber Hukum Islam",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Mayoritas ulama Ushul Fikih bersepakat bahwa urutan sumber hukum Islam yang disepakati (Muttafaq 'Alaih) adalah:\n1. **Al-Qur'an**: Firman Allah yang mutlak kebenarannya (Qath'i al-Wurud).\n2. **As-Sunnah (Al-Hadis)**: Segala ucapan, perbuatan, dan ketetapan Nabi Muhammad SAW yang berfungsi untuk memperjelas, merinci, dan mengukuhkan hukum dalam Al-Qur'an.\n3. **Ijma'**: Kesepakatan para mujtahid (ulama ahli ijtihad) dari umat Nabi Muhammad SAW pada suatu masa setelah wafatnya beliau terhadap suatu hukum syara'.\n4. **Qiyas**: Menganalogikan (menyamakan) hukum suatu masalah baru yang tidak ada nas-nya dengan masalah lama yang ada nas-nya karena adanya kesamaan 'illat (sebab atau motif hukum).</p>",
+                        "title": "A. Hierarki Sumber Hukum",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. **Al-Qur'an** — firman Allah, qath'i al-wurud.\n2. **As-Sunnah** — sabda, perbuatan, ketetapan Nabi; memperjelas Al-Qur'an.\n3. **Ijma'** — kesepakatan mujtahid pada suatu masa atas hukum syara'.\n4. **Qiyas** — menganalogikan masalah baru dengan masalah lama karena kesamaan 'illat.\n\nContoh: haramnya khamr diqiyaskan ke narkoba karena 'illat memabukkan/merusak akal.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Ijtihad Menurut Manhaj Tarjih Muhammadiyah",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam lingkungan Muhammadiyah, perumusan hukum difasilitasi oleh Majelis Tarjih dan Tajdid. Pendekatan yang digunakan tidak terikat (taqlid) pada satu mazhab fikih tertentu, melainkan menggunakan metode *Tarjih*, yaitu membandingkan berbagai dalil dan pendapat, lalu memilih (mentrajih) argumen yang paling kuat dalilnya (rajih) bersumber pada Al-Qur'an dan Sunnah Al-Maqbullah.\nJika masalah tersebut sepenuhnya baru (misal: hukum bayi tabung, e-money, kloning), maka digunakan pintu **Ijtihad Jama'i** (ijtihad kolektif) dengan mengikutsertakan pakar ilmu terkait (kedokteran, ekonomi) dipadukan dengan ilmuwan syariah. Ini merupakan cerminan nyata dari karakter Islam Berkemajuan yang diajarkan dalam Muhammadiyah.</p>",
+                        "title": "B. Ijtihad dan Manhaj Tarjih Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ijtihad adalah usaha sungguh-sungguh ulama untuk menetapkan hukum atas masalah yang tidak ada nash eksplisit. Di Muhammadiyah, Majelis Tarjih dan Tajdid mempraktikkan tarjih (memilih dalil terkuat) dan ijtihad jama'i (kolektif) bersama pakar lintas ilmu untuk isu modern: fintech, bioteknologi, dll.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Studi Kasus untuk Murid",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Analisis singkat (kerangka 4 sumber):\n- Jual beli online & dropship\n- Menggunakan AI untuk tugas sekolah (etika jujur)\n- Zakat profesi/penghasilan magang\n\nLatihan: pilih 1 kasus, tulis dalil/prinsip dari Al-Qur'an-Sunnah, bandingkan pendapat, simpulkan sikap etis sebagai muslim.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -100,188 +139,249 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
                 "Himpunan Putusan Tarjih (HPT) Muhammadiyah.",
-                "Ilmu Ushul Fikih, Prof. Dr. Abdul Wahhab Khallaf."
+                "Ilmu Ushul Fikih, Abdul Wahhab Khallaf."
         ]
 },
       5: {
-        "ringkasan": "Kajian mendalam mengenai Sejarah Perkembangan Islam yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Sejarah perkembangan Islam mengajarkan ibrah: dakwah yang damai, beradab, dan beradab budaya menghasilkan peradaban yang kuat.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Sejarah Perkembangan Islam",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Sejarah Perkembangan Islam</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Sejarah Perkembangan Islam menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis sejarah dan peran tokoh ulama penyebar ajaran Islam di Indonesia; meyakini perkembangan peradaban di Indonesia adalah sunatullah.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Sejarah Perkembangan Islam berbasis Kurikulum Merdeka."
+                        "title": "A. Dinamika Awal Perkembangan Islam",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Islam lahir di Makkah, berkembang di Madinah, lalu menyebar ke berbagai penjuru melalui perdagangan, pendidikan, dan keteladanan. Karakter dakwah Nabi: hikmah, mau'izhah hasanah, dan dialog yang baik (QS. An-Nahl: 125).\n\nFase penting: periode Makkah (pembentukan akidah), Madinah (masyarakat madani), Khulafa' Rasyidin, dinasti-dinasti besar, hingga era modern pembaruan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menelaah sejarah masuk dan berkembangnya Islam sesuai konteks materi bab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengambil ibrah (pelajaran) dari strategi dakwah para tokoh Islam terdahulu.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Meneladani sikap gigih dan moderat dalam berdakwah di lingkungan sekitar.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Faktor Keberhasilan Dakwah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Keteladanan akhlak (uswah hasanah)\n2. Keadilan sosial dan perlindungan kaum lemah\n3. Literasi & ilmu pengetahuan (budaya baca-tulis)\n4. Adaptasi kultural tanpa mengorbankan tauhid\n5. Jaringan perdagangan yang jujur\n\nBagi murid: dakwah masa kini bisa lewat konten positif, prestasi skill, dan pelayanan masyarakat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Sejarah Perkembangan Islam</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Ibrah untuk Generasi SMK",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sejarah bukan hafalan tahun semata, melainkan sumber strategi hidup: sabar menghadapi ujian, berani berinovasi, jujur dalam usaha, dan menjaga persatuan. Buat mind map: '3 tokoh sejarah Islam + 1 nilai yang saya praktikkan minggu ini'.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       6: {
-        "ringkasan": "Kajian mendalam mengenai Menjauhi Pergaulan Bebas dan Perbuatan Zina yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Menjauhi pergaulan bebas dan zina adalah perlindungan syariat atas martabat, kesehatan, dan masa depan generasi muda.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Menjauhi Pergaulan Bebas dan Perbuatan Zina",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menjauhi Pergaulan Bebas dan Perbuatan Zina</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menjauhi Pergaulan Bebas dan Perbuatan Zina menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis ayat Al-Qur’an dan hadis tentang larangan pergaulan bebas dan zina; membiasakan menghindari pergaulan bebas dan menjaga kehormatan diri.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menjauhi Pergaulan Bebas dan Perbuatan Zina berbasis Kurikulum Merdeka."
+                        "title": "A. Landasan Naqli",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>QS. Al-Isra': 32 melarang mendekati zina karena ia keji dan jalan buruk. Larangan 'mendekati' berarti menutup celah yang mengantar pada zina: pacaran tanpa batasan, konten porno, khalwat, dll.\n\nQS. An-Nur mengatur adab interaksi, menjaga pandangan, dan sanksi sosial-moral atas perzinaan. Hadis-hadis menekankan menjaga faraj sebagai bagian iman.</p>",
+                        "dalil": "وَلَا تَقْرَبُوا الزِّنَا ۖ إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا",
+                        "arti": "Dan janganlah kamu mendekati zina; (zina) itu sungguh suatu perbuatan keji, dan suatu jalan yang buruk. (QS. Al-Isra': 32)",
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis makna berbusana muslim/muslimah sebagai pelindung harkat martabat manusia.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membaca dan menganalisis dalil-dalil Al-Qur'an dan Hadis tentang larangan pergaulan bebas dan zina.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menghindari perilaku yang mendekati zina dalam kehidupan sehari-hari sebagai bentuk penjagaan diri.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Dampak dan Faktor Pemicu",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dampak: kehamilan di luar nikah, putus sekolah, penyakit, kerusakan mental, hilangnya kepercayaan keluarga, dosa di sisi Allah.\n\nPemicu modern: pergaulan tanpa kendali, FOMO media sosial, pornografi digital, lemahnya kontrol diri, minimnya kegiatan positif.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menjauhi Pergaulan Bebas dan Perbuatan Zina</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Strategi Proteksi Diri",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Perkuat iman & shalat tepat waktu\n2. Pilih teman yang mendukung kebaikan\n3. Batasi konten & waktu gawai\n4. Sibuk dengan skill, olahraga, organisasi positif (IPM, dll.)\n5. Jaga pandangan dan batasan interaksi\n6. Buka komunikasi dengan orang tua/guru\n\nProduk murid: 'safety commitment' 5 butir yang ditandatangani pribadi.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       7: {
-        "ringkasan": "Kajian mendalam mengenai Mewujudkan Syu'abul Iman dalam Kehidupan yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Mewujudkan Syu'abul Iman berarti menghidupkan cabang iman dalam praktik harian: jujur, syukur, menepati janji, dan peduli sosial.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Mewujudkan Syu'abul Iman dalam Kehidupan",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Mewujudkan Syu'abul Iman dalam Kehidupan</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Mewujudkan Syu'abul Iman dalam Kehidupan menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis makna syu'ab al-iman, pengertian, dalil, macam dan manfaatnya; menerapkan sikap cerminan cabang iman.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Mewujudkan Syu'abul Iman dalam Kehidupan berbasis Kurikulum Merdeka."
+                        "title": "A. Dari Teori ke Pembiasaan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Semester genap menekankan aktualisasi: iman terbukti saat diuji di bengkel, ujian, transaksi, dan media sosial. Cabang iman yang relevan pelajar: jujur, amanah, malu berbuat curang, menyingkirkan gangguan, memuliakan tamu/teman, dan menjaga kebersihan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis hikmah dan manfaat implementasi cabang-cabang iman.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi tanda-tanda orang beriman berdasarkan perilaku nyata di masyarakat.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerapkan nilai-nilai keimanan untuk membentuk pribadi yang konsisten (istiqamah).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Tiga Fokus Amaliah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. **Jujur** — dalam ujian, laporan magang, dan komunikasi.\n2. **Syukur** — menerima hasil usaha, tidak iri, berbagi.\n3. **Menepati janji** — deadline tugas, janji dengan orang tua, komitmen organisasi.\n\nDalil: 'Tanda orang munafik tiga: dusta, ingkar janji, khianat amanah' (Bukhari-Muslim) — maka lawannya adalah ciri orang beriman.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Mewujudkan Syu'abul Iman dalam Kehidupan</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Proyek Kebiasaan 14 Hari",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid menyusun checklist harian 5 cabang iman, centang tiap hari, refleksi mingguan: apa yang mudah, apa yang sulit, dukungan apa yang dibutuhkan. Presentasikan ringkas di kelas.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       8: {
-        "ringkasan": "Kajian mendalam mengenai Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Penyakit hati lanjutan (marah, hasad, sombong, dusta) merusak hubungan dan amal; obatnya sabar, qana'ah, tawadhu', dan kejujuran.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis manfaat menghindari akhlak mażmūmah dan membiasakan diri menampilkan akhlak maḥmūdah.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong) berbasis Kurikulum Merdeka."
+                        "title": "A. Identifikasi Empat Penyakit",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>**Ghadhab (marah):** mudah meledak, kekerasan verbal/fisik. **Hasad:** iri atas nikmat orang lain. **Sombong (takabbur):** merasa lebih hebat. **Dusta:** mengingkari fakta demi untung/gengsi.\n\nHadis: hasad memakan kebaikan seperti api memakan kayu bakar. Marah dikendalikan dengan diam, wudhu, dan menjauh dari situasi memanas.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis penyebab dan cara menghindari sifat temperamental (Ghadhab) dan amarah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi bahaya sifat hasad, takabbur (sombong), dan perilaku bohong.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mempraktikkan sikap jujur and rendah hati untuk menjadi pribadi muslim utama.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Dampak di Sekolah dan Kerja",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tim magang/praktik yang hasad dan dusta akan hancur kepercayaannya. Sombong menghambat belajar. Marah merusak keselamatan kerja. Industri membutuhkan soft skill: sabar, jujur, kolaboratif.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menghindari Penyakit Hati (Ghadhab, Hasad, Sombong, Pembohong)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Latihan Pengendalian Diri",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Teknik 10 detik sebelum membalas\n2. Doa dan zikir saat emosi naik\n3. Syukur atas nikmat orang lain (mendoakan, bukan mendengki)\n4. Tawadhu': akui kesalahan, hargai teman\n5. Jurnal kejujuran: catat 1 situasi diuji dusta dan pilihan jujurmu</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       9: {
-        "ringkasan": "Kajian mendalam mengenai Menerapkan Al-Kulliyatu Al-Khamsah yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Al-Kulliyyat al-Khamsah (lima tujuan syariat) menjaga agama, jiwa, akal, keturunan, dan harta sebagai fondasi kemaslahatan.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Menerapkan Al-Kulliyatu Al-Khamsah",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menerapkan Al-Kulliyatu Al-Khamsah</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menerapkan Al-Kulliyatu Al-Khamsah menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis implementasi fikih mu‘āmalah dan al-kulliyyāt al-khamsah (lima prinsip dasar hukum Islam).\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menerapkan Al-Kulliyatu Al-Khamsah berbasis Kurikulum Merdeka."
+                        "title": "A. Konsep Maqashid Syariah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Al-Kulliyyat al-Khamsah adalah lima prinsip pokok yang dijaga syariat:\n1. **Hifz ad-Din** — memelihara agama\n2. **Hifz an-Nafs** — memelihara jiwa\n3. **Hifz al-'Aql** — memelihara akal\n4. **Hifz an-Nasl** — memelihara keturunan\n5. **Hifz al-Mal** — memelihara harta\n\nSetiap hukum Islam pada hakikatnya mengarah pada perlindungan salah satu atau lebih dari lima ini.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian dan urutan lima prinsip dasar hukum Islam (Al-Kulliyatu Al-Khamsah).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis macam-macam dan cara menjaga Al-Kulliyatu Al-Khamsah dalam kehidupan modern.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan hidup terarah sesuai koridor jalan Ilahi demi keselamatan dunia batin.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Contoh Penerapan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Shalat & dakwah → hifz din. Larangan bunuh diri/kekerasan → hifz nafs. Larangan khamr/narkoba → hifz aql. Larangan zina → hifz nasl. Larangan mencuri/korupsi/riba → hifz mal.\n\nDi SMK: K3 bengkel = hifz nafs; jujur dalam inventaris alat = hifz mal; belajar sungguh-sungguh = hifz aql.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menerapkan Al-Kulliyatu Al-Khamsah</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Analisis Kasus Murid",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pilih 1 kebijakan sekolah (larangan merokok, aturan HP, K3, seragam, kejujuran ujian) lalu petakan: prinsip maqashid mana yang dilindungi? Bagaimana sikapmu mendukungnya?</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
+                "Kajian Maqashid asy-Syari'ah (literatur ushul fikih)."
         ]
 },
       10: {
-        "ringkasan": "Kajian mendalam mengenai Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Tokoh ulama Nusantara menyebarkan Islam dengan ilmu, akhlak, dan strategi damai; keteladanan mereka relevan bagi pelajar hari ini.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis sejarah dan peran tokoh ulama penyebar ajaran Islam di Indonesia; meyakini perkembangan peradaban di Indonesia adalah sunatullah.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia berbasis Kurikulum Merdeka."
+                        "title": "A. Jejak Ulama Nusantara",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ulama seperti Wali Songo, Syekh Nawawi al-Bantani, Syekh Yusuf al-Makassari, dan banyak ulama lokal menggabungkan kedalaman ilmu dengan pendekatan budaya. Mereka menulis kitab, mendidik santri, dan membangun jaringan dagang-dakwah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menelaah sejarah perkembangan kesultanan-kesultanan Islam di wilayah Indonesia.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis strategi dakwah dan keteladanan para tokoh penyebar Islam di Nusantara.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menumbuhkan rasa cinta tanah air dan menghargai jasa ulama dalam membentuk identitas bangsa.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Strategi Dakwah yang Efektif",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Keteladanan pribadi\n2. Pendidikan berjenjang\n3. Adaptasi seni/budaya yang tidak bertentangan tauhid\n4. Pelayanan sosial\n5. Literasi kitab & bahasa\n\nHasilnya: Islam diterima luas tanpa pemaksaan massal.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Peran Tokoh Ulama dalam Penyebaran Islam di Indonesia</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Meneladani sebagai Pelajar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ambil 1 tokoh: tulis biografi singkat, 3 nilai keteladanan, 1 aksi nyata minggu ini (misal: mengajar adik/teman, membuat konten edukatif, membantu masjid). Presentasikan 3 menit.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
     },
     XI: {
       1: {
-        "ringkasan": "Islam memuliakan fungsi akal manusia. Berpikir kritis (Tafakur) atas fenomena alam adalah jalan tol menuju keimanan yang kokoh dan peradaban sains yang gemilang.",
+        "ringkasan": "Berpikir kritis (tafakur) atas ayat kauniyah memadukan zikir dan pikir menuju keimanan kokoh dan etos sains.",
         "sections": [
                 {
                         "title": "A. Telaah QS. Ali 'Imran 190-191",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dua ayat agung ini merupakan tonggak lahirnya epistemologi sains dalam Islam. \nUlul Albab (orang-orang yang memiliki akal murni) dicirikan dengan sintesis dua aktivitas yang tidak terpisahkan: **Dzikir** (Mengingat Allah dalam setiap kondisi—berdiri, duduk, berbaring) dan **Fikir** (Melakukan perenungan rasional analitis atas keajaiban penciptaan struktur langit dan bumi).\n\nPerpaduan antara zikir dan pikir ini menghasilkan kesimpulan mutlak yang terucap dari lisan mereka: *Rabbana ma khalaqta hadza bathila* (Ya Tuhan kami, tiadalah Engkau menciptakan semua ini sia-sia).</p>",
-                        "dalil": "الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَٰذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ",
-                        "arti": "(Yaitu) orang-orang yang mengingat Allah sambil berdiri atau duduk atau dalam keadaan berbaring dan mereka memikirkan tentang penciptaan langit dan bumi (seraya berkata): 'Ya Tuhan kami, tiadalah Engkau menciptakan ini dengan sia-sia, Maha Suci Engkau, maka peliharalah kami dari siksa neraka.'",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ulul Albab dicirikan memadukan **zikir** (mengingat Allah dalam segala kondisi) dan **pikir** (menganalisis penciptaan langit dan bumi). Kesimpulannya: ciptaan Allah tidak sia-sia; mereka memohon perlindungan dari azab.</p>",
+                        "dalil": "الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَٰذَا بَاطِلًا",
+                        "arti": "(Yaitu) orang-orang yang mengingat Allah sambil berdiri, duduk, atau berbaring, dan mereka memikirkan penciptaan langit dan bumi... (QS. Ali 'Imran: 191)",
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Tafsir At-Tanwir dan Urgensi Riset Sains",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dalam metodologi **Tafsir At-Tanwir**, pendekatan burhani (rasional-saintifik) sangat ditekankan saat membedah ayat-ayat kauniyah (ayat tentang alam semesta). Ayat ini menjadi basis legitimasi bahwa umat Islam wajib menguasai ilmu pengetahuan (astronomi, fisika, biologi, dll). Ketertinggalan umat Islam dewasa ini bukan karena agamanya yang salah, melainkan karena umatnya yang mengabaikan perintah 'Tafakur'. Bagi murid Muhammadiyah (STEMDA), mengembangkan teknologi terapan di bengkel sekolah atau laboratorium komputer sejatinya adalah bentuk nyata dari pengamalan QS. Ali 'Imran: 190-191.</p>",
+                        "title": "B. Urgensi Riset dan Literasi Sains",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tafsir At-Tanwir menekankan pendekatan burhani (rasional-saintifik) pada ayat kauniyah. Ketertinggalan umat bukan karena agama, melainkan karena meninggalkan perintah tafakur. Di SMK, riset terapan, troubleshooting mesin, dan inovasi produk adalah amal pikir.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Latihan Berpikir Kritis Islami",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Gunakan langkah: amati fenomena → tanya 'mengapa/bagaimana' → kaji dalil/ilmu → simpulkan hikmah → rancang aksi. Contoh: hemat energi bengkel, daur ulang limbah praktik, desain produk bermanfaat.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -289,132 +389,34 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Tafsir At-Tanwir, Majelis Tarjih PP Muhammadiyah.",
-                "Tafsir Ibnu Katsir."
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       2: {
-        "ringkasan": "Kajian mendalam mengenai Membuktikan Keimanan dengan Akhlak Terpuji yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Keimanan terbukti melalui akhlak terpuji: jujur, amanah, rendah hati, dan etis dalam pergaulan.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Membuktikan Keimanan dengan Akhlak Terpuji",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Membuktikan Keimanan dengan Akhlak Terpuji</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Membuktikan Keimanan dengan Akhlak Terpuji menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis cabang-cabang iman, keterkaitan antara iman, Islam dan ihsan; membiasakan sikap tanggung jawab dan jujur.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Membuktikan Keimanan dengan Akhlak Terpuji berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis pentingnya memenuhi janji dan mensyukuri nikmat sebagai bentuk keimanan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi cara menjaga lisan dan menutupi aib orang lain dalam pergaulan sosial.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan akhlak terpuji sebagai cerminan integritas pribadi muslim di lingkungan sekolah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Membuktikan Keimanan dengan Akhlak Terpuji</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      3: {
-        "ringkasan": "Kajian mendalam mengenai Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid dapat memecahkan masalah perkelahian antarpelajar, minuman keras, dan narkoba dalam Islam; membiasakan sikap taat aturan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis dampak negatif perundungan (bullying), perkelahian pelajar, dan perjudian.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi dalil-dalil larangan perilaku menyimpang dan penyakit sosial.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengembangkan sikap peduli dan menciptakan lingkungan sekolah yang aman serta harmonis.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menghindari Penyakit Sosial (Perundungan, Perkelahian, dan Perjudian)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      4: {
-        "ringkasan": "Kajian mendalam mengenai Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis ketentuan pelaksanaan khutbah, tablig dan dakwah.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian, syarat, rukun, dan etika dalam khutbah, tablig, dan dakwah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis perbedaan karakteristik antara khutbah, tablig, dan dakwah dalam penyebaran agama.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyusun draf materi dakwah singkat yang santun dan relevan dengan problematika remaja.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menebarkan Islam dengan Santun Melalui Khutbah, Tablig, dan Dakwah</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      5: {
-        "ringkasan": "Kajian mendalam mengenai Meneladani Jejak Para Ulama’ Indonesia yang Mendunia yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Meneladani Jejak Para Ulama’ Indonesia yang Mendunia",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Meneladani Jejak Para Ulama’ Indonesia yang Mendunia</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Meneladani Jejak Para Ulama’ Indonesia yang Mendunia menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis peran dan keteladanan tokoh ulama penyebar ajaran Islam di Indonesia.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Meneladani Jejak Para Ulama’ Indonesia yang Mendunia berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menelaah biografi dan karya tokoh ulama Nusantara (Syekh Nawawi al-Bantani, dkk) yang diakui dunia.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis kegigihan dan strategi dakwah para ulama dalam menyebarkan Islam.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Meneladani semangat belajar dan pengabdian ulama Indonesia dalam memajukan peradaban.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Meneladani Jejak Para Ulama’ Indonesia yang Mendunia</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      6: {
-        "ringkasan": "Toleransi (Tasamuh) dalam Islam diatur secara jelas: toleransi sosial-kemanusiaan harus dijalankan tanpa batas, namun kompromi akidah adalah batas merah yang tidak boleh dilanggar.",
-        "sections": [
-                {
-                        "title": "A. Dalil Moderasi: QS. Yunus 40-41",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sikap saling menghargai perbedaan pandangan direkam secara apik dalam firman-Nya. Allah menjelaskan bahwa manusia terbagi menjadi dua golongan: ada yang percaya kepada kebenaran Al-Qur'an dan ada yang bersikeras mengingkarinya. \nAllah memberikan instruksi luar biasa kepada Rasulullah SAW ketika menghadapi penolakan tersebut, yakni dengan mengucapkan: *\"Bagiku pekerjaanku, dan bagimu pekerjaanmu. Kamu berlepas diri terhadap apa yang aku kerjakan dan aku berlepas diri terhadap apa yang kamu kerjakan.\"*</p>",
-                        "dalil": "وَإِنْ كَذَّبُوكَ فَقُلْ لِي عَمَلِي وَلَكُمْ عَمَلُكُمْ ۖ أَنْتُمْ بَرِيئُونَ مِمَّا أَعْمَلُ وَأَنَا بَرِيءٌ مِمَّا تَعْمَلُونَ",
-                        "arti": "Jika mereka mendustakan kamu, maka katakanlah: 'Bagiku pekerjaanku dan bagimu pekerjaanmu. Kamu berlepas diri terhadap apa yang aku kerjakan dan aku pun berlepas diri terhadap apa yang kamu kerjakan.'",
+                        "title": "A. Iman dan Akhlak tidak Terpisah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Nabi diutus untuk menyempurnakan akhlak. Iman tanpa akhlak menjadi klaim kosong; akhlak tanpa iman mudah rapuh. Bukti iman: menepati janji, menjaga amanah, berkata benar, dan berlaku adil.</p>",
+                        "dalil": null,
+                        "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Wasathiyah Islam dalam Pandangan Al-Azhar",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buya Hamka dalam **Tafsir Al-Azhar** menjabarkan bahwa ayat ini adalah puncak dari kebebasan beragama dan pengakuan terhadap realitas kemajemukan (pluralitas). Toleransi Islami tidak menuntut seorang muslim untuk mengakui kebenaran teologi agama lain (sinkretisme), melainkan memberikan jaminan hak hidup yang aman, bekerja sama dalam urusan kemasyarakatan (muamalah kemanusiaan), serta menghindari tindakan persekusi dan pemaksaan keyakinan. Gagasan ini di Muhammadiyah diejawantahkan melalui pembangunan sarana kesehatan dan pendidikan di wilayah-wilayah minoritas muslim tanpa melakukan diskriminasi pelayanan.</p>",
+                        "title": "B. Indikator Akhlak Terpuji Pelajar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Jujur dalam ujian dan laporan\n2. Hormat pada guru & orang tua\n3. Sopan di media sosial\n4. Disiplin K3 dan jadwal\n5. Tolong-menolong tanpa pamrih\n6. Menutup aib teman, bukan menyebar skandal</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Proyek 'Bukti Iman Seminggu'",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pilih 3 indikator akhlak, catat bukti harian, minta umpan balik teman/guru. Refleksi: mana yang meningkat, mana yang perlu dukungan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -422,269 +424,493 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
-                "Risalah Islam Berkemajuan (Muktamar ke-48)."
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
+        ]
+},
+      3: {
+        "ringkasan": "Penyakit sosial (perundungan, perkelahian, perjudian) merusak aman sosial sekolah; Islam menuntut pencegahan dan pemulihan yang adil.",
+        "sections": [
+                {
+                        "title": "A. Bentuk dan Dampak",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perundungan: fisik, verbal, sosial, siber. Perkelahian: kekerasan antarpelajar. Perjudian: termasuk judi online. Dampak: trauma, putus sekolah, kriminalitas, dosa sosial.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Landasan Syariat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Larangan menganiaya, menghina, dan merendahkan (QS. Al-Hujurat: 11). Larangan memakan harta batil. Prinsip la dharar wa la dhirar (jangan membahayakan diri dan orang lain).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Peran Murid sebagai Agen Damai",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Tolak budaya bully; bela korban dengan aman\n2. Laporkan ke guru BK/wali kelas\n3. Mediasi damai bila mampu\n4. Hindari grup/konten yang memicu konflik\n5. Isi waktu dengan kompetisi positif (lomba skill, olahraga)</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
+        ]
+},
+      4: {
+        "ringkasan": "Dakwah santun melalui khutbah, tablig, dan komunikasi bijak adalah cara menebarkan Islam tanpa kekerasan.",
+        "sections": [
+                {
+                        "title": "A. Etika Dakwah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>QS. An-Nahl: 125: dakwah dengan hikmah, pelajaran baik, dan bantahan terbaik. Dakwah bukan cercaan; isi harus benar, cara harus adab, tujuan hidayah bukan kemenangan debat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Bentuk Praktis di Sekolah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Khutbah Jumat singkat, kultum, konten edukatif, peer counseling Islami, keteladanan di bengkel. Susun draf 3–5 menit: pembuka, dalil, contoh, ajakan, penutup doa.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Latihan Produksi Pesan Dakwah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Setiap murid membuat naskah kultum 400–600 kata bertema masalah remaja + solusi syar'i, lalu unjuk kerja 3 menit. Peer assessment: kejelasan, adab bahasa, relevansi.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
+        ]
+},
+      5: {
+        "ringkasan": "Ulama Indonesia yang mendunia meneladankan ketekunan ilmu, dakwah, dan kontribusi peradaban.",
+        "sections": [
+                {
+                        "title": "A. Potret Keteladanan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tokoh seperti Syekh Nawawi al-Bantani, Syekh Mahfudz at-Tarmasi, dan ulama kontemporer menunjukkan bahwa santri Nusantara mampu bersinar di tingkat global lewat penguasaan kitab, bahasa, dan akhlak.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Nilai yang Diwariskan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Istiqamah belajar, tawadhu', menulis/mengajar, jaringan ilmiah, cinta tanah air, dan khidmah pada umat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Tugas Biografi Mini",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pilih 1 ulama: riwayat singkat, karya, 3 nilai, relevansi bagi pelajar SMK. Presentasi poster/digital 1 halaman.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
+        ]
+},
+      6: {
+        "ringkasan": "Mencintai ilmu pengetahuan dan teknologi adalah perintah syariat yang berakar pada Iqra' dan isyarat ayat kauniyah.",
+        "sections": [
+                {
+                        "title": "A. Landasan Al-Qur'an dan Hadis",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>QS. Al-Alaq: 1-5 perintah membaca/menggali ilmu. QS. Ar-Rahman: 33 mendorong penjelajahan ilmu dengan 'sulthan' (kekuatan/ilmu). Hadis tentang keutamaan menuntut ilmu sangat banyak.</p>",
+                        "dalil": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+                        "arti": "Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan. (QS. Al-Alaq: 1)",
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Etika Iptek bagi Muslim",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Iptek harus maslahat, tidak merusak, tidak menipu, tidak merendahkan martabat manusia. AI, otomotif, informatika: gunakan untuk efisiensi dan kebaikan, bukan curang atau mudarat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Integrasi Mapel Produktif & PAI",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buat jurnal: 1 skill teknis yang dipelajari minggu ini + nilai Islam yang menyertainya (amanah, itqan/profesional, jujur, keselamatan).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       7: {
-        "ringkasan": "Kajian mendalam mengenai Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Menjaga kehormatan serta menghiasi diri dengan ikhlas, malu (haya'), dan zuhud menguatkan keimanan remaja.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis dan membiasakan muru'ah, ikhlas, haya', dan zuhud sebagai penguatan keimanan dan akhlak mulia pelajar muslim.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud berbasis Kurikulum Merdeka."
+                        "title": "A. Konsep Muru'ah, Ikhlas, Haya', Zuhud",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>**Muru'ah:** menjaga kehormatan diri. **Ikhlas:** amal semata karena Allah. **Haya':** malu berbuat dosa. **Zuhud:** tidak diperbudak dunia, tetap produktif.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis definisi, dalil, dan pentingnya menjaga kehormatan diri dengan hiasan muru'ah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi ciri-ciri serta menerapkan sikap ikhlas, malu (haya), dan zuhud dalam kehidupan sehari-hari.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan perilaku yang mencerminkan pengendalian diri, ketulusan hati, serta karakter pelajar yang beriman dan berakhlak mulia.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Tantangan Era Digital",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Budaya pamer, validasi like, flexing, dan konten vulgar mengikis haya' dan ikhlas. Latihan: puasa media, filter konten, niat ulang sebelum unggah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menguatkan Keimanan dengan Menjaga Kehormatan dan Menghiasi Diri dengan Sifat Ikhlas, Malu, dan Zuhud</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Lembar Komitmen Karakter",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tuliskan 5 janji perilaku (jujur, menutup aurat secara maknawi/adab, menahan ghibah, sederhana, fokus belajar) dan evaluasi 2 mingguan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       8: {
-        "ringkasan": "Kajian mendalam mengenai Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Minuman keras dan narkoba merusak agama, akal, dan bangsa; generasi muda wajib anti-narkoba secara ilmiah dan syar'i.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menjelaskan dan menganalisis larangan khamr serta narkoba dari sudut syariat dan hukum negara, memahami bahayanya, serta berkomitmen sebagai generasi anti minuman keras dan narkoba.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa berbasis Kurikulum Merdeka."
+                        "title": "A. Larangan Syariat dan Hukum Negara",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Khamr diharamkan karena memabukkan dan menutupi akal. Narkoba diqiyaskan pada khamr dan berdampak lebih destruktif. Negara mengatur sanksi tegas pada peredaran narkoba.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian minuman keras (khamr) dan narkoba.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis dalil larangan minuman keras dan narkoba dari Al-Quran dan Hadis, serta keterkaitannya dengan hukum positif negara.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menelaah bahaya nyata minuman keras dan narkoba bagi kesehatan akal, jiwa, dan raga.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menumbuhkan komitmen dan aksi nyata sebagai Pelajar Muhammadiyah yang anti terhadap minuman keras dan narkoba.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Bahaya Nyata",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kecanduan, kerusakan organ, putus sekolah, kriminalitas, overdosis, hancurnya keluarga. 'Gateway' sering dari coba-coba dan tekanan teman.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Generasi Muda Menghindari Minuman Keras dan Narkoba demi Keselamatan Agama dan Bangsa</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Aksi Nyata Anti-Narkoba",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Edukasi sebaya, tolak ajakan tegas, laporkan sindikat ke pihak berwenang, isi hidup dengan prestasi. Susun kampanye poster/video 60 detik bertema anti-narkoba.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       9: {
-        "ringkasan": "Kajian mendalam mengenai Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Ekonomi Islam (asuransi syariah, bank syariah, koperasi) menghadirkan keberkahan dan keadilan transaksi.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis implementasi ekonomi Islam melalui asuransi syariah, bank syariah, dan koperasi syariah, serta menumbuhkan kesadaran menggunakan produk ekonomi syariah.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam berbasis Kurikulum Merdeka."
+                        "title": "A. Prinsip Ekonomi Islam",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Larangan riba, gharar (ketidakjelasan), maisir (judi); penekanan pada akad yang jelas, keadilan, dan tolong-menolong (ta'awun). Harta adalah amanah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian, prinsip, dan implementasi Asuransi Syariah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis ketentuan, fungsi, dan operasional Bank Syariah dalam perekonomian.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Memahami konsep, pengelolaan, dan asas gotong royong dalam Koperasi Syariah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menumbuhkan kesadaran dan kebanggaan untuk mencintai serta menggunakan produk ekonomi syariah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Lembaga Keuangan Syariah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>**Bank syariah:** bagi hasil, jual beli, sewa — bukan bunga. **Asuransi syariah (takaful):** tolong-menolong. **Koperasi syariah:** gotong royong ekonomi warga.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Meraih Keberkahan dan Kemaslahatan dengan Menjalankan Ekonomi Islam</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Literasi Keuangan Murid",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Simulasikan akad sederhana (murabahah/tabungan syariah), bandingkan dengan riba, tulis sikap: memilih produk halal-thayyib dalam skala pelajar.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
+                "Fatwa DSN-MUI terkait perbankan & asuransi syariah (ringkas)."
         ]
 },
       10: {
-        "ringkasan": "Kajian mendalam mengenai Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Kebangkitan Islam modern digali dari tokoh pembaru (termasuk K.H. Ahmad Dahlan) dan semangat tajdid.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menelaah tokoh dan faktor kebangkitan Islam modern serta meneladani semangat pembaruan untuk memajukan peradaban umat.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern berbasis Kurikulum Merdeka."
+                        "title": "A. Tokoh dan Gagasan Pembaruan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jamaluddin al-Afghani, Muhammad Abduh, Rasyid Ridha mendorong umat bangkit lewat pendidikan dan rasionalitas. Di Nusantara, K.H. Ahmad Dahlan menerjemahkan tajdid menjadi sekolah, rumah sakit, dan gerakan sosial.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menelaah riwayat hidup, pemikiran, dan gerakan pembaruan tokoh-tokoh Islam modern: Jamaludin al-Afghani, Muhammad Abduh, Rasyid Ridha, dan K.H. Ahmad Dahlan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis faktor-faktor pemicu kebangkitan dan pembaruan peradaban Islam di masa modern.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Meneladani kegigihan, semangat juang, dan inovasi para ulama pembaru untuk memajukan peradaban umat manusia saat ini.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Faktor Kebangkitan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kesadaran keterbelakangan, kontak ide reformasi, pendidikan modern, organisasi, dan etos kerja sosial.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Mengambil Pelajaran dari Kebangkitan Islam pada Masa Modern</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Menjadi Agen Pembaruan Kecil",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1 inovasi kebaikan di kelas/bengkel (efisiensi, kebersihan, literasi) + 1 kebiasaan belajar baru. Laporkan dampaknya.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
     },
     XII: {
       1: {
-        "ringkasan": "Kajian mendalam mengenai Sabar dan Tabah dalam Menghadapi Ujian dan Musibah yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Sabar dan tabah menghadapi ujian serta musibah adalah ciri orang beriman; dibangun di atas QS. Al-Baqarah: 155-157 dan praktik tawakal.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Sabar dan Tabah dalam Menghadapi Ujian dan Musibah",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Sabar dan Tabah dalam Menghadapi Ujian dan Musibah</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Sabar dan Tabah dalam Menghadapi Ujian dan Musibah menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid dapat menganalisis Al-Qur'an dan Hadis tentang musibah, ujian, sabar dan tawakal.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Sabar dan Tabah dalam Menghadapi Ujian dan Musibah berbasis Kurikulum Merdeka."
+                        "title": "A. Tafsir Ayat Musibah dan Sabar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Allah menguji dengan takut, lapar, kekurangan harta, jiwa, dan buah-buahan; berilah kabar gembira orang-orang sabar yang mengucapkan inna lillahi wa inna ilaihi raji'un.</p>",
+                        "dalil": "الَّذِينَ إِذَا أَصَابَتْهُمْ مُصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+                        "arti": "(Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Inna lillahi wa inna ilaihi raji'un'. (QS. Al-Baqarah: 156)",
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Membaca dan menghafal QS. Al-Baqarah/2: 155-157 tentang sabar dalam menghadapi musibah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis hikmah dan keutamaan sikap sabar, tawakal, dan husnudzan kepada Allah Swt.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan sikap sabar and tabah dalam kehidupan sehari-hari.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Tingkatan Sabar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sabar atas ketaatan, sabar menahan maksiat, sabar atas takdir pahit. Sabar bukan pasrah total tanpa usaha; gabungkan ikhtiar + doa + husnudzan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Sabar dan Tabah dalam Menghadapi Ujian dan Musibah</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Relevansi Kelas XII (PKL & Ujian Hidup)",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tekanan PKL, target industri, dan persiapan masa depan butuh sabar terampil: manajemen stres, komunikasi, dan etos kerja. Jurnal: 1 ujian minggu ini + cara sabar produktif yang dipilih.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       2: {
-        "ringkasan": "Kajian mendalam mengenai Keterkaitan Antara Iman, Islam, dan Ihsan yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Iman, Islam, dan Ihsan adalah trilogi agama yang saling melengkapi menuju muslim paripurna.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Keterkaitan Antara Iman, Islam, dan Ihsan",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Keterkaitan Antara Iman, Islam, dan Ihsan</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Keterkaitan Antara Iman, Islam, dan Ihsan menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis cabang-cabang iman, keterkaitan antara iman, Islam dan ihsan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Keterkaitan Antara Iman, Islam, dan Ihsan berbasis Kurikulum Merdeka."
+                        "title": "A. Hadis Jibril sebagai Kerangka",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Hadis Jibril membedakan: **Islam** (rukun amaliah lahir), **Iman** (rukun keyakinan), **Ihsan** (beribadah seakan melihat Allah). Ketiganya satu paket, bukan pilihan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis definisi dan hubungan integratif antara iman, Islam, dan ihsan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mempresentasikan esensi ihsan sebagai tingkatan keimanan tertinggi.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan beribadah dengan penuh kesadaran dan keikhlasan (merasa diawasi Allah).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Integrasi dalam Kehidupan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Shalat (Islam) tanpa khusyuk (ihsan) dan keyakinan (iman) menjadi formalitas. Di dunia kerja: profesional (itqan) adalah wajah ihsan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Keterkaitan Antara Iman, Islam, dan Ihsan</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Asesmen Diri Trilogi",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Skala 1–5 untuk tiap aspek: pelaksanaan ibadah, keyakinan yang hidup, kualitas ihsan di kerja/sekolah. Susun rencana perbaikan 30 hari.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       3: {
-        "ringkasan": "Kajian mendalam mengenai Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Munafik, keras hati, dan keras kepala adalah akhlak tercela yang merusak integritas pribadi dan sosial.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid menganalisis dampak negatif sikap munafik, keras hati, dan keras kepala.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala berbasis Kurikulum Merdeka."
+                        "title": "A. Ciri Munafik dan Keras Hati",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ciri munafik klasik: dusta, ingkar janji, khianat. Keras hati: sulit menerima nasehat, kebal terhadap ayat/peringatan. Keras kepala: menolak kebenaran meski jelas.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis tanda-tanda dan bahaya sifat munafik, keras hati, dan keras kepala.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi dalil-dalil larangan memiliki sifat akhlak mazmumah tersebut.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membiasakan sikap jujur, rendah hati, dan terbuka terhadap kebenaran.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Bahaya di Dunia Profesional",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Industri menolak pekerja tidak amanah. Munafik merusak tim. Keras kepala menghambat continuous improvement.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Menghindari Sikap Munafik, Keras Hati, dan Keras Kepala</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Terapi Akhlak",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jujur bertahap, catat janji, terima umpan balik, muhasabah malam, temukan mentor/guru. Latihan: minta kritik membangun dari 1 teman & 1 guru.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       4: {
-        "ringkasan": "Kajian mendalam mengenai Konsep Ijtihad Sebagai Sumber Hukum Islam yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Ijtihad adalah sumber dinamis hukum Islam untuk menjawab masalah baru dengan metodologi ushul yang bertanggung jawab.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Konsep Ijtihad Sebagai Sumber Hukum Islam",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Konsep Ijtihad Sebagai Sumber Hukum Islam</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Konsep Ijtihad Sebagai Sumber Hukum Islam menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis konsep ijtihad sebagai salah satu sumber hukum Islam.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Konsep Ijtihad Sebagai Sumber Hukum Islam berbasis Kurikulum Merdeka."
+                        "title": "A. Pengertian dan Syarat Ijtihad",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ijtihad: mencurahkan kemampuan untuk menyimpulkan hukum syara'. Syarat mujtahid berat; bagi awam: bertanya pada ahli (istifta'), bukan membuat hukum liar di medsos.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian, kedudukan, syarat, dan metode ijtihad dalam hukum Islam.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis peran ijtihad dalam memecahkan masalah-masalah kontemporer.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menunjukkan sikap menghargai perbedaan pendapat dalam koridor ijtihad syar'i.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Bentuk Ijtihad Kontemporer",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ijtihad fardi dan jama'i (lembaga fatwa). Isu: bioteknologi, ekonomi digital, bioetika, AI. Manhaj tarjih menekankan dalil + maslahat + maqashid.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Konsep Ijtihad Sebagai Sumber Hukum Islam</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Sikap Murid terhadap Isu Baru",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jangan langsung viral-hukumi. Alur: pahami masalah → cari fatwa otoritatif → bandingkan argumen → amalkan yang rajih + etis.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
+                "Himpunan Putusan Tarjih Muhammadiyah."
         ]
 },
       5: {
-        "ringkasan": "Kajian mendalam mengenai Cinta Tanah Air dan Moderasi Beragama yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Cinta tanah air dan moderasi beragama (wasathiyah) adalah sikap kebangsaan Islami yang menjaga NKRI dan kerukunan.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Cinta Tanah Air dan Moderasi Beragama",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Cinta Tanah Air dan Moderasi Beragama</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Cinta Tanah Air dan Moderasi Beragama menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid dapat menganalisis Al-Qur'an dan Hadis tentang cinta tanah air dan moderasi beragama.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Cinta Tanah Air dan Moderasi Beragama berbasis Kurikulum Merdeka."
+                        "title": "A. Hubbul Wathan dan Dalil Sikap",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Cinta tanah air sejalan dengan menjaga keamanan, menunaikan hak warga, dan berkontribusi. Islam menolak perusakan dan makar. Semangat 'hubbul wathan minal iman' dipahami sebagai komitmen konstruktif.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Membaca dan menganalisis dalil tentang pentingnya cinta tanah air dan kerukunan umat.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerapkan konsep moderasi beragama (wasathiyah) dalam kehidupan berbangsa.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menunjukkan perilaku toleran dan semangat kebangsaan di lingkungan masyarakat.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Moderasi Beragama",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Wasathiyah: tidak ekstrem kiri-kanan. Menghormati perbedaan, menolak kekerasan atas nama agama, kuat dalam akidah tanpa persekusi. Muhammadiyah: Darul Ahdi wa Syahadah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Cinta Tanah Air dan Moderasi Beragama</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Praktik di Sekolah Multikultur",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kerja sama lintas latar, tolak ujaran kebencian, ikut upacara & kegiatan kebangsaan dengan kesadaran nilai, jadi duta damai di medsos.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
       6: {
-        "ringkasan": "Hukum Waris Islam (Faraidh) menjamin distribusi keadilan ekonomi dalam struktur keluarga dengan proporsi perhitungan matematis ilahiah yang mutlak.",
+        "ringkasan": "Hukum waris Islam (faraidh) menjamin keadilan proporsional distribusi harta peninggalan sesuai syariat.",
         "sections": [
                 {
-                        "title": "A. Kewajiban Menunaikan Hukum Faraidh",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ilmu Faraidh adalah salah satu ilmu syariat yang paling agung namun disebut oleh Rasulullah SAW sebagai ilmu yang paling cepat diangkat (dilupakan) oleh umat manusia di akhir zaman. \nSebelum pembagian harta warisan dilakukan kepada para ahli waris (ahli waris ashabul furudh, ashabah, maupun dzawil arham), ada 3 kewajiban primer yang harus diselesaikan dari harta tirkah (peninggalan) mayit:\n1. Biaya pengurusan jenazah (memandikan, mengkafani, biaya makam).\n2. Melunasi hutang-hutang mayit selama hidupnya.\n3. Menunaikan wasiat (maksimal sepertiga dari total harta setelah dikurangi hutang).</p>",
+                        "title": "A. Kewajiban sebelum Pembagian",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dari tirkah: (1) biaya jenazah, (2) utang, (3) wasiat maks. 1/3, baru (4) warisan ke ahli waris (ashabul furudh, ashabah, dll.).</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Aspek Keadilan Proporsional Menurut Tarjih",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Banyak kalangan sekuler yang mengkritisi hukum waris Islam terkait ketentuan laki-laki mendapat dua kali lipat bagian perempuan (2:1). \nNamun dalam tinjauan **Majelis Tarjih Muhammadiyah** dan ulama ushul, keadilan Islam bukanlah keadilan nominal (sama rata sama rasa secara angka), melainkan **keadilan proporsional**.\nDalam sistem sosial Islam, seorang laki-laki memikul beban tanggung jawab finansial (kewajiban memberi nafkah, mahar, dan tanggung jawab terhadap kerabat perempuan) yang jauh lebih berat secara absolut. Sementara itu, harta yang diterima perempuan menjadi hak milik eksklusifnya dan ia tidak diwajibkan menafkahi keluarganya. Dengan rasio ini, keadilan syariat Allah sungguh sangat melindungi hak asasi dan kesejahteraan perempuan secara sistemik.</p>",
+                        "title": "B. Keadilan Proporsional",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ketentuan bagian (termasuk 2:1 dalam kasus tertentu) dipahami dalam kerangka tanggung jawab nafkah laki-laki, bukan diskriminasi semata. KHI di Indonesia juga mengatur praktik peradilan agama.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Literasi Faraidh untuk Remaja",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pahami istilah dasar, simulasi kasus sederhana (bukan fatwa resmi), dan adab: warisan bukan ajang konflik keluarga. Rujuk penghulu/pengadilan agama untuk kasus nyata.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -692,35 +918,47 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Himpunan Putusan Tarjih, Kitab Faraidh.",
-                "Kompilasi Hukum Islam (KHI) di Indonesia."
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
+                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA.",
+                "HPT Kitab Faraidh.",
+                "Kompilasi Hukum Islam (KHI)."
         ]
 },
       7: {
-        "ringkasan": "Kajian mendalam mengenai Peran Organisasi Masyarakat (Ormas) Islam di Indonesia yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Ormas Islam di Indonesia berperan dalam pendidikan, kesehatan, dakwah, dan kebangsaan; partisipasi pelajar adalah investasi umat.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Peran Organisasi Masyarakat (Ormas) Islam di Indonesia",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Peran Organisasi Masyarakat (Ormas) Islam di Indonesia</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Peran Organisasi Masyarakat (Ormas) Islam di Indonesia menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menganalisis peran organisasi-organisasi Islam di Indonesia.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ",
-                        "arti": "Hai orang-orang yang beriman, bertakwalah kepada Allah sebenar-benar takwa kepada-Nya; dan janganlah sekali-kali kamu mati melainkan dalam keadaan beragama Islam. (QS. Ali 'Imran: 102)",
-                        "image": "ilustrasi.jpg",
-                        "caption": "Representasi visual pembelajaran Peran Organisasi Masyarakat (Ormas) Islam di Indonesia berbasis Kurikulum Merdeka."
+                        "title": "A. Peta Ormas dan Kontribusi",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Muhammadiyah, NU, dan ormas lain membangun sekolah, rumah sakit, panti, dan gerakan filantropi. Mereka mengisi ruang sipil dengan pelayanan dan pendidikan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Fikih Islam memiliki karakter yang elastis dan dinamis (murunah), yang memungkinkannya untuk terus relevan di setiap zaman dan tempat (shalihun li kulli zaman wa makan). Konsep ijtihad, ijma', dan qiyas membuktikan bahwa hukum Islam mampu memberikan jawaban atas problematika kontemporer yang tidak ditemukan nash-nya secara eksplisit di masa lalu. Pendekatan maqashid asy-syariah (tujuan-tujuan syariat) seperti memelihara agama (hifdz ad-din), jiwa (hifdz an-nafs), akal (hifdz al-'aql), keturunan (hifdz an-nasl), dan harta (hifdz al-mal) menjadi instrumen utama ulama dalam menetapkan fatwa yang menjunjung tinggi keadilan dan hak asasi manusia.</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Sejarah Kebudayaan Islam memberikan potret kejayaan peradaban yang dibangun di atas fondasi literasi, toleransi, dan kecintaan pada ilmu pengetahuan. Pada masa Keemasan Islam (The Golden Age of Islam), perpustakaan Baitul Hikmah di Baghdad menjadi pusat intelektual dunia yang menerjemahkan, mengkaji, dan memproduksi ribuan karya sains, kedokteran, matematika, dan filsafat. Murid masa kini harus meneladani spirit saintifik ilmuwan muslim klasik seperti Ibnu Sina, Al-Khawarizmi, dan Ibnu Rusyd, dengan cara membangun etos belajar yang gigih, inovatif, dan tidak mudah menyerah.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menelaah sejarah berdirinya ormas Islam (Muhammadiyah, NU, dll) di Indonesia.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menganalisis peran dan kontribusi ormas Islam dalam perjuangan kemerdekaan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menumbuhkan kepedulian sosial dan partisipasi aktif dalam organisasi keagamaan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Etika Berkiprah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tidak menumbuhkan permusuhan antarormas, fokus khidmah, taat hukum negara, jaga ukhuwah. Perbedaan cabang ijtihadi disikapi dewasa.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Peran Organisasi Masyarakat (Ormas) Islam di Indonesia</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Kajian akidah akhlak dalam Islam tidak sekadar menuntut pengakuan lisan semata, tetapi meniscayakan pembuktian melalui amal perbuatan (amalun bil arkan). Sebagaimana dijelaskan oleh para ulama salafus shalih, iman dapat bertambah dengan ketaatan dan berkurang karena kemaksiatan (yazidu bit tha'ah wa yanqusu bil ma'shiyah). Oleh karena itu, seorang murid dituntut untuk senantiasa memelihara frekuensi keimanannya melalui ibadah mahdhah, zikir, dan tadabbur alam, sehingga melahirkan integritas moral yang kokoh dalam menghadapi berbagai godaan dekadensi moral di era disrupsi digital ini.</p>\n<p style='margin-bottom:16px;'>Ketiga, Al-Qur'an sebagai mukjizat terbesar Nabi Muhammad SAW bukan hanya kitab suci yang dibaca untuk mendapatkan pahala tilawah, tetapi merupakan hudan lin-nas (petunjuk bagi seluruh umat manusia). Di dalamnya memuat blue-print tatanan kehidupan, prinsip-prinsip sains, sejarah umat terdahulu untuk diambil ibrah (pelajaran), serta pedoman hukum yang komprehensif. Menjadikan Al-Qur'an dan As-Sunnah sebagai sumber hukum utama (mashadir al-ahkam) berarti memastikan setiap langkah dan keputusan kita berada dalam koridor syariat yang menjamin keselamatan dunia dan akhirat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Peran Pelajar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Aktif di IPM/OSIS secara positif, bakti sosial, literasi keagamaan, dan siapkan diri jadi kader bermanfaat. Esai 500 kata: 'Kontribusiku untuk masyarakat lewat nilai Islam'.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Tafsir Al-Azhar, Prof. Dr. HAMKA, Pustaka Panjimas.",
+                "Buku Pendidikan Agama Islam dan Budi Pekerti Kurikulum Merdeka, Kemdikbudristek.",
+                "Al-Qur'an dan Terjemahannya, Kemenag RI.",
                 "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Tafsir Al-Azhar, Prof. Dr. HAMKA."
         ]
 },
     },
@@ -896,129 +1134,205 @@ export const detailedMateri = {
         ]
 },
       5: {
-        "ringkasan": "Kajian mendalam mengenai Dhomir (الضمائر) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi المقصف melatih murid bertransaksi dan berdialog di kantin sekolah. Fokus kaidah: ظرف المكان (keterangan tempat) untuk menyebutkan letak makanan, meja, antrian, dan fasilitas kantin.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Dhomir (الضمائر)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Dhomir (الضمائر)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Dhomir (الضمائر) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — المقصف",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kosakata kantin dan transaksi:\n- الْمَقْصَفُ (al-maqshafu) = kantin\n- الطَّعَامُ (ath-tha'aamu) = makanan\n- الشَّرَابُ (asy-syaraabu) = minuman\n- الْأَرُزُّ (al-aruzzu) = nasi\n- الْخُبْزُ (al-khubzu) = roti\n- الْمَاءُ (al-maa'u) = air\n- الْعَصِيْرُ (al-'ashiiru) = jus\n- الثَّمَنُ (ats-tsamanu) = harga\n- كَمْ؟ (kam?) = berapa?\n- أُرِيْدُ... (uriidu...) = saya ingin...\n- مِنْ فَضْلِكَ (min fadhlika) = tolong/mohon\n- تَفَضَّلْ (tafadhdhal) = silakan\n- شُكْرًا (syukran) = terima kasih\n- الْبَائِعُ / الْبَائِعَةُ = penjual (lk/pr)\n- الْمُشْتَرِي = pembeli\n- الطَّاوِلَةُ (ath-thaawilatu) = meja\n- الصَّفُّ (ash-shaffu) = antrean/barisan\n- أَمَامَ / خَلْفَ / عَلَى / فِيْ / بَيْنَ / بِجَانِبِ = di depan / di belakang / di atas / di dalam / di antara / di samping</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Dhomir (الضمائر) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian dan pembagian kata ganti (Dhomir).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menggunakan Dhomir Munfashil (terpisah) dan Muttashil (tersambung) dalam kalimat.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerjemahkan kalimat pendek yang mengandung kata ganti.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — فِي الْمَقْصَفِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَحْمَد : السَّلَامُ عَلَيْكُمْ\nالْبَائِعُ : وَعَلَيْكُمُ السَّلَامُ. أَهْلًا بِكَ فِي الْمَقْصَفِ. مَاذَا تُرِيْدُ؟\nأَحْمَد : أُرِيْدُ رُزًّا وَعَصِيْرًا مِنْ فَضْلِكَ.\nالْبَائِعُ : تَفَضَّلْ. الرُّزُّ عَلَى الطَّاوِلَةِ أَمَامَكَ، وَالْعَصِيْرُ بِجَانِبِ الْمَاءِ.\nأَحْمَد : كَمْ الثَّمَنُ؟\nالْبَائِعُ : عَشَرَةُ آلَافٍ. هَلْ تُرِيْدُ خُبْزًا أَيْضًا؟\nأَحْمَد : لَا، شُكْرًا. أَيْنَ أَجْلِسُ؟\nالْبَائِعُ : اِجْلِسْ خَلْفَ الصَّفِّ، هُنَاكَ كُرْسِيٌّ فَارِغٌ بَيْنَ الطَّاوِلَتَيْنِ.\nأَحْمَد : شُكْرًا جَزِيْلًا.\n\nPerhatikan ظرف المكان: فِي الْمَقْصَفِ، عَلَى الطَّاوِلَةِ، أَمَامَكَ، بِجَانِبِ، خَلْفَ، بَيْنَ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Dhomir (الضمائر)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — مَقْصَفُ الْمَدْرَسَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فِيْ مَدْرَسَتِنَا مَقْصَفٌ نَظِيْفٌ. الْمَقْصَفُ بِجَانِبِ الْمَلْعَبِ. فِي الْمَقْصَفِ طَعَامٌ وَشَرَابٌ. الطُّلَّابُ يَقِفُوْنَ فِي الصَّفِّ أَمَامَ الْبَائِعِ. عَلَى الطَّاوِلَةِ رُزٌّ وَخُبْزٌ وَعَصِيْرٌ. أَنَا أَذْهَبُ إِلَى الْمَقْصَفِ بَعْدَ الْاِسْتِرَاحَةِ. أَجْلِسُ مَعَ صَدِيْقِيْ خَلْفَ النَّافِذَةِ. الْمَقْصَفُ مَكَانٌ مُمْتِعٌ.\n\nArti: Di sekolah kami ada kantin yang bersih. Kantin di samping lapangan. Di kantin ada makanan dan minuman. Para murid berdiri dalam antrean di depan penjual. Di atas meja ada nasi, roti, dan jus. Aku pergi ke kantin setelah istirahat. Aku duduk bersama temanku di belakang jendela. Kantin adalah tempat yang menyenangkan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id (Kaidah) — ظرف المكان",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>ظرف المكان (Zharf al-Makan) adalah keterangan tempat yang menjelaskan di mana terjadinya sesuatu.\n\nContoh umum:\n- فِيْ (di dalam): فِي الْمَقْصَفِ\n- عَلَى (di atas): عَلَى الطَّاوِلَةِ\n- تَحْتَ (di bawah): تَحْتَ الْكُرْسِيِّ\n- أَمَامَ (di depan): أَمَامَ الْبَائِعِ\n- خَلْفَ (di belakang): خَلْفَ الصَّفِّ\n- بَيْنَ (di antara): بَيْنَ الطَّاوِلَتَيْنِ\n- بِجَانِبِ (di samping): بِجَانِبِ الْمَلْعَبِ\n- هُنَا / هُنَاكَ (di sini / di sana)\n\nCatatan: banyak zharf makan ber morfem nashab atau diikuti isim majrur (tergantung jenisnya). Latih pola: [subjek/fi'il] + [zharf makan] + [isim].\nContoh: الْعَصِيْرُ عَلَى الطَّاوِلَةِ. أَجْلِسُ أَمَامَ النَّافِذَةِ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (konteks sekolah/kantin).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik المقصف."
         ]
 },
       6: {
-        "ringkasan": "Kajian mendalam mengenai Fi'il Mudhari' (الفعل المضارع) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi الأسرة melatih murid memperkenalkan anggota keluarga dan mendeskripsikan hubungan serta pekerjaan. Fokus kaidah: مبتدأ وخبر (kalimat nominal) sebagai dasar menyusun gagasan sederhana.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Fi'il Mudhari' (الفعل المضارع)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Fi'il Mudhari' (الفعل المضارع)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Fi'il Mudhari' (الفعل المضارع) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — الأسرة",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kosakata keluarga:\n- الْأُسْرَةُ (al-usrah) = keluarga\n- الْأَبُ (al-abu) = ayah\n- الْأُمُّ (al-ummu) = ibu\n- الْأَخُ / الْأُخْتُ = saudara laki-laki / perempuan\n- الْجَدُّ / الْجَدَّةُ = kakek / nenek\n- الْاِبْنُ / الْبِنْتُ = anak laki-laki / perempuan\n- الزَّوْجُ / الزَّوْجَةُ = suami / istri\n- كَبِيْرٌ / صَغِيْرٌ = besar / kecil (usia atau ukuran)\n- طَبِيْبٌ / مُهَنْدِسٌ / مُدَرِّسٌ / تَاجِرٌ = dokter / insinyur / guru / pedagang\n- رَبَّةُ الْبَيْتِ = ibu rumah tangga\n- أُسْرَتِيْ = keluargaku\n- عَدَدُ أَفْرَادِ الْأُسْرَةِ = jumlah anggota keluarga\n- نَحْنُ أُسْرَةٌ سَعِيْدَةٌ = kami keluarga yang bahagia</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Fi'il Mudhari' (الفعل المضارع) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Mengenali ciri-ciri dan fungsi kata kerja masa kini/akan datang (Fi'il Mudhari').</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mentasrifkan (mengubah bentuk) Fi'il Mudhari' sesuai dengan pelaku (Dhomir).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menulis cerita singkat tentang rutinitas sehari-hari menggunakan Fi'il Mudhari'.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — عَنِ الْأُسْرَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>عَلِيّ : السَّلَامُ عَلَيْكُمْ يَا أَحْمَد\nأَحْمَد : وَعَلَيْكُمُ السَّلَامُ. كَيْفَ حَالُ أُسْرَتِكَ؟\nعَلِيّ : بِخَيْرٍ، الْحَمْدُ للهِ. أُسْرَتِيْ صَغِيْرَةٌ.\nأَحْمَد : مَنْ فِيْ أُسْرَتِكَ؟\nعَلِيّ : أَبِيْ وَأُمِّيْ وَأَخِيْ وَأُخْتِيْ. أَبِيْ مُدَرِّسٌ، وَأُمِّيْ رَبَّةُ بَيْتٍ.\nأَحْمَد : وَمَا اسْمُ أَخِيْكَ؟\nعَلِيّ : اِسْمُهُ يُوْسُفُ. هُوَ طَالِبٌ فِي الْمَدْرَسَةِ الْاِبْتِدَائِيَّةِ.\nأَحْمَد : أُسْرَتِيْ كَبِيْرَةٌ. جَدِّيْ وَجَدَّتِيْ يَسْكُنَانِ مَعَنَا.\nعَلِيّ : مَا شَاءَ اللهُ. نَحْنُ أُسْرَتَانِ سَعِيْدَتَانِ.\n\nPerhatikan jumlah ismiyah: أَبِيْ مُدَرِّسٌ (mubtada' + khabar), أُسْرَتِيْ صَغِيْرَةٌ، هُوَ طَالِبٌ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Fi'il Mudhari' (الفعل المضارع)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — أُسْرَتِيْ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أُسْرَتِيْ سَعِيْدَةٌ. أَبِيْ اِسْمُهُ حَسَنٌ. هُوَ مُهَنْدِسٌ. أُمِّيْ اِسْمُهَا فَاطِمَةُ. هِيَ مُدَرِّسَةٌ. لِيْ أَخٌ وَاحِدٌ وَأُخْتَانِ. أَخِيْ كَبِيْرٌ، وَأُخْتَايَ صَغِيْرَتَانِ. نَحْنُ نَسْكُنُ فِيْ بَيْتٍ جَمِيْلٍ. فِي الْمَسَاءِ نَجْلِسُ مَعًا فِي غُرْفَةِ الْجُلُوْسِ. أَنَا أُحِبُّ أُسْرَتِيْ.\n\nArti: Keluargaku bahagia. Ayahku bernama Hasan. Dia insinyur. Ibuku bernama Fatimah. Dia guru. Aku punya satu saudara laki-laki dan dua saudara perempuan. Saudaraku laki-laki lebih tua, dan kedua saudariku lebih muda. Kami tinggal di rumah yang indah. Di sore hari kami duduk bersama di ruang tamu. Aku menyukai keluargaku.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id (Kaidah) — المبتدأ والخبر",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. الْمُبْتَدَأُ (Mubtada'): subjek di awal jumlah ismiyah, hukumnya rafa'.\n2. الْخَبَرُ (Khabar): predikat yang menyempurnakan makna mubtada', hukumnya rafa'.\n\nPola dasar: مُبْتَدَأٌ + خَبَرٌ\nContoh:\n- الْأَبُ طَبِيْبٌ (Ayah adalah dokter).\n- أُمِّيْ مُدَرِّسَةٌ (Ibuku adalah guru).\n- أُسْرَتِيْ كَبِيْرَةٌ (Keluargaku besar).\n- هُوَ طَالِبٌ مُجْتَهِدٌ (Dia murid yang rajin).\n\nKesesuaian: khabar menyesuaikan jenis (mudzakkar/muannats) dan jumlah mubtada' sejauh memungkinkan pada tingkat dasar.\nContoh: الْأُخْتُ صَغِيْرَةٌ؛ الْأَخَوَانِ مُجْتَهِدَانِ.\n\nPenguatan maharat: menyimak deskripsi keluarga, berbicara memperkenalkan keluarga, membaca teks أُسْرَتِيْ, menulis 6–8 kalimat mubtada'–khabar.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-usrah).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik الأسرة."
         ]
 },
       7: {
-        "ringkasan": "Kajian mendalam mengenai Huruf Jar (حروف الجر) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi الوقت membekali murid dengan ungkapan jam, hari, dan jadwal harian. Fokus kaidah: ظرف الزمان (keterangan waktu) untuk menyusun narasi aktivitas secara runtut.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Huruf Jar (حروف الجر)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Huruf Jar (حروف الجر)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Huruf Jar (حروف الجر) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — الوقت",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kosakata waktu dan jadwal:\n- الْوَقْتُ (al-waqtu) = waktu\n- السَّاعَةُ (as-saa'atu) = jam\n- الْيَوْمُ (al-yaumu) = hari / hari ini (sebagai zharf: الْيَوْمَ)\n- غَدًا (ghadan) = besok\n- أَمْسِ (amsi) = kemarin\n- صَبَاحًا (shabaahan) = pagi hari\n- مَسَاءً (masaa'an) = sore/malam hari\n- لَيْلًا (lailan) = malam\n- الْآنَ (al-aana) = sekarang\n- بَعْدَ / قَبْلَ = setelah / sebelum\n- كُلَّ يَوْمٍ = setiap hari\n- السَّاعَةُ السَّابِعَةُ = pukul tujuh\n- مَتَى؟ (mataa?) = kapan?\n- أَسْتَيْقِظُ = saya bangun\n- أَذْهَبُ = saya pergi\n- أَدْرُسُ = saya belajar\n- أَنَامُ = saya tidur\n- الْاِسْتِرَاحَةُ = istirahat\n- الْحِصَّةُ = jam pelajaran</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Huruf Jar (حروف الجر) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Mengidentifikasi macam-macam Huruf Jar dan fungsinya.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Memahami perubahan harakat akhir kata benda (Isim) setelah Huruf Jar.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Membentuk frasa kata depan (Syibhul Jumlah) yang bermakna sempurna.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — عَنِ الْوَقْتِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فَاطِمَة : السَّلَامُ عَلَيْكُمْ يَا زَيْنَب\nزَيْـنَب : وَعَلَيْكُمُ السَّلَامُ. مَتَى تَسْتَيْقِظِيْنَ؟\nفَاطِمَة : أَسْتَيْقِظُ صَبَاحًا فِي السَّاعَةِ الْخَامِسَةِ.\nزَيْـنَب : وَمَتَى تَذْهَبِيْنَ إِلَى الْمَدْرَسَةِ؟\nفَاطِمَة : أَذْهَبُ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّادِسَةِ وَالنِّصْفِ.\nزَيْـنَب : مَتَى حِصَّةُ اللُّغَةِ الْعَرَبِيَّةِ الْيَوْمَ؟\nفَاطِمَة : بَعْدَ الْاِسْتِرَاحَةِ، فِي السَّاعَةِ الْعَاشِرَةِ.\nزَيْـنَب : وَمَتَى تَنَامِيْنَ؟\nفَاطِمَة : أَنَامُ لَيْلًا فِي السَّاعَةِ التَّاسِعَةِ. وَأَنْتِ؟\nزَيْـنَب : أَنَامُ فِي السَّاعَةِ الْعَاشِرَةِ. غَدًا نَدْرُسُ مَعًا مَسَاءً.\n\nPerhatikan ظرف الزمان: صَبَاحًا، لَيْلًا، الْيَوْمَ، غَدًا، بَعْدَ، فِي السَّاعَةِ...</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Huruf Jar (حروف الجر)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — يَوْمِيْ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَسْتَيْقِظُ كُلَّ يَوْمٍ صَبَاحًا فِي السَّاعَةِ الْخَامِسَةِ. أُصَلِّيْ الْفَجْرَ ثُمَّ أَقْرَأُ الْقُرْآنَ. بَعْدَ ذٰلِكَ أَتَنَاوَلُ الْفُطُوْرَ. أَذْهَبُ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّادِسَةِ وَالنِّصْفِ. أَدْرُسُ فِي الْمَدْرَسَةِ إِلَى السَّاعَةِ الثَّانِيَةِ ظُهْرًا. بَعْدَ الْمَدْرَسَةِ أَلْعَبُ مَعَ أَصْدِقَائِيْ. مَسَاءً أَعْمَلُ الْوَاجِبَ الْمَنْزِلِيَّ. أَنَامُ لَيْلًا فِي السَّاعَةِ التَّاسِعَةِ.\n\nArti: Aku bangun setiap hari pagi pukul lima. Aku salat Subuh lalu membaca Al-Qur'an. Setelah itu aku sarapan. Aku pergi ke sekolah pukul setengah tujuh. Aku belajar di sekolah sampai pukul dua siang. Setelah sekolah aku bermain dengan teman-temanku. Sore hari aku mengerjakan PR. Aku tidur malam pukul sembilan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id (Kaidah) — ظرف الزمان",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>ظرف الزمان (Zharf az-Zaman) adalah keterangan waktu yang menjelaskan kapan terjadinya perbuatan atau keadaan.\n\nContoh produktif tingkat dasar:\n- الْيَوْمَ (hari ini), غَدًا (besok), أَمْسِ (kemarin)\n- صَبَاحًا، مَسَاءً، لَيْلًا، ظُهْرًا\n- الْآنَ (sekarang), دَائِمًا (selalu), أَحْيَانًا (kadang-kadang)\n- قَبْلَ / بَعْدَ + isim: بَعْدَ الْاِسْتِرَاحَةِ، قَبْلَ النَّوْمِ\n- فِي السَّاعَةِ... (pada pukul...)\n- كُلَّ يَوْمٍ / كُلَّ أُسْبُوْعٍ\n\nPola kalimat: [fi'il/subjek] + [zharf zaman] + (pelengkap)\nContoh: أَذْهَبُ إِلَى الْمَدْرَسَةِ صَبَاحًا. نَدْرُسُ الْعَرَبِيَّةَ الْيَوْمَ.\n\nLatihan: susun jadwal harian 5 kegiatan dengan minimal 5 zharf zaman berbeda.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-waqt / al-saa'ah).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik الوقت."
         ]
 },
       8: {
-        "ringkasan": "Kajian mendalam mengenai Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi أحمد دحلان mengintegrasikan maharat berbahasa Arab dengan nilai keteladanan pendiri Muhammadiyah. Fokus kaidah: مبتدأ وخبر مقدم serta review ظرف الزمان والمكان dalam narasi biografi sederhana.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu menggunakan kata ganti (dhamir), fi'il mudhari', huruf jar, ungkapan kepemilikan (al-milk), serta bilangan 1–10 dalam menyusun kalimat sederhana secara lisan maupun tulisan sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — أحمد دحلان",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kosakata biografi dan keteladanan:\n- أَحْمَدُ دَحْلَانُ = Ahmad Dahlan\n- الْمُؤَسِّسُ (al-mu'assisu) = pendiri\n- مُحَمَّدِيَّة = Muhammadiyah\n- الْعَالِمُ (al-'aalimu) = ulama\n- الْمُجَاهِدُ = pejuang\n- التَّعْلِيْمُ = pendidikan\n- الْمَدْرَسَةُ = sekolah\n- الْإِصْلَاحُ = pembaruan/reformasi\n- الْأَخْلَاقُ = akhlak\n- الْقُدْوَةُ = keteladanan\n- وُلِدَ (wulida) = dilahirkan\n- فِيْ يُوْغْيَاكَرْتَا = di Yogyakarta\n- عَامَ... = tahun...\n- طَلَبَ الْعِلْمَ = menuntut ilmu\n- أَنْشَأَ = mendirikan\n- نَافِعٌ / مُفِيْدٌ = bermanfaat\n- مُجْتَهِدٌ = rajin/bersungguh-sungguh\n- رَحِمَهُ اللهُ = semoga Allah merahmatinya</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Mengekspresikan ungkapan kepemilikan (Al-Milk) benda dalam bahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Melafalkan angka 1 sampai 10 (Adad) beserta benda yang dihitung (Ma'dud).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mempraktikkan transaksi sederhana (seperti di kantin) menggunakan angka dan kepemilikan.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — عَنْ أَحْمَدَ دَحْلَانَ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>يُوْسُف : السَّلَامُ عَلَيْكُمْ يَا عَلِيّ\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ. مَاذَا تَقْرَأُ؟\nيُوْسُف : أَقْرَأُ عَنْ أَحْمَدَ دَحْلَانَ. هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ.\nعَلِيّ : أَيْنَ وُلِدَ؟\nيُوْسُف : وُلِدَ فِيْ يُوْغْيَاكَرْتَا. فِي يُوْغْيَاكَرْتَا وُلِدَ عَالِمٌ كَبِيْرٌ.\nعَلِيّ : مَاذَا فَعَلَ فِي حَيَاتِهِ؟\nيُوْسُف : أَنْشَأَ مَدَارِسَ وَعَلَّمَ النَّاسَ. هُوَ قُدْوَةٌ فِي التَّعْلِيْمِ وَالْأَخْلَاقِ.\nعَلِيّ : مَتَى نَتَعَلَّمُ عَنْهُ فِي الْمَدْرَسَةِ؟\nيُوْسُف : الْيَوْمَ فِي حِصَّةِ اللُّغَةِ الْعَرَبِيَّةِ وَالْكَمُحَمَّدِيَّةِ.\nعَلِيّ : جَيِّدٌ. نُرِيْدُ أَنْ نَكُوْنَ مُجْتَهِدِيْنَ مِثْلَهُ.\n\nPerhatikan: فِي يُوْغْيَاكَرْتَا وُلِدَ عَالِمٌ (nuansa khabar/keterangan didahulukan untuk penekanan tempat).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Al-Milk dan Adad 1-10 (الملك والعدد ١-١٠)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — أَحْمَدُ دَحْلَانُ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَحْمَدُ دَحْلَانُ عَالِمٌ كَبِيْرٌ. هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ. وُلِدَ فِيْ يُوْغْيَاكَرْتَا. طَلَبَ الْعِلْمَ مُنْذُ صِغَرِهِ. فِي حَيَاتِهِ أَنْشَأَ مَدَارِسَ كَثِيْرَةً. هُوَ يُحِبُّ التَّعْلِيْمَ وَالْإِصْلَاحَ. كَانَ مُجْتَهِدًا وَصَادِقًا. لِلطُّلَّابِ فِيْهِ قُدْوَةٌ حَسَنَةٌ. نَحْنُ نَتَعَلَّمُ مِنْ أَخْلَاقِهِ كُلَّ يَوْمٍ. رَحِمَهُ اللهُ.\n\nArti: Ahmad Dahlan adalah ulama besar. Beliau pendiri Muhammadiyah. Dilahirkan di Yogyakarta. Beliau menuntut ilmu sejak kecil. Dalam hidupnya beliau mendirikan banyak sekolah. Beliau mencintai pendidikan dan pembaruan. Beliau rajin dan jujur. Bagi para murid, pada dirinya ada keteladanan yang baik. Kami belajar dari akhlaknya setiap hari. Semoga Allah merahmatinya.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id (Kaidah) — الخبر المقدم + review genap",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. الْخَبَرُ الْمُقَدَّمُ (Khabar Muqaddam): khabar didahulukan, mubtada' diakhirkan — sering untuk penekanan atau jika mubtada' nakirah.\nPola: خَبَرٌ مُقَدَّمٌ + مُبْتَدَأٌ مُؤَخَّرٌ\nContoh:\n- فِي يُوْغْيَاكَرْتَا عَالِمٌ كَبِيْرٌ (Di Yogyakarta ada ulama besar).\n- لِلطُّلَّابِ قُدْوَةٌ حَسَنَةٌ (Bagi para murid ada keteladanan yang baik).\n- عِنْدِيْ كِتَابٌ عَنْ أَحْمَدَ دَحْلَانَ (Pada saya ada buku tentang Ahmad Dahlan).\n\n2. Review semester genap:\n- ظرف المكان: فِي الْمَقْصَفِ، بِجَانِبِ الْمَلْعَبِ\n- ظرف الزمان: صَبَاحًا، الْيَوْمَ، كُلَّ يَوْمٍ\n- مبتدأ وخبر: أَحْمَدُ دَحْلَانُ عَالِمٌ؛ هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ\n- خبر مقدم: فِي الْمَدْرَسَةِ طُلَّابٌ مُجْتَهِدُوْنَ\n\nTugas unjuk kerja: tulis dan presentasikan monolog 8–10 kalimat tentang keteladanan Ahmad Dahlan memuat minimal satu contoh zharf zaman, zharf makan, mubtada'–khabar, dan khabar muqaddam.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Kemuhammadiyahan / biografi K.H. Ahmad Dahlan (disesuaikan bahasa Arab sederhana).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik أحمد دحلان."
         ]
 },
     },
     XI: {
       1: {
-        "ringkasan": "Bahasa Arab sangat unik karena memiliki bentuk kata khusus untuk menunjukkan jumlah 'dua' (Mutsanna), yang menjembatani bentuk tunggal (Mufrad) dan jamak.",
+        "ringkasan": "Materi المهنة membekali murid kosakata, dialog, dan narasi tentang berbagai profesi serta cita-cita kerja. Empat maharat dilatih untuk memahami, merespons, dan memproduksi teks lisan/tulisan tentang dunia kerja.",
         "sections": [
                 {
-                        "title": "A. Pengertian dan Aturan Pembentukan Isim Mutsanna",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Isim Mutsanna adalah kata benda yang menunjukkan jumlah bilangan dua (ganda). Untuk mengubah Isim Mufrad (Tunggal) menjadi Isim Mutsanna, kaidahnya sangat sistematis, yaitu dengan menambahkan sufiks (akhiran) di bagian belakang kata asalnya.\n\nAturan penambahan sufiks bergantung pada I'rab (posisi kedudukan kata dalam kalimat):\n1. Dalam keadaan **Rafa'** (Subjek/Mubtada'/Khabar): Ditambah huruf Alif dan Nun yang dikasrahkan (انِ - aani).\n   Contoh: كِتَابٌ (Satu buku) -> كِتَابَانِ (Dua buku).\n2. Dalam keadaan **Nashab** (Objek) atau **Jarr** (Didahului preposisi): Ditambah huruf Ya' sukun dan Nun yang dikasrahkan (يْنِ - ayni).\n   Contoh: كِتَابٌ -> كِتَابَيْنِ.</p>",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — المهنة",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kosakata profesi dan cita-cita:\n- الْمِهْنَةُ (al-mihnah) = profesi/pekerjaan\n- الطَّبِيْبُ / الطَّبِيْبَةُ = dokter (lk/pr)\n- الْمُهَنْدِسُ / الْمُهَنْدِسَةُ = insinyur\n- الْمُدَرِّسُ / الْمُدَرِّسَةُ = guru\n- التَّاجِرُ / التَّاجِرَةُ = pedagang\n- الْمُمَرِّضُ / الْمُمَرِّضَةُ = perawat\n- الشُّرْطِيُّ = polisi\n- السَّائِقُ = sopir\n- الْمُزَارِعُ = petani\n- الْعَامِلُ = pekerja\n- الْمُحَاسِبُ = akuntan\n- الْمُصَمِّمُ = desainer\n- أُرِيْدُ أَنْ أَكُوْنَ... = saya ingin menjadi...\n- فِي الْمُسْتَقْبَلِ = di masa depan\n- يَعْمَلُ فِي... = bekerja di...</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Contoh Penerapan dalam Kalimat",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- Keadaan Rafa': جَاءَ الطَّالِبَانِ (Telah datang dua murid laki-laki itu). Kata 'Ath-Thalibaani' berkedudukan sebagai Fa'il (subjek pelaku) sehingga menggunakan akhiran Alif-Nun.\n- Keadaan Nashab: رَأَيْتُ الطَّالِبَيْنِ (Saya telah melihat dua murid laki-laki itu). Kata 'Ath-Thalibayni' berkedudukan sebagai Maf'ul Bih (objek) sehingga menggunakan akhiran Ya'-Nun.\n\nKhusus untuk isim Muannats yang diakhiri Ta' Marbutah (ة), maka huruf (ة) tersebut dibuka menjadi huruf Ta' biasa (ت) sebelum ditambah sufiks. Contoh: مَدْرَسَةٌ -> مَدْرَسَتَانِ.</p>",
+                        "title": "B. Al-Hiwar (Dialog) — عَنِ الْمِهْنَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَحْمَد : مَا مِهْنَةُ أَبِيْكَ يَا عَلِيّ؟\nعَلِيّ : أَبِيْ مُهَنْدِسٌ. يَعْمَلُ فِي مَصْنَعٍ كَبِيْرٍ. وَأَنْتَ؟\nأَحْمَد : أَبِيْ مُدَرِّسٌ، وَأُمِّيْ طَبِيْبَةٌ.\nعَلِيّ : مَا شَاءَ اللهُ. مَاذَا تُرِيْدُ أَنْ تَكُوْنَ فِي الْمُسْتَقْبَلِ؟\nأَحْمَد : أُرِيْدُ أَنْ أَكُوْنَ مُهَنْدِسًا مِثْلَ أَبِيْكَ. وَأَنْتَ؟\nعَلِيّ : أُرِيْدُ أَنْ أَكُوْنَ طَبِيْبًا. الطَّبِيْبُ يُسَاعِدُ النَّاسَ.\nأَحْمَد : جَيِّدٌ جِدًّا. نَحْنُ نَدْرُسُ بِجِدٍّ لِنَصِلَ إِلَى أَحْلَامِنَا.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — مِهْنَتِي الْمُسْتَقْبَلِيَّةُ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَنَا طَالِبٌ فِي الْمَدْرَسَةِ الثَّانَوِيَّةِ. أُرِيْدُ أَنْ أَكُوْنَ مُهَنْدِسًا فِي الْمُسْتَقْبَلِ. الْمُهَنْدِسُ يَبْنِي الْجُسُوْرَ وَالْمَبَانِيَ. أَبِيْ مُدَرِّسٌ، وَهُوَ يُشَجِّعُنِيْ عَلَى طَلَبِ الْعِلْمِ. صَدِيْقِيْ عَلِيّ يُرِيْدُ أَنْ يَكُوْنَ طَبِيْبًا. نَحْنُ نَدْرُسُ كُلَّ يَوْمٍ. الْمِهْنَةُ الْمُفِيْدَةُ تَخْدِمُ الْمُجْتَمَعَ.\n\nArti: Aku murid SMK/sekolah menengah. Aku ingin menjadi insinyur di masa depan. Insinyur membangun jembatan dan gedung. Ayahku guru, dan beliau mendorongku menuntut ilmu. Temanku Ali ingin menjadi dokter. Kami belajar setiap hari. Profesi yang bermanfaat melayani masyarakat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola komunikatif:\n- مَا مِهْنَتُكَ؟ / مَا مِهْنَةُ أَبِيْكَ؟\n- أَنَا / هُوَ / هِيَ + profesi (jumlah ismiyah)\n- أُرِيْدُ أَنْ + fi'il mudhari' manshub: أُرِيْدُ أَنْ أَكُوْنَ طَبِيْبًا\n- يَعْمَلُ فِي + tempat kerja\n\nLatihan 4 maharat: menyimak nama profesi, berbicara tentang cita-cita, membaca teks, menulis monolog singkat.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1026,24 +1340,41 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Kitab Jami'ud Durus Al-'Arabiyyah, Syaikh Mushthafa al-Ghalayaini.",
-                "Mulakhkhas Qawa'id Al-Lughah Al-Arabiyyah, Fuad Ni'mah."
+                "Buku Al-'Arabiyyah Baina Yadaik / Li an-Nasyi'in (bab al-mihnah).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F — topik sosial dan profesional."
         ]
 },
       2: {
-        "ringkasan": "Jamak Mudzakkar Salim adalah bentuk jamak beraturan (teratur) khusus untuk laki-laki atau benda-benda maskulin berakal, yang berfungsi menunjukkan jumlah lebih dari dua.",
+        "ringkasan": "Materi أدوات المواصلات melatih murid menyebutkan moda transportasi, menanyakan cara pergi, dan menyusun narasi perjalanan singkat dalam empat maharat berbahasa.",
         "sections": [
                 {
-                        "title": "A. Syarat dan Pembentukan Jamak Mudzakkar Salim",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tidak semua kata bisa diubah menjadi Jamak Mudzakkar Salim. Syarat utamanya adalah kata tersebut haruslah nama alam (isim alam) laki-laki berakal yang tidak diakhiri ta' marbutah, atau kata sifat (na'at) untuk laki-laki yang berakal.\n\nPembentukannya sangat teratur (salim), yaitu dengan mempertahankan struktur kata dasar (mufrad-nya tidak pecah/berubah), dan hanya menambahkan akhiran:\n1. Keadaan **Rafa'**: Ditambah Wawu dan Nun berharakat fathah (وۡنَ - uuna).\n   Contoh: مُسْلِمٌ (Seorang muslim) -> مُسْلِمُوْنَ (Orang-orang muslim).\n2. Keadaan **Nashab / Jarr**: Ditambah Ya' dan Nun berharakat fathah (يۡنَ - iina).\n   Contoh: مُسْلِمٌ -> مُسْلِمِيْنَ.</p>",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — أدوات المواصلات",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- أَدَوَاتُ الْمُوَاصَلَاتِ = alat transportasi\n- السَّيَّارَةُ = mobil\n- الْحَافِلَةُ = bus\n- الْقِطَارُ = kereta api\n- الدَّرَّاجَةُ = sepeda\n- الدَّرَّاجَةُ النَّارِيَّةُ = sepeda motor\n- الطَّائِرَةُ = pesawat\n- السَّفِيْنَةُ = kapal\n- التَّاكْسِي = taksi\n- الْمَحَطَّةُ = stasiun/halte\n- أَذْهَبُ بِ... = saya pergi dengan...\n- كَيْفَ تَذْهَبُ إِلَى...؟ = bagaimana kamu pergi ke...?\n- سَرِيْعٌ / بَطِيْءٌ = cepat / lambat\n- رَخِيْصٌ / غَالٍ = murah / mahal</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Tinjauan Sintaksis (Nahwu) dalam Ayat Al-Qur'an",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Penggunaan bentuk jamak ini sangat dominan di dalam Al-Qur'an. \nMisalnya, dalam firman Allah: قَدْ أَفْلَحَ الْمُؤْمِنُونَ (Sungguh beruntung orang-orang mukmin). Kata *Al-Mu'minuuna* berada dalam keadaan rafa' karena ia menjadi Fa'il (pelaku) bagi kata kerja aflaha.\nSedangkan dalam kalimat: إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ (Sesungguhnya orang-orang yang bertakwa itu berada dalam surga-surga). Kata *Al-Muttaqiina* berada dalam posisi nashab karena didahului oleh Inna (huruf taukid yang menashabkan isim setelahnya).</p>",
+                        "title": "B. Al-Hiwar (Dialog) — كَيْفَ تَذْهَبُ؟",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فَاطِمَة : كَيْفَ تَذْهَبِيْنَ إِلَى الْمَدْرَسَةِ يَا زَيْنَب؟\nزَيْـنَب : أَذْهَبُ بِالْحَافِلَةِ. وَأَنْتِ؟\nفَاطِمَة : أَذْهَبُ بِالدَّرَّاجَةِ النَّارِيَّةِ مَعَ أَخِيْ.\nزَيْـنَب : وَكَيْفَ تَذْهَبِيْنَ إِلَى الْمَدِيْنَةِ؟\nفَاطِمَة : أَذْهَبُ بِالْقِطَارِ. الْقِطَارُ سَرِيْعٌ وَمُرِيْحٌ.\nزَيْـنَب : أَنَا أُحِبُّ الطَّائِرَةَ لِلسَّفَرِ الْبَعِيْدِ.\nفَاطِمَة : نَعَمْ، وَلٰكِنَّ ثَمَنَهَا غَالٍ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — وَسَائِلُ النَّقْلِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فِيْ مَدِيْنَتِنَا وَسَائِلُ نَقْلٍ كَثِيْرَةٌ. الطُّلَّابُ يَذْهَبُوْنَ إِلَى الْمَدْرَسَةِ بِالْحَافِلَةِ أَوْ بِالدَّرَّاجَةِ. بَعْضُ النَّاسِ يُسَافِرُوْنَ بِالْقِطَارِ إِلَى الْمُدُنِ الْأُخْرَى. وَلِلسَّفَرِ الْبَعِيْدِ نَرْكَبُ الطَّائِرَةَ. السَّيَّارَةُ مُرِيْحَةٌ، وَلٰكِنَّ الْحَافِلَةَ أَرْخَصُ. أَنَا أُحِبُّ رُكُوْبَ الْقِطَارِ مَعَ أُسْرَتِيْ.\n\nArti: Di kota kami banyak alat transportasi. Murid pergi ke sekolah dengan bus atau sepeda. Sebagian orang bepergian dengan kereta ke kota lain. Untuk perjalanan jauh kami naik pesawat. Mobil nyaman, tetapi bus lebih murah. Aku suka naik kereta bersama keluarga.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola:\n- أَذْهَبُ / نَذْهَبُ بِ + alat transportasi (بِالْحَافِلَةِ، بِالْقِطَارِ)\n- كَيْفَ تَذْهَبُ إِلَى...؟\n- perbandingan sederhana: أَسْرَعُ، أَرْخَصُ، أَكْثَرُ رَاحَةً\n\nLatihan: menyimak nama kendaraan, role-play cara pergi, membaca teks, menyusun kalimat acak tentang perjalanan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1051,188 +1382,127 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Kitab Al-Ajurrumiyyah beserta syarahnya.",
-                "Al-Qur'an Al-Karim (Analisis I'rab Al-Qur'an)."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-muwashalat).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XI Semester Ganjil."
         ]
 },
       3: {
-        "ringkasan": "Kajian mendalam mengenai Jamak Muannats Salim (جمع المؤنث السالم) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi يوم العيد mengaitkan keterampilan berbahasa Arab dengan pengalaman Idulfitri/Iduladha: ucapan selamat, silaturahmi, dan aktivitas keluarga.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Jamak Muannats Salim (جمع المؤنث السالم)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Jamak Muannats Salim (جمع المؤنث السالم)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Jamak Muannats Salim (جمع المؤنث السالم) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — يوم العيد",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- يَوْمُ الْعِيْدِ = hari raya\n- عِيْدُ الْفِطْرِ = Idulfitri\n- عِيْدُ الْأَضْحَى = Iduladha\n- تَقَبَّلَ اللهُ مِنَّا وَمِنْكُمْ = semoga Allah menerima amal kita dan kalian\n- كُلُّ عَامٍ وَأَنْتُمْ بِخَيْرٍ = semoga setiap tahun kalian dalam kebaikan\n- صَلَاةُ الْعِيْدِ = salat Id\n- الزِّيَارَةُ / صِلَةُ الرَّحِمِ = kunjungan / silaturahmi\n- الْكَعْكُ / الْحَلْوَى = kue / manisan\n- الْهَدِيَّةُ = hadiah\n- الْمَسْجِدُ = masjid\n- الثِّيَابُ الْجَدِيْدَةُ = pakaian baru\n- نَزُوْرُ الْأَهْلَ = kami mengunjungi keluarga</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Jamak Muannats Salim (جمع المؤنث السالم) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis pembentukan Jamak Muannats Salim dari Isim Mufrad Muannats.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menggunakan Jamak Muannats Salim secara lisan dalam konteks percakapan di sekolah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerjemahkan kalimat bahasa Indonesia yang mengandung jamak perempuan ke bahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — فِي يَوْمِ الْعِيْدِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>يُوْسُف : السَّلَامُ عَلَيْكُمْ. كُلُّ عَامٍ وَأَنْتُمْ بِخَيْرٍ!\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ. تَقَبَّلَ اللهُ مِنَّا وَمِنْكُمْ.\nيُوْسُف : أَيْنَ صَلَّيْتَ صَلَاةَ الْعِيْدِ؟\nعَلِيّ : صَلَّيْتُ فِي الْمَسْجِدِ الْكَبِيْرِ مَعَ أُسْرَتِيْ.\nيُوْسُف : بَعْدَ الصَّلَاةِ مَاذَا فَعَلْتُمْ؟\nعَلِيّ : زُرْنَا الْأَهْلَ وَأَكَلْنَا الْكَعْكَ. وَأَنْتَ؟\nيُوْسُف : نَحْنُ أَيْضًا نَزُوْرُ الْجِيْرَانَ وَنُعْطِي الْهَدَايَا لِلْأَطْفَالِ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Jamak Muannats Salim (جمع المؤنث السالم)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — عِيْدِيْ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>يَوْمُ الْعِيْدِ يَوْمٌ سَعِيْدٌ. فِي الصَّبَاحِ نَذْهَبُ إِلَى الْمَسْجِدِ لِصَلَاةِ الْعِيْدِ. بَعْدَ الصَّلَاةِ نُسَلِّمُ عَلَى الْأَصْدِقَاءِ وَالْأَقَارِبِ. نَلْبَسُ الثِّيَابَ الْجَدِيْدَةَ وَنَأْكُلُ الْحَلْوَى. أُسْرَتِيْ تَزُوْرُ الْجَدَّ وَالْجَدَّةَ. نَحْنُ نَفْرَحُ وَنَشْكُرُ اللهَ عَلَى نِعَمِهِ.\n\nArti: Hari raya adalah hari yang bahagia. Di pagi hari kami pergi ke masjid untuk salat Id. Setelah salat kami bersalaman dengan teman dan kerabat. Kami memakai pakaian baru dan makan manisan. Keluargaku mengunjungi kakek dan nenek. Kami gembira dan bersyukur kepada Allah atas nikmat-Nya.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ungkapan ucapan & fi'il lampau untuk menceritakan aktivitas:\n- كُلُّ عَامٍ وَأَنْتُمْ بِخَيْرٍ / تَقَبَّلَ اللهُ...\n- صَلَّيْتُ، زُرْنَا، أَكَلْنَا (menceritakan peristiwa yang sudah lewat)\n- فِي الصَّبَاحِ / بَعْدَ الصَّلَاةِ (keterangan waktu)\n\nLatihan: menyimak ucapan, role-play silaturahmi, membaca teks, menulis monolog pengalaman Id.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-'id).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XI Semester Genap."
         ]
 },
       4: {
-        "ringkasan": "Kajian mendalam mengenai Jamak Taksir (جمع التكسير) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi في السوق melatih komunikasi jual-beli: menanya harga, menawar, membeli, dan mendeskripsikan barang di pasar.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Jamak Taksir (جمع التكسير)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Jamak Taksir (جمع التكسير)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Jamak Taksir (جمع التكسير) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu membedakan dan menggunakan bentuk mufrad, mutsanna, jamak mudzakkar salim, jamak muannats salim, dan jamak taksir dalam kalimat sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — في السوق",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- السُّوْقُ = pasar\n- الْبَائِعُ / الْمُشْتَرِي = penjual / pembeli\n- الثَّمَنُ / السِّعْرُ = harga\n- كَمْ ثَمَنُ هٰذَا؟ = berapa harga ini?\n- غَالٍ / رَخِيْصٌ = mahal / murah\n- أُرِيْدُ أَنْ أَشْتَرِيَ... = saya ingin membeli...\n- هَلْ عِنْدَكَ...؟ = apakah kamu punya...?\n- الْفَاكِهَةُ / الْخُضَرُ = buah / sayur\n- اللَّحْمُ / السَّمَكُ = daging / ikan\n- الْقُمَاشُ = kain\n- خَفِّضِ الثَّمَنَ مِنْ فَضْلِكَ = turunkan harganya, tolong\n- بِكَمْ؟ = dengan berapa?\n- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةُ آلَافٍ... = bilangan harga</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Jamak Taksir (جمع التكسير) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Memahami konsep Jamak Taksir (jamak tidak beraturan).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menghafal kosakata umum yang termasuk dalam kategori Jamak Taksir.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyusun kalimat komprehensif yang melibatkan berbagai jenis kata benda majemuk.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — فِي السُّوْقِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>الْمُشْتَرِي : السَّلَامُ عَلَيْكُمْ. كَمْ ثَمَنُ هٰذَا التُّفَّاحِ؟\nالْبَائِعُ : وَعَلَيْكُمُ السَّلَامُ. عِشْرُوْنَ أَلْفًا لِلْكِيْلُوْ.\nالْمُشْتَرِي : غَالٍ جِدًّا. خَفِّضِ الثَّمَنَ مِنْ فَضْلِكَ.\nالْبَائِعُ : حَسَنًا، خَمْسَةَ عَشَرَ أَلْفًا. هَلْ تُرِيْدُ شَيْئًا آخَرَ؟\nالْمُشْتَرِي : نَعَمْ، أُرِيْدُ كِيْلُوًّا مِنَ الْمَوْزِ أَيْضًا.\nالْبَائِعُ : تَفَضَّلْ. الْمَجْمُوْعُ خَمْسَةٌ وَعِشْرُوْنَ أَلْفًا.\nالْمُشْتَرِي : خُذِ النُّقُوْدَ. شُكْرًا.\nالْبَائِعُ : شُكْرًا. مَعَ السَّلَامَةِ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Jamak Taksir (جمع التكسير)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — سُوْقُ الْمَدِيْنَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فِيْ مَدِيْنَتِنَا سُوْقٌ كَبِيْرٌ. النَّاسُ يَشْتَرُوْنَ الْفَاكِهَةَ وَالْخُضَرَ وَاللَّحْمَ. الْبَائِعُوْنَ يُنَادُوْنَ: «تَفَضَّلُوْا! الْأَسْعَارُ رَخِيْصَةٌ!» أَنَا أَذْهَبُ إِلَى السُّوْقِ مَعَ أُمِّيْ كُلَّ أُسْبُوْعٍ. نَسْأَلُ عَنِ الثَّمَنِ وَنَخْتَارُ الْبَضَائِعَ الْجَيِّدَةَ. السُّوْقُ مَكَانٌ مُزْدَحِمٌ وَمُفِيْدٌ.\n\nArti: Di kota kami ada pasar besar. Orang-orang membeli buah, sayur, dan daging. Para penjual berseru: «Silakan! Harga murah!» Aku pergi ke pasar bersama ibu setiap minggu. Kami menanyakan harga dan memilih barang yang baik. Pasar adalah tempat yang ramai dan bermanfaat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola transaksi:\n- كَمْ ثَمَنُ + isim؟\n- أُرِيْدُ أَنْ أَشْتَرِيَ + isim\n- bilangan + أَلْفًا (ribu) untuk harga\n- sifat barang: طَازِجٌ، جَيِّدٌ، كَبِيْرٌ، صَغِيْرٌ\n\nLatihan: menyimak harga, role-play tawar-menawar, membaca teks pasar, menulis dialog jual-beli.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      5: {
-        "ringkasan": "Kajian mendalam mengenai Nafi dan Nahi (النفى والنهي) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Nafi dan Nahi (النفى والنهي)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Nafi dan Nahi (النفى والنهي)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Nafi dan Nahi (النفى والنهي) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": null,
-                        "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Nafi dan Nahi (النفى والنهي) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Membedakan penggunaan huruf Nafi (negasi) dan huruf Nahi (larangan).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mempraktikkan ungkapan larangan dan penolakan yang santun dalam bahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Mengidentifikasi kalimat negatif dan larangan dari sebuah percakapan audio.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Nafi dan Nahi (النفى والنهي)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      6: {
-        "ringkasan": "Kajian mendalam mengenai Fi'il Madhi (الفعل الماضي) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Fi'il Madhi (الفعل الماضي)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Fi'il Madhi (الفعل الماضي)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Fi'il Madhi (الفعل الماضي) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": null,
-                        "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Fi'il Madhi (الفعل الماضي) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis kata kerja bentuk lampau (Fi'il Madhi) beserta ciri-cirinya.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Melakukan tasrif (konjugasi) Fi'il Madhi berdasarkan kata ganti pelakunya.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menceritakan pengalaman atau peristiwa masa lalu menggunakan bahasa Arab sederhana.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Fi'il Madhi (الفعل الماضي)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      7: {
-        "ringkasan": "Kajian mendalam mengenai Adad 11–20 (العدد ١١-٢٠) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Adad 11–20 (العدد ١١-٢٠)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Adad 11–20 (العدد ١١-٢٠)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Adad 11–20 (العدد ١١-٢٠) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": null,
-                        "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Adad 11–20 (العدد ١١-٢٠) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Membaca dan menulis bilangan belasan (11-20) dalam bahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Memahami kaidah hubungan antara bilangan belasan (Adad) dan benda yang dihitung (Ma'dud).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyelesaikan soal-soal berhitung sederhana menggunakan Adad 11-20.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Adad 11–20 (العدد ١١-٢٠)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      8: {
-        "ringkasan": "Kajian mendalam mengenai Sifat dan Maushuf (الصفة والموصوف) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Sifat dan Maushuf (الصفة والموصوف)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Sifat dan Maushuf (الصفة والموصوف)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Sifat dan Maushuf (الصفة والموصوف) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menggunakan kalimat negatif (nafi), kalimat larangan (nahi), fi'il madhi, bilangan 11–20 beserta ma'dud-nya, serta susunan sifat dan maushuf dalam komunikasi sederhana secara lisan maupun tulisan.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": null,
-                        "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Sifat dan Maushuf (الصفة والموصوف) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menjelaskan pengertian kata sifat (Na'at/Sifat) dan benda yang disifati (Man'ut/Maushuf).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerapkan prinsip kesesuaian (I'rab, jenis, dan jumlah) antara sifat dan maushuf.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyusun paragraf deskriptif tentang lingkungan sekolah menggunakan susunan sifat dan maushuf.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Sifat dan Maushuf (الصفة والموصوف)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab as-suq).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XI Semester Genap."
         ]
 },
     },
     XII: {
       1: {
-        "ringkasan": "Dalam sintaksis Arab, kalimat sempurna (Al-Jumlah Al-Mufidah) diklasifikasikan berdasarkan kata pertama yang mengawalinya. Pemahaman ini sangat vital dalam membaca teks gundul (kitab kuning).",
+        "ringkasan": "Materi العطلة melatih murid menceritakan rencana dan pengalaman liburan, destinasi wisata, serta kesan perjalanan dalam empat maharat.",
         "sections": [
                 {
-                        "title": "A. Al-Jumlah Al-Ismiyyah (Kalimat Nominal)",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jumlah Ismiyah adalah kalimat yang diawali dengan Isim (kata benda). Struktur pondasi utama dari kalimat ini terdiri atas dua rukun pokok: \n1. **Mubtada'**: Subjek kalimat yang terletak di awal. Hukum I'rabnya wajib Rafa'.\n2. **Khabar**: Predikat yang memberikan keterangan tentang subjek. Hukum I'rabnya juga wajib Rafa'.\n\nContoh: الْمَدْرَسَةُ كَبِيْرَةٌ (Sekolah itu besar).\nKata *Al-madrasatu* adalah isim yang mengawali kalimat (Mubtada'), sedangkan *Kabiiratun* adalah kata sifat yang menjelaskannya (Khabar). Antara mubtada' dan khabar harus terdapat kesesuaian gender (jika subjeknya muannats, khabarnya harus muannats).</p>",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — العطلة",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- الْعُطْلَةُ = liburan\n- السَّفَرُ / الرِّحْلَةُ = perjalanan / wisata\n- الشَّاطِئُ = pantai\n- الْجَبَلُ = gunung\n- الْقَرْيَةُ / الْمَدِيْنَةُ = desa / kota\n- الْفُنْدُقُ = hotel\n- الصُّوْرَةُ = foto\n- أَقْضِي الْعُطْلَةَ فِي... = saya menghabiskan liburan di...\n- سَأُسَافِرُ إِلَى... = saya akan bepergian ke...\n- مُمْتِعٌ / جَمِيْلٌ = menyenangkan / indah\n- الرَّاحَةُ = istirahat\n- زُرْتُ = saya telah mengunjungi</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Al-Jumlah Al-Fi'liyyah (Kalimat Verbal)",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jumlah Fi'liyah adalah kalimat yang diawali dengan Fi'il (kata kerja). Rukun asas dari kalimat ini adalah:\n1. **Fi'il**: Kata kerja, baik itu madhi (lampau), mudhari' (sekarang/akan datang), maupun amr (perintah).\n2. **Fa'il**: Pelaku pekerjaan (Subjek). Hukum I'rabnya wajib Rafa'.\n3. **Maf'ul Bih** (opsional): Objek penderita, hukum I'rabnya Nashab.\n\nContoh: كَتَبَ الطَّالِبُ الدَّرْسَ (Murid laki-laki itu telah menulis pelajaran).\nKata *Kataba* (Telah menulis) adalah Fi'il Madhi. *Ath-Thaalibu* adalah Fa'il (Rafa' dengan dhammah). *Ad-Darsa* adalah Maf'ul Bih (Nashab dengan fathah).</p>",
+                        "title": "B. Al-Hiwar (Dialog) — عَنِ الْعُطْلَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>أَحْمَد : أَيْنَ سَتَقْضِي الْعُطْلَةَ يَا عَلِيّ؟\nعَلِيّ : سَأُسَافِرُ إِلَى الشَّاطِئِ مَعَ أُسْرَتِيْ. وَأَنْتَ؟\nأَحْمَد : سَأَزُوْرُ جَدِّيْ فِي الْقَرْيَةِ. الْهَوَاءُ هُنَاكَ نَقِيٌّ.\nعَلِيّ : مُمْتَازٌ. هَلْ سَتَلْعَبُ كُرَةَ الْقَدَمِ هُنَاكَ؟\nأَحْمَد : نَعَمْ، وَسَأَلْتَقِطُ صُوَرًا كَثِيْرَةً.\nعَلِيّ : بَعْدَ الْعُطْلَةِ نَتَحَدَّثُ عَنْ رِحْلَتِنَا.\nأَحْمَد : حَسَنًا. عُطْلَةً سَعِيْدَةً!</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — عُطْلَتِيْ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>فِي الْعُطْلَةِ الْمَاضِيَةِ سَافَرْتُ مَعَ أُسْرَتِيْ إِلَى الشَّاطِئِ. أَقَمْنَا فِي فُنْدُقٍ صَغِيْرٍ. فِي الصَّبَاحِ سَبَحْنَا فِي الْبَحْرِ، وَفِي الْمَسَاءِ مَشَيْنَا عَلَى الرَّمْلِ. الْمَنْظَرُ كَانَ جَمِيْلًا جِدًّا. اِلْتَقَطْتُ صُوَرًا كَثِيْرَةً. كَانَتِ الْعُطْلَةُ مُمْتِعَةً. أُرِيْدُ أَنْ أَعُوْدَ إِلَى هُنَاكَ مَرَّةً أُخْرَى.\n\nArti: Pada liburan lalu aku bepergian bersama keluarga ke pantai. Kami menginap di hotel kecil. Pagi hari kami berenang di laut, sore hari kami berjalan di pasir. Pemandangannya sangat indah. Aku memotret banyak foto. Liburan itu menyenangkan. Aku ingin kembali ke sana lagi.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola waktu:\n- رencana: سَ + fi'il mudhari' (سَأُسَافِرُ)\n- pengalaman: fi'il madhi (سَافَرْتُ، زُرْتُ)\n- أَقْضِي الْعُطْلَةَ فِي + tempat\n\nLatihan: menyimak dialog rencana, berbagi pengalaman, membaca teks, menulis monolog liburan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1240,116 +1510,135 @@ export const detailedMateri = {
                 }
         ],
         "rujukan": [
-                "Kitab Nahwu Wadhih, Ali Al-Jarim dan Musthafa Amin.",
-                "Qawaid Al-Lughah Al-'Arabiyyah untuk Tingkat Lanjut."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-'uthlah).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XII Semester Ganjil."
         ]
 },
       2: {
-        "ringkasan": "Kajian mendalam mengenai Mubtada' dan Khabar (المبتدأ والخبر) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi في المطار membekali murid bahasa fungsional di bandara: tiket, bagasi, gerbang keberangkatan, dan interaksi dengan petugas.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Mubtada' dan Khabar (المبتدأ والخبر)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Mubtada' dan Khabar (المبتدأ والخبر)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Mubtada' dan Khabar (المبتدأ والخبر) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — في المطار",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- الْمَطَارُ = bandara\n- الطَّائِرَةُ = pesawat\n- تَذْكَرَةُ السَّفَرِ = tiket perjalanan\n- جَوَازُ السَّفَرِ = paspor\n- الْحَقِيْبَةُ = koper/bagasi\n- بَوَّابَةُ الصُّعُوْدِ = gerbang boarding\n- رَقْمُ الرِّحْلَةِ = nomor penerbangan\n- مَوْعِدُ الْإِقْلَاعِ = waktu lepas landas\n- التَّسْجِيْلُ = check-in\n- أَيْنَ بَوَّابَةُ...؟ = di mana gerbang...?\n- مَتَى تُقْلِعُ الطَّائِرَةُ؟ = kapan pesawat berangkat?\n- وَزْنُ الْحَقِيْبَةِ = berat bagasi</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Mubtada' dan Khabar (المبتدأ والخبر) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Mengidentifikasi unsur subjek (Mubtada') dan predikat (Khabar) dalam Jumlah Ismiyah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menelaah kesesuaian antara Mubtada' dan Khabar dari segi jenis (Mudzakkar/Muannats) dan jumlah (Mufrad/Mutsanna/Jamak).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menulis opini singkat terkait isu-isu pendidikan dengan struktur Mubtada' dan Khabar.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — فِي الْمَطَارِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>الْمُسَافِرُ : السَّلَامُ عَلَيْكُمْ. أُرِيْدُ التَّسْجِيْلَ مِنْ فَضْلِكَ.\nالْمُوَظَّفُ : وَعَلَيْكُمُ السَّلَامُ. هَلْ مَعَكَ جَوَازُ السَّفَرِ وَالتَّذْكَرَةُ؟\nالْمُسَافِرُ : نَعَمْ، تَفَضَّلْ.\nالْمُوَظَّفُ : كَمْ حَقِيْبَةً مَعَكَ؟\nالْمُسَافِرُ : حَقِيْبَتَانِ.\nالْمُوَظَّفُ : حَسَنًا. بَوَّابَةُ الصُّعُوْدِ رَقْمُ خَمْسَةٍ. مَوْعِدُ الْإِقْلَاعِ السَّاعَةُ الْعَاشِرَةُ.\nالْمُسَافِرُ : شُكْرًا. أَيْنَ قَاعَةُ الْاِنْتِظَارِ؟\nالْمُوَظَّفُ : أَمَامَكَ عَلَى الْيَمِيْنِ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Mubtada' dan Khabar (المبتدأ والخبر)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — رِحْلَةٌ بِالطَّائِرَةِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>ذَهَبْتُ إِلَى الْمَطَارِ صَبَاحًا. سَجَّلْتُ الْحَقَائِبَ عِنْدَ مَكْتَبِ التَّسْجِيْلِ. ثُمَّ جَلَسْتُ فِي قَاعَةِ الْاِنْتِظَارِ أَمَامَ الْبَوَّابَةِ. أَقْلَعَتِ الطَّائِرَةُ فِي الْوَقْتِ الْمُحَدَّدِ. كَانَتِ الرِّحْلَةُ مُرِيْحَةً. رَأَيْتُ السَّحَابَ مِنَ النَّافِذَةِ. بَعْدَ سَاعَتَيْنِ وَصَلْنَا إِلَى مَطَارِ الْوُصُوْلِ.\n\nArti: Aku pergi ke bandara pagi hari. Aku mendaftarkan koper di loket check-in. Lalu aku duduk di ruang tunggu di depan gerbang. Pesawat lepas landas tepat waktu. Perjalanan nyaman. Aku melihat awan dari jendela. Setelah dua jam kami tiba di bandara tujuan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola permintaan informasi:\n- أُرِيْدُ + mashdar/isim\n- أَيْنَ / مَتَى / كَمْ + ...؟\n- keterangan tempat di bandara: أَمَامَ، عَلَى الْيَمِيْنِ، فِي قَاعَةِ الْاِنْتِظَارِ\n\nLatihan: role-play check-in, membaca prosedur, menulis dialog di bandara.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-mathar).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XII Semester Ganjil."
         ]
 },
       3: {
-        "ringkasan": "Kajian mendalam mengenai Fi'il dan Fa'il (الفعل والفاعل) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi في محطة القطار melatih dialog di stasiun: membeli tiket, menanyakan jadwal, jalur, dan peron keberangkatan.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Fi'il dan Fa'il (الفعل والفاعل)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Fi'il dan Fa'il (الفعل والفاعل)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Fi'il dan Fa'il (الفعل والفاعل) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — محطة القطار",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- مَحَطَّةُ الْقِطَارِ = stasiun kereta api\n- الْقِطَارُ = kereta\n- تَذْكَرَةٌ = tiket\n- شُبَّاكُ التَّذَاكِرِ = loket tiket\n- الرَّصِيْفُ = peron\n- الْمَوْعِدُ = jadwal/waktu\n- الْوُصُوْلُ / الْمُغَادَرَةُ = kedatangan / keberangkatan\n- الدَّرَجَةُ الْأُوْلَى / الثَّانِيَةُ = kelas 1 / 2\n- مَتَى يُغَادِرُ الْقِطَارُ؟ = kapan kereta berangkat?\n- إِلَى أَيْنَ؟ = ke mana?\n- تَذْكَرَةٌ ذِهَابٌ فَقَطْ / ذِهَابٌ وَإِيَابٌ = sekali jalan / pulang-pergi</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Fi'il dan Fa'il (الفعل والفاعل) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Menganalisis unsur kata kerja (Fi'il) dan subjek/pelaku (Fa'il) dalam Jumlah Fi'liyah.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Memahami hukum-hukum tata bahasa terkait peletakan Fa'il setelah Fi'il.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Berbicara mengenai cita-cita dan rencana masa depan dengan memperhatikan posisi Fi'il dan Fa'il.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — عِنْدَ شُبَّاكِ التَّذَاكِرِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>الْمُسَافِرُ : السَّلَامُ عَلَيْكُمْ. أُرِيْدُ تَذْكَرَةً إِلَى سُوْرَابَايَا مِنْ فَضْلِكَ.\nالْمُوَظَّفُ : وَعَلَيْكُمُ السَّلَامُ. ذِهَابٌ فَقَطْ أَمْ ذِهَابٌ وَإِيَابٌ؟\nالْمُسَافِرُ : ذِهَابٌ فَقَطْ. مَتَى يُغَادِرُ الْقِطَارُ؟\nالْمُوَظَّفُ : فِي السَّاعَةِ الثَّامِنَةِ صَبَاحًا. مِنَ الرَّصِيْفِ رَقْمِ اثْنَيْنِ.\nالْمُسَافِرُ : كَمْ ثَمَنُ التَّذْكَرَةِ؟\nالْمُوَظَّفُ : مِائَةُ أَلْفٍ. تَفَضَّلِ التَّذْكَرَةَ.\nالْمُسَافِرُ : شُكْرًا جَزِيْلًا.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Fi'il dan Fa'il (الفعل والفاعل)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — رِحْلَةٌ بِالْقِطَارِ",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>ذَهَبْتُ إِلَى مَحَطَّةِ الْقِطَارِ مَعَ أَبِيْ. اِشْتَرَيْنَا تَذْكَرَتَيْنِ مِنْ شُبَّاكِ التَّذَاكِرِ. انْتَظَرْنَا عَلَى الرَّصِيْفِ رَقْمِ ثَلَاثَةٍ. وَصَلَ الْقِطَارُ فِي الْمَوْعِدِ. جَلَسْنَا بِجَانِبِ النَّافِذَةِ. الْمَنَاظِرُ خَارِجَ الْقِطَارِ جَمِيْلَةٌ. بَعْدَ ثَلَاثِ سَاعَاتٍ وَصَلْنَا إِلَى الْمَحَطَّةِ الْأَخِيْرَةِ.\n\nArti: Aku pergi ke stasiun kereta bersama ayah. Kami membeli dua tiket dari loket. Kami menunggu di peron nomor tiga. Kereta tiba tepat waktu. Kami duduk di samping jendela. Pemandangan di luar kereta indah. Setelah tiga jam kami tiba di stasiun terakhir.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola di stasiun:\n- أُرِيْدُ تَذْكَرَةً إِلَى + kota\n- مَتَى يُغَادِرُ / يَصِلُ الْقِطَارُ؟\n- مِنَ الرَّصِيْفِ رَقْمِ...\n- bilangan + waktu + tempat\n\nLatihan: role-play loket, membaca jadwal sederhana, menulis monolog perjalanan kereta.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku Al-'Arabiyyah Li an-Nasyi'in (bab mahathat al-qithar).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XII Semester Genap."
         ]
 },
       4: {
-        "ringkasan": "Kajian mendalam mengenai Ma'dud 20 ke atas (المعدود ٢٠ فما فوق) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
+        "ringkasan": "Materi رؤساء إندونيسيا mengintegrasikan Bahasa Arab dengan literasi kebangsaan: biografi singkat, masa jabatan, dan keteladanan para presiden Indonesia.",
         "sections": [
                 {
-                        "title": "I. Pengantar Komprehensif: Ma'dud 20 ke atas (المعدود ٢٠ فما فوق)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Ma'dud 20 ke atas (المعدود ٢٠ فما فوق)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Ma'dud 20 ke atas (المعدود ٢٠ فما فوق) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
+                        "title": "A. Al-Mufradat (Kosakata Inti) — رؤساء إندونيسيا",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>- رَئِيْسُ الْجُمْهُوْرِيَّةِ = presiden\n- الرُّؤَسَاءُ = para presiden\n- إِنْدُوْنِيْسِيَا = Indonesia\n- وُلِدَ فِي... = dilahirkan di...\n- تَوَلَّى الرِّئَاسَةَ = menjabat sebagai presiden\n- مِنْ عَامِ... إِلَى عَامِ... = dari tahun... sampai tahun...\n- الْاِسْتِقْلَالُ = kemerdekaan\n- الْقَائِدُ = pemimpin\n- الْخِدْمَةُ / الْوَطَنُ = pengabdian / tanah air\n- مَشْهُوْرٌ = terkenal\n- قُدْوَةٌ = keteladanan\n- سُوْكَارْنُو، سُوْهَارْتُو، ... (nama tokoh disesuaikan)</p>",
                         "dalil": null,
                         "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Ma'dud 20 ke atas (المعدود ٢٠ فما فوق) berbasis Kurikulum Merdeka."
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Mempelajari kaidah pembentukan bilangan puluhan, ratusan, dan ribuan (20 ke atas).</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menerapkan hukum I'rab pada benda yang dihitung (Ma'dud) untuk bilangan besar.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyusun teks yang melibatkan statistik atau jumlah barang dalam konteks perniagaan/bisnis.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
+                        "title": "B. Al-Hiwar (Dialog) — عَنْ رُؤَسَاءِ إِنْدُوْنِيْسِيَا",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>يُوْسُف : مَنْ أَوَّلُ رَئِيْسٍ لِإِنْدُوْنِيْسِيَا؟\nعَلِيّ : أَوَّلُ رَئِيْسٍ هُوَ سُوْكَارْنُو. هُوَ قَائِدُ الْاِسْتِقْلَالِ.\nيُوْسُف : وَمَنْ بَعْدَهُ؟\nعَلِيّ : بَعْدَهُ سُوْهَارْتُو، ثُمَّ رُؤَسَاءُ آخَرُوْنَ.\nيُوْسُف : مَاذَا نَتَعَلَّمُ مِنْهُمْ؟\nعَلِيّ : نَتَعَلَّمُ حُبَّ الْوَطَنِ وَالْخِدْمَةَ لِلشَّعْبِ.\nيُوْسُف : صَحِيْحٌ. الرَّئِيْسُ الْجَيِّدُ قُدْوَةٌ لِلشَّبَابِ.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 },
                 {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Ma'dud 20 ke atas (المعدود ٢٠ فما فوق)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
+                        "title": "C. Al-Qira'ah (Bacaan/Narasi) — رُؤَسَاءُ بِلَادِنَا",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>لِإِنْدُوْنِيْسِيَا رُؤَسَاءُ كَثِيْرُوْنَ مُنْذُ الْاِسْتِقْلَالِ. أَوَّلُهُمْ سُوْكَارْنُو. هُوَ أَعْلَنَ الْاِسْتِقْلَالَ سَنَةَ أَلْفٍ وَتِسْعِمِائَةٍ وَخَمْسَةٍ وَأَرْبَعِيْنَ. الرُّؤَسَاءُ يَخْدُمُوْنَ الْوَطَنَ وَالشَّعْبَ. نَحْنُ نَدْرُسُ تَارِيْخَهُمْ فِي الْمَدْرَسَةِ. حُبُّ الْوَطَنِ مِنَ الْإِيْمَانِ. نُرِيْدُ أَنْ نَكُوْنَ مُوَاطِنِيْنَ صَالِحِيْنَ.\n\nArti: Indonesia memiliki banyak presiden sejak kemerdekaan. Yang pertama adalah Soekarno. Beliau memproklamasikan kemerdekaan tahun 1945. Para presiden melayani tanah air dan rakyat. Kami mempelajari sejarah mereka di sekolah. Cinta tanah air sebagian dari iman. Kami ingin menjadi warga negara yang baik.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Al-Qawa'id & Latihan Maharat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pola biografi sederhana:\n- هُوَ أَوَّلُ / ثَانِي رَئِيْسٍ لِ...\n- وُلِدَ فِي... / تَوَلَّى الرِّئَاسَةَ مِنْ... إِلَى...\n- jumlah ismiyah: سُوْكَارْنُو قَائِدٌ كَبِيْرٌ\n- jumlah fi'liyah: أَعْلَنَ الْاِسْتِقْلَالَ\n\nLatihan: menyimak nama tokoh, presentasi mini 1 presiden, membaca teks, menulis biografi singkat 8–10 kalimat.\nCatatan guru: sesuaikan daftar nama dan masa jabatan dengan kurikulum sejarah yang berlaku.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
-        ]
-},
-      5: {
-        "ringkasan": "Kajian mendalam mengenai Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة) yang dirancang untuk memperluas cakrawala pemikiran, memperkuat fondasi keimanan, serta membangun kecerdasan spiritual dan intelektual sesuai dengan visi pendidikan berkemajuan.",
-        "sections": [
-                {
-                        "title": "I. Pengantar Komprehensif: Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة)",
-                        "content": "<p style='margin-bottom:16px;'>Membahas secara komprehensif tentang <strong>Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة)</strong> memerlukan pendekatan analitis yang mendalam. Dalam tradisi keilmuan Islam, setiap kajian selalu didasarkan pada sumber yang otoritatif dan dikontekstualisasikan dengan realitas sosial terkini. Kajian ini tidak hanya membidik ranah kognitif (pengetahuan), tetapi juga afektif (sikap) dan psikomotorik (tindakan), sehingga materi yang disajikan mampu bertransformasi menjadi pandangan hidup (worldview) yang aplikatif.</p>\n\n<p style='margin-bottom:16px;'>Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat.</p>\n<p style='margin-bottom:16px;'>Lebih dari sekadar teori, pemahaman tentang Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة) menuntut murid untuk melakukan refleksi kritis. Sebagaimana yang diamanatkan dalam Capaian Pembelajaran: <em>\"Murid mampu memahami dan menyusun kalimat nominal (jumlah ismiyah) dan kalimat verbal (jumlah fi'liyah) dengan memperhatikan unsur mubtada', khabar, fi'il, dan fa'il, serta menggunakan bilangan di atas 20 beserta ma'dud-nya dalam berbagai konteks komunikasi sederhana sesuai kaidah bahasa Arab.\"</em>, murid diharapkan mampu menginternalisasi nilai-nilai esensial dari pokok bahasan ini.</p>\n",
-                        "dalil": null,
-                        "arti": null,
-                        "image": "percakapan.jpg",
-                        "caption": "Representasi visual pembelajaran Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة) berbasis Kurikulum Merdeka."
-                },
-                {
-                        "title": "II. Elaborasi Teoretis dan Praktis Materi Pokok",
-                        "content": "<p style='margin-bottom:16px;'>Memasuki tahap pendalaman materi, kita akan merinci poin-poin krusial yang membangun kerangka berpikir utama bab ini. Aspek-aspek teoritis yang akan dibedah meliputi pilar-pilar konseptual, analisis historis, argumentasi tekstual (dalil naqli), serta signifikansi praktisnya dalam pergaulan sehari-hari.</p>\n\n<p style='margin-bottom:16px;'>Keterampilan berbahasa (Maharat al-Lughah) mencakup empat elemen fundamental: Istima' (mendengar), Kalam (berbicara), Qira'ah (membaca), dan Kitabah (menulis). Pembelajaran hiwar (percakapan) merupakan sarana praktis untuk mengasah Maharat al-Kalam, membiasakan lisan dengan artikulasi makharijul huruf yang tepat, dan melatih refleks kognitif dalam merespons sapaan atau instruksi sehari-hari. Melalui latihan intensif, simulasi dialog kontekstual, dan pengayaan mufradat (kosakata), murid dapat meningkatkan kefasihan berkomunikasi layaknya penutur asli (natiqiyyah).</p>\n<p style='margin-bottom:16px;'>Dalam tinjauan sosiologis, pemahaman yang keliru terhadap materi ini seringkali berujung pada disorientasi moral. Oleh karena itu, pendekatan holistik yang memadukan wawasan rasional (aql) dan ketajaman spiritual (qalb) menjadi sangat urgen. Ilmu Sharaf memberikan pemahaman analitis terhadap pola-pola perubahan bentuk kata (wazan) yang masing-masing wazan tersebut menghasilkan derivasi makna yang bervariasi. Sebagai contoh, dari satu akar kata dasar (fi'il madhi), kita dapat menderivasikannya menjadi fi'il mudhari' (kata kerja bentuk masa kini/masa depan), fi'il amr (kata kerja perintah), isim fa'il (subjek pelaku), isim maf'ul (objek yang dikenai pekerjaan), isim zaman/makan (keterangan waktu/tempat), dan isim alat. Metodologi derivasional inilah yang membuat kosakata Bahasa Arab dapat berkembang tanpa batas dan mampu mendeskripsikan fenomena-fenomena baru yang muncul dalam peradaban manusia modern.</p>\n<p style='margin-bottom:16px;'><strong>Rincian Materi Pokok:</strong></p><ul style='padding-left: 20px; margin-bottom:16px;'><li style='margin-bottom: 8px;'><strong>Membaca dan memahami berbagai teks fungsional (seperti surat resmi, pengumuman, dan artikel pendek) berbahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Melakukan simulasi wawancara kerja menggunakan bahasa Arab dasar.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li><li style='margin-bottom: 8px;'><strong>Menyimpulkan pesan moral dari berbagai kisah berbahasa Arab.</strong> — Penjabaran ekstensif mengenai elemen ini membuka wawasan baru tentang urgensi penerapannya di ruang publik maupun privat. Penguasaan atas konsep ini menjamin terbentuknya karakter yang tangguh terhadap arus destruktif.</li></ul>"
-                },
-                {
-                        "title": "III. Implikasi Aksiologis dan Refleksi Karakter",
-                        "content": "<p style='margin-bottom:16px;'>Sebagai konklusi dari elaborasi panjang mengenai <strong>Teks Fungsional dan Komunikasi Lanjutan (التعبير والمحادثة المتقدمة)</strong>, terdapat beberapa hikmah dan implikasi aksiologis (tindakan praktis) yang harus ditanamkan secara kuat dalam sanubari setiap murid.</p>\n\n<p style='margin-bottom:16px;'>Pertama, pemahaman kognitif harus beralih menjadi <em>habituation</em> (pembiasaan). Karakter tidak dibentuk dalam semalam, melainkan melalui repetisi tindakan positif yang didasari oleh kesadaran teologis. Kedua, kolaborasi dan penyebaran manfaat. Ilmu yang diperoleh dari materi ini membawa tanggung jawab dakwah (penyampaian). Mempelajari Bahasa Arab bukan semata-mata menguasai bahasa asing, melainkan memegang kunci utama (miftah) untuk menyingkap khazanah keilmuan Islam dan memahami sumber autentik wahyu Ilahi, yaitu Al-Qur'an dan Al-Hadis. Bahasa Arab, dengan kekayaan struktur morfologi (sharaf) dan sintaksisnya (nahwu), memiliki presisi makna yang sangat tinggi, fleksibilitas ekspresi, dan keindahan retorika (balaghah) yang tidak tertandingi oleh bahasa lain di dunia. Ketekunan mempelajari kaidah bahasa ini merupakan bagian integral dari upaya seorang muslim untuk menyempurnakan pemahaman agamanya.</p>\n<p style='margin-bottom:16px;'>Ketiga, Dalam struktur gramatikal Bahasa Arab, perbedaan antara mufrad (tunggal), mutsanna (ganda), dan jamak (jamak) memberikan nuansa spesifik pada perhitungan dan penyebutan subjek atau objek kalimat. Jamak terbagi menjadi Jamak Mudzakkar Salim (bentuk jamak teratur maskulin), Jamak Muannats Salim (bentuk jamak teratur feminin), dan Jamak Taksir (bentuk jamak tidak teratur yang mengalami perubahan radikal dari akar kata aslinya). Penguasaan pembagian ini sangat esensial untuk menyusun jumlah ismiyyah (kalimat nominal) maupun jumlah fi'liyyah (kalimat verbal) yang secara gramatikal benar dan secara semantik akurat. Oleh karena itu, jadikanlah modul ini bukan sekadar bahan kajian akademik, tetapi sebagai peta jalan (roadmap) pembentukan jati diri muslim berkemajuan yang unggul, beradab, dan siap menyongsong tantangan global dengan prinsip tauhid yang murni.</p>\n"
-                }
-        ],
-        "rujukan": [
-                "Buku Pendidikan Agama Islam & Budi Pekerti Kurikulum Merdeka.",
-                "Kamus Al-Munawwir Arab-Indonesia Terlengkap.",
-                "Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.",
-                "Jurnal Kajian Keislaman dan Pendidikan Berkemajuan."
+                "Buku sejarah Indonesia (disesuaikan ke Bahasa Arab sederhana).",
+                "Kamus Al-Munawwir Arab-Indonesia.",
+                "CP Bahasa Arab Fase F Kelas XII Semester Genap — topik kewargaan."
         ]
 },
     },
@@ -1370,6 +1659,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Visi, Misi, dan Ciri Khas Perguruan Muhammadiyah",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>Tujuan utama Pendidikan Muhammadiyah adalah 'Terwujudnya manusia muslim yang berakhlak mulia, cakap, percaya pada diri sendiri, dan berguna bagi masyarakat dan negara'.\n\nUntuk mencapai tujuan tersebut, Perguruan Muhammadiyah memiliki ciri khas yang dikenal dengan istilah ISMUBA (Al-Islam, Kemuhammadiyahan, dan Bahasa Arab). Ketiga mata pelajaran ini dirancang untuk:\n1. Al-Islam: Menanamkan aqidah yang lurus, akhlak yang mulia, dan pemahaman ibadah sesuai sunnah (tarjih).\n2. Kemuhammadiyahan: Menumbuhkan kebanggaan sebagai kader persyarikatan yang memiliki etos kerja, etos belajar, dan etos sosial tinggi.\n3. Bahasa Arab: Membekali murid dengan alat (miftah) untuk memahami sumber utama ajaran Islam, yaitu Al-Qur'an dan As-Sunnah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Aktualisasi di Lingkungan Sekolah Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sebagai murid SMKS Muhammadiyah, ciri perguruan terasa pada: mapel ISMUBA, pembiasaan ibadah, kegiatan IPM/HW/Tapak Suci, dan budaya etos kerja. Latihan: bandingkan 3 perbedaan sekolah Muhammadiyah dengan sekolah umum (visi, kurikulum tambahan, budaya), lalu tulis 1 komitmen pribadi mendukung identitas sekolah minggu ini.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1399,6 +1696,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Latihan Menghafal dan Mengamalkan Janji",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Hafalkan 6 butir Janji Pelajar Muhammadiyah. Pilih 2 butir yang paling lemah di dirimu (misal: hormat guru, atau kerja keras). Buat indikator perilaku terukur 7 hari (contoh: 'tidak menunda PR', 'menyapa guru'). Evaluasi di akhir pekan bersama teman sebangku.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1420,6 +1725,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Faktor Subyektif (Kondisi Internal)",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>Secara internal, dorongan terkuat bagi K.H. Ahmad Dahlan adalah hasil perenungannya (tadabbur) terhadap ayat-ayat Al-Qur'an, khususnya Surah Ali 'Imran ayat 104 dan Surah Al-Ma'un.\n\nSurah Ali 'Imran: 104 ('Dan hendaklah ada di antara kamu segolongan umat yang menyeru kepada kebajikan, menyuruh kepada yang ma'ruf dan mencegah dari yang munkar') menjadi landasan teologis pembentukan sebuah 'organisasi' atau persyarikatan (segolongan umat yang terorganisir). Dakwah tidak bisa lagi dilakukan secara individu (sporadis), melainkan harus melalui sebuah wadah yang tertata rapi (organisasi).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Membaca Sejarah untuk Aksi Kini",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dari faktor obyektif-subyektif berdirinya Muhammadiyah, petakan masalah umat hari ini di sekitarmu (kebodohan digital, kemiskinan moral, individualisme). Rancang 1 aksi kecil berbasis Al-Ma'un di kelas: penggalangan infak, les sebaya, atau bersih masjid sekolah.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1450,6 +1763,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Mempraktikkan Tajdid Skala Pelajar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Purifikasi: luruskan niat ibadah, jauhi TBC dalam kebiasaan. Dinamisasi: usulkan inovasi kelas (jadwal belajar, manajemen bengkel, konten dakwah digital). Presentasikan 1 ide tajdid mini + manfaatnya bagi sekolah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1475,6 +1796,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Memahami Struktur lewat Observasi",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buat bagan: PP → PW → PD → PC → PR, lalu letakkan posisi sekolahmu (di bawah cabang/daerah setempat). Wawancara singkat 1 guru tentang relasi sekolah dengan Pimpinan Cabang/Daerah. Laporkan temuan 1 halaman.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1496,6 +1825,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Organisasi Otonom (Ortom)",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>Organisasi Otonom (Ortom) adalah satuan organisasi di bawah Muhammadiyah yang diberi wewenang (otonomi) untuk mengatur rumah tangganya sendiri demi membina kelompok tertentu. Ortom Muhammadiyah terdiri dari:\n1. 'Aisyiyah (Pergerakan perempuan Muhammadiyah)\n2. Pemuda Muhammadiyah\n3. Nasyiatul 'Aisyiyah (Pergerakan pemudi/remaja putri)\n4. Ikatan Pelajar Muhammadiyah (IPM)\n5. Ikatan Mahasiswa Muhammadiyah (IMM)\n6. Gerakan Kepanduan Hizbul Wathan (HW)\n7. Tapak Suci Putera Muhammadiyah (TSPM)</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Mengenal Ortom di Sekolah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Identifikasi Ortom yang aktif di sekolah (IPM, HW, Tapak Suci, dll). Ikuti 1 kegiatan, catat: tujuan, nilai yang ditanamkan, dan kontribusimu. Refleksi: Ortom mana yang paling sesuai minatmu dan mengapa?</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1527,6 +1864,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Periodisasi dan Pelajaran Strategis",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buat timeline 5 era kepemimpinan/perjuangan Muhammadiyah + 1 kebijakan kunci tiap era. Ambil 1 pelajaran strategi (misal: fokus AUM di Orde Baru) dan terapkan pada manajemen organisasi kelas/OSIS/IPM.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1548,6 +1893,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Tujuh Pokok Pikiran MADM",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>MADM memuat 7 Pokok Pikiran Utama:\n1. Hidup manusia harus berdasar Tauhid (mengesakan Allah).\n2. Hidup manusia bermasyarakat.\n3. Mematuhi ajaran-ajaran agama Islam demi keselamatan dunia akhirat.\n4. Berjuang menegakkan Islam adalah kewajiban sebagai khalifah di bumi.\n5. Perjuangan akan berhasil dengan mengikuti jejak perjuangan Nabi Muhammad SAW.\n6. Perjuangan tersebut harus direalisasikan melalui organisasi (persyarikatan).\n7. Seluruh perjuangan ditujukan untuk mencapai masyarakat Islam yang sebenar-benarnya (Baldatun Thayyibatun Wa Rabbun Ghafur).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Menjabarkan 7 Pokok MADM",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ringkas 7 pokok pikiran MADM dalam bahasa sendiri (1 kalimat per pokok). Pilih pokok nomor 6 (organisasi) dan 7 (masyarakat Islam sebenar-benarnya): tulis contoh nyata di sekolah yang sudah/belum tercermin.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1577,6 +1930,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. 10 Sifat Kepribadian sebagai Ceklis",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jadikan 10 sifat Kepribadian Muhammadiyah sebagai self-assessment (skala 1–4). Pilih 2 skor terendah, susun rencana perbaikan 14 hari, minta umpan balik pembina IPM/guru Kemuh.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1602,6 +1963,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. MKCHM dan Wawasan Kebangsaan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jelaskan hubungan MKCHM dengan Pancasila dan UUD 1945 menurut poin kebangsaan. Esai 300 kata: 'Bagaimana pelajar Muhammadiyah mengisi kemerdekaan dengan amal usaha?'</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1623,6 +1992,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Aspek-aspek Tuntunan dalam PHIWM",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>PHIWM sangat komprehensif karena mengatur panduan etis di berbagai ruang kehidupan:\n1. Kehidupan Pribadi: Meliputi pedoman beribadah, pengembangan akal (menuntut ilmu), serta menjaga kesehatan fisik dan kebersihan jiwa.\n2. Kehidupan Keluarga: Membangun keluarga sakinah, menghormati orang tua, dan mendidik anak dengan nilai tauhid.\n3. Kehidupan Bermasyarakat: Etika bertetangga, peduli lingkungan hidup, santun dalam perbedaan pendapat.\n4. Kehidupan Berorganisasi: Kedisiplinan bermusyawarah, keikhlasan dalam beramal, dan tidak mencari jabatan (kekuasaan politik praktis) melalui persyarikatan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. PHIWM dalam Kehidupan Remaja",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Ambil 4 ranah PHIWM (pribadi, keluarga, masyarakat, organisasi). Untuk tiap ranah tulis 1 kebiasaan yang sudah baik dan 1 yang perlu diperbaiki. Buat poster digital 'Remaja Ber-PHIWM'.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1654,6 +2031,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Khittah dan Etika Politik Kader",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Diskusikan: mengapa Muhammadiyah institusional netral partai, tetapi warganya boleh berpolitik secara etis? Buat rangkuman Khittah Denpasar 5 butir + sikapmu sebagai calon lulusan yang akan masuk dunia kerja/masyarakat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1679,6 +2064,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Profil Diri sebagai Kader",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Nilai 4 kompetensi kader (keberagamaan, intelektual, sosial, kepeloporan). Susun portofolio singkat: bukti tiap kompetensi (sertifikat, kegiatan, proyek). Target 1 pelatihan formal (Baitul Arqam/TM) bila tersedia.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1700,6 +2093,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Perkaderan Hizbul Wathan dan Tapak Suci",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>Gerakan Kepanduan Hizbul Wathan (HW) mendidik kader melalui metode kepramukaan alam terbuka, melatih kedisiplinan, *survival skill*, dan cinta tanah air berlandaskan Islam. Sedangkan Tapak Suci Putera Muhammadiyah membina kader melalui seni bela diri, dengan moto: 'Dengan Iman dan Akhlak saya menjadi kuat, tanpa Iman dan Akhlak saya menjadi lemah', menyatukan olah fisik dengan pemurnian aqidah dari segala bentuk kesyirikan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Memetakan Jenjang Perkaderan Ortom",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Buat tabel: Ortom | Jenjang perkaderan | Fokus karakter. Wawancara 1 pengurus IPM/HW/Tapak Suci tentang pengalaman perkaderan. Simpulkan relevansinya bagi kesiapan kerja dan kepemimpinan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1730,6 +2131,14 @@ export const detailedMateri = {
                         "arti": null,
                         "image": null,
                         "caption": null
+                },
+                {
+                        "title": "C. Menjaga Wasathiyah di Era Informasi",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Analisis 1 konten medsos yang cenderung ekstrem (tanpa menyebarkan ulang). Tuliskan: ciri ekstremnya, risiko, dan respons wasathiyah Muhammadiyah (NKRI, anti-kekerasan, dalil + akal sehat).</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
                 }
         ],
         "rujukan": [
@@ -1751,6 +2160,14 @@ export const detailedMateri = {
                 {
                         "title": "B. Aktualisasi Bagi Murid Muhammadiyah",
                         "content": "<p style='margin-bottom:12px; text-align:justify;'>Sebagai kader di era digital, murid dituntut tidak hanya saleh dalam beribadah ritual (shalat, puasa), melainkan memformulasikan kesalehan sosial tersebut menjadi karya nyata. Penguasaan *artificial intelligence*, *coding*, kewirausahaan digital, dipadukan dengan kejujuran dan akhlak mulia, adalah manifestasi nyata dari profil pemuda Muslim Berkemajuan yang sesungguhnya.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Islam Berkemajuan dalam Proyek Akhir",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Rancang mini-project 2 minggu: integrasikan skill kejuruan + nilai Islam Berkemajuan (inovasi, maslahat, ekologi, kejujuran). Laporkan: masalah → solusi → dampak → refleksi tauhid.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
