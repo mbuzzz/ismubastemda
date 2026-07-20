@@ -1,10 +1,67 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Maximize, Minimize } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
 import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti } from '../utils/perangkatUtils';
+
+/** Tangkap error render agar mode satu halaman tidak blank diam-diam */
+class PageErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+
+  componentDidCatch(error, info) {
+    console.error('PageErrorBoundary:', error, info);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.resetKey !== this.props.resetKey && this.state.error) {
+      this.setState({ error: null });
+    }
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="a4-page" style={{ padding: '24px' }}>
+          <h2 className="page-title">Terjadi Kesalahan Tampilan</h2>
+          <p style={{ marginTop: '12px', fontSize: '13px', color: '#64748B' }}>
+            Halaman gagal ditampilkan. Coba ganti menu lain, lalu kembali ke halaman ini.
+            Jika masih error, buka mode <strong>Seluruh Dokumen</strong> lalu kembali ke <strong>Satu Halaman</strong>.
+          </p>
+          <pre style={{ marginTop: '16px', fontSize: '11px', background: '#FEF2F2', color: '#991B1B', padding: '12px', borderRadius: '8px', whiteSpace: 'pre-wrap' }}>
+            {String(this.state.error?.message || this.state.error)}
+          </pre>
+          <button
+            type="button"
+            className="no-print"
+            onClick={() => this.setState({ error: null })}
+            style={{
+              marginTop: '16px',
+              padding: '8px 14px',
+              borderRadius: '8px',
+              border: 'none',
+              background: '#0D47A1',
+              color: '#fff',
+              fontWeight: 700,
+              cursor: 'pointer',
+            }}
+          >
+            Coba Lagi
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 export default function Perangkat() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -15,11 +72,17 @@ export default function Perangkat() {
   const [selectedClass, setSelectedClass] = useState(searchParams.get('kelas') || 'X'); // X for E, XI or XII for F
   const [semester, setSemester] = useState((searchParams.get('semester') || 'ganjil').toLowerCase()); // ganjil or genap
   const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'cover'); // side nav active item
-  const [viewMode, setViewMode] = useState(searchParams.get('view') || 'single'); // single page or booklet
+  const [viewMode, setViewMode] = useState(() => {
+    const v = searchParams.get('view');
+    return v === 'booklet' || v === 'single' ? v : 'single';
+  });
   const [teacherName, setTeacherName] = useState('');
   const [teacherNbm, setTeacherNbm] = useState('......................');
   const [academicYear, setAcademicYear] = useState('2026/2027');
-  const [selectedPpmBab, setSelectedPpmBab] = useState(parseInt(searchParams.get('bab') || '1'));
+  const [selectedPpmBab, setSelectedPpmBab] = useState(() => {
+    const n = parseInt(searchParams.get('bab') || '1', 10);
+    return Number.isFinite(n) && n > 0 ? n : 1;
+  });
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -55,17 +118,32 @@ export default function Perangkat() {
     return () => document.body.classList.remove('fullscreen-mode');
   }, [isFullscreen]);
 
+  // Sinkron URL hanya jika berubah — cegah infinite re-render (Maximum update depth)
   useEffect(() => {
-    setSearchParams({
+    const next = {
       mapel: selectedMapel,
       fase,
       kelas: selectedClass,
       semester,
       tab: activeTab,
       view: viewMode,
-      bab: selectedPpmBab.toString()
-    }, { replace: true });
-  }, [selectedMapel, fase, selectedClass, semester, activeTab, viewMode, selectedPpmBab, setSearchParams]);
+      bab: String(selectedPpmBab),
+    };
+    const cur = {
+      mapel: searchParams.get('mapel') || '',
+      fase: searchParams.get('fase') || '',
+      kelas: searchParams.get('kelas') || '',
+      semester: searchParams.get('semester') || '',
+      tab: searchParams.get('tab') || '',
+      view: searchParams.get('view') || '',
+      bab: searchParams.get('bab') || '',
+    };
+    const changed = Object.keys(next).some((k) => next[k] !== cur[k]);
+    if (changed) {
+      setSearchParams(next, { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- bandingkan manual agar stabil
+  }, [selectedMapel, fase, selectedClass, semester, activeTab, viewMode, selectedPpmBab]);
 
   // Pastikan bab PPM selalu valid untuk mapel/kelas/semester aktif (hindari blank di mode satu halaman)
   useEffect(() => {
@@ -75,10 +153,11 @@ export default function Perangkat() {
         : selectedMapel === 'kemuh'
           ? (selectedClass === 'X' ? faseE_kemuh : selectedClass === 'XI' ? faseF11_kemuh : faseF12_kemuh)
           : (selectedClass === 'X' ? faseE : selectedClass === 'XI' ? faseF11 : faseF12)
-      ).semester[semester].materi;
+      ).semester[semester]?.materi || [];
 
-    if (!list?.length) return;
-    if (!list.some((m) => m.bab === selectedPpmBab)) {
+    if (!list.length) return;
+    const babNum = Number(selectedPpmBab);
+    if (!list.some((m) => m.bab === babNum)) {
       setSelectedPpmBab(list[0].bab);
     }
   }, [selectedMapel, selectedClass, semester, fase, selectedPpmBab]);
@@ -101,8 +180,19 @@ export default function Perangkat() {
   };
 
   const activeFaseData = getActiveFaseData();
-  const currentSemesterData = activeFaseData.semester[semester];
-  const materiList = currentSemesterData.materi;
+  // Normalisasi agar mode satu halaman tidak crash jika query URL tidak valid
+  const safeSemester = semester === 'genap' ? 'genap' : 'ganjil';
+  const currentSemesterData = activeFaseData.semester[safeSemester] || activeFaseData.semester.ganjil;
+  const materiList = currentSemesterData?.materi || [];
+
+  useEffect(() => {
+    if (semester !== 'ganjil' && semester !== 'genap') {
+      setSemester('ganjil');
+    }
+    if (viewMode !== 'single' && viewMode !== 'booklet') {
+      setViewMode('single');
+    }
+  }, [semester, viewMode]);
 
   // Sync Class options based on Fase
   const handleFaseChange = (newFase) => {
@@ -362,12 +452,13 @@ export default function Perangkat() {
 
   // Render individual page components based on selected tab or all for booklet
   const renderPage = (tabName, index, specificBab = null, semesterOverride = null) => {
-    const sem = semesterOverride || semester;
-    const semData = activeFaseData.semester[sem];
-    const localMateriList = semData.materi;
-    const activeMateri = specificBab 
-      ? (localMateriList.find(m => m.bab === specificBab) || localMateriList[0])
-      : (localMateriList.find(m => m.bab === selectedPpmBab) || localMateriList[0]);
+    const sem = semesterOverride === 'genap' || semesterOverride === 'ganjil'
+      ? semesterOverride
+      : safeSemester;
+    const semData = activeFaseData.semester[sem] || activeFaseData.semester.ganjil;
+    const localMateriList = semData?.materi || [];
+    const babTarget = Number(specificBab ?? selectedPpmBab);
+    const activeMateri = localMateriList.find(m => m.bab === babTarget) || localMateriList[0] || null;
 
     switch (tabName) {
       case 'cover':
@@ -1461,9 +1552,11 @@ export default function Perangkat() {
                 Aplikasi Rubrik Asesmen Bab Aktif:
               </h4>
               <div className="prevent-break" style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '4px', background: '#F9FBE7' }}>
-                <strong>Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} /></strong>
+                <strong>
+                  Bab {activeMateri?.bab || '-'}: <ArabicText text={activeMateri?.judul || 'Materi belum dipilih'} />
+                </strong>
                 <ul style={{ margin: '8px 0 0 20px', padding: '0' }}>
-                  {activeMateri.tp?.map((tp, tpIdx) => (
+                  {(activeMateri?.tp || []).map((tp, tpIdx) => (
                     <li key={tpIdx} style={{ marginBottom: '6px' }}>
                       <strong>TP {tpIdx + 1}:</strong> {tp}
                       <br/>
@@ -1483,10 +1576,7 @@ export default function Perangkat() {
         );
 
       case 'modul': {
-        const activeMateri = specificBab 
-          ? (localMateriList.find(m => m.bab === specificBab) || localMateriList[0])
-          : (localMateriList.find(m => m.bab === selectedPpmBab) || localMateriList[0]);
-
+        // gunakan activeMateri dari atas (sudah dinormalisasi)
         if (!activeMateri || !activeMateri.bab) {
           return (
             <div key="modul-empty" className="a4-page" style={{ padding: '20mm' }}>
@@ -1514,11 +1604,13 @@ export default function Perangkat() {
                     Pilih Bab PPM:
                     <select
                       value={selectedPpmBab}
-                      onChange={(e) => setSelectedPpmBab(parseInt(e.target.value))}
-                      style={{ marginLeft: '6px', padding: '2px', fontWeight: 'bold' }}
+                      onChange={(e) => setSelectedPpmBab(parseInt(e.target.value, 10))}
+                      style={{ marginLeft: '6px', padding: '2px', fontWeight: 'bold', maxWidth: '280px' }}
                     >
                       {materiList.map((m) => (
-                        <option key={m.bab} value={m.bab}>Bab {m.bab}: <ArabicText text={m.judul} /></option>
+                        <option key={m.bab} value={m.bab}>
+                          {`Bab ${m.bab}: ${m.judul || ''}`}
+                        </option>
                       ))}
                     </select>
                   </>
@@ -1627,7 +1719,7 @@ export default function Perangkat() {
                     <div>
                       <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Dimensi Profil Lulusan (Deep Learning):</strong>
                       <ul style={{ margin: '0', paddingLeft: '16px', listStyleType: 'circle' }}>
-                        {getDplForBab(fase, activeMateri.bab, selectedMapel).map((d, dIdx) => (
+                        {(getDplForBab(fase, activeMateri.bab, selectedMapel) || []).map((d, dIdx) => (
                           <li key={dIdx} style={{ marginBottom: '6px', fontSize: '11px', lineHeight: '1.4' }}>
                             <strong>{d.nama}:</strong> {d.deskripsi}
                           </li>
@@ -1714,7 +1806,8 @@ export default function Perangkat() {
                             <ul style={{ margin: '0', paddingLeft: '16px', fontSize: '10.5px', lineHeight: '1.6' }}>
                               {generateDynamicLangkahInti(targetTp, pertIdx).map((langkah, lIdx) => (
                                 <li key={lIdx} style={{ marginBottom: lIdx === 2 ? '0' : '8px' }}>
-                                  <strong style={{ color: 'var(--primary-dark)' }}>Tahap {lIdx + 1} ({lIdx === 0 ? 'Memahami' : lIdx === 1 ? 'Mengaplikasi' : 'Merefleksi'}):</strong> <span dangerouslySetInnerHTML={{__html: langkah.replace(targetTp, `<strong>${targetTp}</strong>`)}} />
+                                  <strong style={{ color: 'var(--primary-dark)' }}>Tahap {lIdx + 1} ({lIdx === 0 ? 'Memahami' : lIdx === 1 ? 'Mengaplikasi' : 'Merefleksi'}):</strong>{' '}
+                                  <span>{langkah}</span>
                                 </li>
                               ))}
                             </ul>
@@ -2000,7 +2093,7 @@ export default function Perangkat() {
                     <React.Fragment key={mIdx}>
                       <tr>
                         <td className="center">{mIdx * 2 + 1}</td>
-                        <td>{m.tp[0] || <ArabicText text={m.judul} />}</td>
+                        <td>{m.tp?.[0] || <ArabicText text={m.judul} />}</td>
                         <td>Disajikan potongan Q.S. al-Maidah/5: 48, murid mampu mengidentifikasi hukum bacaan tajwid secara tepat.</td>
                         <td className="center">L2 (C3)</td>
                         <td className="center">Pilihan Ganda</td>
@@ -2008,7 +2101,7 @@ export default function Perangkat() {
                       </tr>
                       <tr>
                         <td className="center">{mIdx * 2 + 2}</td>
-                        <td>{m.tp[1] || <ArabicText text={m.judul} />}</td>
+                        <td>{m.tp?.[1] || <ArabicText text={m.judul} />}</td>
                         <td>Murid dapat menganalisis implementasi riil akhlak terpuji dalam bergotong royong di sekolah.</td>
                         <td className="center">L3 (C4)</td>
                         <td className="center">Uraian / Esai</td>
@@ -2027,7 +2120,7 @@ export default function Perangkat() {
         );
 
       case 'kartu-soal': {
-        const localActiveMateri = localMateriList.find(m => m.bab === selectedPpmBab) || localMateriList[0] || {};
+        const localActiveMateri = localMateriList.find(m => m.bab === Number(selectedPpmBab)) || localMateriList[0] || {};
         return (
           <div key="kartu-soal" className="a4-page">
             <h2 className="page-title">KARTU SOAL ASESMEN</h2>
@@ -2387,25 +2480,17 @@ export default function Perangkat() {
             </div>
           </section>
           {viewMode === 'single' ? (
-            <div id="single-container">
-              {(() => {
-                try {
-                  return renderPage(activeTab, 0);
-                } catch (err) {
-                  console.error('Gagal merender halaman:', err);
-                  return (
-                    <div className="a4-page" style={{ padding: '24px' }}>
-                      <h2 className="page-title">Terjadi Kesalahan Tampilan</h2>
-                      <p style={{ marginTop: '12px', fontSize: '13px', color: '#64748B' }}>
-                        Halaman <strong>{activeTab}</strong> gagal ditampilkan. Coba ganti menu lain, lalu kembali ke halaman ini.
-                      </p>
-                      <pre style={{ marginTop: '16px', fontSize: '11px', background: '#FEF2F2', color: '#991B1B', padding: '12px', borderRadius: '8px', whiteSpace: 'pre-wrap' }}>
-                        {String(err?.message || err)}
-                      </pre>
-                    </div>
-                  );
-                }
-              })()}
+            <div id="single-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <PageErrorBoundary resetKey={`${activeTab}-${viewMode}-${semester}-${selectedMapel}-${selectedClass}-${selectedPpmBab}`}>
+                {renderPage(activeTab, 0) || (
+                  <div className="a4-page" style={{ padding: '24px' }}>
+                    <h2 className="page-title">Halaman Tidak Tersedia</h2>
+                    <p style={{ marginTop: '12px', color: '#64748B' }}>
+                      Tab <strong>{activeTab}</strong> tidak dapat ditampilkan. Pilih menu lain di sidebar.
+                    </p>
+                  </div>
+                )}
+              </PageErrorBoundary>
             </div>
           ) : (
             <div id="booklet-container" className="booklet-container" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
