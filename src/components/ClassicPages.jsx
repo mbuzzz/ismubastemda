@@ -28,10 +28,28 @@ export const renderClassicPage = (
 
   // Kolom identitas baris (digunakan di identitas & modul)
   const idRow = (label, value, opts = {}) => (
-    <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-      <td style={{ padding: '5px 10px', fontWeight: 700, fontFamily: "'Playfair Display', serif", fontSize: 11, width: '35%', ...opts.labelStyle }}>{label}</td>
-      <td style={{ padding: '5px 4px', width: '3%', fontSize: 11 }}>:</td>
-      <td style={{ padding: '5px 10px', fontFamily: "'Lora', serif", fontSize: 11, fontWeight: opts.accent ? 700 : 500 }}>{value}</td>
+    <tr style={{ borderBottom: '1px solid #CCCCCC' }}>
+      <td style={{
+        padding: '6px 10px',
+        fontWeight: 700,
+        fontFamily: "'Playfair Display', serif",
+        fontSize: 11,
+        width: '32%',
+        verticalAlign: 'top',
+        whiteSpace: 'nowrap',
+        ...opts.labelStyle,
+      }}>{label}</td>
+      <td style={{ padding: '6px 4px', width: '2%', fontSize: 11, verticalAlign: 'top' }}>:</td>
+      <td style={{
+        padding: '6px 10px',
+        fontFamily: "'Lora', serif",
+        fontSize: 11,
+        fontWeight: opts.accent ? 700 : 500,
+        verticalAlign: 'top',
+        lineHeight: 1.45,
+        wordBreak: 'break-word',
+        overflowWrap: 'anywhere',
+      }}>{value}</td>
     </tr>
   );
   const idSub = (letter, value) => (
@@ -129,28 +147,96 @@ export const renderClassicPage = (
     ============================================================ */
     case 'judul':
       return (
-        <div key="judul-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div
+          key="judul-classic"
+          className="a4-page judul-page"
+          style={{
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            padding: '14mm 12mm',
+          }}
+        >
           <ClassicWatermark opacity={0.05} />
-          <ClassicFrame style={{ padding: '24px 28px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <ClassicFrame style={{
+            width: '100%',
+            maxWidth: '100%',
+            padding: '28px 24px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            boxSizing: 'border-box',
+          }}>
             <BismillahHeader />
             <ClassicDivider width="50%" />
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 16, color: '#000', letterSpacing: 2.5, marginTop: 14, textTransform: 'uppercase' }}>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 800,
+              fontSize: 15,
+              color: '#000',
+              letterSpacing: 2.5,
+              margin: '12px 0 0',
+              textTransform: 'uppercase',
+              textAlign: 'center',
+              width: '100%',
+            }}>
               Halaman Judul
             </h2>
-            <div style={{ width: 60, height: 2, background: '#C9A961', margin: '10px auto' }} />
-            <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 22, color: '#000', textAlign: 'center', lineHeight: 1.3, margin: '10px 0', textTransform: 'uppercase', letterSpacing: 0.8 }}>
+            <div style={{ width: 56, height: 1.5, background: '#333333', margin: '10px auto' }} />
+            <h1 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 900,
+              fontSize: 20,
+              color: '#000',
+              textAlign: 'center',
+              lineHeight: 1.35,
+              margin: '8px 0 6px',
+              textTransform: 'uppercase',
+              letterSpacing: 0.6,
+              width: '100%',
+            }}>
               Perangkat Pembelajaran Lengkap
             </h1>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 14, color: '#000', fontStyle: 'italic', marginBottom: 12 }}>
+            <p style={{
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 600,
+              fontSize: 13,
+              color: '#000',
+              fontStyle: 'italic',
+              margin: '0 0 12px',
+              textAlign: 'center',
+              width: '100%',
+            }}>
               {S.mapel}
             </p>
             <ClassicDivider width="40%" />
-            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 12, color: '#000', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.6 }}>
-              <p>Diajukan Sebagai Dokumen Pelaksanaan Kegiatan Pembelajaran</p>
-              <p>Kurikulum Merdeka</p>
-              <p>Tahun Pelajaran {S.tahunAjaran}</p>
+            <div style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 12,
+              color: '#000',
+              textAlign: 'center',
+              fontStyle: 'italic',
+              lineHeight: 1.65,
+              margin: '4px 0 0',
+              width: '100%',
+            }}>
+              <p style={{ margin: '2px 0' }}>Diajukan Sebagai Dokumen Pelaksanaan Kegiatan Pembelajaran</p>
+              <p style={{ margin: '2px 0' }}>Kurikulum Merdeka</p>
+              <p style={{ margin: '2px 0' }}>Tahun Pelajaran {S.tahunAjaran}</p>
             </div>
-            <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 16 }}>
+
+            {/* Identitas: blok terpusat, label–nilai rapi */}
+            <table style={{
+              width: 'min(88%, 420px)',
+              borderCollapse: 'collapse',
+              margin: '18px auto 0',
+              textAlign: 'left',
+            }}>
               <tbody>
                 {[
                   ['Mata Pelajaran', S.mapel],
@@ -159,18 +245,62 @@ export const renderClassicPage = (
                   ['Guru Pengampu', S.namaGuru],
                   ['Instansi', 'SMKS Muhammadiyah 2 Genteng'],
                 ].map(([l, v], i) => (
-                  <tr key={i} style={{ borderBottom: '1px dotted rgba(201,169,97,0.5)' }}>
-                    <td style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 10.5, color: '#000', width: '40%' }}>{l}</td>
-                    <td style={{ padding: '4px 10px', fontFamily: "'Lora', serif", fontWeight: 700, fontSize: 11, color: '#000' }}>: {v}</td>
+                  <tr key={i} style={{ borderBottom: '1px dotted #999' }}>
+                    <td style={{
+                      padding: '5px 8px 5px 0',
+                      fontFamily: "'Playfair Display', serif",
+                      fontWeight: 600,
+                      fontSize: 10.5,
+                      color: '#000',
+                      width: '38%',
+                      verticalAlign: 'top',
+                      whiteSpace: 'nowrap',
+                    }}>{l}</td>
+                    <td style={{
+                      padding: '5px 4px',
+                      fontFamily: "'Lora', serif",
+                      fontSize: 11,
+                      color: '#000',
+                      width: '4%',
+                      verticalAlign: 'top',
+                    }}>:</td>
+                    <td style={{
+                      padding: '5px 0 5px 4px',
+                      fontFamily: "'Lora', serif",
+                      fontWeight: 700,
+                      fontSize: 11,
+                      color: '#000',
+                      verticalAlign: 'top',
+                      lineHeight: 1.4,
+                    }}>{v}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+
             <ClassicDivider width="50%" />
-            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', letterSpacing: 1.5, marginTop: 12, textTransform: 'uppercase' }}>
+            <p style={{
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 700,
+              fontSize: 11,
+              color: '#000',
+              letterSpacing: 1.5,
+              margin: '12px 0 4px',
+              textTransform: 'uppercase',
+              textAlign: 'center',
+              width: '100%',
+            }}>
               SMKS Muhammadiyah 2 Genteng
             </p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 10.5, color: '#000' }}>
+            <p style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontStyle: 'italic',
+              fontSize: 11,
+              color: '#000',
+              textAlign: 'center',
+              margin: 0,
+              width: '100%',
+            }}>
               Kabupaten Banyuwangi — Jawa Timur
             </p>
           </ClassicFrame>
@@ -864,8 +994,13 @@ export const renderClassicPage = (
                 {idRow('Satuan Pendidikan', S.name)}
                 {idRow('Kelas / Fase', `${ctx.selectedClass} / ${ctx.fase}`)}
                 {idRow('Prediksi Waktu', `${activeMateri.alokasi} JP (${activeMateri.minggu} Pekan)`)}
-                {idRow('Materi', '', { accent: true }).props.children}
-                <tr><td colSpan={2} /><td style={{ fontFamily: "'Amiri', serif", fontSize: 16, color: '#000', padding: '5px 10px' }}><ArabicText text={activeMateri.judul} /></td></tr>
+                {idRow(
+                  'Materi',
+                  <span style={{ fontWeight: 700, lineHeight: 1.45, display: 'inline-block' }}>
+                    <ArabicText text={activeMateri.judul || ''} />
+                  </span>,
+                  { accent: true }
+                )}
               </tbody>
             </table>
 
@@ -899,16 +1034,28 @@ export const renderClassicPage = (
               const targetTp = materiTp[pertIdx] || materiTp[materiTp.length - 1] || activeMateri.judul;
               const isFirst = pertIdx === 0;
               const isLast = pertIdx === totalPertemuan - 1;
+              const badgeStyle = {
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
+                fontSize: 9.5,
+                background: '#FFFFFF',
+                color: '#000000',
+                padding: '3px 8px',
+                border: '1px solid #333333',
+                display: 'inline-block',
+                marginBottom: 4,
+              };
 
               return (
-                <div key={pertIdx}>
+                <div key={pertIdx} className="print-flow-block">
                   <ClassicPanel title={`Pertemuan ${pertIdx + 1} (${S.jpPerMinggu} JP × 45 Menit)`} style={{ margin: '6px 0' }}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', marginBottom: 4, fontStyle: 'italic' }}>
                       Fokus TP: {targetTp}
                     </p>
 
-                    <div style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AWAL (15')</span>
+                    {/* Block layout (bukan flex) agar Firefox bisa memecah konten antar halaman */}
+                    <div className="print-flow-block" style={{ marginBottom: 6 }}>
+                      <span style={badgeStyle}>AWAL (15')</span>
                       <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.5 }}>
                         {isFirst ? (
                           <>
@@ -924,8 +1071,8 @@ export const renderClassicPage = (
                       </ul>
                     </div>
 
-                    <div style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>
+                    <div className="print-flow-block" style={{ marginBottom: 6 }}>
+                      <span style={badgeStyle}>
                         INTI ({S.jpPerMinggu * 45 - 30}') — {isFirst ? 'Eksplorasi' : isLast ? 'Presentasi & Evaluasi' : 'Pendalaman'}
                       </span>
                       <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.6 }}>
@@ -935,8 +1082,8 @@ export const renderClassicPage = (
                       </ul>
                     </div>
 
-                    <div style={{ display: 'flex', gap: 8 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AKHIR (15')</span>
+                    <div className="print-flow-block">
+                      <span style={badgeStyle}>AKHIR (15')</span>
                       <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.5 }}>
                         {isLast ? (
                           <>
@@ -955,13 +1102,12 @@ export const renderClassicPage = (
                     </div>
                   </ClassicPanel>
 
-                  <ClassicDivider width="40%" />
+                  {!isLast && <ClassicDivider width="40%" />}
                 </div>
               );
             })}
 
-          <div style={{ pageBreakBefore: 'always' }} />
-          {/* IV. Asesmen Pembelajaran */}
+          {/* IV. Asesmen Pembelajaran — lanjut natural setelah pertemuan (tanpa page-break paksa) */}
           <div style={{ marginTop: 20 }}>
               <ClassicSectionHead roman="IV">Asesmen Pembelajaran</ClassicSectionHead>
 
@@ -996,14 +1142,9 @@ export const renderClassicPage = (
               </ClassicPanel>
             </div>
 
-            <ClassicSignature schoolInfoData={S} sem={sem} />
-          </div>
-
-          {/* Lembar sendiri: QR Code Bahan Ajar */}
-          <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ClassicWatermark opacity={0.04} />
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '16px 24px', background: 'rgba(255,252,244,0.8)' }}>
+            {/* Lampiran digabung dalam 1 aliran (bukan a4-page terpisah) agar tidak ada lembar kosong */}
+            <div className="print-flow-block" style={{ textAlign: 'center', marginTop: 20 }}>
+              <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '16px 24px', background: 'rgba(255,252,244,0.8)', textAlign: 'center' }}>
                 <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961', margin: '-16px -24px 12px' }}>
                   LAMPIRAN: QR CODE BAHAN AJAR
                 </div>
@@ -1020,97 +1161,95 @@ export const renderClassicPage = (
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* Lembar sendiri: LKPD — semua pertemuan dalam satu aliran */}
-          {lkpdList.length > 0 ? (
-            <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
-              <ClassicWatermark opacity={0.04} />
-              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 8 }}>
-                LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
+            {lkpdList.length > 0 && (
+              <div className="print-flow-block" style={{ marginTop: 16 }}>
+                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', marginBottom: 8 }}>
+                  LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
+                </div>
+                {lkpdList.map((lkpdItem, li) => (
+                  <div key={li} className="print-flow-block">
+                    {renderLkpdSection(lkpdItem)}
+                    {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '10px 0' }} />}
+                  </div>
+                ))}
               </div>
-              {lkpdList.map((lkpdItem, li) => (
-                <div key={li}>
-                  {renderLkpdSection(lkpdItem)}
-                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '10px 0' }} />}
-                </div>
-              ))}
-            </div>
-          ) : null}
+            )}
 
-          {/* Lembar sendiri: Rubrik Penilaian */}
-          {lkpdList[0]?.lkpd && (
-            <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
-              <ClassicWatermark opacity={0.04} />
-              <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
-                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
-                  LAMPIRAN: RUBRIK PENILAIAN LKPD
-                </div>
-                <div style={{ padding: '10px' }}>
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, border: '1px solid #C9A961' }}>
-                    <thead>
-                      <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '5%' }}>No</th>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '35%' }}>Komponen</th>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>Tidak (&lt;75)</th>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>CK (75-83)</th>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>K (84-92)</th>
-                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>SK (93-100)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {Array.isArray(lkpdList[0].lkpd.rubrikPenilaian) && lkpdList[0].lkpd.rubrikPenilaian.map((rub, rIdx) => (
-                        <React.Fragment key={rIdx}>
-                          <tr style={{ background: 'rgba(201,169,97,0.08)', fontWeight: 700, borderBottom: '1px solid rgba(201,169,97,0.3)' }}>
-                            <td style={{ textAlign: 'center', padding: '4px 6px' }}>{rub.no}</td>
-                            <td style={{ padding: '4px 6px', color: '#000' }} colSpan={5}>{rub.komponen}</td>
-                          </tr>
-                          {rub.sub.map((sText, sIdx) => (
-                            <tr key={sIdx} style={{ borderBottom: '1px dotted rgba(201,169,97,0.2)' }}>
-                              <td></td>
-                              <td style={{ padding: '2px 6px', fontSize: 9 }}>{sText}</td>
-                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+            {lkpdList[0]?.lkpd && (
+              <div className="print-flow-block" style={{ marginTop: 16 }}>
+                <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
+                  <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
+                    LAMPIRAN: RUBRIK PENILAIAN LKPD
+                  </div>
+                  <div style={{ padding: '10px' }}>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, border: '1px solid #C9A961' }}>
+                      <thead>
+                        <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '5%' }}>No</th>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '35%' }}>Komponen</th>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>Tidak (&lt;75)</th>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>CK (75-83)</th>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>K (84-92)</th>
+                          <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>SK (93-100)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {Array.isArray(lkpdList[0].lkpd.rubrikPenilaian) && lkpdList[0].lkpd.rubrikPenilaian.map((rub, rIdx) => (
+                          <React.Fragment key={rIdx}>
+                            <tr style={{ background: 'rgba(201,169,97,0.08)', fontWeight: 700, borderBottom: '1px solid rgba(201,169,97,0.3)' }}>
+                              <td style={{ textAlign: 'center', padding: '4px 6px' }}>{rub.no}</td>
+                              <td style={{ padding: '4px 6px', color: '#000' }} colSpan={5}>{rub.komponen}</td>
                             </tr>
-                          ))}
-                        </React.Fragment>
-                      ))}
-                    </tbody>
-                  </table>
+                            {rub.sub.map((sText, sIdx) => (
+                              <tr key={sIdx} style={{ borderBottom: '1px dotted rgba(201,169,97,0.2)' }}>
+                                <td></td>
+                                <td style={{ padding: '2px 6px', fontSize: 9 }}>{sText}</td>
+                                <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                                <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                                <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                                <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                              </tr>
+                            ))}
+                          </React.Fragment>
+                        ))}
+                      </tbody>
+                    </table>
 
-                  {lkpdList[0].lkpd.bobotPenilaian && (
-                    <div style={{ marginTop: 10 }}>
-                      <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', borderBottom: '1px solid #C9A961', paddingBottom: 4, marginBottom: 6 }}>Persentase Bobot Komponen Penilaian:</h4>
-                      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, border: '1px solid #C9A961' }}>
-                        <thead>
-                          <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Persiapan</th>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Proses</th>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Hasil</th>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Sikap</th>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Waktu</th>
-                            <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Nilai Akhir (NP)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.persiapan}%</td>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.proses}%</td>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.hasil}%</td>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.sikap}%</td>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.waktu}%</td>
-                            <td style={{ textAlign: 'center', padding: '5px 8px', fontWeight: 700, color: '#000' }}>Σ(Skor × Bobot)</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
+                    {lkpdList[0].lkpd.bobotPenilaian && (
+                      <div style={{ marginTop: 10 }}>
+                        <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', borderBottom: '1px solid #C9A961', paddingBottom: 4, marginBottom: 6 }}>Persentase Bobot Komponen Penilaian:</h4>
+                        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, border: '1px solid #C9A961' }}>
+                          <thead>
+                            <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Persiapan</th>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Proses</th>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Hasil</th>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Sikap</th>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Waktu</th>
+                              <th style={{ padding: '5px 8px', border: '1px solid #C9A961' }}>Nilai Akhir (NP)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.persiapan}%</td>
+                              <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.proses}%</td>
+                              <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.hasil}%</td>
+                              <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.sikap}%</td>
+                              <td style={{ textAlign: 'center', padding: '5px 8px' }}>{lkpdList[0].lkpd.bobotPenilaian.waktu}%</td>
+                              <td style={{ textAlign: 'center', padding: '5px 8px', fontWeight: 700, color: '#000' }}>Σ(Skor × Bobot)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
+
+            <ClassicSignature schoolInfoData={S} sem={sem} />
+          </div>
         </React.Fragment>
       );
     }

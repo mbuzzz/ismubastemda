@@ -786,7 +786,10 @@ body {
   background: white;
   box-shadow: var(--shadow);
   position: relative;
-  page-break-after: always;
+  /* Jangan pakai page-break di screen — double-break dengan @media print
+     sering menghasilkan halaman kosong di PDF. */
+  page-break-after: auto;
+  break-after: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-sizing: border-box;
@@ -879,7 +882,12 @@ body {
     background: none !important;
   }
 
-  /* Each logical document starts on a new sheet (break-before only — avoid blank sheets) */
+  /*
+   * Page break policy (ketat — hindari lembar kosong):
+   * - HANYA .a4-page memulai halaman baru (1 seksi dokumen = Cover / PROTA / Modul / dll)
+   * - Di DALAM .a4-page konten mengalir natural (tidak ada break paksa per pertemuan/card)
+   * - Jangan page-break-after + before bersamaan; jangan empty div pageBreak*
+   */
   .a4-page {
     width: 100% !important;
     max-width: 100% !important;
@@ -906,6 +914,46 @@ body {
     display: block !important;
     float: none !important;
     clear: both !important;
+  }
+
+  /* Opsional: class ini TIDAK memaksa halaman baru (disimpan untuk kompatibilitas) */
+  .print-section-break {
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /*
+   * Firefox blank-page fix: flex row tinggi (AWAL/INTI/AKHIR) tidak bisa dipecah
+   * → sisa halaman kosong total (hanya watermark). Konten harus block + breakable.
+   */
+  .print-flow-block,
+  .a4-page .modern-card,
+  .a4-page .modern-card-body,
+  .a4-page .lkpd-section {
+    display: block !important;
+    float: none !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Watermark absolut full-height sering menambah lembar kosong di Firefox print */
+  .a4-page > div[style*="position: absolute"],
+  .a4-page > div[style*="position:absolute"] {
+    display: none !important;
+  }
+
+  /* Gambar besar jangan di-avoid kalau hampir 1 halaman (QR aman, tetap avoid kecil) */
+  .a4-page img {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   /*
@@ -977,7 +1025,10 @@ body {
     margin-bottom: 0 !important;
   }
 
-  .a4-page:first-of-type {
+  /* First printed sheet: no leading blank page */
+  .a4-page:first-of-type,
+  #booklet-container > .a4-page:first-child,
+  #single-container > .a4-page:first-child {
     page-break-before: avoid !important;
     break-before: avoid !important;
   }
@@ -998,16 +1049,53 @@ body {
     text-align: left !important;
   }
 
-  /* True cover only: one sheet, flex layout preserved, clip so it cannot bleed */
+  /* Halaman judul: tetap rata tengah saat print */
+  .a4-page.judul-page,
+  .cover-page.judul-page {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 6mm 4mm !important;
+  }
+
+  .a4-page.judul-page .cover-border,
+  .judul-page .cover-border {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .judul-page h1,
+  .judul-page h2,
+  .judul-page h3,
+  .judul-page p {
+    text-align: center !important;
+  }
+
+  .judul-page .identity-box,
+  .judul-page table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* True cover only: fit one printable sheet (A4 − @page margins) without spilling a blank 2nd page */
   .a4-page.a4-cover {
     position: relative !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
     align-items: stretch !important;
-    min-height: 273mm !important;
-    height: 273mm !important;
-    max-height: 273mm !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
     overflow: hidden !important;
     padding: 6mm 3mm !important;
     page-break-inside: avoid !important;
@@ -1292,13 +1380,58 @@ body {
     height: 40px !important;
   }
 
-  /* Force background colors, gradients and shapes to print */
+  /*
+   * Hemat tinta: jangan cetak fill warna (coklat/emas/biru solid).
+   * Struktur tetap lewat border tipis + teks hitam.
+   */
   *,
   *::before,
   *::after {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: economy !important;
+    print-color-adjust: economy !important;
     box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .a4-page,
+  .a4-page *:not(img):not(svg):not(path):not(circle) {
+    background: #ffffff !important;
+    background-image: none !important;
+    background-color: #ffffff !important;
+  }
+
+  .a4-page,
+  .a4-page * {
+    color: #000000 !important;
+  }
+
+  /* Header tabel / badge: outline saja, tanpa fill */
+  .a4-page th,
+  .a4-page .modern-card-header,
+  .a4-page .timeline-badge,
+  .a4-page .pill-badge,
+  .a4-page .pill-badge.active,
+  .a4-page .timeline-duration,
+  .a4-page .cover-mapel {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+    border: 1px solid #333333 !important;
+    font-weight: 700 !important;
+  }
+
+  .a4-page .modern-card,
+  .a4-page .metadata-card,
+  .a4-page .timeline-content,
+  .a4-page .rubrik-item,
+  .a4-page .info-alert {
+    background: #ffffff !important;
+    border-color: #666666 !important;
+  }
+
+  .a4-page tr:nth-child(even),
+  .a4-page tr:nth-child(odd) {
+    background: #ffffff !important;
   }
 
   /* Avoid text widows/orphans looking like collisions */
@@ -2536,87 +2669,105 @@ body.theme-classic .no-print {
 }
 
 /* ============================================================ */
-/*  CLASSIC THEME — PRINT ADJUSTMENTS                           */
-/*  Make the print output respect the active classic theme.     */
+/*  CLASSIC THEME — PRINT (hemat tinta: tanpa fill coklat/emas) */
 /* ============================================================ */
 @media print {
   [data-theme="classic"] .a4-page,
   body.theme-classic .a4-page {
     background: #FFFFFF !important;
-    border: 2px double #C9A961 !important;
+    border: none !important;
     box-shadow: none !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 
+  /* Corner ornaments — sembunyikan saat print */
   [data-theme="classic"] .a4-page::before,
   [data-theme="classic"] .a4-page::after,
   body.theme-classic .a4-page::before,
   body.theme-classic .a4-page::after {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    display: none !important;
+    content: none !important;
   }
 
   [data-theme="classic"] .modern-card,
   body.theme-classic .modern-card {
     background: #FFFFFF !important;
-    border-left: 4px double #C9A961 !important;
+    border: 1px solid #333333 !important;
+    border-left: 3px solid #333333 !important;
     box-shadow: none !important;
   }
 
+  /* Header tabel: tanpa fill emas */
   [data-theme="classic"] .data-table th,
-  body.theme-classic .data-table th {
-    background: #C9A961 !important;
-    color: #FFFFFF !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  body.theme-classic .data-table th,
+  [data-theme="classic"] .a4-page th,
+  body.theme-classic .a4-page th {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #333333 !important;
+    font-weight: 700 !important;
   }
 
   [data-theme="classic"] .data-table tr:nth-child(even),
-  body.theme-classic .data-table tr:nth-child(even) {
+  body.theme-classic .data-table tr:nth-child(even),
+  [data-theme="classic"] .data-table tr:nth-child(odd),
+  body.theme-classic .data-table tr:nth-child(odd),
+  [data-theme="classic"] .data-table td,
+  body.theme-classic .data-table td {
     background: #FFFFFF !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    color: #000000 !important;
+    border-color: #666666 !important;
   }
 
   [data-theme="classic"] .page-title,
   body.theme-classic .page-title {
     color: #000 !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 
   [data-theme="classic"] .cover-border,
   body.theme-classic .cover-border {
-    border: 3px double #C9A961 !important;
+    border: 2px solid #333333 !important;
     background: #FFFFFF !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 
+  /* Badge AWAL/INTI/AKHIR & timeline: outline hitam, tanpa fill coklat */
   [data-theme="classic"] .timeline-badge,
   body.theme-classic .timeline-badge {
-    background: #C9A961 !important;
-    color: #1A1A2E !important;
-    border: 2px solid #C9A961 !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #333333 !important;
+    box-shadow: none !important;
   }
 
   [data-theme="classic"] .timeline-content,
   body.theme-classic .timeline-content {
     background: #FFFFFF !important;
-    border-left: 3px double #C9A961 !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    border: 1px solid #666666 !important;
+    border-left: 3px solid #333333 !important;
   }
 
   [data-theme="classic"] .cover-mapel,
   body.theme-classic .cover-mapel {
-    background: linear-gradient(135deg, #C9A961, #B8860B) !important;
-    color: #FFFFFF !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+    background: #FFFFFF !important;
+    background-image: none !important;
+    color: #000000 !important;
+    border: 1px solid #333333 !important;
+  }
+
+  [data-theme="classic"] .pill-badge,
+  [data-theme="classic"] .pill-badge.active,
+  body.theme-classic .pill-badge,
+  body.theme-classic .pill-badge.active,
+  [data-theme="classic"] .timeline-duration,
+  body.theme-classic .timeline-duration,
+  [data-theme="classic"] .metadata-card,
+  body.theme-classic .metadata-card,
+  [data-theme="classic"] .rubrik-item,
+  body.theme-classic .rubrik-item {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    color: #000000 !important;
+    border-color: #666666 !important;
+    box-shadow: none !important;
   }
 
   [data-theme="classic"] body,

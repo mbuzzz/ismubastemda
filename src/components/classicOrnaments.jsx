@@ -112,16 +112,16 @@ export const ClassicSectionHead = ({ children, roman }) => (
   </h3>
 );
 
-/** Kartu panel perkamen klasik (border emas ganda, kiri tebal) */
+/** Kartu panel klasik (putih + border — hemat tinta saat print) */
 export const ClassicPanel = ({ children, style, title }) => (
-  <div style={{
-    background: '#FAFAFA',
-    border: '1px solid rgba(201,169,97,0.45)',
-    borderLeft: '4px double #C9A961',
+  <div className="classic-panel" style={{
+    background: '#FFFFFF',
+    border: '1px solid #666666',
+    borderLeft: '3px solid #333333',
     borderRadius: 2,
     padding: '12px 16px',
     margin: '8px 0',
-    boxShadow: '0 2px 6px rgba(139,105,20,0.08)',
+    boxShadow: 'none',
     fontFamily: "'Lora', serif",
     pageBreakInside: 'auto',
     ...style,
@@ -134,10 +134,10 @@ export const ClassicPanel = ({ children, style, title }) => (
         color: '#000',
         textTransform: 'uppercase',
         letterSpacing: 1,
-        borderBottom: '1px solid #C9A961',
+        borderBottom: '1px solid #333333',
         paddingBottom: 6,
         marginBottom: 8,
-      }}><span style={{ color: '#C9A961', marginRight: 6 }}>❖</span>{title}</div>
+      }}><span style={{ color: '#333', marginRight: 6 }}>❖</span>{title}</div>
     )}
     {children}
   </div>
@@ -147,7 +147,7 @@ export const ClassicPanel = ({ children, style, title }) => (
 export const ClassicSignature = ({ schoolInfoData, sem }) => {
   const yearStr = schoolInfoData.tahunAjaran.split('/')[sem === 'ganjil' ? 0 : 1];
   return (
-    <div style={{
+    <div className="signature-section" style={{
       display: 'flex', justifyContent: 'space-between', gap: 10,
       marginTop: 30, paddingTop: 14,
       borderTop: '3px double #C9A961',

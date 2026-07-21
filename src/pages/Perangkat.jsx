@@ -789,56 +789,75 @@ export default function Perangkat() {
 
       case 'judul':
         return (
-          <div key="judul" className="a4-page cover-page front-matter-page">
-            <div className="cover-border" style={{ borderColor: '#666', borderStyle: 'double' }}>
-              <div style={{ textAlign: 'center', marginTop: '24px' }}>
-                <h2 style={{ fontSize: '16px', fontWeight: 'bold' }}>HALAMAN JUDUL</h2>
+          <div
+            key="judul"
+            className="a4-page cover-page front-matter-page judul-page"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
+            }}
+          >
+            <div
+              className="cover-border"
+              style={{
+                borderColor: '#666',
+                borderStyle: 'double',
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                padding: '28px 24px',
+              }}
+            >
+              <div style={{ textAlign: 'center', width: '100%' }}>
+                <h2 style={{ fontSize: '15px', fontWeight: 'bold', letterSpacing: '1.5px', margin: 0 }}>HALAMAN JUDUL</h2>
                 <hr style={{ width: '100px', margin: '12px auto', borderColor: '#333' }} />
               </div>
 
-              <div style={{ textAlign: 'center', margin: '28px 0' }}>
-                <h1 style={{ fontSize: '20px', fontWeight: '800', lineHeight: '1.4' }}>
+              <div style={{ textAlign: 'center', margin: '22px 0 8px', width: '100%' }}>
+                <h1 style={{ fontSize: '20px', fontWeight: '800', lineHeight: '1.35', margin: 0 }}>
                   PERANGKAT PEMBELAJARAN LENGKAP
                 </h1>
-                <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#333', marginTop: '8px' }}>{schoolInfoData.mapel}</h3>
+                <h3 style={{ fontSize: '13px', fontWeight: '600', color: '#333', marginTop: '8px', marginBottom: 0 }}>
+                  {schoolInfoData.mapel}
+                </h3>
               </div>
 
-              <div style={{ margin: '28px 0', textAlign: 'center', fontSize: '12px', lineHeight: 1.6 }}>
-                <p>Diajukan Sebagai Dokumen Pelaksanaan Kegiatan Pembelajaran</p>
-                <p>Kurikulum Merdeka</p>
-                <p>Tahun Pelajaran {schoolInfoData.tahunAjaran}</p>
+              <div style={{ margin: '18px 0', textAlign: 'center', fontSize: '12px', lineHeight: 1.65, width: '100%' }}>
+                <p style={{ margin: '2px 0' }}>Diajukan Sebagai Dokumen Pelaksanaan Kegiatan Pembelajaran</p>
+                <p style={{ margin: '2px 0' }}>Kurikulum Merdeka</p>
+                <p style={{ margin: '2px 0' }}>Tahun Pelajaran {schoolInfoData.tahunAjaran}</p>
               </div>
 
-              <div className="identity-box" style={{ width: '90%', margin: '0 auto' }}>
-                <table style={{ width: '100%', fontSize: '11px', borderCollapse: 'collapse' }}>
+              <div className="identity-box" style={{ width: 'min(90%, 420px)', margin: '8px auto 0' }}>
+                <table style={{ width: '100%', fontSize: '11px', borderCollapse: 'collapse', textAlign: 'left' }}>
                   <tbody>
-                    <tr>
-                      <td style={{ width: '140px', padding: '5px 0', fontWeight: 'bold' }}>Mata Pelajaran</td>
-                      <td style={{ padding: '5px 0' }}>: {schoolInfoData.mapel}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ fontWeight: 'bold', padding: '5px 0' }}>Fase / Kelas</td>
-                      <td style={{ padding: '5px 0' }}>: {fase} / {selectedClass}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ fontWeight: 'bold', padding: '5px 0' }}>Semester</td>
-                      <td style={{ padding: '5px 0' }}>: {sem.toUpperCase()}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ fontWeight: 'bold', padding: '5px 0' }}>Guru Pengampu</td>
-                      <td style={{ padding: '5px 0' }}>: {schoolInfoData.namaGuru}</td>
-                    </tr>
-                    <tr>
-                      <td style={{ fontWeight: 'bold', padding: '5px 0' }}>Instansi</td>
-                      <td style={{ padding: '5px 0' }}>: SMKS Muhammadiyah 2 Genteng</td>
-                    </tr>
+                    {[
+                      ['Mata Pelajaran', schoolInfoData.mapel],
+                      ['Fase / Kelas', `${fase} / ${selectedClass}`],
+                      ['Semester', sem.toUpperCase()],
+                      ['Guru Pengampu', schoolInfoData.namaGuru],
+                      ['Instansi', 'SMKS Muhammadiyah 2 Genteng'],
+                    ].map(([label, value], i) => (
+                      <tr key={i} style={{ borderBottom: '1px dotted #CCC' }}>
+                        <td style={{ width: '38%', padding: '5px 8px 5px 0', fontWeight: 'bold', verticalAlign: 'top', whiteSpace: 'nowrap' }}>{label}</td>
+                        <td style={{ width: '4%', padding: '5px 4px', verticalAlign: 'top' }}>:</td>
+                        <td style={{ padding: '5px 0 5px 4px', verticalAlign: 'top', lineHeight: 1.4 }}>{value}</td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
 
-              <div style={{ textAlign: 'center', marginBottom: '20px', marginTop: '24px', fontSize: '11px', color: '#555' }}>
-                <p>SMKS MUHAMMADIYAH 2 GENTENG</p>
-                <p>Kabupaten Banyuwangi - Jawa Timur</p>
+              <div style={{ textAlign: 'center', marginTop: '24px', fontSize: '11px', color: '#555', width: '100%' }}>
+                <p style={{ margin: '2px 0', fontWeight: 700, letterSpacing: '0.5px' }}>SMKS MUHAMMADIYAH 2 GENTENG</p>
+                <p style={{ margin: '2px 0' }}>Kabupaten Banyuwangi - Jawa Timur</p>
               </div>
             </div>
           </div>
@@ -2012,9 +2031,7 @@ export default function Perangkat() {
                 </div>
               </div>
 
-              <div style={{ pageBreakAfter: 'always' }} />
-
-              {/* SECTION 4: Langkah-Langkah Pembelajaran (Per Pertemuan) */}
+              {/* SECTION 4: Langkah-Langkah Pembelajaran (Per Pertemuan) — aliran natural, tanpa page-break paksa */}
               <div style={{ textAlign: 'center', margin: '15px 0 10px 0' }}>
                 <h3 style={{ fontSize: '13px', fontWeight: '800', color: 'var(--primary-dark)' }}>IV. LANGKAH-LANGKAH KEGIATAN PEMBELAJARAN (PER PERTEMUAN)</h3>
                 <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>Total {totalPertemuan} Pertemuan ({activeMateri.alokasi} JP × 45 Menit) - Pendekatan TPACK & Diferensiasi</p>
@@ -2156,8 +2173,6 @@ export default function Perangkat() {
                 </div>
               </div>
 
-              <div style={{ pageBreakAfter: 'always' }} />
-
               {/* SECTION 6: Bahan Ajar Lengkap & Kontekstual */}
               {(() => {
                 const matDetail = detailedMateri?.[selectedMapel]?.[selectedClass]?.[activeMateri.bab];
@@ -2216,8 +2231,6 @@ export default function Perangkat() {
                   </div>
                 );
               })()}
-
-              <div style={{ pageBreakAfter: 'always' }} />
 
               {/* SECTION 7: LAMPIRAN LKPD UTUH & KONTEKSTUAL (SESUAI FORMAT DOCX REFERENSI) */}
               {(() => {
