@@ -862,7 +862,7 @@ export const renderClassicPage = (
               const isLast = pertIdx === totalPertemuan - 1;
 
               return (
-                <div key={pertIdx}>
+                <div key={pertIdx} style={{ pageBreakBefore: pertIdx > 0 ? 'always' : 'avoid' }}>
                   <ClassicPanel title={`Pertemuan ${pertIdx + 1} (${S.jpPerMinggu} JP × 45 Menit)`}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', marginBottom: 6, fontStyle: 'italic' }}>
                       Fokus TP: {targetTp}
@@ -921,8 +921,9 @@ export const renderClassicPage = (
               );
             })}
 
-            {/* IV. Asesmen Pembelajaran */}
-            <div style={{ marginTop: 20 }}>
+          <div style={{ pageBreakBefore: 'always' }} />
+          {/* IV. Asesmen Pembelajaran */}
+          <div style={{ marginTop: 20 }}>
               <ClassicSectionHead roman="IV">Asesmen Pembelajaran</ClassicSectionHead>
 
               <ClassicPanel title="Asesmen Awal (Diagnostik)">
