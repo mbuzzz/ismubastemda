@@ -183,58 +183,50 @@ export const renderClassicPage = (
     ============================================================ */
     case 'identitas':
       const alamatSubs = [
-        ['a', 'Jalan', 'Jl. Hasanudin'],
-        ['b', 'Desa/Kelurahan', 'Genteng Wetan'],
-        ['c', 'Kecamatan', 'Genteng'],
-        ['d', 'Kabupaten/Kota', 'Banyuwangi'],
-        ['e', 'Provinsi', 'Jawa Timur'],
-        ['f', 'Kode Pos', '68465'],
-        ['g', 'No. Telepon/HP', '0333 846292'],
-        ['h', 'NPSN', '20525622'],
-        ['i', 'Jenjang Pendidikan', 'SMK'],
-        ['j', 'Status Sekolah', 'Swasta'],
-        ['k', 'Nomor Telepon', '0333 846292'],
-        ['l', 'Nomor Fax', '0333 846292'],
-        ['m', 'Email', 'smkmudagenteng@gmail.com'],
-        ['n', 'Website', 'www.smkmuh2genteng.sch.id'],
-        ['p', 'SK Pendirian Sekolah', '0109/III.A/1.D/2000'],
-        ['q', 'Tanggal SK Pendirian', '30 September 2002'],
-        ['r', 'Status Kepemilikan', 'Yayasan'],
-        ['s', 'SK Izin Operasional', 'P2T/1027/19.08/02/VIII/2019'],
-        ['t', 'Tgl SK Izin Operasional', '01 Agustus 2019'],
-        ['u', 'NPWP', '93.297.505.5-627.00'],
-        ['v', 'Sumber Listrik', 'PLN & Diesel'],
-        ['w', 'Daya Listrik', '175.000 VA'],
+        ['a', 'Kelurahan', 'Genteng Wetan'],
+        ['b', 'Kecamatan', 'Genteng'],
+        ['c', 'Kabupaten', 'Banyuwangi'],
+        ['d', 'Provinsi', 'Jawa Timur'],
+        ['e', 'Kode Pos', '68465'],
+        ['f', 'NPSN', '20525622'],
+      ];
+      const extraInfo = [
+        ['Status', 'Swasta'],
+        ['Jenjang', 'SMK'],
+        ['Akreditasi', 'A'],
+        ['Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
       ];
       return (
-        <div key="identitas-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key="identitas-classic" className="a4-page" style={{ position: 'relative', padding: '12mm 14mm' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Identitas Satuan Pendidikan & Guru</ClassicPageTitle>
-          <ClassicSubtitle>Profil Resmi Satuan Pendidikan dan Administrasi Pelaksana Kurikulum</ClassicSubtitle>
+          <ClassicSubtitle>Profil Satuan Pendidikan dan Administrasi Pelaksana Kurikulum</ClassicSubtitle>
 
-          <ClassicSectionHead>A. Profil Satuan Pendidikan</ClassicSectionHead>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10.5, border: '1px solid #C9A961' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, border: '1px solid #C9A961', marginTop: 6 }}>
             <tbody>
-              <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                <td style={{ padding: '5px 8px', width: '8%', verticalAlign: 'top' }}>1.</td>
-                <td style={{ padding: '5px 8px', width: '28%' }}>Nama Sekolah</td>
-                <td style={{ padding: '5px 4px', width: '3%' }}>:</td>
-                <td style={{ padding: '5px 8px', fontWeight: 700 }}>SMKS MUHAMMADIYAH 2 GENTENG</td>
+              <tr style={{ background: '#C9A961' }}>
+                <td colSpan={4} style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>A. Profil Satuan Pendidikan</td>
               </tr>
               <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                <td style={{ padding: '5px 8px', verticalAlign: 'top' }}>2.</td>
-                <td style={{ padding: '5px 8px', verticalAlign: 'top' }}>Alamat</td>
-                <td style={{ padding: '5px 4px', verticalAlign: 'top' }}>:</td>
-                <td style={{ padding: '5px 8px' }}>
+                <td style={{ padding: '3px 8px', width: '8%' }}>1.</td>
+                <td style={{ padding: '3px 8px', width: '22%' }}>Nama Sekolah</td>
+                <td style={{ padding: '3px 4px', width: '3%' }}>:</td>
+                <td style={{ padding: '3px 8px', fontWeight: 700, fontSize: 10.5 }}>SMKS MUHAMMADIYAH 2 GENTENG</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
+                <td style={{ padding: '3px 8px', verticalAlign: 'top' }}>2.</td>
+                <td style={{ padding: '3px 8px', verticalAlign: 'top' }}>Alamat</td>
+                <td style={{ padding: '3px 4px', verticalAlign: 'top' }}>:</td>
+                <td style={{ padding: '3px 8px' }}>
                   Jl. Hasanudin 103 Genteng
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, marginTop: 4 }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, marginTop: 2 }}>
                     <tbody>
                       {alamatSubs.map(([ltr, label, val], i) => (
                         <tr key={i}>
-                          <td style={{ padding: '2px 4px 2px 0', width: '24px', color: '#666' }}>{ltr}.</td>
-                          <td style={{ padding: '2px 4px', width: '100px', color: '#666' }}>{label}</td>
-                          <td style={{ padding: '2px 4px', width: '8px', color: '#666' }}>:</td>
-                          <td style={{ padding: '2px 0' }}>{val}</td>
+                          <td style={{ padding: '1px 2px 1px 0', width: '20px', color: '#666' }}>{ltr}.</td>
+                          <td style={{ padding: '1px 2px', width: '70px', color: '#666' }}>{label}</td>
+                          <td style={{ padding: '1px 2px', width: '6px', color: '#666' }}>:</td>
+                          <td style={{ padding: '1px 0' }}>{val}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -242,32 +234,35 @@ export const renderClassicPage = (
                 </td>
               </tr>
               {[
-                ['3.', 'Mulai Operasional', '1976'],
-                ['4.', 'Luas Tanah', '20.200'],
-                ['5.', 'Status Tanah', 'Milik Yayasan'],
-                ['6.', 'Status Bangunan', 'Milik Yayasan'],
-                ['7.', 'Terakreditasi', 'A'],
-                ['8.', 'Nama Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
+                ['3.', 'NPSN', '20525622'],
+                ['4.', 'Status / Jenjang', 'Swasta / SMK'],
+                ['5.', 'Akreditasi', 'A'],
+                ['6.', 'Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
               ].map(([no, label, value]) => (
                 <tr key={no} style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                  <td style={{ padding: '5px 8px' }}>{no}</td>
-                  <td style={{ padding: '5px 8px' }}>{label}</td>
-                  <td style={{ padding: '5px 4px' }}>:</td>
-                  <td style={{ padding: '5px 8px', fontWeight: 700 }}>{value}</td>
+                  <td style={{ padding: '3px 8px' }}>{no}</td>
+                  <td style={{ padding: '3px 8px', fontSize: 10 }}>{label}</td>
+                  <td style={{ padding: '3px 4px' }}>:</td>
+                  <td style={{ padding: '3px 8px', fontWeight: 700, fontSize: 10.5 }}>{value}</td>
                 </tr>
               ))}
-            </tbody>
-          </table>
-
-          <ClassicSectionHead>B. Administrasi Pelaksana Kurikulum & Guru</ClassicSectionHead>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10.5, border: '1px solid #C9A961' }}>
-            <tbody>
-              {idRow('Mata Pelajaran', ctx.selectedMapel === 'arab' ? 'Bahasa Arab' : ctx.selectedMapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI & Budi Pekerti')}
-              {idRow('Fase / Kelas', `${ctx.fase} / ${ctx.selectedClass}`)}
-              {idRow('Tahun Pelajaran', ctx.academicYear)}
-              {idRow('Guru Pengampu', `${ctx.teacherName || '........................................'} (NBM. ${ctx.teacherNbm || '......................'})`)}
-              {idRow('Waka Kurikulum', `${S.wakaKurikulum} (NBM. ${S.nbmWaka})`)}
-              {idRow('Alokasi JP & Waktu', `${S.mingguEfektif} Minggu Efektif (${S.mingguEfektif * S.jpPerMinggu} JP/Sem) — ${S.jpPerMinggu} JP/Pekan`)}
+              <tr style={{ background: '#C9A961' }}>
+                <td colSpan={4} style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>B. Administrasi Pelaksana Kurikulum & Guru</td>
+              </tr>
+              {[
+                ['Mata Pelajaran', ctx.selectedMapel === 'arab' ? 'Bahasa Arab' : ctx.selectedMapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI & Budi Pekerti'],
+                ['Fase / Kelas', `${ctx.fase} / ${ctx.selectedClass}`],
+                ['Tahun Pelajaran', ctx.academicYear],
+                ['Guru Pengampu', `${ctx.teacherName || '........................................'} (NBM. ${ctx.teacherNbm || '......................'})`],
+                ['Waka Kurikulum', `${S.wakaKurikulum} (NBM. ${S.nbmWaka})`],
+                ['Alokasi JP & Waktu', `${S.mingguEfektif} Minggu Efektif (${S.mingguEfektif * S.jpPerMinggu} JP/Sem) — ${S.jpPerMinggu} JP/Pekan`],
+              ].map(([label, value], i) => (
+                <tr key={i} style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
+                  <td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", fontSize: 10.5 }}>{label}</td>
+                  <td colSpan={2} style={{ padding: '3px 4px', width: '3%', fontSize: 10.5 }}>:</td>
+                  <td style={{ padding: '3px 8px', fontFamily: "'Lora', serif", fontSize: 10.5 }}>{value}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

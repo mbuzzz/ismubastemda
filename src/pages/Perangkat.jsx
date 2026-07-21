@@ -2935,6 +2935,7 @@ export default function Perangkat() {
               {renderPage('prota', 'prota')}
               {renderPage('promes', 'promes-ganjil', null, 'ganjil')}
               {renderPage('analisis-cp', 'analisis-cp-ganjil', null, 'ganjil')}
+              {renderPage('cp-tp-pp', 'cp-tp-pp-ganjil', null, 'ganjil')}
               {renderPage('atp', 'atp-ganjil', null, 'ganjil')}
               {renderPage('kktp', 'kktp-ganjil', null, 'ganjil')}
               {activeFaseData.semester.ganjil.materi.map((m, mIdx) => 
