@@ -4,7 +4,7 @@ import { Maximize, Minimize, BookOpen, Sparkles } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
-import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti } from '../utils/perangkatUtils';
+import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti, formatTanggalTandaTangan } from '../utils/perangkatUtils';
 import { detailedMateri } from '../data/materiContent';
 import { renderClassicPage } from '../components/ClassicPages';
 
@@ -477,10 +477,9 @@ export default function Perangkat() {
   // Override minggu efektif sesuai kelas & semester (X MPLS, XI tanpa MPLS, XII ganjil PKL)
   schoolInfoData.mingguEfektif = getMingguEfektifFor(safeSemester, selectedClass);
 
-  // Signature Block Component
+  // Signature Block — tanggal = hari cetak (otomatis)
   const SignatureBlock = ({ semOverride = null }) => {
-    const sem = semOverride || semester;
-    const yearStr = schoolInfoData.tahunAjaran.split('/')[sem === 'ganjil' ? 0 : 1];
+    const tanggalTtd = formatTanggalTandaTangan();
     return (
       <div className="signature-section" style={{ display: 'flex', justifyContent: 'space-between', gap: '10px', marginTop: '30px', borderTop: '1px solid #1976D2', paddingTop: '15px', pageBreakInside: 'avoid' }}>
         <div className="signature-block" style={{ textAlign: 'center', flex: 1 }}>
@@ -498,7 +497,7 @@ export default function Perangkat() {
           <p className="signature-title" style={{ fontSize: '9px', color: '#555' }}>NBM. {schoolInfoData.nbmWaka}</p>
         </div>
         <div className="signature-block" style={{ textAlign: 'center', flex: 1 }}>
-          <p style={{ fontSize: '10px', color: '#666' }}>Genteng, Banyuwangi, {sem === 'ganjil' ? 'Juli ' : 'Januari '}{yearStr}</p>
+          <p style={{ fontSize: '10px', color: '#666' }}>{tanggalTtd}</p>
           <p style={{ fontWeight: '700', fontSize: '11px', color: '#1976D2' }}>Guru Mata Pelajaran</p>
           <div className="signature-space" style={{ height: '50px' }}></div>
           <p className="signature-name" style={{ fontWeight: '700', borderBottom: '1px solid #1976D2', color: '#0D47A1', fontSize: '11px' }}>{schoolInfoData.namaGuru}</p>

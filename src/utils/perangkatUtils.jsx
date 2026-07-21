@@ -1900,3 +1900,21 @@ export const ArabicText = ({ text }) => {
   return text;
 };
 
+const BULAN_ID = [
+  'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+  'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember',
+];
+
+/**
+ * Tanggal penandatanganan otomatis = hari cetak/hari ini (locale Indonesia).
+ * Contoh: "Genteng, Banyuwangi, 21 Juli 2026"
+ */
+export const formatTanggalTandaTangan = (date = new Date(), tempat = 'Genteng, Banyuwangi') => {
+  const d = date instanceof Date ? date : new Date(date);
+  if (Number.isNaN(d.getTime())) {
+    const now = new Date();
+    return `${tempat}, ${now.getDate()} ${BULAN_ID[now.getMonth()]} ${now.getFullYear()}`;
+  }
+  return `${tempat}, ${d.getDate()} ${BULAN_ID[d.getMonth()]} ${d.getFullYear()}`;
+};
+

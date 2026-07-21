@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatTanggalTandaTangan } from '../utils/perangkatUtils';
 
 /* ============================================================
    Komponen ornamen Islami klasik (dipakai oleh ClassicPages)
@@ -143,9 +144,9 @@ export const ClassicPanel = ({ children, style, title }) => (
   </div>
 );
 
-/** Tanda tangan klasik (3 kolom, garis emas ganda di atas) */
-export const ClassicSignature = ({ schoolInfoData, sem }) => {
-  const yearStr = schoolInfoData.tahunAjaran.split('/')[sem === 'ganjil' ? 0 : 1];
+/** Tanda tangan klasik (3 kolom) — tanggal = hari cetak otomatis */
+export const ClassicSignature = ({ schoolInfoData, sem: _sem }) => {
+  const tanggalTtd = formatTanggalTandaTangan();
   return (
     <div className="signature-section" style={{
       display: 'flex', justifyContent: 'space-between', gap: 10,
@@ -155,7 +156,7 @@ export const ClassicSignature = ({ schoolInfoData, sem }) => {
       {[
         { label: 'Mengesahkan,', role: 'Kepala Sekolah', name: schoolInfoData.kepalaSekolah, nbm: schoolInfoData.nbmKepala },
         { label: 'Mengetahui,', role: 'Waka. Kurikulum', name: schoolInfoData.wakaKurikulum, nbm: schoolInfoData.nbmWaka },
-        { label: `Genteng, Banyuwangi, ${sem === 'ganjil' ? 'Juli ' : 'Januari '}${yearStr}`, role: 'Guru Mata Pelajaran', name: schoolInfoData.namaGuru, nbm: schoolInfoData.nbmGuru || '......................' },
+        { label: tanggalTtd, role: 'Guru Mata Pelajaran', name: schoolInfoData.namaGuru, nbm: schoolInfoData.nbmGuru || '......................' },
       ].map((s, i) => (
         <div key={i} style={{ textAlign: 'center', flex: 1, fontFamily: "'Lora', serif" }}>
           <p style={{ fontSize: 10, color: '#6B5B2E', fontStyle: 'italic' }}>{s.label}</p>
