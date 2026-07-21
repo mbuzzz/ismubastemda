@@ -353,6 +353,7 @@ export default function Perangkat() {
     { id: 'cover', label: '1. Sampul Depan' },
     { id: 'judul', label: 'HALAMAN JUDUL' },
     { id: 'identitas', label: 'IDENTITAS SEKOLAH' },
+    { id: 'visi-misi', label: 'VISI & MISI' },
     { id: 'daftar-isi', label: 'DAFTAR ISI' },
     { id: 'pekan-efektif', label: 'RINCIAN PEKAN EFEKTIF' },
     { id: 'prota', label: 'PROGRAM TAHUNAN' },
@@ -524,7 +525,7 @@ export default function Perangkat() {
         selectedMapel, selectedClass, fase,
         activeFaseData, schoolInfoData,
         localMateriList, materiList,
-        activeMateri, selectedPpmBab, viewMode,
+        activeMateri, selectedPpmBab, setSelectedPpmBab, viewMode,
         academicYear, teacherName, teacherNbm,
         getWeeksArrayFor, getMingguEfektifFor,
         getTeachingSchedule, getPpmDetails,
@@ -2925,6 +2926,7 @@ export default function Perangkat() {
               {renderPage('cover', 'cover')}
               {renderPage('judul', 'judul')}
               {renderPage('identitas', 'identitas')}
+              {renderPage('visi-misi', 'visi-misi')}
               {renderPage('daftar-isi', 'daftar-isi')}
 
               {/* Semester 1 (Ganjil) */}

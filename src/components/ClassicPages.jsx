@@ -182,22 +182,8 @@ export const renderClassicPage = (
        IDENTITAS — 35 baris lengkap sesuai referensi docx
     ============================================================ */
     case 'identitas':
-      const alamatSubs = [
-        ['a', 'Kelurahan', 'Genteng Wetan'],
-        ['b', 'Kecamatan', 'Genteng'],
-        ['c', 'Kabupaten', 'Banyuwangi'],
-        ['d', 'Provinsi', 'Jawa Timur'],
-        ['e', 'Kode Pos', '68465'],
-        ['f', 'NPSN', '20525622'],
-      ];
-      const extraInfo = [
-        ['Status', 'Swasta'],
-        ['Jenjang', 'SMK'],
-        ['Akreditasi', 'A'],
-        ['Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
-      ];
       return (
-        <div key="identitas-classic" className="a4-page" style={{ position: 'relative', padding: '12mm 14mm' }}>
+        <div key="identitas-classic" className="a4-page" style={{ position: 'relative', padding: '10mm 12mm' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Identitas Satuan Pendidikan & Guru</ClassicPageTitle>
           <ClassicSubtitle>Profil Satuan Pendidikan dan Administrasi Pelaksana Kurikulum</ClassicSubtitle>
@@ -205,49 +191,44 @@ export const renderClassicPage = (
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, border: '1px solid #C9A961', marginTop: 6 }}>
             <tbody>
               <tr style={{ background: '#C9A961' }}>
-                <td colSpan={4} style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>A. Profil Satuan Pendidikan</td>
-              </tr>
-              <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                <td style={{ padding: '3px 8px', width: '8%' }}>1.</td>
-                <td style={{ padding: '3px 8px', width: '22%' }}>Nama Sekolah</td>
-                <td style={{ padding: '3px 4px', width: '3%' }}>:</td>
-                <td style={{ padding: '3px 8px', fontWeight: 700, fontSize: 10.5 }}>SMKS MUHAMMADIYAH 2 GENTENG</td>
-              </tr>
-              <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                <td style={{ padding: '3px 8px', verticalAlign: 'top' }}>2.</td>
-                <td style={{ padding: '3px 8px', verticalAlign: 'top' }}>Alamat</td>
-                <td style={{ padding: '3px 4px', verticalAlign: 'top' }}>:</td>
-                <td style={{ padding: '3px 8px' }}>
-                  Jl. Hasanudin 103 Genteng
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, marginTop: 2 }}>
-                    <tbody>
-                      {alamatSubs.map(([ltr, label, val], i) => (
-                        <tr key={i}>
-                          <td style={{ padding: '1px 2px 1px 0', width: '20px', color: '#666' }}>{ltr}.</td>
-                          <td style={{ padding: '1px 2px', width: '70px', color: '#666' }}>{label}</td>
-                          <td style={{ padding: '1px 2px', width: '6px', color: '#666' }}>:</td>
-                          <td style={{ padding: '1px 0' }}>{val}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </td>
+                <td colSpan={3} style={{ padding: '5px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>A. Profil Satuan Pendidikan</td>
               </tr>
               {[
-                ['3.', 'NPSN', '20525622'],
-                ['4.', 'Status / Jenjang', 'Swasta / SMK'],
-                ['5.', 'Akreditasi', 'A'],
-                ['6.', 'Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
+                ['1', 'Nama Sekolah', 'SMKS MUHAMMADIYAH 2 GENTENG'],
+                ['2', 'Alamat', 'Jl. Hasanudin 103 Genteng, Desa Genteng Wetan, Kec. Genteng, Banyuwangi, Jawa Timur'],
+                ['3', 'Kode Pos', '68465'],
+                ['4', 'No. Telepon', '0333 846292'],
+                ['5', 'NPSN', '20525622'],
+                ['6', 'Status', 'Swasta'],
+                ['7', 'Email', 'smk_stm2_gtg@yahoo.co.id'],
+                ['8', 'Website', 'www.smkmuh2genteng.sch.id'],
+                ['9', 'Mulai Operasional', '1976'],
+                ['10', 'Luas Tanah', '20.200 m²'],
+                ['11', 'Status Tanah', 'Milik Yayasan'],
+                ['12', 'Status Bangunan', 'Milik Yayasan'],
+                ['13', 'Akreditasi', 'A'],
+                ['14', 'Kepala Sekolah', 'Tamyis Rosidi, S.Pd., M.Pd.'],
               ].map(([no, label, value]) => (
                 <tr key={no} style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                  <td style={{ padding: '3px 8px' }}>{no}</td>
-                  <td style={{ padding: '3px 8px', fontSize: 10 }}>{label}</td>
-                  <td style={{ padding: '3px 4px' }}>:</td>
-                  <td style={{ padding: '3px 8px', fontWeight: 700, fontSize: 10.5 }}>{value}</td>
+                  <td style={{ padding: '3px 6px', width: '6%', textAlign: 'center', fontSize: 9.5, color: '#666' }}>{no}.</td>
+                  <td style={{ padding: '3px 6px', width: '24%', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 10.5 }}>{label}</td>
+                  <td style={{ padding: '3px 6px', fontWeight: 700, fontSize: 10.5 }}>{value}</td>
                 </tr>
               ))}
+              <tr style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
+                <td style={{ padding: '3px 6px', textAlign: 'center', fontSize: 9.5, color: '#666', verticalAlign: 'top' }}>15.</td>
+                <td style={{ padding: '3px 6px', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 10.5, verticalAlign: 'top' }}>Konsentrasi Keahlian</td>
+                <td style={{ padding: '3px 6px', fontWeight: 700, fontSize: 10.5 }}>
+                  1. Teknik Kendaraan Ringan<br />
+                  2. Teknik Sepeda Motor<br />
+                  3. Teknik Elektronika Industri<br />
+                  4. Animasi<br />
+                  5. Kuliner
+                </td>
+              </tr>
+
               <tr style={{ background: '#C9A961' }}>
-                <td colSpan={4} style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>B. Administrasi Pelaksana Kurikulum & Guru</td>
+                <td colSpan={3} style={{ padding: '5px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#1A1A2E', letterSpacing: 0.8, textTransform: 'uppercase' }}>B. Administrasi Pelaksana Kurikulum & Guru</td>
               </tr>
               {[
                 ['Mata Pelajaran', ctx.selectedMapel === 'arab' ? 'Bahasa Arab' : ctx.selectedMapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI & Budi Pekerti'],
@@ -258,13 +239,50 @@ export const renderClassicPage = (
                 ['Alokasi JP & Waktu', `${S.mingguEfektif} Minggu Efektif (${S.mingguEfektif * S.jpPerMinggu} JP/Sem) — ${S.jpPerMinggu} JP/Pekan`],
               ].map(([label, value], i) => (
                 <tr key={i} style={{ borderBottom: '1px solid rgba(201,169,97,0.35)' }}>
-                  <td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", fontSize: 10.5 }}>{label}</td>
-                  <td colSpan={2} style={{ padding: '3px 4px', width: '3%', fontSize: 10.5 }}>:</td>
-                  <td style={{ padding: '3px 8px', fontFamily: "'Lora', serif", fontSize: 10.5 }}>{value}</td>
+                  <td colSpan={2} style={{ padding: '3px 6px', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 10.5 }}>{label}</td>
+                  <td style={{ padding: '3px 6px', fontFamily: "'Lora', serif", fontSize: 10.5 }}>{value}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+        </div>
+      );
+
+    /* ============================================================
+       VISI & MISI SEKOLAH
+    ============================================================ */
+    case 'visi-misi':
+      return (
+        <div key="visi-misi-classic" className="a4-page" style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '14mm 16mm' }}>
+          <ClassicWatermark opacity={0.04} />
+          <ClassicPageTitle>Visi & Misi Sekolah</ClassicPageTitle>
+          <ClassicSubtitle>SMKS Muhammadiyah 2 Genteng</ClassicSubtitle>
+          <ClassicDivider width="40%" />
+
+          <div style={{ width: 90, height: 90, borderRadius: '50%', border: '3px double #C9A961', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF', margin: '14px auto' }}>
+            <img src="/logosmk.png" alt="Logo" style={{ width: 64, height: 64, objectFit: 'contain' }}
+              onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/64/0D47A1/FBF7EE?text=SMK'; }} />
+          </div>
+
+          <ClassicPanel title="Visi" style={{ width: '100%', fontSize: 11.5, lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 12, lineHeight: 1.6, textAlign: 'center', color: '#000' }}>
+              "Terwujudnya Lulusan Profesional, Berkarakter Islami, dan Unggul dalam Persaingan Global"
+            </p>
+          </ClassicPanel>
+
+          <ClassicPanel title="Misi" style={{ width: '100%', marginTop: 10 }}>
+            <ol style={{ fontFamily: "'Lora', serif", fontSize: 11, lineHeight: 1.7, margin: 0, paddingLeft: 20 }}>
+              <li style={{ marginBottom: 8, textAlign: 'justify' }}>
+                Meningkatkan kompetensi lulusan yang profesional, mampu beradaptasi dengan penguasaan teknologi terbaru di bidangnya;
+              </li>
+              <li style={{ marginBottom: 8, textAlign: 'justify' }}>
+                Membentuk karakter pribadi melalui ibadah berdasarkan iman, Islam, dan ihsan, berjiwa wirausaha, memiliki karakter yang kuat dan penuh integritas;
+              </li>
+              <li style={{ textAlign: 'justify' }}>
+                Mengembangkan keunggulan komparatif dalam persaingan global dengan penguasaan bahasa asing dan literasi digital.
+              </li>
+            </ol>
+          </ClassicPanel>
         </div>
       );
 
@@ -291,7 +309,8 @@ export const renderClassicPage = (
             {entry('SAMPUL DEPAN BUKU', 'Halaman i', false)}
             {entry('HALAMAN JUDUL DOKUMEN', 'Halaman ii', false)}
             {entry('IDENTITAS SATUAN PENDIDIKAN & GURU', 'Halaman iii', false)}
-            {entry('DAFTAR ISI PERANGKAT', 'Halaman iv', true)}
+            {entry('VISI & MISI SEKOLAH', 'Halaman iv', false)}
+            {entry('DAFTAR ISI PERANGKAT', 'Halaman v', true)}
 
             <div style={{ margin: '12px 0 6px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', borderBottom: '1.5px solid #C9A961', paddingBottom: 4, letterSpacing: 1, textTransform: 'uppercase' }}>
               <span style={{ color: '#C9A961', marginRight: 6 }}>I.</span> Administrasi Semester Ganjil
@@ -813,6 +832,23 @@ export const renderClassicPage = (
           {/* Halaman 1–N: Modul Ajar utama */}
           <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
             <ClassicWatermark opacity={0.04} />
+
+            {/* Bab switcher (single mode, no-print) */}
+            {ctx.viewMode === 'single' && localMateriList.length > 1 && (
+              <div className="no-print" style={{ display: 'flex', justifyContent: 'flex-end', gap: 6, marginBottom: 8 }}>
+                <span style={{ fontFamily: "'Lora', serif", fontSize: 10, color: '#000' }}>Pilih Bab:</span>
+                <select
+                  value={ctx.selectedPpmBab}
+                  onChange={(e) => ctx.setSelectedPpmBab(parseInt(e.target.value, 10))}
+                  style={{ fontFamily: "'Lora', serif", fontSize: 10, padding: '2px 6px', border: '1px solid #C9A961', borderRadius: 2, background: '#FFF', maxWidth: 260 }}
+                >
+                  {localMateriList.map((m) => (
+                    <option key={m.bab} value={m.bab}>Bab {m.bab}: {m.judul}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+
             <ClassicPageTitle>Modul Ajar (PPM)</ClassicPageTitle>
             <ClassicSubtitle>Perencanaan Pembelajaran Mendalam ({S.mapel})</ClassicSubtitle>
 
