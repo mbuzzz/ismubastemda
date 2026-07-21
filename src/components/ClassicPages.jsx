@@ -52,31 +52,31 @@ export const renderClassicPage = (
         <div key="cover-classic" className="a4-page a4-cover" style={{
           position: 'relative', overflow: 'hidden',
           display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-          padding: '16mm 12mm',
+          padding: '12mm 10mm',
         }}>
           <ClassicWatermark opacity={0.07} />
-          <ClassicFrame style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '28px 24px' }}>
+          <ClassicFrame style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '16px 20px' }}>
             {/* TOP: Bismillah + Subtitle */}
             <div style={{ textAlign: 'center' }}>
               <BismillahHeader />
               <ClassicDivider width="45%" />
-              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 13, color: '#000', letterSpacing: 2, textTransform: 'uppercase', marginTop: 6 }}>
+              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 11.5, color: '#000', letterSpacing: 2, textTransform: 'uppercase', marginTop: 4 }}>
                 Administrasi & Perencanaan Ajar
               </p>
             </div>
 
             {/* CENTER: Title medallion */}
             <div style={{ textAlign: 'center' }}>
-              <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 32, color: '#000', letterSpacing: 1.5, margin: '10px 0', textTransform: 'uppercase' }}>
+              <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 28, color: '#000', letterSpacing: 1.5, margin: '4px 0', textTransform: 'uppercase' }}>
                 Buku Kerja Guru
               </h1>
               <ClassicDivider width="55%" />
-              <div style={{ display: 'inline-block', border: '2px double #C9A961', borderRadius: 2, padding: '16px 32px', margin: '14px auto', background: 'rgba(201,169,97,0.06)' }}>
-                <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 18, color: '#000', letterSpacing: 1.2, textTransform: 'uppercase', margin: 0 }}>
+              <div style={{ display: 'inline-block', border: '2px double #C9A961', borderRadius: 2, padding: '10px 28px', margin: '8px auto', background: 'rgba(201,169,97,0.06)' }}>
+                <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 16, color: '#000', letterSpacing: 1.2, textTransform: 'uppercase', margin: 0 }}>
                   {S.mapel}
                 </h2>
                 <ClassicDivider width="100%" />
-                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 13, color: '#000', letterSpacing: 2, textTransform: 'uppercase', marginTop: 6 }}>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, color: '#000', letterSpacing: 2, textTransform: 'uppercase', marginTop: 4 }}>
                   Fase {ctx.fase} — Kelas {ctx.selectedClass} · Semester Ganjil & Genap
                 </p>
               </div>
@@ -84,18 +84,17 @@ export const renderClassicPage = (
 
             {/* BOTTOM: Logo + School + Identity */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-              <div style={{ width: 130, height: 130, borderRadius: '50%', border: '3px double #C9A961', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF' }}>
-                <img src="/logosmk.png" alt="Logo" style={{ width: 95, height: 95, objectFit: 'contain' }}
-                  onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/95/0D47A1/FBF7EE?text=SMK'; }} />
+              <div style={{ width: 250, height: 250, borderRadius: '50%', border: '3px double #C9A961', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF' }}>
+                <img src="/logosmk.png" alt="Logo" style={{ width: 220, height: 220, objectFit: 'contain' }}
+                  onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/220/0D47A1/FBF7EE?text=SMK'; }} />
               </div>
-              <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 14, color: '#000', letterSpacing: 1, textAlign: 'center', textTransform: 'uppercase' }}>
+              <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 13, color: '#000', letterSpacing: 1, textAlign: 'center', textTransform: 'uppercase' }}>
                 SMKS Muhammadiyah 2 Genteng
               </p>
-              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 12, color: '#000' }}>
+              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 11, color: '#000' }}>
                 Terakreditasi A — Pusat Keunggulan (PK)
               </p>
-              {/* Mini identity table */}
-              <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 6, fontSize: 10.5, textAlign: 'left' }}>
+              <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 8, fontSize: 10, textAlign: 'left' }}>
                 <tbody>
                   {[
                     ['Nama Guru', S.namaGuru],
@@ -104,8 +103,8 @@ export const renderClassicPage = (
                     ['Tahun Pelajaran', S.tahunAjaran],
                   ].map(([l, v], i) => (
                     <tr key={i} style={{ borderBottom: '1px dotted rgba(201,169,97,0.5)' }}>
-                      <td style={{ padding: '4px 8px', fontFamily: "'Playfair Display', serif", fontWeight: 600, color: '#000', width: '35%', letterSpacing: 0.5, textAlign: 'left' }}>{l}</td>
-                      <td style={{ padding: '4px 8px', fontFamily: "'Lora', serif", fontWeight: 700, color: '#000', textAlign: 'left' }}>: {v}</td>
+                      <td style={{ padding: '3px 6px', fontFamily: "'Playfair Display', serif", fontWeight: 600, color: '#000', width: '35%', letterSpacing: 0.5, textAlign: 'left' }}>{l}</td>
+                      <td style={{ padding: '3px 6px', fontFamily: "'Lora', serif", fontWeight: 700, color: '#000', textAlign: 'left' }}>: {v}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -113,11 +112,11 @@ export const renderClassicPage = (
             </div>
 
             {/* FOOTER */}
-            <div style={{ textAlign: 'center', borderTop: '2px double #C9A961', paddingTop: 10, marginTop: 10 }}>
-              <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', letterSpacing: 1, textTransform: 'uppercase' }}>
+            <div style={{ textAlign: 'center', borderTop: '2px double #C9A961', paddingTop: 6, marginTop: 4 }}>
+              <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10, color: '#000', letterSpacing: 1, textTransform: 'uppercase' }}>
                 Majelis Pendidikan Dasar Menengah dan Pendidikan Nonformal
               </p>
-              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 11, color: '#000' }}>
+              <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 10.5, color: '#000' }}>
                 Pimpinan Daerah Muhammadiyah Banyuwangi — Jawa Timur
               </p>
             </div>
@@ -132,26 +131,26 @@ export const renderClassicPage = (
       return (
         <div key="judul-classic" className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.05} />
-          <ClassicFrame style={{ padding: '30px 28px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '220mm' }}>
+          <ClassicFrame style={{ padding: '24px 28px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <BismillahHeader />
             <ClassicDivider width="50%" />
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 18, color: '#000', letterSpacing: 3, marginTop: 16, textTransform: 'uppercase' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 16, color: '#000', letterSpacing: 2.5, marginTop: 14, textTransform: 'uppercase' }}>
               Halaman Judul
             </h2>
-            <div style={{ width: 80, height: 2, background: '#C9A961', margin: '14px auto' }} />
-            <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 24, color: '#000', textAlign: 'center', lineHeight: 1.3, margin: '14px 0', textTransform: 'uppercase', letterSpacing: 0.8 }}>
+            <div style={{ width: 60, height: 2, background: '#C9A961', margin: '10px auto' }} />
+            <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 22, color: '#000', textAlign: 'center', lineHeight: 1.3, margin: '10px 0', textTransform: 'uppercase', letterSpacing: 0.8 }}>
               Perangkat Pembelajaran Lengkap
             </h1>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 15, color: '#000', fontStyle: 'italic', marginBottom: 16 }}>
+            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 14, color: '#000', fontStyle: 'italic', marginBottom: 12 }}>
               {S.mapel}
             </p>
             <ClassicDivider width="40%" />
-            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 12.5, color: '#000', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.7 }}>
+            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 12, color: '#000', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.6 }}>
               <p>Diajukan Sebagai Dokumen Pelaksanaan Kegiatan Pembelajaran</p>
               <p>Kurikulum Merdeka</p>
               <p>Tahun Pelajaran {S.tahunAjaran}</p>
             </div>
-            <table style={{ width: '75%', borderCollapse: 'collapse', marginTop: 20 }}>
+            <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 16 }}>
               <tbody>
                 {[
                   ['Mata Pelajaran', S.mapel],
@@ -161,17 +160,17 @@ export const renderClassicPage = (
                   ['Instansi', 'SMKS Muhammadiyah 2 Genteng'],
                 ].map(([l, v], i) => (
                   <tr key={i} style={{ borderBottom: '1px dotted rgba(201,169,97,0.5)' }}>
-                    <td style={{ padding: '5px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 11, color: '#000', width: '40%' }}>{l}</td>
-                    <td style={{ padding: '5px 10px', fontFamily: "'Lora', serif", fontWeight: 700, fontSize: 11.5, color: '#000' }}>: {v}</td>
+                    <td style={{ padding: '4px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: 10.5, color: '#000', width: '40%' }}>{l}</td>
+                    <td style={{ padding: '4px 10px', fontFamily: "'Lora', serif", fontWeight: 700, fontSize: 11, color: '#000' }}>: {v}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
             <ClassicDivider width="50%" />
-            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', letterSpacing: 1.5, marginTop: 14, textTransform: 'uppercase' }}>
+            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', letterSpacing: 1.5, marginTop: 12, textTransform: 'uppercase' }}>
               SMKS Muhammadiyah 2 Genteng
             </p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 11, color: '#000' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 10.5, color: '#000' }}>
               Kabupaten Banyuwangi — Jawa Timur
             </p>
           </ClassicFrame>
@@ -903,14 +902,14 @@ export const renderClassicPage = (
 
               return (
                 <div key={pertIdx}>
-                  <ClassicPanel title={`Pertemuan ${pertIdx + 1} (${S.jpPerMinggu} JP × 45 Menit)`}>
-                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', marginBottom: 6, fontStyle: 'italic' }}>
+                  <ClassicPanel title={`Pertemuan ${pertIdx + 1} (${S.jpPerMinggu} JP × 45 Menit)`} style={{ margin: '6px 0' }}>
+                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10.5, color: '#000', marginBottom: 4, fontStyle: 'italic' }}>
                       Fokus TP: {targetTp}
                     </p>
 
-                    <div style={{ display: 'flex', gap: 12, marginBottom: 10 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10, background: '#C9A961', color: '#1A1A2E', padding: '4px 10px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AWAL (15')</span>
-                      <ul style={{ margin: 0, paddingLeft: 16, fontFamily: "'Lora', serif", fontSize: 10, lineHeight: 1.5 }}>
+                    <div style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
+                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AWAL (15')</span>
+                      <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.5 }}>
                         {isFirst ? (
                           <>
                             <li>{ppmDetails.langkahPendahuluan?.[0] || 'Membuka salam, doa, dan apersepsi.'}</li>
@@ -925,20 +924,20 @@ export const renderClassicPage = (
                       </ul>
                     </div>
 
-                    <div style={{ display: 'flex', gap: 12, marginBottom: 10 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10, background: '#C9A961', color: '#1A1A2E', padding: '4px 10px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>
+                    <div style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
+                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>
                         INTI ({S.jpPerMinggu * 45 - 30}') — {isFirst ? 'Eksplorasi' : isLast ? 'Presentasi & Evaluasi' : 'Pendalaman'}
                       </span>
-                      <ul style={{ margin: 0, paddingLeft: 16, fontFamily: "'Lora', serif", fontSize: 10, lineHeight: 1.6 }}>
+                      <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.6 }}>
                         {ctx.generateDynamicLangkahInti(targetTp, pertIdx).map((langkah, lIdx) => (
-                          <li key={lIdx} style={{ marginBottom: lIdx === 2 ? 0 : 6 }}>{langkah}</li>
+                          <li key={lIdx} style={{ marginBottom: lIdx === 2 ? 0 : 4 }}>{langkah}</li>
                         ))}
                       </ul>
                     </div>
 
-                    <div style={{ display: 'flex', gap: 12 }}>
-                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10, background: '#C9A961', color: '#1A1A2E', padding: '4px 10px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AKHIR (15')</span>
-                      <ul style={{ margin: 0, paddingLeft: 16, fontFamily: "'Lora', serif", fontSize: 10, lineHeight: 1.5 }}>
+                    <div style={{ display: 'flex', gap: 8 }}>
+                      <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 9.5, background: '#C9A961', color: '#1A1A2E', padding: '3px 8px', border: '1px solid #C9A961', whiteSpace: 'nowrap' }}>AKHIR (15')</span>
+                      <ul style={{ margin: 0, paddingLeft: 14, fontFamily: "'Lora', serif", fontSize: 9.5, lineHeight: 1.5 }}>
                         {isLast ? (
                           <>
                             <li>{ppmDetails.langkahPenutup?.[0] || 'Guru memandu simpulan akhir.'}</li>
