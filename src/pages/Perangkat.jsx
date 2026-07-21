@@ -93,9 +93,9 @@ export default function Perangkat() {
     if (fromUrl === 'classic' || fromUrl === 'modern') return fromUrl;
     try {
       const saved = window.localStorage.getItem('perangkat-theme');
-      return saved === 'classic' ? 'classic' : 'modern';
+      return saved === 'modern' ? 'modern' : 'classic';
     } catch {
-      return 'modern';
+      return 'classic';
     }
   });
 
