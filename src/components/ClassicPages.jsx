@@ -365,7 +365,7 @@ export const renderClassicPage = (
       const sumEfektif = monthRows.reduce((a, r) => a + r.efektif, 0);
 
       return (
-        <div key="pekan-efektif-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Rincian Pekan Efektif</ClassicPageTitle>
           <ClassicSubtitle>Analisa Distribusi Alokasi Pekan Efektif — Kelas {ctx.selectedClass} · Semester {sem.toUpperCase()}</ClassicSubtitle>
@@ -527,7 +527,7 @@ export const renderClassicPage = (
         ? ['Jul','Agu','Sep','Okt','Nov','Des']
         : ['Jan','Feb','Mar','Apr','Mei','Jun'];
       return (
-        <div key="promes-classic" className="a4-page landscape-mode" style={{padding:'8mm 10mm',position:'relative'}}>
+        <div key={index} className="a4-page landscape-mode" style={{padding:'8mm 10mm',position:'relative'}}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Program Semester (Promes)</ClassicPageTitle>
           <ClassicSubtitle>Distribusi KBM Pekanan — {S.mapel} · Kelas {ctx.selectedClass} · Semester {sem.toUpperCase()}</ClassicSubtitle>
@@ -573,7 +573,7 @@ export const renderClassicPage = (
     ============================================================ */
     case 'analisis-cp':
       return (
-        <div key="analisis-cp-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Analisa Capaian Pembelajaran</ClassicPageTitle>
           <ClassicSubtitle>Uraian Kompetensi dan Lingkup Materi Capaian Pembelajaran</ClassicSubtitle>
@@ -611,7 +611,7 @@ export const renderClassicPage = (
       const totalJpCP = sourceMateri.reduce((a, m) => a + (m.alokasi || 0), 0);
       const totalTm = sourceMateri.reduce((a, m) => a + (m.minggu || 0), 0);
       return (
-        <div key="cp-tp-pp-classic" className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12, marginBottom: 8 }}>
             <div>
@@ -661,7 +661,7 @@ export const renderClassicPage = (
     ============================================================ */
     case 'atp':
       return (
-        <div key="atp-classic" className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Alur Tujuan Pembelajaran (ATP)</ClassicPageTitle>
           <ClassicSubtitle>Sistematika Uraian Langkah Tujuan Pembelajaran — Fase {ctx.fase}</ClassicSubtitle>
@@ -700,7 +700,7 @@ export const renderClassicPage = (
     ============================================================ */
     case 'kktp':
       return (
-        <div key="kktp-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Kriteria Ketercapaian Tujuan Pembelajaran</ClassicPageTitle>
           <ClassicSubtitle>KKTP dengan Metode Interval Nilai Kriteria Kelulusan</ClassicSubtitle>
@@ -748,7 +748,7 @@ export const renderClassicPage = (
     case 'modul': {
       if (!activeMateri || !activeMateri.bab) {
         return (
-          <div key="modul-empty-classic" className="a4-page" style={{ padding: '20mm' }}>
+          <div key={index} className="a4-page" style={{ padding: '20mm' }}>
             <ClassicPageTitle>Modul Ajar (PPM)</ClassicPageTitle>
             <ClassicSubtitle>Materi belum tersedia untuk semester ini.</ClassicSubtitle>
           </div>
@@ -827,7 +827,7 @@ export const renderClassicPage = (
       };
 
       return (
-        <React.Fragment key={`modul-classic-${activeMateri.bab}`}>
+        <React.Fragment key={index}>
           {/* Halaman 1–N: Modul Ajar utama */}
           <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
             <ClassicWatermark opacity={0.04} />
@@ -1116,7 +1116,7 @@ export const renderClassicPage = (
     ============================================================ */
     case 'kisi-kisi':
       return (
-        <div key="kisi-kisi-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Kisi-Kisi Soal Asesmen</ClassicPageTitle>
           <ClassicSubtitle>Kisi-Kisi Ujian Tengah & Akhir Semester</ClassicSubtitle>
@@ -1164,7 +1164,7 @@ export const renderClassicPage = (
     case 'kartu-soal': {
       const localActiveMateri = localMateriList.find(m => m.bab === Number(ctx.selectedPpmBab)) || localMateriList[0] || {};
       return (
-        <div key="kartu-soal-classic" className="a4-page" style={{ position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Kartu Soal Asesmen</ClassicPageTitle>
           <ClassicSubtitle>Butir Pertanyaan Ujian & Kunci Jawaban Pembahasan</ClassicSubtitle>
