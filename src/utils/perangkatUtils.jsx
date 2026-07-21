@@ -215,6 +215,31 @@ export const buildLkpdFromMateri = (materi = {}, mapel = 'pai', customLkpd = [])
   const labelMapel =
     mapel === 'arab' ? 'Bahasa Arab' : mapel === 'kemuh' ? 'Kemuhammadiyahan' : 'PAI dan Budi Pekerti';
 
+  // Kemuh: LKPD ringkas — utamakan tugas custom bab + 1 refleksi
+  if (mapel === 'kemuh') {
+    const customs = (customLkpd || []).filter((q) => typeof q === 'string' && q.trim());
+    if (customs.length > 0) {
+      customs.slice(0, 3).forEach((q) => tasks.push(q.trim()));
+    } else {
+      tps.slice(0, 2).forEach((tp, i) => {
+        const cleanTp = String(tp).trim().replace(/\.$/, '');
+        tasks.push(
+          i === 0
+            ? `Jelaskan dengan singkat (3–5 kalimat) maksud dari: ${cleanTp}.`
+            : `Berikan 2 contoh nyata di sekolah/rumah yang sesuai dengan: ${cleanTp}.`
+        );
+      });
+      if (tasks.length === 0) {
+        tasks.push(`Tuliskan 3 poin penting yang kamu pahami dari materi "${judul}"!`);
+        tasks.push(`Berikan 2 contoh pengamalan materi "${judul}" sebagai pelajar Muhammadiyah!`);
+      }
+    }
+    tasks.push(
+      `Refleksi: Satu sikap/kebiasaan yang akan kamu perbaiki setelah belajar "${judul}" (tuliskan alasan singkatnya).`
+    );
+    return tasks;
+  }
+
   tasks.push(
     `Orientasi Materi: Tuliskan 3 konsep kunci dari materi "${judul}"${elemen ? ` (Elemen: ${elemen})` : ''} yang paling esensial bagi pelajar SMK, lalu jelaskan mengapa ketiganya penting!`
   );
@@ -1624,14 +1649,33 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = nu
   // Generasi LKPD Utuh Kontekstual (Tidak Templateble)
   details.detailedLkpd = getDetailedLkpdForBab(fase, bab, mapel, kelas, materi);
 
-  // Petunjuk pengerjaan LKPD (dipakai di UI modul)
-  details.lkpdPetunjuk = [
-    'Kerjakan secara berkelompok (3–4 murid) kecuali bagian Refleksi Individu.',
-    'Baca seluruh Tujuan Pembelajaran (TP) bab ini sebelum menjawab.',
-    'Setiap jawaban harus memuat: argumen, dalil/landasan (jika relevan), dan contoh nyata.',
-    'Gunakan bahasa santun, jujur, dan dapat dipertanggungjawabkan.',
-    'Siapkan produk visual ringkas untuk presentasi kelas (maks. 5 menit).',
-  ];
+  // Sinkronkan LKPD Kemuh ringkas dengan daftar tugas bab
+  if (mapel === 'kemuh' && details.detailedLkpd?.simplified) {
+    const tugas = Array.isArray(details.lkpd) ? details.lkpd : [];
+    details.detailedLkpd.tugas = tugas;
+    details.detailedLkpd.langkahKerja = {
+      ...details.detailedLkpd.langkahKerja,
+      dataProcessing: {
+        instruksi: 'Jawab tugas berikut di lembar jawaban kelompok:',
+        headers: ['No', 'Tugas'],
+        rows: tugas.map((t, i) => ({ konsep: String(i + 1), pemicu: t })),
+      },
+    };
+    details.lkpdPetunjuk = [
+      'Kerjakan berkelompok (3–4 orang).',
+      'Jawab singkat dan jelas.',
+      'Kumpulkan di akhir kegiatan.',
+    ];
+  } else {
+    // Petunjuk pengerjaan LKPD (dipakai di UI modul)
+    details.lkpdPetunjuk = [
+      'Kerjakan secara berkelompok (3–4 murid) kecuali bagian Refleksi Individu.',
+      'Baca seluruh Tujuan Pembelajaran (TP) bab ini sebelum menjawab.',
+      'Setiap jawaban harus memuat: argumen, dalil/landasan (jika relevan), dan contoh nyata.',
+      'Gunakan bahasa santun, jujur, dan dapat dipertanggungjawabkan.',
+      'Siapkan produk visual ringkas untuk presentasi kelas (maks. 5 menit).',
+    ];
+  }
 
   return details;
 };
@@ -1707,11 +1751,100 @@ export const getDetailedLkpdForBab = (fase, bab, mapel = 'pai', kelas = 'X', mat
     soalHots[0].soal = `Uraikan perbedaan antara Jumlah Ismiyyah dan Jumlah Fi'liyyah beserta contohnya dari materi ${judulMateri}!`;
     soalHots[1].soal = `Terjemahkan dan analisislah pola kalimat (wazan) yang terkandung dalam bacaan/dialog materi ${judulMateri}!`;
   } else if (mapel === 'kemuh') {
-    narasiStimulation = `Sejak didirikan oleh K.H. Ahmad Dahlan pada tahun 1912 di Yogyakarta, Muhammadiyah senantiasa mengusung gerak Tajdid (pembaruan) dan Teologi Al-Ma'un. Melalui jaringan Amal Usaha Muhammadiyah (AUM) di bidang pendidikan, kesehatan, dan sosial, persyarikatan membuktikan bahwa dakwah Islam harus menghadirkan kemajuan nyata bagi bangsa dan kemanusiaan.`;
-    pemantik1 = `Mengapa K.H. Ahmad Dahlan memilih mendirikan sekolah modern daripada sekadar pesantren tradisional pada masa kolonial?`;
-    pemantik2 = `Bagaimana peran Organisasi Otonom (Ortom) seperti IPM, HW, dan Tapak Suci dalam membina karakter kader muda Muhammadiyah?`;
-    soalHots[0].soal = `Jelaskan latar belakang historis dan sosiologis didirikannya persyarikatan Muhammadiyah oleh KH. Ahmad Dahlan!`;
-    soalHots[1].soal = `Analisislah makna 'Islam Berkemajuan' dan bagaimana pelaksanaannya di sekolah SMKS Muhammadiyah 2 Genteng!`;
+    // LKPD Kemuh disederhanakan (format ringkas, 1 lembar kerja per bab)
+    const tugasRingkas = Array.isArray(materi?.lkpdCustom)
+      ? materi.lkpdCustom
+      : null;
+    const soalKemuh = [
+      {
+        no: 1,
+        soal: `Jelaskan secara singkat (3–5 kalimat) inti materi "${judulMateri}" dan mengapa penting bagi pelajar Muhammadiyah!`,
+        kunci: `Memuat pengertian pokok, 1 alasan relevansi, dan 1 contoh di sekolah.`,
+      },
+      {
+        no: 2,
+        soal: `Berikan 2 contoh nyata pengamalan nilai "${judulMateri}" di sekolah atau rumah!`,
+        kunci: `Dua contoh konkret, realistis, dan dapat diamati.`,
+      },
+    ];
+
+    return {
+      simplified: true,
+      judulLkpd: `LKPD KEMUHAMMADIYAH`,
+      subJudul: `Materi: ${judulMateri}`,
+      identitas: {
+        mapel: labelMapel,
+        faseKelas: `${fase} / ${kelas}`,
+        materi: judulMateri,
+        elemen: elemen || 'Kemuhammadiyahan',
+        model: 'Diskusi & Tugas Terstruktur',
+        targetDpl: 'Kolaborasi, Kewargaan, Kemandirian',
+        fokusTahap: 'Tugas kelompok + refleksi',
+      },
+      tujuan: [
+        `Memahami konsep utama ${judulMateri}.`,
+        `Menghubungkan materi dengan sikap pelajar Muhammadiyah di sekolah.`,
+      ],
+      petunjuk: [
+        'Kerjakan secara berkelompok (3–4 orang).',
+        'Jawab singkat, jelas, dan jujur.',
+        'Kumpulkan di akhir kegiatan.',
+      ],
+      tugas: tugasRingkas || [
+        `Tuliskan 3 poin penting yang kamu pahami dari materi "${judulMateri}".`,
+        `Sebutkan 2 contoh nyata penerapan materi ini sebagai pelajar Muhammadiyah.`,
+        `Refleksi: satu sikap yang akan kamu perbaiki setelah mempelajari materi ini.`,
+      ],
+      rubrikPenilaian: [
+        {
+          no: 1,
+          komponen: 'Pemahaman',
+          sub: [`Menjelaskan inti ${judulMateri} dengan benar`],
+        },
+        {
+          no: 2,
+          komponen: 'Contoh & Aplikasi',
+          sub: ['Memberikan contoh nyata yang relevan'],
+        },
+        {
+          no: 3,
+          komponen: 'Sikap & Kerjasama',
+          sub: ['Aktif, jujur, dan menghargai teman'],
+        },
+      ],
+      bobotPenilaian: {
+        persiapan: 10,
+        proses: 30,
+        hasil: 40,
+        sikap: 20,
+        waktu: 0,
+      },
+      langkahKerja: {
+        stimulation: {
+          narasi: `Bacalah materi "${judulMateri}" secara singkat, lalu diskusikan dengan kelompokmu.`,
+          pertanyaanPemantik: [
+            `Apa yang paling penting dari materi ${judulMateri}?`,
+            `Bagaimana materi ini diamalkan di sekolah Muhammadiyah?`,
+          ],
+        },
+        problemStatement: `Diskusikan: Apa yang harus dipahami pelajar SMK dari materi "${judulMateri}"?`,
+        dataCollection: `Gunakan buku Kemuhammadiyahan / catatan guru / pengalaman di sekolah sebagai sumber jawaban.`,
+        dataProcessing: {
+          instruksi: 'Jawab tugas berikut di lembar jawaban kelompok:',
+          headers: ['No', 'Tugas'],
+          rows: [
+            { konsep: '1', pemicu: `Tuliskan 3 poin penting dari "${judulMateri}".` },
+            { konsep: '2', pemicu: 'Berikan 2 contoh pengamalan di sekolah/rumah.' },
+            { konsep: '3', pemicu: 'Tuliskan 1 komitmen sikap yang akan diperbaiki.' },
+          ],
+        },
+      },
+      kesimpulanPlaceholder: 'Kesimpulan singkat kelompok (2–3 kalimat):',
+      postTest: {
+        quizizzLink: '#',
+        soal: soalKemuh,
+      },
+    };
   }
 
   return {

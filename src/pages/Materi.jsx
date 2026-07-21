@@ -1,27 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import { useSearchParams, useParams } from 'react-router-dom';
+import React, { useState, useEffect, useMemo } from 'react';
+import { useSearchParams, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { BookOpen, GraduationCap, ChevronRight, Library, Maximize, Minimize } from 'lucide-react';
 import { faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import MateriContent from '../components/materi/MateriContent';
+import { buildMateriPath } from '../utils/materiUrls';
+
+const normalizeMapel = (v) => {
+  const m = String(v || 'pai').toLowerCase();
+  if (m === 'pai' || m === 'arab' || m === 'kemuh') return m;
+  return 'pai';
+};
+const normalizeKelas = (v) => {
+  const k = String(v || 'X').toUpperCase();
+  if (k === 'X' || k === 'XI' || k === 'XII') return k;
+  return 'X';
+};
+const normalizeBab = (v) => {
+  const n = parseInt(String(v ?? '1'), 10);
+  return Number.isFinite(n) && n > 0 ? n : 1;
+};
 
 const Materi = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const params = useParams();
-  
-  const [mapel, setMapel] = useState(params.mapel || searchParams.get('mapel') || 'pai');
-  const [kelas, setKelas] = useState(searchParams.get('kelas') || 'X');
-  const [bab, setBab] = useState(parseInt(searchParams.get('bab') || '1'));
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  useEffect(() => {
-    if (params.mapel && params.mapel !== mapel) {
-      setMapel(params.mapel);
-    }
-  }, [params.mapel]);
+  // Path QR cetak: /materi/:mapel/:kelas/bab-:bab — prioritas path, lalu query
+  const fromPath = Boolean(params.mapel || params.kelas || params.bab);
+  const initialMapel = normalizeMapel(params.mapel || searchParams.get('mapel') || 'pai');
+  const initialKelas = normalizeKelas(params.kelas || searchParams.get('kelas') || 'X');
+  const initialBab = normalizeBab(params.bab || searchParams.get('bab') || '1');
 
+  const [mapel, setMapel] = useState(initialMapel);
+  const [kelas, setKelas] = useState(initialKelas);
+  const [bab, setBab] = useState(initialBab);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
-  // Toggle Fullscreen Function
+  // Tetap mode path jika datang dari QR / path penuh
+  const preferPathUrl = useMemo(
+    () => fromPath || /^\/materi\/[^/]+\/[^/]+\/bab-/i.test(location.pathname),
+    [fromPath, location.pathname]
+  );
+
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch((err) => {
@@ -29,39 +51,55 @@ const Materi = () => {
       });
       setIsFullscreen(true);
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      if (document.exitFullscreen) document.exitFullscreen();
       setIsFullscreen(false);
     }
   };
 
-  // Sync fullscreen state with DOM changes (e.g., ESC key pressed)
   useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
+    const handleFullscreenChange = () => setIsFullscreen(!!document.fullscreenElement);
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
 
-  // Update body class for fullscreen
   useEffect(() => {
-    if (isFullscreen) {
-      document.body.classList.add('fullscreen-mode');
-    } else {
-      document.body.classList.remove('fullscreen-mode');
-    }
-    // Cleanup on unmount
+    if (isFullscreen) document.body.classList.add('fullscreen-mode');
+    else document.body.classList.remove('fullscreen-mode');
     return () => document.body.classList.remove('fullscreen-mode');
   }, [isFullscreen]);
 
-  // Update URL
+  // Sinkron dari URL (path QR atau query)
   useEffect(() => {
-    setSearchParams({ mapel, kelas, bab: bab.toString() }, { replace: true });
-  }, [mapel, kelas, bab, setSearchParams]);
+    const nextMapel = normalizeMapel(params.mapel || searchParams.get('mapel') || mapel);
+    const nextKelas = normalizeKelas(params.kelas || searchParams.get('kelas') || kelas);
+    const nextBab = normalizeBab(params.bab || searchParams.get('bab') || bab);
+    if (nextMapel !== mapel) setMapel(nextMapel);
+    if (nextKelas !== kelas) setKelas(nextKelas);
+    if (nextBab !== bab) setBab(nextBab);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [params.mapel, params.kelas, params.bab, searchParams]);
 
-  // Get active data
+  // Update URL — format path QR tidak diubah
+  useEffect(() => {
+    if (preferPathUrl) {
+      const target = buildMateriPath(mapel, kelas, bab);
+      if (location.pathname !== target) navigate(target, { replace: true });
+    } else if (params.mapel && !params.kelas) {
+      // /materi/:mapel only
+      const target = `/materi/${mapel}?kelas=${kelas}&bab=${bab}`;
+      // keep path /materi/:mapel with query for kelas/bab
+      const desiredPath = `/materi/${mapel}`;
+      const desiredSearch = `?kelas=${encodeURIComponent(kelas)}&bab=${encodeURIComponent(String(bab))}`;
+      if (location.pathname !== desiredPath || location.search !== desiredSearch) {
+        navigate(`${desiredPath}${desiredSearch}`, { replace: true });
+      }
+    } else {
+      const qs = new URLSearchParams({ mapel, kelas, bab: String(bab) }).toString();
+      const target = `/materi?${qs}`;
+      if (`${location.pathname}${location.search}` !== target) navigate(target, { replace: true });
+    }
+  }, [mapel, kelas, bab, preferPathUrl, navigate, location.pathname, location.search, params.mapel, params.kelas]);
+
   const getFaseData = () => {
     if (mapel === 'pai') return kelas === 'X' ? faseE : kelas === 'XI' ? faseF11 : faseF12;
     if (mapel === 'arab') return kelas === 'X' ? faseEArab : kelas === 'XI' ? faseF11Arab : faseF12Arab;

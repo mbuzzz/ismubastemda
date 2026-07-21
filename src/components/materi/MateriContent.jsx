@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { BookOpen, Target, FileText, Bookmark, ExternalLink } from 'lucide-react';
-import { detailedMateri } from '../../data/materiContent';
+import React, { useEffect, useMemo } from 'react';
+import { BookOpen, Target, FileText, Bookmark, ExternalLink, ListOrdered, GraduationCap, PenLine, BookMarked } from 'lucide-react';
+import { getBahanAjarLengkap } from '../../utils/bahanAjarBuilder';
 
 const ArabicText = ({ text }) => {
   if (typeof text === 'string' && /[\u0600-\u06FF]/.test(text)) {
@@ -18,254 +18,316 @@ const ArabicText = ({ text }) => {
   return text;
 };
 
+const SectionCard = ({ icon: Icon, title, children, accent = 'var(--primary)' }) => (
+  <section style={{
+    background: '#FFFFFF',
+    border: '1px solid #E2E8F0',
+    borderRadius: '16px',
+    padding: '22px 24px',
+    boxShadow: '0 2px 10px rgba(15,23,42,0.03)',
+  }}>
+    <h3 style={{
+      margin: '0 0 14px 0',
+      fontSize: '15px',
+      fontWeight: 800,
+      color: 'var(--primary-dark)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px',
+      letterSpacing: '0.2px',
+    }}>
+      {Icon && <Icon size={16} color={accent} />}
+      {title}
+    </h3>
+    {children}
+  </section>
+);
+
 const MateriContent = ({ mapel, kelas, bab, materiData }) => {
-  
+  const book = useMemo(
+    () => getBahanAjarLengkap(mapel, kelas, bab || materiData?.bab || 1),
+    [mapel, kelas, bab, materiData?.bab]
+  );
+
   useEffect(() => {
-    // Scroll to top when chapter changes
     const contentArea = document.querySelector('.materi-view-container');
-    if (contentArea) {
-      contentArea.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (contentArea) contentArea.scrollIntoView({ behavior: 'smooth' });
   }, [mapel, kelas, bab]);
 
-  const currentDetails = detailedMateri[mapel]?.[kelas]?.[bab];
-
-  const renderImage = (src, alt) => {
-    const imagePath = src.startsWith('http') ? src : `/images/materi/${mapel}/${kelas}/bab${bab}-${src}`;
-    return (
-      <figure style={{ margin: '28px 0', textAlign: 'center' }}>
-        <img 
-          src={imagePath} 
-          alt={alt} 
-          loading="lazy"
-          style={{ maxWidth: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 8px 30px rgba(0,0,0,0.06)', border: '1px solid #E2E8F0' }}
-          onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.parentNode.innerHTML += `
-              <div style="background: #F8FAFC; padding: 40px 20px; border-radius: 16px; color: #94A3B8; border: 2px dashed #E2E8F0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
-                <span style="font-size: 28px;">🖼️</span>
-                <span style="font-size: 12px; font-weight: 700; color: #64748B;">ILUSTRASI MEDIA: ${alt}</span>
-              </div>
-            `;
-          }}
-        />
-        <figcaption style={{ fontSize: '11.5px', color: '#64748B', marginTop: '10px', fontStyle: 'italic', fontWeight: 500 }}>{alt}</figcaption>
-      </figure>
-    );
-  };
+  const meta = book.meta || {};
+  const judul = meta.judul || materiData?.judul || `Bab ${bab}`;
+  const elemen = meta.elemen || materiData?.elemen || '';
+  const tpList = Array.isArray(meta.tp) && meta.tp.length ? meta.tp : (materiData?.tp || []);
 
   return (
-    <div className="materi-view-container" style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
-      
-      {/* Subject Badge & Title */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ 
-            background: 'linear-gradient(135deg, #0D47A1, #1976D2)', 
-            color: '#FFFFFF', 
-            padding: '6px 14px', 
-            borderRadius: '30px', 
-            fontSize: '10px', 
-            fontWeight: '800', 
-            letterSpacing: '1px',
-            textTransform: 'uppercase',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '6px',
-            boxShadow: '0 4px 10px rgba(13, 71, 161, 0.15)'
-          }}>
-            <BookOpen size={12} />
-            Bab {materiData.bab} · {materiData.elemen}
-          </span>
-        </div>
-        <h1 style={{ margin: '0', color: 'var(--primary-dark)', fontSize: '28px', fontWeight: '850', lineHeight: '1.25', letterSpacing: '-0.8px' }}>
-          <ArabicText text={materiData.judul} />
-        </h1>
-      </div>
-
-      {/* Tujuan Pembelajaran Box */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #F8FAFC, #F1F5F9)', 
-        padding: '24px', 
-        borderRadius: '18px', 
-        borderLeft: '5px solid var(--primary)',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.02)',
+    <div className="materi-view-container" style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+      {/* Cover / identitas bab seperti buku */}
+      <header style={{
+        borderRadius: '18px',
         border: '1px solid #E2E8F0',
-        borderLeftWidth: '5px'
+        background: 'linear-gradient(145deg, #0D47A1 0%, #1565C0 55%, #1976D2 100%)',
+        color: '#FFF',
+        padding: '28px 28px 24px',
+        boxShadow: '0 10px 28px rgba(13,71,161,0.18)',
       }}>
-        <h3 style={{ margin: '0 0 14px 0', color: 'var(--primary-dark)', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Target size={16} color="var(--primary)" />
-          Tujuan Pembelajaran (TP)
-        </h3>
-        <ul style={{ margin: '0', paddingLeft: '20px', color: '#334155', fontSize: '14px', lineHeight: '1.75', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          {materiData.tp.map((tpItem, idx) => (
-            <li key={idx} style={{ paddingLeft: '4px' }}>{tpItem}</li>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '14px' }}>
+          <span style={{
+            background: 'rgba(255,255,255,0.16)',
+            border: '1px solid rgba(255,255,255,0.25)',
+            padding: '5px 12px',
+            borderRadius: '999px',
+            fontSize: '10px',
+            fontWeight: 800,
+            letterSpacing: '0.8px',
+            textTransform: 'uppercase',
+          }}>
+            Bahan Ajar · Bab {book.bab}
+          </span>
+          <span style={{
+            background: 'rgba(255,255,255,0.12)',
+            padding: '5px 12px',
+            borderRadius: '999px',
+            fontSize: '10px',
+            fontWeight: 700,
+          }}>
+            {meta.mapelLabel || mapel?.toUpperCase()} · Kelas {kelas} · Fase {meta.fase}
+          </span>
+          {meta.semester && (
+            <span style={{
+              background: 'rgba(255,255,255,0.12)',
+              padding: '5px 12px',
+              borderRadius: '999px',
+              fontSize: '10px',
+              fontWeight: 700,
+            }}>
+              Semester {meta.semester}
+            </span>
+          )}
+        </div>
+        <h1 style={{
+          margin: '0 0 10px 0',
+          fontSize: '26px',
+          fontWeight: 850,
+          lineHeight: 1.25,
+          letterSpacing: '-0.4px',
+        }}>
+          <ArabicText text={judul} />
+        </h1>
+        <p style={{ margin: 0, opacity: 0.92, fontSize: '13px', lineHeight: 1.55 }}>
+          Elemen: <strong>{elemen}</strong>
+          {meta.alokasi ? ` · Alokasi ${meta.alokasi} JP` : ''}
+          {meta.minggu ? ` · ${meta.minggu} pertemuan` : ''}
+        </p>
+      </header>
+
+      {/* Daftar isi mini */}
+      <SectionCard icon={ListOrdered} title="Daftar Isi Bahan Ajar">
+        <ol style={{ margin: 0, paddingLeft: '20px', fontSize: '13.5px', lineHeight: 1.8, color: '#334155' }}>
+          <li>Identitas & Capaian Pembelajaran</li>
+          <li>Tujuan Pembelajaran (TP)</li>
+          <li>Ringkasan Materi</li>
+          <li>Uraian Materi (seperti bab buku)</li>
+          <li>Peta Pertemuan</li>
+          <li>Latihan / Evaluasi Mandiri</li>
+          <li>Glosarium & Rujukan</li>
+        </ol>
+      </SectionCard>
+
+      {/* CP */}
+      <SectionCard icon={Target} title="Capaian Pembelajaran (CP)">
+        <p style={{
+          margin: 0,
+          fontSize: '14px',
+          lineHeight: 1.75,
+          color: '#334155',
+          fontStyle: 'italic',
+          background: '#F8FAFC',
+          borderLeft: '4px solid var(--primary)',
+          padding: '14px 16px',
+          borderRadius: '0 12px 12px 0',
+        }}>
+          “{meta.capaian || materiData?.capaian || 'Capaian pembelajaran mengikuti kurikulum fase aktif.'}”
+        </p>
+      </SectionCard>
+
+      {/* TP */}
+      <SectionCard icon={GraduationCap} title="Tujuan Pembelajaran (TP)">
+        <ul style={{ margin: 0, paddingLeft: '18px', color: '#1E293B', fontSize: '14px', lineHeight: 1.75, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          {tpList.map((tpItem, idx) => (
+            <li key={idx}><strong>TP {idx + 1}.</strong> {tpItem}</li>
           ))}
         </ul>
-      </div>
+      </SectionCard>
 
-      {/* Main Material Content */}
-      <div style={{ fontSize: '15.5px', lineHeight: '1.85', color: '#334155', display: 'flex', flexDirection: 'column', gap: '24px', letterSpacing: '0.2px' }}>
-        {currentDetails ? (
-          /* Render Detailed Content */
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
-            <p style={{ 
-              fontSize: '16px', 
-              fontWeight: '550', 
-              color: 'var(--primary-dark)', 
-              margin: '0', 
-              fontStyle: 'italic', 
-              borderLeft: '4px solid var(--secondary)', 
-              paddingLeft: '18px',
-              lineHeight: '1.8',
-              background: '#F8FAFC',
-              padding: '16px 20px'
+      {/* Ringkasan */}
+      <SectionCard icon={BookOpen} title="Ringkasan Bab">
+        <p style={{ margin: 0, fontSize: '15px', lineHeight: 1.8, color: '#1E293B', textAlign: 'justify' }}>
+          {book.ringkasan}
+        </p>
+      </SectionCard>
+
+      {/* Uraian materi seperti buku */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          padding: '4px 2px',
+        }}>
+          <FileText size={18} color="var(--primary)" />
+          <h2 style={{ margin: 0, fontSize: '17px', fontWeight: 850, color: 'var(--primary-dark)' }}>
+            Uraian Materi
+          </h2>
+        </div>
+
+        {(book.sections || []).map((section, sIdx) => (
+          <article key={sIdx} style={{
+            background: '#FFFFFF',
+            border: '1px solid #E2E8F0',
+            borderRadius: '16px',
+            padding: '22px 24px',
+          }}>
+            <h3 style={{
+              margin: '0 0 14px 0',
+              fontSize: '17px',
+              fontWeight: 800,
+              color: 'var(--primary-dark)',
+              borderBottom: '2px solid #E2E8F0',
+              paddingBottom: '10px',
+              lineHeight: 1.35,
             }}>
-              {currentDetails.ringkasan}
-            </p>
+              {section.title}
+            </h3>
 
-            {currentDetails.sections.map((section, sIdx) => (
-              <div key={sIdx} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <h3 style={{ 
-                  color: 'var(--primary-dark)', 
-                  fontSize: '20px', 
-                  fontWeight: '800', 
-                  margin: '10px 0 0 0', 
-                  borderBottom: '2px solid #E2E8F0', 
-                  paddingBottom: '12px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px'
-                }}>
-                  <FileText size={20} color="var(--primary)" />
-                  {section.title}
-                </h3>
-                
-                <div 
-                  style={{ textAlign: 'justify', whiteSpace: 'pre-line', margin: '0', fontSize: '15px', color: '#1E293B', display: 'flex', flexDirection: 'column', gap: '14px' }}
-                  dangerouslySetInnerHTML={{ __html: section.content }}
-                />
-                
-                {/* Arabic Dalil Block if present */}
-                {section.dalil && (
-                  <div style={{ 
-                    background: 'linear-gradient(135deg, #F0F4F8, #E6EFFE)', 
-                    borderRadius: '16px', 
-                    padding: '24px', 
-                    margin: '16px 0', 
-                    borderRight: '6px solid var(--primary)', 
-                    textAlign: 'right',
-                    boxShadow: '0 4px 15px rgba(13, 71, 161, 0.04)'
-                  }}>
-                    <p style={{ 
-                      fontFamily: "'Traditional Arabic', 'Amiri', serif", 
-                      fontSize: '28px', 
-                      margin: '0 0 16px 0', 
-                      lineHeight: '2.2', 
-                      color: 'var(--primary-dark)',
-                      direction: 'rtl',
-                      fontWeight: 'bold'
-                    }}>
-                      {section.dalil}
-                    </p>
-                    <p style={{ 
-                      textAlign: 'left', 
-                      margin: '0', 
-                      fontSize: '13.5px', 
-                      fontStyle: 'italic', 
-                      color: '#475569',
-                      borderTop: '1px dashed #CBD5E1',
-                      paddingTop: '12px',
-                      fontWeight: 500,
-                      lineHeight: '1.6'
-                    }}>
-                      <strong>Artinya:</strong> "{section.arti}"
-                    </p>
-                  </div>
-                )}
-
-                {/* Section Image if present */}
-                {section.image && renderImage(section.image, section.caption || section.title)}
-              </div>
-            ))}
-
-            {/* Rujukan / Referensi Section */}
-            {currentDetails.rujukan && (
-              <div style={{ 
-                marginTop: '24px',
-                background: '#FAFBFD',
-                border: '1px solid #E2E8F0',
-                borderRadius: '16px',
-                padding: '24px'
+            {section.dalil && (
+              <div style={{
+                background: 'linear-gradient(135deg, #F0F4F8, #E6EFFE)',
+                borderRadius: '14px',
+                padding: '20px',
+                margin: '0 0 16px 0',
+                borderRight: '5px solid var(--primary)',
+                textAlign: 'right',
               }}>
-                <h4 style={{ 
-                  margin: '0 0 16px 0', 
-                  fontSize: '13px', 
-                  fontWeight: '800', 
-                  color: 'var(--text-light)', 
-                  textTransform: 'uppercase', 
-                  letterSpacing: '1px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
+                <p style={{
+                  fontFamily: "'Traditional Arabic', 'Amiri', serif",
+                  fontSize: '26px',
+                  margin: '0 0 12px 0',
+                  lineHeight: 2.1,
+                  color: 'var(--primary-dark)',
+                  direction: 'rtl',
+                  fontWeight: 'bold',
                 }}>
-                  <Bookmark size={16} />
-                  Sumber & Rujukan Materi
-                </h4>
-                <ul style={{ margin: '0', paddingLeft: '18px', fontSize: '13.5px', color: '#475569', display: 'flex', flexDirection: 'column', gap: '8px', lineHeight: '1.6' }}>
-                  {currentDetails.rujukan.map((ref, rIdx) => (
-                    <li key={rIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-                      <ExternalLink size={14} style={{ marginTop: '5px', flexShrink: 0, color: 'var(--primary-light)' }} />
-                      <span>{ref}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {section.dalil}
+                </p>
+                {section.arti && (
+                  <p style={{
+                    textAlign: 'left',
+                    margin: 0,
+                    fontSize: '13px',
+                    fontStyle: 'italic',
+                    color: '#475569',
+                    borderTop: '1px dashed #CBD5E1',
+                    paddingTop: '10px',
+                    lineHeight: 1.6,
+                  }}>
+                    <strong>Artinya:</strong> “{section.arti}”
+                  </p>
+                )}
               </div>
             )}
-          </div>
-        ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <p style={{ margin: '0', fontSize: '15px' }}>
-              Pembelajaran pada bab <strong>{materiData.judul}</strong> membahas secara terperinci rincian materi esensial sesuai kurikulum ISMUBA berkemajuan.
-            </p>
 
-            <div style={{ background: '#FAFBFD', border: '1px solid #E2E8F0', borderRadius: '16px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <h3 style={{ color: 'var(--primary-dark)', fontSize: '15px', fontWeight: '800', margin: '0', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Target size={16} />
-                Capaian Pembelajaran (CP)
-              </h3>
-              <p style={{ margin: '0', fontSize: '13px', fontStyle: 'italic', color: '#475569', lineHeight: '1.7' }}>
-                "{materiData.capaian}"
-              </p>
-            </div>
-
-            <h3 style={{ color: 'var(--primary-dark)', fontSize: '16px', fontWeight: '800', margin: '10px 0 0 0' }}>
-              Rincian Poin Utama Kajian
-            </h3>
-            <p style={{ margin: '0' }}>Untuk menguasai bab ini, Anda akan mempelajari submateri pokok berikut:</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {materiData.materiPokok.map((mp, i) => (
-                <div key={i} style={{ 
-                  background: '#FFFFFF', 
-                  border: '1px solid #E2E8F0', 
-                  borderRadius: '12px', 
-                  padding: '14px 16px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '4px'
-                }}>
-                  <strong style={{ fontSize: '14px', color: 'var(--primary-dark)' }}>{i + 1}. {mp}</strong>
-                  <span style={{ fontSize: '12px', color: '#64748B', lineHeight: '1.5' }}>
-                    Mengkaji aspek teoritis, dalil naqli/sejarah persyarikatan, serta aktualisasi dalam akhlak/adab berkeadaban.
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {renderImage('default-banner.png', `Ilustrasi Kajian ${materiData.judul}`)}
-          </div>
-        )}
+            <div
+              style={{
+                textAlign: 'justify',
+                fontSize: '15px',
+                lineHeight: 1.85,
+                color: '#1E293B',
+              }}
+              dangerouslySetInnerHTML={{ __html: section.content }}
+            />
+          </article>
+        ))}
       </div>
+
+      {/* Peta pertemuan */}
+      {Array.isArray(book.pertemuan) && book.pertemuan.length > 0 && (
+        <SectionCard icon={ListOrdered} title={`Peta Pertemuan (${book.pertemuan.length}x)`}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {book.pertemuan.map((p) => (
+              <div key={p.pertemuan} style={{
+                border: '1px solid #E2E8F0',
+                borderRadius: '12px',
+                padding: '14px 16px',
+                background: '#F8FAFC',
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10px', flexWrap: 'wrap', marginBottom: '6px' }}>
+                  <strong style={{ color: 'var(--primary-dark)', fontSize: '13.5px' }}>
+                    Pertemuan {p.pertemuan} · {p.fase}
+                  </strong>
+                  <span style={{ fontSize: '12px', color: '#64748B', fontWeight: 700 }}>{p.alokasi}</span>
+                </div>
+                <p style={{ margin: '0 0 8px 0', fontSize: '13.5px', color: '#1E293B', lineHeight: 1.55 }}>
+                  <strong>Fokus:</strong> {p.fokus}
+                </p>
+                <ul style={{ margin: 0, paddingLeft: '18px', fontSize: '12.5px', color: '#475569', lineHeight: 1.55 }}>
+                  {(p.kegiatan || []).map((k, i) => <li key={i}>{k}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </SectionCard>
+      )}
+
+      {/* Evaluasi */}
+      {Array.isArray(book.evaluasi) && book.evaluasi.length > 0 && (
+        <SectionCard icon={PenLine} title="Latihan / Evaluasi Mandiri">
+          <ol style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: 1.75, color: '#1E293B' }}>
+            {book.evaluasi.map((q, i) => (
+              <li key={i} style={{ marginBottom: '10px' }}>
+                <div>{q}</div>
+                <div style={{ marginTop: '6px', borderBottom: '1px dashed #CBD5E1', minHeight: '28px' }} />
+              </li>
+            ))}
+          </ol>
+        </SectionCard>
+      )}
+
+      {/* Glosarium */}
+      {Array.isArray(book.glosarium) && book.glosarium.length > 0 && (
+        <SectionCard icon={BookMarked} title="Glosarium">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {book.glosarium.map((g, i) => (
+              <div key={i} style={{ fontSize: '13.5px', lineHeight: 1.55, color: '#334155' }}>
+                <strong style={{ color: 'var(--primary-dark)' }}>{g.istilah}</strong>
+                <span> — {g.arti}</span>
+              </div>
+            ))}
+          </div>
+        </SectionCard>
+      )}
+
+      {/* Rujukan */}
+      {Array.isArray(book.rujukan) && book.rujukan.length > 0 && (
+        <SectionCard icon={Bookmark} title="Sumber & Rujukan">
+          <ul style={{ margin: 0, paddingLeft: '18px', fontSize: '13.5px', color: '#475569', display: 'flex', flexDirection: 'column', gap: '8px', lineHeight: 1.6 }}>
+            {book.rujukan.map((ref, rIdx) => (
+              <li key={rIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <ExternalLink size={14} style={{ marginTop: '4px', flexShrink: 0, color: 'var(--primary-light)' }} />
+                <span>{ref}</span>
+              </li>
+            ))}
+          </ul>
+        </SectionCard>
+      )}
+
+      <footer style={{
+        textAlign: 'center',
+        fontSize: '11.5px',
+        color: '#94A3B8',
+        padding: '8px 0 4px',
+      }}>
+        Bahan ajar digital ISMUBA · {meta.mapelLabel} · Kelas {kelas} · Bab {book.bab}
+      </footer>
     </div>
   );
 };

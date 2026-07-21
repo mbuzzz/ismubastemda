@@ -36,9 +36,10 @@ function App() {
           <Route path="/kisi-kisi" element={<Perangkat overrideTab="kisi-kisi" />} />
           <Route path="/kartu-soal" element={<Perangkat overrideTab="kartu-soal" />} />
 
-          {/* Materi Pembelajaran Routes */}
+          {/* Materi Pembelajaran — path QR cetak: /materi/{mapel}/{kelas}/bab-{n} (jangan diubah) */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/materi/:mapel" element={<Materi />} />
+          <Route path="/materi/:mapel/:kelas/bab-:bab" element={<Materi />} />
 
           {/* Tentang */}
           <Route path="/tentang" element={<Tentang />} />
@@ -52,4 +53,3 @@ function App() {
 }
 
 export default App;
-

@@ -898,55 +898,107 @@ export const renderClassicPage = (
       const renderLkpdSection = (lkpdItem) => {
         if (!lkpdItem) return null;
         const { lkpd } = lkpdItem;
+        const isQuiz = !!lkpd.quizMode || !!lkpd.simplified || ctx.selectedMapel === 'kemuh' || ctx.selectedMapel === 'arab';
+        const soalList = Array.isArray(lkpd.postTest?.soal) && lkpd.postTest.soal.length
+          ? lkpd.postTest.soal
+          : (lkpd.tugas || []).map((t, i) => ({ no: i + 1, soal: t }));
+
+        // Format KUIS / ULANGAN (Kemuh): hanya identitas singkat + soal
+        if (isQuiz) {
+          return (
+            <div style={{ border: '1px solid #333', marginTop: 12, padding: 0, background: '#FFFFFF' }}>
+              <div style={{
+                padding: '8px 12px',
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
+                fontSize: 12,
+                textTransform: 'uppercase',
+                letterSpacing: 0.6,
+                textAlign: 'center',
+                borderBottom: '2px solid #333',
+              }}>
+                {lkpd.judulLkpd}
+              </div>
+              <div style={{ padding: '10px 12px' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10.5, marginBottom: 8 }}>
+                  <tbody>
+                    <tr>
+                      <td style={{ padding: '2px 0', width: '28%', fontWeight: 700 }}>Mapel</td>
+                      <td style={{ padding: '2px 0' }}>: {lkpd.identitas?.mapel}</td>
+                      <td style={{ padding: '2px 0', width: '18%', fontWeight: 700 }}>Pertemuan</td>
+                      <td style={{ padding: '2px 0' }}>: {lkpd.identitas?.pertemuan || lkpdItem.pertemuan}</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '2px 0', fontWeight: 700 }}>Kelas / Fase</td>
+                      <td style={{ padding: '2px 0' }}>: {lkpd.identitas?.faseKelas}</td>
+                      <td style={{ padding: '2px 0', fontWeight: 700 }}>Nama</td>
+                      <td style={{ padding: '2px 0' }}>: ........................</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '2px 0', fontWeight: 700, verticalAlign: 'top' }}>Materi</td>
+                      <td colSpan={3} style={{ padding: '2px 0' }}>: <ArabicText text={lkpd.identitas?.materi || lkpd.subJudul} /></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style={{ borderTop: '1px solid #333', margin: '8px 0 10px' }} />
+                {soalList.map((sObj, sIdx) => (
+                  <div key={sIdx} style={{ marginBottom: 12 }}>
+                    <p style={{ margin: '0 0 4px', fontFamily: "'Lora', serif", fontSize: 10.5, fontWeight: 600, lineHeight: 1.45 }}>
+                      {sObj.no}. {sObj.soal}
+                    </p>
+                    <div style={{ minHeight: 48, borderBottom: '1px solid #CCC' }} />
+                    <div style={{ minHeight: 20, borderBottom: '1px solid #CCC' }} />
+                    <div style={{ minHeight: 20, borderBottom: '1px solid #CCC' }} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }
+
+        // Format Discovery (PAI / Arab)
         return (
-          <div style={{ border: '2px double #C9A961', marginTop: 14, padding: 0, background: 'rgba(255,252,244,0.8)' }}>
-            <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
+          <div style={{ border: '1px solid #666', marginTop: 14, padding: 0, background: '#FFFFFF' }}>
+            <div style={{ background: '#FFFFFF', color: '#000', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '1px solid #333' }}>
               {lkpd.judulLkpd}
             </div>
             <div style={{ padding: '12px' }}>
               <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 12, color: '#000', textAlign: 'center', marginBottom: 10 }}>{lkpd.subJudul}</p>
-              {/* Identitas LKPD */}
-              <div style={{ border: '1px solid rgba(201,169,97,0.4)', padding: 10, marginBottom: 10, background: 'rgba(255,255,255,0.5)' }}>
+              <div style={{ border: '1px solid #CCC', padding: 10, marginBottom: 10 }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10.5 }}>
                   <tbody>
-                    <tr><td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000', width: '30%' }}>Mata Pelajaran</td><td style={{ padding: '3px 8px' }}>: {lkpd.identitas.mapel}</td></tr>
-                    <tr><td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000' }}>Fase / Kelas</td><td>: {lkpd.identitas.faseKelas}</td></tr>
-                    <tr><td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000' }}>Materi Pokok</td><td style={{ fontFamily: "'Amiri', serif", fontSize: 14 }}>: <ArabicText text={lkpd.identitas.materi} /></td></tr>
-                    <tr><td style={{ padding: '3px 8px', fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000' }}>Tahap Discovery</td><td>: {lkpd.identitas.fokusTahap}</td></tr>
+                    <tr><td style={{ padding: '3px 8px', fontWeight: 700, width: '30%' }}>Mata Pelajaran</td><td style={{ padding: '3px 8px' }}>: {lkpd.identitas?.mapel}</td></tr>
+                    <tr><td style={{ padding: '3px 8px', fontWeight: 700 }}>Fase / Kelas</td><td>: {lkpd.identitas?.faseKelas}</td></tr>
+                    <tr><td style={{ padding: '3px 8px', fontWeight: 700 }}>Materi Pokok</td><td>: <ArabicText text={lkpd.identitas?.materi} /></td></tr>
+                    <tr><td style={{ padding: '3px 8px', fontWeight: 700 }}>Tahap Discovery</td><td>: {lkpd.identitas?.fokusTahap}</td></tr>
                   </tbody>
                 </table>
               </div>
-              {/* Tujuan */}
               <div style={{ marginBottom: 8 }}>
-                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#000', borderBottom: '1px solid #C9A961', paddingBottom: 4, marginBottom: 6 }}>Tujuan Pembelajaran</h4>
+                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#000', borderBottom: '1px solid #333', paddingBottom: 4, marginBottom: 6 }}>Tujuan</h4>
                 <ul style={{ margin: 0, paddingLeft: 16, fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>
-                  {lkpd.tujuan.map((t, ti) => <li key={ti} style={{ marginBottom: 2 }}>{t}</li>)}
+                  {(lkpd.tujuan || []).map((t, ti) => <li key={ti} style={{ marginBottom: 2 }}>{t}</li>)}
                 </ul>
               </div>
-              {/* Petunjuk */}
               <div style={{ marginBottom: 8 }}>
-                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#000', borderBottom: '1px solid #C9A961', paddingBottom: 4, marginBottom: 6 }}>Petunjuk Kerja</h4>
+                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11.5, color: '#000', borderBottom: '1px solid #333', paddingBottom: 4, marginBottom: 6 }}>Petunjuk</h4>
                 <ol style={{ margin: 0, paddingLeft: 16, fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>
-                  {lkpd.petunjuk.map((p, pi) => <li key={pi} style={{ marginBottom: 2 }}>{p}</li>)}
+                  {(lkpd.petunjuk || []).map((p, pi) => <li key={pi} style={{ marginBottom: 2 }}>{p}</li>)}
                 </ol>
               </div>
-              {/* Stimulation */}
               <ClassicPanel title="Langkah 1: Stimulation">
-                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6, marginBottom: 6, textAlign: 'justify' }}>{lkpd.langkahKerja.stimulation.narasi}</p>
+                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6, marginBottom: 6, textAlign: 'justify' }}>{lkpd.langkahKerja?.stimulation?.narasi}</p>
                 <strong style={{ fontFamily: "'Playfair Display', serif", fontSize: 10.5, color: '#000' }}>Pertanyaan Pemantik:</strong>
                 <ul style={{ margin: '4px 0 0 16px', fontFamily: "'Lora', serif", fontSize: 10.5 }}>
-                  {lkpd.langkahKerja.stimulation.pertanyaanPemantik.map((q, qi) => <li key={qi} style={{ marginBottom: 2 }}>{q}</li>)}
+                  {(lkpd.langkahKerja?.stimulation?.pertanyaanPemantik || []).map((q, qi) => <li key={qi} style={{ marginBottom: 2 }}>{q}</li>)}
                 </ul>
               </ClassicPanel>
-              {/* Problem Statement */}
               <ClassicPanel title="Langkah 2: Problem Statement" style={{ borderLeftColor: '#0284C7' }}>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>{lkpd.langkahKerja.problemStatement}</p>
+                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>{lkpd.langkahKerja?.problemStatement}</p>
               </ClassicPanel>
-              {/* Data Collection */}
               <ClassicPanel title="Langkah 3: Data Collection" style={{ borderLeftColor: '#059669' }}>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>{lkpd.langkahKerja.dataCollection}</p>
+                <p style={{ fontFamily: "'Lora', serif", fontSize: 10.5, lineHeight: 1.6 }}>{lkpd.langkahKerja?.dataCollection}</p>
               </ClassicPanel>
-              {/* Post-Test */}
               <ClassicPanel title="Penilaian Pengetahuan (Post-Test)" style={{ borderLeftColor: '#7C3AED' }}>
                 {Array.isArray(lkpd.postTest?.soal) && lkpd.postTest.soal.map((sObj, sIdx) => (
                   <div key={sIdx} style={{ border: '1px solid rgba(201,169,97,0.3)', padding: 8, marginBottom: 6, background: 'rgba(255,255,255,0.5)' }}>
@@ -955,7 +1007,6 @@ export const renderClassicPage = (
                   </div>
                 ))}
               </ClassicPanel>
-
             </div>
           </div>
         );
@@ -1164,19 +1215,34 @@ export const renderClassicPage = (
 
             {lkpdList.length > 0 && (
               <div className="print-flow-block" style={{ marginTop: 16 }}>
-                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', marginBottom: 8 }}>
-                  LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
+                <div style={{
+                  background: '#FFFFFF',
+                  color: '#000',
+                  padding: '6px 10px',
+                  fontFamily: "'Playfair Display', serif",
+                  fontWeight: 700,
+                  fontSize: 11,
+                  textTransform: 'uppercase',
+                  letterSpacing: 0.8,
+                  textAlign: 'center',
+                  border: '1px solid #333',
+                  marginBottom: 8,
+                }}>
+                  {ctx.selectedMapel === 'kemuh' || ctx.selectedMapel === 'arab' || lkpdList[0]?.lkpd?.quizMode
+                    ? 'LAMPIRAN: KUIS / ULANGAN PER PERTEMUAN'
+                    : 'LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)'}
                 </div>
                 {lkpdList.map((lkpdItem, li) => (
                   <div key={li} className="print-flow-block">
                     {renderLkpdSection(lkpdItem)}
-                    {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '10px 0' }} />}
+                    {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed #999', margin: '10px 0' }} />}
                   </div>
                 ))}
               </div>
             )}
 
-            {lkpdList[0]?.lkpd && (
+            {/* Rubrik hanya untuk format Discovery (bukan kuis Kemuh/Arab) */}
+            {lkpdList[0]?.lkpd && !lkpdList[0].lkpd.quizMode && ctx.selectedMapel !== 'kemuh' && ctx.selectedMapel !== 'arab' && (
               <div className="print-flow-block" style={{ marginTop: 16 }}>
                 <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
                   <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>

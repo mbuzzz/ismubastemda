@@ -4,7 +4,8 @@ import { Maximize, Minimize, BookOpen, Sparkles } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
-import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti, formatTanggalTandaTangan } from '../utils/perangkatUtils';
+import { getDplForBab, getPpmDetails, getDetailedLkpdForBab, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti, formatTanggalTandaTangan } from '../utils/perangkatUtils';
+import { getLkpdListPerPertemuan } from '../utils/lkpdPerPertemuan';
 import { detailedMateri } from '../data/materiContent';
 import { renderClassicPage } from '../components/ClassicPages';
 
@@ -2242,8 +2243,74 @@ export default function Perangkat({ overrideTab }) {
                 );
               })()}
 
-              {/* SECTION 7: LAMPIRAN LKPD UTUH & KONTEKSTUAL (SESUAI FORMAT DOCX REFERENSI) */}
+              {/* SECTION 7: LAMPIRAN LKPD */}
               {(() => {
+                // Kemuh: kuis/ulangan per pertemuan (hanya soal, tanpa petunjuk/TP)
+                if (selectedMapel === 'kemuh' || selectedMapel === 'arab') {
+                  const quizList = getLkpdListPerPertemuan(fase, activeMateri.bab, selectedMapel, selectedClass, activeMateri);
+                  return (
+                    <div className="lkpd-section" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                      <div style={{ textAlign: 'center', borderBottom: '2px solid var(--primary-dark)', paddingBottom: '8px' }}>
+                        <h3 style={{ fontSize: '14px', fontWeight: '800', color: 'var(--primary-dark)', margin: 0 }}>
+                          LAMPIRAN: KUIS / ULANGAN PER PERTEMUAN
+                        </h3>
+                        <p style={{ fontSize: '11px', fontWeight: '600', color: '#475569', margin: '4px 0 0 0' }}>
+                          <ArabicText text={activeMateri.judul} /> · {quizList.length} pertemuan
+                        </p>
+                      </div>
+                      {quizList.map((item) => {
+                        const lk = item.lkpd;
+                        const soal = lk.postTest?.soal || [];
+                        return (
+                          <div key={item.pertemuan} style={{ border: '1px solid #CBD5E1', borderRadius: '8px', overflow: 'hidden', background: '#FFF' }}>
+                            <div style={{ background: '#0D47A1', color: '#FFF', padding: '8px 12px', fontWeight: 700, fontSize: '12px', textAlign: 'center' }}>
+                              {lk.judulLkpd}
+                            </div>
+                            <div style={{ padding: '12px' }}>
+                              <table style={{ width: '100%', fontSize: '11px', marginBottom: '10px', borderCollapse: 'collapse' }}>
+                                <tbody>
+                                  <tr>
+                                    <td style={{ padding: '3px 0', width: '22%', fontWeight: 700 }}>Mapel</td>
+                                    <td style={{ padding: '3px 0' }}>: {lk.identitas?.mapel}</td>
+                                    <td style={{ padding: '3px 0', width: '18%', fontWeight: 700 }}>Pertemuan</td>
+                                    <td style={{ padding: '3px 0' }}>: {item.pertemuan}</td>
+                                  </tr>
+                                  <tr>
+                                    <td style={{ padding: '3px 0', fontWeight: 700 }}>Kelas / Fase</td>
+                                    <td style={{ padding: '3px 0' }}>: {lk.identitas?.faseKelas}</td>
+                                    <td style={{ padding: '3px 0', fontWeight: 700 }}>Nama</td>
+                                    <td style={{ padding: '3px 0' }}>: ........................</td>
+                                  </tr>
+                                  <tr>
+                                    <td style={{ padding: '3px 0', fontWeight: 700, verticalAlign: 'top' }}>Materi</td>
+                                    <td colSpan={3} style={{ padding: '3px 0' }}>: <ArabicText text={lk.identitas?.materi} /></td>
+                                  </tr>
+                                  <tr>
+                                    <td style={{ padding: '3px 0', fontWeight: 700, verticalAlign: 'top' }}>Fokus</td>
+                                    <td colSpan={3} style={{ padding: '3px 0', fontSize: '10.5px' }}>: {item.tpFokus}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <hr style={{ border: 'none', borderTop: '1px solid #E2E8F0', margin: '8px 0 12px' }} />
+                              {soal.map((s) => (
+                                <div key={s.no} style={{ marginBottom: '14px' }}>
+                                  <p style={{ margin: '0 0 6px', fontSize: '11px', fontWeight: 600, lineHeight: 1.45 }}>
+                                    {s.no}. {s.soal}
+                                  </p>
+                                  <div style={{ borderBottom: '1px solid #CBD5E1', minHeight: '28px' }} />
+                                  <div style={{ borderBottom: '1px solid #CBD5E1', minHeight: '28px' }} />
+                                  <div style={{ borderBottom: '1px solid #CBD5E1', minHeight: '28px' }} />
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  );
+                }
+
+                // PAI / Arab: format Discovery utuh (1 LKPD detail)
                 const dLkpd = ppmDetails.detailedLkpd || getDetailedLkpdForBab(fase, activeMateri.bab, selectedMapel, selectedClass, activeMateri);
                 return (
                   <div className="lkpd-section" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -2256,7 +2323,6 @@ export default function Perangkat({ overrideTab }) {
                       </p>
                     </div>
 
-                    {/* Identitas LKPD */}
                     <div style={{ background: '#F8FAFC', border: '1px solid #CBD5E1', padding: '12px', borderRadius: '8px', fontSize: '11px' }}>
                       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
                         <div><strong>Mata Pelajaran:</strong> {dLkpd.identitas.mapel}</div>
@@ -2267,7 +2333,6 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* Identitas Kelompok / Murid */}
                     <div style={{ border: '1px dashed #94A3B8', padding: '10px', borderRadius: '6px', fontSize: '11px', background: '#FFFFFF' }}>
                       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
                         <div><strong>Nama Kelompok:</strong> ...........................................................</div>
@@ -2278,7 +2343,6 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* I. TUJUAN PEMBELAJARAN */}
                     <div className="modern-card" style={{ borderLeftColor: 'var(--primary)' }}>
                       <div className="modern-card-header">
                         <span>I. TUJUAN PEMBELAJARAN</span>
@@ -2293,7 +2357,6 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* II. PETUNJUK KERJA */}
                     <div className="modern-card">
                       <div className="modern-card-header">
                         <span>II. PETUNJUK KERJA</span>
@@ -2308,7 +2371,6 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* III. RUBRIK & BOBOT PENILAIAN */}
                     <div className="modern-card">
                       <div className="modern-card-header">
                         <span>III. RUBRIK & BOBOT PENILAIAN KINERJA (LKPD)</span>
@@ -2347,8 +2409,6 @@ export default function Perangkat({ overrideTab }) {
                             ))}
                           </tbody>
                         </table>
-
-                        {/* Tabel Bobot Penilaian */}
                         <strong style={{ fontSize: '10.5px', color: 'var(--primary-dark)', marginTop: '4px' }}>Persentase Bobot Komponen Penilaian:</strong>
                         <table className="data-table" style={{ fontSize: '10px' }}>
                           <thead>
@@ -2375,14 +2435,12 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* IV. KEGIATAN PEMBELAJARAN (DISCOVERY LEARNING) */}
                     <div className="modern-card" style={{ borderLeftColor: 'var(--accent)' }}>
                       <div className="modern-card-header">
                         <span>IV. KEGIATAN PEMBELAJARAN (DISCOVERY LEARNING)</span>
                         <span className="pill-badge active">Kontekstual Topik</span>
                       </div>
                       <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                        {/* Langkah 1: Stimulation */}
                         <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #0D47A1' }}>
                           <strong style={{ fontSize: '11px', color: '#0D47A1', display: 'block', marginBottom: '6px' }}>
                             Langkah 1: Stimulation (Pemberian Rangsangan)
@@ -2397,8 +2455,6 @@ export default function Perangkat({ overrideTab }) {
                             ))}
                           </ul>
                         </div>
-
-                        {/* Langkah 2: Problem Statement */}
                         <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #0284C7' }}>
                           <strong style={{ fontSize: '11px', color: '#0284C7', display: 'block', marginBottom: '6px' }}>
                             Langkah 2: Problem Statement (Identifikasi Masalah)
@@ -2407,8 +2463,6 @@ export default function Perangkat({ overrideTab }) {
                             {dLkpd.langkahKerja.problemStatement}
                           </p>
                         </div>
-
-                        {/* Langkah 3: Data Collection */}
                         <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #059669' }}>
                           <strong style={{ fontSize: '11px', color: '#059669', display: 'block', marginBottom: '6px' }}>
                             Langkah 3: Data Collection (Pengumpulan Data)
@@ -2417,8 +2471,6 @@ export default function Perangkat({ overrideTab }) {
                             {dLkpd.langkahKerja.dataCollection}
                           </p>
                         </div>
-
-                        {/* Langkah 4: Data Processing */}
                         <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #D97706' }}>
                           <strong style={{ fontSize: '11px', color: '#D97706', display: 'block', marginBottom: '6px' }}>
                             Langkah 4: Data Processing (Pengolahan Data & Analisis Konsep)
@@ -2426,7 +2478,6 @@ export default function Perangkat({ overrideTab }) {
                           <p style={{ fontSize: '11px', margin: '0 0 10px 0' }}>
                             {dLkpd.langkahKerja.dataProcessing.instruksi}
                           </p>
-
                           <table className="data-table" style={{ fontSize: '10.5px', background: '#FFFFFF' }}>
                             <thead>
                               <tr>
@@ -2450,7 +2501,6 @@ export default function Perangkat({ overrideTab }) {
                               ))}
                             </tbody>
                           </table>
-
                           <div style={{ marginTop: '12px' }}>
                             <strong style={{ fontSize: '10.5px', color: '#334155' }}>Kesimpulan Kelompok:</strong>
                             <div style={{ border: '1px dashed #CBD5E1', borderRadius: '6px', minHeight: '60px', background: '#FFFFFF', padding: '8px', marginTop: '4px', fontSize: '10px', color: '#94A3B8' }}>
@@ -2461,7 +2511,6 @@ export default function Perangkat({ overrideTab }) {
                       </div>
                     </div>
 
-                    {/* V. PENILAIAN PENGETAHUAN (POST-TEST) */}
                     <div className="modern-card" style={{ borderLeftColor: '#7C3AED' }}>
                       <div className="modern-card-header">
                         <span>V. PENILAIAN PENGETAHUAN (POST-TEST HOTS)</span>
@@ -2474,7 +2523,6 @@ export default function Perangkat({ overrideTab }) {
                             {dLkpd.postTest.quizizzLink}
                           </a>
                         </div>
-
                         <strong style={{ fontSize: '11px', color: '#1E293B' }}>Kerjakan soal-soal HOTS di bawah ini secara mandiri dan jelas!</strong>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                           {dLkpd.postTest.soal.map((sObj, sIdx) => (

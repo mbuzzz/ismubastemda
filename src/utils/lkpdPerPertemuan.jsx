@@ -1,19 +1,11 @@
-import React from 'react';
-import { getDetailedLkpdForBab } from './perangkatUtils';
+import { getDetailedLkpdForBab, getPpmDetails } from './perangkatUtils';
 
 /**
- * Hasilkan daftar LKPD (Lembar Kerja Peserta Didik) yang dipetakan
- * ke setiap pertemuan dalam sebuah Bab/Modul Ajar.
+ * Hasilkan daftar LKPD per pertemuan.
  *
- * Setiap pertemuan mendapat LKPD-nya sendiri dengan fokus TP yang berbeda,
- * sehingga jika sebuah bab memiliki 2 pertemuan yang menggunakan LKPD,
- * akan ada 2 LKPD utuh (bukan 1 LKPD global di akhir modul).
+ * PAI              : Discovery Learning (utuh).
+ * Kemuh + Arab     : KUIS / ULANGAN per pertemuan (hanya soal, tanpa petunjuk/TP).
  *
- * @param {string} fase        - 'E' | 'F'
- * @param {number} bab         - nomor bab
- * @param {string} mapel       - 'pai' | 'arab' | 'kemuh'
- * @param {string} kelas       - 'X' | 'XI' | 'XII'
- * @param {object} materi      - objek materi aktif (judul, tp[], elemen, ...)
  * @returns {Array<{pertemuan:number, tpFokus:string, lkpd:object}>}
  */
 export const getLkpdListPerPertemuan = (fase, bab, mapel = 'pai', kelas = 'X', materi = {}) => {
@@ -23,12 +15,100 @@ export const getLkpdListPerPertemuan = (fase, bab, mapel = 'pai', kelas = 'X', m
     : [
         `Memahami konsep ${materi?.judul || `Bab ${bab}`} secara komprehensif.`,
         `Mengaplikasikan nilai-nilai ${materi?.judul || `Bab ${bab}`} dalam kehidupan sehari-hari.`,
-        `Merefleksikan hikmah dan dampak sosial-spiritual dari ${materi?.judul || `Bab ${bab}`}.`,
       ];
   const totalPertemuan = Math.max(1, Number(materi?.minggu) || 1);
   const judulMateri = (materi?.judul || `Bab ${bab}`).trim();
+  const labelMapel = mapel === 'arab' ? 'Bahasa Arab' : mapel === 'kemuh' ? 'Kemuhammadiyahan' : 'Pendidikan Agama Islam dan Budi Pekerti';
 
-  // Bank fokus tahap Discovery per pertemuan (diselingkan agar tiap LKPD unik)
+  // ——— Kemuh & Arab: KUIS / ULANGAN per pertemuan ———
+  if (mapel === 'kemuh' || mapel === 'arab' || base?.simplified || base?.quizMode) {
+    const ppm = getPpmDetails(fase, bab, mapel, kelas, materi);
+    const bank = Array.isArray(ppm.lkpd) ? ppm.lkpd.filter(Boolean) : [];
+
+    return Array.from({ length: totalPertemuan }).map((_, pertIdx) => {
+      const tpFokus = tps[pertIdx] || tps[tps.length - 1] || judulMateri;
+      const bankSoal = bank[pertIdx % Math.max(1, bank.length)] || null;
+
+      const soal = mapel === 'arab'
+        ? [
+            {
+              no: 1,
+              soal: `Tuliskan 5 mufradat (kosakata) penting terkait materi "${judulMateri}" pada pertemuan ${pertIdx + 1}, lengkap dengan artinya!`,
+              kunci: `5 pasangan kata Arab–Indonesia yang relevan.`,
+            },
+            {
+              no: 2,
+              soal: bankSoal
+                || `Buat 2 kalimat sederhana (jumlah ismiyyah/fi'liyyah) sesuai fokus pertemuan: "${tpFokus}".`,
+              kunci: `Kalimat berbahasa Arab yang benar secara dasar.`,
+            },
+            {
+              no: 3,
+              soal: `Terjemahkan ke Bahasa Indonesia atau sebaliknya: susun 1 dialog singkat (4–6 baris) tentang "${judulMateri}"!`,
+              kunci: `Dialog kontekstual, mudah dipahami.`,
+            },
+            {
+              no: 4,
+              soal: `Refleksi: Apa 1 kesulitan berbahasa Arab yang kamu temui di pertemuan ${pertIdx + 1}, dan bagaimana cara melatihnya minggu ini?`,
+              kunci: `Refleksi jujur + rencana latihan singkat.`,
+            },
+          ]
+        : [
+            {
+              no: 1,
+              soal: `Jelaskan dengan singkat (3–5 kalimat) materi yang dipelajari pada pertemuan ini: "${tpFokus}".`,
+              kunci: `Memuat pemahaman inti TP pertemuan ${pertIdx + 1}.`,
+            },
+            {
+              no: 2,
+              soal: bankSoal
+                || `Sebutkan 2 poin penting dari materi "${judulMateri}" yang dibahas pada pertemuan ${pertIdx + 1}!`,
+              kunci: `Jawaban relevan dengan materi bab dan TP pertemuan.`,
+            },
+            {
+              no: 3,
+              soal: `Berikan 1 contoh nyata di sekolah atau rumah yang sesuai dengan fokus pertemuan ini ("${tpFokus}")!`,
+              kunci: `Contoh konkret, realistis, dapat diamati.`,
+            },
+            {
+              no: 4,
+              soal: `Refleksi singkat: Apa 1 sikap yang akan kamu perbaiki setelah pertemuan ${pertIdx + 1} tentang "${judulMateri}"?`,
+              kunci: `Komitmen sikap personal yang jelas.`,
+            },
+          ];
+
+      const lkpd = {
+        quizMode: true,
+        simplified: true,
+        judulLkpd: `KUIS / ULANGAN — PERTEMUAN ${pertIdx + 1}`,
+        subJudul: `${judulMateri}`,
+        identitas: {
+          mapel: labelMapel,
+          faseKelas: `${fase} / ${kelas}`,
+          materi: judulMateri,
+          elemen: materi?.elemen || (mapel === 'arab' ? 'Bahasa Arab' : 'Kemuhammadiyahan'),
+          pertemuan: pertIdx + 1,
+          tpFokus,
+          model: 'Kuis / Ulangan',
+        },
+        tujuan: [],
+        petunjuk: [],
+        tugas: soal.map((s) => s.soal),
+        rubrikPenilaian: [],
+        bobotPenilaian: null,
+        langkahKerja: null,
+        kesimpulanPlaceholder: '',
+        postTest: {
+          quizizzLink: '#',
+          soal,
+        },
+      };
+
+      return { pertemuan: pertIdx + 1, tpFokus, lkpd };
+    });
+  }
+
+  // ——— PAI: Discovery Learning per pertemuan ———
   const fokusTahap = [
     { tahap: 'Stimulation (Pemberian Rangsangan)', skill: 'Mengamati & Mempertanyakan' },
     { tahap: 'Problem Statement (Identifikasi Masalah)', skill: 'Merumuskan Pertanyaan' },
@@ -38,13 +118,9 @@ export const getLkpdListPerPertemuan = (fase, bab, mapel = 'pai', kelas = 'X', m
     { tahap: 'Generalization (Menarik Kesimpulan)', skill: 'Menyimpulkan & Mengomunikasikan' },
   ];
 
-  const labelMapel = mapel === 'arab' ? 'Bahasa Arab' : mapel === 'kemuh' ? 'Kemuhammadiyahan' : 'Pendidikan Agama Islam dan Budi Pekerti';
-
   return Array.from({ length: totalPertemuan }).map((_, pertIdx) => {
     const tpFokus = tps[pertIdx] || tps[tps.length - 1] || judulMateri;
     const tahap = fokusTahap[pertIdx % fokusTahap.length];
-
-    // Kloning LKPD dasar lalu sesuaikan fokus pertemuan
     const lkpd = JSON.parse(JSON.stringify(base));
 
     lkpd.judulLkpd = `LEMBAR KERJA PESERTA DIDIK (LKPD) — PERTEMUAN ${pertIdx + 1}`;
@@ -56,23 +132,17 @@ export const getLkpdListPerPertemuan = (fase, bab, mapel = 'pai', kelas = 'X', m
       fokusTahap: tahap.tahap,
       skill: tahap.skill,
     };
-
-    // Tujuan LKPD disesuaikan ke TP fokus pertemuan ini
     lkpd.tujuan = [
       `1. Membedah konsep ${judulMateri} dengan fokus TP: "${tpFokus}".`,
       `2. Melaksanakan tahap ${tahap.tahap} secara kritis, kolaboratif, dan mandiri.`,
       `3. Menyajikan hasil kerja kelompok serta merefleksikan nilai luhur yang diperoleh.`,
     ];
-
-    // Petunjuk kerja spesifik tahap
     lkpd.petunjuk = [
       `1. Bekerjalah dalam kelompok (4-5 orang); arahkan diskusi pada TP Pertemuan ${pertIdx + 1}.`,
       `2. Fokuskan aktivitas pada tahap: ${tahap.tahap} (${tahap.skill}).`,
       `3. Catat setiap temuan pada tabel analisis; gunakan dalil Al-Qur'an/Hadis atau sumber tepercaya.`,
       `4. Siapkan presentasi singkat hasil kerja kelompok di akhir pertemuan.`,
     ];
-
-    // Narasi stimulation spesifik pertemuan
     lkpd.langkahKerja = {
       ...lkpd.langkahKerja,
       stimulation: {
@@ -86,7 +156,6 @@ export const getLkpdListPerPertemuan = (fase, bab, mapel = 'pai', kelas = 'X', m
       dataCollection: `Kumpulkan data pendukung yang relevan dengan TP Pertemuan ${pertIdx + 1} ("${tpFokus}"). Sumber: mushaf Al-Qur'an/hadis, buku teks ${labelMapel}, observasi lingkungan sekolah, atau rujukan digital tepercaya.`,
     };
 
-    // Soal HOTS post-test: ambil 2 soal spesifik per pertemuan (melingkar)
     const allSoal = Array.isArray(lkpd.postTest?.soal) ? lkpd.postTest.soal : [];
     const startIdx = (pertIdx * 2) % Math.max(1, allSoal.length);
     const soalPertemuan = [];
