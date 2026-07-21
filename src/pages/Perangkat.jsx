@@ -1,10 +1,12 @@
 import React, { useState, useEffect, Component } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Maximize, Minimize } from 'lucide-react';
+import { Maximize, Minimize, BookOpen, Sparkles } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
 import { exportToDocx } from '../utils/exportDocx';
 import { getDplForBab, getPpmDetails, indonesianMonthsGanjil, indonesianMonthsGenap, ArabicText, generateDynamicLangkahInti } from '../utils/perangkatUtils';
+import { detailedMateri } from '../data/materiContent';
+import { renderClassicPage } from '../components/ClassicPages';
 
 /** Tangkap error render agar mode satu halaman tidak blank diam-diam */
 class PageErrorBoundary extends Component {
@@ -86,6 +88,26 @@ export default function Perangkat() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const fromUrl = searchParams.get('theme');
+    if (fromUrl === 'classic' || fromUrl === 'modern') return fromUrl;
+    try {
+      const saved = window.localStorage.getItem('perangkat-theme');
+      return saved === 'classic' ? 'classic' : 'modern';
+    } catch {
+      return 'modern';
+    }
+  });
+
+  // Persist theme to localStorage + <html data-theme> for CSS overrides
+  useEffect(() => {
+    try { window.localStorage.setItem('perangkat-theme', theme); } catch {}
+    document.documentElement.setAttribute('data-theme', theme);
+    document.body.classList.toggle('theme-classic', theme === 'classic');
+    return () => { document.body.classList.remove('theme-classic'); };
+  }, [theme]);
+
+  const toggleTheme = () => setTheme((t) => (t === 'modern' ? 'classic' : 'modern'));
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
@@ -128,6 +150,7 @@ export default function Perangkat() {
       tab: activeTab,
       view: viewMode,
       bab: String(selectedPpmBab),
+      theme,
     };
     const cur = {
       mapel: searchParams.get('mapel') || '',
@@ -137,13 +160,14 @@ export default function Perangkat() {
       tab: searchParams.get('tab') || '',
       view: searchParams.get('view') || '',
       bab: searchParams.get('bab') || '',
+      theme: searchParams.get('theme') || '',
     };
     const changed = Object.keys(next).some((k) => next[k] !== cur[k]);
     if (changed) {
       setSearchParams(next, { replace: true });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- bandingkan manual agar stabil
-  }, [selectedMapel, fase, selectedClass, semester, activeTab, viewMode, selectedPpmBab]);
+  }, [selectedMapel, fase, selectedClass, semester, activeTab, viewMode, selectedPpmBab, theme]);
 
   // Pastikan bab PPM selalu valid untuk mapel/kelas/semester aktif (hindari blank di mode satu halaman)
   useEffect(() => {
@@ -492,6 +516,25 @@ export default function Perangkat() {
     const localMateriList = semData?.materi || [];
     const babTarget = Number(specificBab ?? selectedPpmBab);
     const activeMateri = localMateriList.find(m => m.bab === babTarget) || localMateriList[0] || null;
+
+    // Classic theme dispatch — entirely different JSX layouts
+    if (theme === 'classic') {
+      const ctx = {
+        sem, safeSemester, semester,
+        selectedMapel, selectedClass, fase,
+        activeFaseData, schoolInfoData,
+        localMateriList, materiList,
+        activeMateri, selectedPpmBab, viewMode,
+        academicYear, teacherName, teacherNbm,
+        getWeeksArrayFor, getMingguEfektifFor,
+        getTeachingSchedule, getPpmDetails,
+        getDplForBab, generateDynamicLangkahInti,
+        countWeeksByStatus,
+        ganjilWeeksList, genapWeeksList,
+        isFullscreen,
+      };
+      return renderClassicPage(tabName, index, specificBab, semesterOverride, ctx);
+    }
 
     switch (tabName) {
       case 'cover':
@@ -2114,184 +2157,322 @@ export default function Perangkat() {
 
               <div style={{ pageBreakAfter: 'always' }} />
 
-              {/* SECTION 6: Bahan Bacaan */}
-              <div className="modern-card">
-                <div className="modern-card-header">
-                  <span>V. BAHAN BACAAN GURU & MURID</span>
-                  <span className="pill-badge active">Ringkasan Materi</span>
-                </div>
-                <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  <p style={{ margin: 0, fontSize: '11px', textAlign: 'justify', lineHeight: '1.6' }}>
-                    Materi esensial pada bab ini dikembangkan dari Buku Teks Utama yang diterbitkan oleh Kementerian Pendidikan dan Kebudayaan serta referensi pendamping lainnya. Materi ajar berfokus pada pemahaman komprehensif terkait <strong><ArabicText text={activeMateri.judul} /></strong>. 
-                  </p>
-                  <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px dashed #CBD5E1', fontSize: '11px' }}>
-                    <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Poin-poin Utama Materi:</strong>
-                    <ul style={{ margin: 0, paddingLeft: '16px' }}>
-                      {materiTp.map((tp, idx) => (
-                        <li key={idx} style={{ marginBottom: '4px' }}>
-                          <strong>TP {idx + 1}:</strong> {tp}
-                        </li>
-                      ))}
-                    </ul>
+              {/* SECTION 6: Bahan Ajar Lengkap & Kontekstual */}
+              {(() => {
+                const matDetail = detailedMateri?.[selectedMapel]?.[selectedClass]?.[activeMateri.bab];
+                return (
+                  <div className="modern-card">
+                    <div className="modern-card-header">
+                      <span>V. BAHAN BACAAN GURU & MURID (BAHAN AJAR MENDALAM)</span>
+                      <span className="pill-badge active">Khazanah & Pengayaan</span>
+                    </div>
+                    <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                      <p style={{ margin: 0, fontSize: '11px', textAlign: 'justify', lineHeight: '1.6', color: '#334155' }}>
+                        {matDetail?.ringkasan || `Materi ajar esensial pada bab ini difokuskan pada penguasaan komprehensif konsep ${activeMateri.judul} untuk membangun daya nalar kritis, integritas moral, dan ketrampilan praktis murid SMK.`}
+                      </p>
+
+                      {matDetail?.sections && matDetail.sections.length > 0 ? (
+                        matDetail.sections.map((sec, sIdx) => (
+                          <div key={sIdx} style={{ background: '#F8FAFC', padding: '12px', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+                            <strong style={{ color: 'var(--primary-dark)', fontSize: '11.5px', display: 'block', marginBottom: '8px' }}>
+                              {sec.title}
+                            </strong>
+                            {sec.dalil && (
+                              <div style={{ background: '#FFFBEB', borderLeft: '4px solid #F59E0B', padding: '10px', borderRadius: '4px', marginBottom: '8px', textAlign: 'right' }}>
+                                <ArabicText text={sec.dalil} />
+                                {sec.arti && <p style={{ margin: '6px 0 0 0', fontSize: '10px', color: '#78350F', textAlign: 'left', fontStyle: 'italic' }}>{sec.arti}</p>}
+                              </div>
+                            )}
+                            <div style={{ fontSize: '11px', lineHeight: '1.6', color: '#1E293B' }} dangerouslySetInnerHTML={{ __html: sec.content }} />
+                          </div>
+                        ))
+                      ) : (
+                        <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px dashed #CBD5E1', fontSize: '11px' }}>
+                          <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '6px' }}>Target Utama Pembelajaran:</strong>
+                          <ul style={{ margin: 0, paddingLeft: '16px' }}>
+                            {materiTp.map((tp, idx) => (
+                              <li key={idx} style={{ marginBottom: '4px' }}>
+                                <strong>TP {idx + 1}:</strong> {tp}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      <div style={{ borderTop: '1px dashed #CBD5E1', paddingTop: '10px', fontSize: '10px', color: '#64748B' }}>
+                        <strong>Rujukan & Referensi Utama:</strong>
+                        <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                          {(matDetail?.rujukan || [
+                            'Buku Teks Utama PAI & Budi Pekerti / Bahasa Arab / Kemuhammadiyahan Kurikulum Merdeka Kemdikbudristek.',
+                            'Al-Qur\'an dan Terjemahannya, Kemenag RI.',
+                            'Tafsir At-Tanwir, Majelis Tarjih dan Tajdid PP Muhammadiyah.'
+                          ]).map((r, rIdx) => (
+                            <li key={rIdx}>{r}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <p style={{ margin: 0, fontSize: '11px', textAlign: 'justify', lineHeight: '1.6' }}>
-                    Bahan bacaan tambahan untuk pengayaan dapat diakses melalui e-book perpustakaan digital sekolah, jurnal artikel relevan, maupun materi presentasi interaktif yang telah diunggah guru di Google Classroom/LMS sekolah.
-                  </p>
-                </div>
-              </div>
+                );
+              })()}
 
-              {/* SECTION 7: Lampiran LKPD — selaras TP / inti pembelajaran */}
-              <div style={{ textAlign: 'center', margin: '15px 0 10px 0' }}>
-                <h3 style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary-dark)', textTransform: 'uppercase' }}>LAMPIRAN 1: LEMBAR KERJA MURID (LKPD)</h3>
-                <p style={{ fontSize: '11px', color: 'var(--text-light)' }}>
-                  Berbasis Tujuan Pembelajaran — Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} />
-                </p>
-              </div>
+              <div style={{ pageBreakAfter: 'always' }} />
 
-              <div style={{ background: 'linear-gradient(135deg, #F8FAFC, #EDF2F7)', border: '1px solid var(--border)', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', fontSize: '11px' }}>
-                  <div><strong>Nama Kelompok:</strong> ................................................................</div>
-                  <div><strong>Fase / Kelas:</strong> {fase} / {selectedClass}</div>
-                  <div><strong>Anggota Kelompok:</strong> 1. .................... 2. .................... 3. ....................</div>
-                  <div><strong>Bab / Elemen:</strong> Bab {activeMateri.bab}: <ArabicText text={activeMateri.judul} /> ({activeMateri.elemen || '-'})</div>
-                  <div style={{ gridColumn: 'span 2' }}><strong>Alokasi:</strong> {activeMateri.alokasi} JP · {totalPertemuan} pertemuan · Mapel: {schoolInfoData.mapel}</div>
-                </div>
-              </div>
+              {/* SECTION 7: LAMPIRAN LKPD UTUH & KONTEKSTUAL (SESUAI FORMAT DOCX REFERENSI) */}
+              {(() => {
+                const dLkpd = ppmDetails.detailedLkpd || getDetailedLkpdForBab(fase, activeMateri.bab, selectedMapel, selectedClass, activeMateri);
+                return (
+                  <div className="lkpd-section" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    <div style={{ textAlign: 'center', borderBottom: '2px solid var(--primary-dark)', paddingBottom: '8px' }}>
+                      <h3 style={{ fontSize: '14px', fontWeight: '800', color: 'var(--primary-dark)', margin: 0 }}>
+                        {dLkpd.judulLkpd}
+                      </h3>
+                      <p style={{ fontSize: '11px', fontWeight: '600', color: '#475569', margin: '4px 0 0 0' }}>
+                        {dLkpd.subJudul}
+                      </p>
+                    </div>
 
-              {/* Target TP yang diukur LKPD */}
-              <div className="modern-card" style={{ borderLeftColor: 'var(--secondary)' }}>
-                <div className="modern-card-header">
-                  <span>TARGET INTI PEMBELAJARAN (TP) YANG DIUKUR</span>
-                  <span className="pill-badge active">{materiTp.length} TP</span>
-                </div>
-                <div className="modern-card-body">
-                  <ol style={{ margin: 0, paddingLeft: '18px', fontSize: '11px', lineHeight: '1.6' }}>
-                    {materiTp.map((tp, idx) => (
-                      <li key={idx} style={{ marginBottom: '6px' }}><strong>TP {idx + 1}.</strong> {tp}</li>
-                    ))}
-                  </ol>
-                </div>
-              </div>
+                    {/* Identitas LKPD */}
+                    <div style={{ background: '#F8FAFC', border: '1px solid #CBD5E1', padding: '12px', borderRadius: '8px', fontSize: '11px' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
+                        <div><strong>Mata Pelajaran:</strong> {dLkpd.identitas.mapel}</div>
+                        <div><strong>Fase / Kelas:</strong> {dLkpd.identitas.faseKelas}</div>
+                        <div><strong>Materi Pokok:</strong> <ArabicText text={dLkpd.identitas.materi} /></div>
+                        <div><strong>Model Pembelajaran:</strong> {dLkpd.identitas.model}</div>
+                        <div style={{ gridColumn: 'span 2' }}><strong>Target Profil Lulusan (DPL):</strong> {dLkpd.identitas.targetDpl}</div>
+                      </div>
+                    </div>
 
-              {/* Petunjuk pengerjaan */}
-              <div className="modern-card">
-                <div className="modern-card-header">
-                  <span>PETUNJUK PENGERJAAN</span>
-                  <span className="pill-badge">Wajib dibaca</span>
-                </div>
-                <div className="modern-card-body">
-                  <ol style={{ margin: 0, paddingLeft: '18px', fontSize: '11px', lineHeight: '1.6' }}>
-                    {lkpdPetunjuk.map((p, i) => (
-                      <li key={i} style={{ marginBottom: '4px' }}>{p}</li>
-                    ))}
-                  </ol>
-                </div>
-              </div>
+                    {/* Identitas Kelompok / Murid */}
+                    <div style={{ border: '1px dashed #94A3B8', padding: '10px', borderRadius: '6px', fontSize: '11px', background: '#FFFFFF' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
+                        <div><strong>Nama Kelompok:</strong> ...........................................................</div>
+                        <div><strong>Tanggal:</strong> ...........................................................</div>
+                        <div style={{ gridColumn: 'span 2' }}>
+                          <strong>Anggota Kelompok:</strong> 1. ............................. 2. ............................. 3. ............................. 4. .............................
+                        </div>
+                      </div>
+                    </div>
 
-              <div className="modern-card">
-                <div className="modern-card-header">
-                  <span>KEGIATAN & TUGAS LKPD (SESUAI INTI PEMBELAJARAN)</span>
-                  <span className="pill-badge active">{lkpdTasks.length} butir</span>
-                </div>
-                <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                  {lkpdTasks.map((q, i) => (
-                    <div key={i} className="print-keep-together-sm" style={{ border: '1px solid #E2E8F0', borderRadius: '8px', padding: '12px', background: i % 2 === 0 ? '#FFFFFF' : '#F8FAFC' }}>
-                      <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                        <span style={{
-                          flexShrink: 0,
-                          width: '24px', height: '24px', borderRadius: '50%',
-                          background: '#0D47A1', color: '#fff',
-                          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                          fontSize: '11px', fontWeight: 800
-                        }}>{i + 1}</span>
-                        <div style={{ flex: 1 }}>
-                          <p style={{ margin: 0, fontSize: '11px', lineHeight: '1.55', fontWeight: 600, color: '#1E293B' }}>{q}</p>
-                          <div style={{
-                            marginTop: '8px',
-                            border: '1px dashed #CBD5E1',
-                            borderRadius: '4px',
-                            minHeight: '36px',
-                            background: '#FAFAFA',
-                            padding: '6px 8px',
-                            fontSize: '10px',
-                            color: '#94A3B8'
-                          }}>
-                            Ruang jawaban / catatan kelompok...
+                    {/* I. TUJUAN PEMBELAJARAN */}
+                    <div className="modern-card" style={{ borderLeftColor: 'var(--primary)' }}>
+                      <div className="modern-card-header">
+                        <span>I. TUJUAN PEMBELAJARAN</span>
+                        <span className="pill-badge active">Capaian TP</span>
+                      </div>
+                      <div className="modern-card-body">
+                        <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '11px', lineHeight: '1.6' }}>
+                          {dLkpd.tujuan.map((t, idx) => (
+                            <li key={idx}>{t}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* II. PETUNJUK KERJA */}
+                    <div className="modern-card">
+                      <div className="modern-card-header">
+                        <span>II. PETUNJUK KERJA</span>
+                        <span className="pill-badge">Panduan Praktis</span>
+                      </div>
+                      <div className="modern-card-body">
+                        <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '11px', lineHeight: '1.6' }}>
+                          {dLkpd.petunjuk.map((p, idx) => (
+                            <li key={idx}>{p}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* III. RUBRIK & BOBOT PENILAIAN */}
+                    <div className="modern-card">
+                      <div className="modern-card-header">
+                        <span>III. RUBRIK & BOBOT PENILAIAN KINERJA (LKPD)</span>
+                        <span className="pill-badge active">Standar Asesmen</span>
+                      </div>
+                      <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        <table className="data-table" style={{ fontSize: '10px' }}>
+                          <thead>
+                            <tr>
+                              <th style={{ width: '5%' }}>No</th>
+                              <th style={{ width: '35%' }}>Komponen / Sub Komponen</th>
+                              <th style={{ width: '15%' }}>Tidak (&lt;75)</th>
+                              <th style={{ width: '15%' }}>CK (75-83)</th>
+                              <th style={{ width: '15%' }}>K (84-92)</th>
+                              <th style={{ width: '15%' }}>SK (93-100)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {dLkpd.rubrikPenilaian.map((rub, rIdx) => (
+                              <React.Fragment key={rIdx}>
+                                <tr style={{ background: '#F1F5F9', fontWeight: 'bold' }}>
+                                  <td className="center">{rub.no}</td>
+                                  <td colSpan={5}>{rub.komponen}</td>
+                                </tr>
+                                {rub.sub.map((sText, sIdx) => (
+                                  <tr key={sIdx}>
+                                    <td></td>
+                                    <td>{sText}</td>
+                                    <td className="center"></td>
+                                    <td className="center"></td>
+                                    <td className="center"></td>
+                                    <td className="center"></td>
+                                  </tr>
+                                ))}
+                              </React.Fragment>
+                            ))}
+                          </tbody>
+                        </table>
+
+                        {/* Tabel Bobot Penilaian */}
+                        <strong style={{ fontSize: '10.5px', color: 'var(--primary-dark)', marginTop: '4px' }}>Persentase Bobot Komponen Penilaian:</strong>
+                        <table className="data-table" style={{ fontSize: '10px' }}>
+                          <thead>
+                            <tr>
+                              <th>Persiapan</th>
+                              <th>Proses</th>
+                              <th>Hasil</th>
+                              <th>Sikap</th>
+                              <th>Waktu</th>
+                              <th>Nilai Akhir (NP)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="center">10%</td>
+                              <td className="center">30%</td>
+                              <td className="center">40%</td>
+                              <td className="center">10%</td>
+                              <td className="center">10%</td>
+                              <td className="center">Σ(Skor × Bobot)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    {/* IV. KEGIATAN PEMBELAJARAN (DISCOVERY LEARNING) */}
+                    <div className="modern-card" style={{ borderLeftColor: 'var(--accent)' }}>
+                      <div className="modern-card-header">
+                        <span>IV. KEGIATAN PEMBELAJARAN (DISCOVERY LEARNING)</span>
+                        <span className="pill-badge active">Kontekstual Topik</span>
+                      </div>
+                      <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                        {/* Langkah 1: Stimulation */}
+                        <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #0D47A1' }}>
+                          <strong style={{ fontSize: '11px', color: '#0D47A1', display: 'block', marginBottom: '6px' }}>
+                            Langkah 1: Stimulation (Pemberian Rangsangan)
+                          </strong>
+                          <p style={{ fontSize: '11px', lineHeight: '1.6', margin: '0 0 10px 0', textAlign: 'justify' }}>
+                            {dLkpd.langkahKerja.stimulation.narasi}
+                          </p>
+                          <strong style={{ fontSize: '10.5px', color: '#334155' }}>Pertanyaan Pemantik:</strong>
+                          <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px', fontSize: '11px' }}>
+                            {dLkpd.langkahKerja.stimulation.pertanyaanPemantik.map((pem, pIdx) => (
+                              <li key={pIdx} style={{ marginBottom: '4px' }}>{pem}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Langkah 2: Problem Statement */}
+                        <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #0284C7' }}>
+                          <strong style={{ fontSize: '11px', color: '#0284C7', display: 'block', marginBottom: '6px' }}>
+                            Langkah 2: Problem Statement (Identifikasi Masalah)
+                          </strong>
+                          <p style={{ fontSize: '11px', lineHeight: '1.6', margin: 0 }}>
+                            {dLkpd.langkahKerja.problemStatement}
+                          </p>
+                        </div>
+
+                        {/* Langkah 3: Data Collection */}
+                        <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #059669' }}>
+                          <strong style={{ fontSize: '11px', color: '#059669', display: 'block', marginBottom: '6px' }}>
+                            Langkah 3: Data Collection (Pengumpulan Data)
+                          </strong>
+                          <p style={{ fontSize: '11px', lineHeight: '1.6', margin: 0 }}>
+                            {dLkpd.langkahKerja.dataCollection}
+                          </p>
+                        </div>
+
+                        {/* Langkah 4: Data Processing */}
+                        <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', borderLeft: '4px solid #D97706' }}>
+                          <strong style={{ fontSize: '11px', color: '#D97706', display: 'block', marginBottom: '6px' }}>
+                            Langkah 4: Data Processing (Pengolahan Data & Analisis Konsep)
+                          </strong>
+                          <p style={{ fontSize: '11px', margin: '0 0 10px 0' }}>
+                            {dLkpd.langkahKerja.dataProcessing.instruksi}
+                          </p>
+
+                          <table className="data-table" style={{ fontSize: '10.5px', background: '#FFFFFF' }}>
+                            <thead>
+                              <tr>
+                                <th style={{ width: '30%' }}>{dLkpd.langkahKerja.dataProcessing.headers[0]}</th>
+                                <th style={{ width: '70%' }}>{dLkpd.langkahKerja.dataProcessing.headers[1]}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {dLkpd.langkahKerja.dataProcessing.rows.map((row, rwIdx) => (
+                                <tr key={rwIdx}>
+                                  <td>
+                                    <strong>{row.konsep}</strong>
+                                    <p style={{ margin: '4px 0 0 0', fontSize: '9.5px', color: '#64748B' }}>{row.pemicu}</p>
+                                  </td>
+                                  <td style={{ verticalAlign: 'top', minHeight: '60px' }}>
+                                    <div style={{ color: '#CBD5E1', fontSize: '10px', fontStyle: 'italic' }}>
+                                      Hasil analisis & bukti data kelompok...
+                                    </div>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+
+                          <div style={{ marginTop: '12px' }}>
+                            <strong style={{ fontSize: '10.5px', color: '#334155' }}>Kesimpulan Kelompok:</strong>
+                            <div style={{ border: '1px dashed #CBD5E1', borderRadius: '6px', minHeight: '60px', background: '#FFFFFF', padding: '8px', marginTop: '4px', fontSize: '10px', color: '#94A3B8' }}>
+                              {dLkpd.kesimpulanPlaceholder}
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  ))}
 
-                  <div style={{ marginTop: '4px', borderTop: '1px dashed var(--border)', paddingTop: '12px' }}>
-                    <strong style={{ color: 'var(--primary)', fontSize: '11px' }}>Catatan Presentasi & Feedback Guru:</strong>
-                    <div style={{ border: '1px dashed var(--border)', height: '48px', background: '#FAFAFA', borderRadius: '4px', marginTop: '4px', padding: '6px', color: '#888', fontSize: '10px' }}>
-                      Poin umpan balik, skor proses, dan tindak lanjut...
+                    {/* V. PENILAIAN PENGETAHUAN (POST-TEST) */}
+                    <div className="modern-card" style={{ borderLeftColor: '#7C3AED' }}>
+                      <div className="modern-card-header">
+                        <span>V. PENILAIAN PENGETAHUAN (POST-TEST HOTS)</span>
+                        <span className="pill-badge active">5 Soal Esai</span>
+                      </div>
+                      <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        <div style={{ background: '#F3E8FF', border: '1px solid #D8B4FE', padding: '10px', borderRadius: '6px', fontSize: '10.5px', color: '#6B21A8' }}>
+                          <strong>📱 Akses Post-Test Digital (Quizizz):</strong> Kerjakan kuis melalui tautan berikut atau pindai QR Code di kelas:
+                          <a href={dLkpd.postTest.quizizzLink} target="_blank" rel="noreferrer" style={{ marginLeft: '6px', fontWeight: 'bold', color: '#7C3AED' }}>
+                            {dLkpd.postTest.quizizzLink}
+                          </a>
+                        </div>
+
+                        <strong style={{ fontSize: '11px', color: '#1E293B' }}>Kerjakan soal-soal HOTS di bawah ini secara mandiri dan jelas!</strong>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                          {dLkpd.postTest.soal.map((sObj, sIdx) => (
+                            <div key={sIdx} style={{ border: '1px solid #E2E8F0', padding: '10px', borderRadius: '6px', background: '#FFFFFF' }}>
+                              <p style={{ margin: 0, fontSize: '11px', fontWeight: '600', color: '#1E293B' }}>
+                                {sObj.no}. {sObj.soal}
+                              </p>
+                              <div style={{ marginTop: '8px', border: '1px dashed #CBD5E1', minHeight: '40px', background: '#FAFAFA', borderRadius: '4px', padding: '6px', fontSize: '9.5px', color: '#94A3B8' }}>
+                                Lembar jawaban murid...
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                );
+              })()}
+
+              <div style={{ marginTop: '20px' }}>
+                <SignatureBlock semOverride={sem} />
               </div>
-
-              {/* SECTION 8: Rubrik Penilaian & Refleksi - Beautiful Badge/Pills Grid, NO Table! */}
-              <div className="modern-card" style={{ borderLeftColor: 'var(--primary)' }}>
-                <div className="modern-card-header">
-                  <span>VI. BOBOT, RUBRIK PENILAIAN PRAKTIK, & REFLEKSI</span>
-                  <span className="pill-badge active">Rincian Bobot</span>
-                </div>
-                <div className="modern-card-body" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                  <p style={{ marginBottom: '4px' }}>Bobot nilai dihitung berdasarkan 5 komponen penilaian utama untuk menjamin objektivitas:</p>
-                  
-                  <div className="rubrik-grid" style={{ margin: '0' }}>
-                    <div className="rubrik-item" style={{ borderTop: '3px solid var(--primary-light)' }}>
-                      <span className="rubrik-percentage">10%</span>
-                      <span className="rubrik-label">Persiapan (Kesiapan Bahan)</span>
-                    </div>
-                    <div className="rubrik-item" style={{ borderTop: '3px solid var(--primary)' }}>
-                      <span className="rubrik-percentage">30%</span>
-                      <span className="rubrik-label">Proses (Keaktifan Diskusi)</span>
-                    </div>
-                    <div className="rubrik-item" style={{ borderTop: '3px solid var(--primary-dark)' }}>
-                      <span className="rubrik-percentage">40%</span>
-                      <span className="rubrik-label">Hasil (LKPD & Presentasi)</span>
-                    </div>
-                    <div className="rubrik-item" style={{ borderTop: '3px solid var(--secondary)' }}>
-                      <span className="rubrik-percentage">10%</span>
-                      <span className="rubrik-label">Sikap (Adab & Karakter)</span>
-                    </div>
-                    <div className="rubrik-item" style={{ borderTop: '3px solid var(--accent)' }}>
-                      <span className="rubrik-percentage">10%</span>
-                      <span className="rubrik-label">Waktu (Ketepatan KBM)</span>
-                    </div>
-                  </div>
-
-                  {/* Refleksi KBM */}
-                  <div style={{ borderTop: '1px dashed var(--border)', paddingTop: '10px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '15px', fontSize: '11px' }}>
-                    <div style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '10px', borderRadius: '6px' }}>
-                      <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '4px' }}>📝 Refleksi Murid:</strong>
-                      <ul style={{ margin: '0', paddingLeft: '14px', color: '#555' }}>
-                        <li>Apakah materi hari ini mendekatkan Anda secara moral kepada Sang Pencipta?</li>
-                        <li>Tantangan apa yang paling membekas saat berdiskusi memecahkan masalah tadi?</li>
-                      </ul>
-                    </div>
-                    <div style={{ background: '#F8FAFC', border: '1px solid var(--border)', padding: '10px', borderRadius: '6px' }}>
-                      <strong style={{ color: 'var(--primary-dark)', display: 'block', marginBottom: '4px' }}>👨‍🏫 Refleksi Pendidik (Guru):</strong>
-                      <ul style={{ margin: '0', paddingLeft: '14px', color: '#555' }}>
-                        <li>Apakah seluruh murid aktif berkolaborasi dan memahami makna teologis materi?</li>
-                        <li>Apa perbaikan taktis yang perlu diterapkan pada pertemuan KBM berikutnya?</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div style={{ border: '1px solid var(--border)', padding: '10px', fontSize: '10px', background: '#F8FAFC', borderRadius: '6px', marginTop: '5px' }}>
-                    <strong>Tautan Post-Test Mandiri (Quizizz):</strong> 
-                    <span style={{ marginLeft: '6px', fontWeight: 'bold', color: '#64748B' }}>.........................................................................</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ marginTop: '20px' }}>
-              <SignatureBlock semOverride={sem} />
             </div>
           </div>
         );
@@ -2409,7 +2590,7 @@ export default function Perangkat() {
   };
 
   return (
-    <div className="perangkat-wrapper" style={{ display: 'flex', width: '100%' }}>
+    <div className="perangkat-wrapper" data-theme={theme} style={{ display: 'flex', width: '100%' }}>
       
       {/* Sidebar Navigation */}
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`} style={{ display: isFullscreen ? 'none' : 'block' }}>
@@ -2553,6 +2734,25 @@ export default function Perangkat() {
           </div>
 
           <div className="toolbar-right" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            {/* Theme Toggle (Modern / Klasik) */}
+            <button
+              onClick={toggleTheme}
+              title={theme === 'modern' ? 'Beralih ke Tema Klasik Islami' : 'Beralih ke Tema Modern'}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '6px',
+                padding: '8px 12px', borderRadius: '8px',
+                border: theme === 'modern' ? '1px solid #E2E8F0' : '1px solid #C9A961',
+                background: theme === 'modern' ? '#F8FAFC' : 'linear-gradient(135deg, #FBF7EE, #F5EFE0)',
+                color: theme === 'modern' ? '#0D47A1' : '#8B6914',
+                fontSize: '11px', fontWeight: '700', cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+            >
+              {theme === 'modern' ? <Sparkles size={14} /> : <BookOpen size={14} />}
+              <span className="md-hidden-text" style={{ display: 'inline' }}>
+                {theme === 'modern' ? 'Modern' : 'Klasik'}
+              </span>
+            </button>
             {/* Mode Toggle */}
             <button
               onClick={() => setViewMode(viewMode === 'single' ? 'booklet' : 'single')}
@@ -2770,7 +2970,7 @@ export default function Perangkat() {
             <div className="loading-spinner" style={{ borderTopColor: '#FFB300' }}></div>
             <h4 style={{ color: '#0D47A1', fontSize: '15px', fontWeight: '800', marginBottom: '8px' }}>MEMPERSIAPKAN DOKUMEN PDF</h4>
             <p style={{ fontSize: '11px', color: '#64748B', lineHeight: '1.4', marginBottom: '15px' }}>
-              Mempersiapkan dokumen A4 (Plus Jakarta Sans). Anda sedang mencetak dalam mode <strong>{viewMode === 'single' ? 'Satu Halaman Terbuka' : 'Seluruh Dokumen (Booklet)'}</strong>.
+              Mempersiapkan dokumen A4 ({theme === 'modern' ? 'Plus Jakarta Sans — Modern' : 'Playfair Display — Klasik Islami'}). Anda sedang mencetak dalam mode <strong>{viewMode === 'single' ? 'Satu Halaman Terbuka' : 'Seluruh Dokumen (Booklet)'}</strong>.
             </p>
             
             <div style={{

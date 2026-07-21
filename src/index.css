@@ -2001,3 +2001,627 @@ body {
   font-size: 1.5em; /* Make arabic text slightly larger for better readability with harakat */
   line-height: 1.6;
 }
+
+/* ============================================================ */
+/*  CLASSIC ISLAMIC THEME                                       */
+/*  Activated via [data-theme="classic"] on .perangkat-wrapper  */
+/*  Same color palette (navy + royal blue + gold) but applied   */
+/*  with a classical manuscript / Islamic aesthetic using       */
+/*  Playfair Display (headings), Lora (body), Amiri (Arabic).   */
+/* ============================================================ */
+
+[data-theme="classic"] {
+  --cl-navy: #0D47A1;
+  --cl-blue: #1976D2;
+  --cl-blue-soft: #42A5F5;
+  --cl-gold: #C9A961;
+  --cl-gold-deep: #B8860B;
+  --cl-gold-bright: #FFB300;
+  --cl-cream: #FBF7EE;
+  --cl-parchment: #F5EFE0;
+  --cl-ink: #1A1A2E;
+  --cl-ink-soft: #3F3B2C;
+  --cl-rule: #C9A961;
+}
+
+/* ---------- Global typography & background swap ---------- */
+[data-theme="classic"] body,
+body.theme-classic {
+  font-family: 'Lora', 'Georgia', 'Times New Roman', serif !important;
+  background-color: #F5F5F0 !important;
+  color: #1A1A2E !important;
+}
+
+[data-theme="classic"] .perangkat-wrapper {
+  background: #F5F5F0 !important;
+  font-family: 'Lora', 'Georgia', serif !important;
+}
+
+[data-theme="classic"] .main-content {
+  background: #F5F5F0 !important;
+  font-family: 'Lora', 'Georgia', serif !important;
+}
+
+[data-theme="classic"] h1,
+[data-theme="classic"] h2,
+[data-theme="classic"] h3,
+[data-theme="classic"] h4,
+[data-theme="classic"] h5,
+[data-theme="classic"] h6 {
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  letter-spacing: 0.3px !important;
+}
+
+[data-theme="classic"] .arabic-text {
+  font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif !important;
+  font-size: 1.65em !important;
+  line-height: 1.9 !important;
+  color: #000 !important;
+}
+
+/* ---------- A4 page: white with double gold frame ---------- */
+[data-theme="classic"] .a4-page {
+  background: #FFFFFF !important;
+  border: 2px double #C9A961 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+  font-family: 'Lora', 'Georgia', serif !important;
+  color: #1A1A2E !important;
+  position: relative !important;
+}
+
+/* Subtle corner ornaments on every A4 page */
+[data-theme="classic"] .a4-page::before,
+[data-theme="classic"] .a4-page::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 26px !important;
+  height: 26px !important;
+  pointer-events: none !important;
+  opacity: 0.55 !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+[data-theme="classic"] .a4-page::before {
+  top: 6px;
+  left: 6px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><g fill='none' stroke='%23C9A961' stroke-width='1.2'><path d='M2 2 L14 2 M2 2 L2 14'/><path d='M2 8 Q8 8 8 2' /><circle cx='2' cy='2' r='1.6' fill='%23C9A961' stroke='none'/></g></svg>") !important;
+}
+
+[data-theme="classic"] .a4-page::after {
+  bottom: 6px;
+  right: 6px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><g fill='none' stroke='%23C9A961' stroke-width='1.2'><path d='M30 30 L18 30 M30 30 L30 18'/><path d='M30 24 Q24 24 24 30' /><circle cx='30' cy='30' r='1.6' fill='%23C9A961' stroke='none'/></g></svg>") !important;
+}
+
+/* ---------- Page titles: classical ornamental heading ---------- */
+[data-theme="classic"] .page-title {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 800 !important;
+  font-size: 19px !important;
+  color: #000 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+  border-bottom: none !important;
+  padding-bottom: 14px !important;
+  margin-bottom: 8px !important;
+  position: relative !important;
+  text-align: center !important;
+}
+
+[data-theme="classic"] .page-title::after {
+  content: '' !important;
+  display: block !important;
+  margin: 8px auto 0 !important;
+  width: 70% !important;
+  height: 6px !important;
+  background:
+    linear-gradient(90deg, transparent 0%, #C9A961 20%, #C9A961 80%, transparent 100%),
+    #C9A961 !important;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent) !important;
+  background-repeat: no-repeat !important;
+  position: relative !important;
+}
+
+[data-theme="classic"] .page-subtitle {
+  font-family: 'Cormorant Garamond', 'Lora', serif !important;
+  font-style: italic !important;
+  font-size: 13px !important;
+  color: #000 !important;
+  letter-spacing: 0.5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 22px !important;
+  text-align: center !important;
+}
+
+[data-theme="classic"] .page-subtitle::before,
+[data-theme="classic"] .page-subtitle::after {
+  content: '✦' !important;
+  margin: 0 10px !important;
+  color: #000 !important;
+  font-size: 10px !important;
+  vertical-align: middle !important;
+}
+
+/* ---------- Modern cards become parchment panels with gold rules ---------- */
+[data-theme="classic"] .modern-card {
+  background: rgba(255, 252, 244, 0.65) !important;
+  border: 1px solid rgba(201, 169, 97, 0.45) !important;
+  border-left: 4px double #C9A961 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 2px 6px rgba(139, 105, 20, 0.08) !important;
+  font-family: 'Lora', 'Georgia', serif !important;
+}
+
+[data-theme="classic"] .modern-card-header {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  color: #000 !important;
+  border-bottom: 1px solid #C9A961 !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 10px !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+}
+
+[data-theme="classic"] .modern-card-header::before {
+  content: '❖ ' !important;
+  color: #000 !important;
+  font-size: 12px !important;
+}
+
+[data-theme="classic"] .modern-card-body {
+  font-family: 'Lora', serif !important;
+  font-size: 11.5px !important;
+  color: #1A1A2E !important;
+  line-height: 1.85 !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* First paragraph gets a classical drop-cap */
+[data-theme="classic"] .modern-card-body > p:first-of-type::first-letter {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 2.6em !important;
+  font-weight: 800 !important;
+  color: #000 !important;
+  float: left !important;
+  line-height: 0.85 !important;
+  margin: 4px 8px 0 0 !important;
+  padding: 2px 4px 0 0 !important;
+}
+
+/* ---------- Data tables: classical ledger style ---------- */
+[data-theme="classic"] .data-table {
+  font-family: 'Lora', serif !important;
+  border: 1px solid #C9A961 !important;
+  border-radius: 0 !important;
+  background: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+[data-theme="classic"] .data-table th {
+  background: #C9A961 !important;
+  color: #FFFFFF !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+  font-size: 10.5px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  border: 1px solid #C9A961 !important;
+  padding: 8px 10px !important;
+}
+
+[data-theme="classic"] .data-table td {
+  border: 1px solid rgba(201, 169, 97, 0.45) !important;
+  color: #1A1A2E !important;
+  font-size: 11px !important;
+  padding: 6px 10px !important;
+}
+
+[data-theme="classic"] .data-table tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02) !important;
+}
+
+[data-theme="classic"] .data-table tr:nth-child(odd) {
+  background: #FFFFFF !important;
+}
+
+/* ---------- Cover page: white with classical frame ---------- */
+[data-theme="classic"] .cover-page {
+  background: #FFFFFF !important;
+  font-family: 'Lora', serif !important;
+}
+
+[data-theme="classic"] .cover-border {
+  border: 3px double #C9A961 !important;
+  border-radius: 2px !important;
+  background: #FFFFFF !important;
+  position: relative !important;
+}
+
+[data-theme="classic"] .cover-border::before,
+[data-theme="classic"] .cover-border::after {
+  content: '' !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  border: 1px solid rgba(201, 169, 97, 0.55) !important;
+}
+
+[data-theme="classic"] .cover-border::before {
+  inset: 8px !important;
+}
+
+[data-theme="classic"] .cover-border::after {
+  inset: 14px !important;
+  border-style: dashed !important;
+}
+
+[data-theme="classic"] .cover-title {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 800 !important;
+  color: #000 !important;
+  letter-spacing: 1px !important;
+}
+
+[data-theme="classic"] .cover-mapel {
+  background: linear-gradient(135deg, #C9A961, #B8860B) !important;
+  border: 1px solid #C9A961 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 4px 12px rgba(139, 105, 20, 0.25) !important;
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: 1.5px !important;
+}
+
+/* ---------- Metadata cards ---------- */
+[data-theme="classic"] .metadata-card {
+  background: rgba(255, 252, 244, 0.7) !important;
+  border: 1px solid rgba(201, 169, 97, 0.4) !important;
+  border-left: 3px double #C9A961 !important;
+  border-radius: 2px !important;
+}
+
+[data-theme="classic"] .metadata-label {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+  letter-spacing: 1.2px !important;
+  font-variant: small-caps !important;
+}
+
+[data-theme="classic"] .metadata-value {
+  font-family: 'Lora', serif !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+}
+
+/* ---------- Timeline (KBM steps) ---------- */
+[data-theme="classic"] .timeline::before {
+  background: #C9A961 !important;
+  width: 2px !important;
+}
+
+[data-theme="classic"] .timeline-badge {
+  background: #C9A961 !important;
+  color: #1A1A2E !important;
+  border: 2px solid #C9A961 !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 6px rgba(139, 105, 20, 0.25) !important;
+}
+
+[data-theme="classic"] .timeline-content {
+  background: rgba(255, 252, 244, 0.75) !important;
+  border: 1px solid rgba(201, 169, 97, 0.4) !important;
+  border-left: 3px double #C9A961 !important;
+  border-radius: 2px !important;
+}
+
+[data-theme="classic"] .timeline-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="classic"] .timeline-duration {
+  background: #C9A961 !important;
+  color: #1A1A2E !important;
+  font-family: 'Playfair Display', serif !important;
+  border-radius: 0 !important;
+  border: 1px solid #8B6914 !important;
+}
+
+/* ---------- Pills & badges ---------- */
+[data-theme="classic"] .pill-badge {
+  background: rgba(255, 252, 244, 0.8) !important;
+  border: 1px solid #C9A961 !important;
+  color: #000 !important;
+  border-radius: 0 !important;
+  font-family: 'Playfair Display', serif !important;
+  font-variant: small-caps !important;
+  letter-spacing: 1px !important;
+}
+
+[data-theme="classic"] .pill-badge.active {
+  background: #C9A961 !important;
+  color: #1A1A2E !important;
+  border-color: #C9A961 !important;
+}
+
+/* ---------- Rubrik grid ---------- */
+[data-theme="classic"] .rubrik-item {
+  background: rgba(255, 252, 244, 0.7) !important;
+  border: 1px solid rgba(201, 169, 97, 0.4) !important;
+  border-radius: 2px !important;
+}
+
+[data-theme="classic"] .rubrik-percentage {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="classic"] .rubrik-label {
+  font-family: 'Lora', serif !important;
+  color: #000 !important;
+  font-variant: small-caps !important;
+  letter-spacing: 0.8px !important;
+}
+
+/* ---------- Signature block ---------- */
+[data-theme="classic"] .signature-section {
+  border-top: 3px double #C9A961 !important;
+  padding-top: 18px !important;
+}
+
+[data-theme="classic"] .signature-name {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+  border-bottom: 1px solid #C9A961 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="classic"] .signature-title {
+  font-family: 'Lora', serif !important;
+  color: #000 !important;
+  font-variant: small-caps !important;
+  letter-spacing: 0.8px !important;
+}
+
+/* ---------- Identity table (used in identitas & judul pages) ---------- */
+[data-theme="classic"] .identitas-table td,
+[data-theme="classic"] .identity-box td {
+  font-family: 'Lora', serif !important;
+  color: #000 !important;
+  font-size: 10.5px !important;
+}
+
+[data-theme="classic"] .id-label {
+  font-family: 'Playfair Display', serif !important;
+  font-variant: small-caps !important;
+  letter-spacing: 1px !important;
+  color: #000 !important;
+}
+
+[data-theme="classic"] .id-value {
+  color: #000 !important;
+}
+
+/* ---------- Daftar isi rows ---------- */
+[data-theme="classic"] .daftar-isi-row {
+  font-family: 'Lora', serif !important;
+  border-bottom: 1px dotted #C9A961 !important;
+  color: #1A1A2E !important;
+}
+
+/* ---------- Sidebar (still dark navy but with classic gold accents) ---------- */
+[data-theme="classic"] .sidebar {
+  background: #0D2A5E !important;
+  border-right: 2px double #C9A961 !important;
+}
+
+[data-theme="classic"] .sidebar-header h2 {
+  font-family: 'Playfair Display', serif !important;
+  color: #C9A961 !important;
+  letter-spacing: 1.5px !important;
+}
+
+[data-theme="classic"] .sidebar-header p {
+  font-family: 'Lora', serif !important;
+  color: rgba(251, 247, 238, 0.75) !important;
+  font-style: italic !important;
+}
+
+[data-theme="classic"] .nav-section-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #C9A961 !important;
+  letter-spacing: 1.5px !important;
+}
+
+[data-theme="classic"] .nav-item {
+  font-family: 'Lora', serif !important;
+  color: rgba(251, 247, 238, 0.82) !important;
+  border-left: 4px solid transparent !important;
+}
+
+[data-theme="classic"] .nav-item:hover {
+  background: rgba(201, 169, 97, 0.08) !important;
+  color: #FBF7EE !important;
+  border-left-color: #C9A961 !important;
+}
+
+[data-theme="classic"] .nav-item.active {
+  background: rgba(201, 169, 97, 0.15) !important;
+  color: #FBF7EE !important;
+  border-left-color: #FFB300 !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+}
+
+/* ---------- Toolbar ---------- */
+[data-theme="classic"] .toolbar {
+  background: rgba(251, 247, 238, 0.95) !important;
+  border-bottom: 2px double #C9A961 !important;
+  font-family: 'Lora', serif !important;
+}
+
+[data-theme="classic"] .toolbar h3 {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+}
+
+[data-theme="classic"] .toolbar p {
+  font-family: 'Lora', serif !important;
+  color: #000 !important;
+  font-style: italic !important;
+}
+
+/* ---------- Generic paragraph / list typography ---------- */
+[data-theme="classic"] .a4-page p {
+  font-family: 'Lora', serif !important;
+  line-height: 1.8 !important;
+  color: #1A1A2E !important;
+}
+
+[data-theme="classic"] .a4-page ul,
+[data-theme="classic"] .a4-page ol {
+  font-family: 'Lora', serif !important;
+  line-height: 1.8 !important;
+}
+
+[data-theme="classic"] .a4-page strong {
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+/* ---------- Inline h3 section headers (used inside cards) ---------- */
+[data-theme="classic"] .a4-page h3 {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+  border-bottom-color: #C9A961 !important;
+  letter-spacing: 0.8px !important;
+}
+
+[data-theme="classic"] .a4-page h3::before {
+  content: '◆ ' !important;
+  color: #000 !important;
+  font-size: 0.8em !important;
+}
+
+/* ---------- Loading overlay classic flavour ---------- */
+body.theme-classic .loading-overlay {
+  background: rgba(13, 42, 94, 0.55) !important;
+}
+
+body.theme-classic .loading-box {
+  background: #FBF7EE !important;
+  border: 2px double #C9A961 !important;
+  border-radius: 4px !important;
+}
+
+body.theme-classic .loading-box h4 {
+  font-family: 'Playfair Display', serif !important;
+  color: #000 !important;
+  letter-spacing: 1px !important;
+}
+
+body.theme-classic .loading-spinner {
+  border-top-color: #C9A961 !important;
+}
+
+/* ---------- Settings section card ---------- */
+body.theme-classic .no-print {
+  font-family: 'Lora', serif !important;
+}
+
+/* ============================================================ */
+/*  CLASSIC THEME — PRINT ADJUSTMENTS                           */
+/*  Make the print output respect the active classic theme.     */
+/* ============================================================ */
+@media print {
+  [data-theme="classic"] .a4-page,
+  body.theme-classic .a4-page {
+    background: #FFFFFF !important;
+    border: 2px double #C9A961 !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .a4-page::before,
+  [data-theme="classic"] .a4-page::after,
+  body.theme-classic .a4-page::before,
+  body.theme-classic .a4-page::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .modern-card,
+  body.theme-classic .modern-card {
+    background: #FFFFFF !important;
+    border-left: 4px double #C9A961 !important;
+    box-shadow: none !important;
+  }
+
+  [data-theme="classic"] .data-table th,
+  body.theme-classic .data-table th {
+    background: #C9A961 !important;
+    color: #FFFFFF !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .data-table tr:nth-child(even),
+  body.theme-classic .data-table tr:nth-child(even) {
+    background: #FFFFFF !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .page-title,
+  body.theme-classic .page-title {
+    color: #000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .cover-border,
+  body.theme-classic .cover-border {
+    border: 3px double #C9A961 !important;
+    background: #FFFFFF !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .timeline-badge,
+  body.theme-classic .timeline-badge {
+    background: #C9A961 !important;
+    color: #1A1A2E !important;
+    border: 2px solid #C9A961 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .timeline-content,
+  body.theme-classic .timeline-content {
+    background: #FFFFFF !important;
+    border-left: 3px double #C9A961 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] .cover-mapel,
+  body.theme-classic .cover-mapel {
+    background: linear-gradient(135deg, #C9A961, #B8860B) !important;
+    color: #FFFFFF !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  [data-theme="classic"] body,
+  body.theme-classic {
+    background: #FFFFFF !important;
+  }
+}

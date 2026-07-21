@@ -1621,6 +1621,9 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = nu
     Array.isArray(details.lkpd) ? details.lkpd : []
   );
 
+  // Generasi LKPD Utuh Kontekstual (Tidak Templateble)
+  details.detailedLkpd = getDetailedLkpdForBab(fase, bab, mapel, kelas, materi);
+
   // Petunjuk pengerjaan LKPD (dipakai di UI modul)
   details.lkpdPetunjuk = [
     'Kerjakan secara berkelompok (3–4 murid) kecuali bagian Refleksi Individu.',
@@ -1632,6 +1635,197 @@ export const getPpmDetails = (fase, bab, mapel = 'pai', kelas = 'X', materi = nu
 
   return details;
 };
+
+/**
+ * Generasi LKPD Utuh dan Spesifik Topik (Non-Templateble)
+ * Mengikuti format referensi MODUL PPM DESCRIPTIVE TEXT KELAS X / contohperangkatajarterbaru.md
+ */
+export const getDetailedLkpdForBab = (fase, bab, mapel = 'pai', kelas = 'X', materi = null) => {
+  const judulMateri = (materi?.judul || `Bab ${bab}`).trim();
+  const elemen = materi?.elemen || '';
+  const labelMapel = mapel === 'arab' ? 'Bahasa Arab' : mapel === 'kemuh' ? 'Kemuhammadiyahan' : 'Pendidikan Agama Islam dan Budi Pekerti';
+  const tps = Array.isArray(materi?.tp) && materi.tp.length > 0 ? materi.tp : [
+    `Memahami konsep ${judulMateri} secara komprehensif.`,
+    `Mengaplikasikan nilai-nilai ${judulMateri} dalam kehidupan sehari-hari.`,
+    `Merefleksikan hikmah dan dampak sosial-spiritual dari ${judulMateri}.`
+  ];
+
+  // Bank Narasi Stimulation & Soal HOTS Spesifik per Mapel/Topik
+  let narasiStimulation = `Dalam konteks kehidupan modern bagi pelajar SMK, materi "${judulMateri}" memiliki peranan esensial. Setiap prinsip dan pembelajaran intinya bukan sekadar wacana teoritis, melainkan pedoman praktis yang membentuk karakter, pola pikir, dan tindakan nyata di lingkungan sekolah maupun masyarakat.`;
+  let pemantik1 = `Bagaimana fenomena ${judulMateri} dapat dirasakan pengaruhnya dalam aktivitas kita sehari-hari?`;
+  let pemantik2 = `Perubahan positif apa yang seharusnya terjadi pada diri seorang murid setelah menguasai konsep ${judulMateri}?`;
+  
+  let soalHots = [
+    {
+      no: 1,
+      soal: `Jelaskan pengertian dan konsep utama dari ${judulMateri} beserta kaitannya dengan pembentukan karakter murid SMK!`,
+      kunci: `Penjelasan mencakup definisi konseptual ${judulMateri}, indikator utama, dan relevansi langsungnya terhadap kedisiplinan serta integritas murid.`
+    },
+    {
+      no: 2,
+      soal: `Mengapa materi ${judulMateri} dijadikan salah satu fokus pembelajaran utama dalam Kurikulum Merdeka di sekolah? Jelaskan alasan akademis dan spiritualnya!`,
+      kunci: `Alasan akademis meliputi pengembangan daya nalar kritis (C4-C6), sedangkan alasan spiritual meliputi penguatan akidah dan etos moral.`
+    },
+    {
+      no: 3,
+      soal: `Analisislah sebuah contoh studi kasus kontemporer mengenai penerapan atau pelanggaran prinsip ${judulMateri} di lingkungan digital/sosial!`,
+      kunci: `Murid mampu menguraikan latar belakang kasus, menganalisis faktor penyebab, serta merumuskan konsekuensi sosial maupun moral.`
+    },
+    {
+      no: 4,
+      soal: `Bagaimana langkah-langkah konkret (minimal 4 langkah runtut) untuk mengimplementasikan nilai-nilai ${judulMateri} dalam kehidupan sehari-hari?`,
+      kunci: `Tahapan aksi nyata: (1) Kesadaran niat, (2) Perencanaan tindakan harian, (3) Pembiasaan konsisten, (4) Evaluasi/refleksi berkala.`
+    },
+    {
+      no: 5,
+      soal: `Jelaskan hasil analisis kelompokmu mengenai materi ${judulMateri}, serta nilai budaya atau akhlak luhur apa yang dapat diteladani dari pembelajaran ini!`,
+      kunci: `Sintesis menyeluruh dari analisis kelompok yang menghubungkan teori dengan komitmen perubahan sikap pribadi.`
+    }
+  ];
+
+  // Kustomisasi Spesifik Topik PAI / Arab / Kemuh
+  if (mapel === 'pai') {
+    if (judulMateri.toLowerCase().includes('fastabiqul khairat')) {
+      narasiStimulation = `Dalam kehidupan modern, persaingan sering diartikan sebagai upaya saling menjatuhkan. Namun, Rasulullah SAW dan Al-Qur'an mengajarkan konsep "Fastabiqul Khairat"—berlomba-lomba dalam kebaikan. Seseorang yang menerapkan etos ini tidak iri atas keberhasilan orang lain, melainkan terpacu untuk meningkatkan kualitas ibadah, belajar, dan kepedulian sosialnya.`;
+      pemantik1 = `Apakah kompetisi dalam kebaikan sama dengan kompetisi mengejar popularitas di media sosial? Mengapa?`;
+      pemantik2 = `Jika sejarah mencatat para sahabat Nabi berlomba infak dan amal, bagaimana pelajar SMK berlomba dalam kebaikan di sekolah?`;
+      soalHots[0].soal = `Tuliskan dan jelaskan QS. Al-Maidah (5): 48 tentang perintah Fastabiqul Khairat beserta kandungan hukumnya!`;
+      soalHots[1].soal = `Mengapa etos kerja seorang muslim dikategorikan sebagai bagian dari bentuk Fastabiqul Khairat? Jelaskan keterkaitannya!`;
+    } else if (judulMateri.toLowerCase().includes('syu\'abul iman')) {
+      narasiStimulation = `Iman bukanlah sekadar pengakuan lisan yang pasif. Rasulullah SAW menjelaskan bahwa iman memiliki 77 cabang (Syu'abul Iman), dari yang paling utama yaitu kalimat Laa ilaaha illallah, hingga yang paling sederhana yaitu menyingkirkan rintangan dari jalan. Hal ini membuktikan bahwa iman mencakup seluruh aspek pikiran, ucapan, dan tindakan fisik manusia.`;
+      pemantik1 = `Mengapa tindakan menyingkirkan duri atau sampah di jalan dikategorikan sebagai cabang keimanan?`;
+      pemantik2 = `Bagaimana korelasi antara integritas seorang murid di saat tidak ada orang yang melihat dengan kualitas Syu'abul Iman dalam dirinya?`;
+    } else if (judulMateri.toLowerCase().includes('hukum islam') || judulMateri.toLowerCase().includes('ijtihad')) {
+      narasiStimulation = `Perkembangan teknologi modern melahirkan berbagai persoalan hukum baru yang tidak ditemukan secara eksplisit pada masa lampau, seperti transaksi digital, kecerdasan buatan (AI), dan donor organ. Melalui metodologi Ijtihad, Ijma', dan Qiyas yang berlandaskan Al-Qur'an dan Hadis, syariat Islam mampu memberikan ketetapan hukum yang adil dan maslahat sepanjang zaman.`;
+      pemantik1 = `Apakah hukum Islam bersifat kaku atau elastis dalam merespons kemajuan jaman? Berikan alasannya!`;
+      pemantik2 = `Bagaimana hierarki penentuan hukum jika suatu permasalahan baru muncul di masyarakat?`;
+    }
+  } else if (mapel === 'arab') {
+    narasiStimulation = `Bahasa Arab (اللغة العربية) bukan sekadar alat komunikasi nasional di timur tengah, melainkan bahasa Al-Qur'an dan khazanah keilmuan Islam global. Menguasai struktur Nahwu, Sharaf, serta Maharat Al-Kalam (keterampilan berbicara) dan Hiwar (percakapan) membuka pintu pemahaman terhadap teks-teks klasik serta interaksi internasional.`;
+    pemantik1 = `Mengapa ketepatan harakat (i'rab) dan makharijul huruf sangat mempengaruhi arti sebuah kata dalam Bahasa Arab?`;
+    pemantik2 = `Bagaimana cara melatih kelancaran berdialog Bahasa Arab (Hiwar) secara mandiri di lingkungan SMK?`;
+    soalHots[0].soal = `Uraikan perbedaan antara Jumlah Ismiyyah dan Jumlah Fi'liyyah beserta contohnya dari materi ${judulMateri}!`;
+    soalHots[1].soal = `Terjemahkan dan analisislah pola kalimat (wazan) yang terkandung dalam bacaan/dialog materi ${judulMateri}!`;
+  } else if (mapel === 'kemuh') {
+    narasiStimulation = `Sejak didirikan oleh K.H. Ahmad Dahlan pada tahun 1912 di Yogyakarta, Muhammadiyah senantiasa mengusung gerak Tajdid (pembaruan) dan Teologi Al-Ma'un. Melalui jaringan Amal Usaha Muhammadiyah (AUM) di bidang pendidikan, kesehatan, dan sosial, persyarikatan membuktikan bahwa dakwah Islam harus menghadirkan kemajuan nyata bagi bangsa dan kemanusiaan.`;
+    pemantik1 = `Mengapa K.H. Ahmad Dahlan memilih mendirikan sekolah modern daripada sekadar pesantren tradisional pada masa kolonial?`;
+    pemantik2 = `Bagaimana peran Organisasi Otonom (Ortom) seperti IPM, HW, dan Tapak Suci dalam membina karakter kader muda Muhammadiyah?`;
+    soalHots[0].soal = `Jelaskan latar belakang historis dan sosiologis didirikannya persyarikatan Muhammadiyah oleh KH. Ahmad Dahlan!`;
+    soalHots[1].soal = `Analisislah makna 'Islam Berkemajuan' dan bagaimana pelaksanaannya di sekolah SMKS Muhammadiyah 2 Genteng!`;
+  }
+
+  return {
+    judulLkpd: `LEMBAR KERJA PESERTA DIDIK (LKPD) ${labelMapel.toUpperCase()}`,
+    subJudul: `"Lintasan Waktu & Pembelajaran Inti: Membedah Konsep ${judulMateri}"`,
+    identitas: {
+      mapel: labelMapel,
+      faseKelas: `${fase} / ${kelas}`,
+      materi: judulMateri,
+      elemen: elemen,
+      model: 'Discovery Learning',
+      targetDpl: 'Kolaborasi, Komunikasi, Kemandirian, Kewargaan, Penalaran Kritis'
+    },
+    tujuan: [
+      `1. Memahami konsep dasar ${judulMateri} melalui analisis kritis dan contoh konkret kehidupan sehari-hari.`,
+      `2. Mengaplikasikan konsep ${judulMateri} (dimensi subjek/manusia, waktu, ruang, dan sebab-akibat) dalam menyelesaikan masalah kontekstual.`,
+      `3. Merefleksikan nilai luhur dan hikmah ${judulMateri} dalam sikap berakhlak, tanggung jawab, dan tindakan nyata.`
+    ],
+    petunjuk: [
+      '1. Bekerjalah dalam kelompok (4-5 orang) untuk melatih Kolaborasi dan Komunikasi.',
+      '2. Gunakan gawai/buku perpustakaan/Al-Qur\'an untuk mencari data secara Mandiri.',
+      '3. Ikuti tahapan Discovery Learning di bawah ini secara kritis, jujur, dan bertanggung jawab.'
+    ],
+    rubrikPenilaian: [
+      {
+        no: 1,
+        komponen: 'Pemahaman Konsep',
+        sub: [
+          `1.1 Menjelaskan pengertian dan hakikat ${judulMateri} dengan benar`,
+          `1.2 Mengidentifikasi pilar/komponen utama ${judulMateri}`,
+          `1.3 Mengaitkan konsep dengan realitas kehidupan murid`
+        ]
+      },
+      {
+        no: 2,
+        komponen: 'Analisis Topik & Kasus',
+        sub: [
+          `2.1 Mengidentifikasi unsur manusia/subjek pelaksana`,
+          `2.2 Menentukan unsur waktu dan ruang/lingkungan penerapan`,
+          `2.3 Menjelaskan hubungan sebab–akibat munculnya masalah/fenomena`,
+          `2.4 Menyajikan analisis secara logis, kritis, dan runtut`
+        ]
+      },
+      {
+        no: 3,
+        komponen: 'Refleksi Nilai & Sikap',
+        sub: [
+          `3.1 Mengidentifikasi nilai hikmah dan moral dari materi`,
+          `3.2 Menunjukkan sikap menghargai dan berakhlak mulia`,
+          `3.3 Mengusulkan rencana aksi nyata pelestarian/penerapan`
+        ]
+      },
+      {
+        no: 4,
+        komponen: 'Sikap & Kerjasama',
+        sub: [
+          `4.1 Menunjukkan sikap menghargai pendapat kawan`,
+          `4.2 Menunjukkan tanggung jawab dan kolaborasi dalam kelompok`,
+          `4.3 Menunjukkan kedisiplinan dan kejujuran dalam analisis`
+        ]
+      },
+      {
+        no: 5,
+        komponen: 'Waktu',
+        sub: [
+          `5.1 Ketepatan waktu penyelesaian LKPD dan keaktifan presentasi`
+        ]
+      }
+    ],
+    bobotPenilaian: {
+      persiapan: 10,
+      proses: 30,
+      hasil: 40,
+      sikap: 10,
+      waktu: 10
+    },
+    langkahKerja: {
+      stimulation: {
+        narasi: narasiStimulation,
+        pertanyaanPemantik: [pemantik1, pemantik2]
+      },
+      problemStatement: `Berdasarkan pemaparan di atas, diskusikan dengan kelompokmu: Bagaimana unsur subjek (manusia), waktu, lingkungan (ruang), dan hubungan sebab-akibat membentuk pemahaman utuh mengenai "${judulMateri}" hingga dapat kita amalkan secara nyata hari ini?`,
+      dataCollection: `Pilihlah satu studi kasus / contoh konkret pelaksanaan "${judulMateri}" di lingkungan sekitar atau sekolah. Carilah data pendukung melalui diskusi, buku teks, mushaf Al-Qur'an/hadis, atau penelusuran digital mencakup: (1) Latar belakang & subjek pelaksana, (2) Waktu & tempat kejadian/penerapan, (3) Faktor pendorong & dampaknya.`,
+      dataProcessing: {
+        instruksi: `Isilah tabel analisis di bawah ini berdasarkan hasil riset dan diskusi kelompokmu!`,
+        headers: ['Dimensi / Konsep', `Analisis pada Topik: ${judulMateri}`],
+        rows: [
+          {
+            konsep: 'Subjek / Manusia (Aktor)',
+            pemicu: `Siapa saja pihak/masyarakat/tokoh/murid yang terlibat dan berperan utama dalam pelaksanaan atau penerapan materi ini?`
+          },
+          {
+            konsep: 'Waktu (Kapan)',
+            pemicu: `Kapan materi/peristiwa ini mulai berlaku atau momen apa yang paling tepat untuk mengimplementasikannya dalam kehidupan harian?`
+          },
+          {
+            konsep: 'Ruang / Lingkungan (Di mana)',
+            pemicu: `Di lingkungan mana (sekolah, rumah, dunia digital, masyarakat) konsep ini paling krusial diterapkan? Mengapa?`
+          },
+          {
+            konsep: 'Sebab & Akibat (Kausalitas)',
+            pemicu: `Sebab: Mengapa materi/konsep ini diperintahkan atau penting untuk dipelajari?\nAkibat: Apa dampak positif jika dilaksanakan, dan apa akibat buruk jika diabaikan?`
+          }
+        ]
+      }
+    },
+    kesimpulanPlaceholder: `Tuliskan ringkasan kesimpulan kelompokmu (minimal 5 kalimat utuh) yang menghubungkan seluruh hasil analisis di atas dengan komitmen perubahan perilaku sehari-hari!`,
+    postTest: {
+      quizizzLink: 'https://quizizz.com/admin/quiz/672aa4e4301644833110c825',
+      soal: soalHots
+    }
+  };
+};
+
 
 // List of mock students for grade books
 
