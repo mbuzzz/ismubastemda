@@ -77,7 +77,7 @@ export const renderClassicPage = (
                 </h2>
                 <ClassicDivider width="100%" />
                 <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 13, color: '#000', letterSpacing: 2, textTransform: 'uppercase', marginTop: 6 }}>
-                  Fase {ctx.fase} — Kelas {ctx.selectedClass} · Semester {sem.toUpperCase()}
+                  Fase {ctx.fase} — Kelas {ctx.selectedClass} · Semester Ganjil & Genap
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export const renderClassicPage = (
                 {[
                   ['Mata Pelajaran', S.mapel],
                   ['Fase / Kelas', `${ctx.fase} / ${ctx.selectedClass}`],
-                  ['Semester', sem === 'ganjil' ? 'Ganjil' : 'Genap'],
+                  ['Semester', 'Ganjil & Genap'],
                   ['Guru Pengampu', S.namaGuru],
                   ['Instansi', 'SMKS Muhammadiyah 2 Genteng'],
                 ].map(([l, v], i) => (
