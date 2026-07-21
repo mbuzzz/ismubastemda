@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArabicText } from '../utils/perangkatUtils';
 import { getLkpdListPerPertemuan } from '../utils/lkpdPerPertemuan';
+import { buildBookletPageMap, buildTocEntries } from '../utils/bookletPages';
 
 import {
   ClassicDivider, ClassicFrame, ClassicWatermark, BismillahHeader,
@@ -419,58 +420,42 @@ export const renderClassicPage = (
        DAFTAR ISI
     ============================================================ */
     case 'daftar-isi': {
-      const gm = ctx.activeFaseData.semester.ganjil.materi;
-      const gpm = ctx.activeFaseData.semester.genap.materi;
-      const gbs = gm[0]?.bab || 1, gbe = gm[gm.length - 1]?.bab || 5;
-      const gnbs = gpm[0]?.bab || 6, gnbe = gpm[gpm.length - 1]?.bab || 10;
-      const entry = (text, page, isBold) => (
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted rgba(201,169,97,0.4)', fontFamily: "'Lora', serif", fontSize: 10.5, color: '#1A1A2E', fontWeight: isBold ? 700 : 400 }}>
-          <span>{text}</span>
-          <span style={{ fontFamily: "'Cormorant Garamond', serif", color: '#000' }}>{page}</span>
+      const pageMap = buildBookletPageMap(ctx.activeFaseData);
+      const toc = buildTocEntries(ctx.activeFaseData, pageMap);
+      const entry = (text, page, isBold, indent = false) => (
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          gap: 10,
+          padding: '4px 0',
+          paddingLeft: indent ? 12 : 0,
+          borderBottom: '1px dotted rgba(201,169,97,0.4)',
+          fontFamily: "'Lora', serif",
+          fontSize: indent ? 10 : 10.5,
+          color: '#1A1A2E',
+          fontWeight: isBold ? 700 : 400,
+        }}>
+          <span style={{ flex: 1 }}>{text}</span>
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", color: '#000', fontWeight: 700, whiteSpace: 'nowrap' }}>{page}</span>
         </div>
       );
       return (
         <div key="daftar-isi-classic" className="a4-page daftar-isi-page" style={{ position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
           <ClassicPageTitle>Daftar Isi Perangkat</ClassicPageTitle>
-          <ClassicSubtitle>Sistematika Berkas Perangkat Pembelajaran Tahunan ({S.mapel})</ClassicSubtitle>
+          <ClassicSubtitle>Sistematika Berkas — nomor selaras cetak booklet ({S.mapel})</ClassicSubtitle>
           <div style={{ marginTop: 14 }}>
-            {entry('SAMPUL DEPAN BUKU', 'Halaman i', false)}
-            {entry('HALAMAN JUDUL DOKUMEN', 'Halaman ii', false)}
-            {entry('IDENTITAS SATUAN PENDIDIKAN & GURU', 'Halaman iii', false)}
-            {entry('VISI & MISI SEKOLAH', 'Halaman iv', false)}
-            {entry('DAFTAR ISI PERANGKAT', 'Halaman v', true)}
+            {toc.front.map((it) => entry(it.title, it.page, it.bold, it.indent))}
 
             <div style={{ margin: '12px 0 6px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', borderBottom: '1.5px solid #C9A961', paddingBottom: 4, letterSpacing: 1, textTransform: 'uppercase' }}>
               <span style={{ color: '#C9A961', marginRight: 6 }}>I.</span> Administrasi Semester Ganjil
             </div>
-            {entry('1. RINCIAN PEKAN EFEKTIF (RPE)', 'Seksi 1', false)}
-            {entry('2. PROGRAM TAHUNAN (PROTA)', 'Seksi 2', false)}
-            {entry('3. PROGRAM SEMESTER (PROMES)', 'Seksi 3', false)}
-            {entry('4. ANALISA CAPAIAN PEMBELAJARAN (CP)', 'Seksi 4', false)}
-            {entry('5. ALUR TUJUAN PEMBELAJARAN (ATP)', 'Seksi 5', false)}
-            {entry('6. KRITERIA KETERCAPAIAN TP (KKTP)', 'Seksi 6', false)}
-            {entry('7. MODUL AJAR / PPM (BAB ' + gbs + ' S.D ' + gbe + ')', 'Seksi 7', true)}
-            {entry('8. KISI-KISI SOAL ASESMEN', 'Seksi 8', false)}
-            {entry('9. KARTU SOAL & KUNCI JAWABAN', 'Seksi 9', false)}
-            {entry('LAMPIRAN: QR CODE BAHAN AJAR', 'Seksi 7', false)}
-            {entry('LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)', 'Seksi 7', false)}
-            {entry('LAMPIRAN: RUBRIK PENILAIAN LKPD', 'Seksi 7', false)}
+            {toc.bag1.map((it) => entry(it.title, it.page, it.bold, it.indent))}
 
             <div style={{ margin: '12px 0 6px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, color: '#000', borderBottom: '1.5px solid #C9A961', paddingBottom: 4, letterSpacing: 1, textTransform: 'uppercase' }}>
               <span style={{ color: '#C9A961', marginRight: 6 }}>II.</span> Administrasi Semester Genap
             </div>
-            {entry('10. RINCIAN PEKAN EFEKTIF (RPE)', 'Seksi 10', false)}
-            {entry('11. PROGRAM SEMESTER (PROMES)', 'Seksi 11', false)}
-            {entry('12. ANALISA CAPAIAN PEMBELAJARAN (CP)', 'Seksi 12', false)}
-            {entry('13. ALUR TUJUAN PEMBELAJARAN (ATP)', 'Seksi 13', false)}
-            {entry('14. KRITERIA KETERCAPAIAN TP (KKTP)', 'Seksi 14', false)}
-            {entry('15. MODUL AJAR / PPM (BAB ' + gnbs + ' S.D ' + gnbe + ')', 'Seksi 15', true)}
-            {entry('16. KISI-KISI SOAL ASESMEN', 'Seksi 16', false)}
-            {entry('17. KARTU SOAL & KUNCI JAWABAN', 'Seksi 17', false)}
-            {entry('LAMPIRAN: QR CODE BAHAN AJAR', 'Seksi 15', false)}
-            {entry('LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)', 'Seksi 15', false)}
-            {entry('LAMPIRAN: RUBRIK PENILAIAN LKPD', 'Seksi 15', false)}
+            {toc.bag2.map((it) => entry(it.title, it.page, it.bold, it.indent))}
           </div>
         </div>
       );

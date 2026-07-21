@@ -810,12 +810,64 @@ body {
 /* Paper size for browser print / Save as PDF */
 @page {
   size: A4 portrait;
-  margin: 10mm 12mm;
+  /* bawah lebih lega untuk nomor halaman */
+  margin: 12mm 12mm 18mm 12mm;
+}
+
+/* Firefox / engine yang dukung margin box: nomor di setiap lembar fisik */
+@page {
+  @bottom-center {
+    content: counter(page);
+    font-size: 9pt;
+    color: #334155;
+    font-family: 'Plus Jakarta Sans', 'Lora', sans-serif;
+  }
+}
+
+/* Sampul & judul: tanpa nomor di margin box */
+@page no-number-page {
+  size: A4 portrait;
+  margin: 12mm 12mm 18mm 12mm;
+  @bottom-center {
+    content: none;
+  }
 }
 
 .landscape-mode {
   width: 297mm !important;
   min-height: 210mm !important;
+}
+
+/* Stempel cetak: sembunyikan di layar */
+.print-page-num-stamp {
+  display: none;
+}
+
+/* Preview layar: nomor seksi di bawah tiap kertas booklet */
+@media screen {
+  #booklet-container {
+    counter-reset: booklet-sec 0;
+  }
+  #booklet-container > .a4-page:not(.a4-cover):not(.judul-page):not(.no-page-num) {
+    counter-increment: booklet-sec;
+  }
+  #booklet-container > .a4-page:not(.a4-cover):not(.judul-page):not(.no-page-num)::after {
+    content: "hlm. " counter(booklet-sec);
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748B;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px dashed #E2E8F0;
+  }
+  #booklet-container > .a4-page.a4-cover::after,
+  #booklet-container > .a4-page.judul-page::after,
+  #booklet-container > .a4-page.no-page-num::after {
+    content: none !important;
+    display: none !important;
+  }
 }
 
 @media print {
@@ -1308,6 +1360,54 @@ body {
     height: auto !important;
   }
 
+  /* Sampul & judul pakai @page tanpa nomor (Firefox margin box) */
+  .a4-page.a4-cover,
+  .a4-page.judul-page,
+  .a4-page.no-page-num {
+    page: no-number-page;
+  }
+
+  /* Landscape tetap bernomor */
+  .a4-page.landscape-mode {
+    page: landscape-page;
+  }
+
+  /* Stempel JS di setiap lembar (Chrome + fallback) */
+  .print-page-num-stamp {
+    display: block !important;
+    font-family: 'Plus Jakarta Sans', 'Lora', sans-serif !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Preview layar: nomor seksi di bawah tiap kertas booklet */
+  #booklet-container {
+    counter-reset: booklet-page 0;
+  }
+  #booklet-container > .a4-page:not(.a4-cover):not(.judul-page):not(.no-page-num) {
+    counter-increment: booklet-page;
+  }
+
+  /* Bahan ajar / materi: cetak bersih per bab (satu dokumen) */
+  body.materi-standalone-print .desktop-navbar,
+  body.materi-standalone-print .bottom-navbar,
+  body.materi-standalone-print .sidebar,
+  body.materi-standalone-print .sidebar-overlay,
+  body.materi-standalone-print .no-print {
+    display: none !important;
+  }
+
+  body.materi-standalone-print .main-content-area,
+  body.materi-standalone-print .perangkat-wrapper,
+  body.materi-standalone-print .materi-view-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
   /* Tighter print typography for dense admin tables */
   .page-title {
     font-size: 15px !important;
@@ -1448,7 +1548,12 @@ body {
 
   @page landscape-page {
     size: A4 landscape;
-    margin: 10mm 10mm 10mm 14mm;
+    margin: 10mm 12mm 16mm 12mm;
+    @bottom-center {
+      content: counter(page);
+      font-size: 9pt;
+      color: #334155;
+    }
   }
 
   .landscape-mode {

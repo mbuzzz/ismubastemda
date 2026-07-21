@@ -8,6 +8,8 @@ import { getDplForBab, getPpmDetails, getDetailedLkpdForBab, indonesianMonthsGan
 import { getLkpdListPerPertemuan } from '../utils/lkpdPerPertemuan';
 import { detailedMateri } from '../data/materiContent';
 import { renderClassicPage } from '../components/ClassicPages';
+import { stampPrintPageNumbers, clearPrintPageNumbers } from '../utils/printPageNumbers';
+import { buildBookletPageMap, buildTocEntries } from '../utils/bookletPages';
 
 /** Tangkap error render agar mode satu halaman tidak blank diam-diam */
 class PageErrorBoundary extends Component {
@@ -275,15 +277,16 @@ export default function Perangkat({ overrideTab }) {
   const handlePdfExport = async () => {
     setIsExporting(true);
     try {
-      // Wait for React to render and allow user to read the print tips
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Trigger native browser high-quality printing
+      // Tunggu overlay + layout settle, lalu stempel nomor per lembar
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+      stampPrintPageNumbers(document);
+      await new Promise((resolve) => setTimeout(resolve, 200));
       window.print();
     } catch (err) {
       console.error(err);
       alert('Gagal mengekspor PDF.');
     } finally {
+      clearPrintPageNumbers(document);
       setIsExporting(false);
     }
   };
@@ -934,125 +937,57 @@ export default function Perangkat({ overrideTab }) {
       }
 
       case 'daftar-isi': {
-        const ganjilMateri = activeFaseData.semester.ganjil.materi;
-        const genapMateri = activeFaseData.semester.genap.materi;
-        
-        const ganjilBabStart = ganjilMateri[0]?.bab || 1;
-        const ganjilBabEnd = ganjilMateri[ganjilMateri.length - 1]?.bab || 5;
-        
-        const genapBabStart = genapMateri[0]?.bab || 6;
-        const genapBabEnd = genapMateri[genapMateri.length - 1]?.bab || 10;
+        const pageMap = buildBookletPageMap(activeFaseData);
+        const toc = buildTocEntries(activeFaseData, pageMap);
+        const showGanjil = !(viewMode === 'single' && sem === 'genap');
+        const showGenap = !(viewMode === 'single' && sem === 'ganjil');
+
+        const row = (item, i) => (
+          <div
+            key={`${item.title}-${i}`}
+            className="daftar-isi-row"
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              gap: '12px',
+              padding: '4px 0',
+              borderBottom: '1px dotted #ccc',
+              fontWeight: item.bold ? 700 : 500,
+              color: item.bold ? '#0D47A1' : 'inherit',
+              paddingLeft: item.indent ? '12px' : 0,
+              fontSize: item.indent ? '10px' : '10.5px',
+            }}
+          >
+            <span style={{ flex: 1 }}>{item.title}</span>
+            <span style={{ whiteSpace: 'nowrap', fontWeight: 700 }}>{item.page}</span>
+          </div>
+        );
 
         return (
           <div key="daftar-isi" className="a4-page daftar-isi-page front-matter-page">
             <h2 className="page-title">DAFTAR ISI PERANGKAT</h2>
-            <div className="page-subtitle">Sistematika Berkas Perangkat Pembelajaran Tahunan ({schoolInfoData.mapel})</div>
+            <div className="page-subtitle">
+              Sistematika Berkas Perangkat Pembelajaran Tahunan ({schoolInfoData.mapel}) — nomor selaras cetak booklet
+            </div>
 
-            <div style={{ marginTop: '20px', fontSize: '10.5px' }}>
-              <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                <span>SAMPUL DEPAN BUKU</span>
-                <span>Halaman i</span>
-              </div>
-              <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                <span>HALAMAN JUDUL DOKUMEN</span>
-                <span>Halaman ii</span>
-              </div>
-              <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                <span>IDENTITAS SATUAN PENDIDIKAN & GURU</span>
-                <span>Halaman iii</span>
-              </div>
-              <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc', fontWeight: 'bold' }}>
-                <span>DAFTAR ISI PERANGKAT</span>
-                <span>Halaman iv</span>
-              </div>
+            <div style={{ marginTop: '16px' }}>
+              {toc.front.map(row)}
 
-              {viewMode === 'single' && sem === 'genap' ? null : (
+              {showGanjil && (
                 <>
                   <div style={{ margin: '10px 0 4px 0', fontWeight: '800', color: '#0D47A1', fontSize: '11px', borderBottom: '1px solid #0D47A1', paddingBottom: '2px' }}>
                     BAGIAN I: ADMINISTRASI SEKOLAH & SEMESTER GANJIL
                   </div>
-
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>1. RINCIAN PEKAN EFEKTIF (RPE) SEMESTER GANJIL</span>
-                    <span>Seksi 1</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>2. PROGRAM TAHUNAN (PROTA)</span>
-                    <span>Seksi 2</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>3. PROGRAM SEMESTER (PROMES) GANJIL</span>
-                    <span>Seksi 3</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>4. ANALISA CAPAIAN PEMBELAJARAN (CP) GANJIL</span>
-                    <span>Seksi 4</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>5. ALUR TUJUAN PEMBELAJARAN (ATP) GANJIL</span>
-                    <span>Seksi 5</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>6. KRITERIA KETERCAPAIAN TUJUAN PEMBELAJARAN (KKTP) GANJIL</span>
-                    <span>Seksi 6</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc', fontWeight: 'bold', color: '#1976D2' }}>
-                    <span>7. MODUL AJAR / PPM GANJIL (BAB {ganjilBabStart} S.D BAB {ganjilBabEnd})</span>
-                    <span>Seksi 7</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>8. KISI-KISI SOAL ASESMEN GANJIL</span>
-                    <span>Seksi 8</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>9. KARTU SOAL & KUNCI JAWABAN GANJIL</span>
-                    <span>Seksi 9</span>
-                  </div>
+                  {toc.bag1.map(row)}
                 </>
               )}
 
-              {viewMode === 'single' && sem === 'ganjil' ? null : (
+              {showGenap && (
                 <>
                   <div style={{ margin: '12px 0 4px 0', fontWeight: '800', color: '#0D47A1', fontSize: '11px', borderBottom: '1px solid #0D47A1', paddingBottom: '2px' }}>
                     BAGIAN II: ADMINISTRASI SEMESTER GENAP
                   </div>
-
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>10. RINCIAN PEKAN EFEKTIF (RPE) SEMESTER GENAP</span>
-                    <span>Seksi 10</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>11. PROGRAM SEMESTER (PROMES) GENAP</span>
-                    <span>Seksi 11</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>12. ANALISA CAPAIAN PEMBELAJARAN (CP) GENAP</span>
-                    <span>Seksi 12</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc', fontWeight: 'bold', color: '#E65100' }}>
-                    <span>12b. ANALISIS CP &amp; TP (VERSI PP) — BUKU TEKS TERBARU</span>
-                    <span>Seksi 12b</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>13. ALUR TUJUAN PEMBELAJARAN (ATP) GENAP</span>
-                    <span>Seksi 13</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>14. KRITERIA KETERCAPAIAN TUJUAN PEMBELAJARAN (KKTP) GENAP</span>
-                    <span>Seksi 14</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc', fontWeight: 'bold', color: '#1976D2' }}>
-                    <span>15. MODUL AJAR / PPM GENAP (BAB {genapBabStart} S.D BAB {genapBabEnd})</span>
-                    <span>Seksi 15</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>16. KISI-KISI SOAL ASESMEN GENAP</span>
-                    <span>Seksi 16</span>
-                  </div>
-                  <div className="daftar-isi-row" style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', borderBottom: '1px dotted #ccc' }}>
-                    <span>17. KARTU SOAL & KUNCI JAWABAN GENAP</span>
-                    <span>Seksi 17</span>
-                  </div>
+                  {toc.bag2.map(row)}
                 </>
               )}
             </div>
