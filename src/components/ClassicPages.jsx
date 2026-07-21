@@ -95,7 +95,7 @@ export const renderClassicPage = (
                 Terakreditasi A — Pusat Keunggulan (PK)
               </p>
               {/* Mini identity table */}
-              <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 6, fontSize: 10.5 }}>
+              <table style={{ width: '80%', borderCollapse: 'collapse', marginTop: 6, fontSize: 10.5, textAlign: 'left' }}>
                 <tbody>
                   {[
                     ['Nama Guru', S.namaGuru],
@@ -104,8 +104,8 @@ export const renderClassicPage = (
                     ['Tahun Pelajaran', S.tahunAjaran],
                   ].map(([l, v], i) => (
                     <tr key={i} style={{ borderBottom: '1px dotted rgba(201,169,97,0.5)' }}>
-                      <td style={{ padding: '4px 8px', fontFamily: "'Playfair Display', serif", fontWeight: 600, color: '#000', width: '35%', letterSpacing: 0.5 }}>{l}</td>
-                      <td style={{ padding: '4px 8px', fontFamily: "'Lora', serif", fontWeight: 700, color: '#000' }}>: {v}</td>
+                      <td style={{ padding: '4px 8px', fontFamily: "'Playfair Display', serif", fontWeight: 600, color: '#000', width: '35%', letterSpacing: 0.5, textAlign: 'left' }}>{l}</td>
+                      <td style={{ padding: '4px 8px', fontFamily: "'Lora', serif", fontWeight: 700, color: '#000', textAlign: 'left' }}>: {v}</td>
                     </tr>
                   ))}
                 </tbody>
