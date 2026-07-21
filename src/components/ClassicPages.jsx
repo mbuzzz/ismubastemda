@@ -661,18 +661,24 @@ export const renderClassicPage = (
     ============================================================ */
     case 'atp':
       return (
-        <div key={index} className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
+        <div key={index} className="a4-page" style={{ padding: '8mm 10mm', position: 'relative' }}>
           <ClassicWatermark opacity={0.04} />
-          <ClassicPageTitle>Alur Tujuan Pembelajaran (ATP)</ClassicPageTitle>
-          <ClassicSubtitle>Sistematika Uraian Langkah Tujuan Pembelajaran — Fase {ctx.fase}</ClassicSubtitle>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, border: '1px solid #C9A961', marginTop: 12 }}>
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 16, color: '#000', textAlign: 'center', textTransform: 'uppercase', letterSpacing: 2, margin: '0 0 2px' }}>
+            Alur Tujuan Pembelajaran (ATP)
+          </h2>
+          <p style={{ fontFamily: "'Cormorant Garamond', 'Lora', serif", fontStyle: 'italic', fontSize: 11, color: '#8B6914', textAlign: 'center', letterSpacing: 0.5, margin: '0 0 10px' }}>
+            <span style={{ color: '#C9A961', margin: '0 8px' }}>✦</span>
+            Sistematika Uraian Langkah Tujuan Pembelajaran — Fase {ctx.fase}
+            <span style={{ color: '#C9A961', margin: '0 8px' }}>✦</span>
+          </p>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 8.5, border: '1px solid #C9A961' }}>
             <thead>
               <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
-                <th style={{ padding: '6px', border: '1px solid #C9A961', width: '15%' }}>Elemen</th>
-                <th style={{ padding: '6px', border: '1px solid #C9A961', width: '35%' }}>Tujuan Pembelajaran</th>
-                <th style={{ padding: '6px', border: '1px solid #C9A961', width: '10%' }}>JP</th>
-                <th style={{ padding: '6px', border: '1px solid #C9A961', width: '20%' }}>Asesmen</th>
-                <th style={{ padding: '6px', border: '1px solid #C9A961', width: '20%' }}>Glosarium</th>
+                <th style={{ padding: '4px 5px', border: '1px solid #C9A961', width: '15%' }}>Elemen</th>
+                <th style={{ padding: '4px 5px', border: '1px solid #C9A961', width: '35%' }}>Tujuan Pembelajaran</th>
+                <th style={{ padding: '4px 5px', border: '1px solid #C9A961', width: '10%' }}>JP</th>
+                <th style={{ padding: '4px 5px', border: '1px solid #C9A961', width: '20%' }}>Asesmen</th>
+                <th style={{ padding: '4px 5px', border: '1px solid #C9A961', width: '20%' }}>Glosarium</th>
               </tr>
             </thead>
             <tbody>
@@ -680,11 +686,11 @@ export const renderClassicPage = (
                 <React.Fragment key={mIdx}>
                   {(m.tp || []).map((t, tIdx) => (
                     <tr key={tIdx} style={{ borderBottom: '1px solid rgba(201,169,97,0.2)' }}>
-                      {tIdx === 0 && <td rowSpan={m.tp.length} style={{ fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000', background: 'rgba(201,169,97,0.06)', padding: '6px 8px' }}>{m.elemen}<br />(Bab {m.bab})</td>}
-                      <td style={{ padding: '5px 8px' }}>{t}</td>
-                      <td style={{ textAlign: 'center', padding: '5px 8px' }}>{tIdx === 0 ? m.alokasi : ''} JP</td>
-                      <td style={{ padding: '5px 8px', fontSize: 9 }}>Formatif: Tes Tulis, Penilaian Diri, LKPD</td>
-                      <td style={{ padding: '5px 8px', fontSize: 9 }}>{tIdx === 0 ? 'Tartil, Tajwid, Etos Kerja' : 'Syu\'ab al-iman'}</td>
+                      {tIdx === 0 && <td rowSpan={m.tp.length} style={{ fontWeight: 700, fontFamily: "'Playfair Display', serif", color: '#000', background: 'rgba(201,169,97,0.06)', padding: '4px 6px', fontSize: 8.5 }}>{m.elemen}<br />(Bab {m.bab})</td>}
+                      <td style={{ padding: '3px 6px' }}>{t}</td>
+                      <td style={{ textAlign: 'center', padding: '3px 6px' }}>{tIdx === 0 ? m.alokasi : ''} JP</td>
+                      <td style={{ padding: '3px 6px', fontSize: 8 }}>Formatif: Tes Tulis, Penilaian Diri, LKPD</td>
+                      <td style={{ padding: '3px 6px', fontSize: 8 }}>{tIdx === 0 ? 'Tartil, Tajwid, Etos Kerja' : 'Syu\'ab al-iman'}</td>
                     </tr>
                   ))}
                 </React.Fragment>
@@ -1018,21 +1024,24 @@ export const renderClassicPage = (
             </div>
           </div>
 
-          {/* Lembar sendiri: LKPD */}
-          <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
-            <ClassicWatermark opacity={0.04} />
-            <div>
-              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 0 }}>
-                LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
+          {/* Lembar sendiri: LKPD — masing-masing pertemuan sebagai .a4-page sendiri */}
+          {lkpdList.length > 0 ? (
+            <>
+              <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
+                <ClassicWatermark opacity={0.04} />
+                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 10 }}>
+                  LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
+                </div>
+                {renderLkpdSection(lkpdList[0])}
               </div>
-              {lkpdList.map((lkpdItem, li) => (
-                <div key={li}>
+              {lkpdList.slice(1).map((lkpdItem, li) => (
+                <div key={li + 1} className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
+                  <ClassicWatermark opacity={0.04} />
                   {renderLkpdSection(lkpdItem)}
-                  {li < lkpdList.length - 1 && <div style={{ pageBreakBefore: 'always' }} />}
                 </div>
               ))}
-            </div>
-          </div>
+            </>
+          ) : null}
 
           {/* Lembar sendiri: Rubrik Penilaian */}
           {lkpdList[0]?.lkpd && (
