@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams } from 'react-router-dom';
 import { Maximize, Minimize, BookOpen, Sparkles } from 'lucide-react';
 import { schoolInfo, schoolInfoPAI, schoolInfoArab, schoolInfoKemuh, faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import { exportToPdf } from '../utils/exportPdf';
@@ -65,15 +65,26 @@ class PageErrorBoundary extends Component {
   }
 }
 
-export default function Perangkat() {
+export default function Perangkat({ overrideTab }) {
   const [searchParams, setSearchParams] = useSearchParams();
+  const params = useParams();
+
+  const initialTab = overrideTab || params.tab || searchParams.get('tab') || 'cover';
 
   // Application State
   const [selectedMapel, setSelectedMapel] = useState(searchParams.get('mapel') || 'pai'); // pai or arab
   const [fase, setFase] = useState(searchParams.get('fase') || 'E'); // E or F
   const [selectedClass, setSelectedClass] = useState(searchParams.get('kelas') || 'X'); // X for E, XI or XII for F
   const [semester, setSemester] = useState((searchParams.get('semester') || 'ganjil').toLowerCase()); // ganjil or genap
-  const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'cover'); // side nav active item
+  const [activeTab, setActiveTab] = useState(initialTab); // side nav active item
+
+  useEffect(() => {
+    const target = overrideTab || params.tab || searchParams.get('tab');
+    if (target && target !== activeTab) {
+      setActiveTab(target);
+    }
+  }, [overrideTab, params.tab, searchParams]);
+
   const [viewMode, setViewMode] = useState(() => {
     const v = searchParams.get('view');
     return v === 'booklet' || v === 'single' ? v : 'single';

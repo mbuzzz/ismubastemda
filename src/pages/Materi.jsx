@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams } from 'react-router-dom';
 import { BookOpen, GraduationCap, ChevronRight, Library, Maximize, Minimize } from 'lucide-react';
 import { faseE, faseF11, faseF12, faseEArab, faseF11Arab, faseF12Arab, faseE_kemuh, faseF11_kemuh, faseF12_kemuh } from '../data/curriculum';
 import MateriContent from '../components/materi/MateriContent';
 
 const Materi = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const params = useParams();
   
-  const [mapel, setMapel] = useState(searchParams.get('mapel') || 'pai');
+  const [mapel, setMapel] = useState(params.mapel || searchParams.get('mapel') || 'pai');
   const [kelas, setKelas] = useState(searchParams.get('kelas') || 'X');
   const [bab, setBab] = useState(parseInt(searchParams.get('bab') || '1'));
+
+  useEffect(() => {
+    if (params.mapel && params.mapel !== mapel) {
+      setMapel(params.mapel);
+    }
+  }, [params.mapel]);
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
