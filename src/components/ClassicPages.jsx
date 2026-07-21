@@ -960,8 +960,7 @@ export const renderClassicPage = (
               );
             })}
 
-          <div style={{ pageBreakBefore: 'always' }} />
-          {/* IV. Asesmen Pembelajaran */}
+          {/* IV. Asesmen Pembelajaran (mengalir natural) */}
           <div style={{ marginTop: 20 }}>
               <ClassicSectionHead roman="IV">Asesmen Pembelajaran</ClassicSectionHead>
 
@@ -997,82 +996,78 @@ export const renderClassicPage = (
             </div>
 
             <ClassicSignature schoolInfoData={S} sem={sem} />
-          </div>
 
-          {/* Lembar sendiri: QR Code Bahan Ajar */}
-          <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ClassicWatermark opacity={0.04} />
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '20px 30px', background: 'rgba(255,252,244,0.8)' }}>
-                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961', margin: '-20px -30px 16px' }}>
-                  LAMPIRAN: QR CODE BAHAN AJAR
-                </div>
-                <img
-                  src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(`https://ismubastemda.web.id/materi/${ctx.selectedMapel}/${ctx.selectedClass}/bab-${activeMateri.bab}`)}`}
-                  alt="QR Code Bahan Ajar"
-                  style={{ width: 180, height: 180, display: 'block', margin: '0 auto 12px' }}
-                />
-                <p style={{ fontFamily: "'Lora', serif", fontSize: 11, color: '#000', margin: 0 }}>
-                  Scan untuk mengakses Bahan Ajar — <ArabicText text={activeMateri.judul} />
-                </p>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: 9, color: '#64748B', margin: '4px 0 0', wordBreak: 'break-all' }}>
-                  ismubastemda.web.id/materi/{ctx.selectedMapel}/{ctx.selectedClass}/bab-{activeMateri.bab}
-                </p>
+          <div style={{ borderTop: '2px double #C9A961', marginTop: 24 }} />
+
+          {/* QR Code Bahan Ajar */}
+          <div style={{ textAlign: 'center', marginTop: 20 }}>
+            <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '16px 24px', background: 'rgba(255,252,244,0.8)' }}>
+              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961', margin: '-16px -24px 12px' }}>
+                LAMPIRAN: QR CODE BAHAN AJAR
               </div>
+              <img
+                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(`https://ismubastemda.web.id/materi/${ctx.selectedMapel}/${ctx.selectedClass}/bab-${activeMateri.bab}`)}`}
+                alt="QR Code Bahan Ajar"
+                style={{ width: 160, height: 160, display: 'block', margin: '0 auto 10px' }}
+              />
+              <p style={{ fontFamily: "'Lora', serif", fontSize: 10, color: '#000', margin: 0 }}>
+                Scan untuk mengakses Bahan Ajar — <ArabicText text={activeMateri.judul} />
+              </p>
+              <p style={{ fontFamily: "'Lora', serif", fontSize: 8.5, color: '#64748B', margin: '4px 0 0', wordBreak: 'break-all' }}>
+                ismubastemda.web.id/materi/{ctx.selectedMapel}/{ctx.selectedClass}/bab-{activeMateri.bab}
+              </p>
             </div>
           </div>
 
-          {/* Lembar sendiri: LKPD — semua pertemuan dalam satu aliran (paginate natural) */}
+          {/* LKPD — semua pertemuan dalam satu aliran */}
           {lkpdList.length > 0 ? (
-            <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
-              <ClassicWatermark opacity={0.04} />
-              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 10 }}>
+            <div style={{ marginTop: 20 }}>
+              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961' }}>
                 LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
               </div>
               {lkpdList.map((lkpdItem, li) => (
                 <div key={li}>
                   {renderLkpdSection(lkpdItem)}
-                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '14px 0' }} />}
+                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '12px 0' }} />}
                 </div>
               ))}
             </div>
           ) : null}
 
-          {/* Lembar sendiri: Rubrik Penilaian */}
+          {/* Rubrik Penilaian */}
           {lkpdList[0]?.lkpd && (
-            <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
-              <ClassicWatermark opacity={0.04} />
+            <div style={{ marginTop: 20 }}>
               <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
-                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
+                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
                   LAMPIRAN: RUBRIK PENILAIAN LKPD
                 </div>
-                <div style={{ padding: '12px' }}>
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10, border: '1px solid #C9A961' }}>
+                <div style={{ padding: '10px' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 9.5, border: '1px solid #C9A961' }}>
                     <thead>
                       <tr style={{ background: '#C9A961', color: '#1A1A2E', fontFamily: "'Playfair Display', serif" }}>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '5%' }}>No</th>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '35%' }}>Komponen</th>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '15%' }}>Tidak (&lt;75)</th>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '15%' }}>CK (75-83)</th>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '15%' }}>K (84-92)</th>
-                        <th style={{ padding: '6px 8px', border: '1px solid #C9A961', width: '15%' }}>SK (93-100)</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '5%' }}>No</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '35%' }}>Komponen</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>Tidak (&lt;75)</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>CK (75-83)</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>K (84-92)</th>
+                        <th style={{ padding: '4px 6px', border: '1px solid #C9A961', width: '15%' }}>SK (93-100)</th>
                       </tr>
                     </thead>
                     <tbody>
                       {Array.isArray(lkpdList[0].lkpd.rubrikPenilaian) && lkpdList[0].lkpd.rubrikPenilaian.map((rub, rIdx) => (
                         <React.Fragment key={rIdx}>
                           <tr style={{ background: 'rgba(201,169,97,0.08)', fontWeight: 700, borderBottom: '1px solid rgba(201,169,97,0.3)' }}>
-                            <td style={{ textAlign: 'center', padding: '5px 8px' }}>{rub.no}</td>
-                            <td style={{ padding: '5px 8px', color: '#000' }} colSpan={5}>{rub.komponen}</td>
+                            <td style={{ textAlign: 'center', padding: '4px 6px' }}>{rub.no}</td>
+                            <td style={{ padding: '4px 6px', color: '#000' }} colSpan={5}>{rub.komponen}</td>
                           </tr>
                           {rub.sub.map((sText, sIdx) => (
                             <tr key={sIdx} style={{ borderBottom: '1px dotted rgba(201,169,97,0.2)' }}>
                               <td></td>
-                              <td style={{ padding: '3px 8px', fontSize: 9.5 }}>{sText}</td>
-                              <td style={{ padding: '3px 8px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '3px 8px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '3px 8px', textAlign: 'center' }}></td>
-                              <td style={{ padding: '3px 8px', textAlign: 'center' }}></td>
+                              <td style={{ padding: '2px 6px', fontSize: 9 }}>{sText}</td>
+                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
+                              <td style={{ padding: '2px 6px', textAlign: 'center' }}></td>
                             </tr>
                           ))}
                         </React.Fragment>
@@ -1111,6 +1106,7 @@ export const renderClassicPage = (
               </div>
             </div>
           )}
+          </div>
         </React.Fragment>
       );
     }
