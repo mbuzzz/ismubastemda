@@ -84,9 +84,9 @@ export const renderClassicPage = (
 
             {/* BOTTOM: Logo + School + Identity */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-              <div style={{ width: 100, height: 100, borderRadius: '50%', border: '3px double #C9A961', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF' }}>
-                <img src="/logosmk.png" alt="Logo" style={{ width: 70, height: 70, objectFit: 'contain' }}
-                  onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/70/0D47A1/FBF7EE?text=SMK'; }} />
+              <div style={{ width: 130, height: 130, borderRadius: '50%', border: '3px double #C9A961', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF' }}>
+                <img src="/logosmk.png" alt="Logo" style={{ width: 95, height: 95, objectFit: 'contain' }}
+                  onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/95/0D47A1/FBF7EE?text=SMK'; }} />
               </div>
               <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 14, color: '#000', letterSpacing: 1, textAlign: 'center', textTransform: 'uppercase' }}>
                 SMKS Muhammadiyah 2 Genteng
@@ -890,8 +890,7 @@ export const renderClassicPage = (
               </ol>
             </ClassicPanel>
 
-            {/* III - Langkah Pembelajaran Per Pertemuan */}
-            <div style={{ pageBreakAfter: 'always' }} />
+            {/* III - Langkah Pembelajaran Per Pertemuan (mengalir natural tanpa break paksa) */}
             <ClassicSectionHead roman="III">Langkah Pembelajaran</ClassicSectionHead>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: 11, color: '#000', textAlign: 'center', marginBottom: 12 }}>
               Total {totalPertemuan} Pertemuan — Pendekatan TPACK & Diferensiasi
@@ -1024,23 +1023,20 @@ export const renderClassicPage = (
             </div>
           </div>
 
-          {/* Lembar sendiri: LKPD — masing-masing pertemuan sebagai .a4-page sendiri */}
+          {/* Lembar sendiri: LKPD — semua pertemuan dalam satu aliran (paginate natural) */}
           {lkpdList.length > 0 ? (
-            <>
-              <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
-                <ClassicWatermark opacity={0.04} />
-                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 10 }}>
-                  LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
-                </div>
-                {renderLkpdSection(lkpdList[0])}
+            <div className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
+              <ClassicWatermark opacity={0.04} />
+              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '8px 12px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 10 }}>
+                LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
               </div>
-              {lkpdList.slice(1).map((lkpdItem, li) => (
-                <div key={li + 1} className="a4-page" style={{ padding: '15mm 15mm', position: 'relative' }}>
-                  <ClassicWatermark opacity={0.04} />
+              {lkpdList.map((lkpdItem, li) => (
+                <div key={li}>
                   {renderLkpdSection(lkpdItem)}
+                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '14px 0' }} />}
                 </div>
               ))}
-            </>
+            </div>
           ) : null}
 
           {/* Lembar sendiri: Rubrik Penilaian */}
