@@ -4,6 +4,7 @@ import MainLayout from './components/layout/MainLayout';
 import Landing from './pages/Landing';
 import Perangkat from './pages/Perangkat';
 import Materi from './pages/Materi';
+import BahanAjar from './pages/BahanAjar';
 import Tentang from './pages/Tentang';
 import NotFound from './pages/NotFound';
 
@@ -12,6 +13,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+
+        {/*
+          HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap:
+          /materi/{mapel}/{kelas}/bab-{n}
+          Contoh: /materi/pai/X/bab-1
+          Dipasang di luar MainLayout agar tidak tertimpa layout/nav yang memicu 404.
+        */}
+        <Route path="/materi/:mapel/:kelas/bab-:bab" element={<BahanAjar />} />
+
         <Route element={<MainLayout />}>
           {/* Perangkat Pembelajaran Routes */}
           <Route path="/perangkat" element={<Perangkat />} />
@@ -36,16 +46,13 @@ function App() {
           <Route path="/kisi-kisi" element={<Perangkat overrideTab="kisi-kisi" />} />
           <Route path="/kartu-soal" element={<Perangkat overrideTab="kartu-soal" />} />
 
-          {/* Materi Pembelajaran — path QR cetak: /materi/{mapel}/{kelas}/bab-{n} (jangan diubah) */}
+          {/* Katalog materi (bukan path QR) */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/materi/:mapel" element={<Materi />} />
-          <Route path="/materi/:mapel/:kelas/bab-:bab" element={<Materi />} />
 
-          {/* Tentang */}
           <Route path="/tentang" element={<Tentang />} />
         </Route>
 
-        {/* 404 Fallback */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
