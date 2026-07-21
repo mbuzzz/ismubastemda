@@ -2245,8 +2245,8 @@ export default function Perangkat({ overrideTab }) {
 
               {/* SECTION 7: LAMPIRAN LKPD */}
               {(() => {
-                // Kemuh: kuis/ulangan per pertemuan (hanya soal, tanpa petunjuk/TP)
-                if (selectedMapel === 'kemuh' || selectedMapel === 'arab') {
+                // Kemuh / Arab / PAI XI: kuis/ulangan per pertemuan (hanya soal, tanpa petunjuk/TP)
+                if (selectedMapel === 'kemuh' || selectedMapel === 'arab' || (selectedMapel === 'pai' && selectedClass === 'XI')) {
                   const quizList = getLkpdListPerPertemuan(fase, activeMateri.bab, selectedMapel, selectedClass, activeMateri);
                   return (
                     <div className="lkpd-section" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>

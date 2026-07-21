@@ -898,7 +898,10 @@ export const renderClassicPage = (
       const renderLkpdSection = (lkpdItem) => {
         if (!lkpdItem) return null;
         const { lkpd } = lkpdItem;
-        const isQuiz = !!lkpd.quizMode || !!lkpd.simplified || ctx.selectedMapel === 'kemuh' || ctx.selectedMapel === 'arab';
+        const isQuiz = !!lkpd.quizMode || !!lkpd.simplified
+          || ctx.selectedMapel === 'kemuh'
+          || ctx.selectedMapel === 'arab'
+          || (ctx.selectedMapel === 'pai' && String(ctx.selectedClass).toUpperCase() === 'XI');
         const soalList = Array.isArray(lkpd.postTest?.soal) && lkpd.postTest.soal.length
           ? lkpd.postTest.soal
           : (lkpd.tugas || []).map((t, i) => ({ no: i + 1, soal: t }));
@@ -1228,7 +1231,10 @@ export const renderClassicPage = (
                   border: '1px solid #333',
                   marginBottom: 8,
                 }}>
-                  {ctx.selectedMapel === 'kemuh' || ctx.selectedMapel === 'arab' || lkpdList[0]?.lkpd?.quizMode
+                  {lkpdList[0]?.lkpd?.quizMode
+                    || ctx.selectedMapel === 'kemuh'
+                    || ctx.selectedMapel === 'arab'
+                    || (ctx.selectedMapel === 'pai' && String(ctx.selectedClass).toUpperCase() === 'XI')
                     ? 'LAMPIRAN: KUIS / ULANGAN PER PERTEMUAN'
                     : 'LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)'}
                 </div>
@@ -1241,8 +1247,11 @@ export const renderClassicPage = (
               </div>
             )}
 
-            {/* Rubrik hanya untuk format Discovery (bukan kuis Kemuh/Arab) */}
-            {lkpdList[0]?.lkpd && !lkpdList[0].lkpd.quizMode && ctx.selectedMapel !== 'kemuh' && ctx.selectedMapel !== 'arab' && (
+            {/* Rubrik hanya untuk format Discovery (bukan kuis) */}
+            {lkpdList[0]?.lkpd && !lkpdList[0].lkpd.quizMode
+              && ctx.selectedMapel !== 'kemuh'
+              && ctx.selectedMapel !== 'arab'
+              && !(ctx.selectedMapel === 'pai' && String(ctx.selectedClass).toUpperCase() === 'XI') && (
               <div className="print-flow-block" style={{ marginTop: 16 }}>
                 <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
                   <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
