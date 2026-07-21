@@ -960,7 +960,8 @@ export const renderClassicPage = (
               );
             })}
 
-          {/* IV. Asesmen Pembelajaran (mengalir natural) */}
+          <div style={{ pageBreakBefore: 'always' }} />
+          {/* IV. Asesmen Pembelajaran */}
           <div style={{ marginTop: 20 }}>
               <ClassicSectionHead roman="IV">Asesmen Pembelajaran</ClassicSectionHead>
 
@@ -996,47 +997,51 @@ export const renderClassicPage = (
             </div>
 
             <ClassicSignature schoolInfoData={S} sem={sem} />
+          </div>
 
-          <div style={{ borderTop: '2px double #C9A961', marginTop: 24 }} />
-
-          {/* QR Code Bahan Ajar */}
-          <div style={{ textAlign: 'center', marginTop: 20 }}>
-            <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '16px 24px', background: 'rgba(255,252,244,0.8)' }}>
-              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961', margin: '-16px -24px 12px' }}>
-                LAMPIRAN: QR CODE BAHAN AJAR
+          {/* Lembar sendiri: QR Code Bahan Ajar */}
+          <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <ClassicWatermark opacity={0.04} />
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ display: 'inline-block', border: '2px double #C9A961', padding: '16px 24px', background: 'rgba(255,252,244,0.8)' }}>
+                <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961', margin: '-16px -24px 12px' }}>
+                  LAMPIRAN: QR CODE BAHAN AJAR
+                </div>
+                <img
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(`https://ismubastemda.web.id/materi/${ctx.selectedMapel}/${ctx.selectedClass}/bab-${activeMateri.bab}`)}`}
+                  alt="QR Code Bahan Ajar"
+                  style={{ width: 160, height: 160, display: 'block', margin: '0 auto 10px' }}
+                />
+                <p style={{ fontFamily: "'Lora', serif", fontSize: 10, color: '#000', margin: 0 }}>
+                  Scan untuk mengakses Bahan Ajar — <ArabicText text={activeMateri.judul} />
+                </p>
+                <p style={{ fontFamily: "'Lora', serif", fontSize: 8.5, color: '#64748B', margin: '4px 0 0', wordBreak: 'break-all' }}>
+                  ismubastemda.web.id/materi/{ctx.selectedMapel}/{ctx.selectedClass}/bab-{activeMateri.bab}
+                </p>
               </div>
-              <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(`https://ismubastemda.web.id/materi/${ctx.selectedMapel}/${ctx.selectedClass}/bab-${activeMateri.bab}`)}`}
-                alt="QR Code Bahan Ajar"
-                style={{ width: 160, height: 160, display: 'block', margin: '0 auto 10px' }}
-              />
-              <p style={{ fontFamily: "'Lora', serif", fontSize: 10, color: '#000', margin: 0 }}>
-                Scan untuk mengakses Bahan Ajar — <ArabicText text={activeMateri.judul} />
-              </p>
-              <p style={{ fontFamily: "'Lora', serif", fontSize: 8.5, color: '#64748B', margin: '4px 0 0', wordBreak: 'break-all' }}>
-                ismubastemda.web.id/materi/{ctx.selectedMapel}/{ctx.selectedClass}/bab-{activeMateri.bab}
-              </p>
             </div>
           </div>
 
-          {/* LKPD — semua pertemuan dalam satu aliran */}
+          {/* Lembar sendiri: LKPD — semua pertemuan dalam satu aliran */}
           {lkpdList.length > 0 ? (
-            <div style={{ marginTop: 20 }}>
-              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961' }}>
+            <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
+              <ClassicWatermark opacity={0.04} />
+              <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', border: '2px double #C9A961', borderBottom: '2px double #C9A961', marginBottom: 8 }}>
                 LAMPIRAN: LEMBAR KERJA PESERTA DIDIK (LKPD)
               </div>
               {lkpdList.map((lkpdItem, li) => (
                 <div key={li}>
                   {renderLkpdSection(lkpdItem)}
-                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '12px 0' }} />}
+                  {li < lkpdList.length - 1 && <div style={{ borderTop: '1px dashed rgba(201,169,97,0.3)', margin: '10px 0' }} />}
                 </div>
               ))}
             </div>
           ) : null}
 
-          {/* Rubrik Penilaian */}
+          {/* Lembar sendiri: Rubrik Penilaian */}
           {lkpdList[0]?.lkpd && (
-            <div style={{ marginTop: 20 }}>
+            <div className="a4-page" style={{ padding: '12mm 12mm', position: 'relative' }}>
+              <ClassicWatermark opacity={0.04} />
               <div style={{ border: '2px double #C9A961', padding: 0, background: 'rgba(255,252,244,0.8)' }}>
                 <div style={{ background: '#C9A961', color: '#1A1A2E', padding: '6px 10px', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.8, textAlign: 'center', borderBottom: '2px double #C9A961' }}>
                   LAMPIRAN: RUBRIK PENILAIAN LKPD
@@ -1106,7 +1111,6 @@ export const renderClassicPage = (
               </div>
             </div>
           )}
-          </div>
         </React.Fragment>
       );
     }

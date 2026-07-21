@@ -105,7 +105,7 @@ export const ClassicSectionHead = ({ children, roman }) => (
     letterSpacing: 1,
     borderBottom: '1.5px solid #C9A961',
     paddingBottom: 6,
-    margin: '18px 0 10px',
+    margin: '12px 0 8px',
   }}>
     {roman && <span style={{ color: '#C9A961', marginRight: 8 }}>{roman}.</span>}
     <span style={{ color: '#C9A961', marginRight: 6 }}>❖</span>{children}
@@ -120,9 +120,10 @@ export const ClassicPanel = ({ children, style, title }) => (
     borderLeft: '4px double #C9A961',
     borderRadius: 2,
     padding: '12px 16px',
-    margin: '10px 0',
+    margin: '8px 0',
     boxShadow: '0 2px 6px rgba(139,105,20,0.08)',
     fontFamily: "'Lora', serif",
+    pageBreakInside: 'auto',
     ...style,
   }}>
     {title && (
@@ -150,7 +151,6 @@ export const ClassicSignature = ({ schoolInfoData, sem }) => {
       display: 'flex', justifyContent: 'space-between', gap: 10,
       marginTop: 30, paddingTop: 14,
       borderTop: '3px double #C9A961',
-      pageBreakInside: 'avoid',
     }}>
       {[
         { label: 'Mengesahkan,', role: 'Kepala Sekolah', name: schoolInfoData.kepalaSekolah, nbm: schoolInfoData.nbmKepala },
