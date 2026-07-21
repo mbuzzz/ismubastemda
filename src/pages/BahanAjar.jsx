@@ -32,7 +32,7 @@ const normalizeKelas = (v) => {
 };
 
 const normalizeBab = (v) => {
-  // params.bab dari route bab-:bab → "1" atau kadang "bab-1" tergantung router
+  // Dari route /materi/:mapel/:kelas/:babSlug → babSlug = "bab-1"
   const raw = String(v ?? '1');
   const match = raw.match(/(\d+)/);
   const n = match ? parseInt(match[1], 10) : 1;
@@ -50,7 +50,8 @@ export default function BahanAjar() {
 
   const mapel = normalizeMapel(params.mapel);
   const kelas = normalizeKelas(params.kelas);
-  const bab = normalizeBab(params.bab);
+  // QR path: /materi/pai/XI/bab-1 → babSlug = "bab-1"
+  const bab = normalizeBab(params.babSlug || params.bab);
 
   const book = useMemo(() => getBahanAjarLengkap(mapel, kelas, bab), [mapel, kelas, bab]);
   const daftarBab = useMemo(() => listBahanAjarBab(mapel, kelas), [mapel, kelas]);

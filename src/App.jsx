@@ -15,12 +15,13 @@ function App() {
         <Route path="/" element={<Landing />} />
 
         {/*
-          HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap:
+          HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap (jangan diubah):
           /materi/{mapel}/{kelas}/bab-{n}
-          Contoh: /materi/pai/X/bab-1
-          Dipasang di luar MainLayout agar tidak tertimpa layout/nav yang memicu 404.
+          Contoh: /materi/pai/XI/bab-1
+          Catatan: React Router butuh segmen penuh :babSlug (= "bab-1"),
+          bukan "bab-:bab" (pola itu tidak match → 404).
         */}
-        <Route path="/materi/:mapel/:kelas/bab-:bab" element={<BahanAjar />} />
+        <Route path="/materi/:mapel/:kelas/:babSlug" element={<BahanAjar />} />
 
         <Route element={<MainLayout />}>
           {/* Perangkat Pembelajaran Routes */}
@@ -46,7 +47,7 @@ function App() {
           <Route path="/kisi-kisi" element={<Perangkat overrideTab="kisi-kisi" />} />
           <Route path="/kartu-soal" element={<Perangkat overrideTab="kartu-soal" />} />
 
-          {/* Katalog materi (bukan path QR) */}
+          {/* Katalog materi (tanpa bab di path) */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/materi/:mapel" element={<Materi />} />
 
