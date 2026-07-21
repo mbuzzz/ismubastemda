@@ -156,7 +156,7 @@ export const renderClassicPage = (
                 {[
                   ['Mata Pelajaran', S.mapel],
                   ['Fase / Kelas', `${ctx.fase} / ${ctx.selectedClass}`],
-                  ['Semester', sem.toUpperCase()],
+                  ['Semester', sem === 'ganjil' ? 'Ganjil' : 'Genap'],
                   ['Guru Pengampu', S.namaGuru],
                   ['Instansi', 'SMKS Muhammadiyah 2 Genteng'],
                 ].map(([l, v], i) => (
@@ -618,7 +618,6 @@ export const renderClassicPage = (
               <ClassicPageTitle>Analisis CP & TP</ClassicPageTitle>
               <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 12, color: '#000', marginTop: 4 }}>{S.mapel} · Kelas {ctx.selectedClass} · Semester {(sourceSem.nama || sourceSemKey).toUpperCase()}</p>
             </div>
-            <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 10, background: '#C9A961', color: '#1A1A2E', padding: '4px 10px', border: '1px solid #8B6914', letterSpacing: 0.5 }}>VERSI PP</span>
           </div>
           <ClassicDivider width="50%" />
           <p style={{ fontFamily: "'Lora', serif", fontSize: 11, lineHeight: 1.55, margin: '8px 0 12px', textAlign: 'justify', color: '#1A1A2E' }}>
