@@ -492,6 +492,25 @@ export default function Perangkat({ overrideTab }) {
   // Override minggu efektif sesuai kelas & semester (X MPLS, XI tanpa MPLS, XII ganjil PKL)
   schoolInfoData.mingguEfektif = getMingguEfektifFor(safeSemester, selectedClass);
 
+  // Statement Block — pernyataan kontekstual sebelum tanda tangan
+  const StatementBlock = ({ children }) => (
+    <div style={{
+      background: '#FFF8E1',
+      border: '1px solid #FFE082',
+      borderLeft: '4px solid #FFB300',
+      borderRadius: '8px',
+      padding: '14px 16px',
+      marginBottom: '24px',
+      fontSize: '11px',
+      color: '#5D4037',
+      lineHeight: 1.6,
+      textAlign: 'justify',
+      pageBreakInside: 'avoid'
+    }}>
+      {children}
+    </div>
+  );
+
   // Signature Block — tanggal = hari cetak (otomatis)
   const SignatureBlock = ({ semOverride = null }) => {
     const tanggalTtd = formatTanggalTandaTangan();
@@ -1149,6 +1168,14 @@ export default function Perangkat({ overrideTab }) {
                 )}
               </div>
             </div>
+
+            {/* PERNYATAAN & TANDA TANGAN RPE */}
+            <div style={{ marginTop: '40px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> perhitungan Rincian Pekan Efektif (RPE) di atas telah disusun berdasarkan Kalender Pendidikan Tahun Ajaran 2026/2027 dan telah memperhitungkan seluruh kegiatan sekolah, hari libur, serta pekan tidak efektif lainnya. Data ini menjadi acuan resmi dalam penyusunan Program Tahunan (Prota), Program Semester (Promes), dan seluruh perangkat pembelajaran lainnya.
+              </StatementBlock>
+              <SignatureBlock semOverride={sem} />
+            </div>
           </div>
         );
       }
@@ -1365,7 +1392,10 @@ export default function Perangkat({ overrideTab }) {
               </table>
             </div>
 
-            <div style={{ marginTop: '50px' }}>
+            <div style={{ marginTop: '50px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Program Tahunan (Prota) di atas telah disusun berdasarkan analisis Capaian Pembelajaran, Tujuan Pembelajaran, serta alokasi waktu efektif yang tersedia pada Tahun Ajaran 2026/2027. Program ini menjadi pedoman resmi dalam pelaksanaan pembelajaran dan menjadi acuan bagi penyusunan Program Semester (Promes) serta perangkat pembelajaran lainnya.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -1532,7 +1562,10 @@ export default function Perangkat({ overrideTab }) {
               </table>
             </div>
 
-            <div style={{ marginTop: '40px' }}>
+            <div style={{ marginTop: '40px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Program Semester (Promes) di atas telah disusun secara rinci berdasarkan Program Tahunan dan Kalender Pendidikan yang berlaku. Distribusi materi, alokasi waktu, serta jadwal pelaksanaan pembelajaran telah memperhitungkan pekan efektif dan tidak efektif sehingga siap dilaksanakan pada semester yang bersangkutan.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -1578,7 +1611,10 @@ export default function Perangkat({ overrideTab }) {
               ))}
             </div>
 
-            <div style={{ marginTop: '30px' }}>
+            <div style={{ marginTop: '30px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Analisa Capaian Pembelajaran (CP) di atas telah disusun berdasarkan kajian mendalam terhadap kurikulum yang berlaku. Uraian kompetensi, lingkup materi, dan tujuan pembelajaran telah dipetakan secara sistematis untuk menjadi acuan dalam penyusunan perangkat pembelajaran.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -1687,7 +1723,10 @@ export default function Perangkat({ overrideTab }) {
               Modul Ajar pada menu <em>MODUL AJAR (PPM)</em> otomatis mengikuti TP di atas (termasuk LKPD yang selaras inti pembelajaran).
             </div>
 
-            <div style={{ marginTop: '28px' }}>
+            <div style={{ marginTop: '28px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Analisis CP dan TP Versi PP di atas telah disesuaikan dengan buku teks terbaru dan menjadi acuan resmi dalam penyusunan ATP, KKTP, Modul Ajar (PPM), kisi-kisi, serta kartu soal. Pemetaan ini telah memperhitungkan alokasi waktu dan karakteristik peserta didik.
+              </StatementBlock>
               <SignatureBlock semOverride={sourceSemKey} />
             </div>
           </div>
@@ -1735,7 +1774,10 @@ export default function Perangkat({ overrideTab }) {
               </table>
             </div>
 
-            <div style={{ marginTop: '45px' }}>
+            <div style={{ marginTop: '45px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Alur Tujuan Pembelajaran (ATP) di atas telah disusun secara sistematis dan berurutan sesuai dengan tahapan perkembangan kognitif peserta didik. ATP ini menjadi panduan dalam pelaksanaan pembelajaran dan asesmen untuk mencapai Capaian Pembelajaran yang ditetapkan.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -1805,7 +1847,10 @@ export default function Perangkat({ overrideTab }) {
               </div>
             </div>
 
-            <div style={{ marginTop: '40px' }}>
+            <div style={{ marginTop: '40px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Kriteria Ketercapaian Tujuan Pembelajaran (KKTP) di atas telah disusun berdasarkan metode interval nilai yang objektif dan terukur. KKTP ini menjadi acuan dalam menentukan ketuntasan belajar murid serta memberikan tindak lanjut yang tepat (remedial/pengayaan).
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -2074,12 +2119,12 @@ export default function Perangkat({ overrideTab }) {
                           </div>
                         </div>
                       </div>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
 
-              {/* SECTION 5: Asesmen, Evaluasi, & Tindak Lanjut - Modern cards, NO Table! */}
+                {/* SECTION 5: Asesmen, Evaluasi, & Tindak Lanjut - Modern cards, NO Table! */}
               <div className="modern-card">
                 <div className="modern-card-header">
                   <span>IV. RENCANA ASESMEN, EVALUASI, & TINDAK LANJUT</span>
@@ -2117,6 +2162,14 @@ export default function Perangkat({ overrideTab }) {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* TANDA TANGAN MODUL AJAR - Ditempatkan setelah Rencana Asesmen, sebelum Bahan Ajar & Lampiran */}
+              <div style={{ marginTop: '30px', pageBreakInside: 'avoid' }}>
+                <StatementBlock>
+                  <strong>Dengan ini saya nyatakan bahwa</strong> Modul Ajar / Perencanaan Pembelajaran Mendalam (PPM) ini telah disusun secara sistematis dan komprehensif sesuai dengan Capaian Pembelajaran (CP), Tujuan Pembelajaran (TP), dan prinsip-prinsip Kurikulum Merdeka. Seluruh komponen perencanaan, langkah pembelajaran, asesmen, serta lampiran LKPD telah selaras dengan kebutuhan pembelajaran murid dan siap dilaksanakan pada Tahun Ajaran 2026/2027.
+                </StatementBlock>
+                <SignatureBlock semOverride={sem} />
               </div>
 
               {/* SECTION 6: Bahan Ajar Lengkap & Kontekstual */}
@@ -2476,10 +2529,6 @@ export default function Perangkat({ overrideTab }) {
                   </div>
                 );
               })()}
-
-              <div style={{ marginTop: '20px' }}>
-                <SignatureBlock semOverride={sem} />
-              </div>
             </div>
           </div>
         );
@@ -2528,7 +2577,10 @@ export default function Perangkat({ overrideTab }) {
               </table>
             </div>
 
-            <div style={{ marginTop: '40px' }}>
+            <div style={{ marginTop: '40px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Kisi-Kisi Soal Asesmen di atas telah disusun berdasarkan analisis Tujuan Pembelajaran (TP) dan indikator pencapaian kompetensi. Kisi-kisi ini menjadi acuan dalam penyusunan soal asesmen yang valid dan reliable untuk mengukur ketercapaian pembelajaran murid.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
@@ -2584,7 +2636,10 @@ export default function Perangkat({ overrideTab }) {
               </div>
             </div>
 
-            <div style={{ marginTop: '30px' }}>
+            <div style={{ marginTop: '30px', pageBreakInside: 'avoid' }}>
+              <StatementBlock>
+                <strong>Dengan ini saya nyatakan bahwa</strong> Kartu Soal Asesmen di atas telah disusun berdasarkan kisi-kisi soal dan Tujuan Pembelajaran (TP) yang telah ditetapkan. Soal-soal telah dirancang untuk mengukur kemampuan berpikir kritis (HOTS) dan dilengkapi dengan kunci jawaban serta rubrik penilaian yang jelas.
+              </StatementBlock>
               <SignatureBlock semOverride={sem} />
             </div>
           </div>
