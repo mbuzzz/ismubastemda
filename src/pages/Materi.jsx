@@ -26,11 +26,11 @@ const Materi = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Path QR cetak: /materi/:mapel/:kelas/bab-:bab — prioritas path, lalu query
-  const fromPath = Boolean(params.mapel || params.kelas || params.bab);
+  // Path QR cetak: /materi/:mapel/:kelas/bab-{n} — prioritas path, lalu query
+  const fromPath = Boolean(params.mapel || params.kelas || params.bab || params.babSlug);
   const initialMapel = normalizeMapel(params.mapel || searchParams.get('mapel') || 'pai');
   const initialKelas = normalizeKelas(params.kelas || searchParams.get('kelas') || 'X');
-  const initialBab = normalizeBab(params.bab || searchParams.get('bab') || '1');
+  const initialBab = normalizeBab(params.bab || params.babSlug || searchParams.get('bab') || '1');
 
   const [mapel, setMapel] = useState(initialMapel);
   const [kelas, setKelas] = useState(initialKelas);
@@ -72,7 +72,7 @@ const Materi = () => {
   useEffect(() => {
     const nextMapel = normalizeMapel(params.mapel || searchParams.get('mapel') || mapel);
     const nextKelas = normalizeKelas(params.kelas || searchParams.get('kelas') || kelas);
-    const nextBab = normalizeBab(params.bab || searchParams.get('bab') || bab);
+    const nextBab = normalizeBab(params.bab || params.babSlug || searchParams.get('bab') || bab);
     if (nextMapel !== mapel) setMapel(nextMapel);
     if (nextKelas !== kelas) setKelas(nextKelas);
     if (nextBab !== bab) setBab(nextBab);

@@ -462,71 +462,51 @@ export const faseEArab = {
       materi: [
         {
           bab: 1,
-          judul: "البيت (Rumah)",
+          judul: "الدَّرْسُ الأَوَّلُ: حُبُّ الْمَسْجِدِ (Cinta Masjid)",
           elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 10,
-          minggu: 5,
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "1.1.1 Mengidentifikasi bunyi kata tentang البيت.",
-            "1.1.2 Melafalkan ulang kata yang diperdengarkan tentang البيت.",
-            "1.1.3 Memahami teks dialog atau narasi tentang البيت.",
-            "1.1.4 Menggunakan kaidah اسم الإشارة dan أحرف الجر untuk menilai informasi yang didengar tentang البيت.",
-            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang البيت.",
-            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang البيت.",
-            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang البيت."
+            "1.1.1 Mengidentifikasi bunyi kata dan ungkapan tentang حُبُّ الْمَسْجِدِ (cinta masjid).",
+            "1.1.2 Melafalkan ulang kata dan ungkapan yang diperdengarkan tentang cinta masjid.",
+            "1.1.3 Memahami teks dialog atau narasi lisan tentang cinta masjid.",
+            "1.1.4 Menggunakan kaidah اسم الإشارة (kata tunjuk) untuk menilai informasi yang didengar tentang masjid.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab untuk mengungkapkan kecintaan pada masjid.",
+            "1.1.6 Membangun interaksi lisan (dialog) tentang aktivitas di masjid.",
+            "1.1.7 Menggunakan susunan gramatikal (اسم الإشارة dan أحرف الجر) sebagai alat komunikasi.",
+            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang cinta masjid.",
+            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang cinta masjid.",
+            "1.1.10 Menggunakan kaidah اسم الإشارة dan أحرف الجر untuk memahami teks tertulis.",
+            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang aktivitas di masjid.",
+            "1.1.12 Memaparkan kalimat sederhana tentang cinta masjid.",
+            "1.1.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang masjid.",
+            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang cinta masjid."
           ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
+          capaian: "Murid mampu memahami, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik حُبُّ الْمَسْجِدِ menggunakan kaidah اسم الإشارة dan أحرف الجر."
         },
         {
           bab: 2,
-          judul: "التعارف (Perkenalan)",
+          judul: "الدَّرْسُ الثَّانِي: فِي السُّوْقِ (Di Pasar)",
           elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 8,
-          minggu: 4,
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "1.1.3 Memahami teks dialog atau narasi tentang التعارف.",
-            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang التعارف.",
-            "1.1.6 Membangun interaksi menggunakan Bahasa Arab tentang التعارف.",
-            "1.1.7 Menggunakan susunan gramatikal (الضمير المنفصل والمتصل) sebagai alat komunikasi tentang التعارف.",
-            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang التعارف.",
-            "1.1.12 Memaparkan kalimat sederhana tentang التعارف.",
-            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang التعارف."
+            "1.1.1 Mengidentifikasi bunyi kata dan ungkapan tentang فِي السُّوْقِ (di pasar).",
+            "1.1.2 Melafalkan ulang kata yang diperdengarkan tentang aktivitas di pasar.",
+            "1.1.3 Memahami teks dialog atau narasi lisan tentang jual-beli di pasar.",
+            "1.1.4 Menggunakan kaidah المفرد والمثنى والجمع untuk menilai informasi yang didengar.",
+            "1.1.5 Berkomunikasi menggunakan Bahasa Arab untuk bertransaksi sederhana di pasar.",
+            "1.1.6 Membangun interaksi lisan (dialog) jual-beli di pasar.",
+            "1.1.7 Menggunakan susunan gramatikal (المفرد والمثنى والجمع dan الأعداد) sebagai alat komunikasi.",
+            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang pasar.",
+            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang pasar.",
+            "1.1.10 Menggunakan kaidah untuk memahami teks tertulis tentang aktivitas di pasar.",
+            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang jual-beli.",
+            "1.1.12 Memaparkan kalimat sederhana tentang pengalaman di pasar.",
+            "1.1.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang pasar.",
+            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang pasar."
           ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
-        },
-        {
-          bab: 3,
-          judul: "المكتبة (Perpustakaan)",
-          elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 8,
-          minggu: 4,
-          tp: [
-            "1.1.1 Mengidentifikasi bunyi kata tentang المكتبة.",
-            "1.1.3 Memahami teks dialog atau narasi tentang المكتبة.",
-            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang المكتبة.",
-            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang المكتبة.",
-            "1.1.9 Memahami teks tertulis berupa dialog maupun narasi tentang المكتبة.",
-            "1.1.10 Menggunakan kaidah المفرد، المثنى، الجمع untuk memahami teks tertulis tentang المكتبة.",
-            "1.1.13 Membuat urutan kata menjadi kalimat sederhana tentang المكتبة."
-          ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
-        },
-        {
-          bab: 4,
-          judul: "المدرسة (Sekolah)",
-          elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "1.1.3 Memahami teks dialog atau narasi tentang المدرسة.",
-            "1.1.5 Berkomunikasi menggunakan Bahasa Arab tentang المدرسة.",
-            "1.1.6 Membangun interaksi menggunakan Bahasa Arab tentang المدرسة.",
-            "1.1.7 Menggunakan susunan gramatikal (أحرف الجر dan kaidah semester ganjil) sebagai alat komunikasi tentang المدرسة.",
-            "1.1.8 Membaca dengan nyaring teks dialog dan narasi tentang المدرسة.",
-            "1.1.11 Menghubungkan kata menjadi kalimat sederhana tentang المدرسة.",
-            "1.1.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang المدرسة."
-          ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik البيت، التعارف، المكتبة، المدرسة menggunakan kaidah اسم الإشارة، الضمير المنفصل والمتصل، المفرد، المثنى، الجمع، dan أحرف الجر."
+          capaian: "Murid mampu memahami, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik فِي السُّوْقِ menggunakan kaidah المفرد والمثنى والجمع dan الأعداد."
         }
       ]
     },
@@ -535,72 +515,52 @@ export const faseEArab = {
       nomor: 2,
       materi: [
         {
-          bab: 5,
-          judul: "المقصف (Kantin)",
+          bab: 3,
+          judul: "الدَّرْسُ الثَّالِثُ: مَكْتَبَةُ الْمَدِينَةِ (Perpustakaan Kota)",
           elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 10,
-          minggu: 5,
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "1.2.1 Mengidentifikasi bunyi kata tentang المقصف.",
-            "1.2.2 Melafalkan ulang kata yang diperdengarkan tentang المقصف.",
-            "1.2.3 Memahami teks dialog atau narasi tentang المقصف.",
-            "1.2.4 Menggunakan kaidah ظرف المكان untuk menilai informasi yang didengar tentang المقصف.",
-            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang المقصف.",
-            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang المقصف.",
-            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang المقصف."
+            "1.2.1 Mengidentifikasi bunyi kata dan ungkapan tentang مَكْتَبَةُ الْمَدِينَةِ (perpustakaan kota).",
+            "1.2.2 Melafalkan ulang kata yang diperdengarkan tentang perpustakaan.",
+            "1.2.3 Memahami teks dialog atau narasi lisan tentang perpustakaan kota.",
+            "1.2.4 Menggunakan kaidah الضمير المنفصل والمتصل untuk menilai informasi yang didengar.",
+            "1.2.5 Berkomunikasi menggunakan Bahasa Arab untuk meminjam dan mencari buku di perpustakaan.",
+            "1.2.6 Membangun interaksi lisan (dialog) di perpustakaan kota.",
+            "1.2.7 Menggunakan susunan gramatikal (الضمير dan الأفعال) sebagai alat komunikasi.",
+            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang perpustakaan.",
+            "1.2.9 Memahami teks tertulis berupa dialog maupun narasi tentang perpustakaan kota.",
+            "1.2.10 Menggunakan kaidah الضمير المنفصل والمتصل untuk memahami teks tertulis.",
+            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang perpustakaan.",
+            "1.2.12 Memaparkan kalimat sederhana tentang kunjungan ke perpustakaan.",
+            "1.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang perpustakaan.",
+            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang perpustakaan kota."
           ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
+          capaian: "Murid mampu memahami, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik مَكْتَبَةُ الْمَدِينَةِ menggunakan kaidah الضمير المنفصل والمتصل."
         },
         {
-          bab: 6,
-          judul: "الأسرة (Keluarga)",
+          bab: 4,
+          judul: "الدَّرْسُ الرَّابِعُ: الْمَحَطَّةُ (Stasiun)",
           elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 8,
-          minggu: 4,
+          alokasi: 18,
+          minggu: 9,
           tp: [
-            "1.2.3 Memahami teks dialog atau narasi tentang الأسرة.",
-            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang الأسرة.",
-            "1.2.6 Membangun interaksi secara lisan mengenai الأسرة.",
-            "1.2.7 Menggunakan susunan مبتدأ وخبر sebagai alat komunikasi tentang الأسرة.",
-            "1.2.9 Memahami teks tertulis dialog maupun narasi tentang الأسرة.",
-            "1.2.12 Memaparkan gagasan pada kalimat sederhana tentang الأسرة.",
-            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang الأسرة."
+            "1.2.1 Mengidentifikasi bunyi kata dan ungkapan tentang الْمَحَطَّةُ (stasiun).",
+            "1.2.2 Melafalkan ulang kata yang diperdengarkan tentang stasiun dan perjalanan.",
+            "1.2.3 Memahami teks dialog atau narasi lisan tentang stasiun.",
+            "1.2.4 Menggunakan kaidah ظرف المكان dan ظرف الزمان untuk menilai informasi yang didengar.",
+            "1.2.5 Berkomunikasi menggunakan Bahasa Arab untuk menanyakan arah dan jadwal di stasiun.",
+            "1.2.6 Membangun interaksi lisan (dialog) di stasiun.",
+            "1.2.7 Menggunakan susunan gramatikal (ظرف المكان وظرف الزمان) sebagai alat komunikasi.",
+            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang stasiun.",
+            "1.2.9 Memahami teks tertulis berupa dialog maupun narasi tentang stasiun.",
+            "1.2.10 Menggunakan kaidah untuk memahami teks tertulis tentang perjalanan.",
+            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang stasiun.",
+            "1.2.12 Memaparkan kalimat sederhana tentang pengalaman di stasiun.",
+            "1.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang stasiun.",
+            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang stasiun."
           ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
-        },
-        {
-          bab: 7,
-          judul: "الوقت (Waktu)",
-          elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 8,
-          minggu: 4,
-          tp: [
-            "1.2.1 Mengidentifikasi bunyi kata tentang الوقت.",
-            "1.2.3 Memahami teks dialog atau narasi tentang الوقت.",
-            "1.2.4 Menggunakan kaidah ظرف الزمان untuk menilai informasi yang didengar.",
-            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang الوقت.",
-            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang الوقت.",
-            "1.2.10 Menggunakan gramatikal untuk memahami teks tertulis maupun tersirat tentang الوقت.",
-            "1.2.13 Membuat urutan kata menjadi kalimat sempurna sederhana tentang الوقت."
-          ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
-        },
-        {
-          bab: 8,
-          judul: "أحمد دحلان (Ahmad Dahlan)",
-          elemen: "Menyimak, Berbicara, Membaca, Menulis",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "1.2.3 Memahami teks dialog atau narasi tentang أحمد دحلان.",
-            "1.2.5 Berkomunikasi dengan Bahasa Arab tentang أحمد دحلان.",
-            "1.2.6 Membangun interaksi secara lisan mengenai keteladanan أحمد دحلان.",
-            "1.2.7 Menggunakan susunan مبتدأ وخبر مقدم serta kaidah semester genap sebagai alat komunikasi.",
-            "1.2.8 Membaca dengan nyaring teks dialog dan narasi tentang أحمد دحلان.",
-            "1.2.11 Menghubungkan kata menjadi kalimat sederhana tentang أحمد دحلان.",
-            "1.2.14 Menggunakan susunan gramatikal untuk mengungkapkan gagasan secara tertulis dan lisan tentang أحمد دحلان."
-          ],
-          capaian: "Murid mampu memahami pengucapan, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik المقصف، الأسرة، الوقت، dan أحمد دحلان menggunakan kaidah ظرف الزمان، ظرف المكان، serta مبتدأ وخبر مقدم."
+          capaian: "Murid mampu memahami, mengucapkan, membaca, dan menulis narasi lisan (monolog dan dialog) di area publik lokal dengan topik الْمَحَطَّةُ menggunakan kaidah ظرف المكان dan ظرف الزمان."
         }
       ]
     }

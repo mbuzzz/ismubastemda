@@ -1,212 +1,108 @@
 // src/data/raw_materi/dataArab.js
 export const dataArab = {
   X: {
-    1: { // البيت (Rumah)
-      ringkasan: "Materi البيت membekali murid dengan kosakata, dialog, dan narasi tentang rumah serta lingkungan sekitar. Fokus kaidah: اسم الإشارة (kata tunjuk) dan أحرف الجر (huruf jar) untuk menunjuk letak ruangan dan benda di rumah.",
+    1: { // الدَّرْسُ الأَوَّلُ: حُبُّ الْمَسْجِدِ (Cinta Masjid)
+      ringkasan: "Materi حُبُّ الْمَسْجِدِ membekali murid dengan kosakata, dialog, dan narasi tentang masjid serta aktivitas di dalamnya: salat berjamaah, azan, dan adab memasuki masjid. Fokus kaidah: اسم الإشارة (kata tunjuk) dan أحرف الجر (huruf jar).",
       sections: [
         {
-          title: "A. Al-Mufradat (Kosakata Inti) — البيت",
-          content: "Kosakata dasar tentang rumah dan isinya:\n- الْبَيْتُ (al-baitu) = rumah\n- الْغُرْفَةُ (al-ghurfatu) = kamar\n- غُرْفَةُ النَّوْمِ (ghurfatu an-naumi) = kamar tidur\n- غُرْفَةُ الْجُلُوْسِ (ghurfatu al-juluusi) = ruang tamu\n- الْمَطْبَخُ (al-mathbakhu) = dapur\n- الْحَمَّامُ (al-hammaamu) = kamar mandi\n- الْبَابُ (al-baabu) = pintu\n- النَّافِذَةُ (an-naafidzatu) = jendela\n- الْمِفْتَاحُ (al-miftaahu) = kunci\n- الْمِنْضَدَةُ (al-mindhadatu) = meja\n- الْكُرْسِيُّ (al-kursiyyu) = kursi\n- السَّرِيْرُ (as-sariiru) = tempat tidur\n- الْمِصْبَاحُ (al-mishbaahu) = lampu\n- فِيْ (fii) = di dalam\n- عَلَى (alaa) = di atas\n- تَحْتَ (tahta) = di bawah\n- أَمَامَ (amaama) = di depan\n- خَلْفَ (khalfa) = di belakang\n- بَيْنَ (baina) = di antara\n- هٰذَا / هٰذِهِ (hadzaa / hadzihi) = ini (lk/pr)\n- ذٰلِكَ / تِلْكَ (dzalika / tilka) = itu (lk/pr)"
+          title: "A. Al-Mufradat (Kosakata Inti) — حُبُّ الْمَسْجِدِ",
+          content: "Kosakata dasar tentang masjid dan aktivitasnya:\n- الْمَسْجِدُ (al-masjidu) = masjid\n- حُبُّ (hubbu) = cinta\n- الْأَذَانُ (al-adzaanu) = azan\n- الْمُؤَذِّنُ (al-mu'adzdzinu) = muazin\n- الصَّلَاةُ (ash-shalaatu) = salat\n- الْجَمَاعَةُ (al-jamaa'atu) = berjamaah\n- الْإِمَامُ (al-imaamu) = imam\n- الْمِنْبَرُ (al-minbaru) = mimbar\n- الْمِحْرَابُ (al-mihraabu) = mihrab\n- السَّجَّادَةُ (as-sajjaadatu) = sajadah/karpet\n- الْمِصْبَاحُ (al-mishbaahu) = lampu\n- يَدْخُلُ (yadkhulu) = masuk\n- يُصَلِّي (yushallii) = salat\n- يَسْمَعُ (yasma'u) = mendengar\n- يَجْلِسُ (yajlisu) = duduk\n- قَبْلَ / بَعْدَ (qabla / ba'da) = sebelum / sesudah\n- فِي / عَلَى / إِلَى / مِنْ = di dalam / di atas / ke / dari\n- هٰذَا / هٰذِهِ / ذٰلِكَ / تِلْكَ = ini / itu (lk/pr)"
         },
         {
-          title: "B. Al-Hiwar (Dialog) — فِي الْبَيْتِ",
-          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا عَلِيّ\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ يَا أَحْمَد. كَيْفَ حَالُكَ؟\nأَحْمَد : بِخَيْرٍ، الْحَمْدُ للهِ. هٰذَا بَيْتِيْ.\nعَلِيّ : مَا شَاءَ اللهُ، بَيْتٌ جَمِيْلٌ. أَيْنَ غُرْفَةُ الْجُلُوْسِ؟\nأَحْمَد : غُرْفَةُ الْجُلُوْسِ أَمَامَ الْبَابِ. هٰذِهِ غُرْفَةُ الْجُلُوْسِ.\nعَلِيّ : وَأَيْنَ الْمَطْبَخُ؟\nأَحْمَد : الْمَطْبَخُ خَلْفَ غُرْفَةِ الْجُلُوْسِ. وَالْحَمَّامُ بَيْنَ غُرْفَةِ النَّوْمِ وَالْمَطْبَخِ.\nعَلِيّ : هٰذَا كُرْسِيٌّ كَبِيْرٌ. أَيْنَ الْمِنْضَدَةُ؟\nأَحْمَد : الْمِنْضَدَةُ عَلَى يَمِيْنِ الْكُرْسِيِّ. وَالْمِصْبَاحُ فَوْقَ الْمِنْضَدَةِ.\n\nTerjemahan singkat: Ahmad menyambut Ali di rumahnya, menunjukkan ruang tamu, dapur, kamar mandi, kursi, meja, dan lampu dengan kata tunjuk serta keterangan tempat."
+          title: "B. Al-Hiwar (Dialog) — فِي الْمَسْجِدِ",
+          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا عَلِيّ\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ. أَيْنَ تَذْهَبُ؟\nأَحْمَد : أَذْهَبُ إِلَى الْمَسْجِدِ. هٰذَا مَسْجِدُ حَيِّنَا.\nعَلِيّ : مَا شَاءَ اللهُ، مَسْجِدٌ جَمِيْلٌ وَنَظِيْفٌ.\nأَحْمَد : نَعَمْ. الْمُؤَذِّنُ يُؤَذِّنُ الْآنَ. هَلْ تُصَلِّي مَعَنَا؟\nعَلِيّ : نَعَمْ، أُحِبُّ الصَّلَاةَ فِي الْمَسْجِدِ.\nأَحْمَد : تَعَالَ. الْإِمَامُ أَمَامَ الْمِحْرَابِ.\nعَلِيّ : حَسَنًا. نَدْخُلُ الْمَسْجِدَ بِالسَّلَامِ.\n\nTerjemahan singkat: Ahmad mengajak Ali ke masjid, menunjuk masjid lingkungannya, mendengar azan, dan masuk masjid untuk salat berjamaah dengan adab yang baik."
         },
         {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — بَيْتِيْ",
-          content: "هٰذَا بَيْتِيْ. بَيْتِيْ صَغِيْرٌ وَجَمِيْلٌ. فِيْ بَيْتِيْ غُرْفَةُ جُلُوْسٍ وَغُرْفَتَا نَوْمٍ وَمَطْبَخٌ وَحَمَّامٌ. غُرْفَةُ الْجُلُوْسِ أَمَامَ الْبَابِ. فِيْ غُرْفَةِ الْجُلُوْسِ مِنْضَدَةٌ وَكُرْسِيَّانِ وَمِصْبَاحٌ. الْمِصْبَاحُ عَلَى الْمِنْضَدَةِ. غُرْفَةُ النَّوْمِ خَلْفَ غُرْفَةِ الْجُلُوْسِ. فِيْ غُرْفَةِ النَّوْمِ سَرِيْرٌ وَنَافِذَةٌ. أَنَا أُحِبُّ بَيْتِيْ.\n\nArti: Ini rumahku. Rumahku kecil dan indah. Di rumahku ada ruang tamu, dua kamar tidur, dapur, dan kamar mandi. Ruang tamu di depan pintu. Di ruang tamu ada meja, dua kursi, dan lampu. Lampu di atas meja. Kamar tidur di belakang ruang tamu. Di kamar tidur ada tempat tidur dan jendela. Aku menyukai rumahku."
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — أُحِبُّ الْمَسْجِدَ",
+          content: "هٰذَا مَسْجِدُ حَيِّنَا. هُوَ مَسْجِدٌ كَبِيْرٌ وَجَمِيْلٌ. فِيْهِ مِحْرَابٌ وَمِنْبَرٌ وَسَجَّادَاتٌ. أُحِبُّ الذَّهَابَ إِلَى الْمَسْجِدِ كُلَّ يَوْمٍ. أَسْمَعُ الْأَذَانَ ثُمَّ أَدْخُلُ الْمَسْجِدَ. أُصَلِّي الْفَرْضَ مَعَ الْجَمَاعَةِ. الْإِمَامُ يَقِفُ أَمَامَ الْمِحْرَابِ. الْمَسْجِدُ مَكَانٌ هَادِئٌ وَنَظِيْفٌ. أَنَا أُحِبُّ الْمَسْجِدَ حُبًّا كَبِيْرًا.\n\nArti: Ini masjid lingkungan kami. Ia masjid yang besar dan indah. Di dalamnya ada mihrab, mimbar, dan sajadah-sajadah. Aku suka pergi ke masjid setiap hari. Aku mendengar azan lalu masuk masjid. Aku salat wajib berjamaah. Imam berdiri di depan mihrab. Masjid adalah tempat yang tenang dan bersih. Aku mencintai masjid dengan cinta yang besar."
         },
         {
           title: "D. Al-Qawa'id (Kaidah) — اسم الإشارة و أحرف الجر",
-          content: "1. اسم الإشارة (Isim Isyarah / Kata Tunjuk)\n- Jarak dekat: هٰذَا (mudzakkar mufrad), هٰذِهِ (muannats mufrad)\n- Jarak jauh: ذٰلِكَ (mudzakkar), تِلْكَ (muannats)\nContoh: هٰذَا بَابٌ (Ini pintu). هٰذِهِ نَافِذَةٌ (Ini jendela). ذٰلِكَ سَرِيْرٌ (Itu tempat tidur). تِلْكَ غُرْفَةٌ (Itu kamar).\n\n2. أحرف الجر (Huruf Jar) yang sering dipakai di topik rumah:\n- فِيْ (di dalam), عَلَى (di atas), تَحْتَ (di bawah), أَمَامَ (di depan), خَلْفَ (di belakang), بَيْنَ (di antara), إِلَى (ke), مِنْ (dari)\nCatatan: isim setelah huruf jar berharakat kasrah (majrur), contoh: فِي الْبَيْتِ، عَلَى الْمِنْضَدَةِ.\n\nLatihan cepat: ubah 'Ini kursi di depan meja' → هٰذَا كُرْسِيٌّ أَمَامَ الْمِنْضَدَةِ."
+          content: "1. اسم الإشارة (Isim Isyarah / Kata Tunjuk)\n- Jarak dekat: هٰذَا (mudzakkar), هٰذِهِ (muannats)\n- Jarak jauh: ذٰلِكَ (mudzakkar), تِلْكَ (muannats)\nContoh: هٰذَا مَسْجِدٌ (Ini masjid). هٰذِهِ سَجَّادَةٌ (Ini sajadah). ذٰلِكَ مِنْبَرٌ (Itu mimbar). تِلْكَ مَكْتَبَةٌ (Itu perpustakaan).\n\n2. أحرف الجر (Huruf Jar) di konteks masjid:\n- فِي (di dalam): فِي الْمَسْجِدِ\n- عَلَى (di atas): عَلَى السَّجَّادَةِ\n- إِلَى (ke): إِلَى الْمَسْجِدِ\n- مِنْ (dari): مِنَ الْمَسْجِدِ\n- قَبْلَ / بَعْدَ (sebelum/sesudah): قَبْلَ الصَّلَاةِ، بَعْدَ الْأَذَانِ\nCatatan: isim setelah huruf jar berharakat kasrah (majrur).\n\nLatihan cepat: ubah 'Ini masjid di depan rumah' → هٰذَا مَسْجِدٌ أَمَامَ الْبَيْتِ."
         }
       ],
       rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in / Al-'Arabiyyah Baina Yadaik (materi al-bait).",
+        "Buku Pendidikan Bahasa Arab Kelas X — الدَّرْسُ الأَوَّلُ: حُبُّ الْمَسْجِدِ.",
         "Kamus Al-Munawwir Arab-Indonesia.",
         "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
       ]
     },
-    2: { // التعارف (Perkenalan)
-      ringkasan: "Materi التعارف melatih murid berkenalan, menyapa, dan berinteraksi santun. Fokus kaidah: الضمير المنفصل (kata ganti terpisah) dan الضمير المتصل (kata ganti tersambung) dalam dialog perkenalan.",
+    2: { // الدَّرْسُ الثَّانِي: فِي السُّوْقِ (Di Pasar)
+      ringkasan: "Materi فِي السُّوْقِ melatih murid bertransaksi dan berdialog jual-beli di pasar: menanya harga, menawar, dan membeli barang. Fokus kaidah: المفرد والمثنى والجمع (tunggal, dual, jamak) dan الأعداد (bilangan).",
       sections: [
         {
-          title: "A. Al-Mufradat (Kosakata Inti) — التعارف",
-          content: "Kosakata dan ungkapan perkenalan:\n- التَّعَارُفُ (at-ta'aaruf) = perkenalan\n- اِسْمِيْ... (ismii...) = namaku...\n- مَا اسْمُكَ؟ / مَا اسْمُكِ؟ (maa ismuka / ismuki) = siapa namamu (lk/pr)?\n- أَنَا (ana) = saya\n- أَنْتَ / أَنْتِ (anta / anti) = kamu (lk/pr)\n- هُوَ / هِيَ (huwa / hiya) = dia (lk/pr)\n- نَحْنُ (nahnu) = kami/kita\n- مِنْ أَيْنَ أَنْتَ؟ (min ayna anta) = dari mana asalmu?\n- أَنَا مِنْ... (ana min...) = saya dari...\n- كَيْفَ حَالُكَ؟ (kaifa haaluka) = bagaimana kabarmu?\n- بِخَيْرٍ، الْحَمْدُ للهِ (bi khairin, alhamdulillah) = baik, alhamdulillah\n- طَالِبٌ / طَالِبَةٌ (thaalib / thaalibah) = murid laki-laki / perempuan\n- صَدِيْقِيْ / صَدِيْقَتِيْ (shadiiqii / shadiiqatii) = temanku (lk/pr)\n- عُمْرِيْ... سَنَةً (umrii... sanatan) = umurku... tahun\n- أَهْلًا وَسَهْلًا (ahlan wa sahlan) = selamat datang"
+          title: "A. Al-Mufradat (Kosakata Inti) — فِي السُّوْقِ",
+          content: "Kosakata pasar dan transaksi:\n- السُّوْقُ (as-suqu) = pasar\n- الْبَائِعُ / الْبَائِعَةُ = penjual (lk/pr)\n- الْمُشْتَرِي = pembeli\n- الثَّمَنُ / السِّعْرُ = harga\n- الْفَاكِهَةُ = buah\n- الْخُضَرُ = sayur\n- اللَّحْمُ / السَّمَكُ = daging / ikan\n- الْأَرُزُّ = beras\n- كَمْ ثَمَنُ هٰذَا؟ = berapa harga ini?\n- غَالٍ / رَخِيْصٌ = mahal / murah\n- أُرِيْدُ أَنْ أَشْتَرِيَ... = saya ingin membeli...\n- خَفِّضِ الثَّمَنَ = turunkan harganya\n- كِيْلُوْ / نِصْفُ كِيْلُوْ = kilo / setengah kilo\n- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ... = satu, dua, tiga...\n- أَلْفٌ / أَلْفَانِ / آلَافٌ = seribu / dua ribu / ribuan\n- طَازِجٌ / جَيِّدٌ = segar / baik"
         },
         {
-          title: "B. Al-Hiwar (Dialog) — التَّعَارُفُ فِي الْمَدْرَسَةِ",
-          content: "فَاطِمَة : السَّلَامُ عَلَيْكُمْ\nزَّيْنَب : وَعَلَيْكُمُ السَّلَامُ وَرَحْمَةُ اللهِ\nفَاطِمَة : مَا اسْمُكِ يَا أُخْتِيْ؟\nزَيْـنَب : اِسْمِيْ زَيْنَب. وَمَا اسْمُكِ أَنْتِ؟\nفَاطِمَة : اِسْمِيْ فَاطِمَة. مِنْ أَيْنَ أَنْتِ؟\nزَيْـنَب : أَنَا مِنْ بَانْيُوْوَانْجِيْ. وَأَنْتِ؟\nفَاطِمَة : أَنَا مِنْ جِنْتِيْنْغ. أَنَا طَالِبَةٌ فِي الْمَدْرَسَةِ الثَّانَوِيَّةِ.\nزَيْـنَب : وَأَنَا أَيْضًا طَالِبَةٌ. هٰذِهِ صَدِيْقَتِيْ، اِسْمُهَا مَرْيَم.\nفَاطِمَة : أَهْلًا وَسَهْلًا يَا مَرْيَم. كَيْفَ حَالُكِ؟\nمَرْيَم : بِخَيْرٍ، الْحَمْدُ للهِ. تَشَرَّفْنَا.\n\nPerhatikan dhamir: اِسْمِيْ (ـيْ muttashil), اِسْمُكِ (ـكِ), اِسْمُهَا (ـهَا), أَنَا / أَنْتِ / هِيَ (munfashil)."
+          title: "B. Al-Hiwar (Dialog) — فِي السُّوْقِ",
+          content: "الْمُشْتَرِي : السَّلَامُ عَلَيْكُمْ. كَمْ ثَمَنُ هٰذَا التُّفَّاحِ؟\nالْبَائِعُ : وَعَلَيْكُمُ السَّلَامُ. عِشْرُوْنَ أَلْفًا لِلْكِيْلُوْ.\nالْمُشْتَرِي : غَالٍ جِدًّا. خَفِّضِ الثَّمَنَ مِنْ فَضْلِكَ.\nالْبَائِعُ : حَسَنًا، خَمْسَةَ عَشَرَ أَلْفًا. هَلْ تُرِيْدُ شَيْئًا آخَرَ؟\nالْمُشْتَرِي : نَعَمْ، أُرِيْدُ كِيْلُوًّا مِنَ الْمَوْزِ أَيْضًا.\nالْبَائِعُ : تَفَضَّلْ. الْمَجْمُوْعُ خَمْسَةٌ وَعِشْرُوْنَ أَلْفًا.\nالْمُشْتَرِي : خُذِ النُّقُوْدَ. شُكْرًا.\nالْبَائِعُ : شُكْرًا. مَعَ السَّلَامَةِ.\n\nPerhatikan bilangan: عِشْرُوْنَ (20), خَمْسَةَ عَشَرَ (15), خَمْسَةٌ وَعِشْرُوْنَ (25) dan bentuk kata: تُفَّاحٌ (mufrad), كِيْلُوًّا (manshub)."
         },
         {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — تَعَارُفِيْ",
-          content: "اِسْمِيْ أَحْمَد. أَنَا طَالِبٌ فِي الْفَصْلِ الْعَاشِرِ. عُمْرِيْ سِتَّةَ عَشَرَ سَنَةً. أَنَا مِنْ جِنْتِيْنْغ، بَانْيُوْوَانْجِيْ. هٰذَا صَدِيْقِيْ. اِسْمُهُ عَلِيّ. هُوَ طَالِبٌ مُجْتَهِدٌ. نَحْنُ نَتَعَلَّمُ اللُّغَةَ الْعَرَبِيَّةَ مَعًا. مُدَرِّسُنَا اِسْمُهُ الْأُسْتَاذُ يُوْسُف. هُوَ يُعَلِّمُنَا كُلَّ يَوْمٍ.\n\nArti: Namaku Ahmad. Aku murid kelas sepuluh. Umurku enam belas tahun. Aku dari Genteng, Banyuwangi. Ini temanku. Namanya Ali. Dia murid yang rajin. Kami belajar bahasa Arab bersama. Guru kami bernama Ustadz Yusuf. Beliau mengajar kami setiap hari."
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — سُوْقُ الْمَدِيْنَةِ",
+          content: "فِيْ مَدِيْنَتِنَا سُوْقٌ كَبِيْرٌ. النَّاسُ يَشْتَرُوْنَ الْفَاكِهَةَ وَالْخُضَرَ وَاللَّحْمَ. الْبَائِعُوْنَ يُنَادُوْنَ: «تَفَضَّلُوْا! الْأَسْعَارُ رَخِيْصَةٌ!» أَنَا أَذْهَبُ إِلَى السُّوْقِ مَعَ أُمِّيْ كُلَّ أُسْبُوْعٍ. نَسْأَلُ عَنِ الثَّمَنِ وَنَخْتَارُ الْبَضَائِعَ الْجَيِّدَةَ. السُّوْقُ مَكَانٌ مُزْدَحِمٌ وَمُفِيْدٌ.\n\nArti: Di kota kami ada pasar besar. Orang-orang membeli buah, sayur, dan daging. Para penjual berseru: «Silakan! Harga murah!» Aku pergi ke pasar bersama ibu setiap minggu. Kami menanyakan harga dan memilih barang yang baik. Pasar adalah tempat yang ramai dan bermanfaat."
+        },
+        {
+          title: "D. Al-Qawa'id (Kaidah) — المفرد والمثنى والجمع والأعداد",
+          content: "1. الْمُفْرَدُ (Mufrad / Tunggal): satu benda. Contoh: تُفَّاحَةٌ، كِتَابٌ، بَائِعٌ.\n\n2. الْمُثَنَّى (Mutsanna / Dual): dua benda.\n- Rafa': + انِ → بَائِعَانِ، كِتَابَانِ\n- Nashab/Jar: + يْنِ → بَائِعَيْنِ، كِتَابَيْنِ\nContoh: هٰذَانِ تُفَّاحَتَانِ (Ini dua apel).\n\n3. الْجَمْعُ (Jamak / lebih dari dua):\n- Jamak Mudzakkar Salim: بَائِعُوْنَ / بَائِعِيْنَ\n- Jamak Muannats Salim: مُشْتَرِيَاتٌ\n- Jamak Taksir: سُوْقٌ → أَسْوَاقٌ؛ كِتَابٌ → كُتُبٌ\n\n4. الْأَعْدَادُ (Bilangan) untuk harga:\n- 1–10: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ...\n- 11–19: أَحَدَ عَشَرَ، اِثْنَا عَشَرَ...\n- Puluhan: عِشْرُوْنَ، ثَلَاثُوْنَ...\n- Ribuan: أَلْفٌ، أَلْفَانِ، آلَافٌ\nContoh: ثَمَنُ هٰذَا الْكِتَابِ خَمْسَةُ آلَافٍ.\n\nPenerapan maharat: menyimak harga di pasar, berdialog tawar-menawar, membaca teks pasar, menulis dialog jual-beli sederhana."
+        }
+      ],
+      rujukan: [
+        "Buku Pendidikan Bahasa Arab Kelas X — الدَّرْسُ الثَّانِي: فِي السُّوْقِ.",
+        "Kamus Al-Munawwir Arab-Indonesia.",
+        "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
+      ]
+    },
+    3: { // الدَّرْسُ الثَّالِثُ: مَكْتَبَةُ الْمَدِينَةِ (Perpustakaan Kota)
+      ringkasan: "Materi مَكْتَبَةُ الْمَدِينَةِ mengajak murid berbahasa Arab di perpustakaan kota: meminjam buku, menunjuk koleksi, dan mendeskripsikan perpustakaan. Fokus kaidah: الضمير المنفصل والمتصل (kata ganti terpisah dan tersambung).",
+      sections: [
+        {
+          title: "A. Al-Mufradat (Kosakata Inti) — مَكْتَبَةُ الْمَدِينَةِ",
+          content: "Kosakata perpustakaan kota:\n- الْمَكْتَبَةُ (al-maktabatu) = perpustakaan\n- الْمَدِيْنَةُ (al-madiinatu) = kota\n- الْكِتَابُ (al-kitaabu) = buku\n- الْمَجَلَّةُ (al-majallatu) = majalah\n- الْقِصَّةُ (al-qishshatu) = cerita\n- الْقَامُوْسُ (al-qaamuusu) = kamus\n- الرَّفُّ (ar-raffu) = rak\n- أَمِيْنُ الْمَكْتَبَةِ = pustakawan\n- الْبِطَاقَةُ (al-bithaaqatu) = kartu\n- أَسْتَعِيْرُ (asta'iiru) = saya meminjam\n- أُعِيْدُ (u'iidu) = saya mengembalikan\n- أَقْرَأُ (aqra'u) = saya membaca\n- هَادِئٌ / نَظِيْفٌ = tenang / bersih\n- مُفِيْدٌ (mufiidun) = bermanfaat\n- كِتَابِيْ / كِتَابُهُ / كِتَابُهَا = bukuku / bukunya (lk/pr)\n- أَنَا / أَنْتَ / أَنْتِ / هُوَ / هِيَ / نَحْنُ = saya / kamu / dia / kami"
+        },
+        {
+          title: "B. Al-Hiwar (Dialog) — فِي مَكْتَبَةِ الْمَدِيْنَةِ",
+          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا أُسْتَاذ\nأَمِيْنُ الْمَكْتَبَةِ : وَعَلَيْكُمُ السَّلَامُ. أَهْلًا بِكَ فِي مَكْتَبَةِ الْمَدِيْنَةِ.\nأَحْمَد : أُرِيْدُ أَنْ أَسْتَعِيْرَ كِتَابَيْنِ مِنَ اللُّغَةِ الْعَرَبِيَّةِ.\nأَمِيْنُ الْمَكْتَبَةِ : تَفَضَّلْ. هٰذَانِ كِتَابَانِ مُفِيْدَانِ. هُنَاكَ كُتُبٌ كَثِيْرَةٌ عَلَى الرَّفِّ.\nأَحْمَد : شُكْرًا. هَلْ يَجُوْزُ أَنْ أَقْرَأَ الْمَجَلَّاتِ هُنَا؟\nأَمِيْنُ الْمَكْتَبَةِ : نَعَمْ، وَلٰكِنَّ الْمَكْتَبَةَ هَادِئَةٌ. اِقْرَأْ بِصَوْتٍ مُنْخَفِضٍ.\nأَحْمَد : حَسَنًا. سَأُعِيْدُ الْكِتَابَيْنِ بَعْدَ أُسْبُوْعٍ.\nأَمِيْنُ الْمَكْتَبَةِ : جَيِّدٌ. هٰذِهِ بِطَاقَةُ الْاِسْتِعَارَةِ.\n\nPerhatikan dhamir: أُرِيْدُ (ـيُ muttashil), بِكَ (ـكَ), كِتَابَيْنِ (mutsanna), أَسْتَعِيْرُ / أُعِيْدُ (fi'il mudhari')."
+        },
+        {
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَكْتَبَةُ الْمَدِيْنَةِ",
+          content: "فِيْ مَدِيْنَتِنَا مَكْتَبَةٌ كَبِيْرَةٌ وَجَمِيْلَةٌ. فِي الْمَكْتَبَةِ كُتُبٌ كَثِيْرَةٌ وَمَجَلَّاتٌ وَقَوَامِيْسُ. أَنَا أَذْهَبُ إِلَيْهَا كُلَّ أُسْبُوْعٍ مَعَ أَصْدِقَائِيْ. نَقْرَأُ الْقِصَصَ وَنَسْتَعِيْرُ الْكُتُبَ. أَمِيْنُ الْمَكْتَبَةِ يُسَاعِدُنَا. أُحِبُّ مَكْتَبَةَ الْمَدِيْنَةِ لِأَنَّهَا هَادِئَةٌ وَمُفِيْدَةٌ.\n\nArti: Di kota kami ada perpustakaan yang besar dan indah. Di perpustakaan banyak buku, majalah, dan kamus. Aku pergi ke sana setiap minggu bersama teman-temanku. Kami membaca cerita dan meminjam buku. Pustakawan membantu kami. Aku suka perpustakaan kota karena ia tenang dan bermanfaat."
         },
         {
           title: "D. Al-Qawa'id (Kaidah) — الضمير المنفصل والمتصل",
-          content: "1. الضمير المنفصل (Dhamir Munfashil) — berdiri sendiri:\n- أَنَا (saya), نَحْنُ (kami)\n- أَنْتَ / أَنْتِ / أَنْتُمَا / أَنْتُمْ / أَنْتُنَّ\n- هُوَ / هِيَ / هُمَا / هُمْ / هُنَّ\nContoh: أَنَا طَالِبٌ. هِيَ طَالِبَةٌ. نَحْنُ أَصْدِقَاءُ.\n\n2. الضمير المتصل (Dhamir Muttashil) — menempel pada isim/fi'il:\n- ـيْ (milikku): كِتَابِيْ، بَيْتِيْ، اِسْمِيْ\n- ـكَ / ـكِ (milikmu lk/pr): كِتَابُكَ، اِسْمُكِ\n- ـهُ / ـهَا (miliknya lk/pr): كِتَابُهُ، صَدِيْقَتُهَا\n- ـنَا (milik kami): مَدْرَسَتُنَا، مُدَرِّسُنَا\n\nKeterkaitan dengan maharat: menyimak dhamir dalam dialog, berbicara dengan dhamir yang sesuai gender, membaca teks ta'aruf, dan menulis perkenalan diri 5–7 kalimat."
+          content: "1. الضمير المنفصل (Dhamir Munfashil) — berdiri sendiri:\n- أَنَا (saya), نَحْنُ (kami)\n- أَنْتَ / أَنْتِ / أَنْتُمَا / أَنْتُمْ / أَنْتُنَّ\n- هُوَ / هِيَ / هُمَا / هُمْ / هُنَّ\nContoh: أَنَا قَارِئٌ. هِيَ مُفِيْدَةٌ. نَحْنُ طُلَّابٌ.\n\n2. الضمير المتصل (Dhamir Muttashil) — menempel pada isim/fi'il:\n- ـيْ (milikku): كِتَابِيْ، مَكْتَبَتِيْ\n- ـكَ / ـكِ (milikmu lk/pr): كِتَابُكَ، بِطَاقَتُكِ\n- ـهُ / ـهَا (miliknya lk/pr): كِتَابُهُ، مَجَلَّتُهَا\n- ـنَا (milik kami): مَدِيْنَتِنَا، مَكْتَبَتُنَا\n\nKeterkaitan dengan maharat: menyimak dhamir dalam dialog perpustakaan, berbicara meminjam buku, membaca teks, dan menulis kalimat tentang kunjungan ke perpustakaan."
         }
       ],
       rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab at-ta'aruf).",
+        "Buku Pendidikan Bahasa Arab Kelas X — الدَّرْسُ الثَّالِثُ: مَكْتَبَةُ الْمَدِينَةِ.",
         "Kamus Al-Munawwir Arab-Indonesia.",
         "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
       ]
     },
-    3: { // المكتبة (Perpustakaan)
-      ringkasan: "Materi المكتبة mengajak murid berbahasa Arab di konteks perpustakaan: meminjam buku, menunjuk koleksi, dan mendeskripsikan jumlah. Fokus kaidah: المفرد، المثنى، الجمع (tunggal, dual, jamak).",
+    4: { // الدَّرْسُ الرَّابِعُ: الْمَحَطَّةُ (Stasiun)
+      ringkasan: "Materi الْمَحَطَّةُ membekali murid bahasa fungsional di stasiun: membeli tiket, menanyakan jadwal dan arah, serta menunggu kereta. Fokus kaidah: ظرف المكان (keterangan tempat) dan ظرف الزمان (keterangan waktu).",
       sections: [
         {
-          title: "A. Al-Mufradat (Kosakata Inti) — المكتبة",
-          content: "Kosakata perpustakaan dan bilangan kata:\n- الْمَكْتَبَةُ (al-maktabatu) = perpustakaan\n- الْكِتَابُ (al-kitaabu) = buku\n- الْمَجَلَّةُ (al-majallatu) = majalah\n- الْقِصَّةُ (al-qishshatu) = cerita/kisah\n- الْقَامُوْسُ (al-qaamuusu) = kamus\n- الرَّفُّ (ar-raffu) = rak buku\n- اَلْبِطَاقَةُ (al-bithaaqatu) = kartu (anggota/peminjaman)\n- أَسْتَعِيْرُ (asta'iiru) = saya meminjam\n- أُعِيْدُ (u'iidu) = saya mengembalikan\n- أَقْرَأُ (aqra'u) = saya membaca\n- هَادِئٌ (haadi'un) = tenang/sunyi\n- مُفِيْدٌ (mufiidun) = bermanfaat\n- كِتَابٌ / كِتَابَانِ / كُتُبٌ (satu buku / dua buku / buku-buku)\n- مَجَلَّةٌ / مَجَلَّتَانِ / مَجَلَّاتٌ\n- طَالِبٌ / طَالِبَانِ / طُلَّابٌ / طَالِبُوْنَ"
+          title: "A. Al-Mufradat (Kosakata Inti) — الْمَحَطَّةُ",
+          content: "Kosakata stasiun dan perjalanan:\n- الْمَحَطَّةُ (al-mahaththatu) = stasiun\n- الْقِطَارُ (al-qithaaru) = kereta api\n- التَّذْكَرَةُ / الْبِطَاقَةُ = tiket\n- الرَّصِيْفُ (ar-rashiifu) = peron\n- الْمُسَافِرُ / الْمُسَافِرَةُ = penumpang (lk/pr)\n- الْمَوْعِدُ / الْجَدْوَلُ = jadwal\n- الْوُصُوْلُ / الِانْطِلَاقُ = kedatangan / keberangkatan\n- مَكْتَبُ التَّذَاكِرِ = loket tiket\n- قَاعَةُ الْاِنْتِظَارِ = ruang tunggu\n- أَمَامَ / خَلْفَ / بَيْنَ / بِجَانِبِ = di depan / di belakang / di antara / di samping\n- صَبَاحًا / مَسَاءً / الْيَوْمَ / غَدًا = pagi / sore / hari ini / besok\n- مَتَى؟ (mataa?) = kapan?\n- أَيْنَ؟ (ayna?) = di mana?\n- يَصِلُ / يُغَادِرُ = tiba / berangkat"
         },
         {
-          title: "B. Al-Hiwar (Dialog) — فِي الْمَكْتَبَةِ",
-          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ يَا أُسْتَاذُ\nأَمِيْنُ الْمَكْتَبَةِ : وَعَلَيْكُمُ السَّلَامُ. أَهْلًا بِكَ فِي الْمَكْتَبَةِ.\nأَحْمَد : أُرِيْدُ أَنْ أَسْتَعِيْرَ كِتَابَيْنِ مِنَ اللُّغَةِ الْعَرَبِيَّةِ.\nأَمِيْنُ الْمَكْتَبَةِ : تَفَضَّلْ. هٰذَانِ كِتَابَانِ مُفِيْدَانِ. وَهُنَاكَ كُتُبٌ كَثِيْرَةٌ عَلَى الرَّفِّ.\nأَحْمَد : شُكْرًا. هَلْ يَجُوْزُ أَنْ أَقْرَأَ الْمَجَلَّاتِ هُنَا؟\nأَمِيْنُ الْمَكْتَبَةِ : نَعَمْ، وَلٰكِنَّ الْمَكْتَبَةَ هَادِئَةٌ. اِقْرَأْ بِصَوْتٍ مُنْخَفِضٍ.\nأَحْمَد : حَسَنًا. سَأُعِيْدُ الْكِتَابَيْنِ بَعْدَ أُسْبُوْعٍ.\nأَمِيْنُ الْمَكْتَبَةِ : جَيِّدٌ. هٰذِهِ بِطَاقَةُ الْاِسْتِعَارَةِ.\n\nPerhatikan bentuk: كِتَابَيْنِ (mutsanna nashab/jar), كُتُبٌ (jamak taksir), الْمَجَلَّاتِ (jamak muannats)."
+          title: "B. Al-Hiwar (Dialog) — فِي الْمَحَطَّةِ",
+          content: "الْمُسَافِرُ : السَّلَامُ عَلَيْكُمْ. أُرِيْدُ تَذْكَرَةً إِلَى سُوْرَابَايَا مِنْ فَضْلِكَ.\nالْمُوَظَّفُ : وَعَلَيْكُمُ السَّلَامُ. مَتَى تُرِيْدُ السَّفَرَ؟\nالْمُسَافِرُ : غَدًا صَبَاحًا. مَتَى يُغَادِرُ الْقِطَارُ؟\nالْمُوَظَّفُ : يُغَادِرُ فِي السَّاعَةِ السَّابِعَةِ صَبَاحًا مِنَ الرَّصِيْفِ الثَّانِي.\nالْمُسَافِرُ : أَيْنَ مَكْتَبُ التَّذَاكِرِ؟\nالْمُوَظَّفُ : أَمَامَكَ عَلَى الْيَمِيْنِ، بِجَانِبِ قَاعَةِ الْاِنْتِظَارِ.\nالْمُسَافِرُ : شُكْرًا جَزِيْلًا.\n\nPerhatikan ظرف المكان: أَمَامَكَ، عَلَى الْيَمِيْنِ، بِجَانِبِ؛ dan ظرف الزمان: غَدًا، صَبَاحًا، فِي السَّاعَةِ السَّابِعَةِ."
         },
         {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَكْتَبَةُ الْمَدْرَسَةِ",
-          content: "فِيْ مَدْرَسَتِنَا مَكْتَبَةٌ كَبِيْرَةٌ. فِي الْمَكْتَبَةِ كُتُبٌ كَثِيْرَةٌ وَمَجَلَّاتٌ وَقَوَامِيْسُ. عَلَى الرَّفِّ الْأَوَّلِ كِتَابَانِ عَنِ التَّارِيْخِ. وَعَلَى الرَّفِّ الثَّانِيْ قِصَصٌ جَمِيْلَةٌ. الطُّلَّابُ يَقْرَءُوْنَ فِي الْمَكْتَبَةِ كُلَّ يَوْمٍ. الْمَكْتَبَةُ هَادِئَةٌ وَنَظِيْفَةٌ. أَنَا أُحِبُّ أَنْ أَسْتَعِيْرَ كِتَابًا كُلَّ أُسْبُوْعٍ.\n\nArti: Di sekolah kami ada perpustakaan besar. Di perpustakaan banyak buku, majalah, dan kamus. Di rak pertama ada dua buku tentang sejarah. Di rak kedua ada cerita-cerita indah. Para murid membaca di perpustakaan setiap hari. Perpustakaan tenang dan bersih. Aku senang meminjam satu buku setiap minggu."
+          title: "C. Al-Qira'ah (Bacaan/Narasi) — فِي الْمَحَطَّةِ",
+          content: "ذَهَبْتُ إِلَى الْمَحَطَّةِ صَبَاحًا. اِشْتَرَيْتُ تَذْكَرَةً مِنْ مَكْتَبِ التَّذَاكِرِ. جَلَسْتُ فِي قَاعَةِ الْاِنْتِظَارِ أَمَامَ الرَّصِيْفِ. وَصَلَ الْقِطَارُ فِي الْوَقْتِ الْمُحَدَّدِ. رَكِبْتُ الْقِطَارَ وَجَلَسْتُ بِجَانِبِ النَّافِذَةِ. الْقِطَارُ سَرِيْعٌ وَمُرِيْحٌ. بَعْدَ سَاعَتَيْنِ وَصَلْنَا إِلَى الْمَدِيْنَةِ. الْمَحَطَّةُ مَكَانٌ مُهِمٌّ فِي الْمَدِيْنَةِ.\n\nArti: Aku pergi ke stasiun pagi hari. Aku membeli tiket di loket. Aku duduk di ruang tunggu di depan peron. Kereta tiba tepat waktu. Aku naik kereta dan duduk di samping jendela. Kereta cepat dan nyaman. Setelah dua jam kami tiba di kota. Stasiun adalah tempat yang penting di kota."
         },
         {
-          title: "D. Al-Qawa'id (Kaidah) — المفرد، المثنى، الجمع",
-          content: "1. الْمُفْرَدُ (Mufrad / Tunggal): menunjukkan satu.\nContoh: كِتَابٌ، مَكْتَبَةٌ، طَالِبٌ.\n\n2. الْمُثَنَّى (Mutsanna / Dual): menunjukkan dua.\n- Rafa': + انِ → كِتَابَانِ، طَالِبَانِ\n- Nashab/Jar: + يْنِ → كِتَابَيْنِ، طَالِبَيْنِ\nContoh: هٰذَانِ كِتَابَانِ. أَسْتَعِيْرُ كِتَابَيْنِ.\n\n3. الْجَمْعُ (Jamak / Lebih dari dua):\n- Jamak Mudzakkar Salim: مُسْلِمُوْنَ / مُسْلِمِيْنَ (sering untuk orang)\n- Jamak Muannats Salim: مَجَلَّاتٌ، طَالِبَاتٌ\n- Jamak Taksir (pecah): كِتَابٌ → كُتُبٌ؛ طَالِبٌ → طُلَّابٌ\n\nPenerapan maharat: menyimak jumlah benda di perpustakaan, berbicara saat meminjam (satu/dua/banyak), membaca teks, menyusun kalimat berurutan tentang kunjungan ke perpustakaan."
+          title: "D. Al-Qawa'id (Kaidah) — ظرف المكان وظرف الزمان",
+          content: "1. ظرف المكان (Zharf al-Makan) — keterangan tempat:\n- فِي (di dalam): فِي الْمَحَطَّةِ\n- أَمَامَ (di depan): أَمَامَ الرَّصِيْفِ\n- خَلْفَ (di belakang): خَلْفَ قَاعَةِ الْاِنْتِظَارِ\n- بِجَانِبِ (di samping): بِجَانِبِ مَكْتَبِ التَّذَاكِرِ\n- بَيْنَ (di antara): بَيْنَ الرَّصِيْفَيْنِ\n\n2. ظرف الزمان (Zharf az-Zaman) — keterangan waktu:\n- الْيَوْمَ (hari ini), غَدًا (besok), أَمْسِ (kemarin)\n- صَبَاحًا (pagi), مَسَاءً (sore), لَيْلًا (malam)\n- فِي السَّاعَةِ... (pada pukul...)\n- قَبْلَ / بَعْدَ (sebelum / sesudah)\n\nPola kalimat: [subjek/fi'il] + [zharf] + [pelengkap]\nContoh: يُغَادِرُ الْقِطَارُ صَبَاحًا. أَجْلِسُ فِي قَاعَةِ الْاِنْتِظَارِ.\n\nLatihan: susun kalimat tentang perjalanan dengan minimal 3 zharf makan dan 3 zharf zaman."
         }
       ],
       rujukan: [
-        "Buku Qawaidul Lughah Al-'Arabiyyah (bab mufrad, mutsanna, jamak).",
+        "Buku Pendidikan Bahasa Arab Kelas X — الدَّرْسُ الرَّابِعُ: الْمَحَطَّةُ.",
         "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E — topik المكتبة."
-      ]
-    },
-    4: { // المدرسة (Sekolah)
-      ringkasan: "Materi المدرسة menutup semester ganjil dengan konteks sekolah: ruang kelas, guru, murid, dan aktivitas belajar. Kaidah digabung: اسم الإشارة، الضمائر، المفرد-المثنى-الجمع، dan أحرف الجر dalam komunikasi di sekolah.",
-      sections: [
-        {
-          title: "A. Al-Mufradat (Kosakata Inti) — المدرسة",
-          content: "Kosakata lingkungan sekolah:\n- الْمَدْرَسَةُ (al-madrasatu) = sekolah\n- الْفَصْلُ / الْقِسْمُ (al-fashlu) = kelas\n- الْمُدَرِّسُ / الْمُدَرِّسَةُ = guru (lk/pr)\n- الطَّالِبُ / الطَّالِبَةُ = murid (lk/pr)\n- السَّبُّوْرَةُ (as-sabbuuratu) = papan tulis\n- الْقَلَمُ (al-qalamu) = pena\n- الْكُرَّاسَةُ (al-kurraasatu) = buku tulis\n- الْحَقِيْبَةُ (al-haqiibatu) = tas\n- الْحِصَّةُ (al-hishshatu) = jam pelajaran\n- الْاِسْتِرَاحَةُ (al-istiraahatu) = istirahat\n- الْمَلْعَبُ (al-mal'abu) = lapangan\n- الْمَقْصَفُ (al-maqshafu) = kantin\n- يَدْرُسُ / تَدْرُسُ = belajar (lk/pr)\n- يُدَرِّسُ = mengajar\n- إِلَى الْمَدْرَسَةِ = ke sekolah\n- فِي الْفَصْلِ = di kelas\n- مَعَ الصَّدِيْقِ = bersama teman"
-        },
-        {
-          title: "B. Al-Hiwar (Dialog) — فِي الْمَدْرَسَةِ",
-          content: "عَلِيّ : السَّلَامُ عَلَيْكُمْ يَا أَحْمَد\nأَحْمَد : وَعَلَيْكُمُ السَّلَامُ. أَيْنَ تَذْهَبُ؟\nعَلِيّ : أَنَا أَذْهَبُ إِلَى الْمَدْرَسَةِ. هَلْ مَعَكَ كُرَّاسَةُ اللُّغَةِ الْعَرَبِيَّةِ؟\nأَحْمَد : نَعَمْ، هٰذِهِ كُرَّاسَتِيْ. وَهٰذَا قَلَمِيْ.\nعَلِيّ : شُكْرًا. مَتَى حِصَّةُ اللُّغَةِ الْعَرَبِيَّةِ؟\nأَحْمَد : بَعْدَ الْاِسْتِرَاحَةِ. الْأُسْتَاذُ يُوْسُفُ يُدَرِّسُنَا الْيَوْمَ.\nعَلِيّ : جَيِّدٌ. بَعْدَ الدَّرْسِ نَذْهَبُ إِلَى الْمَلْعَبِ أَمْ إِلَى الْمَقْصَفِ؟\nأَحْمَد : نَذْهَبُ إِلَى الْمَقْصَفِ مَعَ الْأَصْدِقَاءِ.\nعَلِيّ : حَسَنًا. هَيَّا نَدْخُلُ الْفَصْلَ. السَّبُّوْرَةُ أَمَامَ الْكُرَاسِيِّ.\n\nDialog ini memadukan isim isyarah (هٰذَا/هٰذِهِ), dhamir muttashil (كُرَّاسَتِيْ، قَلَمِيْ، يُدَرِّسُنَا), jamak (الْأَصْدِقَاءِ), dan huruf jar (إِلَى، فِيْ، مَعَ، بَعْدَ، أَمَامَ)."
-        },
-        {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَدْرَسَتِيْ",
-          content: "مَدْرَسَتِيْ اِسْمُهَا الْمَدْرَسَةُ الثَّانَوِيَّةُ الْمُحَمَّدِيَّةُ. هِيَ مَدْرَسَةٌ جَمِيْلَةٌ وَنَظِيْفَةٌ. أَذْهَبُ إِلَى الْمَدْرَسَةِ كُلَّ يَوْمٍ مَعَ صَدِيْقِيْ. فِيْ مَدْرَسَتِيْ فُصُوْلٌ كَثِيْرَةٌ وَمَكْتَبَةٌ وَمَلْعَبٌ وَمَقْصَفٌ. فِي الْفَصْلِ سَبُّوْرَةٌ وَمَكَاتِبُ وَكُرَاسِيُّ. الْمُدَرِّسُوْنَ يُعَلِّمُوْنَنَا بِجِدٍّ. نَحْنُ نَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ وَالْعُلُوْمَ الْأُخْرَى. أَنَا أُحِبُّ مَدْرَسَتِيْ.\n\nArti: Sekolahku bernama sekolah menengah Muhammadiyah. Ia sekolah yang indah dan bersih. Aku pergi ke sekolah setiap hari bersama temanku. Di sekolahku banyak kelas, perpustakaan, lapangan, dan kantin. Di kelas ada papan tulis, meja-meja, dan kursi-kursi. Para guru mengajar kami dengan sungguh-sungguh. Kami belajar bahasa Arab dan ilmu-ilmu lain. Aku menyukai sekolahku."
-        },
-        {
-          title: "D. Al-Qawa'id (Kaidah Terpadu) — Review Semester Ganjil",
-          content: "Ringkasan kaidah yang dipadukan pada topik المدرسة:\n\n1. اسم الإشارة: هٰذَا قَلَمٌ، هٰذِهِ سَبُّوْرَةٌ، ذٰلِكَ مَلْعَبٌ، تِلْكَ مَكْتَبَةٌ.\n2. الضمير المنفصل: أَنَا طَالِبٌ، هُوَ مُدَرِّسٌ، نَحْنُ طُلَّابٌ.\n3. الضمير المتصل: مَدْرَسَتِيْ، صَدِيْقِيْ، كِتَابُكَ، مُدَرِّسُنَا.\n4. المفرد – المثنى – الجمع: طَالِبٌ / طَالِبَانِ / طُلَّابٌ؛ كِتَابٌ / كِتَابَانِ / كُتُبٌ.\n5. أحرف الجر: إِلَى الْمَدْرَسَةِ، فِي الْفَصْلِ، عَلَى الْمَكْتَبِ، مَعَ الصَّدِيْقِ، مِنَ الْبَيْتِ.\n\nTugas unjuk kerja terpadu: tulis dan presentasikan monolog singkat (8–10 kalimat) tentang sekolahmu dengan minimal satu contoh dari setiap kaidah di atas."
-        }
-      ],
-      rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-madrasah).",
-        "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E Semester Ganjil."
-      ]
-    },
-    5: { // المقصف (Kantin)
-      ringkasan: "Materi المقصف melatih murid bertransaksi dan berdialog di kantin sekolah. Fokus kaidah: ظرف المكان (keterangan tempat) untuk menyebutkan letak makanan, meja, antrian, dan fasilitas kantin.",
-      sections: [
-        {
-          title: "A. Al-Mufradat (Kosakata Inti) — المقصف",
-          content: "Kosakata kantin dan transaksi:\n- الْمَقْصَفُ (al-maqshafu) = kantin\n- الطَّعَامُ (ath-tha'aamu) = makanan\n- الشَّرَابُ (asy-syaraabu) = minuman\n- الْأَرُزُّ (al-aruzzu) = nasi\n- الْخُبْزُ (al-khubzu) = roti\n- الْمَاءُ (al-maa'u) = air\n- الْعَصِيْرُ (al-'ashiiru) = jus\n- الثَّمَنُ (ats-tsamanu) = harga\n- كَمْ؟ (kam?) = berapa?\n- أُرِيْدُ... (uriidu...) = saya ingin...\n- مِنْ فَضْلِكَ (min fadhlika) = tolong/mohon\n- تَفَضَّلْ (tafadhdhal) = silakan\n- شُكْرًا (syukran) = terima kasih\n- الْبَائِعُ / الْبَائِعَةُ = penjual (lk/pr)\n- الْمُشْتَرِي = pembeli\n- الطَّاوِلَةُ (ath-thaawilatu) = meja\n- الصَّفُّ (ash-shaffu) = antrean/barisan\n- أَمَامَ / خَلْفَ / عَلَى / فِيْ / بَيْنَ / بِجَانِبِ = di depan / di belakang / di atas / di dalam / di antara / di samping"
-        },
-        {
-          title: "B. Al-Hiwar (Dialog) — فِي الْمَقْصَفِ",
-          content: "أَحْمَد : السَّلَامُ عَلَيْكُمْ\nالْبَائِعُ : وَعَلَيْكُمُ السَّلَامُ. أَهْلًا بِكَ فِي الْمَقْصَفِ. مَاذَا تُرِيْدُ؟\nأَحْمَد : أُرِيْدُ رُزًّا وَعَصِيْرًا مِنْ فَضْلِكَ.\nالْبَائِعُ : تَفَضَّلْ. الرُّزُّ عَلَى الطَّاوِلَةِ أَمَامَكَ، وَالْعَصِيْرُ بِجَانِبِ الْمَاءِ.\nأَحْمَد : كَمْ الثَّمَنُ؟\nالْبَائِعُ : عَشَرَةُ آلَافٍ. هَلْ تُرِيْدُ خُبْزًا أَيْضًا؟\nأَحْمَد : لَا، شُكْرًا. أَيْنَ أَجْلِسُ؟\nالْبَائِعُ : اِجْلِسْ خَلْفَ الصَّفِّ، هُنَاكَ كُرْسِيٌّ فَارِغٌ بَيْنَ الطَّاوِلَتَيْنِ.\nأَحْمَد : شُكْرًا جَزِيْلًا.\n\nPerhatikan ظرف المكان: فِي الْمَقْصَفِ، عَلَى الطَّاوِلَةِ، أَمَامَكَ، بِجَانِبِ، خَلْفَ، بَيْنَ."
-        },
-        {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — مَقْصَفُ الْمَدْرَسَةِ",
-          content: "فِيْ مَدْرَسَتِنَا مَقْصَفٌ نَظِيْفٌ. الْمَقْصَفُ بِجَانِبِ الْمَلْعَبِ. فِي الْمَقْصَفِ طَعَامٌ وَشَرَابٌ. الطُّلَّابُ يَقِفُوْنَ فِي الصَّفِّ أَمَامَ الْبَائِعِ. عَلَى الطَّاوِلَةِ رُزٌّ وَخُبْزٌ وَعَصِيْرٌ. أَنَا أَذْهَبُ إِلَى الْمَقْصَفِ بَعْدَ الْاِسْتِرَاحَةِ. أَجْلِسُ مَعَ صَدِيْقِيْ خَلْفَ النَّافِذَةِ. الْمَقْصَفُ مَكَانٌ مُمْتِعٌ.\n\nArti: Di sekolah kami ada kantin yang bersih. Kantin di samping lapangan. Di kantin ada makanan dan minuman. Para murid berdiri dalam antrean di depan penjual. Di atas meja ada nasi, roti, dan jus. Aku pergi ke kantin setelah istirahat. Aku duduk bersama temanku di belakang jendela. Kantin adalah tempat yang menyenangkan."
-        },
-        {
-          title: "D. Al-Qawa'id (Kaidah) — ظرف المكان",
-          content: "ظرف المكان (Zharf al-Makan) adalah keterangan tempat yang menjelaskan di mana terjadinya sesuatu.\n\nContoh umum:\n- فِيْ (di dalam): فِي الْمَقْصَفِ\n- عَلَى (di atas): عَلَى الطَّاوِلَةِ\n- تَحْتَ (di bawah): تَحْتَ الْكُرْسِيِّ\n- أَمَامَ (di depan): أَمَامَ الْبَائِعِ\n- خَلْفَ (di belakang): خَلْفَ الصَّفِّ\n- بَيْنَ (di antara): بَيْنَ الطَّاوِلَتَيْنِ\n- بِجَانِبِ (di samping): بِجَانِبِ الْمَلْعَبِ\n- هُنَا / هُنَاكَ (di sini / di sana)\n\nCatatan: banyak zharf makan ber morfem nashab atau diikuti isim majrur (tergantung jenisnya). Latih pola: [subjek/fi'il] + [zharf makan] + [isim].\nContoh: الْعَصِيْرُ عَلَى الطَّاوِلَةِ. أَجْلِسُ أَمَامَ النَّافِذَةِ."
-        }
-      ],
-      rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in (konteks sekolah/kantin).",
-        "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik المقصف."
-      ]
-    },
-    6: { // الأسرة (Keluarga)
-      ringkasan: "Materi الأسرة melatih murid memperkenalkan anggota keluarga dan mendeskripsikan hubungan serta pekerjaan. Fokus kaidah: مبتدأ وخبر (kalimat nominal) sebagai dasar menyusun gagasan sederhana.",
-      sections: [
-        {
-          title: "A. Al-Mufradat (Kosakata Inti) — الأسرة",
-          content: "Kosakata keluarga:\n- الْأُسْرَةُ (al-usrah) = keluarga\n- الْأَبُ (al-abu) = ayah\n- الْأُمُّ (al-ummu) = ibu\n- الْأَخُ / الْأُخْتُ = saudara laki-laki / perempuan\n- الْجَدُّ / الْجَدَّةُ = kakek / nenek\n- الْاِبْنُ / الْبِنْتُ = anak laki-laki / perempuan\n- الزَّوْجُ / الزَّوْجَةُ = suami / istri\n- كَبِيْرٌ / صَغِيْرٌ = besar / kecil (usia atau ukuran)\n- طَبِيْبٌ / مُهَنْدِسٌ / مُدَرِّسٌ / تَاجِرٌ = dokter / insinyur / guru / pedagang\n- رَبَّةُ الْبَيْتِ = ibu rumah tangga\n- أُسْرَتِيْ = keluargaku\n- عَدَدُ أَفْرَادِ الْأُسْرَةِ = jumlah anggota keluarga\n- نَحْنُ أُسْرَةٌ سَعِيْدَةٌ = kami keluarga yang bahagia"
-        },
-        {
-          title: "B. Al-Hiwar (Dialog) — عَنِ الْأُسْرَةِ",
-          content: "عَلِيّ : السَّلَامُ عَلَيْكُمْ يَا أَحْمَد\nأَحْمَد : وَعَلَيْكُمُ السَّلَامُ. كَيْفَ حَالُ أُسْرَتِكَ؟\nعَلِيّ : بِخَيْرٍ، الْحَمْدُ للهِ. أُسْرَتِيْ صَغِيْرَةٌ.\nأَحْمَد : مَنْ فِيْ أُسْرَتِكَ؟\nعَلِيّ : أَبِيْ وَأُمِّيْ وَأَخِيْ وَأُخْتِيْ. أَبِيْ مُدَرِّسٌ، وَأُمِّيْ رَبَّةُ بَيْتٍ.\nأَحْمَد : وَمَا اسْمُ أَخِيْكَ؟\nعَلِيّ : اِسْمُهُ يُوْسُفُ. هُوَ طَالِبٌ فِي الْمَدْرَسَةِ الْاِبْتِدَائِيَّةِ.\nأَحْمَد : أُسْرَتِيْ كَبِيْرَةٌ. جَدِّيْ وَجَدَّتِيْ يَسْكُنَانِ مَعَنَا.\nعَلِيّ : مَا شَاءَ اللهُ. نَحْنُ أُسْرَتَانِ سَعِيْدَتَانِ.\n\nPerhatikan jumlah ismiyah: أَبِيْ مُدَرِّسٌ (mubtada' + khabar), أُسْرَتِيْ صَغِيْرَةٌ، هُوَ طَالِبٌ."
-        },
-        {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — أُسْرَتِيْ",
-          content: "أُسْرَتِيْ سَعِيْدَةٌ. أَبِيْ اِسْمُهُ حَسَنٌ. هُوَ مُهَنْدِسٌ. أُمِّيْ اِسْمُهَا فَاطِمَةُ. هِيَ مُدَرِّسَةٌ. لِيْ أَخٌ وَاحِدٌ وَأُخْتَانِ. أَخِيْ كَبِيْرٌ، وَأُخْتَايَ صَغِيْرَتَانِ. نَحْنُ نَسْكُنُ فِيْ بَيْتٍ جَمِيْلٍ. فِي الْمَسَاءِ نَجْلِسُ مَعًا فِي غُرْفَةِ الْجُلُوْسِ. أَنَا أُحِبُّ أُسْرَتِيْ.\n\nArti: Keluargaku bahagia. Ayahku bernama Hasan. Dia insinyur. Ibuku bernama Fatimah. Dia guru. Aku punya satu saudara laki-laki dan dua saudara perempuan. Saudaraku laki-laki lebih tua, dan kedua saudariku lebih muda. Kami tinggal di rumah yang indah. Di sore hari kami duduk bersama di ruang tamu. Aku menyukai keluargaku."
-        },
-        {
-          title: "D. Al-Qawa'id (Kaidah) — المبتدأ والخبر",
-          content: "1. الْمُبْتَدَأُ (Mubtada'): subjek di awal jumlah ismiyah, hukumnya rafa'.\n2. الْخَبَرُ (Khabar): predikat yang menyempurnakan makna mubtada', hukumnya rafa'.\n\nPola dasar: مُبْتَدَأٌ + خَبَرٌ\nContoh:\n- الْأَبُ طَبِيْبٌ (Ayah adalah dokter).\n- أُمِّيْ مُدَرِّسَةٌ (Ibuku adalah guru).\n- أُسْرَتِيْ كَبِيْرَةٌ (Keluargaku besar).\n- هُوَ طَالِبٌ مُجْتَهِدٌ (Dia murid yang rajin).\n\nKesesuaian: khabar menyesuaikan jenis (mudzakkar/muannats) dan jumlah mubtada' sejauh memungkinkan pada tingkat dasar.\nContoh: الْأُخْتُ صَغِيْرَةٌ؛ الْأَخَوَانِ مُجْتَهِدَانِ.\n\nPenguatan maharat: menyimak deskripsi keluarga, berbicara memperkenalkan keluarga, membaca teks أُسْرَتِيْ, menulis 6–8 kalimat mubtada'–khabar."
-        }
-      ],
-      rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-usrah).",
-        "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik الأسرة."
-      ]
-    },
-    7: { // الوقت (Waktu)
-      ringkasan: "Materi الوقت membekali murid dengan ungkapan jam, hari, dan jadwal harian. Fokus kaidah: ظرف الزمان (keterangan waktu) untuk menyusun narasi aktivitas secara runtut.",
-      sections: [
-        {
-          title: "A. Al-Mufradat (Kosakata Inti) — الوقت",
-          content: "Kosakata waktu dan jadwal:\n- الْوَقْتُ (al-waqtu) = waktu\n- السَّاعَةُ (as-saa'atu) = jam\n- الْيَوْمُ (al-yaumu) = hari / hari ini (sebagai zharf: الْيَوْمَ)\n- غَدًا (ghadan) = besok\n- أَمْسِ (amsi) = kemarin\n- صَبَاحًا (shabaahan) = pagi hari\n- مَسَاءً (masaa'an) = sore/malam hari\n- لَيْلًا (lailan) = malam\n- الْآنَ (al-aana) = sekarang\n- بَعْدَ / قَبْلَ = setelah / sebelum\n- كُلَّ يَوْمٍ = setiap hari\n- السَّاعَةُ السَّابِعَةُ = pukul tujuh\n- مَتَى؟ (mataa?) = kapan?\n- أَسْتَيْقِظُ = saya bangun\n- أَذْهَبُ = saya pergi\n- أَدْرُسُ = saya belajar\n- أَنَامُ = saya tidur\n- الْاِسْتِرَاحَةُ = istirahat\n- الْحِصَّةُ = jam pelajaran"
-        },
-        {
-          title: "B. Al-Hiwar (Dialog) — عَنِ الْوَقْتِ",
-          content: "فَاطِمَة : السَّلَامُ عَلَيْكُمْ يَا زَيْنَب\nزَيْـنَب : وَعَلَيْكُمُ السَّلَامُ. مَتَى تَسْتَيْقِظِيْنَ؟\nفَاطِمَة : أَسْتَيْقِظُ صَبَاحًا فِي السَّاعَةِ الْخَامِسَةِ.\nزَيْـنَب : وَمَتَى تَذْهَبِيْنَ إِلَى الْمَدْرَسَةِ؟\nفَاطِمَة : أَذْهَبُ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّادِسَةِ وَالنِّصْفِ.\nزَيْـنَب : مَتَى حِصَّةُ اللُّغَةِ الْعَرَبِيَّةِ الْيَوْمَ؟\nفَاطِمَة : بَعْدَ الْاِسْتِرَاحَةِ، فِي السَّاعَةِ الْعَاشِرَةِ.\nزَيْـنَب : وَمَتَى تَنَامِيْنَ؟\nفَاطِمَة : أَنَامُ لَيْلًا فِي السَّاعَةِ التَّاسِعَةِ. وَأَنْتِ؟\nزَيْـنَب : أَنَامُ فِي السَّاعَةِ الْعَاشِرَةِ. غَدًا نَدْرُسُ مَعًا مَسَاءً.\n\nPerhatikan ظرف الزمان: صَبَاحًا، لَيْلًا، الْيَوْمَ، غَدًا، بَعْدَ، فِي السَّاعَةِ..."
-        },
-        {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — يَوْمِيْ",
-          content: "أَسْتَيْقِظُ كُلَّ يَوْمٍ صَبَاحًا فِي السَّاعَةِ الْخَامِسَةِ. أُصَلِّيْ الْفَجْرَ ثُمَّ أَقْرَأُ الْقُرْآنَ. بَعْدَ ذٰلِكَ أَتَنَاوَلُ الْفُطُوْرَ. أَذْهَبُ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّادِسَةِ وَالنِّصْفِ. أَدْرُسُ فِي الْمَدْرَسَةِ إِلَى السَّاعَةِ الثَّانِيَةِ ظُهْرًا. بَعْدَ الْمَدْرَسَةِ أَلْعَبُ مَعَ أَصْدِقَائِيْ. مَسَاءً أَعْمَلُ الْوَاجِبَ الْمَنْزِلِيَّ. أَنَامُ لَيْلًا فِي السَّاعَةِ التَّاسِعَةِ.\n\nArti: Aku bangun setiap hari pagi pukul lima. Aku salat Subuh lalu membaca Al-Qur'an. Setelah itu aku sarapan. Aku pergi ke sekolah pukul setengah tujuh. Aku belajar di sekolah sampai pukul dua siang. Setelah sekolah aku bermain dengan teman-temanku. Sore hari aku mengerjakan PR. Aku tidur malam pukul sembilan."
-        },
-        {
-          title: "D. Al-Qawa'id (Kaidah) — ظرف الزمان",
-          content: "ظرف الزمان (Zharf az-Zaman) adalah keterangan waktu yang menjelaskan kapan terjadinya perbuatan atau keadaan.\n\nContoh produktif tingkat dasar:\n- الْيَوْمَ (hari ini), غَدًا (besok), أَمْسِ (kemarin)\n- صَبَاحًا، مَسَاءً، لَيْلًا، ظُهْرًا\n- الْآنَ (sekarang), دَائِمًا (selalu), أَحْيَانًا (kadang-kadang)\n- قَبْلَ / بَعْدَ + isim: بَعْدَ الْاِسْتِرَاحَةِ، قَبْلَ النَّوْمِ\n- فِي السَّاعَةِ... (pada pukul...)\n- كُلَّ يَوْمٍ / كُلَّ أُسْبُوْعٍ\n\nPola kalimat: [fi'il/subjek] + [zharf zaman] + (pelengkap)\nContoh: أَذْهَبُ إِلَى الْمَدْرَسَةِ صَبَاحًا. نَدْرُسُ الْعَرَبِيَّةَ الْيَوْمَ.\n\nLatihan: susun jadwal harian 5 kegiatan dengan minimal 5 zharf zaman berbeda."
-        }
-      ],
-      rujukan: [
-        "Buku Al-'Arabiyyah Li an-Nasyi'in (bab al-waqt / al-saa'ah).",
-        "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik الوقت."
-      ]
-    },
-    8: { // أحمد دحلان (Ahmad Dahlan)
-      ringkasan: "Materi أحمد دحلان mengintegrasikan maharat berbahasa Arab dengan nilai keteladanan pendiri Muhammadiyah. Fokus kaidah: مبتدأ وخبر مقدم serta review ظرف الزمان والمكان dalam narasi biografi sederhana.",
-      sections: [
-        {
-          title: "A. Al-Mufradat (Kosakata Inti) — أحمد دحلان",
-          content: "Kosakata biografi dan keteladanan:\n- أَحْمَدُ دَحْلَانُ = Ahmad Dahlan\n- الْمُؤَسِّسُ (al-mu'assisu) = pendiri\n- مُحَمَّدِيَّة = Muhammadiyah\n- الْعَالِمُ (al-'aalimu) = ulama\n- الْمُجَاهِدُ = pejuang\n- التَّعْلِيْمُ = pendidikan\n- الْمَدْرَسَةُ = sekolah\n- الْإِصْلَاحُ = pembaruan/reformasi\n- الْأَخْلَاقُ = akhlak\n- الْقُدْوَةُ = keteladanan\n- وُلِدَ (wulida) = dilahirkan\n- فِيْ يُوْغْيَاكَرْتَا = di Yogyakarta\n- عَامَ... = tahun...\n- طَلَبَ الْعِلْمَ = menuntut ilmu\n- أَنْشَأَ = mendirikan\n- نَافِعٌ / مُفِيْدٌ = bermanfaat\n- مُجْتَهِدٌ = rajin/bersungguh-sungguh\n- رَحِمَهُ اللهُ = semoga Allah merahmatinya"
-        },
-        {
-          title: "B. Al-Hiwar (Dialog) — عَنْ أَحْمَدَ دَحْلَانَ",
-          content: "يُوْسُف : السَّلَامُ عَلَيْكُمْ يَا عَلِيّ\nعَلِيّ : وَعَلَيْكُمُ السَّلَامُ. مَاذَا تَقْرَأُ؟\nيُوْسُف : أَقْرَأُ عَنْ أَحْمَدَ دَحْلَانَ. هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ.\nعَلِيّ : أَيْنَ وُلِدَ؟\nيُوْسُف : وُلِدَ فِيْ يُوْغْيَاكَرْتَا. فِي يُوْغْيَاكَرْتَا وُلِدَ عَالِمٌ كَبِيْرٌ.\nعَلِيّ : مَاذَا فَعَلَ فِي حَيَاتِهِ؟\nيُوْسُف : أَنْشَأَ مَدَارِسَ وَعَلَّمَ النَّاسَ. هُوَ قُدْوَةٌ فِي التَّعْلِيْمِ وَالْأَخْلَاقِ.\nعَلِيّ : مَتَى نَتَعَلَّمُ عَنْهُ فِي الْمَدْرَسَةِ؟\nيُوْسُف : الْيَوْمَ فِي حِصَّةِ اللُّغَةِ الْعَرَبِيَّةِ وَالْكَمُحَمَّدِيَّةِ.\nعَلِيّ : جَيِّدٌ. نُرِيْدُ أَنْ نَكُوْنَ مُجْتَهِدِيْنَ مِثْلَهُ.\n\nPerhatikan: فِي يُوْغْيَاكَرْتَا وُلِدَ عَالِمٌ (nuansa khabar/keterangan didahulukan untuk penekanan tempat)."
-        },
-        {
-          title: "C. Al-Qira'ah (Bacaan/Narasi) — أَحْمَدُ دَحْلَانُ",
-          content: "أَحْمَدُ دَحْلَانُ عَالِمٌ كَبِيْرٌ. هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ. وُلِدَ فِيْ يُوْغْيَاكَرْتَا. طَلَبَ الْعِلْمَ مُنْذُ صِغَرِهِ. فِي حَيَاتِهِ أَنْشَأَ مَدَارِسَ كَثِيْرَةً. هُوَ يُحِبُّ التَّعْلِيْمَ وَالْإِصْلَاحَ. كَانَ مُجْتَهِدًا وَصَادِقًا. لِلطُّلَّابِ فِيْهِ قُدْوَةٌ حَسَنَةٌ. نَحْنُ نَتَعَلَّمُ مِنْ أَخْلَاقِهِ كُلَّ يَوْمٍ. رَحِمَهُ اللهُ.\n\nArti: Ahmad Dahlan adalah ulama besar. Beliau pendiri Muhammadiyah. Dilahirkan di Yogyakarta. Beliau menuntut ilmu sejak kecil. Dalam hidupnya beliau mendirikan banyak sekolah. Beliau mencintai pendidikan dan pembaruan. Beliau rajin dan jujur. Bagi para murid, pada dirinya ada keteladanan yang baik. Kami belajar dari akhlaknya setiap hari. Semoga Allah merahmatinya."
-        },
-        {
-          title: "D. Al-Qawa'id (Kaidah) — الخبر المقدم + review genap",
-          content: "1. الْخَبَرُ الْمُقَدَّمُ (Khabar Muqaddam): khabar didahulukan, mubtada' diakhirkan — sering untuk penekanan atau jika mubtada' nakirah.\nPola: خَبَرٌ مُقَدَّمٌ + مُبْتَدَأٌ مُؤَخَّرٌ\nContoh:\n- فِي يُوْغْيَاكَرْتَا عَالِمٌ كَبِيْرٌ (Di Yogyakarta ada ulama besar).\n- لِلطُّلَّابِ قُدْوَةٌ حَسَنَةٌ (Bagi para murid ada keteladanan yang baik).\n- عِنْدِيْ كِتَابٌ عَنْ أَحْمَدَ دَحْلَانَ (Pada saya ada buku tentang Ahmad Dahlan).\n\n2. Review semester genap:\n- ظرف المكان: فِي الْمَقْصَفِ، بِجَانِبِ الْمَلْعَبِ\n- ظرف الزمان: صَبَاحًا، الْيَوْمَ، كُلَّ يَوْمٍ\n- مبتدأ وخبر: أَحْمَدُ دَحْلَانُ عَالِمٌ؛ هُوَ مُؤَسِّسُ مُحَمَّدِيَّةَ\n- خبر مقدم: فِي الْمَدْرَسَةِ طُلَّابٌ مُجْتَهِدُوْنَ\n\nTugas unjuk kerja: tulis dan presentasikan monolog 8–10 kalimat tentang keteladanan Ahmad Dahlan memuat minimal satu contoh zharf zaman, zharf makan, mubtada'–khabar, dan khabar muqaddam."
-        }
-      ],
-      rujukan: [
-        "Buku Kemuhammadiyahan / biografi K.H. Ahmad Dahlan (disesuaikan bahasa Arab sederhana).",
-        "Kamus Al-Munawwir Arab-Indonesia.",
-        "Capaian Pembelajaran Bahasa Arab Fase E Semester Genap — topik أحمد دحلان."
+        "Capaian Pembelajaran Bahasa Arab Fase E — elemen Menyimak, Berbicara, Membaca, Menulis."
       ]
     }
   },
