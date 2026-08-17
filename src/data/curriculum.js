@@ -777,91 +777,71 @@ export const schoolInfoKemuh = {
 };
 
 export const faseE_kemuh = {
-  fase: "E",
-  kelas: "X (Sepuluh)",
-  tingkat: "X",
-  semester: {
-    ganjil: {
-      nama: "Ganjil",
-      nomor: 1,
-      materi: [
+  "fase": "E",
+  "kelas": "X (Sepuluh)",
+  "tingkat": "X",
+  "semester": {
+    "ganjil": {
+      "nama": "Ganjil",
+      "nomor": 1,
+      "materi": [
         {
-          bab: 1,
-          judul: "Karakteristik Perguruan Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Menjelaskan sejarah, tujuan, dan karakteristik Perguruan Muhammadiyah sebagai amal usaha di bidang pendidikan.",
-            "Mengidentifikasi peran Perguruan Muhammadiyah sebagai wadah perkaderan umat dan bangsa."
+          "bab": 1,
+          "judul": "Muhammadiyah sebagai Gerakan Islam dan Dakwah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 18,
+          "minggu": 9,
+          "tp": [
+            "Menjelaskan pengertian, landasan, dan tujuan Muhammadiyah sebagai gerakan Islam.",
+            "Menganalisis bentuk dakwah amar ma’ruf nahi munkar dan tajdid Muhammadiyah dalam kehidupan masyarakat.",
+            "Menyusun aksi dakwah pelajar yang santun, mencerahkan, dan bermanfaat di lingkungan sekolah."
           ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
+          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         },
         {
-          bab: 2,
-          judul: "Janji Pelajar Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Melafalkan dan menghafal teks Janji Pelajar Muhammadiyah dengan baik dan benar.",
-            "Menginternalisasi dan mengamalkan poin-poin Janji Pelajar Muhammadiyah dalam kehidupan sehari-hari (di sekolah, keluarga, dan masyarakat)."
+          "bab": 2,
+          "judul": "Periodesasi dan Dinamika Perjuangan Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 18,
+          "minggu": 9,
+          "tp": [
+            "Menguraikan latar belakang berdirinya Muhammadiyah dan fase-fase perjuangannya.",
+            "Menganalisis dinamika perjuangan Muhammadiyah dari masa K.H. Ahmad Dahlan hingga abad kedua.",
+            "Meneladani strategi perjuangan tokoh Muhammadiyah melalui proyek timeline sejarah dan refleksi aksi."
           ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
-        },
-        {
-          bab: 3,
-          judul: "Sejarah Perkembangan Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 12,
-          minggu: 6,
-          tp: [
-            "Menganalisis latar belakang berdirinya Muhammadiyah oleh K.H. Ahmad Dahlan.",
-            "Menguraikan fase-fase perkembangan Muhammadiyah dari masa awal berdiri hingga masa kini."
-          ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
+          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         }
       ]
     },
-    genap: {
-      nama: "Genap",
-      nomor: 2,
-      materi: [
+    "genap": {
+      "nama": "Genap",
+      "nomor": 2,
+      "materi": [
         {
-          bab: 4,
-          judul: "Ciri-ciri Gerakan Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Menjelaskan pengertian Muhammadiyah sebagai Gerakan Islam, Gerakan Dakwah Amar Ma'ruf Nahi Munkar, dan Gerakan Tajdid (Pembaruan).",
-            "Memberikan contoh nyata penerapan ciri-ciri gerakan Muhammadiyah di masyarakat."
+          "bab": 3,
+          "judul": "AD/ART Muhammadiyah: Menjadi Kader Muhammadiyah yang Militan",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 18,
+          "minggu": 9,
+          "tp": [
+            "Menjelaskan fungsi AD/ART sebagai landasan organisasi Muhammadiyah.",
+            "Menganalisis struktur organisasi, kepemimpinan, dan prinsip permusyawaratan Muhammadiyah.",
+            "Menunjukkan sikap disiplin, loyal, berintegritas, dan bertanggung jawab sebagai kader Muhammadiyah."
           ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
+          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         },
         {
-          bab: 5,
-          judul: "Pengorganisasian Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Memahami struktur dan hierarki pimpinan organisasi Muhammadiyah (dari tingkat Ranting, Cabang, Daerah, Wilayah, hingga Pusat).",
-            "Menjelaskan prinsip-prinsip permusyawaratan dan pengambilan keputusan dalam organisasi Muhammadiyah."
+          "bab": 4,
+          "judul": "Memahami Konsep Kewirausahaan dalam Menjalankan Amal Usaha Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 18,
+          "minggu": 9,
+          "tp": [
+            "Menjelaskan konsep kewirausahaan, etika bisnis Islam, dan tujuan Amal Usaha Muhammadiyah.",
+            "Menganalisis peran AUM dalam dakwah, pelayanan sosial, dan pemberdayaan ekonomi umat.",
+            "Merancang ide usaha sederhana yang inovatif, amanah, dan memberi manfaat bagi lingkungan."
           ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
-        },
-        {
-          bab: 6,
-          judul: "Majelis, Lembaga, dan Organisasi Otonom Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 12,
-          minggu: 6,
-          tp: [
-            "Membedakan tugas, fungsi, dan wewenang antara Majelis dan Lembaga di lingkungan Muhammadiyah.",
-            "Mengidentifikasi berbagai Organisasi Otonom (Ortom) Muhammadiyah beserta lambang dan tujuan spesifiknya (misal: IPM, IMM, Pemuda Muhammadiyah, Nasyiatul Aisyiyah, Tapak Suci, HW)."
-          ],
-          capaian: "Pada akhir Fase E, murid mampu memahami sejarah, karakteristik perguruan, struktur organisasi, dan identitas diri sebagai pelajar Muhammadiyah. Murid juga mampu mengimplementasikan nilai-nilai dasar perjuangan Muhammadiyah sebagai gerakan Islam, dakwah amar ma'ruf nahi munkar, dan gerakan tajdid dalam kehidupan sehari-hari."
+          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         }
       ]
     }
@@ -869,79 +849,123 @@ export const faseE_kemuh = {
 };
 
 export const faseF11_kemuh = {
-  fase: "F",
-  kelas: "XI (Sebelas)",
-  tingkat: "XI",
-  semester: {
-    ganjil: {
-      nama: "Ganjil",
-      nomor: 1,
-      materi: [
+  "fase": "F",
+  "kelas": "XI (Sebelas)",
+  "tingkat": "XI",
+  "semester": {
+    "ganjil": {
+      "nama": "Ganjil",
+      "nomor": 1,
+      "materi": [
         {
-          bab: 1,
-          judul: "Periodisasi Perjuangan Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Menelaah dinamika dan tantangan perjuangan Muhammadiyah pada berbagai periode kepemimpinan.",
-            "Mengambil ibrah (pelajaran) dari tokoh-tokoh pemimpin Muhammadiyah dari masa ke masa."
+          "bab": 1,
+          "judul": "Landasan Ideologi Persyarikatan Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan kedudukan dan pokok pikiran Muqaddimah Anggaran Dasar Muhammadiyah (MADM).",
+            "Menganalisis hubungan MADM, MKCH Muhammadiyah, dan Khittah perjuangan sebagai landasan gerakan.",
+            "Menyajikan peta konsep ideologi Muhammadiyah dan relevansinya bagi kehidupan pelajar."
           ],
-          capaian: "Pada akhir Fase F, murid mampu menganalisis, menghayati, dan mengamalkan landasan ideologis (MADM, Kepribadian, MKCHM), pedoman hidup (PHIWM), khittah perjuangan, dan sistem perkaderan Muhammadiyah. Selain itu, murid mampu merespons tantangan zaman dengan memahami sikap Muhammadiyah terhadap gerakan Islam transnasional dan mengimplementasikan gagasan Islam Berkemajuan."
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
         },
         {
-          bab: 2,
-          judul: "Muqaddimah Anggaran Dasar Muhammadiyah (MADM)",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 10,
-          minggu: 5,
-          tp: [
-            "Menjelaskan sejarah perumusan dan fungsi MADM bagi persyarikatan Muhammadiyah.",
-            "Menganalisis dan mendeskripsikan 7 (tujuh) pokok pikiran yang terkandung dalam MADM."
+          "bab": 2,
+          "judul": "Mengenal Tokoh Muhammadiyah Era Kontemporer",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Mengidentifikasi biografi, gagasan, dan kontribusi tokoh Muhammadiyah era kontemporer.",
+            "Menganalisis keteladanan tokoh Muhammadiyah dan Aisyiyah dalam dakwah, pendidikan, sosial, dan kebangsaan.",
+            "Menyajikan profil tokoh dalam bentuk presentasi, poster, atau video biografi yang bertanggung jawab."
           ],
-          capaian: "Pada akhir Fase F, murid mampu menganalisis, menghayati, dan mengamalkan landasan ideologis (MADM, Kepribadian, MKCHM), pedoman hidup (PHIWM), khittah perjuangan, dan sistem perkaderan Muhammadiyah. Selain itu, murid mampu merespons tantangan zaman dengan memahami sikap Muhammadiyah terhadap gerakan Islam transnasional dan mengimplementasikan gagasan Islam Berkemajuan."
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
         },
         {
-          bab: 3,
-          judul: "Kepribadian Muhammadiyah",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 12,
-          minggu: 6,
-          tp: [
-            "Memahami sejarah perumusan dan fungsi Kepribadian Muhammadiyah.",
-            "Mengimplementasikan 10 (sepuluh) sifat Kepribadian Muhammadiyah dalam kehidupan bermasyarakat."
+          "bab": 3,
+          "judul": "Mengenal Jalur Organisasi, Kepemimpinan, Sistem Permusyawaratan, dan Struktur Organisasi Otonom",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan jalur organisasi, kepemimpinan, dan sistem permusyawaratan Muhammadiyah.",
+            "Membedakan fungsi Muhammadiyah, Majelis/Lembaga, dan Organisasi Otonom.",
+            "Membuat bagan struktur organisasi dan simulasi musyawarah untuk mengambil keputusan bersama."
           ],
-          capaian: "Pada akhir Fase F, murid mampu menganalisis, menghayati, dan mengamalkan landasan ideologis (MADM, Kepribadian, MKCHM), pedoman hidup (PHIWM), khittah perjuangan, dan sistem perkaderan Muhammadiyah. Selain itu, murid mampu merespons tantangan zaman dengan memahami sikap Muhammadiyah terhadap gerakan Islam transnasional dan mengimplementasikan gagasan Islam Berkemajuan."
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 4,
+          "judul": "Konsep Amal Usaha Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan pengertian, tujuan, dan bidang layanan Amal Usaha Muhammadiyah.",
+            "Menganalisis hubungan misi dakwah dengan pengelolaan AUM di bidang pendidikan, kesehatan, sosial, dan ekonomi.",
+            "Menyusun analisis sederhana tentang kontribusi salah satu AUM bagi masyarakat."
+          ],
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
         }
       ]
     },
-    genap: {
-      nama: "Genap",
-      nomor: 2,
-      materi: [
+    "genap": {
+      "nama": "Genap",
+      "nomor": 2,
+      "materi": [
         {
-          bab: 4,
-          judul: "Matan Keyakinan dan Cita-cita Hidup Muhammadiyah (MKCHM)",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 16,
-          minggu: 8,
-          tp: [
-            "Menjelaskan latar belakang sejarah dan kedudukan MKCHM dalam organisasi.",
-            "Menjabarkan rumusan angka-angka MKCHM (kelompok ideologis, paham agama, dan strategi perjuangan)."
+          "bab": 5,
+          "judul": "Pedoman Hidup Islami Warga Muhammadiyah dan Kepribadian Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan tujuan dan ruang lingkup Pedoman Hidup Islami Warga Muhammadiyah (PHIWM).",
+            "Menganalisis sepuluh sifat Kepribadian Muhammadiyah sebagai pedoman perilaku.",
+            "Menyusun rencana pembiasaan PHIWM dan Kepribadian Muhammadiyah dalam kehidupan pelajar."
           ],
-          capaian: "Pada akhir Fase F, murid mampu menganalisis, menghayati, dan mengamalkan landasan ideologis (MADM, Kepribadian, MKCHM), pedoman hidup (PHIWM), khittah perjuangan, dan sistem perkaderan Muhammadiyah. Selain itu, murid mampu merespons tantangan zaman dengan memahami sikap Muhammadiyah terhadap gerakan Islam transnasional dan mengimplementasikan gagasan Islam Berkemajuan."
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
         },
         {
-          bab: 5,
-          judul: "Pedoman Hidup Islami Warga Muhammadiyah (PHIWM)",
-          elemen: "Kemuhammadiyahan",
-          alokasi: 16,
-          minggu: 8,
-          tp: [
-            "Memahami pengertian, landasan, dan tujuan disusunnya PHIWM.",
-            "Menerapkan nilai-nilai PHIWM dalam kehidupan pribadi, keluarga, bermasyarakat, berorganisasi, dan bernegara."
+          "bab": 6,
+          "judul": "Mengenal Tokoh Muhammadiyah Era Kontemporer (Lanjutan)",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Mengidentifikasi peran tokoh Muhammadiyah dan Aisyiyah dalam menghadapi persoalan kontemporer.",
+            "Membandingkan strategi dakwah, pendidikan, sosial, dan kebangsaan dari beberapa tokoh.",
+            "Menulis refleksi keteladanan tokoh dan rencana penerapannya di sekolah atau masyarakat."
           ],
-          capaian: "Pada akhir Fase F, murid mampu menganalisis, menghayati, dan mengamalkan landasan ideologis (MADM, Kepribadian, MKCHM), pedoman hidup (PHIWM), khittah perjuangan, dan sistem perkaderan Muhammadiyah. Selain itu, murid mampu merespons tantangan zaman dengan memahami sikap Muhammadiyah terhadap gerakan Islam transnasional and mengimplementasikan gagasan Islam Berkemajuan."
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 7,
+          "judul": "Struktur Penjenjangan Perkaderan Organisasi Otonom Muhammadiyah (IPM, TSPM, HW)",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan tujuan dan struktur penjenjangan perkaderan IPM, Tapak Suci Putera Muhammadiyah, dan Hizbul Wathan.",
+            "Menganalisis kompetensi dan karakter yang dibentuk melalui perkaderan masing-masing Ortom.",
+            "Menyusun peta jalur kaderisasi dan portofolio kesiapan diri untuk mengikuti perkaderan."
+          ],
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 8,
+          "judul": "Memahami Prinsip Bisnis Ekonomi Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan prinsip bisnis-ekonomi Muhammadiyah berdasarkan amanah, keadilan, profesionalitas, dan kemaslahatan.",
+            "Menganalisis model pemberdayaan ekonomi dan tata kelola bisnis yang mendukung misi dakwah Muhammadiyah.",
+            "Merancang proposal usaha atau proyek ekonomi sederhana yang beretika, berkelanjutan, dan berdampak sosial."
+          ],
+          "capaian": "Pada akhir Fase F, murid mampu memahami MADM, PHIWM, Kepribadian Muhammadiyah, MKCH Muhammadiyah, dan Khittah perjuangan; meneladani peran tokoh Muhammadiyah dan Aisyiyah era kontemporer; memahami jalur kaderisasi serta struktur penjenjangan perkaderan Ortom; dan menjelaskan misi dakwah serta bisnis-ekonomi dalam Amal Usaha Muhammadiyah."
         }
       ]
     }

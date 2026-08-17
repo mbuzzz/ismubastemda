@@ -2,237 +2,269 @@
 export const dataKemuh = {
   "X": {
     "1": {
-      "ringkasan": "Perguruan Muhammadiyah didirikan sebagai antitesis terhadap dualisme pendidikan kolonial Belanda. Lembaga ini hadir memadukan ilmu agama dan sains modern dengan visi mencetak generasi unggul yang tafaqquh fiddin dan cakap secara intelektual.",
+      "ringkasan": "Muhammadiyah merupakan gerakan Islam yang berlandaskan Al-Qur’an dan Sunnah serta bergerak melalui dakwah amar ma’ruf nahi munkar dan tajdid untuk mewujudkan masyarakat Islam yang sebenar-benarnya.",
       "sections": [
         {
-          "title": "A. Latar Belakang Berdirinya Sekolah Muhammadiyah",
-          "content": "Sebelum Muhammadiyah berdiri secara resmi pada 18 November 1912, K.H. Ahmad Dahlan telah merintis sebuah sekolah dasar modern di ruang tamu rumahnya di Kauman, Yogyakarta, pada tanggal 1 Desember 1911 yang dikenal dengan nama Madrasah Ibtidaiyah Diniyah Islamiyah. \n\nBeliau melihat adanya kepincangan dalam sistem pendidikan bangsa Indonesia saat itu. Pemerintah kolonial Belanda menyelenggarakan sekolah-sekolah umum yang sepenuhnya sekuler, di mana murid sama sekali tidak diajarkan pendidikan agama. Di sisi lain, pondok pesantren tradisional hanya mengajarkan kitab kuning dan ilmu agama murni, serta menolak keras masuknya ilmu pengetahuan umum seperti matematika, sejarah, dan geografi karena dianggap sebagai 'ilmu orang kafir'.\n\nMenyadari bahaya keterbelakangan ini, K.H. Ahmad Dahlan melakukan sintesis (penggabungan) dengan mendirikan sekolah yang mengajarkan ilmu agama secara komprehensif, sekaligus memberikan mata pelajaran umum. Model pendidikan inilah yang kemudian menjadi cikal bakal ribuan Perguruan Muhammadiyah saat ini."
+          "title": "A. Muhammadiyah sebagai Gerakan Islam",
+          "content": "Muhammadiyah didirikan oleh K.H. Ahmad Dahlan pada 18 November 1912 di Yogyakarta. Sebagai gerakan Islam, seluruh tujuan, prinsip, dan amalnya diarahkan kepada pemurnian dan pengamalan ajaran Islam berdasarkan Al-Qur’an dan Sunnah. Gerakan ini menjadikan ilmu, amal, dan pembinaan kader sebagai satu kesatuan."
         },
         {
-          "title": "B. Visi, Misi, dan Ciri Khas Perguruan Muhammadiyah",
-          "content": "Tujuan utama Pendidikan Muhammadiyah adalah 'Terwujudnya manusia muslim yang berakhlak mulia, cakap, percaya pada diri sendiri, dan berguna bagi masyarakat dan negara'.\n\nUntuk mencapai tujuan tersebut, Perguruan Muhammadiyah memiliki ciri khas yang dikenal dengan istilah ISMUBA (Al-Islam, Kemuhammadiyahan, dan Bahasa Arab). Ketiga mata pelajaran ini dirancang untuk:\n1. Al-Islam: Menanamkan aqidah yang lurus, akhlak yang mulia, dan pemahaman ibadah sesuai sunnah (tarjih).\n2. Kemuhammadiyahan: Menumbuhkan kebanggaan sebagai kader persyarikatan yang memiliki etos kerja, etos belajar, dan etos sosial tinggi.\n3. Bahasa Arab: Membekali murid dengan alat (miftah) untuk memahami sumber utama ajaran Islam, yaitu Al-Qur'an dan As-Sunnah."
+          "title": "B. Dakwah Amar Ma’ruf Nahi Munkar dan Tajdid",
+          "content": "Dakwah Muhammadiyah dilakukan dengan mengajak kepada kebaikan, mencegah kemunkaran, dan menghadirkan solusi bagi masalah umat. Tajdid memiliki makna pemurnian ajaran dalam akidah dan ibadah serta pembaruan dalam muamalah duniawiyah. Karena itu, dakwah dapat diwujudkan melalui pendidikan, kesehatan, pelayanan sosial, literasi, dan inovasi."
         },
         {
-          "title": "C. Aktualisasi di Lingkungan Sekolah Muhammadiyah",
-          "content": "Sebagai murid SMKS Muhammadiyah, ciri perguruan terasa pada: mapel ISMUBA, pembiasaan ibadah, kegiatan IPM/HW/Tapak Suci, dan budaya etos kerja. Latihan: bandingkan 3 perbedaan sekolah Muhammadiyah dengan sekolah umum (visi, kurikulum tambahan, budaya), lalu tulis 1 komitmen pribadi mendukung identitas sekolah minggu ini."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid mengidentifikasi satu masalah di sekolah, merumuskan pesan dakwah yang santun, lalu merancang aksi kecil yang terukur. Hasilnya dipresentasikan dengan menjelaskan nilai amar ma’ruf, nahi munkar, tajdid, dan manfaatnya bagi warga sekolah."
         }
       ],
       "rujukan": [
-        "Buku Kemuhammadiyahan Kelas X, Majelis Dikdasmen PP Muhammadiyah.",
-        "Mulkhan, Abdul Munir (1990). 'Pesan dan Kisah Kiai Ahmad Dahlan dalam Hikmah Muhammadiyah'."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "2": {
-      "ringkasan": "Janji Pelajar Muhammadiyah adalah ikrar moral dan komitmen pelajar yang berfungsi sebagai pedoman perilaku agar terbentuk karakter muslim yang tangguh, mandiri, dan berbakti kepada agama dan bangsa.",
+      "ringkasan": "Perjuangan Muhammadiyah berkembang melalui berbagai periode, dari masa K.H. Ahmad Dahlan, masa kolonial, perjuangan kemerdekaan, masa Orde Lama dan Orde Baru, Reformasi, hingga abad kedua.",
       "sections": [
         {
-          "title": "A. Teks Janji Pelajar Muhammadiyah",
-          "content": "Sebagai bagian dari pembentukan karakter, Ikatan Pelajar Muhammadiyah (IPM) merumuskan enam butir janji yang harus dijiwai oleh setiap pelajar di Perguruan Muhammadiyah. Keenam butir janji tersebut adalah:\n\n1. Berjuang menegakkan ajaran Islam.\n2. Hormat dan patuh terhadap orang tua dan guru.\n3. Bersungguh-sungguh dalam menuntut ilmu.\n4. Bekerja keras, mandiri, dan berprestasi.\n5. Rela berkorban dan menolong sesama.\n6. Siap menjadi kader Muhammadiyah dan bangsa."
+          "title": "A. Latar Belakang dan Berdirinya Muhammadiyah",
+          "content": "K.H. Ahmad Dahlan merespons persoalan pendidikan, kemiskinan, kebodohan, dan praktik keagamaan yang perlu diluruskan. Surat Al-Ma’un menjadi inspirasi penting bahwa pemahaman agama harus melahirkan kepedulian kepada anak yatim, fakir miskin, dan kelompok lemah."
         },
         {
-          "title": "B. Internalisasi dan Aktualisasi Nilai",
-          "content": "Janji pertama ('Berjuang menegakkan ajaran Islam') bermakna bahwa pelajar Muhammadiyah harus menjadikan tauhid sebagai fondasi dalam setiap aktivitas, menolak takhayul, bid'ah, dan khurafat (TBC), serta mengutamakan ibadah wajib.\n\nJanji keempat ('Bekerja keras, mandiri, dan berprestasi') selaras dengan jiwa kewirausahaan (entrepreneurship) dan kemandirian yang selalu diajarkan oleh K.H. Ahmad Dahlan. Pelajar Muhammadiyah dilarang bermalas-malasan, harus disiplin waktu, dan memiliki cita-cita yang tinggi untuk berkontribusi bagi peradaban."
+          "title": "B. Periodisasi dan Dinamika Perjuangan",
+          "content": "Perjuangan Muhammadiyah dapat dipelajari melalui beberapa fase: perintisan dan penguatan organisasi; pengembangan pendidikan dan pelayanan sosial pada masa kolonial; kontribusi kebangsaan menjelang dan setelah kemerdekaan; penguatan Amal Usaha; serta pengembangan gagasan Islam Berkemajuan pada abad kedua. Setiap fase menunjukkan kemampuan beradaptasi tanpa meninggalkan prinsip dasar gerakan."
         },
         {
-          "title": "C. Latihan Menghafal dan Mengamalkan Janji",
-          "content": "Hafalkan 6 butir Janji Pelajar Muhammadiyah. Pilih 2 butir yang paling lemah di dirimu (misal: hormat guru, atau kerja keras). Buat indikator perilaku terukur 7 hari (contoh: 'tidak menunda PR', 'menyapa guru'). Evaluasi di akhir pekan bersama teman sebangku."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid menyusun timeline minimal lima periode, mencantumkan tokoh, tantangan, dan kontribusi Muhammadiyah pada tiap periode. Timeline dilengkapi refleksi tentang strategi perjuangan yang dapat diterapkan dalam organisasi pelajar."
         }
       ],
       "rujukan": [
-        "Pedoman Organisasi dan Administrasi Ikatan Pelajar Muhammadiyah (PP IPM).",
-        "Sistem Perkaderan Muhammadiyah (SPM) - Majelis Pendidikan Kader PP Muhammadiyah."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "3": {
-      "ringkasan": "Sejarah berdirinya Muhammadiyah tidak terlepas dari dinamika sosial, agama, dan penjajahan pada awal abad ke-20. KH Ahmad Dahlan mendirikan gerakan ini untuk membersihkan akidah umat dan meningkatkan kualitas hidup masyarakat.",
+      "ringkasan": "AD/ART menjadi landasan normatif organisasi Muhammadiyah. Pemahaman terhadapnya membentuk kader yang disiplin, militan, berintegritas, dan siap berkhidmat.",
       "sections": [
         {
-          "title": "A. Faktor Obyektif (Kondisi Eksternal)",
-          "content": "Secara eksternal, berdirinya Muhammadiyah dilatarbelakangi oleh:\n1. Kolonialisme Belanda yang memiskinkan rakyat Indonesia dan menyebarkan misi kristenisasi melalui jalur pendidikan dan rumah sakit.\n2. Kebodohan dan kemiskinan umat Islam akibat sistem feodalisme keraton dan penindasan penjajah.\n3. Pengaruh gerakan pembaruan (Tajdid) di Timur Tengah yang digawangi oleh Jamaluddin Al-Afghani, Muhammad Abduh, dan Rasyid Ridha. Ide-ide pembaruan ini menyadarkan K.H. Ahmad Dahlan bahwa umat Islam harus kembali kepada Al-Qur'an dan Sunnah jika ingin bangkit dari keterpurukan."
+          "title": "A. Fungsi AD/ART",
+          "content": "Anggaran Dasar memuat identitas, asas, maksud dan tujuan, serta aturan pokok persyarikatan. Anggaran Rumah Tangga menjabarkan ketentuan pelaksanaan organisasi. Keduanya menjadi rujukan agar kehidupan organisasi berjalan tertib, transparan, dan sesuai keputusan permusyawaratan."
         },
         {
-          "title": "B. Faktor Subyektif (Kondisi Internal)",
-          "content": "Secara internal, dorongan terkuat bagi K.H. Ahmad Dahlan adalah hasil perenungannya (tadabbur) terhadap ayat-ayat Al-Qur'an, khususnya Surah Ali 'Imran ayat 104 dan Surah Al-Ma'un.\n\nSurah Ali 'Imran: 104 ('Dan hendaklah ada di antara kamu segolongan umat yang menyeru kepada kebajikan, menyuruh kepada yang ma'ruf dan mencegah dari yang munkar') menjadi landasan teologis pembentukan sebuah 'organisasi' atau persyarikatan (segolongan umat yang terorganisir). Dakwah tidak bisa lagi dilakukan secara individu (sporadis), melainkan harus melalui sebuah wadah yang tertata rapi (organisasi)."
+          "title": "B. Struktur dan Permusyawaratan",
+          "content": "Struktur pimpinan Muhammadiyah tersusun dari Pimpinan Pusat, Wilayah, Daerah, Cabang, dan Ranting. Keputusan organisasi ditempuh melalui permusyawaratan, seperti Muktamar, Tanwir, Musyawarah Wilayah, Daerah, Cabang, dan Ranting. Prinsip kolektif-kolegial mengutamakan tanggung jawab bersama."
         },
         {
-          "title": "C. Membaca Sejarah untuk Aksi Kini",
-          "content": "Dari faktor obyektif-subyektif berdirinya Muhammadiyah, petakan masalah umat hari ini di sekitarmu (kebodohan digital, kemiskinan moral, individualisme). Rancang 1 aksi kecil berbasis Al-Ma'un di kelas: penggalangan infak, les sebaya, atau bersih masjid sekolah."
+          "title": "C. Profil Kader Militan",
+          "content": "Kader militan bukan berarti keras kepada orang lain, melainkan teguh dalam prinsip, disiplin, berilmu, ikhlas, bertanggung jawab, dan mampu bekerja sama. Murid membuat komitmen kader berupa tiga kebiasaan: tepat waktu, aktif bermusyawarah, dan menyelesaikan amanah."
         }
       ],
       "rujukan": [
-        "Surat Ali 'Imran: 104 (Ayat Pendirian Persyarikatan).",
-        "Tafsir At-Tanwir Majelis Tarjih dan Tajdid PP Muhammadiyah (Penjelasan Historis Surat Ali 'Imran).",
-        "Buku Muhammadiyah Gerakan Pembaruan, Prof. Dr. Haedar Nashir."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "4": {
-      "ringkasan": "Muhammadiyah dikenal dengan tiga ciri utamanya: sebagai Gerakan Islam, Gerakan Dakwah Amar Ma'ruf Nahi Munkar, dan Gerakan Tajdid (Pembaruan).",
+      "ringkasan": "Amal Usaha Muhammadiyah adalah sarana dakwah dan pelayanan untuk mewujudkan kemaslahatan. Kewirausahaan di dalamnya harus memadukan profesionalitas, amanah, inovasi, dan keberpihakan kepada masyarakat.",
       "sections": [
         {
-          "title": "A. Muhammadiyah sebagai Gerakan Islam dan Dakwah",
-          "content": "Sebagai Gerakan Islam, asas, landasan, cita-cita, dan operasional Muhammadiyah sepenuhnya tunduk pada ajaran Islam (Al-Qur'an dan Sunnah). Segala bentuk Amal Usaha Muhammadiyah (AUM) pada hakikatnya adalah manifestasi dari ibadah dan ketaatan kepada Allah SWT.\n\nSebagai Gerakan Dakwah Amar Ma'ruf Nahi Munkar, Muhammadiyah turun langsung ke akar rumput. 'Amar Ma'ruf' (mengajak kepada kebaikan) dilakukan dengan membangun sekolah, panti asuhan, dan rumah sakit. 'Nahi Munkar' (mencegah keburukan) dilakukan dengan memberikan pencerahan agar umat terbebas dari syirik, kemiskinan moral, dan penindasan ekonomi."
+          "title": "A. Konsep Kewirausahaan dan Etika Bisnis Islam",
+          "content": "Kewirausahaan adalah kemampuan melihat peluang, menciptakan nilai, mengelola risiko, dan menghasilkan manfaat. Dalam Islam, usaha harus jujur, halal, adil, tidak merugikan, serta memperhatikan keberlanjutan. Keuntungan bukan satu-satunya ukuran; kebermanfaatan sosial juga menjadi tujuan."
         },
         {
-          "title": "B. Muhammadiyah sebagai Gerakan Tajdid",
-          "content": "Tajdid dalam Muhammadiyah memiliki dua makna:\n1. Purifikasi (Pemurnian): Berlaku dalam ranah Aqidah dan Ibadah Mahdhah. Mengembalikan ajaran Islam agar murni seperti zaman Rasulullah tanpa ada campuran budaya sinkretisme (Takhayul, Bid'ah, Khurafat).\n2. Dinamisasi (Pembaruan): Berlaku dalam ranah Muamalah Duniawiyah. Mendorong umat Islam untuk berinovasi, menguasai ilmu pengetahuan dan teknologi, serta memecahkan masalah-masalah sosial dengan pendekatan sains modern (Islam Berkemajuan)."
+          "title": "B. AUM sebagai Gerakan Dakwah dan Pemberdayaan",
+          "content": "Sekolah, perguruan tinggi, rumah sakit, klinik, panti asuhan, LAZISMU, dan unit ekonomi merupakan contoh sarana dakwah Muhammadiyah. Pengelolaan AUM memerlukan pelayanan bermutu, tata kelola yang baik, profesionalitas, dan komitmen untuk memberdayakan umat."
         },
         {
-          "title": "C. Mempraktikkan Tajdid Skala Pelajar",
-          "content": "Purifikasi: luruskan niat ibadah, jauhi TBC dalam kebiasaan. Dinamisasi: usulkan inovasi kelas (jadwal belajar, manajemen bengkel, konten dakwah digital). Presentasikan 1 ide tajdid mini + manfaatnya bagi sekolah."
+          "title": "C. Proyek Kewirausahaan Pelajar",
+          "content": "Murid melakukan observasi kebutuhan di sekolah, memilih peluang usaha yang halal dan realistis, menghitung modal serta manfaat, lalu membuat proposal singkat. Proposal memuat masalah, produk atau layanan, target pengguna, biaya, strategi pemasaran, dan dampak sosial."
         }
       ],
       "rujukan": [
-        "Matan Keyakinan dan Cita-cita Hidup Muhammadiyah (MKCHM).",
-        "Tafsir At-Tanwir Jilid 1, Pendahuluan tentang Metodologi Tarjih dan Tajdid."
-      ]
-    },
-    "5": {
-      "ringkasan": "Sebagai organisasi modern, Muhammadiyah memiliki struktur hierarkis yang tertata dari tingkat pusat hingga ranting untuk memastikan dakwah dapat menjangkau seluruh lapisan masyarakat.",
-      "sections": [
-        {
-          "title": "A. Tingkatan Pimpinan Organisasi",
-          "content": "Struktur vertikal Muhammadiyah diatur secara tegas dalam Anggaran Dasar (AD) Bab VIII:\n1. Pimpinan Pusat (PP) Muhammadiyah: Bertanggung jawab memimpin organisasi di tingkat nasional dan internasional.\n2. Pimpinan Wilayah (PW) Muhammadiyah: Bertingkat di ibukota Provinsi.\n3. Pimpinan Daerah (PD) Muhammadiyah: Bertingkat di Kabupaten/Kota.\n4. Pimpinan Cabang (PC) Muhammadiyah: Berkedudukan di Kecamatan.\n5. Pimpinan Ranting (PR) Muhammadiyah: Ujung tombak gerakan yang berkedudukan di tingkat desa atau kelurahan."
-        },
-        {
-          "title": "B. Permusyawaratan dalam Muhammadiyah",
-          "content": "Muhammadiyah dikenal sebagai organisasi yang menjunjung tinggi prinsip permusyawaratan kolektif-kolegial, bukan berdasarkan sistem figur tunggal (kultus individu). Pengambilan keputusan tertinggi dilakukan dalam forum Muktamar (setiap 5 tahun sekali). Selain Muktamar, terdapat forum Tanwir (di bawah Muktamar), Musyawarah Wilayah (Musywil), Musyawarah Daerah (Musyda), Musyawarah Cabang (Musycab), dan Musyawarah Ranting (Musyran)."
-        },
-        {
-          "title": "C. Memahami Struktur lewat Observasi",
-          "content": "Buat bagan: PP → PW → PD → PC → PR, lalu letakkan posisi sekolahmu (di bawah cabang/daerah setempat). Wawancara singkat 1 guru tentang relasi sekolah dengan Pimpinan Cabang/Daerah. Laporkan temuan 1 halaman."
-        }
-      ],
-      "rujukan": [
-        "Anggaran Dasar (AD) dan Anggaran Rumah Tangga (ART) Muhammadiyah terbaru.",
-        "Pedoman Administrasi Pimpinan Muhammadiyah."
-      ]
-    },
-    "6": {
-      "ringkasan": "Untuk menjalankan roda organisasi secara efektif, Muhammadiyah membentuk Unsur Pembantu Pimpinan (Majelis dan Lembaga) serta Organisasi Otonom (Ortom) untuk menaungi segmen masyarakat tertentu.",
-      "sections": [
-        {
-          "title": "A. Perbedaan Majelis dan Lembaga",
-          "content": "Majelis dan Lembaga dibentuk oleh Pimpinan Muhammadiyah untuk merencanakan dan melaksanakan program kerja. \n- Majelis bertugas menyelenggarakan amal usaha, program, dan kegiatan pokok (Contoh: Majelis Tarjih dan Tajdid, Majelis Pendidikan Dasar Menengah dan Pendidikan Nonformal (Dikdasmen PNF), Majelis Pembina Kesehatan Umum).\n- Lembaga bertugas melaksanakan program pendukung yang bersifat khusus atau spesifik (Contoh: Lembaga Amil Zakat Infaq dan Shadaqah Muhammadiyah / LAZISMU, Lembaga Resiliensi Bencana / MDMC)."
-        },
-        {
-          "title": "B. Organisasi Otonom (Ortom)",
-          "content": "Organisasi Otonom (Ortom) adalah satuan organisasi di bawah Muhammadiyah yang diberi wewenang (otonomi) untuk mengatur rumah tangganya sendiri demi membina kelompok tertentu. Ortom Muhammadiyah terdiri dari:\n1. 'Aisyiyah (Pergerakan perempuan Muhammadiyah)\n2. Pemuda Muhammadiyah\n3. Nasyiatul 'Aisyiyah (Pergerakan pemudi/remaja putri)\n4. Ikatan Pelajar Muhammadiyah (IPM)\n5. Ikatan Mahasiswa Muhammadiyah (IMM)\n6. Gerakan Kepanduan Hizbul Wathan (HW)\n7. Tapak Suci Putera Muhammadiyah (TSPM)"
-        },
-        {
-          "title": "C. Mengenal Ortom di Sekolah",
-          "content": "Identifikasi Ortom yang aktif di sekolah (IPM, HW, Tapak Suci, dll). Ikuti 1 kegiatan, catat: tujuan, nilai yang ditanamkan, dan kontribusimu. Refleksi: Ortom mana yang paling sesuai minatmu dan mengapa?"
-        }
-      ],
-      "rujukan": [
-        "Buku Pedoman Organisasi Otonom Muhammadiyah, PP Muhammadiyah.",
-        "Sistem Perkaderan Muhammadiyah (SPM)."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     }
   },
   "XI": {
     "1": {
-      "ringkasan": "Perjalanan Muhammadiyah dari masa pra-kemerdekaan hingga abad kedua diwarnai dengan berbagai tantangan politik, sosial, dan ideologis yang direspon oleh tokoh-tokoh pimpinan dengan khittah dan kebijakan strategis.",
+      "ringkasan": "Landasan ideologi Muhammadiyah memberi arah bagi pemikiran, sikap, dan amal persyarikatan agar tetap berpegang pada Islam dan cita-cita masyarakat Islam yang sebenar-benarnya.",
       "sections": [
         {
-          "title": "A. Masa Kepemimpinan Klasik hingga Kemerdekaan",
-          "content": "Era KH Ahmad Dahlan (1912-1923) berfokus pada fondasi tauhid dan pengentasan kebodohan melalui rintisan sekolah dan Panti Asuhan (PKO/PKU). Di era KH Mas Mansur (1937-1943), terjadi penyempurnaan pemikiran melalui perumusan 'Langkah Muhammadiyah 12'. Pada masa revolusi fisik, tokoh Muhammadiyah seperti Ki Bagus Hadikusumo memegang peranan kunci dalam BPUPKI (merumuskan Piagam Jakarta) serta memimpin perjuangan Laskar Hizbullah melawan agresi militer."
+          "title": "A. Muqaddimah Anggaran Dasar Muhammadiyah",
+          "content": "MADM memuat pokok pikiran tentang tauhid, kehidupan bermasyarakat, kewajiban menegakkan ajaran Islam, pentingnya mengikuti tuntunan Nabi, perjuangan melalui organisasi, dan cita-cita masyarakat Islam yang sebenar-benarnya."
         },
         {
-          "title": "B. Masa Orde Lama, Orde Baru, hingga Abad Kedua",
-          "content": "Di masa Orde Lama, Muhammadiyah berjuang mempertahankan eksistensi Islam dari ancaman komunisme (PKI). Pada masa Orde Baru, Muhammadiyah berfokus tajam pada pengembangan Amal Usaha di bidang kesehatan dan perguruan tinggi, menjauh dari politik praktis (Khittah Ujung Pandang). Di Abad Kedua Muhammadiyah (Muktamar ke-46 di Yogyakarta dan Muktamar ke-47 di Makassar), dicanangkan gagasan besar 'Islam Berkemajuan' dan 'Negara Pancasila sebagai Darul Ahdi wa Syahadah'."
+          "title": "B. MKCH dan Khittah Perjuangan",
+          "content": "MKCH Muhammadiyah menjelaskan keyakinan terhadap Islam, sumber ajaran, cara memahami agama, serta orientasi kebangsaan. Khittah merupakan garis perjuangan yang menjadi pedoman strategi gerakan sesuai konteks zaman."
         },
         {
-          "title": "C. Periodisasi dan Pelajaran Strategis",
-          "content": "Buat timeline 5 era kepemimpinan/perjuangan Muhammadiyah + 1 kebijakan kunci tiap era. Ambil 1 pelajaran strategi (misal: fokus AUM di Orde Baru) dan terapkan pada manajemen organisasi kelas/OSIS/IPM."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid membuat peta hubungan MADM, MKCH, dan Khittah, kemudian menulis contoh perilaku pelajar yang mencerminkan ideologi Muhammadiyah."
         }
       ],
       "rujukan": [
-        "Buku Sejarah Pimpinan Pusat Muhammadiyah.",
-        "Darul Ahdi Wa Syahadah: Keputusan Muktamar Muhammadiyah Ke-47."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "2": {
-      "ringkasan": "MADM adalah dokumen ideologis pertama dalam Muhammadiyah yang dirumuskan pada tahun 1946 oleh Ki Bagus Hadikusumo, berisi filosofi dasar gerakan Muhammadiyah.",
+      "ringkasan": "Tokoh Muhammadiyah dan Aisyiyah era kontemporer menunjukkan bahwa dakwah dapat diwujudkan melalui pendidikan, ilmu pengetahuan, pelayanan sosial, kesehatan, kebangsaan, dan pemberdayaan masyarakat.",
       "sections": [
         {
-          "title": "A. Latar Belakang Perumusan MADM",
-          "content": "Pada masa kepemimpinan Ki Bagus Hadikusumo (1942-1953), Muhammadiyah mengalami perkembangan amal usaha yang sangat pesat. Namun, Ki Bagus mengamati bahwa ruh atau nyawa pergerakan (jiwa tauhid dan keikhlasan) mulai memudar akibat formalitas organisasi. Oleh karena itu, beliau merasa perlu merumuskan sebuah dokumen yang secara tegas memuat ideologi, akidah, dan asas perjuangan Muhammadiyah agar tidak melenceng dari niat awal KH Ahmad Dahlan."
+          "title": "A. Ragam Peran Tokoh Kontemporer",
+          "content": "Tokoh kontemporer berkontribusi dalam pengembangan pemikiran Islam, pendidikan, kesehatan, filantropi, kebudayaan, kaderisasi, dan kehidupan kebangsaan. Peran tokoh perlu dikaji melalui sumber yang dapat dipertanggungjawabkan."
         },
         {
-          "title": "B. Tujuh Pokok Pikiran MADM",
-          "content": "MADM memuat 7 Pokok Pikiran Utama:\n1. Hidup manusia harus berdasar Tauhid (mengesakan Allah).\n2. Hidup manusia bermasyarakat.\n3. Mematuhi ajaran-ajaran agama Islam demi keselamatan dunia akhirat.\n4. Berjuang menegakkan Islam adalah kewajiban sebagai khalifah di bumi.\n5. Perjuangan akan berhasil dengan mengikuti jejak perjuangan Nabi Muhammad SAW.\n6. Perjuangan tersebut harus direalisasikan melalui organisasi (persyarikatan).\n7. Seluruh perjuangan ditujukan untuk mencapai masyarakat Islam yang sebenar-benarnya (Baldatun Thayyibatun Wa Rabbun Ghafur)."
+          "title": "B. Keteladanan dan Konteks Zaman",
+          "content": "Keteladanan tidak hanya berupa popularitas, tetapi konsistensi ilmu, akhlak, keikhlasan, kepemimpinan, dan keberanian menghadirkan solusi. Perjuangan tokoh perempuan Aisyiyah juga penting dipahami dalam penguatan pendidikan, keluarga, kesehatan, dan pemberdayaan perempuan."
         },
         {
-          "title": "C. Menjabarkan 7 Pokok MADM",
-          "content": "Ringkas 7 pokok pikiran MADM dalam bahasa sendiri (1 kalimat per pokok). Pilih pokok nomor 6 (organisasi) dan 7 (masyarakat Islam sebenar-benarnya): tulis contoh nyata di sekolah yang sudah/belum tercermin."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid memilih satu tokoh Muhammadiyah atau Aisyiyah era kontemporer, meneliti biografi dan kontribusinya dari minimal dua sumber, lalu menyajikan profil secara kreatif."
         }
       ],
       "rujukan": [
-        "Muqaddimah Anggaran Dasar Muhammadiyah (Teks Asli & Penjelasan).",
-        "Ki Bagus Hadikusumo: Pemikiran dan Perjuangan, Suara Muhammadiyah."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "3": {
-      "ringkasan": "Kepribadian Muhammadiyah dirumuskan pada Muktamar ke-35 di Jakarta (1962) sebagai penegasan identitas Muhammadiyah yang tidak berafiliasi dengan partai politik mana pun.",
+      "ringkasan": "Muhammadiyah memiliki jalur organisasi, kepemimpinan, dan permusyawaratan yang tertib, serta Organisasi Otonom yang menjadi ruang pembinaan kader sesuai segmen anggotanya.",
       "sections": [
         {
-          "title": "A. Latar Belakang dan Hakikat Kepribadian Muhammadiyah",
-          "content": "Di awal era 1960-an, suhu politik Indonesia sangat panas akibat konfrontasi partai-partai politik, termasuk Masyumi. Muhammadiyah yang kala itu menjadi anggota Istimewa Masyumi akhirnya memutuskan untuk memisahkan diri secara institusional dari politik praktis agar fokus kembali kepada dakwah kultural dan tajdid. Perumusan Kepribadian Muhammadiyah dipimpin oleh K.H. Faqih Usman."
+          "title": "A. Jalur Organisasi dan Kepemimpinan",
+          "content": "Jenjang pimpinan Muhammadiyah meliputi Pusat, Wilayah, Daerah, Cabang, dan Ranting. Kepemimpinan dilaksanakan secara kolektif-kolegial dengan pembagian amanah dan tanggung jawab yang jelas."
         },
         {
-          "title": "B. 10 Sifat Kepribadian Muhammadiyah",
-          "content": "Sebagai pedoman bersikap, Muhammadiyah memiliki sepuluh sifat kepribadian:\n1. Beramal dan berjuang untuk perdamaian dan kesejahteraan.\n2. Memperbanyak kawan dan mengamalkan ukhuwah Islamiyah.\n3. Lapang dada, luas pandangan, dengan memegang teguh ajaran Islam.\n4. Bersifat keagamaan dan kemasyarakatan.\n5. Mengindahkan segala hukum, undang-undang, serta sahnya negara.\n6. Amar Ma'ruf Nahi Munkar dalam segala lapangan, serta menjadi contoh teladan yang baik.\n7. Aktif dalam perkembangan masyarakat dengan niat ishlah dan pembangunan.\n8. Bekerja sama dengan golongan Islam manapun untuk penyiaran agama.\n9. Membantu pemerintah dan bekerja sama dalam memelihara negara yang adil dan makmur.\n10. Bersifat adil serta korektif ke dalam dan ke luar."
+          "title": "B. Permusyawaratan dan Ortom",
+          "content": "Permusyawaratan menjadi sarana menyusun program, mengevaluasi amanah, dan mengambil keputusan. Ortom seperti Aisyiyah, Pemuda Muhammadiyah, Nasyiatul Aisyiyah, IPM, IMM, HW, dan Tapak Suci memiliki kekhasan pembinaan dan kaderisasi."
         },
         {
-          "title": "C. 10 Sifat Kepribadian sebagai Ceklis",
-          "content": "Jadikan 10 sifat Kepribadian Muhammadiyah sebagai self-assessment (skala 1–4). Pilih 2 skor terendah, susun rencana perbaikan 14 hari, minta umpan balik pembina IPM/guru Kemuh."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid membuat bagan struktur organisasi serta melakukan simulasi musyawarah: menyusun agenda, menyampaikan pendapat, mengambil keputusan, dan membuat berita acara."
         }
       ],
       "rujukan": [
-        "Teks Kepribadian Muhammadiyah (Keputusan Muktamar Ke-35).",
-        "K.H. Faqih Usman: Peran dan Pemikirannya dalam Muhammadiyah."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "4": {
-      "ringkasan": "MKCHM dirumuskan pada Tanwir Ponorogo (1969), yang menegaskan kembali cita-cita Muhammadiyah dan pandangannya terhadap fungsi Pancasila dan UUD 1945.",
+      "ringkasan": "Amal Usaha Muhammadiyah merupakan instrumen dakwah yang dikelola secara profesional untuk memberikan pelayanan dan memberdayakan masyarakat.",
       "sections": [
         {
-          "title": "A. Kedudukan dan Rumusan MKCHM",
-          "content": "MKCHM dibagi ke dalam tiga kelompok pemikiran besar:\nKelompok Pertama (Angka 1 & 2): Mengandung prinsip ideologis. Menyatakan bahwa Muhammadiyah berkeyakinan bahwa Islam adalah satu-satunya agama yang haq dan diridhai Allah, serta manusia hidup bermasyarakat untuk menegakkan ajaran Islam.\n\nKelompok Kedua (Angka 3 & 4): Mengandung pandangan keagamaan. Menegaskan bahwa sumber ajaran Islam adalah Al-Qur'an dan Sunnah Al-Maqbullah, dengan menggunakan akal sehat untuk memahaminya sesuai dengan jiwa ajaran Islam."
+          "title": "A. Bidang dan Tujuan AUM",
+          "content": "AUM hadir dalam bidang pendidikan, kesehatan, sosial, filantropi, dan ekonomi. Tujuannya bukan sekadar menjalankan layanan, tetapi memperluas dakwah dan menghadirkan kemaslahatan bagi masyarakat."
         },
         {
-          "title": "B. Pandangan tentang Negara dan Masyarakat",
-          "content": "Kelompok Ketiga (Angka 5): Berisi strategi dan pandangan kebangsaan. Muhammadiyah mengajak segenap lapisan bangsa Indonesia yang telah mendapatkan karunia kemerdekaan berdasar Pancasila dan UUD 1945, untuk bersama-sama membangun Negara Kesatuan Republik Indonesia (NKRI) menjadi negara yang adil, makmur, dan diridhai Allah (Baldatun Thayyibatun Wa Rabbun Ghafur)."
+          "title": "B. Misi Dakwah dalam Pengelolaan AUM",
+          "content": "Misi dakwah tampak dalam pelayanan yang ramah, adil, inklusif, dan berorientasi pada peningkatan kualitas manusia. Pengelolaan AUM perlu menggabungkan nilai keislaman, kompetensi, akuntabilitas, dan inovasi."
         },
         {
-          "title": "C. MKCHM dan Wawasan Kebangsaan",
-          "content": "Jelaskan hubungan MKCHM dengan Pancasila dan UUD 1945 menurut poin kebangsaan. Esai 300 kata: 'Bagaimana pelajar Muhammadiyah mengisi kemerdekaan dengan amal usaha?'"
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid melakukan studi kasus terhadap satu AUM di daerahnya: layanan, sasaran penerima manfaat, sumber daya, tantangan, dan dampaknya. Hasilnya disusun menjadi laporan analisis singkat."
         }
       ],
       "rujukan": [
-        "Matan Keyakinan dan Cita-cita Hidup Muhammadiyah (MKCHM).",
-        "Putusan Sidang Tanwir Ponorogo Tahun 1969."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     },
     "5": {
-      "ringkasan": "PHIWM merupakan pedoman tata pergaulan, etika, dan akhlak bagi warga Muhammadiyah dalam kehidupan pribadi, keluarga, bermasyarakat, dan berbangsa, yang disahkan pada Muktamar ke-44 di Jakarta (2000).",
+      "ringkasan": "PHIWM dan Kepribadian Muhammadiyah menjadi pedoman pembentukan akhlak, etika, dan perilaku warga Muhammadiyah dalam kehidupan pribadi, keluarga, masyarakat, organisasi, dan berbangsa.",
       "sections": [
         {
-          "title": "A. Tujuan dan Fungsi PHIWM",
-          "content": "Menjelang masuknya abad 21, terjadi krisis keteladanan dan degradasi moral yang merata di masyarakat akibat globalisasi dan arus informasi yang tidak terbendung. PHIWM disusun untuk membentengi warga Muhammadiyah dengan memberikan panduan praktis (uswah hasanah) yang bersumber pada Al-Qur'an dan Sunnah, agar mereka mampu membedakan mana budaya yang Islami dan mana budaya destruktif yang harus ditinggalkan."
+          "title": "A. PHIWM dalam Berbagai Lingkungan",
+          "content": "PHIWM mengarahkan perilaku agar selaras dengan ajaran Islam dalam kehidupan pribadi, keluarga, bermasyarakat, berorganisasi, mengelola lingkungan, dan menjalankan profesi. Nilainya diwujudkan melalui keteladanan dan kebiasaan nyata."
         },
         {
-          "title": "B. Aspek-aspek Tuntunan dalam PHIWM",
-          "content": "PHIWM sangat komprehensif karena mengatur panduan etis di berbagai ruang kehidupan:\n1. Kehidupan Pribadi: Meliputi pedoman beribadah, pengembangan akal (menuntut ilmu), serta menjaga kesehatan fisik dan kebersihan jiwa.\n2. Kehidupan Keluarga: Membangun keluarga sakinah, menghormati orang tua, dan mendidik anak dengan nilai tauhid.\n3. Kehidupan Bermasyarakat: Etika bertetangga, peduli lingkungan hidup, santun dalam perbedaan pendapat.\n4. Kehidupan Berorganisasi: Kedisiplinan bermusyawarah, keikhlasan dalam beramal, dan tidak mencari jabatan (kekuasaan politik praktis) melalui persyarikatan."
+          "title": "B. Sepuluh Sifat Kepribadian Muhammadiyah",
+          "content": "Kepribadian Muhammadiyah menekankan amal dan perjuangan untuk perdamaian, ukhuwah, lapang dada, kepedulian sosial, ketaatan pada hukum, amar ma’ruf nahi munkar, kerja sama, dan sikap adil-korektif."
         },
         {
-          "title": "C. PHIWM dalam Kehidupan Remaja",
-          "content": "Ambil 4 ranah PHIWM (pribadi, keluarga, masyarakat, organisasi). Untuk tiap ranah tulis 1 kebiasaan yang sudah baik dan 1 yang perlu diperbaiki. Buat poster digital 'Remaja Ber-PHIWM'."
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid melakukan penilaian diri terhadap sepuluh sifat tersebut, memilih dua aspek yang perlu diperbaiki, dan menyusun jurnal pembiasaan selama dua minggu."
         }
       ],
       "rujukan": [
-        "Buku Pedoman Hidup Islami Warga Muhammadiyah (PP Muhammadiyah, 2000).",
-        "Panduan Akhlak Sosial Majelis Tarjih PP Muhammadiyah."
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+      ]
+    },
+    "6": {
+      "ringkasan": "Tokoh Muhammadiyah dan Aisyiyah terus mengembangkan dakwah yang relevan dengan tantangan kontemporer melalui ilmu, teknologi, pendidikan, kesehatan, filantropi, dan penguatan masyarakat sipil.",
+      "sections": [
+        {
+          "title": "A. Membaca Tantangan Kontemporer",
+          "content": "Tantangan dakwah meliputi literasi digital, perubahan dunia kerja, krisis lingkungan, ketimpangan sosial, kesehatan mental, dan polarisasi informasi. Muhammadiyah meresponsnya dengan pendekatan ilmu, amal, dialog, dan kelembagaan."
+        },
+        {
+          "title": "B. Strategi Dakwah dan Inovasi",
+          "content": "Tokoh kontemporer dapat diteladani dari kemampuannya menghubungkan nilai Islam dengan kebutuhan masyarakat. Inovasi harus tetap berlandaskan akhlak, kemaslahatan, keadilan, dan tanggung jawab kebangsaan."
+        },
+        {
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid membandingkan dua tokoh dan strategi kontribusinya terhadap satu isu kontemporer, lalu menyusun rekomendasi aksi pelajar yang realistis."
+        }
+      ],
+      "rujukan": [
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+      ]
+    },
+    "7": {
+      "ringkasan": "Perkaderan Ortom membentuk karakter, kepemimpinan, keterampilan, dan kecintaan kepada perjuangan Muhammadiyah melalui jenjang yang sesuai dengan kebutuhan anggotanya.",
+      "sections": [
+        {
+          "title": "A. Perkaderan IPM",
+          "content": "IPM membina pelajar melalui tahapan dan kegiatan perkaderan seperti Taruna Melati. Fokusnya meliputi ideologi, kepemimpinan, keilmuan, kemandirian, dan kepedulian sosial sesuai pedoman organisasi."
+        },
+        {
+          "title": "B. Perkaderan Tapak Suci dan HW",
+          "content": "Tapak Suci memadukan seni bela diri dengan iman, akhlak, disiplin, dan tanggung jawab. Hizbul Wathan membina kepanduan, kepemimpinan, kecakapan hidup, kerja sama, dan cinta tanah air berlandaskan nilai Islam."
+        },
+        {
+          "title": "C. Aktivitas Pembelajaran",
+          "content": "Murid membuat tabel perbandingan IPM, TSPM, dan HW berdasarkan sasaran, nilai, bentuk kegiatan, dan jenjang kaderisasi, kemudian menyusun portofolio kesiapan mengikuti kegiatan Ortom."
+        }
+      ],
+      "rujukan": [
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+      ]
+    },
+    "8": {
+      "ringkasan": "Bisnis dan ekonomi Muhammadiyah diarahkan untuk membangun kemandirian, keadilan, profesionalitas, dan kemaslahatan melalui usaha yang amanah serta berkelanjutan.",
+      "sections": [
+        {
+          "title": "A. Prinsip Bisnis Ekonomi Muhammadiyah",
+          "content": "Prinsipnya meliputi tauhid, amanah, kejujuran, keadilan, profesionalitas, efisiensi, inovasi, keberlanjutan, dan keberpihakan kepada masyarakat. Bisnis tidak boleh memisahkan keuntungan dari tanggung jawab sosial."
+        },
+        {
+          "title": "B. Pemberdayaan dan Kemandirian Ekonomi",
+          "content": "Ekonomi Muhammadiyah dapat dikembangkan melalui koperasi, unit usaha AUM, filantropi produktif, kewirausahaan warga, dan kolaborasi. Tata kelola yang transparan dan akuntabel penting untuk menjaga kepercayaan."
+        },
+        {
+          "title": "C. Proyek Pembelajaran",
+          "content": "Murid menyusun proposal model bisnis sederhana yang menjelaskan masalah, solusi, target pasar, nilai keislaman, perhitungan dasar, risiko, dan dampak sosial. Proposal dipresentasikan dan ditanggapi secara kolektif."
+        }
+      ],
+      "rujukan": [
+        "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+        "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+        "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
       ]
     }
   },
