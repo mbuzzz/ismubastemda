@@ -789,27 +789,57 @@ export const faseE_kemuh = {
           "bab": 1,
           "judul": "Muhammadiyah sebagai Gerakan Islam dan Dakwah",
           "elemen": "Kemuhammadiyahan",
-          "alokasi": 18,
-          "minggu": 9,
+          "tema": "Menjadi Aktivis Muda Dakwah Muhammadiyah",
+          "alokasi": 8,
+          "minggu": 4,
           "tp": [
-            "Menjelaskan pengertian, landasan, dan tujuan Muhammadiyah sebagai gerakan Islam.",
-            "Menganalisis bentuk dakwah amar ma’ruf nahi munkar dan tajdid Muhammadiyah dalam kehidupan masyarakat.",
-            "Menyusun aksi dakwah pelajar yang santun, mencerahkan, dan bermanfaat di lingkungan sekolah."
+            "Menjelaskan Muhammadiyah sebagai gerakan Islam yang berlandaskan Al-Qur’an dan Sunnah.",
+            "Menganalisis dakwah amar ma’ruf nahi munkar Muhammadiyah dalam kehidupan masyarakat.",
+            "Merancang aksi dakwah pelajar yang santun, mencerahkan, dan bermanfaat."
           ],
-          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         },
         {
           "bab": 2,
           "judul": "Periodesasi dan Dinamika Perjuangan Muhammadiyah",
           "elemen": "Kemuhammadiyahan",
-          "alokasi": 18,
-          "minggu": 9,
+          "tema": "Menjadi Generasi yang Pantang Menyerah",
+          "alokasi": 8,
+          "minggu": 4,
           "tp": [
-            "Menguraikan latar belakang berdirinya Muhammadiyah dan fase-fase perjuangannya.",
-            "Menganalisis dinamika perjuangan Muhammadiyah dari masa K.H. Ahmad Dahlan hingga abad kedua.",
-            "Meneladani strategi perjuangan tokoh Muhammadiyah melalui proyek timeline sejarah dan refleksi aksi."
+            "Menguraikan latar belakang berdirinya Muhammadiyah dan periodesasi perjuangannya.",
+            "Menganalisis dinamika dan tantangan perjuangan Muhammadiyah dari masa K.H. Ahmad Dahlan hingga abad kedua.",
+            "Meneladani sikap pantang menyerah tokoh Muhammadiyah melalui proyek timeline sejarah."
           ],
-          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 3,
+          "judul": "AD/ART Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "tema": "Menjadi Kader Muhammadiyah yang Militan",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan fungsi AD/ART sebagai landasan normatif organisasi Muhammadiyah.",
+            "Menganalisis hak, kewajiban, dan tanggung jawab anggota serta kader Muhammadiyah.",
+            "Menunjukkan sikap disiplin, loyal, berintegritas, dan bertanggung jawab sebagai kader Muhammadiyah."
+          ],
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 4,
+          "judul": "Memahami Konsep Kewirausahaan dalam Menjalankan Amal Usaha Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "tema": "Menjadi Entrepreneur Berkepribadian Islami",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan konsep kewirausahaan dan etika bisnis Islam.",
+            "Menganalisis hubungan kewirausahaan dengan dakwah dan pengelolaan Amal Usaha Muhammadiyah.",
+            "Merancang ide usaha sederhana yang halal, amanah, inovatif, dan bermanfaat."
+          ],
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         }
       ]
     },
@@ -818,30 +848,60 @@ export const faseE_kemuh = {
       "nomor": 2,
       "materi": [
         {
-          "bab": 3,
-          "judul": "AD/ART Muhammadiyah: Menjadi Kader Muhammadiyah yang Militan",
+          "bab": 5,
+          "judul": "Muhammadiyah sebagai Gerakan Tajdid dan Nasional",
           "elemen": "Kemuhammadiyahan",
-          "alokasi": 18,
-          "minggu": 9,
+          "tema": "Menjadi Generasi Cerdas, Islami, dan Berkemajuan",
+          "alokasi": 8,
+          "minggu": 4,
           "tp": [
-            "Menjelaskan fungsi AD/ART sebagai landasan organisasi Muhammadiyah.",
-            "Menganalisis struktur organisasi, kepemimpinan, dan prinsip permusyawaratan Muhammadiyah.",
-            "Menunjukkan sikap disiplin, loyal, berintegritas, dan bertanggung jawab sebagai kader Muhammadiyah."
+            "Menjelaskan makna tajdid dalam Muhammadiyah yang meliputi purifikasi dan dinamisasi.",
+            "Menganalisis peran Muhammadiyah sebagai gerakan nasional dalam pendidikan, sosial, dan kebangsaan.",
+            "Menyusun gagasan pembaruan yang mencerminkan kecerdasan, keislaman, dan kemajuan."
           ],
-          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         },
         {
-          "bab": 4,
-          "judul": "Memahami Konsep Kewirausahaan dalam Menjalankan Amal Usaha Muhammadiyah",
+          "bab": 6,
+          "judul": "Periodesasi Perjuangan Muhammadiyah",
           "elemen": "Kemuhammadiyahan",
-          "alokasi": 18,
-          "minggu": 9,
+          "tema": "Menjadi Pelajar Teladan",
+          "alokasi": 8,
+          "minggu": 4,
           "tp": [
-            "Menjelaskan konsep kewirausahaan, etika bisnis Islam, dan tujuan Amal Usaha Muhammadiyah.",
-            "Menganalisis peran AUM dalam dakwah, pelayanan sosial, dan pemberdayaan ekonomi umat.",
-            "Merancang ide usaha sederhana yang inovatif, amanah, dan memberi manfaat bagi lingkungan."
+            "Mengidentifikasi kontribusi tokoh dan kader Muhammadiyah dalam berbagai periode perjuangan.",
+            "Menganalisis nilai keteladanan dari perjuangan Muhammadiyah bagi kehidupan pelajar.",
+            "Menyajikan profil pelajar teladan yang mengamalkan nilai perjuangan Muhammadiyah."
           ],
-          "capaian": "Pada akhir Fase E, murid mampu memahami Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; menjelaskan periodesasi serta dinamika perjuangannya dari awal berdiri hingga abad kedua; memahami AD/ART, struktur, dan permusyawaratan organisasi; serta menerapkan konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 7,
+          "judul": "Struktur Organisasi dan Permusyawaratan dalam Organisasi Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "tema": "Siap Menjadi Pemimpin yang Tertib dan Bijaksana",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Menjelaskan struktur organisasi Muhammadiyah dari tingkat Pusat sampai Ranting.",
+            "Menganalisis fungsi permusyawaratan dan prinsip kepemimpinan kolektif-kolegial.",
+            "Mempraktikkan musyawarah yang tertib, adil, santun, dan bijaksana dalam menyelesaikan masalah."
+          ],
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
+        },
+        {
+          "bab": 8,
+          "judul": "Amal Usaha Muhammadiyah",
+          "elemen": "Kemuhammadiyahan",
+          "tema": "Menjadi Siswa yang Cakap dalam Berwirausaha",
+          "alokasi": 8,
+          "minggu": 4,
+          "tp": [
+            "Mengidentifikasi bidang dan bentuk Amal Usaha Muhammadiyah di lingkungan sekitar.",
+            "Menganalisis prinsip pengelolaan AUM yang profesional, amanah, dan berorientasi pada kemaslahatan.",
+            "Menyusun proposal usaha atau proyek ekonomi pelajar yang beretika dan berdampak sosial."
+          ],
+          "capaian": "Pada akhir Fase E, murid mampu memahami ciri gerakan Muhammadiyah sebagai gerakan Islam, gerakan dakwah amar ma’ruf nahi munkar, gerakan tajdid, dan gerakan nasional; memahami periodesasi dan dinamika perjuangan Muhammadiyah dari awal berdiri hingga abad kedua; memahami AD/ART, struktur organisasi, dan permusyawaratan; serta memahami konsep kewirausahaan dalam menjalankan Amal Usaha Muhammadiyah."
         }
       ]
     }

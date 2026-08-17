@@ -1478,27 +1478,27 @@ export const detailedMateri = {
   kemuh: {
     X: {
       1: {
-        "ringkasan": "Muhammadiyah merupakan gerakan Islam yang berlandaskan Al-Qur’an dan Sunnah serta bergerak melalui dakwah amar ma’ruf nahi munkar dan tajdid untuk mewujudkan masyarakat Islam yang sebenar-benarnya.",
+        "ringkasan": "Muhammadiyah adalah gerakan Islam yang berlandaskan Al-Qur’an dan Sunnah serta menjalankan dakwah amar ma’ruf nahi munkar untuk mewujudkan masyarakat Islam yang sebenar-benarnya.",
         "sections": [
                 {
                         "title": "A. Muhammadiyah sebagai Gerakan Islam",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Muhammadiyah didirikan oleh K.H. Ahmad Dahlan pada 18 November 1912 di Yogyakarta. Sebagai gerakan Islam, seluruh tujuan, prinsip, dan amalnya diarahkan kepada pemurnian dan pengamalan ajaran Islam berdasarkan Al-Qur’an dan Sunnah. Gerakan ini menjadikan ilmu, amal, dan pembinaan kader sebagai satu kesatuan.</p>",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Muhammadiyah didirikan K.H. Ahmad Dahlan pada 18 November 1912 di Yogyakarta. Sebagai gerakan Islam, seluruh tujuan, prinsip, dan amalnya diarahkan kepada pemurnian dan pengamalan ajaran Islam berdasarkan Al-Qur’an dan Sunnah. Gerakan ini menyatukan ilmu, amal, dakwah, dan pembinaan kader.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Dakwah Amar Ma’ruf Nahi Munkar dan Tajdid",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Dakwah Muhammadiyah dilakukan dengan mengajak kepada kebaikan, mencegah kemunkaran, dan menghadirkan solusi bagi masalah umat. Tajdid memiliki makna pemurnian ajaran dalam akidah dan ibadah serta pembaruan dalam muamalah duniawiyah. Karena itu, dakwah dapat diwujudkan melalui pendidikan, kesehatan, pelayanan sosial, literasi, dan inovasi.</p>",
+                        "title": "B. Muhammadiyah sebagai Gerakan Amar Ma’ruf Nahi Munkar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Amar ma’ruf berarti mengajak kepada kebaikan, sedangkan nahi munkar berarti mencegah kemunkaran. Dakwah Muhammadiyah dilaksanakan dengan cara yang bijaksana melalui pendidikan, kesehatan, pelayanan sosial, literasi, dan pemberdayaan masyarakat.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Aktivitas Pembelajaran",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid mengidentifikasi satu masalah di sekolah, merumuskan pesan dakwah yang santun, lalu merancang aksi kecil yang terukur. Hasilnya dipresentasikan dengan menjelaskan nilai amar ma’ruf, nahi munkar, tajdid, dan manfaatnya bagi warga sekolah.</p>",
+                        "title": "C. Menjadi Aktivis Muda Dakwah Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid mengidentifikasi satu masalah di sekolah, merumuskan pesan dakwah yang santun, lalu merancang aksi kecil yang terukur dan bermanfaat bagi warga sekolah.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1507,32 +1507,32 @@ export const detailedMateri = {
         ],
         "rujukan": [
                 "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
-                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
                 "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
         ]
 },
       2: {
-        "ringkasan": "Perjuangan Muhammadiyah berkembang melalui berbagai periode, dari masa K.H. Ahmad Dahlan, masa kolonial, perjuangan kemerdekaan, masa Orde Lama dan Orde Baru, Reformasi, hingga abad kedua.",
+        "ringkasan": "Perjuangan Muhammadiyah berkembang melalui berbagai periode dan menghadapi tantangan yang berubah. Sikap pantang menyerah menjadi teladan penting bagi generasi muda.",
         "sections": [
                 {
-                        "title": "A. Latar Belakang dan Berdirinya Muhammadiyah",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>K.H. Ahmad Dahlan merespons persoalan pendidikan, kemiskinan, kebodohan, dan praktik keagamaan yang perlu diluruskan. Surat Al-Ma’un menjadi inspirasi penting bahwa pemahaman agama harus melahirkan kepedulian kepada anak yatim, fakir miskin, dan kelompok lemah.</p>",
+                        "title": "A. Latar Belakang Berdirinya Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>K.H. Ahmad Dahlan merespons kebodohan, kemiskinan, persoalan pendidikan, dan kebutuhan pembaruan pemahaman keagamaan. Inspirasi Surat Al-Ma’un mengajarkan bahwa pemahaman agama harus melahirkan kepedulian kepada kelompok lemah.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Periodisasi dan Dinamika Perjuangan",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perjuangan Muhammadiyah dapat dipelajari melalui beberapa fase: perintisan dan penguatan organisasi; pengembangan pendidikan dan pelayanan sosial pada masa kolonial; kontribusi kebangsaan menjelang dan setelah kemerdekaan; penguatan Amal Usaha; serta pengembangan gagasan Islam Berkemajuan pada abad kedua. Setiap fase menunjukkan kemampuan beradaptasi tanpa meninggalkan prinsip dasar gerakan.</p>",
+                        "title": "B. Periodesasi dan Dinamika Perjuangan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perjuangan Muhammadiyah dapat dipelajari melalui fase perintisan, masa kolonial, perjuangan kebangsaan, pengembangan Amal Usaha, masa Reformasi, dan abad kedua. Setiap fase menunjukkan keteguhan prinsip sekaligus kemampuan beradaptasi.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Aktivitas Pembelajaran",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid menyusun timeline minimal lima periode, mencantumkan tokoh, tantangan, dan kontribusi Muhammadiyah pada tiap periode. Timeline dilengkapi refleksi tentang strategi perjuangan yang dapat diterapkan dalam organisasi pelajar.</p>",
+                        "title": "C. Menjadi Generasi yang Pantang Menyerah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid membuat timeline lima periode perjuangan, mencantumkan tokoh, tantangan, kontribusi, dan nilai pantang menyerah yang dapat diterapkan dalam belajar serta berorganisasi.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1541,32 +1541,32 @@ export const detailedMateri = {
         ],
         "rujukan": [
                 "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
-                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
                 "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
         ]
 },
       3: {
-        "ringkasan": "AD/ART menjadi landasan normatif organisasi Muhammadiyah. Pemahaman terhadapnya membentuk kader yang disiplin, militan, berintegritas, dan siap berkhidmat.",
+        "ringkasan": "AD/ART merupakan landasan normatif agar organisasi Muhammadiyah berjalan tertib, terarah, dan sesuai keputusan persyarikatan.",
         "sections": [
                 {
-                        "title": "A. Fungsi AD/ART",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Anggaran Dasar memuat identitas, asas, maksud dan tujuan, serta aturan pokok persyarikatan. Anggaran Rumah Tangga menjabarkan ketentuan pelaksanaan organisasi. Keduanya menjadi rujukan agar kehidupan organisasi berjalan tertib, transparan, dan sesuai keputusan permusyawaratan.</p>",
+                        "title": "A. Fungsi AD/ART Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Anggaran Dasar memuat aturan pokok seperti identitas, asas, maksud dan tujuan, serta struktur persyarikatan. Anggaran Rumah Tangga menjabarkan ketentuan pelaksanaannya.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Struktur dan Permusyawaratan",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Struktur pimpinan Muhammadiyah tersusun dari Pimpinan Pusat, Wilayah, Daerah, Cabang, dan Ranting. Keputusan organisasi ditempuh melalui permusyawaratan, seperti Muktamar, Tanwir, Musyawarah Wilayah, Daerah, Cabang, dan Ranting. Prinsip kolektif-kolegial mengutamakan tanggung jawab bersama.</p>",
+                        "title": "B. Hak, Kewajiban, dan Tanggung Jawab Kader",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kader perlu memahami amanah organisasi, menaati keputusan musyawarah, menjaga nama baik persyarikatan, aktif beramal, dan mengembangkan ilmu serta akhlak.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Profil Kader Militan",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kader militan bukan berarti keras kepada orang lain, melainkan teguh dalam prinsip, disiplin, berilmu, ikhlas, bertanggung jawab, dan mampu bekerja sama. Murid membuat komitmen kader berupa tiga kebiasaan: tepat waktu, aktif bermusyawarah, dan menyelesaikan amanah.</p>",
+                        "title": "C. Menjadi Kader Muhammadiyah yang Militan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Militan berarti teguh dalam prinsip, disiplin, berilmu, ikhlas, bertanggung jawab, dan tidak mudah menyerah; bukan berarti keras kepada orang lain. Murid membuat komitmen kader selama satu bulan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1575,32 +1575,32 @@ export const detailedMateri = {
         ],
         "rujukan": [
                 "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
-                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
                 "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
         ]
 },
       4: {
-        "ringkasan": "Amal Usaha Muhammadiyah adalah sarana dakwah dan pelayanan untuk mewujudkan kemaslahatan. Kewirausahaan di dalamnya harus memadukan profesionalitas, amanah, inovasi, dan keberpihakan kepada masyarakat.",
+        "ringkasan": "Kewirausahaan dalam Amal Usaha Muhammadiyah memadukan kemampuan menciptakan nilai dengan amanah, etika bisnis Islam, profesionalitas, dan kemaslahatan.",
         "sections": [
                 {
                         "title": "A. Konsep Kewirausahaan dan Etika Bisnis Islam",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Kewirausahaan adalah kemampuan melihat peluang, menciptakan nilai, mengelola risiko, dan menghasilkan manfaat. Dalam Islam, usaha harus jujur, halal, adil, tidak merugikan, serta memperhatikan keberlanjutan. Keuntungan bukan satu-satunya ukuran; kebermanfaatan sosial juga menjadi tujuan.</p>",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Wirausaha mampu melihat peluang, menciptakan produk atau layanan, mengelola risiko, dan menghasilkan manfaat. Usaha harus halal, jujur, adil, amanah, serta tidak merugikan.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. AUM sebagai Gerakan Dakwah dan Pemberdayaan",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sekolah, perguruan tinggi, rumah sakit, klinik, panti asuhan, LAZISMU, dan unit ekonomi merupakan contoh sarana dakwah Muhammadiyah. Pengelolaan AUM memerlukan pelayanan bermutu, tata kelola yang baik, profesionalitas, dan komitmen untuk memberdayakan umat.</p>",
+                        "title": "B. AUM sebagai Sarana Dakwah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Sekolah, rumah sakit, panti asuhan, LAZISMU, dan unit ekonomi merupakan sarana dakwah dan pelayanan. Pengelolaannya membutuhkan mutu layanan, tata kelola, inovasi, dan kepedulian sosial.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Proyek Kewirausahaan Pelajar",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid melakukan observasi kebutuhan di sekolah, memilih peluang usaha yang halal dan realistis, menghitung modal serta manfaat, lalu membuat proposal singkat. Proposal memuat masalah, produk atau layanan, target pengguna, biaya, strategi pemasaran, dan dampak sosial.</p>",
+                        "title": "C. Menjadi Entrepreneur Berkepribadian Islami",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid menyusun ide usaha sederhana yang memuat kebutuhan, produk, target pengguna, modal, harga, strategi pemasaran, nilai keislaman, dan dampak sosial.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -1609,7 +1609,143 @@ export const detailedMateri = {
         ],
         "rujukan": [
                 "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
-                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan dengan topik.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
+                "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+        ]
+},
+      5: {
+        "ringkasan": "Muhammadiyah menjalankan tajdid dan berperan sebagai gerakan nasional dengan menghadirkan pembaruan yang mencerdaskan, Islami, dan berkemajuan.",
+        "sections": [
+                {
+                        "title": "A. Tajdid: Purifikasi dan Dinamisasi",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Tajdid berarti pemurnian dalam akidah dan ibadah serta pembaruan dalam muamalah duniawiyah. Tajdid mendorong pemahaman agama yang bersumber pada dalil dan respons yang tepat terhadap perubahan zaman.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Muhammadiyah sebagai Gerakan Nasional",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Muhammadiyah berkontribusi dalam pendidikan, kesehatan, pelayanan sosial, kebangsaan, dan pemberdayaan masyarakat. Gerakan nasional berarti menghadirkan nilai Islam untuk kemajuan bangsa dan keutuhan NKRI.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Menjadi Generasi Cerdas dan Berkemajuan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid merancang satu gagasan pembaruan untuk sekolah atau masyarakat dengan mempertimbangkan ilmu, akhlak, kemanfaatan, dan keberlanjutan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
+                "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+        ]
+},
+      6: {
+        "ringkasan": "Periodesasi perjuangan Muhammadiyah menghadirkan banyak tokoh dan kader yang dapat diteladani dalam keilmuan, dakwah, kepemimpinan, dan pengabdian.",
+        "sections": [
+                {
+                        "title": "A. Tokoh dan Kontribusi Perjuangan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid mengenal kontribusi K.H. Ahmad Dahlan, Nyai Ahmad Dahlan, Ki Bagus Hadikusumo, K.H. Mas Mansur, dan tokoh lain dalam pengembangan dakwah, pendidikan, sosial, serta kebangsaan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Nilai Keteladanan Pelajar",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Nilai teladan meliputi kejujuran, disiplin, keberanian, kesederhanaan, kepedulian sosial, kerja keras, dan kemampuan mengutamakan kepentingan umat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Menjadi Pelajar Teladan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid memilih satu tokoh, menyajikan profil dan nilai teladannya, lalu menyusun target kebiasaan yang akan dipraktikkan di sekolah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
+                "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+        ]
+},
+      7: {
+        "ringkasan": "Struktur organisasi dan permusyawaratan Muhammadiyah membentuk kepemimpinan yang tertib, kolektif, bertanggung jawab, dan bijaksana.",
+        "sections": [
+                {
+                        "title": "A. Struktur Organisasi Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Jenjang organisasi Muhammadiyah meliputi Pimpinan Pusat, Wilayah, Daerah, Cabang, dan Ranting. Setiap jenjang menjalankan amanah sesuai wilayah kerja dan keputusan persyarikatan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Sistem Permusyawaratan dan Kepemimpinan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Muktamar, Tanwir, Musyawarah Wilayah, Daerah, Cabang, dan Ranting menjadi forum menyusun program serta mengambil keputusan. Kepemimpinan kolektif-kolegial mengutamakan musyawarah, tanggung jawab, dan keadilan.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Siap Menjadi Pemimpin yang Tertib dan Bijaksana",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid melakukan simulasi musyawarah dengan agenda, penyampaian pendapat, pengambilan keputusan, dan berita acara.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
+                "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
+        ]
+},
+      8: {
+        "ringkasan": "Amal Usaha Muhammadiyah menjadi sarana dakwah, pelayanan, dan pemberdayaan yang memerlukan kecakapan, profesionalitas, amanah, serta inovasi.",
+        "sections": [
+                {
+                        "title": "A. Bidang Amal Usaha Muhammadiyah",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>AUM bergerak dalam bidang pendidikan, kesehatan, sosial, filantropi, dan ekonomi. AUM bertujuan memberikan layanan bermutu sekaligus memperluas manfaat dakwah.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "B. Prinsip Pengelolaan AUM",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pengelolaan AUM harus amanah, profesional, transparan, akuntabel, inovatif, berorientasi pada mutu, dan berpihak kepada kemaslahatan masyarakat.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "C. Menjadi Siswa yang Cakap Berwirausaha",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Murid membuat proposal usaha atau proyek ekonomi sederhana yang memuat masalah, solusi, target pasar, modal, risiko, strategi, nilai Islam, dan dampak sosial.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                }
+        ],
+        "rujukan": [
+                "Buku Kemuhammadiyahan Majelis Dikdasmen PP Muhammadiyah.",
+                "Dokumen resmi Persyarikatan Muhammadiyah yang relevan.",
                 "Situs resmi Muhammadiyah dan Suara Muhammadiyah sebagai sumber pengayaan."
         ]
 },
