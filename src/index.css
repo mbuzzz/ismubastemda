@@ -2973,3 +2973,28 @@ body.theme-classic .no-print {
   .catatan-section { break-inside: avoid; }
   .table-wrap { overflow: visible; }
 }
+
+/* Komponen khusus catatan periodesasi */
+.period-grid { display: grid; gap: 14px; }
+.period-card { padding: 18px; border: 1px solid #dbe8f7; border-radius: 14px; background: linear-gradient(135deg, #fbfdff, #f2f7ff); }
+.period-card-top { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+.period-number { display: grid; place-items: center; flex: 0 0 32px; height: 32px; border-radius: 10px; background: #0d47a1; color: #fff; font-weight: 900; }
+.period-card h3 { margin: 0 0 3px; color: #183e70; font-size: 16px; }
+.period-card-top strong { color: #d97706; font-size: 12px; }
+.period-card p { margin: 8px 0 0; }
+.period-card ul { columns: 2; margin-top: 3px; }
+.period-characteristic { padding: 10px 12px; border-left: 3px solid #f59e0b; border-radius: 0 8px 8px 0; background: #fff9eb; color: #664b12 !important; }
+.catatan-equation { margin: 8px 0 16px; padding: 14px; border-radius: 10px; background: #eef6ff; color: #0d47a1; text-align: center; font-size: 17px; font-weight: 800; }
+.org-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.org-card { display: flex; gap: 11px; padding: 13px; border: 1px solid #e1e9f3; border-radius: 11px; background: #fbfdff; }
+.org-card > span { color: #f59e0b; font-weight: 900; font-size: 12px; }
+.org-card p { margin: 0; font-size: 13px; line-height: 1.6; }
+.org-card b { color: #183e70; }
+.strategy-flow { display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 16px auto 20px; max-width: 430px; }
+.strategy-flow span { width: 100%; padding: 10px 14px; border: 1px solid #c9dfff; border-radius: 9px; background: #f2f7ff; color: #183e70; text-align: center; font-size: 13px; font-weight: 800; }
+.strategy-flow b { color: #f59e0b; }
+.catatan-highlight { margin-top: 18px; padding: 16px 18px; border: 1px solid #f4d69a; border-radius: 12px; background: #fff8e7; color: #5b410b; font-size: 14px; line-height: 1.75; }
+@media (max-width: 700px) {
+  .period-card ul { columns: 1; }
+  .org-grid { grid-template-columns: 1fr; }
+}

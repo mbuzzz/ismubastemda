@@ -6,6 +6,7 @@ import Perangkat from './pages/Perangkat';
 import Materi from './pages/Materi';
 import BahanAjar from './pages/BahanAjar';
 import CatatanKemuhammadiyahan from './pages/CatatanKemuhammadiyahan';
+import CatatanKemuhammadiyahanBab2 from './pages/CatatanKemuhammadiyahanBab2';
 import Tentang from './pages/Tentang';
 import NotFound from './pages/NotFound';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/catatan-kemuhammadiyahan-kelas-x" element={<CatatanKemuhammadiyahan />} />
         <Route path="/catatan-kemuhammadiyahan-kelas-xi" element={<CatatanKemuhammadiyahan />} />
+        <Route path="/catatan-kemuhammadiyahan-kelas-x-bab-2" element={<CatatanKemuhammadiyahanBab2 />} />
 
         {/*
           HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap (jangan diubah):
