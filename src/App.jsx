@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/catatan-kemuhammadiyahan-kelas-x" element={<CatatanKemuhammadiyahan />} />
+        <Route path="/catatan-kemuhammadiyahan-kelas-xi" element={<CatatanKemuhammadiyahan />} />
 
         {/*
           HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap (jangan diubah):

@@ -33,7 +33,7 @@ function Section({ number, title, children }) {
 export default function CatatanKemuhammadiyahan() {
   useEffect(() => {
     const previousTitle = document.title;
-    document.title = 'Catatan Kemuhammadiyahan Kelas X · ISMUBA STEMDA';
+    document.title = 'Catatan Kemuhammadiyahan Kelas XI · ISMUBA STEMDA';
     return () => { document.title = previousTitle; };
   }, []);
 
@@ -42,7 +42,7 @@ export default function CatatanKemuhammadiyahan() {
       <header className="catatan-toolbar no-print">
         <Link to="/" className="catatan-back"><Home size={16} /> Beranda</Link>
         <div className="catatan-toolbar-actions">
-          <span className="catatan-badge"><BookOpen size={14} /> Kemuhammadiyahan · Kelas X</span>
+          <span className="catatan-badge"><BookOpen size={14} /> Kemuhammadiyahan · Kelas XI</span>
           <button type="button" className="catatan-print-button" onClick={() => window.print()}>
             <Printer size={15} /> Cetak
           </button>
@@ -54,11 +54,11 @@ export default function CatatanKemuhammadiyahan() {
           <div className="catatan-hero">
             <div>
               <p className="catatan-kicker">CATATAN PEMBELAJARAN · ISMUBA</p>
-              <h1>Catatan Kemuhammadiyahan Kelas X</h1>
+              <h1>Catatan Kemuhammadiyahan Kelas XI</h1>
               <p className="catatan-subtitle">Gagasan Pemikiran Amien Rais: Tauhid Sosial &amp; High Politics</p>
               <div className="catatan-meta">
                 <span>Mata Pelajaran: Kemuhammadiyahan</span>
-                <span>Kelas/Fase: X (Sepuluh) / Fase E</span>
+                <span>Kelas/Fase: XI (Sebelas) / Fase F</span>
               </div>
             </div>
             <figure className="catatan-portrait">
@@ -123,7 +123,7 @@ export default function CatatanKemuhammadiyahan() {
             </ol>
           </Section>
 
-          <footer className="catatan-footer">Bahan ajar digital · Kemuhammadiyahan Kelas X · Fase E</footer>
+          <footer className="catatan-footer">Bahan ajar digital · Kemuhammadiyahan Kelas XI · Fase F</footer>
         </article>
       </main>
     </div>
