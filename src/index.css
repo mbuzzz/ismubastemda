@@ -2880,3 +2880,96 @@ body.theme-classic .no-print {
     background: #FFFFFF !important;
   }
 }
+
+/* Catatan materi shareable */
+.catatan-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef6ff 0%, #f8fafc 52%, #fff7e6 100%);
+  color: #172033;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.catatan-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px max(18px, calc((100% - 1120px) / 2));
+  background: rgba(255,255,255,.92);
+  border-bottom: 1px solid #dbe5f1;
+  backdrop-filter: blur(14px);
+}
+.catatan-back, .catatan-toolbar-actions, .catatan-badge, .catatan-print-button { display: inline-flex; align-items: center; gap: 7px; }
+.catatan-back { color: #0d47a1; text-decoration: none; font-weight: 800; font-size: 13px; }
+.catatan-toolbar-actions { flex-wrap: wrap; }
+.catatan-badge { padding: 7px 12px; border-radius: 999px; background: #e8f2ff; color: #0d47a1; border: 1px solid #c9dfff; font-size: 12px; font-weight: 800; }
+.catatan-print-button { cursor: pointer; border: 0; border-radius: 9px; padding: 8px 13px; background: #0d47a1; color: white; font-weight: 800; font-size: 12px; }
+.catatan-shell { max-width: 1040px; margin: 0 auto; padding: 28px 16px 64px; }
+.catatan-paper { overflow: hidden; background: #fff; border: 1px solid #dce6f0; border-radius: 24px; box-shadow: 0 18px 50px rgba(26, 66, 112, .12); }
+.catatan-hero { display: grid; grid-template-columns: 1fr 190px; gap: 28px; align-items: center; padding: 44px 48px; color: #fff; background: radial-gradient(circle at 90% 10%, rgba(255,193,7,.3), transparent 30%), linear-gradient(135deg, #082d63, #1261ad); }
+.catatan-kicker { margin: 0 0 13px; color: #ffd66b; font-size: 11px; font-weight: 900; letter-spacing: 1.8px; }
+.catatan-hero h1 { margin: 0 0 12px; font-size: clamp(28px, 4vw, 42px); line-height: 1.14; letter-spacing: -.8px; }
+.catatan-subtitle { max-width: 650px; margin: 0 0 22px; color: #e5f0ff; font-size: 17px; line-height: 1.55; }
+.catatan-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.catatan-meta span { padding: 8px 11px; border: 1px solid rgba(255,255,255,.24); border-radius: 9px; background: rgba(255,255,255,.1); font-size: 12px; font-weight: 700; }
+.catatan-portrait { margin: 0; text-align: center; }
+.catatan-portrait img { display: block; width: 170px; height: 210px; object-fit: cover; margin: 0 auto 9px; border: 4px solid rgba(255,255,255,.85); border-radius: 18px; box-shadow: 0 12px 28px rgba(0,0,0,.2); }
+.catatan-portrait figcaption { color: #d9e9ff; font-size: 10px; line-height: 1.4; }
+.catatan-intro { margin: 28px 48px 0; padding: 16px 18px; border-left: 4px solid #f59e0b; border-radius: 0 12px 12px 0; background: #fff8e7; color: #5b410b; font-size: 14px; line-height: 1.7; }
+.catatan-section { margin: 32px 48px 0; padding-top: 27px; border-top: 1px solid #e5ebf2; }
+.catatan-section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.catatan-section-heading > span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #e7f1ff; color: #0d47a1; font-weight: 900; }
+.catatan-section h2 { margin: 0; color: #0d47a1; font-size: 23px; }
+.catatan-section h3 { margin: 22px 0 9px; color: #183e70; font-size: 16px; }
+.catatan-section p, .catatan-section li { color: #34445c; font-size: 14px; line-height: 1.78; }
+.catatan-section p { margin: 0 0 12px; }
+.catatan-section ul { margin: 0; padding-left: 22px; }
+.catatan-facts { display: grid; gap: 10px; margin: 0; }
+.catatan-facts div { display: grid; grid-template-columns: 145px 1fr; gap: 16px; padding: 13px 15px; border-radius: 10px; background: #f7faff; }
+.catatan-facts dt { color: #0d47a1; font-size: 13px; font-weight: 900; }
+.catatan-facts dd { margin: 0; color: #34445c; font-size: 14px; line-height: 1.6; }
+.pillar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.pillar-card { display: flex; gap: 12px; padding: 15px; border: 1px solid #dbe8f7; border-radius: 13px; background: linear-gradient(135deg,#fafdff,#f1f7ff); }
+.pillar-card > span { color: #f59e0b; font-size: 13px; font-weight: 900; }
+.pillar-card strong { color: #183e70; font-size: 14px; }
+.pillar-card p { margin-top: 5px; font-size: 13px; line-height: 1.6; }
+.table-wrap { overflow-x: auto; margin-top: 12px; border: 1px solid #d6e1ee; border-radius: 12px; }
+.catatan-section table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 13px; }
+.catatan-section th, .catatan-section td { padding: 12px 13px; border-bottom: 1px solid #dfe7f0; text-align: left; vertical-align: top; line-height: 1.55; }
+.catatan-section thead th { color: #fff; background: #0d47a1; font-size: 12px; }
+.catatan-section tbody th { width: 145px; color: #183e70; background: #f5f9ff; font-weight: 800; }
+.catatan-section tbody tr:last-child th, .catatan-section tbody tr:last-child td { border-bottom: 0; }
+.implementation-list { display: grid; gap: 10px; }
+.implementation-list > div { display: flex; gap: 10px; align-items: flex-start; padding: 14px 15px; border-radius: 12px; background: #f5fbf6; }
+.implementation-list svg { flex: 0 0 auto; color: #159447; margin-top: 3px; }
+.implementation-list p { margin: 0; }
+.evaluation-list { display: grid; gap: 14px; margin: 0; padding-left: 25px; }
+.evaluation-list li { padding-left: 5px; }
+.catatan-footer { margin: 34px 48px 0; padding: 22px 0 28px; border-top: 1px solid #e5ebf2; color: #8492a6; text-align: center; font-size: 11px; }
+@media (max-width: 700px) {
+  .catatan-toolbar { padding: 10px 14px; }
+  .catatan-toolbar-actions { width: 100%; justify-content: space-between; }
+  .catatan-shell { padding: 12px 8px 40px; }
+  .catatan-paper { border-radius: 16px; }
+  .catatan-hero { grid-template-columns: 1fr; padding: 30px 22px; }
+  .catatan-portrait { order: -1; }
+  .catatan-portrait img { width: 130px; height: 160px; }
+  .catatan-hero h1 { font-size: 30px; }
+  .catatan-subtitle { font-size: 15px; }
+  .catatan-intro, .catatan-section { margin-left: 22px; margin-right: 22px; }
+  .catatan-section h2 { font-size: 20px; }
+  .pillar-grid { grid-template-columns: 1fr; }
+  .catatan-facts div { grid-template-columns: 1fr; gap: 4px; }
+}
+@media print {
+  .catatan-page { background: #fff; }
+  .catatan-toolbar { display: none !important; }
+  .catatan-shell { max-width: none; padding: 0; }
+  .catatan-paper { border: 0; border-radius: 0; box-shadow: none; }
+  .catatan-hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .catatan-section { break-inside: avoid; }
+  .table-wrap { overflow: visible; }
+}

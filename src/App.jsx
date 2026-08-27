@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 import Perangkat from './pages/Perangkat';
 import Materi from './pages/Materi';
 import BahanAjar from './pages/BahanAjar';
+import CatatanKemuhammadiyahan from './pages/CatatanKemuhammadiyahan';
 import Tentang from './pages/Tentang';
 import NotFound from './pages/NotFound';
 
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/catatan-kemuhammadiyahan-kelas-x" element={<CatatanKemuhammadiyahan />} />
 
         {/*
           HALAMAN QR YANG SUDAH DICETAK — path WAJIB tetap (jangan diubah):
