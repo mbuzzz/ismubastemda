@@ -396,27 +396,35 @@ export const detailedMateri = {
         ]
 },
       2: {
-        "ringkasan": "Keimanan terbukti melalui akhlak terpuji: jujur, amanah, rendah hati, dan etis dalam pergaulan.",
+        "ringkasan": "Keimanan dibuktikan melalui akhlak terpuji: memenuhi janji, mensyukuri nikmat, menjaga lisan, dan menutupi aib orang lain.",
         "sections": [
                 {
-                        "title": "A. Iman dan Akhlak tidak Terpisah",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Nabi diutus untuk menyempurnakan akhlak. Iman tanpa akhlak menjadi klaim kosong; akhlak tanpa iman mudah rapuh. Bukti iman: menepati janji, menjaga amanah, berkata benar, dan berlaku adil.</p>",
+                        "title": "A. Memenuhi Janji",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Memenuhi janji adalah tanda amanah dan bukti kejujuran seorang mukmin. Janji kepada Allah, orang tua, guru, teman, dan organisasi harus ditunaikan selama tidak bertentangan dengan syariat. Pelajar membuktikannya dengan hadir tepat waktu, menyelesaikan tugas, dan melaksanakan kesepakatan kelompok.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Indikator Akhlak Terpuji Pelajar",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Jujur dalam ujian dan laporan\n2. Hormat pada guru & orang tua\n3. Sopan di media sosial\n4. Disiplin K3 dan jadwal\n5. Tolong-menolong tanpa pamrih\n6. Menutup aib teman, bukan menyebar skandal</p>",
+                        "title": "B. Mensyukuri Nikmat",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Syukur dilakukan dengan hati, lisan, dan perbuatan: mengakui nikmat berasal dari Allah, memuji-Nya, serta menggunakan nikmat untuk kebaikan. Ilmu, kesehatan, waktu, keluarga, dan fasilitas sekolah hendaknya dirawat dan dimanfaatkan secara bertanggung jawab.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Proyek 'Bukti Iman Seminggu'",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Pilih 3 indikator akhlak, catat bukti harian, minta umpan balik teman/guru. Refleksi: mana yang meningkat, mana yang perlu dukungan.</p>",
+                        "title": "C. Menjaga Lisan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Lisan harus dijaga dari dusta, fitnah, ghibah, ejekan, dan ucapan yang menyakiti. Biasakan berkata benar, baik, dan bermanfaat; termasuk saat berkomentar di media sosial dan berkomunikasi dalam kelompok belajar.</p>",
+                        "dalil": null,
+                        "arti": null,
+                        "image": null,
+                        "caption": null
+                },
+                {
+                        "title": "D. Menutupi Aib Orang Lain",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Islam mengajarkan menutup aib saudara, bukan menyebarkan kesalahannya. Menutupi aib tidak berarti membiarkan kezaliman atau bahaya; masalah yang serius disampaikan melalui jalur yang aman kepada guru, orang tua, atau pihak berwenang. Tugas: tulis refleksi satu pekan tentang janji, syukur, lisan, dan cara menjaga kehormatan teman.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
@@ -434,24 +442,24 @@ export const detailedMateri = {
         "ringkasan": "Penyakit sosial (perundungan, perkelahian, perjudian) merusak aman sosial sekolah; Islam menuntut pencegahan dan pemulihan yang adil.",
         "sections": [
                 {
-                        "title": "A. Bentuk dan Dampak",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perundungan: fisik, verbal, sosial, siber. Perkelahian: kekerasan antarpelajar. Perjudian: termasuk judi online. Dampak: trauma, putus sekolah, kriminalitas, dosa sosial.</p>",
+                        "title": "A. Perundungan",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perundungan adalah perilaku menyakiti atau merendahkan orang lain secara berulang, baik secara fisik, verbal, sosial, maupun siber. Dampaknya dapat berupa rasa takut, trauma, isolasi, dan terganggunya proses belajar. Pelajar perlu menolak budaya bully, mendukung korban dengan aman, dan melapor kepada guru atau BK.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "B. Landasan Syariat",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Larangan menganiaya, menghina, dan merendahkan (QS. Al-Hujurat: 11). Larangan memakan harta batil. Prinsip la dharar wa la dhirar (jangan membahayakan diri dan orang lain).</p>",
+                        "title": "B. Perkelahian",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perkelahian merusak keselamatan, persaudaraan, dan masa depan pelajar. Islam melarang penganiayaan dan tindakan yang membahayakan diri maupun orang lain. Penyelesaian konflik ditempuh melalui pengendalian diri, tabayun, mediasi, dan bantuan guru atau BK.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,
                         "caption": null
                 },
                 {
-                        "title": "C. Peran Murid sebagai Agen Damai",
-                        "content": "<p style='margin-bottom:12px; text-align:justify;'>1. Tolak budaya bully; bela korban dengan aman\n2. Laporkan ke guru BK/wali kelas\n3. Mediasi damai bila mampu\n4. Hindari grup/konten yang memicu konflik\n5. Isi waktu dengan kompetisi positif (lomba skill, olahraga)</p>",
+                        "title": "C. Perjudian",
+                        "content": "<p style='margin-bottom:12px; text-align:justify;'>Perjudian, termasuk judi online, mengandung taruhan dan untung-untungan yang merusak harta, akal, dan hubungan sosial. Pelajar menolak ajakan judi, tidak menyebarkan tautan promosi, melaporkan konten berbahaya, serta mengisi waktu dengan kegiatan belajar, olahraga, dan karya yang positif.</p>",
                         "dalil": null,
                         "arti": null,
                         "image": null,

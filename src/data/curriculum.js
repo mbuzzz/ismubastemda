@@ -199,7 +199,7 @@ export const faseF11 = {
             "Menganalisis kandungan ayat tentang pentingnya berpikir kritis dalam memahami fenomena alam.",
             "Menerapkan perilaku berpikir kritis dan objektif dalam menyikapi berbagai informasi."
           ],
-          capaian: "Murid dapat menganalisis Al-Qur'an dan Hadis tentang berpikir kritis dan ilmu pengetahuan; mempresentasikan pentingnya berpikir kritis."
+          capaian: "Memahami ayat Al-Qur’an dan hadis tentang nilai-nilai berkemajuan: berpikir kritis, ilmu pengetahuan dan teknologi, memelihara kehidupan manusia, dan wasatiyah Islam."
         },
         {
           bab: 2,
@@ -212,7 +212,7 @@ export const faseF11 = {
             "Mengidentifikasi cara menjaga lisan dan menutupi aib orang lain dalam pergaulan sosial.",
             "Membiasakan akhlak terpuji sebagai cerminan integritas pribadi muslim di lingkungan sekolah."
           ],
-          capaian: "Murid menganalisis cabang-cabang iman, keterkaitan antara iman, Islam dan ihsan; membiasakan sikap tanggung jawab dan jujur."
+          capaian: "Memahami beberapa cabang iman (syu’ab al-iman) dan keterkaitan antara iman, Islam, dan ihsan."
         },
         {
           bab: 3,
@@ -225,7 +225,7 @@ export const faseF11 = {
             "Mengidentifikasi dalil-dalil larangan perilaku menyimpang dan penyakit sosial.",
             "Mengembangkan sikap peduli dan menciptakan lingkungan sekolah yang aman serta harmonis."
           ],
-          capaian: "Murid dapat memecahkan masalah perkelahian antarpelajar, minuman keras, dan narkoba dalam Islam; membiasakan sikap taat aturan."
+          capaian: "Memahami manfaat menghindari penyakit sosial serta adab bermasyarakat dan etika digital dalam Islam."
         },
         {
           bab: 4,
@@ -238,7 +238,7 @@ export const faseF11 = {
             "Menganalisis perbedaan karakteristik antara khutbah, tablig, dan dakwah dalam penyebaran agama.",
             "Menyusun draf materi dakwah singkat yang santun dan relevan dengan problematika remaja."
           ],
-          capaian: "Murid mampu menganalisis ketentuan pelaksanaan khutbah, tablig dan dakwah."
+          capaian: "Memahami ketentuan pelaksanaan khutbah, tablig dan dakwah, muamalah, munakahat, dan mawāris."
         },
         {
           bab: 5,
@@ -251,7 +251,7 @@ export const faseF11 = {
             "Menganalisis kegigihan dan strategi dakwah para ulama dalam menyebarkan Islam.",
             "Meneladani semangat belajar dan pengabdian ulama Indonesia dalam memajukan peradaban."
           ],
-          capaian: "Murid mampu menganalisis peran dan keteladanan tokoh ulama penyebar ajaran Islam di Indonesia."
+          capaian: "Memahami peran tokoh ulama dalam perkembangan peradaban Islam di dunia dan peran organisasi-organisasi Islam di Indonesia."
         }
       ]
     },
@@ -276,7 +276,7 @@ export const faseF11 = {
             "Menelaah perintah berpikir mendalam tentang ciptaan Allah berdasarkan H.R. Abu Syaikh guna menambah iman dan ilmu pengetahuan.",
             "Membiasakan diri menjadi Pelajar Muhammadiyah yang mencintai ilmu pengetahuan dan teknologi dalam kehidupan sehari-hari."
           ],
-          capaian: "Murid mampu menganalisis ayat dan hadis tentang perintah menuntut ilmu serta isyarat pengembangan iptek, dan membiasakan diri sebagai pelajar muslim yang mencintai ilmu pengetahuan dan teknologi."
+          capaian: "Memahami ayat Al-Qur’an dan hadis tentang nilai-nilai berkemajuan: berpikir kritis, ilmu pengetahuan dan teknologi, memelihara kehidupan manusia, dan wasatiyah Islam."
         },
         {
           bab: 7,
@@ -289,7 +289,7 @@ export const faseF11 = {
             "Mengidentifikasi ciri-ciri serta menerapkan sikap ikhlas, malu (haya), dan zuhud dalam kehidupan sehari-hari.",
             "Membiasakan perilaku yang mencerminkan pengendalian diri, ketulusan hati, serta karakter pelajar yang beriman dan berakhlak mulia."
           ],
-          capaian: "Murid menganalisis dan membiasakan muru'ah, ikhlas, haya', dan zuhud sebagai penguatan keimanan dan akhlak mulia pelajar muslim."
+          capaian: "Memahami beberapa cabang iman (syu’ab al-iman) dan keterkaitan antara iman, Islam, dan ihsan."
         },
         {
           bab: 8,
@@ -303,7 +303,7 @@ export const faseF11 = {
             "Menelaah bahaya nyata minuman keras dan narkoba bagi kesehatan akal, jiwa, dan raga.",
             "Menumbuhkan komitmen dan aksi nyata sebagai Pelajar Muhammadiyah yang anti terhadap minuman keras dan narkoba."
           ],
-          capaian: "Murid mampu menjelaskan dan menganalisis larangan khamr serta narkoba dari sudut syariat dan hukum negara, memahami bahayanya, serta berkomitmen sebagai generasi anti minuman keras dan narkoba."
+          capaian: "Memahami manfaat menghindari penyakit sosial serta adab bermasyarakat dan etika digital dalam Islam."
         },
         {
           bab: 9,
@@ -317,7 +317,7 @@ export const faseF11 = {
             "Memahami konsep, pengelolaan, dan asas gotong royong dalam Koperasi Syariah.",
             "Menumbuhkan kesadaran dan kebanggaan untuk mencintai serta menggunakan produk ekonomi syariah."
           ],
-          capaian: "Murid mampu menganalisis implementasi ekonomi Islam melalui asuransi syariah, bank syariah, dan koperasi syariah, serta menumbuhkan kesadaran menggunakan produk ekonomi syariah."
+          capaian: "Memahami ketentuan pelaksanaan khutbah, tablig dan dakwah, muamalah, munakahat, dan mawāris."
         },
         {
           bab: 10,
@@ -330,7 +330,7 @@ export const faseF11 = {
             "Menganalisis faktor-faktor pemicu kebangkitan dan pembaruan peradaban Islam di masa modern.",
             "Meneladani kegigihan, semangat juang, dan inovasi para ulama pembaru untuk memajukan peradaban umat manusia saat ini."
           ],
-          capaian: "Murid mampu menelaah tokoh dan faktor kebangkitan Islam modern serta meneladani semangat pembaruan untuk memajukan peradaban umat."
+          capaian: "Memahami peran tokoh ulama dalam perkembangan peradaban Islam di dunia dan peran organisasi-organisasi Islam di Indonesia."
         }
       ]
     }
